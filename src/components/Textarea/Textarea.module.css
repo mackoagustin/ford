@@ -1,0 +1,63 @@
+.textarea-wrapper {
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    height: 7rem;
+    border-radius: 30px;
+    outline: 1px solid var(--color-neutral-500);
+    outline-offset: -1px;
+    background-color: var(--color-neutral-100);
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: outline 0.2s ease;
+    box-sizing: border-box;
+  }
+  
+  .textarea-wrapper:focus-within {
+    outline: 1px solid var(--color-secondary);
+  }
+  
+  .label-wrapper {
+    position: absolute;
+    left: 16px;
+    top: -7px;
+    height: 10px;
+    padding: 2px;
+    background-color: var(--color-neutral-100);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .label {
+    font-size: 12px;
+    color: var(--color-text);
+    font-family: 'FordF1', sans-serif;
+    line-height: 1;
+  }
+  
+  .textarea-field {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+    font-family: 'FordF1', sans-serif;
+    color: var(--color-neutral-400);
+  }
+  
+  .textarea-field::placeholder {
+    color: var(--color-neutral-400);
+  }
+
+  .textarea-field:not(:placeholder-shown) {
+    color: var(--color-text);
+  }
+  
+  .textarea-field:focus {
+    color: var(--color-black);
+  }
+  

@@ -1,0 +1,19 @@
+{
+    "banners": [
+      {
+        "image": "img/banners/sucursales.png",
+        "title": "Nuestras",
+        "subtitle": "Sucursales",
+        "ctaText": "Contactanos",
+        "ctaLink": "/sucursales"
+      },
+      {
+        "image": "img/banners/sucursales_dos_autos.png",
+        "title": "Nuestras",
+        "subtitle": "Sucursales",
+        "ctaText": "Contactanos",
+        "ctaLink": "/sucursales"
+      }
+    ]
+  }
+  

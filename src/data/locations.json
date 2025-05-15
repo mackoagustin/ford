@@ -1,0 +1,65 @@
+{
+    "locations": [
+      { 
+        "location": "Showroom Agronomía",
+        "image": "img/locations/agronomia.png",
+        "address": "Av. Francisco Beiró 2555, Agronomía - CABA",
+        "hours": {
+          "monday_friday": "Lunes a viernes: 9:00 a 18:30hs",
+          "saturday": "Sábado 10:00 a 18:00hs"
+        },
+        "phone": "tel: (011) 4573-8200",
+        "whatsapp": "WhatsApp: 11-2663-3000",
+        "google_maps_link": "https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+2555,+C1419HXE+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.592339,-58.4921415,17z/data=!4m6!3m5!1s0x95bcb63ec7c3c641:0x2916641ba93b9211!8m2!3d-34.5925775!4d-58.4907682!16s%2Fg%2F11flt1rzj0?entry=tts&g_ep=EgoyMDI0MDcxNi4wKgBIAVAD"
+      },
+      { 
+        "location": "Showroom Colegiales",
+        "image": "img/locations/colegiales.png",
+        "address": "Av. Álvarez Thomas 901, Colegiales - CABA",
+        "hours": {
+          "monday_friday": "Lunes a viernes: 9:00 a 19:00hs",
+          "saturday": "Sábado: 10:00 a 18:00hs"
+        },
+        "phone": "tel: (011) 7079-1500",
+        "whatsapp": "WhatsApp: 11-2663-3000",
+        "google_maps_link": "https://www.google.com/maps/place/Av.+%C3%81lvarez+Thomas+901,+C1427CCJ+CABA/@-34.57905,-58.4560122,18z/data=!3m1!4b1!4m5!3m4!1s0x95bcb5e77bbda0d3:0xc99dc35f56de4db6!8m2!3d-34.5790522!4d-58.4549152"
+      },
+      { 
+        "location": "Showroom José Ingenieros",
+        "image": "img/locations/ingenieros.png",
+        "address": "Av. Lincoln 1600, José Ingenieros, Pcia. Bs. As.",
+        "hours": {
+          "monday_friday": "Lunes a viernes: 8 a 13:00hs y de 14:00 a 18hs."
+        },
+        "phone": "tel: (011) 7079-1500",
+        "email": "Turnos: turnos@autospecial.com.ar" ,
+        "google_maps_link": "https://maps.app.goo.gl/W4Jz6qUjZAj3Xcai9"
+      },
+      { 
+        "location": "Sucursal Villa del Parque",
+        "image": "img/locations/villa_del_parque.png",
+        "address": "Av. San Martín 4280, Villa del Parque, CABA",
+        "hours": {
+          "monday_friday": "Lunes a viernes: 9:00 a 19:00hs",
+          "saturday": "Sábado: 10:00 a 18:00hs"
+        },
+        "phone": "tel: (011) 5670-4700",
+        "whatsapp": "WhatsApp: 11-2663-3000",
+        "google_maps_link": "https://www.google.com/maps/place/Av.+S.+Mart%C3%ADn+4280,+C1417DSP+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5986919,-58.4826275,17z/data=!4m6!3m5!1s0x95bcb61975798df7:0x87288dd4ebcac412!8m2!3d-34.5987449!4d-58.4813937!16s%2Fg%2F11cshgc03r?entry=tts&g_ep=EgoyMDI0MDcxNi4wKgBIAVAD"
+      },
+      { 
+        "location": "Taller Palermo",
+        "image": "img/locations/palermo.png",
+        "address": "Arévalo 1467, Palermo - CABA",
+        "hours": {
+          "monday_friday": "Lunes a viernes: 8:00 a 13:00hs. y de 14:00 a 18:00hs."
+        },
+        "phone": "tel: (011) 7079-1200",
+        "whatsapp": "WhatsApp: 11-2663-3000",
+        "email": "Turnos: turnos@autospecial.com.ar" ,
+        "google_maps_link": "https://www.google.com/maps/place/Ar%C3%A9valo+1467,+C1414CQC+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5827563,-58.4449522,16.69z/data=!4m6!3m5!1s0x95bcb5ed0699646f:0xca0b63084328a35c!8m2!3d-34.5830343!4d-58.4426744!16s%2Fg%2F11h07rzp0h?entry=tts&g_ep=EgoyMDI0MDcxNi4wKgBIAVAD"
+      }
+
+    ]
+  }
+  

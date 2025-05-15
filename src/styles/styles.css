@@ -1,0 +1,124 @@
+:root {
+    --color-primary: #00095B;
+    --color-secondary: #066FEF;
+    --color-tertiary: #00142E;
+    --color-emphasis: #1700F4;
+    --color-dark: #00142E;
+    --color-white: #FFFFFF;
+    --color-text: #0F0F0F;
+    --color-neutral-600: #434343;
+    --color-neutral-500: #727272;
+    --color-neutral-400: #9C9C9C;
+    --color-neutral-100: #F7F6F6; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'FordF1', sans-serif; 
+}
+
+/* Fuente FORD */
+@font-face {
+    font-family: 'FordF1';
+    src: url('../fonts/FordF1-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FordF1';
+    src: url('../fonts/FordF1-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'FordF1';
+    src: url('../fonts/FordF1-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FordF1';
+    src: url('../fonts/FordF1-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* color */
+.text-color-secondary {
+    color: var(--color-secondary);
+}
+
+.text-color-neutral-500 {
+    color: var(--color-neutral-500);
+}
+
+.text-color-dark {
+    color: var(--color-dark);
+}
+
+
+/* Fonts size */
+.body-1-16 {
+    font-size: 16px;      
+    line-height: 26px;    
+    letter-spacing: -2%;   
+    font-family: 'FordF1', sans-serif; 
+    font-weight: normal;   
+}
+
+.body-1-12 {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: normal; 
+}
+
+.H2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'FordF1', sans-serif; 
+    letter-spacing: -2%;  
+    font-weight: 500;
+}
+
+.H3 {
+    font-size: 26px;
+    line-height: 34px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: 500;
+}
+
+.H4 {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: 500;
+}
+
+.title-84 {
+    font-size: 84px;
+    line-height: 86px;
+    font-family: 'FordF1', sans-serif; 
+    letter-spacing: -1.7%;
+    font-weight: 500;
+}
+
+.subtitle-20 {
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: normal;
+}
+
+
+.display4 {
+    font-size: 46px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: normal;
+    line-height: 40px;
+}
