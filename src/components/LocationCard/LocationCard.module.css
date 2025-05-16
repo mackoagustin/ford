@@ -3,11 +3,10 @@
   width: 100%;
   max-width: 305px;
   max-height: 460px;
-
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .image {
@@ -53,10 +52,10 @@ a {
     max-width: 373px;
     max-height: 508px;
     height: 508px;
-    display: inline-flex;       
+    display: flex;       
     flex-direction: column;      
     align-content: center;
-    align-items: center;
+    justify-content: space-between;
     padding-bottom: 12px;
   }
 
