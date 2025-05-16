@@ -55,15 +55,23 @@ a {
     display: flex;       
     flex-direction: column;      
     align-content: center;
-    justify-content: space-between;
     padding-bottom: 12px;
   }
 
-  .locationName, .info, .address {
+  .locationName, .address {
     text-align: center;
   }
 
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+  
+
   .buttonWrapper {
+    margin-top: auto;
     display: flex;
     justify-content: center;
   }
