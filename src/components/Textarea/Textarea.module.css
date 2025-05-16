@@ -61,3 +61,8 @@
     color: var(--color-black);
   }
   
+    @media (min-width: 768px) {
+  .textarea-wrapper {
+    height: 128px;
+  }
+}

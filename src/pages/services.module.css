@@ -34,5 +34,16 @@
     .textCenter {
         text-align: center;
     }
+    .wraper {
+        background-color: var( --color-neutral-100);
+        padding: 42px 32px;
+    }
+
+    .mb0 {
+        margin-bottom: 0px;
+    }
+    .mt8{
+        margin-top: 8px;
+    }
   }
   
