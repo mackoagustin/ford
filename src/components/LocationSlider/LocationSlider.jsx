@@ -9,21 +9,27 @@ import styles from "./LocationSlider.module.css";
 
 import { Pagination } from "swiper/modules"; // Importar el módulo de paginación
 
-const LocationSlider = () => {
+const LocationSlider = ({ selectedCategory }) => {
   const isMobile = useIsMobile();
-    
+
+  // Filtrado por categoría
+  const filteredLocations = selectedCategory === "Todos"
+    ? locationData.locations
+    : locationData.locations.filter(
+        (location) => location.category === selectedCategory
+      );
+
   if (isMobile) {
-    // MOBILE: usar Swiper con solo paginación
     return (
       <Swiper
-        modules={[Pagination]} 
+        modules={[Pagination]}
         spaceBetween={16}
         slidesPerView={1.2}
         loop={true}
-        pagination={{ clickable: true }} 
+        pagination={{ clickable: true }}
         className={styles.swiperContainer}
       >
-        {locationData.locations.map((location, index) => (
+        {filteredLocations.map((location, index) => (
           <SwiperSlide key={index}>
             <LocationCard location={location} />
           </SwiperSlide>
@@ -32,14 +38,15 @@ const LocationSlider = () => {
     );
   }
 
-  // DESKTOP: mostrar en grilla 2 columnas
   return (
     <div className={styles.grid}>
-      {locationData.locations.map((location, index) => (
+      {filteredLocations.map((location, index) => (
         <LocationCard key={index} location={location} />
       ))}
     </div>
   );
+
 };
+
 
 export default LocationSlider;
