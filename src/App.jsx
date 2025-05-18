@@ -2,6 +2,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
+import Navbar from './components/Navbar/Navbar';
+
+
 import Home from './pages/Home';
 import Vehicles from './pages/Vehicles';
 import Financing from './pages/Financing';
@@ -27,6 +30,7 @@ import News from './pages/about/News';
 function App() {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/vehiculos" element={<Vehicles />} />

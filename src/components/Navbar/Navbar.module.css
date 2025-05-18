@@ -1,0 +1,101 @@
+/* src/components/Navbar.module.css */
+
+.navbar {
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbarContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.hamburger {
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navLinks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks li {
+  padding: 0.5rem 0;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+.desktop {
+  display: flex;
+  gap: 2rem;
+}
+
+.desktop .hasSubmenu {
+  position: relative;
+}
+
+.desktop .submenu {
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.desktop .submenu li {
+  padding: 0.5rem 1rem;
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 1rem;
+}
+
+.submenu {
+  padding-left: 1rem;
+}
+
+.hasSubmenu > button {
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  color: #1d1d1d;
+}
+
+/* ✅ Estilos responsive */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  /* Invertir orden en mobile */
+  .navbarContainer {
+    flex-direction: row-reverse;
+  }
+}
