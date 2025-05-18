@@ -9,27 +9,32 @@ function Navbar() {
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const isMobile = useIsMobile();
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   const toggleSubmenu = (menu) => {
     setOpenSubmenu(openSubmenu === menu ? null : menu);
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${isOpen ? styles.isOpen : ''}`}>
       <div className={styles.navbarContainer}>
+        {/* Menú Hamburguesa a la izquierda */}
         {isMobile && (
           <div className={styles.hamburger} onClick={toggleMenu}>
             ☰
           </div>
         )}
 
+        {/* Logo a la derecha */}
         <div className={styles.logo}>
           <img src="/img/logo/logo.png" alt="Logo" />
         </div>
 
+        {/* Contenido del menú */}
         {!isMobile ? (
-          // Desktop Menu
+          // Menú Desktop
           <ul className={`${styles.navLinks} ${styles.desktop}`}>
             <li><Link to="/vehiculos">Vehículos</Link></li>
             <li className={styles.hasSubmenu}>
@@ -69,49 +74,57 @@ function Navbar() {
             <li><Link to="/sucursales">Sucursales</Link></li>
           </ul>
         ) : (
-          // Mobile Menu
+          // Menú Móvil
           isOpen && (
-            <ul className={`${styles.navLinks} ${styles.mobile}`}>
-              <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-              <li><Link to="/vehiculos" onClick={toggleMenu}>Vehículos</Link></li>
-              <li className={styles.hasSubmenu}>
-                <button onClick={() => toggleSubmenu('financiacion')}>Financiación ▾</button>
-                {openSubmenu === 'financiacion' && (
-                  <ul className={styles.submenu}>
-                    <li><Link to="/financiacion/ford-credit">Ford Credit</Link></li>
-                    <li><Link to="/financiacion/plan-ovalo">Plan Óvalo</Link></li>
-                  </ul>
-                )}
-              </li>
-              <li><Link to="/ford-pro" onClick={toggleMenu}>Ford Pro</Link></li>
-              <li className={styles.hasSubmenu}>
-                <button onClick={() => toggleSubmenu('postventa')}>Post venta ▾</button>
-                {openSubmenu === 'postventa' && (
-                  <ul className={styles.submenu}>
-                    <li><Link to="/postventa/talleres">Talleres</Link></li>
-                    <li><Link to="/postventa/solicitar-turno">Solicitar turno</Link></li>
-                    <li><Link to="/postventa/servicios">Servicios</Link></li>
-                    <li><Link to="/postventa/repuestos">Repuestos</Link></li>
-                    <li><Link to="/postventa/accesorios">Accesorios</Link></li>
-                    <li><Link to="/postventa/preguntas-frecuentes">Preguntas frecuentes</Link></li>
-                    <li><Link to="/postventa/ford-protect">Ford Protect</Link></li>
-                  </ul>
-                )}
-              </li>
-              <li className={styles.hasSubmenu}>
-                <button onClick={() => toggleSubmenu('quienes')}>Quiénes somos ▾</button>
-                {openSubmenu === 'quienes' && (
-                  <ul className={styles.submenu}>
-                    <li><Link to="/quienes-somos/conocenos">Conocenos</Link></li>
-                    <li><Link to="/quienes-somos/sumate">Sumate al equipo</Link></li>
-                    <li><Link to="/quienes-somos/novedades">Novedades</Link></li>
-                  </ul>
-                )}
-              </li>
-              <li><Link to="/sucursales" onClick={toggleMenu}>Sucursales</Link></li>
-            </ul>
+            <div className={styles.mobileOverlay}>
+              <ul className={`${styles.navLinks} ${styles.mobile}`}>
+                <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                <li><Link to="/vehiculos" onClick={toggleMenu}>Vehículos</Link></li>
+                <li className={styles.hasSubmenu}>
+                  <button onClick={() => toggleSubmenu('financiacion')}>Financiación ▾</button>
+                  {openSubmenu === 'financiacion' && (
+                    <ul className={styles.submenu}>
+                      <li><Link to="/financiacion/ford-credit">Ford Credit</Link></li>
+                      <li><Link to="/financiacion/plan-ovalo">Plan Óvalo</Link></li>
+                    </ul>
+                  )}
+                </li>
+                <li><Link to="/ford-pro" onClick={toggleMenu}>Ford Pro</Link></li>
+                <li className={styles.hasSubmenu}>
+                  <button onClick={() => toggleSubmenu('postventa')}>Post venta ▾</button>
+                  {openSubmenu === 'postventa' && (
+                    <ul className={styles.submenu}>
+                      <li><Link to="/postventa/talleres">Talleres</Link></li>
+                      <li><Link to="/postventa/solicitar-turno">Solicitar turno</Link></li>
+                      <li><Link to="/postventa/servicios">Servicios</Link></li>
+                      <li><Link to="/postventa/repuestos">Repuestos</Link></li>
+                      <li><Link to="/postventa/accesorios">Accesorios</Link></li>
+                      <li><Link to="/postventa/preguntas-frecuentes">Preguntas frecuentes</Link></li>
+                      <li><Link to="/postventa/ford-protect">Ford Protect</Link></li>
+                    </ul>
+                  )}
+                </li>
+                <li className={styles.hasSubmenu}>
+                  <button onClick={() => toggleSubmenu('quienes')}>Quiénes somos ▾</button>
+                  {openSubmenu === 'quienes' && (
+                    <ul className={styles.submenu}>
+                      <li><Link to="/quienes-somos/conocenos">Conocenos</Link></li>
+                      <li><Link to="/quienes-somos/sumate">Sumate al equipo</Link></li>
+                      <li><Link to="/quienes-somos/novedades">Novedades</Link></li>
+                    </ul>
+                  )}
+                </li>
+                <li><Link to="/sucursales" onClick={toggleMenu}>Sucursales</Link></li>
+              </ul>
+            </div>
           )
         )}
+
+        {/* Overlay oscuro */}
+        <div 
+          className={styles.overlayBackdrop}
+          onClick={() => setIsOpen(false)}
+        />
       </div>
     </nav>
   );
