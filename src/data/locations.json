@@ -3,7 +3,7 @@
       { 
         "location": "Showroom Agronomía",
         "category": "Venta convencional",
-        "image": "img/locations/agronomia.png",
+        "image": "/img/locations/agronomia.png",
         "address": "Av. Francisco Beiró 2555, Agronomía - CABA",
         "hours": {
           "monday_friday": "Lunes a viernes: 9:00 a 18:30hs",
@@ -16,7 +16,7 @@
       { 
         "location": "Showroom Colegiales",
         "category": "Venta convencional",
-        "image": "img/locations/colegiales.png",
+        "image": "/img/locations/colegiales.png",
         "address": "Av. Álvarez Thomas 901, Colegiales - CABA",
         "hours": {
           "monday_friday": "Lunes a viernes: 9:00 a 19:00hs",
@@ -29,7 +29,7 @@
       { 
         "location": "Showroom José Ingenieros",
         "category": "Venta convencional",
-        "image": "img/locations/ingenieros.png",
+        "image": "/img/locations/ingenieros.png",
         "address": "Av. Lincoln 1600, José Ingenieros, Pcia. Bs. As.",
         "hours": {
           "monday_friday": "Lunes a viernes: 8 a 13:00hs y de 14:00 a 18hs."
@@ -41,7 +41,7 @@
       { 
         "location": "Showroom Villa del Parque",
         "category": "Venta convencional",
-        "image": "img/locations/villa_del_parque.png",
+        "image": "/img/locations/villa_del_parque.png",
         "address": "Av. San Martín 4280, Villa del Parque, CABA",
         "hours": {
           "monday_friday": "Lunes a viernes: 9:00 a 19:00hs",
@@ -54,7 +54,7 @@
       { 
         "location": "Taller Palermo",
         "category": "Venta convencional",
-        "image": "img/locations/palermo.png",
+        "image": "/img/locations/palermo.png",
         "address": "Arévalo 1467, Palermo - CABA",
         "hours": {
           "monday_friday": "Lunes a viernes: 8:00 a 13:00hs. y de 14:00 a 18:00hs."

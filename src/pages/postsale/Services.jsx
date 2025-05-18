@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Banner from "../components/Banner/Banner";
-import LocationSlider from "../components/LocationSlider/LocationSlider";
-import Form from "../components/Form/Form";
-import Chip from "../components/Chip/Chip";
-import chipData from "../data/chipOptions.json"
-import bannerData from "../data/banners.json";
-import useIsMobile from "../hook/useIsMobile";
+import Banner from "../../components/Banner/Banner";
+import LocationSlider from "../../components/LocationSlider/LocationSlider";
+import Form from "../../components/Form/Form";
+import Chip from "../../components/Chip/Chip";
+import chipData from "../../data/chipOptions.json"
+import bannerData from "../../data/banners.json";
+import useIsMobile from "../../hook/useIsMobile";
 
 import style from "./services.module.css";
 

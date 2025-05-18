@@ -3,11 +3,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import locationData from "../../data/locations.json";
 import LocationCard from "../LocationCard/LocationCard";
 import useIsMobile from "../../hook/useIsMobile"; 
-import "swiper/css"; // Estilos de Swiper
-import "swiper/css/pagination"; // Estilos de paginación
+import "swiper/css"; 
+import "swiper/css/pagination"; 
 import styles from "./LocationSlider.module.css"; 
 
-import { Pagination } from "swiper/modules"; // Importar el módulo de paginación
+import { Pagination } from "swiper/modules";
 
 const LocationSlider = ({ selectedCategory }) => {
   const isMobile = useIsMobile();
