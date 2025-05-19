@@ -8,13 +8,18 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const isMobile = useIsMobile();
-
+  
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
   const toggleSubmenu = (menu) => {
     setOpenSubmenu(openSubmenu === menu ? null : menu);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+    setOpenSubmenu(null);
   };
 
   return (
@@ -26,7 +31,7 @@ function Navbar() {
             ☰
           </div>
         )}
-
+        
         {/* Logo a la derecha */}
         <div className={styles.logo}>
           <img src="/img/logo/logo.png" alt="Logo" />
@@ -36,28 +41,28 @@ function Navbar() {
         {!isMobile ? (
           // Menú Desktop
           <ul className={`${styles.navLinks} ${styles.desktop}`}>
-            <li><Link to="/vehiculos">Vehículos</Link></li>
+            <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('financiacion')}>Financiación ▾</button>
               {openSubmenu === 'financiacion' && (
                 <ul className={styles.submenu}>
-                  <li><Link to="/financiacion/ford-credit">Ford Credit</Link></li>
-                  <li><Link to="/financiacion/plan-ovalo">Plan Óvalo</Link></li>
+                  <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>Ford Credit</Link></li>
+                  <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>Plan Óvalo</Link></li>
                 </ul>
               )}
             </li>
-            <li><Link to="/ford-pro">Ford Pro</Link></li>
+            <li><Link to="/ford-pro" onClick={closeMenu}>Ford Pro</Link></li>
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('postventa')}>Post venta ▾</button>
               {openSubmenu === 'postventa' && (
                 <ul className={styles.submenu}>
-                  <li><Link to="/postventa/talleres">Talleres</Link></li>
-                  <li><Link to="/postventa/solicitar-turno">Solicitar turno</Link></li>
-                  <li><Link to="/postventa/servicios">Servicios</Link></li>
-                  <li><Link to="/postventa/repuestos">Repuestos</Link></li>
-                  <li><Link to="/postventa/accesorios">Accesorios</Link></li>
-                  <li><Link to="/postventa/preguntas-frecuentes">Preguntas frecuentes</Link></li>
-                  <li><Link to="/postventa/ford-protect">Ford Protect</Link></li>
+                  <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
+                  <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>Solicitar turno</Link></li>
+                  <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
+                  <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
+                  <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
+                  <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li>
+                  <li><Link to="/postventa/ford-protect" onClick={closeMenu}>Ford Protect</Link></li>
                 </ul>
               )}
             </li>
@@ -65,27 +70,27 @@ function Navbar() {
               <button onClick={() => toggleSubmenu('quienes')}>Quiénes somos ▾</button>
               {openSubmenu === 'quienes' && (
                 <ul className={styles.submenu}>
-                  <li><Link to="/quienes-somos/conocenos">Conocenos</Link></li>
-                  <li><Link to="/quienes-somos/sumate">Sumate al equipo</Link></li>
-                  <li><Link to="/quienes-somos/novedades">Novedades</Link></li>
+                  <li><Link to="/quienes-somos/conocenos" onClick={closeMenu}>Conocenos</Link></li>
+                  <li><Link to="/quienes-somos/sumate" onClick={closeMenu}>Sumate al equipo</Link></li>
+                  <li><Link to="/quienes-somos/novedades" onClick={closeMenu}>Novedades</Link></li>
                 </ul>
               )}
             </li>
-            <li><Link to="/sucursales">Sucursales</Link></li>
+            <li><Link to="/sucursales" onClick={closeMenu}>Sucursales</Link></li>
           </ul>
         ) : (
           // Menú Móvil
           isOpen && (
             <div className={styles.mobileOverlay}>
               <ul className={`${styles.navLinks} ${styles.mobile}`}>
-                <div className= {styles.wraperLink}>
-                  <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                <div className={styles.wraperLink}>
+                  <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                 </div>
-                <div className= {styles.wraperLink}>
-                  <li><Link to="/vehiculos" onClick={toggleMenu}>Vehículos</Link></li>
+                <div className={styles.wraperLink}>
+                  <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
                 </div>
-               <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
-                  <button 
+                <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
+                  <button
                     onClick={() => toggleSubmenu('financiacion')}
                     className={styles.wraperLink}
                   >
@@ -93,15 +98,15 @@ function Navbar() {
                   </button>
                   {openSubmenu === 'financiacion' && (
                     <ul className={styles.submenu}>
-                      <li><Link to="/financiacion/ford-credit">Ford Credit</Link></li>
-                      <li><Link to="/financiacion/plan-ovalo">Plan Óvalo</Link></li>
+                      <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>Ford Credit</Link></li>
+                      <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>Plan Óvalo</Link></li>
                     </ul>
                   )}
                 </li>
-                <div className= {styles.wraperLink}>
-                <li><Link to="/ford-pro" onClick={toggleMenu}>Ford Pro</Link></li>
+                <div className={styles.wraperLink}>
+                  <li><Link to="/ford-pro" onClick={closeMenu}>Ford Pro</Link></li>
                 </div>
-               <li className={`${styles.hasSubmenu} ${openSubmenu === 'postventa' ? styles.active : ''}`}>
+                <li className={`${styles.hasSubmenu} ${openSubmenu === 'postventa' ? styles.active : ''}`}>
                   <button
                     onClick={() => toggleSubmenu('postventa')}
                     className={styles.wraperLink}
@@ -110,33 +115,33 @@ function Navbar() {
                   </button>
                   {openSubmenu === 'postventa' && (
                     <ul className={styles.submenu}>
-                      <li><Link to="/postventa/talleres">Talleres</Link></li>
-                      <li><Link to="/postventa/solicitar-turno">Solicitar turno</Link></li>
-                      <li><Link to="/postventa/servicios">Servicios</Link></li>
-                      <li><Link to="/postventa/repuestos">Repuestos</Link></li>
-                      <li><Link to="/postventa/accesorios">Accesorios</Link></li>
-                      <li><Link to="/postventa/preguntas-frecuentes">Preguntas frecuentes</Link></li>
-                      <li><Link to="/postventa/ford-protect">Ford Protect</Link></li>
+                      <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
+                      <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>Solicitar turno</Link></li>
+                      <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
+                      <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
+                      <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
+                      <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li>
+                      <li><Link to="/postventa/ford-protect" onClick={closeMenu}>Ford Protect</Link></li>
                     </ul>
                   )}
                 </li>
-                  <li className={`${styles.hasSubmenu} ${openSubmenu === 'quienes' ? styles.active : ''}`}>
-                    <button 
-                      onClick={() => toggleSubmenu('quienes')}
-                      className={styles.wraperLink}
-                    >
-                      Quiénes somos ▾
-                    </button>
-                    {openSubmenu === 'quienes' && (
-                      <ul className={styles.submenu}>
-                        <li><Link to="/quienes-somos/conocenos">Conocenos</Link></li>
-                        <li><Link to="/quienes-somos/sumate">Sumate al equipo</Link></li>
-                        <li><Link to="/quienes-somos/novedades">Novedades</Link></li>
-                      </ul>
-                    )}
-                  </li>
-                <div className= {styles.wraperLink}>
-                <li><Link to="/sucursales" onClick={toggleMenu}>Sucursales</Link></li>
+                <li className={`${styles.hasSubmenu} ${openSubmenu === 'quienes' ? styles.active : ''}`}>
+                  <button
+                    onClick={() => toggleSubmenu('quienes')}
+                    className={styles.wraperLink}
+                  >
+                    Quiénes somos ▾
+                  </button>
+                  {openSubmenu === 'quienes' && (
+                    <ul className={styles.submenu}>
+                      <li><Link to="/quienes-somos/conocenos" onClick={closeMenu}>Conocenos</Link></li>
+                      <li><Link to="/quienes-somos/sumate" onClick={closeMenu}>Sumate al equipo</Link></li>
+                      <li><Link to="/quienes-somos/novedades" onClick={closeMenu}>Novedades</Link></li>
+                    </ul>
+                  )}
+                </li>
+                <div className={styles.wraperLink}>
+                  <li><Link to="/sucursales" onClick={closeMenu}>Sucursales</Link></li>
                 </div>
               </ul>
             </div>
@@ -144,7 +149,7 @@ function Navbar() {
         )}
 
         {/* Overlay oscuro */}
-        <div 
+        <div
           className={styles.overlayBackdrop}
           onClick={() => setIsOpen(false)}
         />
