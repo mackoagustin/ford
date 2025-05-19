@@ -37,14 +37,14 @@ function Navbar() {
           <img src="/img/logo/logo.png" alt="Logo" />
         </div>
 
-        {/* Contenido del menú */}
+     
         {!isMobile ? (
          <ul className={`${styles.navLinks} ${styles.desktop}`}>
             <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
 
             <li className={styles.hasSubmenu}>
-              <button onClick={() => toggleSubmenu('financiacion')} className={styles.wraperLink}>
-                <div className={styles.iconWrapper}>
+              <button onClick={() => toggleSubmenu('financiacion')}>
+                <div className={`${styles.iconWrapper} ${styles.iconWrapperFirst}`}>
                   Financiación
                   <svg
                     className="chevron-icon"
@@ -80,7 +80,7 @@ function Navbar() {
 
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('postventa')} className={styles.wraperLink}>
-                <div className={styles.iconWrapper}>
+                <div className={`${styles.iconWrapper} ${styles.iconWrapperSecond}`}>
                   Post venta
                   <svg
                     className="chevron-icon"
@@ -119,7 +119,7 @@ function Navbar() {
 
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('quienes')} className={styles.wraperLink}>
-                <div className={styles.iconWrapper}>
+                <div className={`${styles.iconWrapper} ${styles.iconWrapperThird}`}>
                   Quiénes somos
                   <svg
                     className="chevron-icon"
