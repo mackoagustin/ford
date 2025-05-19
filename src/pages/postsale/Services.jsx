@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import Banner from "../../components/Banner/Banner";
 import LocationSlider from "../../components/LocationSlider/LocationSlider";
 import Form from "../../components/Form/Form";
@@ -7,6 +8,7 @@ import chipData from "../../data/chipOptions.json"
 import bannerData from "../../data/banners.json";
 import useIsMobile from "../../hook/useIsMobile";
 
+import 'swiper/css';
 import style from "./services.module.css";
 
 const Services = () => {
@@ -46,17 +48,34 @@ const Services = () => {
           </div>
         )}
 
-        {/* Chips de selección */}
-        <div className="flex flex-wrap gap-2 px-4 pt-6">
+         {/* Chips de selección */}
+       {isMobile ? (
+          <Swiper
+            slidesPerView="auto"
+            freeMode={true}
+          >
           {chipOptions.map(option => (
-            <Chip
-              key={option}
-              label={option}
-              active={selectedChip === option}
-              onClick={() => setSelectedChip(option)}
-            />
-          ))}
-        </div>
+            <SwiperSlide key={option} style={{ width: 'auto', paddingLeft: '16px' }}>
+              <Chip
+                label={option}
+                active={selectedChip === option}
+                onClick={() => setSelectedChip(option)}
+              />
+            </SwiperSlide>
+              ))}
+            </Swiper>
+          ) : (
+            <div className= {` ${style.flex}`} >
+              {chipOptions.map(option => (
+                <Chip
+                  key={option}
+                  label={option}
+                  active={selectedChip === option}
+                  onClick={() => setSelectedChip(option)}
+                />
+              ))}
+            </div>
+        )}
 
         {/* Slider */}
         <div className={`${style["pt-42"]} ${style["px-16"]}`}>
