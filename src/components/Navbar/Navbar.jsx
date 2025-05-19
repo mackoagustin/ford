@@ -39,43 +39,71 @@ function Navbar() {
 
         {/* Contenido del menú */}
         {!isMobile ? (
-          <ul className={`${styles.navLinks} ${styles.desktop}`}>
+         <ul className={`${styles.navLinks} ${styles.desktop}`}>
             <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
-            <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
-  <button
-    onClick={() => toggleSubmenu('financiacion')}
-    className={styles.wraperLink}
-  >
-    <div className={styles.iconWrapper}>
-      Financiación
-      <svg
-        className={`chevron-icon ${openSubmenu === 'financiacion' ? 'rotated' : ''}`}
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        strokeWidth={2.4}
-        stroke="currentColor"
-        fill="none"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M19.75 8.25L12 15.75 4.25 8.25"
-        />
-      </svg>
-    </div>
-  </button>
-  {openSubmenu === 'financiacion' && (
-    <ul className={styles.submenu}>
-      <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>Ford Credit</Link></li>
-      <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>Plan Óvalo</Link></li>
-    </ul>
-  )}
-</li>
-            <li><Link to="/ford-pro" onClick={closeMenu}>Ford Pro</Link></li>
+
             <li className={styles.hasSubmenu}>
-              <button onClick={() => toggleSubmenu('postventa')}>Post venta ▾</button>
+              <button onClick={() => toggleSubmenu('financiacion')} className={styles.wraperLink}>
+                <div className={styles.iconWrapper}>
+                  Financiación
+                  <svg
+                    className="chevron-icon"
+                    style={{
+                      transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease-in-out'
+                    }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.4}
+                    stroke="currentColor"
+                    fill="none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.75 8.25L12 15.75 4.25 8.25"
+                    />
+                  </svg>
+                </div>
+              </button>
+              {openSubmenu === 'financiacion' && (
+                <ul className={styles.submenu}>
+                  <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>Ford Credit</Link></li>
+                  <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>Plan Óvalo</Link></li>
+                </ul>
+              )}
+            </li>
+
+            <li><Link to="/ford-pro" onClick={closeMenu}>Ford Pro</Link></li>
+
+            <li className={styles.hasSubmenu}>
+              <button onClick={() => toggleSubmenu('postventa')} className={styles.wraperLink}>
+                <div className={styles.iconWrapper}>
+                  Post venta
+                  <svg
+                    className="chevron-icon"
+                    style={{
+                      transform: openSubmenu === 'postventa' ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease-in-out'
+                    }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.4}
+                    stroke="currentColor"
+                    fill="none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.75 8.25L12 15.75 4.25 8.25"
+                    />
+                  </svg>
+                </div>
+              </button>
               {openSubmenu === 'postventa' && (
                 <ul className={styles.submenu}>
                   <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
@@ -88,8 +116,33 @@ function Navbar() {
                 </ul>
               )}
             </li>
+
             <li className={styles.hasSubmenu}>
-              <button onClick={() => toggleSubmenu('quienes')}>Quiénes somos ▾</button>
+              <button onClick={() => toggleSubmenu('quienes')} className={styles.wraperLink}>
+                <div className={styles.iconWrapper}>
+                  Quiénes somos
+                  <svg
+                    className="chevron-icon"
+                    style={{
+                      transform: openSubmenu === 'quienes' ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease-in-out'
+                    }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.4}
+                    stroke="currentColor"
+                    fill="none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.75 8.25L12 15.75 4.25 8.25"
+                    />
+                  </svg>
+                </div>
+              </button>
               {openSubmenu === 'quienes' && (
                 <ul className={styles.submenu}>
                   <li><Link to="/quienes-somos/conocenos" onClick={closeMenu}>Conocenos</Link></li>
@@ -98,8 +151,10 @@ function Navbar() {
                 </ul>
               )}
             </li>
+
             <li><Link to="/sucursales" onClick={closeMenu}>Sucursales</Link></li>
           </ul>
+
         ) : (
           // Menú Móvil
           isOpen && (
