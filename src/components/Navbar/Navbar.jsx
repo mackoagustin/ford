@@ -78,10 +78,19 @@ function Navbar() {
           isOpen && (
             <div className={styles.mobileOverlay}>
               <ul className={`${styles.navLinks} ${styles.mobile}`}>
-                <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-                <li><Link to="/vehiculos" onClick={toggleMenu}>Vehículos</Link></li>
-                <li className={styles.hasSubmenu}>
-                  <button onClick={() => toggleSubmenu('financiacion')}>Financiación ▾</button>
+                <div className= {styles.wraperLink}>
+                  <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                </div>
+                <div className= {styles.wraperLink}>
+                  <li><Link to="/vehiculos" onClick={toggleMenu}>Vehículos</Link></li>
+                </div>
+               <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
+                  <button 
+                    onClick={() => toggleSubmenu('financiacion')}
+                    className={styles.wraperLink}
+                  >
+                    Financiación ▾
+                  </button>
                   {openSubmenu === 'financiacion' && (
                     <ul className={styles.submenu}>
                       <li><Link to="/financiacion/ford-credit">Ford Credit</Link></li>
@@ -89,9 +98,16 @@ function Navbar() {
                     </ul>
                   )}
                 </li>
+                <div className= {styles.wraperLink}>
                 <li><Link to="/ford-pro" onClick={toggleMenu}>Ford Pro</Link></li>
-                <li className={styles.hasSubmenu}>
-                  <button onClick={() => toggleSubmenu('postventa')}>Post venta ▾</button>
+                </div>
+               <li className={`${styles.hasSubmenu} ${openSubmenu === 'postventa' ? styles.active : ''}`}>
+                  <button
+                    onClick={() => toggleSubmenu('postventa')}
+                    className={styles.wraperLink}
+                  >
+                    Post venta ▾
+                  </button>
                   {openSubmenu === 'postventa' && (
                     <ul className={styles.submenu}>
                       <li><Link to="/postventa/talleres">Talleres</Link></li>
@@ -104,17 +120,24 @@ function Navbar() {
                     </ul>
                   )}
                 </li>
-                <li className={styles.hasSubmenu}>
-                  <button onClick={() => toggleSubmenu('quienes')}>Quiénes somos ▾</button>
-                  {openSubmenu === 'quienes' && (
-                    <ul className={styles.submenu}>
-                      <li><Link to="/quienes-somos/conocenos">Conocenos</Link></li>
-                      <li><Link to="/quienes-somos/sumate">Sumate al equipo</Link></li>
-                      <li><Link to="/quienes-somos/novedades">Novedades</Link></li>
-                    </ul>
-                  )}
-                </li>
+                  <li className={`${styles.hasSubmenu} ${openSubmenu === 'quienes' ? styles.active : ''}`}>
+                    <button 
+                      onClick={() => toggleSubmenu('quienes')}
+                      className={styles.wraperLink}
+                    >
+                      Quiénes somos ▾
+                    </button>
+                    {openSubmenu === 'quienes' && (
+                      <ul className={styles.submenu}>
+                        <li><Link to="/quienes-somos/conocenos">Conocenos</Link></li>
+                        <li><Link to="/quienes-somos/sumate">Sumate al equipo</Link></li>
+                        <li><Link to="/quienes-somos/novedades">Novedades</Link></li>
+                      </ul>
+                    )}
+                  </li>
+                <div className= {styles.wraperLink}>
                 <li><Link to="/sucursales" onClick={toggleMenu}>Sucursales</Link></li>
+                </div>
               </ul>
             </div>
           )

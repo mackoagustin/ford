@@ -1,7 +1,21 @@
+li {
+  list-style: none;
+  color: var(--color-primary);
+}
+
 .navbar {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #ddd;
+}
+
+.navbar .navLinkText {
+  color: var(--color-primary);
+}
+
+/* Hover state */
+.navbar .navLinkText:hover {
+  opacity: 0.9;
 }
 
 .navbarContainer {
@@ -20,7 +34,7 @@
 
 
 .hamburger {
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: pointer;
   display: none;
 }
@@ -38,7 +52,7 @@
 
 .navLinks li a {
   text-decoration: none;
-  color: #1d1d1d;
+  color: var(--color-primary) !important;
 }
 
 
@@ -62,8 +76,10 @@
   z-index: 1000;
 }
 
+
 .desktop .submenu li {
   padding: 0.5rem 1rem;
+  color: var(--color-primary);
 }
 
 /* Estilos móviles */
@@ -71,7 +87,6 @@
   display: flex;
   flex-direction: column;
   background: white;
-  padding: 1rem;
 }
 
 .submenu {
@@ -132,10 +147,19 @@
 
   .navbarContainer {
     justify-content: space-between;
+ 
   }
 
   .logo {
     order: 2;
+    margin:  0 auto;
+    align-items: center;
+    padding-top: 12px;
+  }
+
+  .logo img {
+  height: 24px;
+  width: auto;
   }
 
   .hamburger {
@@ -144,5 +168,62 @@
 
   .desktop {
     display: none;
+
+    
   }
+
+  .navLinks {
+  list-style: none;
+  margin: 0;
+}
+
+  .wraperLink {
+    border-top: 1px solid var(   --color-neutral-200);
+    color: var(--color-primary);
+
+  }
+
+  .wraperLink > li {
+    padding: 12px 24px;
+    color: var(--color-primary);
+  }
+
+  .wraperLink > li > a {
+    color: var(--color-primary);
+  }
+
+  .hasSubmenu {
+  border-top: 1px solid var(--color-neutral-200);
+  color: var(--color-primary);
+  }
+
+.hasSubmenu > button {
+  padding: 12px 24px;
+  color: var(--color-primary);
+}
+
+.hasSubmenu.active {
+  background-color: #2563eb;
+  color: white;
+   padding-bottom: 0px;
+}
+
+.hasSubmenu.active > button {
+  color: white;
+  font-weight: 500;
+}
+.hasSubmenu.active > ul {
+  background-color: var(--color-neutral-200);
+  border-top: none;
+   padding: 12px 24px;
+}
+
+.hasSubmenu.active > ul li {
+  background-color: transparent;
+}
+
+.hasSubmenu.active > ul li:hover {
+  background-color: rgba(220, 38, 38, 0.1);
+  
+}
 }
