@@ -1,115 +1,55 @@
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import Banner from "../../components/Banner/Banner";
-import LocationSlider from "../../components/LocationSlider/LocationSlider";
-import Form from "../../components/Form/Form";
-import Chip from "../../components/Chip/Chip";
-import chipData from "../../data/chipOptions.json"
+// src/pages/Home.jsx
+import React from 'react';
+import BannerDoubleButton from '../../components/BannerDoubleButton/BannerDoubleButton';
 import bannerData from "../../data/banners.json";
-import useIsMobile from "../../hook/useIsMobile";
+import useIsMobile from '../../hook/useIsMobile';
+import PostSaleSlider from '../../components/PostSaleSlider/PostSaleSlider';
+import FordWarranty from '../../components/FordWarranty/FordWarranty';
 
-import 'swiper/css';
-import style from "./services.module.css";
-
-const Services = () => {
-  const isMobile = useIsMobile();
-  const selectedBanner = bannerData.banners[1];
-  const chipOptions = chipData.chips;
-
-  const [selectedChip, setSelectedChip] = useState("Todos");
+import style from  './Services.module.css'
 
 
+function Home() {
+  const selectedBanner = bannerData.banners[0]
+  const isMobile = useIsMobile ();
   return (
     <div>
-      <Banner data={selectedBanner} />
+      <BannerDoubleButton data={selectedBanner} />
+
       <div className={style.contentWrapper}>
-        {/* Texto de introducción */}
-        {isMobile ? (
-          <div className={`${style["pt-60"]} ${style["px-16"]}`}>
-            <h3 className="H3">
-              Encontrá el <span className="text-color-secondary">concesionario oficial</span> de Ford y{" "}
-              <span className="text-color-secondary">puntos de servicio multimarca</span> que más te convenga.
-            </h3>
-            <p className="text-color-neutral-500 subtitle-20">
-              Seleccioná el servicio de tu interés para conocer las sucursales:
-            </p>
-          </div>
-        ) : (
-          <div className={`${style["pt-60"]} ${style["px-16"]}`}>
-            <h3 className={`H3 ${style.textCenter}`}>
-              Encontrá el <span className="text-color-secondary">concesionario oficial</span> de Ford y{" "}
-              <span className="text-color-secondary">puntos</span>
-              <br />
-              <span className="text-color-secondary">de servicio multimarca</span> que más te convenga.
-            </h3>
-            <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
-              Seleccioná el servicio de tu interés para conocer las sucursales:
-            </p>
-          </div>
-        )}
-
-         {/* Chips de selección */}
-       {isMobile ? (
-          <Swiper
-            slidesPerView="auto"
-            freeMode={true}
-          >
-          {chipOptions.map(option => (
-            <SwiperSlide key={option} style={{ width: 'auto', paddingLeft: '16px' }}>
-              <Chip
-                label={option}
-                active={selectedChip === option}
-                onClick={() => setSelectedChip(option)}
-              />
-            </SwiperSlide>
-              ))}
-            </Swiper>
-          ) : (
-            <div className= {` ${style.flex}`} >
-              {chipOptions.map(option => (
-                <Chip
-                  key={option}
-                  label={option}
-                  active={selectedChip === option}
-                  onClick={() => setSelectedChip(option)}
-                />
-              ))}
+         {/* Texto de introducción */}
+          {isMobile ? (
+            <div className={`${style["pt-60"]} ${style["px-16"]}`}>
+              <h3 className="H3">
+                Estamos cerca tuyo, para <span className="text-color-secondary">cuidar </span> de tu ford{" "}
+                <span className="text-color-secondary">como lo harías vos</span> 
+              </h3>
+              <p className="text-color-neutral-500 subtitle-20">
+                Técnicos capacitados, productos y servicios con precios transparentes, y repuestos originales de Ford, con garantía incluida.
+              </p>
             </div>
-        )}
-
-        {/* Slider */}
-        <div className={`${style["pt-42"]} ${style["px-16"]}`}>
-          <LocationSlider selectedCategory={selectedChip} />
-
-        </div>
-
-        {/* Formulario */}
-        {isMobile ? (
-          <div className={style.wraper}>
-            <h3 className="H3 text-color-dark">
-              ¿Necesitás
-              <br />
-              <span className="text-color-secondary">asesoramiento?</span>
-            </h3>
-            <p className="body-1-16 text-color-neutral-500">
-              Completá los datos y nos pondremos en contacto a la brevedad.
-            </p>
-            <Form />
+          ) : (
+            <div className={`${style["pt-60"]} ${style["px-16"]}`}>
+              <h3 className={`H3 ${style.textCenter}`}>
+                Estamos cerca tuyo, para <span className="text-color-secondary">cuidar</span> de tu Ford{" "}
+                <br />
+                <span className="text-color-secondary">como lo harías vos</span>
+              </h3>
+              <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
+                Técnicos capacitados, productos y servicios con precios transparentes, y <br /> repuestos originales de Ford, con garantía incluida.
+              </p>
+            </div>
+          )}
+          <div  className={`${style["pt-42"]} ${style["px-16"]}`}>
+             <PostSaleSlider />
           </div>
-        ) : (
-          <div className={style.wraper}>
-            <h3 className={`H3 text-color-dark ${style.mb0} `}>
-              ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
-            </h3>
-            <p className={`body-1-16 text-color-neutral-500 ${style.mt8}`}>
-              Completá los datos y nos pondremos en contacto a la brevedad.
-            </p>
-            <Form />
-          </div>
-        )}
+
+        <FordWarranty />
       </div>
-    </div>
-  );
-};
 
-export default Services;
+
+    </div>
+  )
+}
+
+export default Home;
