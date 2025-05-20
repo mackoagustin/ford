@@ -5,7 +5,7 @@ h4, p {
 .card {
     width: 100%;
     max-height: 664px;
-    max-width: 305px ;
+    max-width: 310px ;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -25,7 +25,6 @@ h4, p {
 }
 
 .wraperTitle {
-    
     width: 273px;
     padding: 24px 16px 0px 16px;
 }
@@ -39,4 +38,102 @@ h4, p {
 .info {
     height: 380px;
     padding-bottom: 24px;
+}
+
+@media (min-width: 1024px) {
+    .card {
+        width: 100%;
+        max-height: 550px;
+        max-width: 373px ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .info {
+        height: 346px;
+        padding-bottom: 30px;
+    }
+    .image {
+    height: 180px;
+    width: auto;
+    border-radius: 16px 16px 0px 0px;
+    }
+    .wraperTitle {
+        text-align: center;
+    width: 342px;
+    padding: 16px 16px 0px 16px;
+    }
+    
+    .wraperText {
+        text-align: center;
+        width: 342px;
+        padding: 8px 16px 0px 16px;
+        margin-top: 0px;
+    }
+
+    .buttonWrapper {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 16px;
+    }
+
+    /* Variaciones por grupo */
+    .cardGroup1 {
+        width: 100%;
+        height: 500px;
+        max-width: 373px ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .cardGroup2 {
+    width: 100%;
+        height: 582px;
+        max-width: 373px ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .cardGroup3 {
+        width: 100%;
+        height: 534px;
+        max-width: 373px ;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .infoGroup1 {
+        height: 194px;
+        padding-bottom: 30px;
+    }
+
+    .infoGroup2 {
+        height: 276px;
+        padding-bottom: 30px;
+    }
+
+    .infoGroup3 {
+        height: 228px;
+        padding-bottom: 30px;
+    }
+/* .textGroup1 {
+    font-style: italic;
+    } 
+
+    .textGroup2 {
+    font-weight: bold;
+    }
+
+    .textGroup3 {
+    text-decoration: underline;
+    }*/
 }

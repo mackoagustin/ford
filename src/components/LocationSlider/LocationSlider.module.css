@@ -2,8 +2,5 @@
   display: flex;
   flex-wrap: wrap; 
   gap: 24px;
-  justify-content: center; /* Centra los elementos si hay menos de 3 */
+  justify-content: center;
 }
-
-
-

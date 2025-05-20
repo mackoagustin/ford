@@ -45,7 +45,6 @@ const LocationSlider = ({ selectedCategory }) => {
       ))}
     </div>
   );
-
 };
 
 

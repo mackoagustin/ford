@@ -1,17 +1,31 @@
 import React from "react";
 import style from './PostSaleCard.module.css';
 import Button from "../Button/Button";
+import classNames from "classnames";
 
-const PostSaleCard = ({data}) => {
+const PostSaleCard = ({data, groupIndex}) => {
 
-     if (!location) {
-    return <div>No location data available</div>;
-  }
+    if (!data) {
+        return <div>No location data available</div>;
+    }
+
+    const cardClass = classNames(style.card, {
+        [style.cardGroup1]: groupIndex === 0,
+        [style.cardGroup2]: groupIndex === 1,
+        [style.cardGroup3]: groupIndex === 2,
+    });
+
+  const infoClass = classNames(style.info, {
+        [style.infoGroup1]: groupIndex === 0,
+        [style.infoGroup2]: groupIndex === 1,
+        [style.infoGroup3]: groupIndex === 2,
+    });
+    
     return (
-        <div className= {style.card}>
+        <div className= {cardClass}>
             <img className={style.image} src={data.image} alt={data.title}/>
             
-            <div className={style.info}>
+            <div className={infoClass}>
                 <div className={style.wraperTitle}>
                     <h4 className="H4">{data.title}</h4>
                 </div>
