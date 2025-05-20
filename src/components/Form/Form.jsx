@@ -130,13 +130,16 @@ const Form = () => {
         placeholder="Seleccioná tu provincia"
       />
       </div>
-      <Textarea
+      <div className={style.wraperTextarea}>
+          <Textarea
         label="Mensaje"
         name="message"
         value={formData.message}
         onChange={handleChange}
         placeholder="Escribí tu mensaje"
       />
+      </div>
+      
       <div className={style.checkboxWrapper}>
         <label className={style.customCheckbox}>
           <input type="checkbox" name="subscribe" />

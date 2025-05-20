@@ -1,7 +1,7 @@
 .form-wraper {
     display: flex;
     flex-direction: column; 
-    gap: 16px; 
+    gap: 24px; 
     padding-top: 10px;
     background-color: var( --color-neutral-100);
 }
@@ -88,4 +88,8 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 16px;
+  }
+
+  .wraperTextarea {
+    margin-top: -12px;
   }

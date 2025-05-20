@@ -103,7 +103,10 @@ const Services = () => {
             <p className={`body-1-16 text-color-neutral-500 ${style.mt8}`}>
               Completá los datos y nos pondremos en contacto a la brevedad.
             </p>
-            <Form />
+            <div className={style.wraperForm}>
+              <Form />
+            </div>
+      
           </div>
         )}
       </div>
