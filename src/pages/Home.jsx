@@ -4,6 +4,7 @@ import BannerDoubleButton from '../components/BannerDoubleButton/BannerDoubleBut
 import bannerData from "../data/banners.json";
 import useIsMobile from '../hook/useIsMobile';
 import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
+import FordWarranty from '../components/FordWarranty/FordWarranty';
 
 import style from  './Home.module.css'
 
@@ -42,7 +43,8 @@ function Home() {
           <div  className={`${style["pt-42"]} ${style["px-16"]}`}>
              <PostSaleSlider />
           </div>
-         
+
+        <FordWarranty />
       </div>
 
 
