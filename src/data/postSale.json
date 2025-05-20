@@ -1,7 +1,7 @@
 {
     "postsale": [
         {
-            "image": "./img/postsale/mantenimiento.png",
+            "image": "/img/postsale/mantenimiento.png",
             "title": "Servicios de mantenimiento",
             "text": "Contamos con 5 sucursales de las cuales 3 de ellas prestan servicio de posventa oficial para atender las necesidades de tu Ford. Disfrutá la mejor atención y mantenelo siempre en óptimas condiciones.",
             "ctaText": "Reservar por WhatsApp",

@@ -1,0 +1,191 @@
+ {
+    "vehicles": [
+      {
+         "image": "/img/vehicles/territory.png",
+         "title": "Territory",
+         "text": "Llegá hasta donde imagines.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/territory",
+         "category": "suv"
+      },
+      {
+         "image": "/img/vehicles/nueva_bronco.png",
+         "title": "Nueva Bronco Sport",
+         "text": "El ícono de la aventura.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nueva_bronco",
+         "category": "suv"
+      },
+      {
+         "image": "/img/vehicles/kuga.png",
+         "title": "Kuga Híbrida ",
+         "text": "La inteligencia encuentra el camino.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/kuga",
+         "category": "suv"
+      },
+      {
+         "image": "/img/vehicles/bronco.png",
+         "title": "Bronco ",
+         "text": "El ícono de la aventura.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/bronco",
+         "category": "suv"
+      },
+      {
+         "image": "/img/vehicles/maverick.png",
+         "title": "Maverick ",
+         "text": "Nuevas experiencias nos hacen más fuertes.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/maverick",
+         "category": "pick-up"
+      },
+      {
+         "image": "/img/vehicles/nueva_ranger.png",
+         "title": "Nueva Ranger",
+         "text": "Que venga lo imposible.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nueva_ranger",
+         "category": "pick-up"
+      },
+      {
+         "image": "/img/vehicles/ranger_raptor.png",
+         "title": "Ranger Raptor",
+         "text": "Que venga lo imposible.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/ranger_raptor",
+         "category": "pick-up"
+      },
+      {
+         "image": "/img/vehicles/nueva_f150_lariat.png",
+         "title": "Nueva F-150 Lariat",
+         "text": "La primera Pick-Up con motorización híbrida.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nueva_f150_lariat",
+         "category": "pick-up"
+      },
+      {
+         "image": "/img/vehicles/nueva_f150_tremor.png",
+         "title": "Nueva F-150 Tremor",
+         "text": "Experiencia off-road en cada aventura.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nueva_f150_temor",
+         "category": "pick-up"
+      },
+      {
+         "image": "/img/vehicles/nueva_f150_raptor.png",
+         "title": "Nueva F-150 Raptor",
+         "text": "La máxima expresión off-road.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nueva_f150_raptor",
+         "category": "pick-up"
+      },
+      {
+         "image": "/img/vehicles/transit_van.png",
+         "title": "Transit Van",
+         "text": "Más seguridad y rendimiento, menos costos operativos.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/transit_van",
+         "category": "comerciales"
+      },
+      {
+         "image": "/img/vehicles/transit_chasis.png",
+         "title": "Transit Chasis",
+         "text": "Más robustez, versatilidad y durabilidad para tu negocio.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/transit_chasis",
+         "category": "comerciales"
+      },
+      {
+         "image": "/img/vehicles/transit_mini_bus.png",
+         "title": "Transit Minibus",
+         "text": "Transmisión automática, robustez, tecnología, conectividad y menores costos de operación.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/transit_minibus",
+         "category": "comerciales"
+      },
+      {
+         "image": "/img/vehicles/e_transit_van.png",
+         "title": "E-Transit Van",
+         "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/e_transit_van",
+         "category": "comerciales"
+      },
+      {
+         "image": "/img/vehicles/nuevo_mustang_gt.png",
+         "title": "Nuevo Mustang GT",
+         "text": "Potencia, torque, tecnología y conectividad como nunca antes habías visto.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nuevo_mustang_gt",
+         "category": "mustang"
+      },
+      {
+         "image": "/img/vehicles/mustang_mach_e.png",
+         "title": "Mustang Mach-E",
+         "text": "El único eléctrico que es un Mustang.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/mustang_mach_e",
+         "category": "mustang"
+      },
+      {
+         "image": "/img/vehicles/nueva_everest.png",
+         "title": "Nueva everest",
+         "text": "Ford Everest está llegando a Argentina.",
+         "ctaPrimaryText": "Más información",
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehicles/nueva_everest",
+         "category": "futuros"
+      }
+    ]
+ }
