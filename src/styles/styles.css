@@ -58,6 +58,10 @@ body {
     color: var(--color-neutral-500);
 }
 
+.text-color-neutral-600 {
+    color: var(--color-neutral-600);
+}
+
 .text-color-dark {
     color: var(--color-dark);
 }

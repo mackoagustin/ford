@@ -2,10 +2,12 @@
     "banners": [
       {
         "image": "/img/banners/sucursales.png",
-        "title": "Nuestras",
-        "subtitle": "Sucursales",
-        "ctaText": "Contactanos",
-        "ctaLink": "/sucursales"
+        "title": "Ford",
+        "subtitle": "posventa",
+        "ctaText": "Conocer nuestros talleres",
+        "ctaLink": "/sucursales",
+        "ctaTextSecond": "Solicitar turno",
+        "ctaLinkSecond": "/asas"
       },
       {
         "image": "/img/banners/sucursales_dos_autos.png",

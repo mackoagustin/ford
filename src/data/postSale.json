@@ -1,0 +1,68 @@
+{
+    "postsale": [
+        {
+            "image": "./img/postsale/mantenimiento.png",
+            "title": "Servicios de mantenimiento",
+            "text": "Contamos con 5 sucursales de las cuales 3 de ellas prestan servicio de posventa oficial para atender las necesidades de tu Ford. Disfrutá la mejor atención y mantenelo siempre en óptimas condiciones.",
+            "ctaText": "Reservar por WhatsApp",
+            "ctaLinkWs": ""
+        },
+        {
+            "image": "/img/postsale/camioneta_azul.png",
+            "title": "Service Express",
+            "text": "Porque tu tiempo es valioso para nosotros, en Auto Special Ford tenemos para ofrecerte un servicio para que en 2 horas tu Ford esté listo.",
+            "ctaText": "Reservar por WhatsApp",
+            "ctaLinkWs": ""
+        },
+        {
+            "image": "/img/postsale/recalls.png",
+            "title": "Campañas de servicio y recalls",
+            "text": "Ford está comprometido a fabricar vehículos confiables y con la más alta calidad honrando la fidelidad de nuestros clientes. Ahora podrás consultar también en nuestro sitio web si tu vehículo está involucrado en una Campaña Preventiva de Seguridad.",
+            "ctaText": "Conoce más",
+            "ctaLinkWs": "https://www.ford.com.ar/support/recalls/"
+        },
+        {
+            "image": "/img/postsale/iolm.png",
+            "title": "Servicio de Mantenimiento Inteligente (IOLM)",
+            "text": "Es el sistema inteligente que mide la salud del aceite de tu vehículo. Es un motor basado en algoritmos diseñado por un software que utiliza datos reales del motor y las condiciones de funcionamiento del vehículo, además de hábitos de conducción, para calcular con precisión cuándo necesita un cambio de aceite.",
+            "ctaText": "Consultar por WhatsApp",
+            "ctaLinkWs": ""
+        },
+        {
+            "image": "/img/postsale/reparaciones.png",
+            "title": "Reparaciones y diagnósticos",
+            "text": "Es el sistema inteligente que mide la salud del aceite de tu vehículo.Es un motor basado en algoritmos diseñado por un software que utiliza datos reales del motor y las condiciones de funcionamiento del vehículo, además de hábitos de conducción, para calcular con precisión cuándo necesita un cambio de aceite.",
+            "ctaText": "Consultar por WhatsApp",
+            "ctaLinkWs": ""
+        },
+        {
+            "image": "/img/postsale/pickup.png",
+            "title": "Pickup y delivery",
+            "text": "Servicio Pickup&nbsp; Delivery consiste en el retiro y entrega de tu vehículo, en tu casa u oficina, cuando tengas que agendar un servicio para tu Ford. \n ¡Contá con Auto Special Ford para optimizar tu tiempo a través de Pickup y delivery!",
+            "ctaText": "Consultar por WhatsApp",
+            "ctaLinkWs": ""
+        },
+        {
+            "image": "/img/postsale/chapa.png",
+            "title": "Chapa y pintura",
+            "text": "Nuestro equipo utiliza técnicas avanzadas y materiales de primera calidad para garantizar los mejores resultados, nos aseguramos que tu vehículo recupere su aspecto y brillo original.",
+            "ctaText": "Conocer nuestros talleres",
+            "ctaLinkWs": "/postventa/talleres"
+        },
+        {
+            "image": "/img/postsale/respuestos.png",
+            "title": "Respuestos",
+            "text": "Encontrá todos los repuestos que buscás en un solo lugar. Contamos además con 3 talleres de posventa en Capital Federal y Provincia de Buenos Aires, si lo deseas podemos además colocarlo en tu unidad.",
+            "ctaText": "Consultar por WhatsApp",
+            "ctaLinkWs": ""
+        },
+        {
+            "image": "/img/postsale/accesorios.png",
+            "title": "Accesorios",
+            "text": "Conseguí en AutoSpecial Ford los mejores accesorios para tu vehículo Ford.",
+            "ctaText": "Conoce más",
+            "ctaLinkWs": "/postventa/accesorios"
+        }
+        
+    ]
+}
