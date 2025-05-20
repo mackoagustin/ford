@@ -6,7 +6,7 @@ import useIsMobile from '../../hook/useIsMobile';
 import PostSaleSlider from '../../components/PostSaleSlider/PostSaleSlider';
 import FordWarranty from '../../components/FordWarranty/FordWarranty';
 
-import style from  './Services.module.css'
+import style from  './services.module.css'
 
 
 function Home() {
