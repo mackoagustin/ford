@@ -12,6 +12,7 @@ import { Pagination } from "swiper/modules";
 const PostSaleSlider = () => {
   const isMobile = useIsMobile();
   const posts = postData.postsale;
+  
   if (isMobile) {
     return (
       <Swiper
