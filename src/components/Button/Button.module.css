@@ -59,4 +59,15 @@
     color: var(--color-primary);
     border: 1px solid  var(--color-primary);
   }
+
+    /* quarter */
+   .quarter {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+  }
+
+  .quarter:hover {
+     background-color: var(--color-secondary);
+    color: var(--color-white);   
+  }
   

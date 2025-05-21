@@ -23,9 +23,6 @@
   gap: 8px;
 }
 
-.text {
-    color: var();
-}
 
 .buttonWrapper {
     display: flex;
@@ -35,17 +32,11 @@
 
 @media (min-width: 768px) {
   .card {
-    max-width: 373px;
-    max-height: 508px;
-    height: 508px;
+    width: 376px;
+    max-height: 488px;
     display: flex;       
     flex-direction: column;      
-    align-content: center;
     padding-bottom: 12px;
-  }
-
-  .locationName, .address {
-    text-align: center;
   }
 
   .info {
@@ -57,9 +48,11 @@
   
 
   .buttonWrapper {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
   }
   
 }

@@ -11,10 +11,14 @@ import { Pagination } from "swiper/modules";
 const VehicleCarCardSlider = ({ category }) => {
   const isMobile = useIsMobile();
 
-  
   const filteredVehicles = vehicleData.vehicles.filter(
     (item) => item.category === category
   );
+
+  const flexContainerClass =
+    filteredVehicles.length <= 2
+      ? styles.flexStart
+      : styles.spaceBetween;
 
   if (isMobile) {
     return (
@@ -35,7 +39,13 @@ const VehicleCarCardSlider = ({ category }) => {
     );
   }
 
-  return null; // o algo si quieres mostrarlo en desktop más adelante
+  return (
+    <div className={`${styles.flex} ${flexContainerClass}`}>
+      {filteredVehicles.map((item) => (
+        <VehicleCardCard key={item.id} item={item} />
+      ))}
+    </div>
+  );
 };
 
 export default VehicleCarCardSlider;

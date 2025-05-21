@@ -29,7 +29,7 @@ const VehiclesCard = ( { item }) => {
             href={location.google_maps_link}
             target="_blank"
             rel="noopener noreferrer"
-            variant="secondary"
+            variant="quarter"
           >
             {item.ctaSecondaryText}
             <svg
