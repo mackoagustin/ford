@@ -22,7 +22,8 @@
 .contentWrapper {
     padding-left: 0;
     padding-right: 0;
-  }
+}
+
   
   @media (min-width: 1024px) {
     .contentWrapper {
@@ -54,8 +55,5 @@
         padding-top: 24px;
     }
 
-    .wraperForm {
-        padding-top: 42px;
-    }
   }
   
