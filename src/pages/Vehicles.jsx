@@ -3,6 +3,7 @@ import VehicleCarCardSlider from '../components/VehicleCarCardSlider/VehicleCarC
 import styles from './Vehicles.module.css'
 //import useIsMobile from '../hook/useIsMobile';
 import BannerEmpty from '../components/BannerEmpty/BannerEmpty';
+import BannerCard from '../components/BannerCard/BannerCard';
 import bannerData from "../data/banners.json";
 
 const Vehicles = () => {
@@ -39,6 +40,8 @@ const Vehicles = () => {
         </div>
         
       </div>
+
+      <BannerCard />
     </div>
     
   );
