@@ -34,7 +34,9 @@ function Navbar() {
         
         {/* Logo a la derecha */}
         <div className={styles.logo}>
-          <img src="/img/logo/logo.png" alt="Logo" />
+          <Link to="/" onClick={closeMenu}> 
+            <img src="/img/logo/logo.png" alt="Logo" />
+          </Link>
         </div>
 
      
