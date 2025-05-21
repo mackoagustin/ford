@@ -11,25 +11,32 @@ const FordProSlider = () => {
     const isMobile = useIsMobile();
     const data = fordProtData.fordPro;
 
-    if (!isMobile) {
-        return <div className={styles.desktopContainer}>Versión de escritorio próximamente.</div>;
+    if (isMobile) {
+        return (
+            <Swiper
+                modules={[Pagination]}
+                spaceBetween={16}
+                slidesPerView={1.2}
+                loop={true}
+                pagination={{ clickable: true }}         
+            >
+                {data.map((item, index) => (
+                    <SwiperSlide key={index}>
+                        <FordProCard data={item} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
+        );
     }
 
     return (
-        <Swiper
-            modules={[Pagination]}
-            spaceBetween={16}
-            slidesPerView={1.2}
-            loop={true}
-            pagination={{ clickable: true }}         
-        >
+        <div className={styles.desktopContainer}>
             {data.map((item, index) => (
-                <SwiperSlide key={index}>
-                    <FordProCard data={item} />
-                </SwiperSlide>
+                <FordProCard key={index} data={item} />
             ))}
-        </Swiper>
+        </div>
     );
 };
+
 
 export default FordProSlider;

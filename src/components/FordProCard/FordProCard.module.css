@@ -41,42 +41,34 @@ h4, p {
 }
 
 @media (min-width: 1024px) {
-    .card {
-        width: 100%;
-        max-height: 550px;
-        max-width: 373px ;
-        overflow: hidden;
+     .wraperCard {
         display: flex;
-        flex-direction: column;
-        padding-bottom: 40px;
+        flex-direction: row;
+        gap: 24px;
+        width: 280px;
     }
 
     .info {
+        margin-top: 0px;
+        padding-top: 0px;
         height: 346px;
         padding-bottom: 30px;
     }
     .image {
-    height: 180px;
-    width: auto;
-    border-radius: 16px 16px 0px 0px;
+        height: 279px;
+        width: 473px;
+        border-radius: 16px 16px 0px 0px;
     }
     .wraperTitle {
-        text-align: center;
-    width: 342px;
-    padding: 16px 16px 0px 16px;
+        text-align: left;
+        width: 474px;
+        padding: 0px 0px 24px 0px;
     }
     
     .wraperText {
-        text-align: center;
-        width: 342px;
-        padding: 8px 16px 0px 16px;
+        text-align: left;
+        width: 474px;
+        padding: 8px 0px 0px 0px;
         margin-top: 0px;
-    }
-
-    .buttonWrapper {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    padding-left: 16px;
     }
 }

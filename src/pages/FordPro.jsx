@@ -9,11 +9,12 @@ function FordPro() {
 
   const isMobile = useIsMobile ();
   return (
-    <div className={style.wraperBody}>
+    <div >
       <BannerFordPro />
+      <div className={style.wraperBody}>
+        
 
       <div className={style.contentWrapper}>
-         {/* Texto de introducción */}
           {isMobile ? (
             <div className={`${style["pt-60"]} ${style["px-16"]}`}>
               <h3 className="H3">
@@ -37,7 +38,6 @@ function FordPro() {
       </div>
 
       <div className={style.contentWrapper}>
-         {/* Texto de introducción */}
           {isMobile ? (
             <div className={`${style["pt-60"]} ${style["px-16"]}`}>
               <h3 className="H3">
@@ -67,6 +67,8 @@ function FordPro() {
       <div  className={`${style["pt-42"]} ${style["px-16"]}`}>
         <FordProSlider />
       </div>
+      </div>
+      
         
     </div>
   )
