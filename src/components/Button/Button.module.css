@@ -36,6 +36,18 @@
     background-color: var(--color-primary);
   }
 
+  .primary100 {
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+  
+  }
+  
+  .primary100:hover {
+    width: 100%;
+    background-color: var(--color-primary);
+  }
+
     /* SECONDARY BUTTON */
 
   .secondary {

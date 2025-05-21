@@ -14,17 +14,17 @@ const BannerDoubleButton = ({data}) => {
 
     return (
            <div className={styles.banner}>
-      <img src={data.image} alt="Banner" className={styles.backgroundImage} />
+              <img src={data.image} alt="Banner" className={styles.backgroundImage} />
 
-      <div className={styles.overlay} />
+              <div className={styles.overlay} />
 
-      <div className={styles.content}>
-        <div className={styles.textGroup}>
-          <h1 className={`${styles.title} display4`}>
-            {data.title}
-            <br />
-            <span className={styles["title-blue"]}>{data.subtitle}</span>
-          </h1>
+              <div className={styles.content}>
+                <div className={styles.textGroup}>
+                  <h1 className={`${styles.title} display4`}>
+                    {data.title}
+                    <br />
+                    <span className={styles["title-blue"]}>{data.subtitle}</span>
+                  </h1>
 
           {isMobile ? (
             <>

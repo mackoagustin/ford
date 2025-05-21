@@ -1,0 +1,30 @@
+{
+    "fordPro" : [
+        {
+        "image": "/img/fordpro/sucursales.png",
+        "title": "Vehículos inteligentes",
+        "text": "La oferta de vehículos de Ford Pro atiende las necesidades del propietario de una pequeña empresa hasta las de una flota corporativa.<br>La cartera de vehículos comerciales de Ford fue diseñada para adaptarse a diferentes tipos de uso y clientes. Atiende desde transporte de carga hasta transporte de pasajeros, desde pequeños emprendedores hasta grandes flotistas."
+
+        },
+        {
+        "image": "/img/fordpro/inteligente.png",
+        "title": "Servicios",
+        "text": "Ford posee una amplia red de concesionarios con más de 106 puntos de servicio distribuidos en todo el país.<br>Desde Posventa nos acercamos a nuestros Clientes con 107 Puntos de Servicio Ford, Servicio Móvil y Quick Lane con mano de obra especializada y altamente entrenada. También ofrecemos las experiencias más convenientes para reserva online de turnos, Pick up & Delivery, Ford Assistance y Fordi para brindar toda la información de producto y servicio. <br>Completamos nuestra propuesta con precios competitivos y con beneficios progresivos para acompañarte durante toda la experiencia con Posventa. ¡Con vos todo el camino!"
+        },
+        {
+        "image": "/img/fordpro/financiacion.png",
+        "title": "Financiación",
+        "text": "El ecosistema de Ford Pro incluye soluciones exclusivas de financiamiento que acompañan el recorrido del cliente comercial.<br> Ford Pro ofrece, a través de distintas alternativas, la mejor financiación ya sean pequeños empresarios, grandes propietarios de flotas o de gobierno."
+        },
+        {
+        "image": "/img/fordpro/electrificacion.png",
+        "title": "Electrificación",
+        "text": "Ford Pro tiene un catálogo innovador y conectado, buscando la reducción del consumo, emisiones y costo total operativo. <br>El mundo está experimentando una transformación hacia la electrificación y la conectividad. En Ford contamos con un portfolio innovador y conectado, con tecnologías avanzadas con el propósito de reducir significativamente el consumo, las emisiones y el costo total de operación. E-Transit, 100% eléctrico, es un icono de marca global, líder de ventas en EE. UU. y un éxito en Europa."
+        },
+        {
+        "image": "/img/fordpro/conectividad.png",
+        "title": "Conectividad",
+        "text": "La conectividad de fábrica está 100% integrada a la arquitectura del vehículo.<br> El principal diferencial que nos trae la conectividad es que está integrada a la arquitectura del vehículo. Esto nos permite conocer remotamente la salud del mismo, anticiparnos a anomalías, minimizar el riesgo de paradas imprevistas y agilizar el servicio en nuestros concesionarios. A través del portal FordPass Pro el administrador de la flota tendrá el control de las unidades, podrá monitorear, conocer el uso, consumo de combustible, estatus y salud de su flota.<br>Esta funcionalidad sólo está disponible para Ranger."
+        }
+    ]
+}
