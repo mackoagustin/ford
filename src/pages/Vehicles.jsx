@@ -1,18 +1,17 @@
 import React from 'react';
 import VehicleCarCardSlider from '../components/VehicleCarCardSlider/VehicleCarCardSlider';
 import styles from './Vehicles.module.css'
-import useIsMobile from '../hook/useIsMobile';
-import Banner from '../components/Banner/Banner';
+//import useIsMobile from '../hook/useIsMobile';
+import BannerEmpty from '../components/BannerEmpty/BannerEmpty';
 import bannerData from "../data/banners.json";
 
 const Vehicles = () => {
-  const isMobile =  useIsMobile();
-  const selectedBAnner = bannerData.banners[1]
+  //const isMobile =  useIsMobile();
+  const selectedBAnner = bannerData.banners[2]
 
   return (
     <div>
-      <Banner data={selectedBAnner} />
-
+      <BannerEmpty data={selectedBAnner} />
       <div className= {styles.px16}>
         <div className= {styles.wraperSection}>
            <h2 className='H2'>SUV’s</h2>

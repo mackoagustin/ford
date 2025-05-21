@@ -1,7 +1,6 @@
 // src/components/Banner/Banner.jsx
 import React from "react";
-import styles from "./Banner.module.css"; 
-import Button from "../Button/Button"; 
+import styles from "./BannerEmpty.module.css"; 
 
 const Banner = ({ data }) => {
   if (!data) {
@@ -19,15 +18,8 @@ const Banner = ({ data }) => {
           <h1 className={`${styles.title} display4`}>
             {data.title}
             <br />
-            <span className={styles["title-blue"]}>{data.subtitle}</span>
+            <span className={`${styles["title-blue"]} H4`}>{data.subtitle}</span>
           </h1>
-            <Button
-              as="a"
-              href={data.ctaLink}
-              variant="primary"
-            >
-              {data.ctaText}
-            </Button>
         </div>
       </div>
     </div>

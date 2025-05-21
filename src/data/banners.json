@@ -16,6 +16,14 @@
         "ctaText": "Contactanos",
         "ctaLink": "/sucursales"
       }
+      ,
+      {
+        "image": "/img/banners/vehicles.png",
+        "title": "Vehículos",
+        "subtitle": "Encontrá el ford para vos",
+        "ctaText": "",
+        "ctaLink": ""
+      }
     ]
   }
   
