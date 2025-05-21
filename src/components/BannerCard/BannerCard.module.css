@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     width: 328px;
     height: 332px;
     background-image: url('/img/banners/display.png');
@@ -51,10 +51,10 @@
     border-radius: 16px;
     }
     .info {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+        margin: 0 auto;
  
     }
     .blueText {
@@ -64,7 +64,7 @@
         font-size: 46px;
         line-height: 48px;
         letter-spacing: -1,74%;
-        font-weight: 4s00;
+        font-weight: 400;
     }
     .wraperText {
          width: 864px;

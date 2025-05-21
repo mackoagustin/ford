@@ -4,6 +4,7 @@ import styles from './Vehicles.module.css'
 //import useIsMobile from '../hook/useIsMobile';
 import BannerEmpty from '../components/BannerEmpty/BannerEmpty';
 import BannerCard from '../components/BannerCard/BannerCard';
+import BannerMl from '../components/BannerML/BannerML'
 import bannerData from "../data/banners.json";
 
 const Vehicles = () => {
@@ -40,8 +41,14 @@ const Vehicles = () => {
         </div>
         
       </div>
+      <div className={styles.wraperDisplay}> 
+        <BannerCard />
+      </div>
 
-      <BannerCard />
+      <div className={styles.wraperDisplay}>
+        <BannerMl />
+      </div>
+      
     </div>
     
   );

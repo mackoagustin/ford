@@ -3,6 +3,10 @@
     padding-right: 16px;
 }
 
+.wraperDisplay {
+    padding-top: 60px;
+}
+
 
 @media (min-width: 1024px) {
 
@@ -18,5 +22,9 @@
 
     .wraperSection {
         padding-top: 42px;
+    }
+
+    .wraperDisplay {
+        padding-top: 80px ;
     }
 }
