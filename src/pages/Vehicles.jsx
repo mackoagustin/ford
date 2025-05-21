@@ -12,21 +12,33 @@ const Vehicles = () => {
   return (
     <div>
       <Banner data={selectedBAnner} />
+
       <div className= {styles.px16}>
-        <h2>Vehículos SUV</h2>
-        <VehicleCarCardSlider category="suv" />
+        <div className= {styles.wraperSection}>
+           <h2 className='H2'>SUV’s</h2>
+          <VehicleCarCardSlider category="suv" />
+        </div>
+       
+        <div className= {styles.wraperSection}>
+          <h2 className='H2'>Pick-Ups</h2>
+          <VehicleCarCardSlider category="pick-up" />
+        </div>
+        
+        <div className= {styles.wraperSection}>
+          <h2 className='H2'>Vehículos Comerciales</h2>
+          <VehicleCarCardSlider category="comerciales" />
+        </div>
 
-        <h2>Vehículos Sedán</h2>
-        <VehicleCarCardSlider category="pick-up" />
-
-        <h2>Vehículos Comerciales</h2>
-        <VehicleCarCardSlider category="comerciales" />
-
-        <h2>Mustang</h2>
-        <VehicleCarCardSlider category="mustang" />
-
-        <h2>Futuros</h2>
-        <VehicleCarCardSlider category="futuros" />
+        <div className= {styles.wraperSection}>
+           <h2 className='H2'>Mustang</h2>
+          <VehicleCarCardSlider category="mustang" />
+        </div>
+     
+        <div className= {styles.wraperSection}>
+          <h2 className='H2'>Futuros</h2>
+          <VehicleCarCardSlider category="futuros" />
+        </div>
+        
       </div>
     </div>
     

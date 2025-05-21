@@ -1,8 +1,10 @@
 /* LocationCard.module.css */
 .card {
   width: 100%;
+  width: 305px;
   max-width: 305px;
-  max-height: 392px;
+  height: 444px;
+  max-width: 444px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -11,11 +13,12 @@
 }
 
 .image {
-  width: 305px;
   height: 180px;
+  width: auto;
 }
 
 .info {
+  height: 130px;
   padding-top: 16px;
   padding-bottom: 16px;
   display: flex;
@@ -32,8 +35,8 @@
 
 @media (min-width: 768px) {
   .card {
-    width: 376px;
-    max-height: 488px;
+    width: 373px;
+    max-height: 438px;
     display: flex;       
     flex-direction: column;      
     padding-bottom: 12px;
