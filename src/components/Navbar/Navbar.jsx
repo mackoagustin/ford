@@ -199,8 +199,18 @@ function Navbar() {
                     </button>
                     {openSubmenu === 'financiacion' && (
                       <ul className={styles.submenu}>
-                        <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>Ford Credit</Link></li>
-                        <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>Plan Ovalo</Link></li>
+                        <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
+                            <div className={styles.wraperFinance}>
+                              <img src="/img/logo/ford_credit.png" alt="" />
+                              Hasta 60%
+                            </div>
+                            </Link></li>
+                        <li><Link to="/financiacion/plan-ovalo.png" onClick={closeMenu}>
+                             <div className={styles.wraperFinance}>
+                                <img src="/img/logo/plan_ovalo.png" alt="" />
+                                Desde 70% a 100%
+                            </div>
+                        </Link></li>
                       </ul>
                     )}
                   </li>
