@@ -20,6 +20,21 @@
 }
 
 .wraperSwiper {
-  padding: 16px;
+
   margin-top: 24px;
+}
+
+@media (min-width: 768px)  {
+
+  .flex {
+    justify-content:space-between;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
+  .flex {
+    justify-content:flex-start;
+  }
 }

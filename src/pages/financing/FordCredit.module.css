@@ -2,15 +2,24 @@
     padding-left: 16px;
     padding-right: 16px;
 }
-
+.wraper {
+    background-color: var( --color-neutral-100);
+    padding: 60px 16px 60px 16px;
+}
 .wraperDisplay {
     padding-top: 60px;
 }
 
+@media (min-width: 768px) {
+    h2 {
+        padding-bottom: 24px;
+    }
+}
 @media (min-width: 1024px) {
 
     h2 {
         padding-bottom: 24px;
+        margin-left: 0;
     }
   .px16 {
         padding-left: 16px;
@@ -21,9 +30,47 @@
 
     .wraperSection {
         padding-top: 42px;
+        justify-content: center;
     }
 
     .wraperDisplay {
         padding-top: 80px ;
     }
+
+    .wraper {
+        background-color: var( --color-neutral-100);
+        padding: 42px 32px;
+        max-width: 1168px;
+        margin: 0 auto;
+    }
 }
+
+/* Estilos para tablet y desktop (a partir de 768px) */
+@media (min-width: 768px) {
+    .px16 {
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 1170px; /* Ancho máximo del contenido principal */
+        margin: 0 auto; /* Centra el contenido principal */
+    }
+
+    .wraperSection {
+        padding-top: 42px;
+    }
+
+    .wraperDisplay {
+        padding-top: 80px ;
+    }
+
+    .sliderWrapper {
+        max-width: 1170px;
+        margin: 24px auto 0 auto;
+        padding: 0 16px;
+    }
+}
+
+/* Eliminados estilos para .formSectionWrapper */
+/* Eliminados estilos de utilidad .mb0 y .mt8 específicos para el formulario si no se usan en otra parte */
+
+/* Eliminados estilos para mobile para el wrapper del formulario */
+/* Eliminados estilos de utilidad .mb0 y .mt8 específicos para el formulario en mobile */

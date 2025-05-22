@@ -15,7 +15,7 @@ const FordCreditCarCardSlider = () => {
     return (
       <Swiper
         modules={[Pagination]}
-        spaceBetween={60}
+        spaceBetween={70}
         slidesPerView={1.2}
         loop={true}
         pagination={{ clickable: true }}
