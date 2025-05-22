@@ -10,13 +10,60 @@
     padding-top: 60px;
 }
 
+.wraperLegal {
+    display: flex;
+    display: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 60px;
+}
+
+.legalText {
+    width: 196px;
+}
+
+.legalButton {
+    display: flex;
+    width: 164px;
+    justify-content: flex-end;
+}
+
+
 @media (min-width: 768px) {
+
     h2 {
         padding-bottom: 24px;
     }
-}
-@media (min-width: 1024px) {
+    .legalText {
+        width: auto;
+    }
+    .px16 {
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
 
+    .wraperSection {
+        padding-top: 42px;
+    }
+
+    .wraperDisplay {
+        padding-top: 80px ;
+    }
+
+    .sliderWrapper {
+        max-width: 1170px;
+        margin: 24px auto 0 auto;
+        padding: 0 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wraperLegal {
+        justify-content:center;
+    }
     h2 {
         padding-bottom: 24px;
         margin-left: 0;
@@ -46,31 +93,3 @@
 }
 
 /* Estilos para tablet y desktop (a partir de 768px) */
-@media (min-width: 768px) {
-    .px16 {
-        padding-left: 16px;
-        padding-right: 16px;
-        max-width: 1170px; /* Ancho máximo del contenido principal */
-        margin: 0 auto; /* Centra el contenido principal */
-    }
-
-    .wraperSection {
-        padding-top: 42px;
-    }
-
-    .wraperDisplay {
-        padding-top: 80px ;
-    }
-
-    .sliderWrapper {
-        max-width: 1170px;
-        margin: 24px auto 0 auto;
-        padding: 0 16px;
-    }
-}
-
-/* Eliminados estilos para .formSectionWrapper */
-/* Eliminados estilos de utilidad .mb0 y .mt8 específicos para el formulario si no se usan en otra parte */
-
-/* Eliminados estilos para mobile para el wrapper del formulario */
-/* Eliminados estilos de utilidad .mb0 y .mt8 específicos para el formulario en mobile */

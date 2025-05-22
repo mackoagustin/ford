@@ -5,6 +5,7 @@ import styles from "./FordCredit.module.css";
 import FordCreditCarCardSlider from '../../components/FordCreditCardCardSlider/FordCreditCarCardSlider';
 import Form from '../../components/Form/Form';
 import useIsMobile from '../../hook/useIsMobile';
+import Button from '../../components/Button/Button';
 
 function FordCredit() {
   const isMobile = useIsMobile();
@@ -22,6 +23,42 @@ function FordCredit() {
       </div>
       <div className={styles.sliderWrapper}>
         <FordCreditCarCardSlider />
+
+       
+      </div>
+
+      <div className= {`${styles.px16} ${styles.wraperLegal}`}>
+        <div className={styles.legalText}>
+          <p className="body-1-16">*Los precios pueden sufrir modificaciones sin previo aviso. Imágenes no contractuales. </p>
+        </div>
+        <div className={styles.legalButton}>
+        <Button
+            as="a"
+            href="https://www.autospecial.com.ar/legalesplanes"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="quarter"
+        >
+          Legales
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            strokeWidth={2.4}
+            stroke="currentColor"
+            fill="none"
+            className={styles["button-icon"]}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M8.25 4.5L15.75 12 8.25 19.5"
+            />
+          </svg>
+        </Button>
+        </div>
+       
       </div>
 
       {isMobile ? (
