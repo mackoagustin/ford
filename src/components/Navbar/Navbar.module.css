@@ -88,22 +88,42 @@ li {
   position: absolute;
   top: 2.5rem;
   left: 0;
-  background: white;
-  border: 1px solid #ddd;
+  background: #F7F6F6;
+  border-radius: 0px 0px 8px 8px;
   display: flex;
   flex-direction: column;
   z-index: 1000;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  width: max-content;
+  min-width: 150px;
 }
 
 .desktop .submenu.submenuOpen {
-  animation: slideDownSubmenu 0.4s ease-out forwards;
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.5rem 0;
+  pointer-events: auto;
+  overflow: visible;
 }
 
 .desktop .submenu li {
   padding: 0.5rem 1rem;
+  color: var(--color-primary);
+  width: auto;
+  display: flex;
+  align-items: center;
+}
+
+.desktop .submenu li a {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
   color: var(--color-primary);
 }
 
@@ -119,6 +139,10 @@ li {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+}
+
+.submenu > li {
+  width: auto !important;
 }
 
 .submenu.submenuOpen {
@@ -171,7 +195,7 @@ li {
 }
 
  .wraperLink {
-    border-top: 1px solid var(   --color-neutral-200);
+    border-top: 1px solid var(--color-neutral-200);
     color: var(--color-primary);
     width: 100%;
   }
@@ -261,7 +285,7 @@ li {
 .hasSubmenu.active > ul {
   background-color: var(--color-neutral-200);
   border-top: none;
-   padding: 12px 24px;
+  padding: 12px 24px;
 }
 
 
