@@ -197,22 +197,20 @@ function Navbar() {
                         </svg>
                       </div>
                     </button>
-                    {openSubmenu === 'financiacion' && (
-                      <ul className={styles.submenu}>
-                        <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
-                            <div className={styles.wraperFinance}>
-                              <img src="/img/logo/ford_credit.png" alt="" />
-                              Hasta 60%
-                            </div>
-                            </Link></li>
-                        <li><Link to="/financiacion/plan-ovalo.png" onClick={closeMenu}>
-                             <div className={styles.wraperFinance}>
-                                <img src="/img/logo/plan_ovalo.png" alt="" />
-                                Desde 70% a 100%
-                            </div>
-                        </Link></li>
-                      </ul>
-                    )}
+                    <ul className={`${styles.submenu} ${openSubmenu === 'financiacion' ? styles.submenuOpen : ''}`}>
+                      <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
+                          <div className={styles.wraperFinance}>
+                            <img src="/img/logo/ford_credit.png" alt="" />
+                            Hasta 60%
+                          </div>
+                          </Link></li>
+                      <li><Link to="/financiacion/plan-ovalo.png" onClick={closeMenu}>
+                           <div className={styles.wraperFinance}>
+                              <img src="/img/logo/plan_ovalo.png" alt="" />
+                              Desde 70% a 100%
+                          </div>
+                      </Link></li>
+                    </ul>
                   </li>
 
                   <div className={styles.wraperLink}>
@@ -223,7 +221,7 @@ function Navbar() {
                     onClick={() => toggleSubmenu('postventa')}
                     className={styles.wraperLink}
                   >
-                    <div className={styles.iconWrapper}> {/* Nuevo div contenedor */}
+                    <div className={styles.iconWrapper}>
                       Post venta
                      <svg
                           className="chevron-icon"
@@ -247,24 +245,22 @@ function Navbar() {
                         </svg>
                     </div>
                   </button>
-                  {openSubmenu === 'postventa' && (
-                    <ul className={styles.submenu}>
-                      <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
-                      <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>Solicitar turno</Link></li>
-                      <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
-                      <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
-                      <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
-                      <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li>
-                      <li><Link to="/postventa/ford-protect" onClick={closeMenu}>Ford Protect</Link></li>
-                    </ul>
-                  )}
+                  <ul className={`${styles.submenu} ${openSubmenu === 'postventa' ? styles.submenuOpen : ''}`}>
+                    <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
+                    <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>Solicitar turno</Link></li>
+                    <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
+                    <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
+                    <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
+                    <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li>
+                    <li><Link to="/postventa/ford-protect" onClick={closeMenu}>Ford Protect</Link></li>
+                  </ul>
                 </li>
             <li className={`${styles.hasSubmenu} ${openSubmenu === 'quienes' ? styles.active : ''}`}>
                 <button
                   onClick={() => toggleSubmenu('quienes')}
                   className={styles.wraperLink}
                 >
-                  <div className={styles.iconWrapper}> {/* Nuevo div contenedor */}
+                  <div className={styles.iconWrapper}>
                     Quiénes somos
                    <svg
                           className="chevron-icon"
@@ -288,13 +284,11 @@ function Navbar() {
                         </svg>
                   </div>
                 </button>
-                {openSubmenu === 'quienes' && (
-                  <ul className={styles.submenu}>
-                    <li><Link to="/quienes-somos/conocenos" onClick={closeMenu}>Conocenos</Link></li>
-                    <li><Link to="/quienes-somos/sumate" onClick={closeMenu}>Sumate al equipo</Link></li>
-                    <li><Link to="/quienes-somos/novedades" onClick={closeMenu}>Novedades</Link></li>
-                  </ul>
-                )}
+                <ul className={`${styles.submenu} ${openSubmenu === 'quienes' ? styles.submenuOpen : ''}`}>
+                  <li><Link to="/quienes-somos/conocenos" onClick={closeMenu}>Conocenos</Link></li>
+                  <li><Link to="/quienes-somos/sumate" onClick={closeMenu}>Sumate al equipo</Link></li>
+                  <li><Link to="/quienes-somos/novedades" onClick={closeMenu}>Novedades</Link></li>
+                </ul>
               </li>
                 <div className={styles.wraperLink}>
                   <li><Link to="/sucursales" onClick={closeMenu}>Sucursales</Link></li>

@@ -93,8 +93,14 @@ li {
   display: flex;
   flex-direction: column;
   z-index: 1000;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
 }
 
+.desktop .submenu.submenuOpen {
+  animation: slideDownSubmenu 0.4s ease-out forwards;
+}
 
 .desktop .submenu li {
   padding: 0.5rem 1rem;
@@ -110,6 +116,13 @@ li {
 
 .submenu {
   padding-left: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.submenu.submenuOpen {
+  animation: slideDownSubmenu 0.4s ease-out forwards;
 }
 
 .hasSubmenu > button {
@@ -178,7 +191,6 @@ li {
     display: flex;
   }
 
-
   .navbarContainer {
     justify-content: space-between;
  
@@ -238,12 +250,12 @@ li {
 
 .hasSubmenu.active {
   background-color: #2563eb;
-  color: white;
+  color: white !important;
    padding-bottom: 0px;
 }
 
 .hasSubmenu.active > button {
-  color: white;
+  color: white !important;
   font-weight: 500;
 }
 .hasSubmenu.active > ul {
@@ -251,6 +263,7 @@ li {
   border-top: none;
    padding: 12px 24px;
 }
+
 
 .iconWrapper {
   display: flex;
@@ -267,6 +280,28 @@ svg.chevron-icon.rotated {
   transform: rotate(180deg);
 }
 
+.hasSubmenu.active .iconWrapper {
+  color: white;
+}
 
+.hasSubmenu.active .iconWrapper svg {
+  stroke: white;
+}
 
+}
+
+/* Define la animación de keyframes */
+@keyframes slideDownSubmenu {
+  from {
+    max-height: 0;
+    opacity: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  to {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 }
