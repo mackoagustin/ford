@@ -70,7 +70,7 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehicles/nueva_ranger",
          "category": "pick-up",
-         "fordPro": false
+         "fordPro": true
       },
       {
          "image": "/img/vehicles/ranger_raptor.png",

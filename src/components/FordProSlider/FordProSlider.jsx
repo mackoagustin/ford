@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import fordProtData from '../../data/fordPro.json';
 import FordProCard from "../FordProCard/FordProCard";
 import useIsMobile from "../../hook/useIsMobile"; 
 import styles from "./FordProSlider.module.css"; // corregido
@@ -7,9 +6,8 @@ import "swiper/css";
 import "swiper/css/pagination"; 
 import { Pagination } from "swiper/modules";
 
-const FordProSlider = () => {
+const FordProSlider = ({ data }) => {
     const isMobile = useIsMobile();
-    const data = fordProtData.fordPro;
 
     if (isMobile) {
         return (
@@ -37,6 +35,5 @@ const FordProSlider = () => {
         </div>
     );
 };
-
 
 export default FordProSlider;

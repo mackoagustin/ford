@@ -3,6 +3,12 @@
     margin: 0 auto;
 }
 
+.sliderContainer {
+    max-width: 1164px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 .px-16 {
     padding-left: 16px;
     padding-right: 16px;
@@ -35,4 +41,26 @@
     .textCenter {
         text-align: center;
     }
+}
+
+.chipContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 24px;
+  max-width: 1164px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .chipContainer {
+    justify-content: center;
+    max-width: 1164px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }

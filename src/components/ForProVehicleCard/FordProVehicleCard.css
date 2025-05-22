@@ -1,0 +1,60 @@
+/* FordProVehicleCard.css */
+.card {
+  width: 100%;
+  width: 305px;
+  max-width: 305px;
+  height: 444px;
+  max-width: 444px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  gap: 24px;
+}
+
+.image {
+  height: 180px;
+  width: auto;
+}
+
+.info {
+  height: 130px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 373px;
+    max-height: 438px;
+    display: flex;       
+    flex-direction: column;      
+    padding-bottom: 12px;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+  
+
+  .buttonWrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    align-content: center !important;
+    justify-content: center !important;
+    margin: 0 auto;
+  }
+  
+}
