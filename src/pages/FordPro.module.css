@@ -30,7 +30,7 @@
     padding-right: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .contentWrapper {
         padding-left: 80px;
         padding-right: 80px;
@@ -41,26 +41,16 @@
     .textCenter {
         text-align: center;
     }
-}
 
-.chipContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: center;
-  margin-bottom: 24px;
-  max-width: 1164px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
-@media (min-width: 1200px) {
-  .chipContainer {
-    justify-content: center;
-    max-width: 1164px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
+    .chipContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: center;
+      margin-bottom: 24px;
+      max-width: 1164px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
 }

@@ -24,14 +24,28 @@
   margin-top: 24px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1199px) { /* Media query para Tablet */
   .flex {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablet */
+    gap: 24px; /* Ajustar gap para tablet */
+    margin-top: 24px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    justify-items: center; /* Centrar items si es necesario */
+  }
+}
+
+@media (min-width: 1200px) { /* Modificado de 769px - Media query para Desktop */
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
     gap: 32px;
     margin-top: 24px;
     padding-left: 0;
     padding-right: 0;
     box-sizing: border-box;
+    justify-items: center; /* Centrar items si es necesario */
   }
 } 

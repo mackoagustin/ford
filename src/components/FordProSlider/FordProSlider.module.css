@@ -4,7 +4,7 @@
     gap: 24px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 769px) {
     .desktopContainer {
         display: flex;
         flex-wrap: wrap;

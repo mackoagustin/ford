@@ -88,7 +88,7 @@ function FordPro() {
         </>
       ) : (
         <>
-          <div className={`${style["pt-42"]} ${style.chipContainer}`} style={{ paddingLeft: '200px' }}>
+          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.chipContainer}`}>
             {itemNames.map(name => (
               <Chip
                 key={name}
@@ -98,10 +98,10 @@ function FordPro() {
               />
             ))}
           </div>
-          <div className={`${style["pt-42"]} ${style.sliderContainer}`} style={{ paddingLeft: '200px' }}>
+          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer}`} >
             <FordProSlider data={displayedItems} />
           </div>
-          <div className={`${style["pt-42"]} ${style.sliderContainer}`} style={{ paddingLeft: '200px' }}>
+          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer}`} >
             <FordProVehicleSlider data={fordProVehicles} />
           </div>
         </>
