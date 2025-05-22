@@ -42,6 +42,48 @@ function Navbar() {
      
         {!isMobile ? (
          <ul className={`${styles.navLinks} ${styles.desktop}`}>
+            <li className={styles.hasSubmenu}>
+              <button onClick={() => toggleSubmenu('vehiculos')}>
+                <div className={`${styles.iconWrapper} ${styles.iconWrapperFirst}`}>
+                  Vehiculos
+                  <svg
+                    className="chevron-icon"
+                    style={{
+                      transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease-in-out'
+                    }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.4}
+                    stroke="currentColor"
+                    fill="none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.75 8.25L12 15.75 4.25 8.25"
+                    />
+                  </svg>
+                </div>
+
+              </button>
+              <ul className= {`${styles.submenu} ${openSubmenu === 'vehiculos' ? styles.submenuOpen : ''}`}>
+                <li><Link to="/vehiculos" onClick={closeMenu}>0km</Link></li>
+                  <li>
+                    <a
+                      href="https://listado.mercadolibre.com.ar/autospecial"
+                      onClick={closeMenu}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.submenuLink}
+                    >
+                      Usados
+                    </a>
+                  </li>
+              </ul>
+            </li>
             <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
 
             <li className={styles.hasSubmenu}>
@@ -179,9 +221,51 @@ function Navbar() {
                 <div className={styles.wraperLink}>
                   <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                 </div>
-                <div className={styles.wraperLink}>
-                  <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
-                </div>
+                <li className={`${styles.hasSubmenu} ${openSubmenu === 'vehiculos' ? styles.active : ''}`}>
+                    <button
+                      onClick={() => toggleSubmenu('vehiculos')}
+                      className={styles.wraperLink}
+                    >
+                      <div className={styles.iconWrapper}>
+                        Vehículos
+                        <svg
+                          className="chevron-icon"
+                          style={{
+                            transform: openSubmenu === 'vehiculos' ? 'rotate(180deg)' : 'rotate(0deg)',
+                            transition: 'transform 0.3s ease-in-out'
+                          }}
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          strokeWidth={2.4}
+                          stroke="currentColor"
+                          fill="none"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M19.75 8.25L12 15.75 4.25 8.25"
+                          />
+                        </svg>
+                      </div>
+                    </button>
+                    <ul className={`${styles.submenu} ${openSubmenu === 'vehiculos' ? styles.submenuOpen : ''}`}>
+                      <li><Link to="/vehiculos" onClick={closeMenu}>0km</Link></li>
+                      <li>
+                        <a
+                          href="https://listado.mercadolibre.com.ar/autospecial"
+                          onClick={closeMenu}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={styles.submenuLink}
+                        >
+                          Usados
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+
                  <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
                     <button
                       onClick={() => toggleSubmenu('financiacion')}
