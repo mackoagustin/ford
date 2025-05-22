@@ -1,0 +1,29 @@
+.px16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.wraperDisplay {
+    padding-top: 60px;
+}
+
+@media (min-width: 1024px) {
+
+    h2 {
+        padding-bottom: 24px;
+    }
+  .px16 {
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    .wraperSection {
+        padding-top: 42px;
+    }
+
+    .wraperDisplay {
+        padding-top: 80px ;
+    }
+}

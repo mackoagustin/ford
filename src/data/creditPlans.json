@@ -1,0 +1,59 @@
+{
+    "creditPlans" : [
+        {
+            "image" : "/img/credit/rangerXL_1.png",
+            "title" : "Ranger XL 4x2",
+            "subtitle" : "Cuotas desde $314.807 80% financiado en 120 cuotas",
+            "features" : [
+                "Cuotas fijas.",
+                "Bonificación en cuota y service del vehículo.",
+                "Beneficio en alícuota complementaria."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar"
+        },
+        {
+            "image" : "/img/credit/rangerXL_2.png",
+            "title" : "Ranger XL 4x2",
+            "subtitle" : "Cuotas desde $562.155 100% financiado en 84 cuotas",
+            "features" : [
+                "Adjudicación asegurada cuota nº5.",
+                "Retirá cualquier modelo disponible de Ranger, Maverick o Transit."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar"
+        },
+        {
+            "image" : "/img/credit/rangerXL_3.png",
+            "title" : "Ranger XLS V6 4WD",
+            "subtitle" : "Cuotas desde $427.641 80% financiado en 120 cuotas",
+            "features" : [
+                "Cuotas fijas.",
+                "Bonificación en cuota y service del vehículo.",
+                "Beneficio en alícuota complementaria."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar"
+        },
+        {
+            "image" : "/img/credit/maverick.png",
+            "title" : "Maverick XLT",
+            "subtitle" : "Cuotas desde $4.241.125 70% financiado en 84 cuotas",
+            "features" : [
+                "Cuotas fijas."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar"
+        },
+        {
+            "image" : "/img/credit/territory.png",
+            "title" : "Territory SEL",
+            "subtitle" : "Cuotas desde $389.924 70% financiado en 84 cuotas",
+            "features" : [
+                "Cuotas fijas."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar"
+        }
+    ]
+}

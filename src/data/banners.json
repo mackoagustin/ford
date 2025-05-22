@@ -22,6 +22,14 @@
         "subtitle": "Encontrá el ford para vos",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/ford_credit.png",
+        "title": "Ford",
+        "subtitle": " Credit",
+        "description": "El mejor financiamiento para tu Ford.",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }
