@@ -8,7 +8,6 @@ const FordProCard = ({ data }) => {
         return <div>No location data available</div>;
     }
 
-    /* Eliminada lógica condicional de mobile */
    return (
         <div className={style.wraperCard}>
             <img className={style.image} src={data.image} alt={data.title} />

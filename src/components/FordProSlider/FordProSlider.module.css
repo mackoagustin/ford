@@ -4,10 +4,12 @@
     gap: 24px;
 }
 
-@media (min-width: 769px) {
+
+@media (min-width: 1024px) {
     .desktopContainer {
         display: flex;
         flex-wrap: wrap;
         gap: 24px;
+        padding-left: 140px;
     }
 }

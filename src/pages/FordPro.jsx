@@ -101,7 +101,12 @@ function FordPro() {
           <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer}`} >
             <FordProSlider data={displayedItems} />
           </div>
+
+          
           <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer}`} >
+          <div className= {style.wraperSection}>
+            <h2 className='H2'>Vehículos <span className='text-color-secondary'>Ford Pro™</span> </h2>
+          </div>
             <FordProVehicleSlider data={fordProVehicles} />
           </div>
         </>

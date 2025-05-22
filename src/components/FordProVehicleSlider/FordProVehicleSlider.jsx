@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import VehicleCardCard from '../VehicleCarCard/VehicleCarCard';
+import FordProVehicleCard from '../ForProVehicleCard/FordProVehicleCard';
 import useIsMobile from "../../hook/useIsMobile";
 import styles from "./FordProVehicleSlider.module.css";
 import "swiper/css"; 
@@ -31,7 +31,7 @@ const FordProVehicleSlider = ({ data }) => {
       >
         {data.map((item) => (
           <SwiperSlide key={item.id}>
-            <VehicleCardCard item={item} />
+            <FordProVehicleCard item={item} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -41,7 +41,7 @@ const FordProVehicleSlider = ({ data }) => {
   return (
     <div className={`${styles.flex} ${flexContainerClass}`}>
       {data.map((item) => (
-        <VehicleCardCard key={item.id} item={item} />
+        <FordProVehicleCard key={item.id} item={item} />
       ))}
     </div>
   );

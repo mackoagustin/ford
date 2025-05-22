@@ -18,9 +18,7 @@
 }
 
 .info {
-  height: 130px;
   padding-top: 16px;
-  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -35,7 +33,7 @@
 @media (min-width: 768px) {
   .card {
     width: 373px;
-    max-height: 438px;
+    max-height: 414px;
     display: flex;       
     flex-direction: column;      
     padding-bottom: 12px;
@@ -44,7 +42,6 @@
   .info {
     display: flex;
     flex-direction: column;
-    height: 100%;
     text-align: center;
   }
   
