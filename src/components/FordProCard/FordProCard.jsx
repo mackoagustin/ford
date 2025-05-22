@@ -1,9 +1,9 @@
 // card
 import style from './FordProCard.module.css';
-import useIsMobile from "../../hook/useIsMobile"; 
+import useIsMobile from "../../hook/useIsMobile";
 
-const FordProCard = ( { data}) => {
-     const isMobile = useIsMobile();
+const FordProCard = ({ data }) => {
+    const isMobile = useIsMobile();
     if (!data) {
         return <div>No location data available</div>;
     }
@@ -17,7 +17,7 @@ const FordProCard = ( { data}) => {
                         <h4 className="H4">{data.title}</h4>
                     </div>
                     <div className={style.wraperText}>
-                        <p className="body-1-16 text-color-neutral-600" dangerouslySetInnerHTML={{ __html: data.text }}></p> {/* Changed item.text to data.text */}
+                        <p className="body-1-16 text-color-neutral-600" dangerouslySetInnerHTML={{ __html: data.text }}></p>
                     </div>
                 </div>
         </div>
@@ -40,7 +40,6 @@ const FordProCard = ( { data}) => {
             </div>
         </div>
     );
-   
 };
 
 export default FordProCard;

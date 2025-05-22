@@ -31,7 +31,7 @@ const VehicleCarCardSlider = ({ category }) => {
         className={styles.wraperSwiper}
       >
         {filteredVehicles.map((item) => (
-          <SwiperSlide key={item.title}>
+          <SwiperSlide key={item.id}>
             <VehicleCardCard item={item} />
           </SwiperSlide>
         ))}
