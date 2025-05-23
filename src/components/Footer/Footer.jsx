@@ -12,7 +12,8 @@ function Footer() {
   };
 
   return (
-    <footer className={styles.footer}>
+    <>
+      <footer className={styles.footer}>
       <div className={styles.footerContainer}>
         {isMobile ? (
           <div className={styles.mobileFooter}>
@@ -203,8 +204,8 @@ function Footer() {
           // Versión Desktop
           <div className={styles.desktopFooter}>
             <div className={styles.footerTop}>
-              <div className={styles.footerLogo}>
-                <img src="/img/logo/auto_special_col.png" alt="Logo" />
+              <div >
+                <img src="/img/logo/auto_special_col.png" alt="Logo" className={styles.footerLogo} />
               </div>
 
               <div className={styles.footerMenus}>
@@ -244,24 +245,16 @@ function Footer() {
                   {openSubmenu === 'financiacion' && (
                     <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                       <div className={styles.submenuContainer}>
-                        <Link to="/financiacion/ford-credit" className={styles.submenuItem}>
-                          <div className={styles.wraperFinance}>
-                            <img src="/img/logo/ford_credit.png" alt="" />
-                            Hasta 60%
-                          </div>
-                        </Link>
-                        <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>
-                          <div className={styles.wraperFinance}>
-                            <img src="/img/logo/plan_ovalo.png" alt="" />
-                            Desde 70% a 100%
-                          </div>
-                        </Link>
+                        <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit</Link>
+                        <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo</Link>
                       </div>
                     </div>
                   )}
                   <Link to="/ford-pro" className={styles.menuItem}>Ford Pro</Link>
-                  <div className={`${styles.menuItem} ${openSubmenu === 'postVenta' ? styles.activeMenuItem : ''}`}
-                    onClick={() => toggleSubmenu('postVenta')}
+
+                  <div 
+                    className={`${styles.menuItem} ${openSubmenu === 'postventa' ? styles.activeMenuItem : ''}`}
+                    onClick={() => toggleSubmenu('postventa')}
                   >
                     <span>Post Venta</span>
                     <button 
@@ -270,7 +263,7 @@ function Footer() {
                       <svg
                         className="chevron-icon"
                         style={{
-                          transform: openSubmenu === 'postVenta' ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transform: openSubmenu === 'postventa' ? 'rotate(180deg)' : 'rotate(0deg)',
                           transition: 'transform 0.3s ease-in-out'
                         }}
                         xmlns="http://www.w3.org/2000/svg"
@@ -289,10 +282,25 @@ function Footer() {
                       </svg>
                     </button>
                   </div>
-                  <div className={`${styles.menuItem} ${openSubmenu === 'quienesSomos' ? styles.activeMenuItem : ''}`}
+                  {openSubmenu === 'postventa' && (
+                    <div className={`${styles.submenu} ${styles.submenuOpen}`}>
+                      <div className={styles.submenuContainer}>
+                      <Link to="/postventa/talleres" className={styles.submenuItem}>Talleres</Link>
+                      <Link to="/postventa/solicitar-turno" className={styles.submenuItem}>Solicitar Turno</Link>
+                      <Link to="/postventa/servicios" className={styles.submenuItem}>Servicios</Link>
+                      <Link to="/postventa/repuestos" className={styles.submenuItem}>Repuestos</Link>
+                      <Link to="/postventa/accesorios" className={styles.submenuItem}>Accesorios</Link>
+                      <Link to="/postventa/preguntas-frecuentes" className={styles.submenuItem}>Preguntas frecuentes</Link>
+                      <Link to="/postventa/ford-protect" className={styles.submenuItem}>Ford Protect</Link>
+                      </div>
+                    </div>
+                  )}
+
+<div 
+                    className={`${styles.menuItem} ${openSubmenu === 'quienesSomos' ? styles.activeMenuItem : ''}`}
                     onClick={() => toggleSubmenu('quienesSomos')}
                   >
-                    <span>Quiénes somos</span>
+                    <span>Quienes Somos</span>
                     <button 
                       className={styles.toggleButton}
                     >
@@ -319,10 +327,19 @@ function Footer() {
                     </button>
                   </div>
                   {openSubmenu === 'quienesSomos' && (
-                    <div className={styles.submenu}>
-                      <Link to="/quienes-somos/quienes" className={styles.submenuItem}>¿Quiénes somos?</Link>
-                      <Link to="/quienes-somos/mision" className={styles.submenuItem}>Misión</Link>
-                      <Link to="/quienes-somos/vision" className={styles.submenuItem}>Visión</Link>
+                    <div className={`${styles.submenu} ${styles.submenuOpen}`}>
+                      <div className={styles.submenuContainer}>
+                      <Link to="/quienes-somos/conocenos" className={styles.submenuItem}>Conocenos</Link>
+                      <Link to="/quienes-somos/sumate" className={styles.submenuItem}>Sumate al equipo</Link>
+                      <a
+                        href="https://www.linkedin.com/company/autospecialford/?viewAsMember=true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.submenuItem}
+                      >
+                        Novedades
+                      </a>
+                      </div>
                     </div>
                   )}
                   <Link to="/sucursales" className={styles.menuItem}>Sucursales</Link>
@@ -340,53 +357,64 @@ function Footer() {
 
                 <div className={styles.socialColumn}>
                   <div className={styles.mercadoLibre}>
-                    <div className={styles.mlIcon}></div>
-                    <span>Tienda oficial de Mercado Libre</span>
+                  <img src="/img/logo/mercadolibre_2.png" alt="Logo Mercado libre"  className={styles.mlIcon}/>
+                    <span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span>
                   </div>
                   
                   <div className={styles.socialIcons}>
-                    <a href="#" className={styles.socialIcon}>
-                      <img src="/img/social/facebook.svg" alt="Facebook" />
+                    <a href="#" >
+                      <img src="/img/social/facebook.png" alt="Facebook" className={styles.socialIcon} />
                     </a>
-                    <a href="#" className={styles.socialIcon}>
-                      <img src="/img/social/instagram.svg" alt="Instagram" />
+                    <a href="#" >
+                      <img src="/img/social/instagram.png" alt="Instagram" className={styles.socialIcon} />
                     </a>
-                    <a href="#" className={styles.socialIcon}>
-                      <img src="/img/social/twitter.svg" alt="Twitter" />
+                    <a href="#" >
+                      <img src="/img/social/x.png" alt="X"  className={styles.socialIcon}/>
                     </a>
-                    <a href="#" className={styles.socialIcon}>
-                      <img src="/img/social/youtube.svg" alt="YouTube" />
+                    <a href="#" >
+                      <img src="/img/social/youtube.png" alt="YouTube"  className={styles.socialIcon}/>
                     </a>
-                    <a href="#" className={styles.socialIcon}>
-                      <img src="/img/social/linkedin.svg" alt="LinkedIn" />
+                    <a href="#">
+                      <img src="/img/social/linkedin.png" alt="LinkedIn"  className={styles.socialIcon} />
                     </a>
-                    <a href="#" className={styles.socialIcon}>
-                      <img src="/img/social/whatsapp.svg" alt="WhatsApp" />
+                    <a href="#" >
+                      <img src="/img/social/mail.png" alt="WhatsApp" className={styles.socialIcon} />
                     </a>
-                  </div>
 
-                  <div className={styles.paymentMethods}>
-                    <img src="/img/payment/visa.png" alt="Visa" />
-                    <img src="/img/payment/mastercard.png" alt="Mastercard" />
-                  </div>
+                    
+              </div>
+
+              
+              <div className={styles.fiscal}>
+                <img src="/img/logo/fiscal.png" alt="Data Fiscal" />
+                <img src="/img/logo/caece.png" alt="Cace" />
+              </div>
+
+              
                 </div>
               </div>
             </div>
 
-            <div className={styles.footerBottom}>
-              <div className={styles.copyright}>
-                Copyright © 2025 Auto Special S.A. Todos los derechos reservados.
-              </div>
-              <div className={styles.legalLinks}>
-                <Link to="/terminos-legales" className={styles.legalLink}>Términos legales</Link>
-                <span className={styles.separator}>•</span>
-                <Link to="/politicas-privacidad" className={styles.legalLink}>Políticas de privacidad</Link>
-              </div>
-            </div>
+          
           </div>
         )}
       </div>
     </footer>
+    <div className={styles.backFooter}>
+      <div className={styles.footerBottom}>
+        <p className='text-color-white body-1-14' >
+          Copyright © 2025 Auto Special S.A. Todos los derechos reservados.
+        </p>
+        <div className={styles.legalLinks}>
+          <Link to="/terminos-legales" className={styles.legalLink}>Términos legales</Link>
+          <span className={styles.separator}>•</span>
+          <Link to="/politicas-privacidad" className={styles.legalLink}>Políticas de privacidad</Link>
+        </div>
+      </div>
+    </div>
+   
+    </>
+  
   );
 }
 

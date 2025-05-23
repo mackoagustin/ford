@@ -88,6 +88,8 @@
       top: 50%;
       transform: translateY(-50%);    
       width: auto;
+      bottom: auto;
+      margin-left: 50px;
     }
   
     .title {
@@ -101,7 +103,7 @@
     }
 
     .title-blue {
-      color: var( --color-secondary);
+      color: var(--color-secondary);
       font-size: 5.25rem; 
       font-weight: 500;
       line-height: 70px;
@@ -109,11 +111,6 @@
   
     .description {
       font-size: 1.125rem;
-    }
-
-    .content {
-      bottom: -120px;
-      margin-left: 50px;
     }
 }
 
