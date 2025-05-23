@@ -7,6 +7,7 @@ import Chip from "../components/Chip/Chip";
 import chipData from "../data/chipOptions.json"
 import bannerData from "../data/banners.json";
 import useIsMobile from "../hook/useIsMobile";
+import Footer from "../components/Footer/Footer";
 
 import 'swiper/css';
 import style from "./Branches.module.css";
@@ -110,6 +111,7 @@ const Services = () => {
           </div>
         )}
       </div>
+      <Footer />
     </div>
   );
 };
