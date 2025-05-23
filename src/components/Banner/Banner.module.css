@@ -78,10 +78,20 @@
     }
   
     .content {
-      left: 80px;
       top: 50%;
-      transform: translateY(-50%);    
-      width: auto;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      bottom: -120px;
+      max-width: 1170px;
+    }
+
+    .textGroup {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      color: white;
+      font-family: 'Ford_F-1', sans-serif;
     }
   
     .title {
@@ -105,9 +115,6 @@
       font-size: 1.125rem;
     }
 
-    .content {
-      bottom: -120px;
-      margin-left: 50px;
-    }
+   
 }
   

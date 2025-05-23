@@ -84,7 +84,6 @@ function Navbar() {
                   </li>
               </ul>
             </li>
-            <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
 
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('financiacion')}>
