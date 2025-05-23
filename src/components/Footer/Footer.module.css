@@ -212,7 +212,8 @@
   
   .desktopFooter {
     display: block;
-    padding: 80px 128px 32px;
+    padding-top: 80px;
+    padding-bottom: 32px;
   }
 
   .copyrightTerminosPoliticas {
@@ -261,11 +262,13 @@
   .footerBottom {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 32px 128px;
+   padding-top: 32px;
+   padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1136px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .copyright {
