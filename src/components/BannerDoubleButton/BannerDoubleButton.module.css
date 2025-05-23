@@ -116,4 +116,14 @@
       margin-left: 50px;
     }
 }
+
+
+@media (min-width: 1441px) {
+  .content {
+    left: 14%;
+    top: 50%;
+    transform: translateY(-50%);    
+    width: auto;
+  }
+}
   
