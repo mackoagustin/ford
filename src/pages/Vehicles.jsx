@@ -6,6 +6,7 @@ import BannerEmpty from '../components/BannerEmpty/BannerEmpty';
 import BannerCard from '../components/BannerCard/BannerCard';
 import BannerMl from '../components/BannerML/BannerML'
 import bannerData from "../data/banners.json";
+import Footer from '../components/Footer/Footer';
 
 const Vehicles = () => {
   //const isMobile =  useIsMobile();
@@ -16,7 +17,7 @@ const Vehicles = () => {
       <BannerEmpty data={selectedBAnner} />
       <div className= {styles.px16}>
         <div className= {styles.wraperSection}>
-           <h2 className='H2'>SUV’s</h2>
+           <h2 className='H2'>SUV's</h2>
           <VehicleCarCardSlider category="suv" />
         </div>
        
@@ -48,7 +49,7 @@ const Vehicles = () => {
       <div className={styles.wraperDisplay}>
         <BannerMl />
       </div>
-      
+      <Footer />
     </div>
     
   );

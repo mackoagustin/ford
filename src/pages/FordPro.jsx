@@ -8,6 +8,7 @@ import useScreenSize from '../hook/useScreenSize';
 import vehicleData from '../data/vehicles.json';
 import fordProtData from '../data/fordPro.json';
 import Chip from '../components/Chip/Chip';
+import Footer from '../components/Footer/Footer';
 
 function FordPro() {
   const screenSize = useScreenSize();
@@ -111,6 +112,7 @@ function FordPro() {
           </div>
         </>
       )}
+      <Footer />
     </div>
   );
 }

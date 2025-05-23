@@ -6,6 +6,7 @@ import FordCreditCarCardSlider from '../../components/FordCreditCardCardSlider/F
 import Form from '../../components/Form/Form';
 import useIsMobile from '../../hook/useIsMobile';
 import Button from '../../components/Button/Button';
+import Footer from '../../components/Footer/Footer';
 
 function FordCredit() {
   const isMobile = useIsMobile();
@@ -87,6 +88,7 @@ function FordCredit() {
       
           </div>
         )}
+      <Footer />
     </div>
   )
 }

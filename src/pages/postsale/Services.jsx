@@ -5,6 +5,7 @@ import bannerData from "../../data/banners.json";
 import useIsMobile from '../../hook/useIsMobile';
 import PostSaleSlider from '../../components/PostSaleSlider/PostSaleSlider';
 import FordWarranty from '../../components/FordWarranty/FordWarranty';
+import Footer from '../../components/Footer/Footer';
 
 import style from  './services.module.css'
 
@@ -46,8 +47,7 @@ function Home() {
 
         <FordWarranty />
       </div>
-
-
+      <Footer />
     </div>
   )
 }
