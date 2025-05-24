@@ -26,7 +26,7 @@ const SliderVehicle = () => {
         );
     setFilteredVehicles(filtered);
     setVehicleCount(filtered.length);
-
+    
     //  filtrar
     if (swiperRef.current && filtered.length > 0) {
       swiperRef.current.slideTo(1);
@@ -53,7 +53,7 @@ const SliderVehicle = () => {
 
       {/* Resultados */}
       <p className="result-count">
-        {selectedCategory === 'todos' ? 'Mostrando todos los vehículos' : `Resultado: ${vehicleCount}`}
+        {`Resultado: ${vehicleCount}`}
       </p>
 
       <Swiper
@@ -66,6 +66,7 @@ const SliderVehicle = () => {
         navigation
         pagination={{ clickable: true }}
         className="vehicle-swiper"
+        watchSlidesProgress={true}
         breakpoints={{
           // Mobile
           320: {
@@ -82,7 +83,7 @@ const SliderVehicle = () => {
           // Desktop
           1024: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 60,
             centeredSlides: true
           }
         }}
@@ -91,15 +92,9 @@ const SliderVehicle = () => {
           <SwiperSlide key={index}>
             <div className="vehicle-slide">
               <img src={vehicle.image} alt={vehicle.title} />
-              <h3>{vehicle.title}</h3>
-              <p>{vehicle.text}</p>
-              <div className="cta-buttons">
-                <a href={vehicle.ctaPrimaryLink} className="primary-cta">
-                  {vehicle.ctaPrimaryText}
-                </a>
-                <a href={vehicle.ctaSecondaryLink} className="secondary-cta">
-                  {vehicle.ctaSecondaryText}
-                </a>
+              <div className="slide-content">
+                <h3 className='H3'>{vehicle.title}</h3>
+                <p className='body-1-16 text-color-neutral-500'>{vehicle.text}</p>
               </div>
             </div>
           </SwiperSlide>

@@ -43,31 +43,34 @@
 /* Estilos para el efecto de difuminado */
 .swiper-slide {
   transition: all 0.3s ease;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
   opacity: 0.4;
-  transform: scale(0.8);
+  transform: scale(0.8) !important;
 }
 
 .swiper-slide-active {
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) !important;
 }
 
 .vehicle-slide {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 2rem;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: 100%;
+  height: 420px;
+  max-width: 573px;
 }
 
 .vehicle-slide img {
-  max-width: 100%;
-  height: auto;
+  max-width: 490px;
+  height: 275px;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -84,51 +87,53 @@
   color: #666;
 }
 
-.cta-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+.slide-content {
+  opacity: 1;
+  transition: opacity 0.3s ease;
 }
 
-.primary-cta,
-.secondary-cta {
-  padding: 0.8rem 1.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s ease;
+
+.swiper-slide-prev .vehicle-slide,
+.swiper-slide-next .vehicle-slide {
+  transform: scale(0.8) !important;
 }
 
-.primary-cta {
-  background: #003478;
-  color: white;
+.swiper-slide-prev .slide-content,
+.swiper-slide-next .slide-content {
+  opacity: 0;
 }
-
-.secondary-cta {
-  border: 2px solid #003478;
-  color: #003478;
+.result-count {
+  text-align: center;
+  color: #666;
 }
-
-.primary-cta:hover {
-  background: #002a5f;
-}
-
-.secondary-cta:hover {
-  background: #003478;
-  color: white;
-}
-
 /* Estilos para los controles de Swiper */
 .swiper-button-next,
 .swiper-button-prev {
+  top: 190px;
   color: #003478;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #003478;
+  color: white;
 }
 
 .swiper-pagination-bullet-active {
   background: #003478;
 }
+
+
 
 /* Media queries para responsividad */
 @media (max-width: 768px) {
@@ -165,9 +170,3 @@
   }
 }
 
-.result-count {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #555;
-} 
