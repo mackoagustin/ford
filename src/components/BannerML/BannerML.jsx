@@ -6,7 +6,12 @@ const BannerML = () => {
     return (
         <div className={style.wraper}>
             <div className={style.info}>
-                <img className={style.image} src="public/img/logo/mercadolibre.png" alt="Logo Mercado libre" />
+                <img 
+                  className={style.image} 
+                  src="/img/logo/mercadolibre.png" 
+                  alt="Logo Mercado libre" 
+                  loading="lazy"
+                />
                 <h3 className={style.title}> <span className="text-color-dark"> Venta</span>  de vehículos usados</h3>
                 <p className={style.text}>Explorá los modelos disponibles en nuestra tienda oficial en MercadoLibre.</p>
                 <div className={style.buttonWraper}>

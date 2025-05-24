@@ -9,7 +9,12 @@ const Banner = ({ data }) => {
 
   return (
     <div className={styles.banner}>
-      <img src={data.image} alt={data.title} className={styles.backgroundImage} />
+      <img 
+        src={data.image} 
+        alt={data.title} 
+        className={styles.backgroundImage} 
+        loading="lazy"
+      />
 
       <div className={styles.overlay} />
 

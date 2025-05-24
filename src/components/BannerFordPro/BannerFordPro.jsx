@@ -12,9 +12,19 @@ const BannerFordPro = () => {
         <div>
            {isMobile ? (
                 <div className={styles.wraper}>
-                    <img src="/img/banners/fordPro.png" alt="Ford Pro" className={styles.image} />
+                    <img 
+                      src="/img/banners/fordPro.png" 
+                      alt="Ford Pro" 
+                      className={styles.image} 
+                      loading="lazy"
+                    />
                     <div className={styles.content}>
-                        <img src="/img/logo/ford.png" alt="Ford Pro" className={styles.imageLogo} />
+                        <img 
+                          src="/img/logo/ford.png" 
+                          alt="Ford Pro" 
+                          className={styles.imageLogo} 
+                          loading="lazy"
+                        />
                         <h1 className={styles.title}>Ford Pro™</h1>
                         <p className={styles.subTitle}>Tu negocio en movimiento.</p>
 
@@ -47,9 +57,19 @@ const BannerFordPro = () => {
                 </div>
            ):(
              <div className={styles.wraper}>
-                    <img src="/img/banners/fordPro.png" alt="Ford Pro" className={styles.image} />
+                    <img 
+                      src="/img/banners/fordPro.png" 
+                      alt="Ford Pro" 
+                      className={styles.image} 
+                      loading="lazy"
+                    />
                     <div className={styles.content}>
-                        <img src="/img/logo/ford.png" alt="Ford Pro" className={styles.imageLogo} />
+                        <img 
+                          src="/img/logo/ford.png" 
+                          alt="Ford Pro" 
+                          className={styles.imageLogo} 
+                          loading="lazy"
+                        />
                         <h1 className={styles.title}>Ford Pro™</h1>
                         <p className={styles.subTitle}>Tu negocio en movimiento.</p>
 

@@ -10,7 +10,12 @@ const FordProCard = ({ data }) => {
 
    return (
         <div className={style.wraperCard}>
-            <img className={style.image} src={data.image} alt={data.title} />
+            <img 
+              className={style.image} 
+              src={data.image} 
+              alt={data.title} 
+              loading="lazy"
+            />
             <div className={style.info}>
                 <div className={style.wraperTitle}>
                     <h4 className="H4">{data.title}</h4>

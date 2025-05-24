@@ -9,7 +9,12 @@ const VehiclesCard = ( { item }) => {
 
   return (
     <div className= {styles.card}>
-        <img  className={styles.image} src={item.image} alt= {item.title} />
+        <img  
+          className={styles.image} 
+          src={item.image} 
+          alt= {item.title} 
+          loading="lazy"
+        />
         <div  className={styles.info}>
             <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
             <p className="text-color-neutral-600 body-1-16" >{item.text}</p>

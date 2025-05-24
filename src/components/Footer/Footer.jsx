@@ -18,7 +18,12 @@ function Footer() {
         {isMobile ? (
           <div className={styles.mobileFooter}>
             <div className={styles.logoContainer}>
-              <img className={styles.logo} src="/img/logo/auto_special_row.png" alt="Logo" />
+              <img 
+                className={styles.logo} 
+                src="/img/logo/auto_special_row.png" 
+                alt="Logo" 
+                loading="lazy"
+              />
             </div>
             
             <div className={styles.menuContainer}>
@@ -160,34 +165,77 @@ function Footer() {
 
             <div className={styles.socialSection}>
               <div className={styles.mercadoLibre}>
-                <img src="/img/logo/mercadolibre_2.png" alt="Logo Mercado libre"  className={styles.mlIcon}/>
+                <img 
+                  src="/img/logo/mercadolibre_2.png" 
+                  alt="Logo Mercado libre"  
+                  className={styles.mlIcon}
+                  loading="lazy"
+                />
                 <span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span>
               </div>
               
               <div className={styles.socialIcons}>
                 <a href="#" >
-                  <img src="/img/social/facebook.png" alt="Facebook" className={styles.socialIcon} />
+                  <img 
+                    src="/img/social/facebook.png" 
+                    alt="Facebook" 
+                    className={styles.socialIcon} 
+                    loading="lazy"
+                  />
                 </a>
                 <a href="#" >
-                  <img src="/img/social/instagram.png" alt="Instagram" className={styles.socialIcon} />
+                  <img 
+                    src="/img/social/instagram.png" 
+                    alt="Instagram" 
+                    className={styles.socialIcon} 
+                    loading="lazy"
+                  />
                 </a>
                 <a href="#" >
-                  <img src="/img/social/x.png" alt="X"  className={styles.socialIcon}/>
+                  <img 
+                    src="/img/social/x.png" 
+                    alt="X"  
+                    className={styles.socialIcon}
+                    loading="lazy"
+                  />
                 </a>
                 <a href="#" >
-                  <img src="/img/social/youtube.png" alt="YouTube"  className={styles.socialIcon}/>
+                  <img 
+                    src="/img/social/youtube.png" 
+                    alt="YouTube"  
+                    className={styles.socialIcon}
+                    loading="lazy"
+                  />
                 </a>
                 <a href="#">
-                  <img src="/img/social/linkedin.png" alt="LinkedIn"  className={styles.socialIcon} />
+                  <img 
+                    src="/img/social/linkedin.png" 
+                    alt="LinkedIn"  
+                    className={styles.socialIcon} 
+                    loading="lazy"
+                  />
                 </a>
                 <a href="#" >
-                  <img src="/img/social/mail.png" alt="WhatsApp" className={styles.socialIcon} />
+                  <img 
+                    src="/img/social/mail.png" 
+                    alt="WhatsApp" 
+                    className={styles.socialIcon} 
+                    loading="lazy"
+                  />
                 </a>
               </div>
 
               <div className={styles.fiscal}>
-                <img src="/img/logo/fiscal.png" alt="Data Fiscal" />
-                <img src="/img/logo/caece.png" alt="Cace" />
+                <img 
+                  src="/img/logo/fiscal.png" 
+                  alt="Data Fiscal" 
+                  loading="lazy"
+                />
+                <img 
+                  src="/img/logo/caece.png" 
+                  alt="Cace" 
+                  loading="lazy"
+                />
               </div>
             </div>
 
@@ -357,28 +405,63 @@ function Footer() {
 
                 <div className={styles.socialColumn}>
                   <div className={styles.mercadoLibre}>
-                  <img src="/img/logo/mercadolibre_2.png" alt="Logo Mercado libre"  className={styles.mlIcon}/>
+                  <img 
+                    src="/img/logo/mercadolibre_2.png" 
+                    alt="Logo Mercado libre"  
+                    className={styles.mlIcon}
+                    loading="lazy"
+                  />
                     <span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span>
                   </div>
                   
                   <div className={styles.socialIcons}>
                     <a href="#" >
-                      <img src="/img/social/facebook.png" alt="Facebook" className={styles.socialIcon} />
+                      <img 
+                        src="/img/social/facebook.png" 
+                        alt="Facebook" 
+                        className={styles.socialIcon} 
+                        loading="lazy"
+                      />
                     </a>
                     <a href="#" >
-                      <img src="/img/social/instagram.png" alt="Instagram" className={styles.socialIcon} />
+                      <img 
+                        src="/img/social/instagram.png" 
+                        alt="Instagram" 
+                        className={styles.socialIcon} 
+                        loading="lazy"
+                      />
                     </a>
                     <a href="#" >
-                      <img src="/img/social/x.png" alt="X"  className={styles.socialIcon}/>
+                      <img 
+                        src="/img/social/x.png" 
+                        alt="X"  
+                        className={styles.socialIcon}
+                        loading="lazy"
+                      />
                     </a>
                     <a href="#" >
-                      <img src="/img/social/youtube.png" alt="YouTube"  className={styles.socialIcon}/>
+                      <img 
+                        src="/img/social/youtube.png" 
+                        alt="YouTube"  
+                        className={styles.socialIcon}
+                        loading="lazy"
+                      />
                     </a>
                     <a href="#">
-                      <img src="/img/social/linkedin.png" alt="LinkedIn"  className={styles.socialIcon} />
+                      <img 
+                        src="/img/social/linkedin.png" 
+                        alt="LinkedIn"  
+                        className={styles.socialIcon} 
+                        loading="lazy"
+                      />
                     </a>
                     <a href="#" >
-                      <img src="/img/social/mail.png" alt="WhatsApp" className={styles.socialIcon} />
+                      <img 
+                        src="/img/social/mail.png" 
+                        alt="WhatsApp" 
+                        className={styles.socialIcon} 
+                        loading="lazy"
+                      />
                     </a>
 
                     
@@ -386,8 +469,16 @@ function Footer() {
 
               
               <div className={styles.fiscal}>
-                <img src="/img/logo/fiscal.png" alt="Data Fiscal" />
-                <img src="/img/logo/caece.png" alt="Cace" />
+                <img 
+                  src="/img/logo/fiscal.png" 
+                  alt="Data Fiscal" 
+                  loading="lazy"
+                />
+                <img 
+                  src="/img/logo/caece.png" 
+                  alt="Cace" 
+                  loading="lazy"
+                />
               </div>
 
               

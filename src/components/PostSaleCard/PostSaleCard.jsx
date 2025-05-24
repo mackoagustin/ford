@@ -23,7 +23,12 @@ const PostSaleCard = ({data, groupIndex}) => {
     
     return (
         <div className= {cardClass}>
-            <img className={style.image} src={data.image} alt={data.title}/>
+            <img 
+              className={style.image} 
+              src={data.image} 
+              alt={data.title}
+              loading="lazy"
+            />
             
             <div className={infoClass}>
                 <div className={style.wraperTitle}>
