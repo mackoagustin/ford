@@ -44,6 +44,8 @@ const SearchBar = () => {
   }, []);
 
   return (
+   
+  <div className={styles.flexCol}>
     <div className={styles.searchContainer}>
       <div className={styles.searchInputContainer}>
         <div className={styles.searchContent}>
@@ -95,6 +97,30 @@ const SearchBar = () => {
         </div>
       )}
     </div>
+    <div className= {styles.flexRow}>
+      <a href="/vehiculos" className={styles.showAllButtonMo}>
+        <span className={`${styles.showAllText} body-1-14`}>Mostrar todos</span>
+      <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2.4}
+                  stroke="currentColor"
+                  fill="none"
+                  className={styles["button-icon"]}
+                  >
+                  <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.25 4.5L15.75 12 8.25 19.5"
+                  />
+              </svg>
+      </a>
+    </div>
+   
+    </div>
+    
   );
 };
 
