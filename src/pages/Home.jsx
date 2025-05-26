@@ -25,8 +25,6 @@ function Home() {
 
   return (
 
-    
-
     <div className={styles['home-container']}>
       <div className={styles['search-section']}>
         <SearchBar isMobile={isMobile} onSearchResults={handleSearchResults} />

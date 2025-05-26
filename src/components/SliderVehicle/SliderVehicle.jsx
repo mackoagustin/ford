@@ -7,12 +7,14 @@ import 'swiper/css/pagination';
 import vehiclesData from '../../data/vehicles.json';
 import Chip from '../Chip/Chip';
 import './SliderVehicle.css';
+import useIsMobile from '../../hook/useIsMobile';
 
 const SliderVehicle = () => {
   const [selectedCategory, setSelectedCategory] = useState('todos');
   const [filteredVehicles, setFilteredVehicles] = useState([]);
   const [vehicleCount, setVehicleCount] = useState(0);
   const swiperRef = useRef(null);
+  const isMobile = useIsMobile();
 
   // Obtener categorías únicas y agregar 'todos'
   const categories = ['todos', ...new Set(vehiclesData.vehicles.map(vehicle => vehicle.category))];
@@ -40,20 +42,38 @@ const SliderVehicle = () => {
 
   return (
     <div className="slider-vehicle-container">
-      <div className="chips-container">
-        {categories.map((category) => (
-          <Chip
-            key={category}
-            label={category === 'todos' ? 'Todos' : category.charAt(0).toUpperCase() + category.slice(1)}
-            active={selectedCategory === category}
-            onClick={() => setSelectedCategory(category)}
-          />
-        ))}
-      </div>
+      {isMobile ? (
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={8}
+          className="chips-swiper"
+        >
+          {categories.map((category) => (
+            <SwiperSlide key={category} style={{ width: 'auto' }}>
+              <Chip
+                label={category === 'todos' ? 'Todos' : category.charAt(0).toUpperCase() + category.slice(1)}
+                active={selectedCategory === category}
+                onClick={() => setSelectedCategory(category)}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      ) : (
+        <div className="chips-container">
+          {categories.map((category) => (
+            <Chip
+              key={category}
+              label={category === 'todos' ? 'Todos' : category.charAt(0).toUpperCase() + category.slice(1)}
+              active={selectedCategory === category}
+              onClick={() => setSelectedCategory(category)}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Resultados */}
       <p className="result-count">
-        {`Resultado: ${vehicleCount}`}
+        {`Resultado: (${vehicleCount} ${vehicleCount === 1 ? 'vehículo)' : 'vehículos)'}`}
       </p>
 
       <Swiper
@@ -91,7 +111,7 @@ const SliderVehicle = () => {
         {filteredVehicles.map((vehicle, index) => (
           <SwiperSlide key={index}>
             <div className="vehicle-slide">
-              <img src={vehicle.image} alt={vehicle.title} />
+              <img src={vehicle.image} alt={vehicle.title} className="vehicle-image" />
               <div className="slide-content">
                 <h3 className='H3'>{vehicle.title}</h3>
                 <p className='body-1-16 text-color-neutral-500'>{vehicle.text}</p>

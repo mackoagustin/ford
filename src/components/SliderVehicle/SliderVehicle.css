@@ -69,11 +69,12 @@
   padding-top: 42px;
 }
 
-.vehicle-slide img {
+.vehicle-image {
   max-width: 490px;
   height: 275px;
   margin-bottom: 1.5rem;
   transition: all 0.3s ease;
+  object-fit: cover;
 }
 
 .vehicle-slide h3 {
@@ -134,13 +135,27 @@
   background: #003478;
 }
 
+.chips-swiper {
+  width: 100%;
+  padding: 0 16px;
+  margin-bottom: 24px;
+}
 
+.chips-swiper .swiper-slide {
+  width: auto !important;
+}
 
 /* Media queries para responsividad */
 @media (max-width: 768px) {
   .swiper-slide {
     opacity: 1;
     transform: scale(1);
+  }
+
+  .vehicle-image {
+    max-width: 100%;
+    height: 178px;
+    object-fit: cover;
   }
   
   .vehicle-swiper {
