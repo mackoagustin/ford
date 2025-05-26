@@ -24,8 +24,7 @@ const LocationSlider = ({ selectedCategory }) => {
       <Swiper
         modules={[Pagination]}
         spaceBetween={16}
-        slidesPerView={1.2}
-        loop={true}
+        slidesPerView={1.1}
         pagination={{ clickable: true }}
         className={styles.swiperContainer}
       >
@@ -47,5 +46,5 @@ const LocationSlider = ({ selectedCategory }) => {
   );
 };
 
-
+  
 export default LocationSlider;

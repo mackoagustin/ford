@@ -41,17 +41,17 @@
 }
 
 /* Estilos para el efecto de difuminado */
-.swiper-slide {
+.vehicle-swiper .swiper-slide {
   transition: all 0.3s ease;
 }
 
-.swiper-slide-prev,
-.swiper-slide-next {
+.vehicle-swiper .swiper-slide-prev,
+.vehicle-swiper .swiper-slide-next {
   opacity: 0.4;
   transform: scale(0.8) !important;
 }
 
-.swiper-slide-active {
+.vehicle-swiper .swiper-slide-active {
   opacity: 1;
   transform: scale(1) !important;
 }
