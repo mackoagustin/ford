@@ -12,6 +12,18 @@
   max-width: 1440px;
 }
 
+.backFooter {
+  display: none;
+}
+
+.footerBottom {
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
 .mobileFooter {
   display: flex;
   flex-direction: column;
@@ -59,7 +71,7 @@
 }
 
 .activeMenuItem {
-  border-bottom: 1px solid red;
+  border-bottom: none;
 }
 
 .toggleButton {
@@ -109,12 +121,13 @@
 
 .submenuItem {
   display: block;
-  padding: 10px 0;
+  padding-top: 2px;
+  padding-left: 16px;
+  padding-bottom: 16px;
   color: var(--color-white);
   font-family: var(--font-primary);
   font-size: 14px;
   text-decoration: none;
-  border-bottom: 1px solid var(--color-secondary);
 }
 
 .submenuItemLast {
@@ -170,29 +183,34 @@
   align-items: center;
 }
 
+.copyrightTerminosPoliticas {
+   padding: 32px 0px;
+   border-top: 1px solid var(--color-secondary);
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+}
+
 .terminosPoliticas {
-    padding-top: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .terminosPoliticas a {
   color: var(--color-white);
   font-size: 14px;
-  padding-right: 8px;
-  margin-right: 8px;
+  text-decoration: underline;
 }
 
-.terminosPoliticas a:last-child {
-  border-right: none;
-  margin-right: 0;
-  padding-right: 0;
+.legalLink {
+  color: var(--color-white);
+  text-decoration: underline;
 }
 
-.copyrightTerminosPoliticas {
-   padding: 32px 0px;
-    border-top: 1px solid var(--color-secondary);
+.separator {
+  color: var(--color-white);
 }
 
 /* Media Queries */
@@ -202,6 +220,14 @@
     margin-right: -24px;
     padding-left: 24px;
     padding-right: 24px;
+  }
+
+  .footerBottom {
+    padding: 32px 24px;
+  }
+
+  .legalLinks {
+    justify-content: center;
   }
 }
 
@@ -221,6 +247,14 @@
     margin-right: -128px;
     padding-left: 128px;
     padding-right: 128px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+  }
+
+  .terminosPoliticas {
+    gap: 16px;
   }
 
   .footerTop {
@@ -254,6 +288,7 @@
   }
 
   .backFooter {
+    display: block;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -264,13 +299,14 @@
   .footerBottom {
     max-width: 1440px;
     margin: 0 auto;
-   padding-top: 32px;
-   padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
+    background-color: var(--color-primary);
   }
 
   .copyright {
@@ -327,14 +363,4 @@
     border-bottom: none;
   }
 
-}
-
-@media screen and (max-width: 767px) {
-  .footerBottom {
-    padding: 32px 24px;
-  }
-
-  .legalLinks {
-    justify-content: center;
-  }
 }
