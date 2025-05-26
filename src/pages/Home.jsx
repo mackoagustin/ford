@@ -5,6 +5,7 @@ import SliderVehicle from '../components/SliderVehicle/SliderVehicle';
 import SearchBar from '../components/SearchBar/SearchBar';
 import styles from './Home.module.css';
 import vehiclesData from '../data/vehicles.json';
+import BannerHome from '../components/BannerHome/BannerHome';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -32,6 +33,12 @@ function Home() {
       <div className={styles['slider-section']}>
         <SliderVehicle vehicles={filteredVehicles} />
       </div>
+
+      <div className={styles.wraperBannerHome}>
+      <BannerHome />
+      </div>
+      
+
       <Footer />
     </div>
   );

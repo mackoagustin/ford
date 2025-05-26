@@ -56,6 +56,11 @@
   padding-top: 48px;
 }
 
+.wraperBannerHome {
+    padding: 16px;
+    margin: 0 auto;
+}
+
 @media (min-width: 1024px) {
     .slider-section {
         padding: 0px;
