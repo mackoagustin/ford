@@ -255,9 +255,7 @@ function Footer() {
               <div >
                 <img src="/img/logo/auto_special_col.png" alt="Logo" className={styles.footerLogo} />
               </div>
-
-              <div className={styles.footerMenus}>
-                <div className={styles.menuColumn}>
+              <div className={styles.menuColumn}>
                   <Link to="/" className={styles.menuItem}>Home</Link>
                   <Link to="/vehiculos" className={styles.menuItem}>Vehículos</Link>
                   <div 
@@ -392,16 +390,10 @@ function Footer() {
                   )}
                   <Link to="/sucursales" className={styles.menuItem}>Sucursales</Link>
                 </div>
+              <div className={styles.footerMenus}>
+                
 
-                <div className={styles.menuColumn}>
-                  <Link to="/vehiculos/1" className={styles.menuItem}>Vehículo 1</Link>
-                  <Link to="/vehiculos/2" className={styles.menuItem}>Vehículo 2</Link>
-                  <Link to="/vehiculos/3" className={styles.menuItem}>Vehículo 3</Link>
-                  <Link to="/vehiculos/4" className={styles.menuItem}>Vehículo 4</Link>
-                  <Link to="/vehiculos/5" className={styles.menuItem}>Vehículo 5</Link>
-                  <Link to="/vehiculos/6" className={styles.menuItem}>Vehículo 6</Link>
-                  <Link to="/vehiculos/7" className={styles.menuItem}>Vehículo 7</Link>
-                </div>
+                
 
                 <div className={styles.socialColumn}>
                   <div className={styles.mercadoLibre}>
