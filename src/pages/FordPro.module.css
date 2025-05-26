@@ -1,6 +1,7 @@
 .wraperBody {
     max-width: 972px;
     margin: 0 auto;
+
 }
 
 .sliderContainer {
@@ -28,6 +29,7 @@
 .contentWrapper {
     padding-left: 0;
     padding-right: 0;
+  
 }
 
 @media (min-width: 769px) {

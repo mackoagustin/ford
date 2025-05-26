@@ -9,9 +9,9 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-const PostSaleSlider = () => {
+const PostSaleSlider = ({ limit }) => {
   const isMobile = useIsMobile();
-  const posts = postData.postsale;
+  const posts = limit ? postData.postsale.slice(0, limit) : postData.postsale;
   
   if (isMobile) {
     return (
