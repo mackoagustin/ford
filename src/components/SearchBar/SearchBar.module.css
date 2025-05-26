@@ -1,0 +1,182 @@
+.searchContainer {
+  width: 320px;
+  padding: 24px;
+  background-color: white;
+  border-radius: 60px;
+  box-shadow: 0px 0px 30px 0px rgba(0, 9, 91, 0.20);
+  outline: 1px solid #2563eb;
+  outline-offset: -1px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.searchInputContainer {
+  width: 100%;
+  height: 44px;
+  position: relative;
+  border-radius: 30px;
+  outline: 1px solid #2563eb;
+  outline-offset: -1px;
+}
+
+.searchContent {
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  width: calc(100% - 32px);
+}
+
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.iconBackground {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #d4d4d8;
+}
+
+.iconForeground {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background-color: #0f172a;
+}
+
+.searchInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #0f172a;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: 'Ford_F-1', sans-serif;
+  line-height: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.searchInput::placeholder {
+  color: #0f172a;
+  opacity: 0.7;
+}
+
+.searchResults {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.resultItem {
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-family: 'Ford_F-1', sans-serif;
+  font-size: 14px;
+  color: #0f172a;
+}
+
+.resultItem:hover {
+  background-color: #f8f9fa;
+}
+
+.noResults {
+  padding: 12px 16px;
+  color: #6b7280;
+  font-family: 'Ford_F-1', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.showAllButton {
+  display: none;
+}
+
+.showAllText {
+  color: #2563eb;
+  font-family: 'Ford_F-1', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.arrowIcon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.arrowBackground {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #d4d4d8;
+  border-radius: 50%;
+}
+
+.arrowForeground {
+  width: 6px;
+  height: 12px;
+  position: absolute;
+  left: 8.43px;
+  top: 6.43px;
+  background-color: #2563eb;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+@media (min-width: 768px) {
+  .searchContainer {
+    width: 673px;
+    max-width: 673px;
+    padding: 16px 24px;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .searchInputContainer {
+    width: 441px;
+  }
+
+  .showAllButton {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 8px 10px 16px;
+    border-radius: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .showAllButton:hover {
+    background-color: #f8f9fa;
+  }
+} 
