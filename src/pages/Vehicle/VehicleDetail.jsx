@@ -48,6 +48,24 @@ const VehicleDetail = () => {
                     ))}
                 </div>
             </div>
+
+            <div className={styles.wraperSpecifications}>
+                <div className={styles.contentSpecifications}>
+                    {vehicle.detail.specifications.map((spec, index) => (
+                        <div key={index}>
+                            <p className={` ${styles.specificationsTitle} H4 text-color-white`}>{spec.title}</p>
+                            {spec.feature.map((item, idx) => (
+                                <p 
+                                    key={idx}
+                                    className='subtitle-20 text-color-dark'>
+                                    {item}
+                                </p>
+                            ))}
+                        </div>
+                    ))}
+                </div>
+            </div>
+
         </div>
     );
 };

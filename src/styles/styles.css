@@ -77,21 +77,21 @@ body {
     line-height: 26px;    
     letter-spacing: -2%;   
     font-family: 'FordF1', sans-serif; 
-    font-weight: normal;   
+    font-weight: 400;   
 }
 
 .body-1-14 {
     font-size: 14px;      
     line-height: 20px;     
     font-family: 'FordF1', sans-serif; 
-    font-weight: normal;   
+    font-weight: 400;   
 }
 
 .body-1-12 {
     font-size: 12px;
     line-height: 16px;
     font-family: 'FordF1', sans-serif; 
-    font-weight: normal; 
+    font-weight: 400; 
 }
 
 .H2 {
