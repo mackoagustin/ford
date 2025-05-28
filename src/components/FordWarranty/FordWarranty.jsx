@@ -20,7 +20,7 @@ const FordWarranty = () => {
                         <Button
                             as="a"
                             href=""
-                            target="_blank"
+                        
                             rel="noopener noreferrer"
                             variant="secondary"
                         >

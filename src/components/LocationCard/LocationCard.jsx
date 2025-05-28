@@ -39,7 +39,6 @@ const LocationCard = ({ location }) => {
           <Button
             as="a"
             href={location.google_maps_link}
-            target="_blank"
             rel="noopener noreferrer"
             variant="secondary"
           >

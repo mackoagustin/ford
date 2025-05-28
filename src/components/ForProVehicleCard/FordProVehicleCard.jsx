@@ -22,7 +22,6 @@ const FordProVehicleCard = ({ item }) => {
         <Button
           as="a"
           href={item.detailLink}
-          target="_blank"
           rel="noopener noreferrer"
           variant="primary"
         >
@@ -31,7 +30,6 @@ const FordProVehicleCard = ({ item }) => {
         <Button
           as="a"
           href={item.ctaSecondaryLink}
-          target="_blank"
           rel="noopener noreferrer"
           variant="secondary"
         >
@@ -59,7 +57,6 @@ const FordProVehicleCard = ({ item }) => {
         <Button
           as="a"
           href={item.detailLink}
-          target="_blank"
           rel="noopener noreferrer"
           variant="primary"
         >
@@ -68,7 +65,6 @@ const FordProVehicleCard = ({ item }) => {
         <Button
           as="a"
           href={item.ctaSecondaryLink}
-          target="_blank"
           rel="noopener noreferrer"
           variant="quarter"
         >

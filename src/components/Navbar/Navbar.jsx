@@ -75,7 +75,6 @@ function Navbar() {
                     <a
                       href="https://listado.mercadolibre.com.ar/autospecial"
                       onClick={closeMenu}
-                      target="_blank"
                       rel="noopener noreferrer"
                       className={styles.submenuLink}
                     >

@@ -30,7 +30,6 @@ const VehiclesCard = ( { item }) => {
           <Button
             as="a"
             href={item.detailLink}
-            target="_blank"
             rel="noopener noreferrer"
             variant="primary"
           >
@@ -39,7 +38,6 @@ const VehiclesCard = ( { item }) => {
           <Button
             as="a"
             href={location.google_maps_link}
-            target="_blank"
             rel="noopener noreferrer"
             variant="quarter"
           >

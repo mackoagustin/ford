@@ -31,7 +31,6 @@ const FordCredirCarCard = ( { item }) => {
       <Button
         as="a"
         href={item.ctaLink}
-        target="_blank"
         rel="noopener noreferrer"
         variant="primary"
       >
