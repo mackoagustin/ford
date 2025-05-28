@@ -75,13 +75,23 @@
                 "benefits" : [
                     {
                         "title" : "Performance",
-                        "image" : "img/vehicles/territory.png",
+                        "image" : "/img/vehicles/Bronco/benefit_1.png",
                         "text" : "La Nueva Bronco en su versión Wildtrak 4 puertas, ofrece toda la performance con su motor Ecoboost 2.7L. V6 Bi-Turbo, con una potencia de 334 CV y un torque de 562 Nm."
                     },
                     {
-                        "title" : "Performance",
-                        "image" : "img/vehicles/territory.png",
-                        "text" : "La Nueva Bronco en su versión Wildtrak 4 puertas, ofrece toda la performance con su motor Ecoboost 2.7L. V6 Bi-Turbo, con una potencia de 334 CV y un torque de 562 Nm."
+                        "title" : "Diseño",
+                        "image" : "/img/vehicles/Bronco/benefit_2.png",
+                        "text" : "Con su diseño icónico, la Nueva Bronco nos deslumbra con su exterior robusto y su interior con sellos de autenticidad de la leyenda aventurera. Con techos y puertas desmontables, la Nueva Bronco se lleva todas las miradas."
+                    },
+                    {
+                        "title" : "Tecnología",
+                        "image" : "/img/vehicles/Bronco/benefit_3.png",
+                        "text" : "Tecnología para conquistar cualquier terreno. Vas a poder vivir tu Nueva Bronco con una gran variedad de tecnologías conectadas para que mantengas el control donde termina el camino y comienza la aventura."
+                    },
+                    {
+                        "title" : "Seguridad",
+                        "image" : "/img/vehicles/Bronco/benefit_4.png",
+                        "text" : "Tecnología Ford Co-pilot 360. Asistencia para evitar colisiones con freno de emergencia automático, BLIS® con alerta de tráfico cruzado, sistema de mantenimiento de carril y otras características te ayudan a conducir con una mayor confianza."
                     }
                 ]
             }

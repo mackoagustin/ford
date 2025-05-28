@@ -241,6 +241,34 @@
     pointer-events: none;
 }
 
+.chipContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    max-width: 1164px;
+    margin: 0 auto;
+}
+
+.sliderContainer {
+    max-width: 1164px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.px-16 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.pt-42 {
+    padding-top: 42px;
+}
+
+.BannerVehicleKnow {
+    padding: 60px 16px;
+}
+
 @media (min-width: 768px) {
    .wrapperText {
     display: flex;
@@ -309,4 +337,15 @@
     object-fit: cover;
     border-radius: 16px;
 }
+
+    .chipsContainer {
+        justify-content: center;
+    }
+
+    .sliderBenefits {
+        background-color:  var(--color-neutral-100);
+ 
+        padding-top: 80px;
+    }
+   
 }

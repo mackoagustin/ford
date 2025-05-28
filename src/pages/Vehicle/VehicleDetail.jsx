@@ -8,6 +8,10 @@ import { Navigation, Pagination } from 'swiper/modules';
 import vehiclesData from '../../data/vehicleTest.json';
 import vehicleBannersData from '../../data/vehicleBanners.json';
 import BannerVehicleDetail from '../../components/BannerVehicleDetail/BannerVehicleDetail';
+import FordProSlider from '../../components/FordProSlider/FordProSlider';
+import Chip from '../../components/Chip/Chip';
+import BannerVehicleKnow from '../../components/BannerVehicleKnow/BannerVehicleKnow';
+import Footer from '../../components/Footer/Footer';
 import styles from './VehicleDetail.module.css';
 import useIsMobile from '../../hook/useIsMobile';
 
@@ -19,6 +23,7 @@ const VehicleDetail = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const isMobile = useIsMobile();
+    const [selectedBenefit, setSelectedBenefit] = useState(0);
 
     const openModal = (index) => {
         setSelectedImageIndex(index);
@@ -130,7 +135,7 @@ const VehicleDetail = () => {
             )}
 
 
-                 {/* galeria imágenes */}
+            {/* galeria imágenes */}
             { isMobile ? (
                  <div className={styles.wraperImages}>
                  <Swiper
@@ -170,7 +175,7 @@ const VehicleDetail = () => {
                </div>
             )}
            
-
+            {/* Modal */}
             {isModalOpen && (
                 <div className={styles.modalOverlay} onClick={closeModal}>
                     <div className={styles.closeButton} onClick={closeModal}>×</div>
@@ -201,6 +206,40 @@ const VehicleDetail = () => {
                     </div>
                 </div>
             )}
+            
+
+
+            {/* Slider  benefits*/}
+            {isMobile ? (
+                <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
+                    <FordProSlider data={vehicle.detail.benefits} />
+                </div>
+            ) : (
+                <>
+                <div className={styles.sliderBenefits}>
+                     <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.chipContainer}`}>
+                        {vehicle.detail.benefits.map((item, index) => (
+                            <Chip
+                                key={index}
+                                label={item.title}
+                                active={index === selectedBenefit}
+                                onClick={() => setSelectedBenefit(index)}
+                            />
+                        ))}
+                    </div>
+                    <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
+                        <FordProSlider data={[vehicle.detail.benefits[selectedBenefit]]} />
+                    </div>
+                </div>
+                   
+                </>
+            )}
+
+            <div className={styles.BannerVehicleKnow}>
+                <BannerVehicleKnow />
+            </div>
+            
+            <Footer />
 
         </div>
     );
