@@ -84,12 +84,12 @@
     }
   
     .content {
-      left: 80px;
       top: 50%;
-      transform: translateY(-50%);    
-      width: auto;
-      bottom: auto;
-      margin-left: 50px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      bottom: -120px;
+      max-width: 1170px;
     }
   
     .title {
@@ -115,12 +115,4 @@
 }
 
 
-@media (min-width: 1441px) {
-  .content {
-    left: 14%;
-    top: 50%;
-    transform: translateY(-50%);    
-    width: auto;
-  }
-}
   
