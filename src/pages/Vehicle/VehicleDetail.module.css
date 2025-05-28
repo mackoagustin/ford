@@ -88,6 +88,159 @@
     padding-bottom: 10px;
 }
 
+.wraperImages {
+    padding: 60px 16px 0px 16px;
+}
+.galleryImages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 60px 16px 0px 16px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.galleryImage {
+    width: 305px;
+    height: 305px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.galleryImageContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.galleryImageContainer:hover .zoomIcon {
+    opacity: 1;
+}
+
+.zoomIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.zoomIcon::before {
+    content: '+';
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    width: 90%;
+    max-width: 1200px;
+    height: 80vh;
+    position: relative;
+}
+
+.modalContent :global(.swiper) {
+    height: 100%;
+}
+
+.modalContent :global(.swiper-slide) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.modalContent :global(.swiper-pagination) {
+    bottom: 20px;
+}
+
+.modalContent :global(.swiper-pagination-bullet) {
+    width: 10px;
+    height: 10px;
+    background: white;
+    opacity: 0.5;
+}
+
+.modalContent :global(.swiper-pagination-bullet-active) {
+    opacity: 1;
+    background: var(--color-secondary);
+}
+
+.modalContent :global(.swiper-button-next),
+.modalContent :global(.swiper-button-prev) {
+    color: black;
+    background: white;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    top: 400px;
+}
+
+.modalContent :global(.swiper-button-next:hover),
+.modalContent :global(.swiper-button-prev:hover) {
+    background:var(--color-secondary);
+    color: white;
+}
+
+.modalContent :global(.swiper-button-next::after),
+.modalContent :global(.swiper-button-prev::after) {
+    font-size: 20px;
+}
+
+.modalContent :global(.swiper-button-disabled) {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+}
+
 @media (min-width: 768px) {
    .wrapperText {
     display: flex;
@@ -128,15 +281,32 @@
     padding-top: 42px;
     }
     .carImage {
-        height: 330px;
         width: auto;
     }
     .wraperSpecifications {
         background-color: var(--color-secondary);
         margin: 0px 16px;
         border-radius: 16px;
+        width: 573px;
     }
     .contentSpecifications {
         width: 573px;
     }
+
+   .galleryImages {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 1170px;
+    gap: 8px;
+    padding: 60px;
+   }
+
+   .galleryImage {
+    width: 286px;
+    height: 275px;
+    object-fit: cover;
+    border-radius: 16px;
+}
 }

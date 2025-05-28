@@ -63,8 +63,14 @@
                     }
                 ],
                 "gallery": [
-                    "/img/vehicles/territory.png",
-                    "/img/vehicles/territory.png"
+                    "/img/vehicles/Bronco/bronco_1.png",
+                    "/img/vehicles/Bronco/bronco_2.png",
+                    "/img/vehicles/Bronco/bronco_3.png",
+                    "/img/vehicles/Bronco/bronco_4.png",
+                    "/img/vehicles/Bronco/bronco_5.png",
+                    "/img/vehicles/Bronco/bronco_6.png",
+                    "/img/vehicles/Bronco/bronco_7.png",
+                    "/img/vehicles/Bronco/bronco_8.png"
                 ],
                 "benefits" : [
                     {

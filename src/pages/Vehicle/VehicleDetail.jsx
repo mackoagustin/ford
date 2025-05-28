@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { Navigation, Pagination } from 'swiper/modules';
 import vehiclesData from '../../data/vehicleTest.json';
 import vehicleBannersData from '../../data/vehicleBanners.json';
 import BannerVehicleDetail from '../../components/BannerVehicleDetail/BannerVehicleDetail';
@@ -11,7 +16,18 @@ const VehicleDetail = () => {
     const vehicle = vehiclesData.vehicles.find(item => item.id === id);
     const vehicleBanner = vehicleBannersData.vehicleBanners[id];
     const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const isMobile = useIsMobile();
+
+    const openModal = (index) => {
+        setSelectedImageIndex(index);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     if (!vehicle) {
         return <div>Vehículo no encontrado</div>;
@@ -29,6 +45,7 @@ const VehicleDetail = () => {
                 </div>
             </div>
 
+            {/* feature */}
             {isMobile ? (
                 <div>
                     <div className={styles.wraperFeature}>
@@ -111,7 +128,79 @@ const VehicleDetail = () => {
                     </div>
                 </div>
             )}
-          
+
+
+                 {/* galeria imágenes */}
+            { isMobile ? (
+                 <div className={styles.wraperImages}>
+                 <Swiper
+                     modules={[Pagination]}
+                     spaceBetween={16}
+                     slidesPerView={1.2}
+                     pagination={{ clickable: true }}
+                     className={styles.swiper}
+                 >
+                     {vehicle.detail.gallery.map((image, index) => (
+                         <SwiperSlide key={index}>
+                             <img 
+                                 src={image} 
+                                 alt={`${vehicle.title} - Imagen ${index + 1}`}
+                                 className={styles.galleryImage}
+                             />
+                         </SwiperSlide>
+                     ))}
+                 </Swiper>
+             </div>
+            ) : (
+               <div className={styles.galleryImages}>
+                    {vehicle.detail.gallery.map((image, index) => (
+                        <div 
+                            key={index}
+                            className={styles.galleryImageContainer}
+                            onClick={() => openModal(index)}
+                        >
+                            <img 
+                                src={image} 
+                                alt={`${vehicle.title} - Imagen ${index + 1}`}
+                                className={styles.galleryImage}
+                            />
+                            <div className={styles.zoomIcon} />
+                        </div>
+                    ))}
+               </div>
+            )}
+           
+
+            {isModalOpen && (
+                <div className={styles.modalOverlay} onClick={closeModal}>
+                    <div className={styles.closeButton} onClick={closeModal}>×</div>
+                    <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
+                        <Swiper
+                            modules={[Pagination, Navigation]}
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            pagination={{ 
+                                clickable: true,
+                                dynamicBullets: true
+                            }}
+                            navigation={true}
+                            initialSlide={selectedImageIndex}
+                            keyboard={{ enabled: true }}
+                            loop={true}
+                        >
+                            {vehicle.detail.gallery.map((image, index) => (
+                                <SwiperSlide key={index}>
+                                    <img 
+                                        src={image} 
+                                        alt={`${vehicle.title} - Imagen ${index + 1}`}
+                                        className={styles.modalImage}
+                                    />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
+                </div>
+            )}
 
         </div>
     );
