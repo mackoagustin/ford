@@ -30,8 +30,9 @@ const SearchBar = () => {
     }
   };
 
-  const handleResultClick = (detailLink) => {
-    navigate(detailLink);
+  const handleResultClick = (vehicle) => {
+    console.log("Navegando a:", `/vehiculos/${vehicle.id}`);
+    navigate(`/vehiculos/${vehicle.id}`);
     setShowResults(false);
     setSearchText('');
   };
@@ -86,7 +87,7 @@ const SearchBar = () => {
               <div 
                 key={index} 
                 className={`${styles.resultItem} body-1-14`}
-                onClick={() => handleResultClick(vehicle.detailLink)}
+                onClick={() => handleResultClick(vehicle)}
               >
                 {vehicle.title}
               </div>

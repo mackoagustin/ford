@@ -1,6 +1,7 @@
- {
+{
     "vehicles": [
       {
+         "id": "territory",
          "image": "/img/vehicles/territory.png",
          "title": "Territory",
          "text": "Llegá hasta donde imagines.",
@@ -8,11 +9,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/territory",
+         "detailLink": "/vehiculos/territory",
          "category": "suv",
          "fordPro": false
       },
       {
+         "id": "nueva_bronco",
          "image": "/img/vehicles/nueva_bronco.png",
          "title": "Nueva Bronco Sport",
          "text": "El ícono de la aventura.",
@@ -20,23 +22,25 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nueva_bronco",
+         "detailLink": "/vehiculos/nueva_bronco",
          "category": "suv",
          "fordPro": false
       },
       {
+         "id": "kuga",
          "image": "/img/vehicles/kuga.png",
-         "title": "Kuga Híbrida ",
+         "title": "Kuga Híbrida",
          "text": "La inteligencia encuentra el camino.",
          "ctaPrimaryText": "Más información",
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/kuga",
+         "detailLink": "/vehiculos/kuga",
          "category": "suv",
          "fordPro": false
       },
       {
+         "id" : "bronco",
          "image": "/img/vehicles/bronco.png",
          "title": "Bronco ",
          "text": "El ícono de la aventura.",
@@ -44,11 +48,11 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/bronco",
+         "detailLink": "/vehiculos/bronco",
          "category": "suv",
          "fordPro": false
       },
-      {
+      {  "id" : "maverick",
          "image": "/img/vehicles/maverick.png",
          "title": "Maverick ",
          "text": "Nuevas experiencias nos hacen más fuertes.",
@@ -56,11 +60,11 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/maverick",
+         "detailLink": "/vehiculos/maverick",
          "category": "pick-up",
          "fordPro": false
       },
-      {
+      {  "id": "nueva_ranger",
          "image": "/img/vehicles/nueva_ranger.png",
          "title": "Nueva Ranger",
          "text": "Que venga lo imposible.",
@@ -68,11 +72,11 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nueva_ranger",
+         "detailLink": "/vehiculos/nueva_ranger",
          "category": "pick-up",
          "fordPro": true
       },
-      {
+      {  "id" : "ranger_raptor",
          "image": "/img/vehicles/ranger_raptor.png",
          "title": "Ranger Raptor",
          "text": "Que venga lo imposible.",
@@ -80,11 +84,11 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/ranger_raptor",
+         "detailLink": "/vehiculos/ranger_raptor",
          "category": "pick-up",
          "fordPro": false
       },
-      {
+      {  "id": "nueva_f150_lariat",
          "image": "/img/vehicles/nueva_f150_lariat.png",
          "title": "Nueva F-150 Lariat",
          "text": "La primera Pick-Up con motorización híbrida.",
@@ -92,11 +96,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nueva_f150_lariat",
+         "detailLink": "/vehiculos/nueva_f150_lariat",
          "category": "pick-up",
          "fordPro": false
       },
-      {
+      {  
+         "id": "nueva_f150_temor",
          "image": "/img/vehicles/nueva_f150_tremor.png",
          "title": "Nueva F-150 Tremor",
          "text": "Experiencia off-road en cada aventura.",
@@ -104,11 +109,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nueva_f150_temor",
+         "detailLink": "/vehiculos/nueva_f150_temor",
          "category": "pick-up",
          "fordPro": false
       },
       {
+         "id": "nueva_f150_raptor",
          "image": "/img/vehicles/nueva_f150_raptor.png",
          "title": "Nueva F-150 Raptor",
          "text": "La máxima expresión off-road.",
@@ -116,11 +122,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nueva_f150_raptor",
+         "detailLink": "/vehiculos/nueva_f150_raptor",
          "category": "pick-up",
          "fordPro": false
       },
       {
+         "id": "transit_van",
          "image": "/img/vehicles/transit_van.png",
          "title": "Transit Van",
          "text": "Más seguridad y rendimiento, menos costos operativos.",
@@ -128,11 +135,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/transit_van",
+         "detailLink": "/vehiculos/transit_van",
          "category": "comerciales",
          "fordPro": true
       },
       {
+         "id" :  "transit_chasis",
          "image": "/img/vehicles/transit_chasis.png",
          "title": "Transit Chasis",
          "text": "Más robustez, versatilidad y durabilidad para tu negocio.",
@@ -140,11 +148,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/transit_chasis",
+         "detailLink": "/vehiculos/transit_chasis",
          "category": "comerciales",
          "fordPro": true
       },
-      {
+      {  
+         "id": "transit_minibus",
          "image": "/img/vehicles/transit_mini_bus.png",
          "title": "Transit Minibus",
          "text": "Transmisión automática, robustez, tecnología, conectividad y menores costos de operación.",
@@ -152,11 +161,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/transit_minibus",
+         "detailLink": "/vehiculos/transit_minibus",
          "category": "comerciales",
          "fordPro": true
       },
-      {
+      {  
+         "id": "e_transit_van",
          "image": "/img/vehicles/e_transit_van.png",
          "title": "E-Transit Van",
          "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
@@ -164,11 +174,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/e_transit_van",
+         "detailLink": "/vehiculos/e_transit_van",
          "category": "comerciales",
          "fordPro": true
       },
-      {
+      {  
+         "id" : "nuevo_mustang_gt",
          "image": "/img/vehicles/nuevo_mustang_gt.png",
          "title": "Nuevo Mustang GT",
          "text": "Potencia, torque, tecnología y conectividad como nunca antes habías visto.",
@@ -176,11 +187,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nuevo_mustang_gt",
+         "detailLink": "/vehiculos/nuevo_mustang_gt",
          "category": "mustang",
          "fordPro": false
       },
-      {
+      {  
+         "id": "mustang_mach_e",
          "image": "/img/vehicles/mustang_mach_e.png",
          "title": "Mustang Mach-E",
          "text": "El único eléctrico que es un Mustang.",
@@ -188,11 +200,12 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/mustang_mach_e",
+         "detailLink": "/vehiculos/mustang_mach_e",
          "category": "mustang",
          "fordPro": false
       },
-      {
+      {  
+         "id": "nueva_everest",
          "image": "/img/vehicles/nueva_everest.png",
          "title": "Nueva everest",
          "text": "Ford Everest está llegando a Argentina.",
@@ -200,9 +213,9 @@
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehicles/nueva_everest",
+         "detailLink": "/vehiculos/nueva_everest",
          "category": "futuros",
          "fordPro": false
       }
     ]
- }
+}

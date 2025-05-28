@@ -1,0 +1,24 @@
+{
+  "vehicleBanners": {
+    "nueva_bronco": {
+      "image": "/img/vehicles/Bronco/bronco_banner.png",
+      "title": "Bronco",
+      "subtitle": "El ícono de la aventura",
+      "description": "Descubrí la nueva Bronco Sport",
+      "ctaText": "Agendar test drive",
+      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Bronco%20Sport",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "https://wa.me/5491112345678?text=Hola,%20quiero%20cotizar%20la%20Nueva%20Bronco%20Sport"
+    },
+    "territory": {
+      "image": "/img/banners/territory_banner.png",
+      "title": "Territory",
+      "subtitle": "Llegá hasta donde imagines",
+      "description": "Descubrí la Territory",
+      "ctaText": "Conocé más",
+      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Territory",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "https://wa.me/5491112345678?text=Hola,%20quiero%20cotizar%20la%20Territory"
+    }
+  }
+} 

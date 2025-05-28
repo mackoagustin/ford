@@ -36,6 +36,17 @@
     background-color: var(--color-primary);
   }
 
+  .primaryFull {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    width: 100%;
+  }
+  
+  .primaryFull:hover {
+    background-color: var(--color-primary);
+    width: 100%;
+  }
+
   .primary100 {
     width: 100%;
     background-color: var(--color-secondary);
@@ -59,6 +70,20 @@
   .secondary:hover {
     background-color: var(--color-secondary);
     color: var(--color-white);
+  }
+
+
+  .secondaryFull {
+    background-color: var(--color-white);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary) ;
+    width: 100%;
+  }
+
+  .secondaryFull:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    width: 100%;
   }
   
   /* THIRD BUTTON */

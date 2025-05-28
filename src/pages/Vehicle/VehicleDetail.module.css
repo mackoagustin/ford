@@ -1,0 +1,82 @@
+.wrapperText {
+    padding: 42px 16px 60px 16px;
+}
+
+.wrapperText h1 span {
+    color: var(--color-secondary);
+    font-weight: 500;
+}
+
+.wraperFeature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.carImage {
+    height: auto;
+    width: 100%;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.colorText {
+    padding-top: 16px;
+}
+.colorImages {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.colorImage {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    border-radius: 50%;
+}
+
+.colorImage:hover {
+    border: 2px solid var(--color-primary);
+    box-sizing: border-box;
+}
+
+.colorImage.selected {
+    border: 2px solid var(--color-secondary);
+    box-sizing: border-box;
+    border-radius: 50%; 
+}
+
+@media (min-width: 768px) {
+   .wrapperText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+   }
+
+
+   .wraperTitle {
+    width: 50%;
+   }
+
+   .wraperTitle h1 {
+        font-size: 58px;
+        line-height: 70px;
+        font-weight: 500;
+   }
+
+   .wraperText {
+    width: 50%;
+   }
+}

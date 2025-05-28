@@ -27,6 +27,10 @@ import KnowUs from './pages/about/KnowUs';
 import JoinTeam from './pages/about/JoinTeam';
 import News from './pages/about/News';
 
+
+// Dinámicas
+import VehicleDetail from './pages/Vehicle/VehicleDetail';
+
 function App() {
   return (
     <Router>
@@ -34,6 +38,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/vehiculos" element={<Vehicles />} />
+        <Route path="/vehiculos/:id" element={<VehicleDetail />} />
         <Route path="/financiacion" element={<Financing />} />
         <Route path="/financiacion/ford-credit" element={<FordCredit />} />
         <Route path="/financiacion/plan-ovalo" element={<PlanOvalo />} />

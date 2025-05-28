@@ -13,10 +13,18 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center center;
+    transform: scale(1.2); /* Aumenta el tamaño de la imagen */
     z-index: 1;
   }
 
-  
+  /* Mobile - ajuste de posición de la imagen */
+  @media (max-width: 767px) {
+    .backgroundImage {
+      object-position: 62% 20%;
+      transform: scale(1); 
+    }
+  }
 
   .content {
     position: absolute;
@@ -63,18 +71,15 @@
     margin-bottom: 1rem;
   }
 
-  /* Mobile - mover imagen más a la derecha 
-  @media (max-width: 767px) {
-    .backgroundImage {
-      object-position: right center;
-    }
-  }*/
-
-  
   /* Desktop */
   @media (min-width: 768px) {
     .banner {
       height: 583px;
+    }
+  
+    .backgroundImage {
+      object-position: 60% 80%;
+      transform: scale(1.3); /* Escala más grande en desktop */
     }
   
     .content {

@@ -1,11 +1,18 @@
 import React from "react";
 import styles from './VehicleCarCard.module.css';
 import Button from "../Button/Button";
+import { useNavigate } from "react-router-dom";
+
 const VehiclesCard = ( { item }) => {
+  const navigate = useNavigate();
 
   if (!item) {
     return <div className= {styles.Button}>No data available</div>;
   }
+
+  const handleClick = () => {
+    navigate(`/vehiculos/${item.id}`);
+  };
 
   return (
     <div className= {styles.card}>

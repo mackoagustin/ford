@@ -1,0 +1,84 @@
+{
+    "vehicles" : [
+        {   
+            "id": "nueva_bronco",
+            "image": "/img/vehicles/nueva_bronco.png",
+            "title": "Nueva Bronco Sport",
+            "text": "El ícono de la aventura.",
+            "ctaPrimaryText": "Más información",
+            "ctaPrimaryLink": "",
+            "ctaSecondaryText": "Solicitar cotización",
+            "ctaSecondaryLink": "",
+            "detailLink": "/vehiculos/nueva_bronco",
+            "category": "suv",
+            "fordPro": false,
+            "detail": {
+                "mainSection" : {
+                    "title" : "El ícono de la <span>aventura.</span>",
+                    "text" : "Con tecnología inigualable, diseño icónico y rendimiento de sobra, la Nueva Bronco brinda una experiencia que todos los amantes de la aventura pueden disfrutar."
+                },
+                "colors": [
+                    {
+                        "name": "Blanco Oxford",
+                        "image": "/img/vehicles/bronco.png",
+                        "imageColor": "/img/vehicles/Bronco/colors/white.png"
+                    },
+                    {
+                        "name": "Gris mercurio",
+                        "image": "/img/vehicles/bronco.png",
+                        "imageColor": "/img/vehicles/Bronco/colors/grey_mercury.png"
+
+                    },
+                    {
+                        "name": "Gris cactus",
+                        "image": "/img/vehicles/bronco.png",
+                        "imageColor": "/img/vehicles/Bronco/colors/grey_cactus.png"
+
+                    },
+                    {
+                        "name": "Negro Pantera",
+                        "image": "/img/vehicles/bronco.png",
+                        "imageColor": "/img/vehicles/Bronco/colors/black_panter.png"
+
+                    },
+                    {
+                        "name": "Verde salvaje",
+                        "image": "/img/vehicles/kuga.png",
+                        "imageColor": "/img/vehicles/Bronco/colors/green_savage.png"
+
+                    }
+                ],
+                "specifications" : [
+                    {
+                        "title" : "Motor, Potencia y Torque",
+                        "feature": ["Ecoboost 2.7L V6 Bi-Turbo", "Potencia 334 CV", "Torque 562 Nm"]
+                    },
+                    {
+                        "title" : "Tracción",
+                        "feature": ["4X2", "4X4 Automática", "4X4 Alta y 4x4 Baja"]
+                    },
+                    {
+                        "title" : "Transmisión",
+                        "feature": ["Automática de 10 velocidades"]
+                    }
+                ],
+                "gallery": [
+                    "/img/vehicles/territory.png",
+                    "/img/vehicles/territory.png"
+                ],
+                "benefits" : [
+                    {
+                        "title" : "Performance",
+                        "image" : "img/vehicles/territory.png",
+                        "text" : "La Nueva Bronco en su versión Wildtrak 4 puertas, ofrece toda la performance con su motor Ecoboost 2.7L. V6 Bi-Turbo, con una potencia de 334 CV y un torque de 562 Nm."
+                    },
+                    {
+                        "title" : "Performance",
+                        "image" : "img/vehicles/territory.png",
+                        "text" : "La Nueva Bronco en su versión Wildtrak 4 puertas, ofrece toda la performance con su motor Ecoboost 2.7L. V6 Bi-Turbo, con una potencia de 334 CV y un torque de 562 Nm."
+                    }
+                ]
+            }
+        }
+    ]
+}
