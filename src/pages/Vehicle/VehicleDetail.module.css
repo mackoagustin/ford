@@ -95,11 +95,12 @@
     align-items: center;
     width: 1170px;
     margin: 0 auto;
+    padding-top: 42px;
    }
 
 
    .wraperTitle {
-    width: 50%;
+    width: 60%;
    }
 
    .wraperTitle h1 {
@@ -108,7 +109,34 @@
         font-weight: 500;
    }
 
-   .wraperText {
+   .contentText {
     width: 50%;
    }
+
+   .wraperRow {
+    display: flex;
+    flex-direction: row;
+    max-height: 605px;
+    max-width: 1170px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 102px;
+   }
+
+   .colorText {
+    padding-top: 42px;
+    }
+    .carImage {
+        height: 330px;
+        width: auto;
+    }
+    .wraperSpecifications {
+        background-color: var(--color-secondary);
+        margin: 0px 16px;
+        border-radius: 16px;
+    }
+    .contentSpecifications {
+        width: 573px;
+    }
 }
