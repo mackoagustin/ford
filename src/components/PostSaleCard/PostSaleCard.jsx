@@ -42,7 +42,6 @@ const PostSaleCard = ({data, groupIndex}) => {
                 <Button
                 as="a"
                 href={data.ctaLinkWs}
-                target="_blank"
                 rel="noopener noreferrer"
                 variant="primary"
                 >
