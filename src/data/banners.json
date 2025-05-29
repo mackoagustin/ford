@@ -38,6 +38,14 @@
         "description": "Trabajamos constantemente para brindar un servicio de excelencia.",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/people.png",
+        "title": "Sumate al <br/> equipo",
+        "subtitle": "",
+        "description": "",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }
