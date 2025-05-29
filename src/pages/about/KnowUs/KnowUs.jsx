@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './KnowUs.module.css'
-import Footer from '../../components/Footer/Footer';
-import BannerKnowUS from '../../components/BannerKnowUs/BannerKnowUs';
-import bannerData from "../../data/banners.json";
-import useIsMobile from '../../hook/useIsMobile';
-import Form from '../../components/Form/Form';
+import Footer from '../../../components/Footer/Footer';
+import BannerKnowUS from '../../../components/BannerKnowUs/BannerKnowUs';
+import bannerData from "../../../data/banners.json";
+import useIsMobile from '../../../hook/useIsMobile';
+import Form from '../../../components/Form/Form';
 
 
 function KnowUs() {

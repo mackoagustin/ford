@@ -23,7 +23,7 @@ import Parts from './pages/postsale/Parts';
 import Accessories from './pages/postsale/Accesories';
 import FAQ from './pages/postsale/FAQ';
 import FordProtect from './pages/postsale/FordProtect';
-import KnowUs from './pages/about/KnowUs';
+import KnowUs from './pages/about/KnowUs/KnowUs';
 import JoinTeam from './pages/about/JoinTeam';
 import News from './pages/about/News';
 
