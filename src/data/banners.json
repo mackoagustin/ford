@@ -46,6 +46,14 @@
         "description": "",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/banner_ford_protect.png",
+        "title": "Servicio Ford Protect",
+        "subtitle": "",
+        "description": "Descubrí por qué Ford Protect es la mejor opción para tu tranquilidad.",
+        "ctaText": "Descargar información",
+        "ctaLink": "https://www.autospecial.com.ar/img/fordprotect/far-posventa-ford-protect-cobertura.pdf"
       }
     ]
   }
