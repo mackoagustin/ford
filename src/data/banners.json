@@ -30,6 +30,14 @@
         "description": "El mejor financiamiento para tu Ford.",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/banner_know_us.png",
+        "title": "La empresa",
+        "subtitle": "",
+        "description": "Trabajamos constantemente para brindar un servicio de excelencia.",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }

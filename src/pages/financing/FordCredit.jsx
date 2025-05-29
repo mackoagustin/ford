@@ -10,7 +10,7 @@ import Footer from '../../components/Footer/Footer';
 
 function FordCredit() {
   const isMobile = useIsMobile();
-  const selectedBanner = bannerData.banners[3]
+  const selectedBanner = bannerData.banners[4]
 
   return (
     <div>
