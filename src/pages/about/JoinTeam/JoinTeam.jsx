@@ -4,8 +4,7 @@ import Footer from '../../../components/Footer/Footer';
 import BannerJoinTeam from '../../../components/BannerJoinTeam/BannerJoinTeam';
 import bannerData from "../../../data/banners.json";
 import useIsMobile from '../../../hook/useIsMobile';
-import Form from '../../../components/Form/Form';
-
+import FormPdf from '../../../components/FormPdf/FormPdf';
 
 function JoinTeam() {
     const selectedBanner = bannerData.banners[5]
@@ -41,18 +40,18 @@ function JoinTeam() {
               Esta información será de uso confidencial y estará disponible para futuras búsquedas en las áreas a las que te postules.
               </p>
             </div>
-  
+
+
             <div className={style.wraperForm}>
-              <h3 className="H3 text-color-dark">
-                ¿Necesitás
-                <br />
-                <span className="text-color-secondary">asesoramiento?</span>
-              </h3>
-              <p className="body-1-16 text-color-neutral-500">
-                Completá los datos y nos pondremos en contacto a la brevedad.
-              </p>
-              <Form />
-            </div>
+            <h3 className="H3 text-color-dark">
+              Ponete en contacto con el 
+              <span className="text-color-secondary"> departamento de RR.HH.</span>
+            </h3>
+            <p className="body-1-16 text-color-neutral-500">
+            Completá los datos, adjuntá tu CV y nos pondremos en contacto a la brevedad.
+            </p>
+            <FormPdf />
+          </div>
   
           </>
             
@@ -79,10 +78,23 @@ function JoinTeam() {
               Esta información será de uso confidencial y estará disponible para futuras búsquedas en las áreas a las que te postules.
               </p>
             </div>
-  
+            
+            <div className={style.wraperForm}>
+            <h3 className="H3 text-color-dark">
+              Ponete en contacto con el 
+              <span className="text-color-secondary"> departamento de RR.HH.</span>
+            </h3>
+            <p className="body-1-16 text-color-neutral-500">
+            Completá los datos, adjuntá tu CV y nos pondremos en contacto a la brevedad.
+            </p>
+            <FormPdf />
+          </div>
             </>
+
+           
           )}
-  
+
+
   
         <Footer />
       </div>
