@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './KnowUs.module.css'
+import { styles as style } from './index'
 import Footer from '../../../components/Footer/Footer';
 import BannerKnowUS from '../../../components/BannerKnowUs/BannerKnowUs';
 import bannerData from "../../../data/banners.json";
