@@ -1,0 +1,21 @@
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+  
+  
+  .groupWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  

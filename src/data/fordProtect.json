@@ -1,0 +1,29 @@
+{
+    "fordProtect": [
+        {   
+            "image": "/img/protect/km.png",
+            "title": "Sin límite de kilometraje",
+            "text" : "Sin importar los kilómetros realizados, este servicio te brinda protección por todo el período que hayas elegido."
+        },
+        {   
+            "image": "/img/protect/protect.png",
+            "title": "Protección",
+            "text" : "Sin gastos inesperados en los servicios contratados, realizando el reemplazo de piezas con defecto de fabricación a través de personal especializado y repuestos originales Ford, en nuestra red de concesionarios."
+        },
+        {   
+            "image": "/img/protect/plus.png",
+            "title": "Ford Assistance Plus",
+            "text" : "Contás con el servicio de asistencia integral en ruta las 24 hs, los 365 días del año, más el beneficio adicional del traslado de tu vehículo hasta el concesionario Ford que elijas."
+        },
+        {   
+            "image": "/img/protect/value.png",
+            "title": "Valor adicional de reventa",
+            "text" : "Si vendés tu Ford, automáticamente se transfiere Ford Protect al comprador ya que es parte de tu vehículo por estar asociado al número de chasis, generando un mayor valor de reventa."
+        },
+        {   
+            "image": "/img/protect/car.png",
+            "title": "Chequeo del vehículo",
+            "text" : "Chequeo del vehículo entre Servicios de mantenimiento con rellenado de fluidos (excepto combustible)."
+        }
+    ]
+}

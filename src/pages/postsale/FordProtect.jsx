@@ -5,6 +5,7 @@ import BannerFordProtect from '../../components/BannerFordProtect/BannerFordProt
 import bannerData from '../../data/banners.json';
 import useIsMobile from '../../hook/useIsMobile';
 import styles from './FordProtect.module.css';
+import FordProtectSlider from '../../components/FordProtectSlider/FordProtectSlider';
 
 function FordProtect() {
   const selectedBanner = bannerData.banners[6];
@@ -23,6 +24,9 @@ function FordProtect() {
               Contá con la tranquilidad de extender la garantía de tu Ford hasta el quinto año desde la compra, sin límite de kilometraje. Ford Protect está diseñado exclusivamente para vehículos en período de garantía y se adquiere en concesionarios oficiales Ford.
               </p>
             </div>
+            <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
+                <FordProtectSlider />
+            </div>
         </>
       ) : (
        <>
@@ -38,6 +42,9 @@ function FordProtect() {
           </div>
         </div>
              
+        <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
+          <FordProtectSlider />
+        </div>
           
        </>
       )}
