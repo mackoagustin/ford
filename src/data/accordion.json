@@ -1,0 +1,21 @@
+{
+    "accordion" : [
+        {
+            "question": "¿Hay algún requisito para mantener vigente la garantía extendida de Ford Protect?",
+            "answer": "Sí, debes seguir con el cronograma de mantenimiento oficial detallado en el Manual del Usuario y hacer un uso responsable de tu unidad."
+        },
+        {
+            "question": "¿Ford Protect puede contratarse para vehículos usados o solamente 0 km?",
+            "answer": "Este servicio se puede contratar para vehículos 0 km y usados en período de garantía."
+        },
+        {
+            "question": "¿Qué piezas cubre este servicio?",
+            "answer": "Este servicio se puede contratar para vehículos 0 km y usados en período de garantía."
+        },
+        {
+            "question": "¿Cómo puede saber si mi Ford está en período de garantía?",
+            "answer": "Este servicio se puede contratar para vehículos 0 km y usados en período de garantía."
+        }
+    ]
+
+ }

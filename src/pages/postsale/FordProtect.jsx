@@ -6,9 +6,11 @@ import bannerData from '../../data/banners.json';
 import useIsMobile from '../../hook/useIsMobile';
 import styles from './FordProtect.module.css';
 import FordProtectSlider from '../../components/FordProtectSlider/FordProtectSlider';
-
+import Accordion from '../../components/Accordion/Accordion';
+import accordionData from '../../data/accordion.json';
 function FordProtect() {
   const selectedBanner = bannerData.banners[6];
+  const accordion = accordionData.accordion;
   const isMobile = useIsMobile();
   return (
     <div>
@@ -45,9 +47,24 @@ function FordProtect() {
         <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
           <FordProtectSlider />
         </div>
+      
           
        </>
+
       )}
+      
+      <div className={styles.wraperAccordion}>
+        {accordion.map((item, index) => (
+          <Accordion
+            key={index}
+            question={item.question}
+            answer={item.answer}
+            variant={index === 0 ? 'parent' : 'child'}
+          />
+        ))}
+      </div>
+      
+
       <Footer />
     </div>
   );
