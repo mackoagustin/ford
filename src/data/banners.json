@@ -54,6 +54,14 @@
         "description": "Descubrí por qué Ford Protect es la mejor opción para tu tranquilidad.",
         "ctaText": "Descargar información",
         "ctaLink": "https://www.autospecial.com.ar/img/fordprotect/far-posventa-ford-protect-cobertura.pdf"
+      },
+      {
+        "image": "/img/banners/ford_assistance.png",
+        "title": "Ford Assistance",
+        "subtitle": "Asistencia 24 hs. Los 365 días del año.",
+        "description": "",
+        "ctaText": "Consultar por WhatsApp",
+        "ctaLink": " "
       }
     ]
   }

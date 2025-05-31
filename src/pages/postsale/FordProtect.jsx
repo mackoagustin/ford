@@ -8,6 +8,11 @@ import styles from './FordProtect.module.css';
 import FordProtectSlider from '../../components/FordProtectSlider/FordProtectSlider';
 import Accordion from '../../components/Accordion/Accordion';
 import accordionData from '../../data/accordion.json';
+import BannerFordAssistance from '../../components/BannerFordAssistance/BannerFordAssistance';
+import Form from '../../components/Form/Form';
+
+
+
 function FordProtect() {
   const selectedBanner = bannerData.banners[6];
   const accordion = accordionData.accordion;
@@ -52,6 +57,8 @@ function FordProtect() {
        </>
 
       )}
+
+      <BannerFordAssistance />
       
       <div className={styles.wraperAccordion}>
         {accordion.map((item, index) => (
@@ -63,7 +70,19 @@ function FordProtect() {
           />
         ))}
       </div>
-      
+
+
+      <div className={styles.wraperForm}>
+            <h3 className="H3 text-color-dark">
+              ¿Necesitás
+              <br />
+              <span className="text-color-secondary">asesoramiento?</span>
+            </h3>
+            <p className="body-1-16 text-color-neutral-500">
+              Completá los datos y nos pondremos en contacto a la brevedad.
+            </p>
+            <Form />
+          </div>
 
       <Footer />
     </div>
