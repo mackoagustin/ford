@@ -62,6 +62,30 @@
         "description": "",
         "ctaText": "Consultar por WhatsApp",
         "ctaLink": " "
+      },
+      {
+        "image": "/img/banners/test_drive.png",
+        "title": "Test Drive",
+        "subtitle": "",
+        "description": "Experimentá los últimos modelos 0km de Ford con nuestro Test Drive.",
+        "ctaText": "Consultar por WhatsApp",
+        "ctaLink": " "
+      },
+      {
+        "image": "/img/banners/parts.png",
+        "title": "Repuestos",
+        "subtitle": "",
+        "description": "Consultá por un respuesta original para tu Ford.",
+        "ctaText": "Consultar por WhatsApp",
+        "ctaLink": " "
+      },
+      {
+        "image": "/img/banners/ask.png",
+        "title": "Solicitar turno",
+        "subtitle": "",
+        "description": "Solicitá un turno en uno de nuestro talleres.",
+        "ctaText": "Consultar por WhatsApp",
+        "ctaLink": " "
       }
     ]
   }

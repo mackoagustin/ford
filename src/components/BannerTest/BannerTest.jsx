@@ -1,10 +1,10 @@
 // src/components/Banner/Banner.jsx
 import React from "react";
-import styles from "./BannerFordProtect.module.css";
+import styles from "./BannerTest.module.css";
 import Button from "../Button/Button";
 import useIsMobile from "../../hook/useIsMobile";
 
-const BannerFordProtect = ({ data }) => {
+const BannerTest = ({ data }) => {
   if (!data) {
     return <div>No data available</div>;
   }
@@ -104,4 +104,4 @@ const BannerFordProtect = ({ data }) => {
   );
 };
 
-export default BannerFordProtect;
+export default BannerTest;
