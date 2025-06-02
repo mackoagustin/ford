@@ -1,0 +1,84 @@
+/* LocationCard.module.css */
+.card {
+    width: 100%;
+    max-width: 305px;
+    max-height: 700px;
+    height: 700px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .info {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .locationName {
+    color: var(--color-text);
+  }
+  
+  .hours, .contact {
+    color: var(--color-neutral-500);
+  }
+  
+  .address {
+    color: var(--color-secondary);
+  }
+  
+  .contact {
+    padding-bottom: 24px;
+  }
+  
+  a {
+    color: var(--color-secondary);
+  }
+  
+
+
+
+  .pt16 {
+    padding-top: 12px;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .card {
+      max-width: 373px;
+      max-height: 700px;
+      height: 670px;
+      display: flex;       
+      flex-direction: column;      
+      align-content: center;
+      padding-bottom: 12px;
+    }
+  
+    .locationName, .address {
+      text-align: center;
+    }
+  
+    .info {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      text-align: center;
+    }
+    
+  
+    .buttonWrapper {
+      margin-top: auto;
+      display: flex;
+      justify-content: center;
+    }
+    
+  }
+  

@@ -86,6 +86,14 @@
         "description": "Solicitá un turno en uno de nuestro talleres.",
         "ctaText": "Consultar por WhatsApp",
         "ctaLink": " "
+      },
+      {
+        "image": "/img/banners/workshop.png",
+        "title": "Talleres  ",
+        "subtitle": "",
+        "description": "Acercate a cualquier concesionario oficial y adaptá tu Ford a tu forma de vida.",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }
