@@ -94,6 +94,14 @@
         "description": "Acercate a cualquier concesionario oficial y adaptá tu Ford a tu forma de vida.",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/accesories.png",
+        "title": "Accesorios  ",
+        "subtitle": "",
+        "description": "Encontrá los mejores accesorios para tu Ford.",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }

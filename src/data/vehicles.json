@@ -11,7 +11,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/territory",
          "category": "suv",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {
          "id": "nueva_bronco",
@@ -24,7 +25,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_bronco",
          "category": "suv",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": false
       },
       {
          "id": "kuga",
@@ -37,7 +39,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/kuga",
          "category": "suv",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {
          "id" : "bronco",
@@ -50,7 +53,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/bronco",
          "category": "suv",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {  "id" : "maverick",
          "image": "/img/vehicles/maverick.png",
@@ -62,7 +66,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/maverick",
          "category": "pick-up",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {  "id": "nueva_ranger",
          "image": "/img/vehicles/nueva_ranger.png",
@@ -74,7 +79,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_ranger",
          "category": "pick-up",
-         "fordPro": true
+         "fordPro": true,
+         "isAccesory": true
       },
       {  "id" : "ranger_raptor",
          "image": "/img/vehicles/ranger_raptor.png",
@@ -86,7 +92,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/ranger_raptor",
          "category": "pick-up",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {  "id": "nueva_f150_lariat",
          "image": "/img/vehicles/nueva_f150_lariat.png",
@@ -98,7 +105,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_f150_lariat",
          "category": "pick-up",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {  
          "id": "nueva_f150_temor",
@@ -111,7 +119,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_f150_temor",
          "category": "pick-up",
-         "fordPro": false
+         "fordPro": false,
+      "isAccesory": false
       },
       {
          "id": "nueva_f150_raptor",
@@ -124,7 +133,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_f150_raptor",
          "category": "pick-up",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": false
       },
       {
          "id": "transit_van",
@@ -137,7 +147,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/transit_van",
          "category": "comerciales",
-         "fordPro": true
+         "fordPro": true,
+         "isAccesory": true
       },
       {
          "id" :  "transit_chasis",
@@ -150,7 +161,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/transit_chasis",
          "category": "comerciales",
-         "fordPro": true
+         "fordPro": true,
+         "isAccesory": false
       },
       {  
          "id": "transit_minibus",
@@ -163,7 +175,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/transit_minibus",
          "category": "comerciales",
-         "fordPro": true
+         "fordPro": true,
+         "isAccesory": false
       },
       {  
          "id": "e_transit_van",
@@ -176,7 +189,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/e_transit_van",
          "category": "comerciales",
-         "fordPro": true
+         "fordPro": true,
+         "isAccesory": false
       },
       {  
          "id" : "nuevo_mustang_gt",
@@ -189,7 +203,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nuevo_mustang_gt",
          "category": "mustang",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": true
       },
       {  
          "id": "mustang_mach_e",
@@ -202,7 +217,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/mustang_mach_e",
          "category": "mustang",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": false
       },
       {  
          "id": "nueva_everest",
@@ -215,7 +231,8 @@
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_everest",
          "category": "futuros",
-         "fordPro": false
+         "fordPro": false,
+         "isAccesory": false
       }
     ]
 }
