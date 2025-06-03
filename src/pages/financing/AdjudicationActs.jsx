@@ -53,7 +53,7 @@ function AdjudicationActs() {
         {/* Licitar */}
         {isMobile ? (
             <div div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles["pb-60"]} ${styles.back} ${styles.mt60}`}>
-                <h2 className='H2 text-color-dark'>¿Queres <span className="text-color-secondary">licitar?</span></h2>
+                <h2 className={`H2 text-color-dark ${styles.m0}`}>¿Queres <span className="text-color-secondary">licitar?</span></h2>
                 <p className='subtitle-20 text-color-neutral-500'>Plan Ovalo ofrece tres formas para licitar:</p>
                 <BidCardSlider items={dib} />
             </div>
@@ -61,7 +61,7 @@ function AdjudicationActs() {
 
             <div div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles["pb-60"]} ${styles.back} ${styles.mt60}`}>
                 <div className={styles.wraperBid}>
-                    <h2 className='H2 text-color-dark'>¿Queres <span className="text-color-secondary">licitar?</span></h2>
+                    <h2 className={`H2 text-color-dark ${styles.m0}`}>¿Queres <span className="text-color-secondary">licitar?</span></h2>
                     <p className='subtitle-20 text-color-neutral-500'>Plan Ovalo ofrece tres formas para licitar:</p>
                     <BidCardSlider items={dib} />
                 </div>  
