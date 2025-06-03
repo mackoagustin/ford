@@ -1,0 +1,22 @@
+{
+    "dib": [
+        {
+            "title": "Licitación digital",
+            "description": "Podrás cargar la oferta a través de la web de Plan Ovalo, iniciado sesión con tu usuario y contraseña. Si resultas ganador, Plan Ovalo te notificará vía mail para aprobar el DEBIN generado o realizar la transferencia a Plan Ovalo por el monto ofertado. Al momento de generar la oferta, no es necesario que realices ningún pago.",
+            "ctaText": "Descargar instructivo",
+            "ctaLink": "https://www.planovalo.com.ar/ovalo/Recursos/uploads/Instructivo_LicitacionOnline_v03.pdf"
+        },
+        {
+            "title": "Licitación mediante compromiso acompañado por cheque",
+            "description": "Las ofertas deberán ser formuladas por escrito indicando las sumas licitadas y firmadas por el ofertante en sobre cerrado e indicar si opta por cheque físico o E-check. El formulario debe ser firmado por el ofertante y debe presentarse en sobre cerrado con el cheque físico en su interior, en caso de haber optado por dicha alternativa.",
+            "ctaText": "Conocer condiciones",
+            "ctaLink": ""
+        },
+        {
+            "title": "Licitación a través del concecionario",
+            "description": "Podrás realizar la oferta presentándote en el Concesionario, donde deberás completar el formulario y el Concesionario envía la oferta a Plan Ovalo. Si resultas ganador, serás notificado vía mail y deberás coordinar con el Concesionario el pago de la oferta generada.",
+            "ctaText": "",
+            "ctaLink": ""
+        }
+    ]
+}

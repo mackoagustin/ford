@@ -110,6 +110,14 @@
         "description": "El mejor financiamiento para tu Ford.",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/act.png",
+        "title": "Actos de adjudicación",
+        "subtitle": "",
+        "description": "Adquirí un vehículo mediante un proceso de subasta pública. ",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }

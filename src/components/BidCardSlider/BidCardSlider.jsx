@@ -1,19 +1,14 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import AdminPlanOvaloCard from "../AdminPlanOvaloCard/AdminPlanOvaloCard";
+import BidCard from "../BidCard/BidCard";
 import useIsMobile from "../../hook/useIsMobile";
-import styles from './AdminPlanOvaloCardSlider.module.css';
+import styles from './BidCardSlider.module.css';
 import "swiper/css"; 
 import "swiper/css/pagination"; 
 import { Pagination } from "swiper/modules";
 
-const AdminPlanOvaloCardSlider = ({ items, selectedIndices = null }) => {
+const BidCardSlider = ( { items }) => {
   const isMobile = useIsMobile();
-
-  // Filtrar items si se proporcionan índices específicos
-  const filteredItems = selectedIndices 
-    ? items.filter((item, index) => selectedIndices.includes(index))
-    : items;
 
   if (isMobile) {
     return (
@@ -25,9 +20,9 @@ const AdminPlanOvaloCardSlider = ({ items, selectedIndices = null }) => {
         pagination={{ clickable: true }}
         className={styles.wraperSwiper}
       >
-        {filteredItems.map((item, index) => (
+        {items.map((item, index) => (
           <SwiperSlide key={`${item.title}-${index}`}>
-            <AdminPlanOvaloCard item={item} />
+            <BidCard item={item} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -36,11 +31,11 @@ const AdminPlanOvaloCardSlider = ({ items, selectedIndices = null }) => {
 
   return (
     <div className={styles.flex}>
-      {filteredItems.map((item, index) => (
-        <AdminPlanOvaloCard key={`${item.title}-${index}`} item={item} />
+      {items.map((item, index) => (
+        <BidCard key={`${item.title}-${index}`} item={item} />
       ))}
     </div>
   );
 };
 
-export default AdminPlanOvaloCardSlider;
+export default BidCardSlider;

@@ -17,6 +17,7 @@ function PlanOvalo() {
   const items = creditPlanes.creditPlans;
   const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
 
+  const selectedAdminPlanIndices = [0, 1, 2]; 
 
   return (
     <div>
@@ -99,7 +100,10 @@ function PlanOvalo() {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <AdminPlanOvaloCardSlider items={adminPlanOvaloItems} />
+        <AdminPlanOvaloCardSlider 
+          items={adminPlanOvaloItems} 
+          selectedIndices={selectedAdminPlanIndices} 
+        />
       </div>
 
 

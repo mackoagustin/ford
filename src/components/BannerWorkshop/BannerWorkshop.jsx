@@ -1,7 +1,6 @@
 // src/components/Banner/Banner.jsx
 import React from "react";
 import styles from "./BannerWorkshop.module.css";
-import Button from "../Button/Button";
 import useIsMobile from "../../hook/useIsMobile";
 
 const BannerWorkshop = ({ data }) => {

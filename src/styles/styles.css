@@ -67,6 +67,10 @@ body {
     color: var(--color-dark);
 }
 
+.text-color-primary {
+    color: var(--color-primary);
+}
+
 .text-color-white {
     color: var(--color-white);
 }
