@@ -21,7 +21,7 @@ const FinanceCard = ({ data }) => {
                 
                 <ul>
                     {data.ways.map((item, index) => (
-                        <li key={index} className="body-1-16 text-color-neutral-600">
+                        <li key={index} className={`body-1-16 text-color-neutral-600 ${styles.bullets}`}>
                             {item}
                         </li>
                     ))}
