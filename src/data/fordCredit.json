@@ -1,0 +1,103 @@
+{
+    "credit": [
+        {
+            "title":"Nueva Ranger",
+            "text": "Tasa 0% a 24 meses - Financiación UVA.(1)",
+            "image": "/img/fordcredit/nueva_ranger.png",
+            "ctaLink": "",
+            "ctaText": "Consultar",
+            "financing": {
+                "vehicle":"Ranger",
+                "title": "Formas de financiar:",
+                "ways": [
+                    "Cuota mensual a tasa fija.",
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km.",
+                    "Plan cosecha. Pagos semestrales pensando para que puedas pagar tu préstamo junto con los meses de cosecha."
+
+                ],
+                "image": "/img/vehicles/nueva_ranger.png"
+            }
+        },
+        {
+            "title":"Nueva Ranger",
+            "text": "Tasa 0% a 24 meses - Financiación UVA.(2)",
+            "image": "/img/fordcredit/nueva_ranger2.png",
+            "ctaLink": "",
+            "ctaText": "Consultar",
+            "financing": {
+                "vehicle":"Maverick",
+                "title": "Formas de financiar:",
+                "ways": [
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km."
+                ],
+                "image": "/img/vehicles/maverick.png"
+            }
+        },{
+            "title":"Renová tu Flota Mediante Leasing Ranger XL - Venta Directa de Fábrica",
+            "text": "Tasa 0% a 24 meses - Financiación UVA.(2)",
+            "image": "/img/fordcredit/maverick.png",
+            "ctaLink": "",
+            "ctaText": "Consultar",
+            "financing": {
+                "vehicle":"Territory",
+                "title": "Formas de financiar:",
+                "ways": [
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km."
+                ],
+                "image": "/img/vehicles/territory.png"
+            }
+        },
+        {
+            "title":"Transit Van",
+            "text": "Tasa 0% en 24 meses - Financiación UVA.(4)",
+            "image": "/img/fordcredit/transit_van.png",
+            "ctaLink": "",
+            "ctaText": "Consultar",
+            "financing": {
+                "vehicle":"Transit Van",
+                "title": "Formas de financiar:",
+                "ways": [
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km."
+                ],
+                "image": "/img/vehicles/transit_van.png"
+            }
+        },
+        {
+            "title":"Transit Minibus",
+            "text": "Tasa 0% en 24 meses - Financiación UVA.(4)",
+            "image": "/img/fordcredit/transit_van.png",
+            "ctaLink": "",
+            "ctaText": "Consultar",
+            "financing": {
+                "vehicle":"Transit Minibus",
+                "title": "Formas de financiar:",
+                "ways": [
+                    "Cuota mensual a tasa fija.",
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km."
+                ],
+                "image": "/img/vehicles/transit_minibus.png"
+            }
+        },
+        {
+            "title":"Transit Chasis",
+            "text": "Tasa 0% en 24 meses - Financiación UVA.(4)",
+            "image": "/img/fordcredit/transit_chasis2.png",
+            "ctaLink": "",
+            "ctaText": "Consultar",
+            "financing": {
+                "vehicle":"Transit Minibus",
+                "title": "Formas de financiar:",
+                "ways": [
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km."
+                ],
+                "image": "/img/vehicles/transit_mini_bus.png"
+            }
+        }
+    ]
+}

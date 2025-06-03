@@ -70,7 +70,9 @@ body {
 .text-color-white {
     color: var(--color-white);
 }
-
+.background-color-neutral-100 {
+    background-color: var(--color-neutral-100);
+}
 
 /* Fonts size */
 .body-1-16 {

@@ -300,7 +300,7 @@ function Navbar() {
                             Hasta 60%
                           </div>
                           </Link></li>
-                      <li><Link to="/financiacion/plan-ovalo.png" onClick={closeMenu}>
+                      <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
                            <div className={styles.wraperFinance}>
                               <img src="/img/logo/plan_ovalo.png" alt="" />
                               Desde 70% a 100%

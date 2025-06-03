@@ -1,0 +1,40 @@
+.wraperSwiper {
+  padding-top: 42px;
+  margin-left: 16px;
+}
+
+.flex {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+margin-top: 24px;
+}
+
+.flexStart {
+justify-content: flex-start;
+gap: 30px;
+}
+
+.spaceBetween {
+justify-content: space-between;
+}
+
+.wraperSwiper {
+
+margin-top: 24px;
+}
+
+@media (min-width: 768px)  {
+
+.flex {
+  justify-content:space-between;
+}
+
+}
+
+
+@media (min-width: 1200px) {
+.flex {
+  justify-content:flex-start;
+}
+}

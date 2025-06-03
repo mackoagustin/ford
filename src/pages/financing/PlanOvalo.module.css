@@ -1,28 +1,9 @@
-.px-16 {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-.pt-24 {
-    padding-top: 24px;
-}
-
-.pt-42{
-    padding-top: 42px;
-}
-
-.pt-60 {
-    padding-top: 60px;
-}
-
-.pb-60 {
-    padding-bottom: 60px;
-}
-
 .px16 {
     padding-left: 16px;
     padding-right: 16px;
 }
 .wraper {
+    background-color: var( --color-neutral-100);
     padding: 60px 16px 60px 16px;
 }
 .wraperDisplay {
@@ -48,11 +29,6 @@
     justify-content: flex-end;
 }
 
-.sliderContainer {
-    max-width: 1164px;
-    margin: 0 auto;
-    width: 100%;
-}
 
 @media (min-width: 768px) {
 
@@ -62,12 +38,6 @@
     .legalText {
         width: auto;
     }
-    
-    .legalButton {
-        justify-content: center;
-        margin: 0 auto;
-    }
-    
     .px16 {
         padding-left: 16px;
         padding-right: 16px;
@@ -98,12 +68,6 @@
         padding-bottom: 24px;
         margin-left: 0;
     }
-    
-    .legalButton {
-        justify-content: center;
-        margin: 0 auto;
-    }
-    
   .px16 {
         padding-left: 16px;
         padding-right: 16px;
@@ -121,25 +85,9 @@
     }
 
     .wraper {
+        background-color: var( --color-neutral-100);
         padding: 42px 32px;
         max-width: 1168px;
-        margin: 0 auto;
-    }
-     .sliderBenefits {
-        height: 824px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-        background-color:  var(--color-neutral-100);
-        padding-top: 80px;
-    }
-
-    .wraperTitle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 772px;
         margin: 0 auto;
     }
 }
