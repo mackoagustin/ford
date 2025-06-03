@@ -8,11 +8,16 @@ import useIsMobile from '../../hook/useIsMobile';
 import Button from '../../components/Button/Button';
 import Footer from '../../components/Footer/Footer';
 import creditPlanes from '../../data/creditPlans.json';
+import AdminPlanOvaloCardSlider from '../../components/AdminPlanOvaloCardSlider/AdminPlanOvaloCardSlider';
+import adminPlanOvalo from '../../data/adminPlanOvalo.json';
 
 function PlanOvalo() {
   const isMobile = useIsMobile();
   const selectedBanner = bannerData.banners[3]
   const items = creditPlanes.creditPlans;
+  const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
+
+
   return (
     <div>
       <BannerFordCredit data = {selectedBanner} />
@@ -87,6 +92,18 @@ function PlanOvalo() {
       
           </div>
         )}
+      {/* Administración Plan Ovalo */}
+      <div className= {styles.px16}>
+        <div className= {styles.wraperSection}>
+          <h2 className='H2'>Administración <span className='text-color-secondary'>Plan Ovalo</span> </h2>
+        </div>
+      </div>
+      <div className={styles.sliderWrapper}>
+        <AdminPlanOvaloCardSlider items={adminPlanOvaloItems} />
+      </div>
+
+
+
       <Footer />
     </div>
   )

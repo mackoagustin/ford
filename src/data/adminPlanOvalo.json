@@ -1,0 +1,23 @@
+{
+    "adminPlanOvalo" : [
+        {
+            "title": "Actos de Adjudicación",
+            "image": "/img/adminPlanOvalo/acts.png",
+            "ctaLink": "/financiacion/plan-ovalo/actos-de-adjudicacion",
+            "ctaText": "Más información"
+        },
+        {
+            "title": "Resultados de actos",
+            "image": "/img/adminPlanOvalo/result.png",
+            "ctaLink": "/financiacion/plan-ovalo/actos-de-adjudicacion",
+            "ctaText": "Más información"
+        },
+        {
+            "title": "Imprimí tu cuota",
+            "image": "/img/adminPlanOvalo/cuote.png",
+            "ctaLink": "/financiacion/plan-ovalo/actos-de-adjudicacion",
+            "ctaText": "Más información"
+        }
+        
+    ]
+}

@@ -36,8 +36,6 @@ function FordCredit() {
       </div>
       <div className={styles.sliderWrapper}>
         <PlanOvaloSlider items={items} />
-
-       
       </div>
 
      
