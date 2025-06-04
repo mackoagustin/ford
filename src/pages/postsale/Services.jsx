@@ -6,6 +6,7 @@ import useIsMobile from '../../hook/useIsMobile';
 import PostSaleSlider from '../../components/PostSaleSlider/PostSaleSlider';
 import FordWarranty from '../../components/FordWarranty/FordWarranty';
 import Footer from '../../components/Footer/Footer';
+import Map from '../../components/Map/Map';
 
 import style from  './services.module.css'
 
@@ -46,7 +47,11 @@ function Home() {
           </div>
 
         <FordWarranty />
+
+       
       </div>
+      <Map />
+      
       <Footer />
     </div>
   )
