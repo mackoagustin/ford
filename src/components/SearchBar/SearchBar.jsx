@@ -93,7 +93,7 @@ const SearchBar = () => {
               </div>
             ))
           ) : (
-            <div className={`${styles.noResults} body-1-14`}>No se encontraron resultados</div>
+            <div className={`${styles.noResults} body-1-14`}>Prueba otro modelo de auto</div>
           )}
         </div>
       )}
