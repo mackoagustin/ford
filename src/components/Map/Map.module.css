@@ -11,7 +11,7 @@
     transform: translate(-50%, -50%);
     width: 400px;
     max-width: 1170px;
-    height: 560px;
+    height: 520px;
     z-index: 10; 
     background-color: var(--color-neutral-100);
     padding: 16px;
@@ -23,7 +23,10 @@
     background-color: var( --color-neutral-100);
     padding: 60px 16px 60px 16px;
 }
+.textContainer {
+    margin-bottom: 0;
 
+}
 
 @media (min-width: 1440px) {
     .wraperForm {
@@ -34,4 +37,6 @@
         background-color: var( --color-neutral-100);
         padding: 42px 32px;
     }
+
+   
 }

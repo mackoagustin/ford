@@ -46,8 +46,8 @@ const Map = () => {
                     title="Puntos de servicio de Auto Special"
                 ></iframe>
                 <div className={styles.wraperForm}>
-                         <h3 className="H3 text-color-dark">
-                        ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
+                         <h3 className={`H3 text-color-dark ${styles.textContainer}`}>
+                            ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
                         </h3>
                     <Form />
                 </div>
