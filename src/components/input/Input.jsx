@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./Input.module.css";
 
-const Input = ({ label, name, value, onChange, placeholder, type = "text" }) => {
+const Input = ({ label, name, value, onChange, placeholder, type = "text", error }) => {
   return (
       <div className={style["custom-input"]}>
         <div className={style["label-wrapper"]}>
@@ -16,8 +16,13 @@ const Input = ({ label, name, value, onChange, placeholder, type = "text" }) => 
           value={value}
           onChange={onChange}
           placeholder={placeholder}
-          className={style["input-field"]}
+          className={`${style["input-field"]} ${error ? style["input-error"] : ""}`}
         />
+        {error && (
+          <span className={style["error-message"]}>
+            {error}
+          </span>
+        )}
       </div>
   );
 };

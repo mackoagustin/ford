@@ -23,6 +23,17 @@
   outline: 1px solid var(--color-secondary);
 }
 
+/* Estilos para estado de error */
+.select-error {
+  border: 1px solid #e53e3e !important;
+  outline: 1px solid #e53e3e !important;
+}
+
+.select-error:focus {
+  outline: 1px solid #e53e3e !important;
+  border: 1px solid #e53e3e !important;
+}
+
 .select-chevron {
   position: absolute;
   right: 16px; 
@@ -56,4 +67,17 @@
 
 .select-field:valid {
   color: var(--color-text);
+}
+
+/* Mensaje de error */
+.error-message {
+  position: absolute;
+  left: 16px;
+  top: 70%;
+  background-color: var(--color-neutral-100);
+  margin-top: 4px;
+  font-size: 11px;
+  color: #e53e3e;
+  font-weight: 400;
+  z-index: 2;
 }

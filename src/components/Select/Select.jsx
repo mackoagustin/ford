@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Select.module.css"; 
 
-const Select = ({ label, name, value, onChange, options, placeholder }) => {
+const Select = ({ label, name, value, onChange, options, placeholder, error }) => {
   return (
     <div className={styles["select-group"]}>
       {label && (
@@ -16,8 +16,7 @@ const Select = ({ label, name, value, onChange, options, placeholder }) => {
         name={name}
         value={value}
         onChange={onChange}
-        className={styles["select-field"]}
-        required
+        className={`${styles["select-field"]} ${error ? styles["select-error"] : ""}`}
       >
         <option value="" disabled>
           {placeholder}
@@ -48,6 +47,11 @@ const Select = ({ label, name, value, onChange, options, placeholder }) => {
 
 
       </div>
+      {error && (
+        <span className={styles["error-message"]}>
+          {error}
+        </span>
+      )}
     </div>
   );
 };

@@ -51,20 +51,22 @@ const Services = () => {
 
          {/* Chips de selección */}
        {isMobile ? (
-          <Swiper
-            slidesPerView="auto"
-            freeMode={true}
-          >
-          {chipOptions.map(option => (
-            <SwiperSlide key={option} style={{ width: 'auto', paddingLeft: '16px' }}>
-              <Chip
-                label={option}
-                active={selectedChip === option}
-                onClick={() => setSelectedChip(option)}
-              />
-            </SwiperSlide>
-              ))}
-            </Swiper>
+        <div className={style.wraperChipsMobile}>
+            <Swiper
+              slidesPerView="auto"
+              freeMode={true}
+            >
+            {chipOptions.map(option => (
+              <SwiperSlide key={option} style={{ width: 'auto', paddingLeft: '16px' }}>
+                <Chip
+                  label={option}
+                  active={selectedChip === option}
+                  onClick={() => setSelectedChip(option)}
+                />
+              </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
           ) : (
             <div className= {` ${style.flex}`} >
               {chipOptions.map(option => (

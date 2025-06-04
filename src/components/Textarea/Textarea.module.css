@@ -17,6 +17,15 @@
   .textarea-wrapper:focus-within {
     outline: 1px solid var(--color-secondary);
   }
+
+  /* Estilos para estado de error */
+  .textarea-wrapper:has(.textarea-error) {
+    outline: 1px solid #e53e3e;
+  }
+
+  .textarea-wrapper:has(.textarea-error):focus-within {
+    outline: 1px solid #e53e3e;
+  }
   
   .label-wrapper {
     position: absolute;
@@ -59,6 +68,19 @@
   
   .textarea-field:focus {
     color: var(--color-black);
+  }
+
+  /* Mensaje de error */
+  .error-message {
+    position: absolute;
+    left: 16px;
+    top: 90%;
+    background-color: var(--color-neutral-100);
+    margin-top: 4px;
+    font-size: 11px;
+    color: #e53e3e;
+    font-weight: 400;
+    z-index: 2;
   }
   
     @media (min-width: 768px) {

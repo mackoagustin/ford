@@ -13,16 +13,97 @@ const Form = () => {
     name: "",
     cellphone: "",
     email: "",
-    province: ""
+    province: "",
+    message: ""
   });
 
+  const [errors, setErrors] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // Función para validar email
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Función para validar teléfono (solo números, 8-10 dígitos)
+  const validatePhone = (phone) => {
+    const phoneRegex = /^\d{8,10}$/;
+    return phoneRegex.test(phone.replace(/\s/g, ''));
+  };
+
+  // Función para validar campos
+  const validateField = (name, value) => {
+    switch (name) {
+      case 'name':
+        if (!value.trim()) return 'El nombre es requerido';
+        if (value.trim().length < 2) return 'El nombre debe tener al menos 2 caracteres';
+        return '';
+      
+      case 'email':
+        if (!value.trim()) return 'El email es requerido';
+        if (!validateEmail(value)) return 'Ingresa un email válido';
+        return '';
+      
+      case 'cellphone':
+        if (!value.trim()) return 'El teléfono es requerido';
+        if (!validatePhone(value)) return 'Ingresa número válido';
+        return '';
+      
+      case 'province':
+        if (!value) return 'Selecciona una provincia';
+        return '';
+      
+      case 'message':
+        if (!value.trim()) return 'El mensaje es requerido';
+        if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres';
+        return '';
+      
+      default:
+        return '';
+    }
+  };
+
+  // Función para validar todo el formulario
+  const validateForm = () => {
+    const newErrors = {};
+    
+    Object.keys(formData).forEach(field => {
+      const error = validateField(field, formData[field]);
+      if (error) {
+        newErrors[field] = error;
+      }
+    });
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    
+    // Limpiar error del campo cuando el usuario empiece a escribir
+    if (isSubmitted && errors[name]) {
+      const fieldError = validateField(name, value);
+      setErrors(prev => ({
+        ...prev,
+        [name]: fieldError
+      }));
+    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Submitted:", formData);
+    setIsSubmitted(true);
+    
+    if (validateForm()) {
+      console.log("Formulario válido, enviando:", formData);
+      // Aquí puedes agregar la lógica para enviar el formulario
+      alert("Formulario enviado correctamente!");
+    } else {
+      console.log("Formulario tiene errores:", errors);
+    }
   };
 
   const isMobile = useIsMobile();
@@ -35,6 +116,7 @@ const Form = () => {
         value={formData.name}
         onChange={handleChange}
         placeholder="Ingresá nombre y apellido"
+        error={errors.name}
       />
         <Input
           label="Email"
@@ -42,6 +124,7 @@ const Form = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="nombre@mail.com"
+          error={errors.email}
         />
       <Input
         label="Teléfono/celular"
@@ -49,6 +132,7 @@ const Form = () => {
         value={formData.cellphone}
         onChange={handleChange}
         placeholder="Nro. de teléfono (sin el 15)"
+        error={errors.cellphone}
       />
       <Select
         label="Provincia"
@@ -57,6 +141,7 @@ const Form = () => {
         onChange={handleChange}
         options={provinciasArgentinas}
         placeholder="Seleccioná tu provincia"
+        error={errors.province}
       />
       <Textarea
         label="Mensaje"
@@ -64,6 +149,7 @@ const Form = () => {
         value={formData.message}
         onChange={handleChange}
         placeholder="Escribí tu mensaje"
+        error={errors.message}
       />
       <div className={style.checkboxWrapper}>
         <label className={style.customCheckbox}>
@@ -103,6 +189,7 @@ const Form = () => {
         value={formData.name}
         onChange={handleChange}
         placeholder="Ingresá nombre y apellido"
+        error={errors.name}
       />
         <Input
           label="Email"
@@ -110,6 +197,7 @@ const Form = () => {
           value={formData.email}
           onChange={handleChange}
           placeholder="nombre@mail.com"
+          error={errors.email}
         />
       </div>
 
@@ -120,6 +208,7 @@ const Form = () => {
         value={formData.cellphone}
         onChange={handleChange}
         placeholder="Nro. de teléfono (sin el 15)"
+        error={errors.cellphone}
       />
       <Select
         label="Provincia"
@@ -128,6 +217,7 @@ const Form = () => {
         onChange={handleChange}
         options={provinciasArgentinas}
         placeholder="Seleccioná tu provincia"
+        error={errors.province}
       />
       </div>
       <div className={style.wraperTextarea}>
@@ -137,6 +227,7 @@ const Form = () => {
         value={formData.message}
         onChange={handleChange}
         placeholder="Escribí tu mensaje"
+        error={errors.message}
       />
       </div>
       
