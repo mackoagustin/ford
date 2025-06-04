@@ -17,6 +17,7 @@ import Branches from './pages/Branches';
 import FordCredit from './pages/financing/FordCredit';
 import PlanOvalo from './pages/financing/PlanOvalo';
 import AdjudicationActs from './pages/financing/AdjudicationActs';
+import ResultActs from './pages/financing/ResultActs';
 import Workshops from './pages/postsale/Workshops';
 import RequestTurn from './pages/postsale/RequestTurn';
 import Services from './pages/postsale/Services';
@@ -44,6 +45,7 @@ function App() {
         <Route path="/financiacion/ford-credit" element={<FordCredit />} />
         <Route path="/financiacion/plan-ovalo" element={<PlanOvalo />} />
         <Route path="/financiacion/plan-ovalo/actos-de-adjudicacion" element={<AdjudicationActs />} />
+        <Route path="/financiacion/plan-ovalo/resultados-actos-de-adjudicacion" element={<ResultActs />} />
         <Route path="/ford-pro" element={<FordPro />} />
         <Route path="/postventa" element={<PostSale />} />
         <Route path="/postventa/talleres" element={<Workshops />} />

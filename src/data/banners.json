@@ -118,6 +118,14 @@
         "description": "Adquirí un vehículo mediante un proceso de subasta pública. ",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/acts.png",
+        "title": "Resultados de actos",
+        "subtitle": "",
+        "description": "",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }

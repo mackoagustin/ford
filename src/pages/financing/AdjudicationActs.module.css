@@ -9,6 +9,9 @@
 .pt32 {
     padding-top: 32px;
 }
+.pt16{
+    padding-top: 16px;
+} 
 
 .wraperDisplay {
     padding-top: 60px;
@@ -46,6 +49,12 @@
 .wraper {
     padding: 60px 16px 60px 16px;
 }
+
+.wraperForm {
+    background-color: var( --color-neutral-100);
+    padding: 60px 16px 60px 16px;
+}
+
 @media (min-width: 1024px) {
 
     h2 {
@@ -110,5 +119,23 @@
         padding: 42px 32px;
         max-width: 1168px;
         margin: 0 auto;
+    }
+
+    .wraperRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 1168px;
+        margin: 0 auto;
+    }
+
+    .wraperForm {
+        background-color: var( --color-neutral-100);
+        padding: 42px 32px;
+        max-width: 1170px;
+        margin: 0 auto;
+        margin-top: 80px;
+        
     }
 }

@@ -26,7 +26,9 @@ const BannerAdjudicationActs = ({ data }) => {
                 <h1 className={`${styles.title}`}>
                   {data.title}
                 </h1>
-                <p className={styles.description}>{data.description}</p>
+                {data.description && (
+                  <p className={styles.description}>{data.description}</p>
+                )}
               </div>
             </div>
           </div>
@@ -46,7 +48,9 @@ const BannerAdjudicationActs = ({ data }) => {
               <h1 className={`${styles.title}`}>
                 {data.title}
               </h1>
-              <p className={`${styles.description} H3`}>{data.description}</p>
+              {data.description && (
+                  <p className={`${styles.description} H3`}>{data.description}</p>
+                )}
             </div>
           </div>
         </div>
