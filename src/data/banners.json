@@ -126,6 +126,14 @@
         "description": "",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/faq.png",
+        "title": "Preguntas frecuentes",
+        "subtitle": "",
+        "description": "",
+        "ctaText": "",
+        "ctaLink": ""
       }
     ]
   }
