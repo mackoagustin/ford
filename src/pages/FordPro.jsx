@@ -50,7 +50,9 @@ function FordPro() {
                 width: '100%',
                 height: '100%',
                 maxWidth: '971px',
-                maxHeight: '546px'
+                maxHeight: '546px',
+                minWidth: '32px',
+                minHeight: '250px'
               }}
               ></iframe>
             </div>
