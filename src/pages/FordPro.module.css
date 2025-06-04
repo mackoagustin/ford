@@ -32,6 +32,17 @@
   
 }
 
+.wraperVideo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+  
+
 @media (min-width: 769px) {
     .contentWrapper {
         padding-left: 80px;
@@ -57,5 +68,12 @@
     }
     .wraperSection {
      padding-top: 42px;
+    }
+
+    .wraperVideo {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
 }

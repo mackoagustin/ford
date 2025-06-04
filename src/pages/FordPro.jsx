@@ -29,6 +29,7 @@ function FordPro() {
       <div className={style.wraperBody}>
         <div className={style.contentWrapper}>
           {screenSize === 'mobile' ? (
+            <>
             <div className={`${style["pt-60"]} ${style["px-16"]}`}>
               <h3 className="H3">
                 ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
@@ -37,17 +38,55 @@ function FordPro() {
                 Ford Pro es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad del cliente comercial y a mantener su negocio siempre en movimiento.
               </p>
             </div>
-          ) : (
-            <div className={`${style["pt-60"]} ${style["px-16"]}`}>
-              <h3 className={`H3 ${style.textCenter}`}>
-                ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
-              </h3>
-              <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
-                Ford Pro es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad del cliente comercial y a mantener su negocio siempre en movimiento.
-              </p>
+
+            <div className={`${style.wraperVideo} ${style["px-16"]}`}>
+              <iframe
+              src="https://www.youtube.com/embed/Gkd5tqGb2EU?si=xXaKq3u39T68RtKm&controls=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                width: '100%',
+                height: '100%',
+                maxWidth: '971px',
+                maxHeight: '546px'
+              }}
+              ></iframe>
             </div>
+            </>
+          ) : (
+            <>
+            <div className={`${style["pt-60"]} ${style["px-16"]}`}>
+                  <h3 className={`H3 ${style.textCenter}`}>
+                    ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
+                  </h3>
+                  <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
+                    Ford Pro es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad del cliente comercial y a mantener su negocio siempre en movimiento.
+                  </p>
+              </div>
+
+              <div className={style.wraperVideo}>
+              <iframe
+              src="https://www.youtube.com/embed/Gkd5tqGb2EU?si=xXaKq3u39T68RtKm&controls=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                width: '100%',
+                maxWidth: '971px',
+                height: '546px'
+              }}
+              ></iframe>
+            </div>
+              </>
           )}
         </div>
+        
+
+ 
+        
 
         <div className={style.contentWrapper}>
           {screenSize === 'mobile' ? (
