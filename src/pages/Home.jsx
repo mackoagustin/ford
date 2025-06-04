@@ -8,6 +8,7 @@ import vehiclesData from '../data/vehicles.json';
 import BannerHome from '../components/BannerHome/BannerHome';
 import useIsMobile from '../hook/useIsMobile';
 import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
+import Map from '../components/Map/Map';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -64,6 +65,8 @@ function Home() {
           <PostSaleSlider limit={3} />
         </div>
       </div>
+
+      <Map />
 
       <Footer />
     </div>
