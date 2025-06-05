@@ -5,10 +5,12 @@
     justify-content: center;
     width: 328px;
     height: 332px;
-    background-image: url('/img/banners/display.png');
+    background-image: url('/img/banners/display.jpg');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+    border-radius: 16px;
+    box-sizing: border-box;
 }
 
 .title {
@@ -49,7 +51,7 @@
     flex-direction: column;
     width: 1164px;
     height: 370px;
-    background-image: url('/img/banners/display.png');
+    background-image: url('/img/banners/display.jpg');
     background-size: cover;
     align-items:flex-start;
     background-position: center; 
