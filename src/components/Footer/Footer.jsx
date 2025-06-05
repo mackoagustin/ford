@@ -165,33 +165,45 @@ function Footer() {
 
             <div className={styles.socialSection}>
               <div className={styles.mercadoLibre}>
-                <img 
-                  src="/img/logo/mercadolibre_2.png" 
-                  alt="Logo Mercado libre"  
-                  className={styles.mlIcon}
-                  loading="lazy"
-                />
-                <span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span>
+                <a href='https://listado.mercadolibre.com.ar/autospecial'
+                   target="_blank"
+                   rel="noopener noreferrer"
+                >
+                  <img 
+                    src="/img/logo/mercadolibre_2.png" 
+                    alt="Logo Mercado libre"  
+                    className={styles.mlIcon}
+                    loading="lazy"
+                  />
+                </a>
+                <a href=""><span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span></a>
               </div>
               
               <div className={styles.socialIcons}>
-                <a href="#" >
+                <a href="https://www.facebook.com/AutoSpecialOficial/" >
                   <img 
                     src="/img/social/facebook.png" 
                     alt="Facebook" 
                     className={styles.socialIcon} 
                     loading="lazy"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   />
                 </a>
-                <a href="#" >
+                <a href="https://www.instagram.com/autospecialford/"
+                   target="_blank"
+                   rel="noopener noreferrer" >
                   <img 
                     src="/img/social/instagram.png" 
                     alt="Instagram" 
                     className={styles.socialIcon} 
-                    loading="lazy"
+                    loading="lazy"  
+                    
                   />
                 </a>
-                <a href="#" >
+                <a href="https://x.com/AutoSpecialFord"
+                   target="_blank"
+                   rel="noopener noreferrer" >
                   <img 
                     src="/img/social/x.png" 
                     alt="X"  
@@ -199,7 +211,10 @@ function Footer() {
                     loading="lazy"
                   />
                 </a>
-                <a href="#" >
+                <a href="https://www.youtube.com/channel/UC8YZZ21BnsSS4Fy3s8BZzig" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                >
                   <img 
                     src="/img/social/youtube.png" 
                     alt="YouTube"  
@@ -207,7 +222,10 @@ function Footer() {
                     loading="lazy"
                   />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/company/autospecial/?viewAsMember=true"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                >
                   <img 
                     src="/img/social/linkedin.png" 
                     alt="LinkedIn"  
@@ -397,17 +415,27 @@ function Footer() {
 
                 <div className={styles.socialColumn}>
                   <div className={styles.mercadoLibre}>
-                  <img 
-                    src="/img/logo/mercadolibre_2.png" 
-                    alt="Logo Mercado libre"  
-                    className={styles.mlIcon}
-                    loading="lazy"
-                  />
-                    <span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span>
+                    <a href="https://listado.mercadolibre.com.ar/autospecial"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                      >
+                      <img 
+                        src="/img/logo/mercadolibre_2.png" 
+                        alt="Logo Mercado libre"  
+                        className={styles.mlIcon}
+                        loading="lazy"
+                      />
+                    </a>
+                    <a href="https://listado.mercadolibre.com.ar/autospecial"
+                       target="_blank"
+                       rel="noopener noreferrer"><span className='text-color-white body-1-14'>Tienda oficial de Mercado Libre</span></a>
                   </div>
                   
                   <div className={styles.socialIcons}>
-                    <a href="#" >
+                    <a href="https://www.facebook.com/AutoSpecialOficial/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                    >
                       <img 
                         src="/img/social/facebook.png" 
                         alt="Facebook" 
@@ -415,7 +443,10 @@ function Footer() {
                         loading="lazy"
                       />
                     </a>
-                    <a href="#" >
+                    <a href="https://www.instagram.com/autospecialford/" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                    >
                       <img 
                         src="/img/social/instagram.png" 
                         alt="Instagram" 
@@ -423,7 +454,10 @@ function Footer() {
                         loading="lazy"
                       />
                     </a>
-                    <a href="#" >
+                    <a href="https://x.com/AutoSpecialFord"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                    >
                       <img 
                         src="/img/social/x.png" 
                         alt="X"  
@@ -431,7 +465,10 @@ function Footer() {
                         loading="lazy"
                       />
                     </a>
-                    <a href="#" >
+                    <a href="https://www.youtube.com/channel/UC8YZZ21BnsSS4Fy3s8BZzig"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                    >
                       <img 
                         src="/img/social/youtube.png" 
                         alt="YouTube"  
@@ -439,7 +476,10 @@ function Footer() {
                         loading="lazy"
                       />
                     </a>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/company/autospecial/?viewAsMember=true"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                    >
                       <img 
                         src="/img/social/linkedin.png" 
                         alt="LinkedIn"  
