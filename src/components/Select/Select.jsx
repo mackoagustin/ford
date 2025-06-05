@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./Select.module.css"; 
 
-const Select = ({ label, name, value, onChange, options, placeholder, error }) => {
+const Select = ({ label, name, value, onChange, options, placeholder, error, backgroundColor = "var(--color-neutral-100)" }) => {
   return (
     <div className={styles["select-group"]}>
       {label && (
-        <div className={styles["label-wrapper"]}>
+        <div 
+          className={styles["label-wrapper"]}
+          style={{ backgroundColor }}
+        >
           <label htmlFor={name} className={styles["label"]}>
             {label}
           </label>
@@ -17,6 +20,7 @@ const Select = ({ label, name, value, onChange, options, placeholder, error }) =
         value={value}
         onChange={onChange}
         className={`${styles["select-field"]} ${error ? styles["select-error"] : ""}`}
+        style={{ backgroundColor }}
       >
         <option value="" disabled>
           {placeholder}
@@ -48,7 +52,10 @@ const Select = ({ label, name, value, onChange, options, placeholder, error }) =
 
       </div>
       {error && (
-        <span className={styles["error-message"]}>
+        <span 
+          className={styles["error-message"]}
+          style={{ backgroundColor }}
+        >
           {error}
         </span>
       )}

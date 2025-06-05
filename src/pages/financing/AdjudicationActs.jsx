@@ -90,7 +90,7 @@ function AdjudicationActs() {
               Completá los datos y nos pondremos en contacto a la brevedad.
             </p>
             <div>
-              <Form />
+              <Form backgroundColor="white"/>
             </div>
       
           </div>

@@ -1,0 +1,96 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+.modalContent {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+/* Estilos del header y closeButton eliminados ya que no se usan */
+
+.modalBody {
+    padding: 0;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+/* Estilos copiados de Branches */
+.wraper {
+    background-color: white;
+    padding: 60px 16px 60px 16px;
+}
+
+.mb0 {
+    margin-bottom: 0px;
+}
+
+.mt8 {
+    margin-top: 8px;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@media (min-width: 1024px) {
+    .wraper {
+        background-color: white;
+        padding: 42px 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+    
+    .modalContent {
+        width: 100%;
+        max-width: none;
+        max-height: 95vh;
+        margin: auto;
+        position: relative;
+    }
+    
+    .modalBody {
+        padding: 0;
+        max-height: 95vh;
+        overflow-y: auto;
+    }
+}

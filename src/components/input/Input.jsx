@@ -1,10 +1,16 @@
 import React from "react";
 import style from "./Input.module.css";
 
-const Input = ({ label, name, value, onChange, placeholder, type = "text", error }) => {
+const Input = ({ label, name, value, onChange, placeholder, type = "text", error, backgroundColor = "var(--color-neutral-100)" }) => {
   return (
-      <div className={style["custom-input"]}>
-        <div className={style["label-wrapper"]}>
+      <div 
+        className={style["custom-input"]}
+        style={{ backgroundColor }}
+      >
+        <div 
+          className={style["label-wrapper"]}
+          style={{ backgroundColor }}
+        >
           <label htmlFor={name} className={`${style.label} body-1-12`}>
             {label}
           </label>
@@ -19,7 +25,10 @@ const Input = ({ label, name, value, onChange, placeholder, type = "text", error
           className={`${style["input-field"]} ${error ? style["input-error"] : ""}`}
         />
         {error && (
-          <span className={style["error-message"]}>
+          <span 
+            className={style["error-message"]}
+            style={{ backgroundColor }}
+          >
             {error}
           </span>
         )}

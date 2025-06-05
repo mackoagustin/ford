@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './VehicleCarCard.module.css';
 import Button from "../Button/Button";
 import { useNavigate } from "react-router-dom";
+import QuoterModal from "../QuoterModal/QuoterModal";
 
 const VehiclesCard = ( { item }) => {
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
 
   if (!item) {
     return <div className= {styles.Button}>No data available</div>;
@@ -36,10 +46,8 @@ const VehiclesCard = ( { item }) => {
             {item.ctaPrimaryText}
           </Button> 
           <Button
-            as="a"
-            href={location.google_maps_link}
-            rel="noopener noreferrer"
             variant="quarter"
+            onClick={openModal}
           >
             {item.ctaSecondaryText}
             <svg
@@ -60,7 +68,7 @@ const VehiclesCard = ( { item }) => {
             </svg>
           </Button>
         </div>
-      
+        <QuoterModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
  
   );

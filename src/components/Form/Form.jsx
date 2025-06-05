@@ -8,7 +8,7 @@ import Textarea from "../Textarea/Textarea";
 import useIsMobile from "../../hook/useIsMobile";
 
 
-const Form = () => {
+const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
   const [formData, setFormData] = useState({
     name: "",
     cellphone: "",
@@ -109,7 +109,11 @@ const Form = () => {
   const isMobile = useIsMobile();
 
  return isMobile ? (
-    <form onSubmit={handleSubmit} className={style["form-wraper"]}>
+    <form 
+      onSubmit={handleSubmit} 
+      className={style["form-wraper"]}
+      style={{ backgroundColor }}
+    >
       <Input
         label="Nombre y apellido"
         name="name"
@@ -117,6 +121,7 @@ const Form = () => {
         onChange={handleChange}
         placeholder="Ingresá nombre y apellido"
         error={errors.name}
+        backgroundColor={backgroundColor}
       />
         <Input
           label="Email"
@@ -125,6 +130,7 @@ const Form = () => {
           onChange={handleChange}
           placeholder="nombre@mail.com"
           error={errors.email}
+          backgroundColor={backgroundColor}
         />
       <Input
         label="Teléfono/celular"
@@ -133,6 +139,7 @@ const Form = () => {
         onChange={handleChange}
         placeholder="Nro. de teléfono (sin el 15)"
         error={errors.cellphone}
+        backgroundColor={backgroundColor}
       />
       <Select
         label="Provincia"
@@ -142,6 +149,7 @@ const Form = () => {
         options={provinciasArgentinas}
         placeholder="Seleccioná tu provincia"
         error={errors.province}
+        backgroundColor={backgroundColor}
       />
       <Textarea
         label="Mensaje"
@@ -150,6 +158,7 @@ const Form = () => {
         onChange={handleChange}
         placeholder="Escribí tu mensaje"
         error={errors.message}
+        backgroundColor={backgroundColor}
       />
       <div className={style.checkboxWrapper}>
         <label className={style.customCheckbox}>
@@ -181,7 +190,11 @@ const Form = () => {
       </div>
     </form>
   ) : (
-    <form  onSubmit={handleSubmit} className={style["form-wraper"]}>
+    <form  
+      onSubmit={handleSubmit} 
+      className={style["form-wraper"]}
+      style={{ backgroundColor }}
+    >
       <div className={style.wraperInput}> 
         <Input
         label="Nombre y apellido"
@@ -190,6 +203,7 @@ const Form = () => {
         onChange={handleChange}
         placeholder="Ingresá nombre y apellido"
         error={errors.name}
+        backgroundColor={backgroundColor}
       />
         <Input
           label="Email"
@@ -198,6 +212,7 @@ const Form = () => {
           onChange={handleChange}
           placeholder="nombre@mail.com"
           error={errors.email}
+          backgroundColor={backgroundColor}
         />
       </div>
 
@@ -209,6 +224,7 @@ const Form = () => {
         onChange={handleChange}
         placeholder="Nro. de teléfono (sin el 15)"
         error={errors.cellphone}
+        backgroundColor={backgroundColor}
       />
       <Select
         label="Provincia"
@@ -218,6 +234,7 @@ const Form = () => {
         options={provinciasArgentinas}
         placeholder="Seleccioná tu provincia"
         error={errors.province}
+        backgroundColor={backgroundColor}
       />
       </div>
       <div className={style.wraperTextarea}>
@@ -228,6 +245,7 @@ const Form = () => {
         onChange={handleChange}
         placeholder="Escribí tu mensaje"
         error={errors.message}
+        backgroundColor={backgroundColor}
       />
       </div>
       
