@@ -1,9 +1,7 @@
 .card {
     width: 100%;
     width: 305px;
-    max-width: 305px;
-    height: 486px;
-    max-width: 444px;
+    height: 560px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -24,6 +22,7 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+    min-height: 220px;
   }
   
   .locationName {
@@ -40,16 +39,16 @@
   }
 
   .featuresList {
-    list-style: none;
+    
     padding: 0;
     margin: 0;
   }
   
-  .featuresList li {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
+  .featuresListLi {
+    list-style-type: disc;
+    list-style-position: inside;
     margin-bottom: 8px;
+    padding-left: 0;
   }
   
   .bullet {
@@ -61,7 +60,7 @@
   @media (min-width: 768px) {
     .card {
       width: 373px;
-      height: 480px;
+      height: 532px;
       display: flex;       
       flex-direction: column;      
       padding-bottom: 12px;
@@ -96,7 +95,7 @@
   /* Desktop */
   @media (min-width: 1024px) {
     .card {
-      height: 480px;
+      height: 582px;
     }
 
     .featuresList li {

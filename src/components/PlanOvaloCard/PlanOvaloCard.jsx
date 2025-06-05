@@ -17,8 +17,15 @@ const PlanOvaloCard = ( { item }) => {
     />
     <div  className={styles.info}>
         <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
-        <p className="text-color-neutral-600 body-1-16" >{item.text}</p>
-  
+        <p className="text-color-neutral-600 body-1-16"  >{item.subtitle}</p>
+        <ul className={styles.featuresList}>
+          {item.features.map((feature, index) => (
+            <li 
+            key={index} 
+            className={`text-color-neutral-600 body-1-16 ${styles.featuresListLi}`} 
+             >{feature}</li>
+          ))}
+        </ul>
     </div>
     <div className={styles.buttonWrapper}>
       <Button

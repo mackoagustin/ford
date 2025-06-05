@@ -34,6 +34,19 @@
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar"
+        },{
+            "image" : "/img/credit/transit.png",
+            "title" : "Transit",
+            "subtitle" : "Cuotas desde $758.519 100% financiado en 84 cuotas",
+            "features" : [
+                "Cuotas fijas.",
+                "Bonificación en cuotas.",
+                "Adjudicación asegurada cuota nº5.",
+                "3 primeros servicios de mantenimiento bonificados."
+
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar"
         },
         {
             "image" : "/img/credit/maverick.png",
