@@ -102,6 +102,58 @@
     margin-top: 8px;
   }
 
+  .fileError {
+    font-size: 0.75rem;
+    color: #dc2626; /* red-600 */
+    font-family: 'Ford_F-1', sans-serif;
+    font-weight: 400;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .fileWrapper.error {
+    outline-color: #dc2626; /* red-600 */
+    background-color: #fef2f2; /* red-50 - fondo rojo clarito */
+    border: none;
+  }
+
+  .fileWrapper.error:hover {
+    outline-color: #dc2626; /* red-600 */
+    background-color: #fef2f2; /* red-50 */
+  }
+
+  .fileWrapper.success {
+    outline-color: #16a34a; /* green-600 */
+    background-color: #f0fdf4; /* green-50 - fondo verde clarito */
+    border: none;
+  }
+
+  .fileWrapper.success:hover {
+    outline-color: #16a34a; /* green-600 */
+    background-color: #f0fdf4; /* green-50 */
+  }
+
+  .fileSuccess {
+    font-size: 0.75rem;
+    color: #16a34a; /* green-600 */
+    font-family: 'Ford_F-1', sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .checkIcon {
+    width: 12px;
+    height: 12px;
+    color: #16a34a; /* green-600 */
+  }
+
   /* Responsive - en móvil hacemos más pequeño el componente */
   @media (max-width: 768px) {
     .fileWrapper {
