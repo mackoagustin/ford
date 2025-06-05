@@ -53,5 +53,7 @@
     justify-content: center !important;
     margin: 0 auto;
   }
-  
+  .buttonWrapper > :first-child {
+    margin-left: 19px;
+  }
 }
