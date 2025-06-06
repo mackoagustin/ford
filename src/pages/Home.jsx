@@ -62,7 +62,7 @@ function Home() {
           </div>
         )}
         <div className={`${styles["pt-42"]} ${styles["px-16"]}`}>
-          <PostSaleSlider limit={3} />
+          <PostSaleSlider limit={3} specificIndexes={[5, 0, 4]} />
         </div>
       </div>
 

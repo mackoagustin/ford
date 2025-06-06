@@ -9,9 +9,19 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
 
-const PostSaleSlider = ({ limit }) => {
+const PostSaleSlider = ({ limit, specificIndexes }) => {
   const isMobile = useIsMobile();
-  const posts = limit ? postData.postsale.slice(0, limit) : postData.postsale;
+  
+  let posts;
+  if (specificIndexes && Array.isArray(specificIndexes)) {
+    posts = specificIndexes.map(index => postData.postsale[index]).filter(Boolean);
+    if (limit) {
+      posts = posts.slice(0, limit);
+    }
+  } else {
+    // Comportamiento original: usar limit o todos los posts
+    posts = limit ? postData.postsale.slice(0, limit) : postData.postsale;
+  } 
   
   if (isMobile) {
     return (
