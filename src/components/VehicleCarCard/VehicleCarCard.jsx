@@ -46,7 +46,7 @@ const VehiclesCard = ( { item }) => {
             {item.ctaPrimaryText}
           </Button> 
           <Button
-            variant="quarter"
+            variant="secondary"
             onClick={openModal}
           >
             {item.ctaSecondaryText}

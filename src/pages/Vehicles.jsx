@@ -35,11 +35,6 @@ const Vehicles = () => {
            <h2 className='H2'>Mustang</h2>
           <VehicleCarCardSlider category="mustang" />
         </div>
-     
-        <div className= {styles.wraperSection}>
-          <h2 className='H2'>Futuros</h2>
-          <VehicleCarCardSlider category="futuros" />
-        </div>
         
       </div>
       <div className={styles.wraperDisplay}> 

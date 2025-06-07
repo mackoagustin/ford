@@ -1,6 +1,7 @@
 // src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './hook/ScrollToTop';
 
 import Navbar from './components/Navbar/Navbar';
 
@@ -36,6 +37,7 @@ import VehicleDetail from './pages/Vehicle/VehicleDetail';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

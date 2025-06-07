@@ -9,6 +9,7 @@ import BannerHome from '../components/BannerHome/BannerHome';
 import useIsMobile from '../hook/useIsMobile';
 import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
 import Map from '../components/Map/Map';
+import Button from '../components/Button/Button';
 
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -64,6 +65,57 @@ function Home() {
         <div className={`${styles["pt-42"]} ${styles["px-16"]}`}>
           <PostSaleSlider limit={3} specificIndexes={[5, 0, 4]} />
         </div>
+
+
+        {isMobile ? (
+           <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.wraperButton}`}>
+           <Button 
+             variant="sixth" 
+             href="/postventa/servicios">
+               Mostrar todos
+               <svg
+                     xmlns="http://www.w3.org/2000/svg"
+                     width="20"
+                     height="20"
+                     viewBox="0 0 24 24"
+                     strokeWidth={2.4}
+                     stroke="currentColor"
+                     fill="none"
+                 >
+                     <path
+                     strokeLinecap="round"
+                     strokeLinejoin="round"
+                     d="M8.25 4.5L15.75 12 8.25 19.5"
+                     />
+                 </svg>   
+           </Button>
+         </div>
+        ) : (
+          <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.wraperButton}`}>
+          <Button 
+            variant="sixth" 
+            href="/postventa/servicios">
+              Mostrar todos
+              <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.4}
+                    stroke="currentColor"
+                    fill="none"
+                >
+                    <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5L15.75 12 8.25 19.5"
+                    />
+                </svg>   
+          </Button>
+        </div>
+        )}
+       
+        
       </div>
 
       <Map />

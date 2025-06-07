@@ -22,6 +22,9 @@
     background-color: #F7F6F6;
 }
 
+.wraperButton {
+    padding-bottom: 60px;
+}
 @media (min-width: 1024px) {
     .contentWrapper {
         margin: 0 auto;
@@ -98,5 +101,12 @@
     .px-16 {
         padding-left: 135px;
         padding-right: 135px;
+    }
+
+    .wraperButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 80px;
     }
 }

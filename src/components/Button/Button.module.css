@@ -124,3 +124,14 @@
      color: var(--color-white);   
   }
   
+
+   /* sixth */
+   .sixth {
+    background-color: var(--color-neutral-100);
+    color: var(--color-secondary);
+  }
+
+  .sixth:hover {
+     background-color: var(--color-secondary);
+    color: var(--color-white);   
+  }
