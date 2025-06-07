@@ -9,6 +9,7 @@ import BidCardSlider from '../../components/BidCardSlider/BidCardSlider';
 import AdminPlanOvaloCardSlider from '../../components/AdminPlanOvaloCardSlider/AdminPlanOvaloCardSlider';
 import adminPlanOvalo from '../../data/adminPlanOvalo.json';
 import Form from '../../components/Form/Form';
+import Button from '../../components/Button/Button';
 
 function AdjudicationActs() {
     const selectedBanner = bannerData.banners[14];
@@ -26,8 +27,30 @@ function AdjudicationActs() {
             <div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles["pb-60"]}`}>
                 <div className={styles.wraperCard}>
                     <p className="H2 text-color-white text-center">Llamado de <span className="text-color-primary">Acto de Adjudicación</span></p>
-                    <p className='subtitle-20 text-color-white text-center'>El próximo Acto de Adjudicación se realizará el día:</p>
-                    <p className="display4 text-color-primary text-center">13 mayo 2025</p>
+                    <div>
+                      <Button 
+                      href="https://www.planovalo.com.ar/ovalo/Informacion/ResultadosActoAdjudicacion" 
+                      variant="secondary"
+                      >
+                          Conocer mas
+                          <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.4}
+                        stroke="currentColor"
+                        fill="none"
+                        className={styles["button-icon"]}
+                        >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M8.25 4.5L15.75 12 8.25 19.5"
+                        />
+                    </svg>
+                      </Button>
+                    </div>
                 </div>
 
                 <div className={styles.pt32}>
@@ -39,8 +62,30 @@ function AdjudicationActs() {
             <div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles["pb-60"]} ${styles.wraperSection}`}>
                 <div className={styles.wraperCard}>
                     <p className="H2 text-color-white text-center">Llamado de <span className="text-color-primary">Acto de Adjudicación</span></p>
-                    <p className='subtitle-20 text-color-white text-center'>El próximo Acto de Adjudicación se realizará el día:</p>
-                    <p className="display4 text-color-primary text-center">13 mayo 2025</p>
+                    <div>
+                      <Button 
+                      href="https://www.planovalo.com.ar/ovalo/Informacion/ResultadosActoAdjudicacion" 
+                      variant="secondary"
+                      >
+                          Conocer mas
+                          <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.4}
+                        stroke="currentColor"
+                        fill="none"
+                        className={styles["button-icon"]}
+                        >
+                        <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M8.25 4.5L15.75 12 8.25 19.5"
+                        />
+                    </svg>
+                      </Button>
+                    </div>
                 </div>
 
                 <div className={styles.pt32}>

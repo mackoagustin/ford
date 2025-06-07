@@ -18,8 +18,8 @@ const BannerKnowUS = ({ data }) => {
       <div className={styles.overlay} />
         <div className={styles.content}>
             <div className={styles.textGroup}>
-                <h1 className={`${styles.title} display4`}>
-                    {data.title}
+                <h1 className={styles.title}
+                   dangerouslySetInnerHTML={{ __html: data.title }}>
                 </h1>
             <div className={styles.wraperText}>
                 <p className= {styles.description}> {data.description} </p>
