@@ -164,6 +164,7 @@ const VehicleDetail = () => {
             {/* Slider benefits - Mobile */}
             <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainerMobile}`}>
                 <FordProSlider data={vehicle.detail.benefits} />
+
             </div>
 
             {/* Slider benefits - Desktop */}
