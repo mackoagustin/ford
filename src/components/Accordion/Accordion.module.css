@@ -49,6 +49,30 @@
     width: 300px;
 }
 
+/* Estilos para enlaces dentro del acordeón */
+.wraperAccordion .accordionContent a,
+.wraperAccordionChild .accordionContent a {
+    color:#066FEF !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.wraperAccordion .accordionContent a:hover,
+.wraperAccordionChild .accordionContent a:hover {
+    color: var(--color-primary-dark, #004499) !important;
+    text-decoration: none;
+}
+
+/* Estilos para listas dentro del acordeón */
+.wraperAccordion .accordionContent ul li,
+.wraperAccordionChild .accordionContent ul li,
+.wraperAccordion .accordion ul li,
+.wraperAccordionChild .accordion ul li {
+    color: var(--color-primary-dark);
+    list-style-type: disc;
+}
+
+
 @media (min-width: 768px) {
     .wraperQuestion {
         width: 940px;

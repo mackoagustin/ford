@@ -2,19 +2,114 @@
     "faq": [
         {
             "question": "¿Hay algún requisito para mantener vigente la garantía extendida de Ford Protect?",
-            "answer": "Sí, debes seguir con el cronograma de mantenimiento oficial detallado en el Manual del Usuario y hacer un uso responsable de tu unidad."
+            "answer": "Sí, debes seguir con el cronograma de mantenimiento oficial detallado en el Manual del Usuario y hacer un uso responsable de tu unidad.",
+            "category": "faq"
         },
         {
             "question": "¿Ford Protect puede contratarse para vehículos usados o solamente 0 km?",
-            "answer": "Falta respuesta"
+            "answer": "Falta respuesta",
+            "category": "faq"
         },
         {
             "question": "¿Qué piezas cubre este servicio?",
-            "answer": "Falta respuesta"
+            "answer": "Falta respuesta",
+            "category": "faq"
         },
         {
             "question": "¿Cómo puede saber si mi Ford está en período de garantía?",
-            "answer": "Falta respuesta"
+            "answer": "Falta respuesta",
+            "category": "faq"
+        },
+        {
+            "question":"¿Cuándo son los actos de sorteo y licitación?",
+            "answer": "Los primeros días del mes publicamos en el diario Clarín el llamado al acto de sorteo y licitación, indicando lugar, fecha y horario de realización. Esta información se encuentra disponible en la página web de Plan Ovalo. <a href=\"https://www.planovalo.com.ar/ovalo/Informacion/ResultadosActoAdjudicacion\">Ingresá acá</a> para ver el acto en vivo todos los meses. La transmisión comienza a las 9.30 hs. del día establecido en que se llevará a cabo el acto.",
+            "category": "general"
+        },
+        {
+            "question":"¿Cómo se aplica mi oferta de licitación?",
+            "answer": "Usted tiene la posibilidad de elegir que su oferta se aplique de la siguiente manera: <br> <ul><li><strong>ADELANTO DE CUOTA:</strong> El importe de tu oferta de licitación se tomará para adelantar cuotas de tu plan que descuentan de atrás para adelante. Como adelantás, no pagás cargos administrativos ni seguros! Tené en cuenta que se descontará el impuesto a los débitos/créditos bancarios y, de corresponder por la cantidad que adelantes, se generarán el Derecho de Admisión y Prorrateo de Sellado.</li><br><li><strong>PRORRATEO DE LICITACIÓN:</strong> El importe de tu oferta lo dividiremos proporcionalmente en las cuotas que tengas a vencer, aplicando un porcentaje fijo sobre las cuotas puras (alícuotas) que abones hasta finalizar tu plan. Si decidís cancelar tu plan, descontaremos los porcentajes no aplicados para las cuotas que queden por vencer.</li></ul>",
+            "category": "general"
+        },
+        {
+            "question":"¿Dónde licitar?",
+            "answer": "<ul><li><strong>LICITACIÓN A TRAVÉS DEL CONCESIONARIO:</strong> Podrás realizar la oferta presentándote en el Concesionario, donde deberás completar el formulario y coordinarás el pago de la oferta. Luego, el Concesionario enviará la oferta a Plan Ovalo para así participar del acto. Si resultas ganador, serás notificado vía mail por Plan Ovalo.</li><br> <li><strong>LICITACIÓN MEDIANTE COMPROMISO ACOMPAÑADO POR CHEQUE: </strong>Las ofertas deberán ser formuladas por escrito indicando las sumas licitadas y firmadas por el ofertante en sobre cerrado e indicar si opta por cheque físico o E-check. El formulario debe ser firmado por el ofertante y debe presentarse en sobre cerrado con el cheque físico en su interior, en caso de haber optado por dicha alternativa. El texto de la oferta deberá contener: i) Número del Grupo y orden identificatorio del plan; ii) Apellido, nombre y número de documento del titular; iii) Fecha del acto de adjudicación; iv) Importe a licitar que coincida con el monto del cheque o E-check; v) Deberá ser acompañada de un cheque a la orden de “Plan Ovalo S.A. de Ahorro para Fines Determinados – No a la Orden” ó bien, indicando que se emite un cheque electrónico (E-check). La oferta tiene que presentarse en Colectora Este 34903 (Av. Henry Ford y Panamericana), Ricardo Rojas, Provincia de Buenos Aires, Código postal 1610. Puerta 1, Depositar en la urna.</li></ul>",
+            "category": "general"
+        },
+        {
+            "question":"¿Dónde puedo conocer los resultados del acto de sorteo y licitación?",
+            "answer": "Los resultados son publicados mensualmente el día del acto de adjudicación en nuestra página Web, o bien podés obtenerlos contactándote con nuestro Centro de Atención al Cliente. Adicionalmente, en caso de salir favorecido por sorteo, o haber ganado la licitación, serás contactado mediante e-mail o SMS, siempre que Plan Ovalo disponga de estos datos. Por eso es importante que nos informes tu dirección de e-mail y tu número de celular y los mantengas actualizados. Si resultases ganador por sorteo, deberás aceptar la adjudicación dentro de los cuatro días hábiles posteriores a la publicación de los resultados, ingresando a la página web de Plan Ovalo. Si resultás ganador por licitación no es necesario que nos envíes la aceptación.",
+            "category": "general"
+        },
+        {
+            "question":"¿Cuántos vehículos se adjudican en cada grupo?",
+            "answer": "La cantidad de vehículos depende de los fondos recaudados en cada grupo. Siempre el primer vehículo se adjudica por sorteo y el restante por licitación. En caso de existir fondos para adjudicar más de dos vehículos, se adjudican uno por sorteo y los restantes por licitación.",
+            "category": "general"
+        },
+        {
+            "question":"¿Cómo abonar tus cuotas?",
+            "answer": "<strong>Tenés las siguientes opciones para abonar tus cuotas mensuales:</strong><ul><li>Débito automático en tarjetas de crédito, cuenta corriente o caja de ahorros: para poder adherirte deberás completar el formulario y remitirlo a PLAN OVALO.</li><li>Pago online<ul><li>Tarjeta de crédito y débito VISA, MASTERCARD, AMERICAN EXPRESS, NARANJA, CABAL y MAESTRO.DEBIN (Débito inmediato)</li><li>DEBIN (Débito inmediato)</li></ul></li><li>Con el cupón de pagos en cualquiera de nuestros entes recaudadores.</li><li>Si no disponés del cupón de pago tenés las siguientes alternativas: PAGO FÁCIL; RAPIPAGO (cobra 1,25% adicional por pagos en efectivo); PROVINCIA NET; BANCO GALICIA, SANTANDER RÍO, BANCO NACIÓN, en todos los casos deberás indicar al cajero tu DNI, CUIL o CUIT, o tu grupo y orden.</li><li>Pago electrónico a través de <a href=\"https://www.pagomiscuentas.com\">www.pagomiscuentas.com </a> o <a href=\"https://www.linkpagos.com.ar\">www.linkpagos.com.ar</a> indicando tu código de pago electrónico detallado en el cupón de pago.</li></ul>",
+            "category": "general"
+        },
+        {
+            "question":"¿Cómo obtengo mi cupón de pago?",
+            "answer": "El cupón de pago te lo enviamos mensualmente a tu correo electrónico que tenemos registrado. Es importante que siempre esté actualizado tu correo para poder enviarte todo lo que necesitás saber de tu plan. También podés visualizar tus cupones mensuales al iniciar sesión con tu usuario y contraseña.",
+            "category": "general"
+        },
+        {
+            "question":"¿Se puede ceder el plan?",
+            "answer": "Sí, podés realizar cambio de titularidad de tu plan.<br><strong>Si aún no tenés tu vehículo, tenés 2 opciones:</strong><ul><li>Acercate a cualquier Concesionario Oficial Ford y solicitá el formulario de cesión. El formulario debe firmarse por el comprador y el vendedor. Ambas firmas deben ser certificadas ante escribano público. Además, deberás entregar al Concesionario una copia de DNI del comprador y los anexos UIF.</li><li>Enviá a Plan Ovalo una Carta Documento firmada por comprador y vendedor, la misma debe contener información del comprador.</li><li>Descargá la carta modelo aquí.</li></ul><strong>Si ya tenés tu vehículo</strong>, podés hacer el cambio de titularidad enviando una Carta Documento a Plan Ovalo firmada por comprador y vendedor, con todos los datos requeridos.<br>Si ya tenés tu trámite iniciado, podés consultarle el estado del mismo a un asesor FORDi de lunes a viernes de 8.30 a 17.30 hs.",
+            "category": "general"
+        },
+        {
+            "question": "¿Plan Ovalo solicita requisitos crediticios?",
+            "answer": "Cuando resultes adjudicado y quieras pedir tu Ford 0km, Plan Ovalo hará un análisis crediticio según el porcentaje de pago de tu plan:<ul><li>Si al momento de pedir tu vehículo ya pagaste <strong>más del 50% de tu plan</strong>, te pediremos sólo un veraz. Si tu veraz demuestra buen comportamiento de pago, no necesitás presentar ninguna otra documentación. Si tu veraz no demuestra buen comportamiento de pago, te pediremos un codeudor que posea veraz con buen comportamiento de pago y que demuestre ingresos (superiores a 3 alícuotas de tu modelo plan).</li><li>Si al momento de pedir tu vehículo pagaste <strong>menos del 50% y hasta el 70% de tu plan</strong>, tenés dos opciones:<ul><li>Presentar tu veraz con buen comportamiento de pago, demostrar ingresos (superiores a 3 alícuotas de tu modelo plan) y presentar un codeudor con buen comportamiento de pago.</li><li>Presentar un codeudor que posea veraz con buen comportamiento de pago y que demuestre ingresos (superiores a 3 alícuotas de tu modelo plan).</li></ul></li><li>Si al momento de pedir tu vehículo pagaste <strong>más del 70% de tu plan</strong>, te pediremos un veraz con buen comportamiento de pago, que demuestres ingresos (superiores a 4 alícuotas) y presentes un codeudor con buen comportamiento de pago.</li></ul><p>En caso de que sea necesario que demuestres tus ingresos, te recordamos la documentación que podés presentar:</p><ul><li>Recibo de sueldo</li><li>Certificación de ingresos</li><li>Formulario Ganancias (N° 711)</li><li>Comprobante de monotributo</li></ul>",
+            "category": "general"
+        },
+        {
+            "question":"¿Existe alguna garantía de que se va a cumplir con la entrega del vehículo?",
+            "answer": "Ford Argentina S.C.A., garantiza en forma solidaria con la Administradora, el cumplimiento de las entregas de los bienes adjudicados y la restitución de haberes establecida en el Art. 23.2.2.1 de la Resolución General 8/2015 de la Inspección General de Justicia, y/o sus futuras resoluciones modificatorias o aclaratorias.",
+            "category": "general"
+        },
+        {
+            "question": "¿Puedo ver videos tutoriales de Plan Ovalo?",
+            "answer": "<strong>Sí, podés ver videos tutoriales para comprender de forma simple y clara el funcionamiento de Plan Ovalo:</strong><ul><li><a href=\"https://www.youtube.com/watch?v=4QHVzHjDM-o\">¿Qué es Plan Ovalo?</a></li><li><a href=\"https://www.youtube.com/watch?v=G8VNqCLbjj4\">¿Cómo me registro en la web?</a></li><li><a href=\"https://www.youtube.com/watch?v=rKcf7GUBnpE\">¿Cómo recupero mi contraseña?</a></li><li><a href=\"https://www.youtube.com/watch?v=6eNJLSF4xx0\">¿Cómo me suscribo online y firmo electrónicamente?</a></li><li><a href=\"https://www.youtube.com/watch?v=Q56P2LjIL-Y\">¿Qué es un Acto de Adjudicación?</a></li><li><a href=\"https://www.youtube.com/watch?v=3NfOyJTnmZ4\">¿Cómo es el proceso de liquidación de grupos?</a></li></ul>",
+            "category": "general"
+        },  
+        {
+            "question": "Clientes de ECOSPORT | Ahorristas y Adjudicatarios sin pedido",
+            "answer": "<ul><li><strong>¿Qué pasa con EcoSport?</strong><br>Como consecuencia del cese de producción de EcoSport en la planta de India, la cual abastecía a nuestro país de este producto, la comercialización en Argentina de dicho modelo finalizará una vez que se agoten los inventarios actualmente existentes.</li><br><li><strong>¿Me van a pagar, recibiré los fondos?</strong><br>En el mes de mayo iniciaremos la devolución de los fondos correspondientes a tu plan. La misma se realizará de acuerdo con los valores publicados en la lista de precios vigente al momento de la liquidación de fondos de grupos.<br>A partir del mes de marzo, recibirás más información acerca de la fecha de cobro y los pasos a seguir para el reintegro.<br>Toda comunicación sobre este tema será enviada vía mail desde una casilla de correo con dominio <strong>@ford.com</strong> o <strong>@enviolegal.com</strong>.<br>Es importante que estés atento ante eventuales intentos de fraude por parte de terceros. Tené en cuenta que desde Plan Ovalo no te pediremos ningún pago o aporte de dinero para la gestión del reintegro.</li><br><li><strong>¿Cómo calcularán el reembolso, a qué valor?</strong><br>El cálculo se efectuará de acuerdo con lo estipulado en el contrato de adhesión y se hará tomando en cuenta el valor móvil a la fecha de cálculo (liquidación de fondos de grupos).</li><br><li><strong>¿Cuánto voy a cobrar?</strong><br>A partir del mes de mayo y una vez notificado el inicio del trámite, podrás consultar el detalle de la liquidación, incluyendo el monto total a cobrar y todos los conceptos que integran dicho importe.</li><br><li><strong>¿Cómo van a hacerme la devolución de los fondos?</strong><br>En el mes de mayo se iniciará el proceso de devolución. Estas devoluciones se realizarán mediante transferencia bancaria al CBU que deberás informar ingresando a la página web de Plan Ovalo, cuando esté habilitada para cargar esta información.<br>Toda la información necesaria para el pago será comunicada por Plan Ovalo oportunamente.<br><strong>Te recordamos que esta operación se realiza directamente con la administradora Plan Ovalo; ni nuestra red de concesionarios ni otros terceros intermediarán en este proceso.</strong></li><br><li><strong>No quiero el reembolso de fondos, ¿qué vehículo me pueden ofrecer y con qué condiciones por esta nueva situación?</strong><br>Por favor, consultá en el concesionario donde suscribiste tu plan. Allí podrán analizar las oportunidades de continuar con Plan Ovalo.</li><br><li><strong>¿Debo seguir pagando las cuotas?</strong><br>Sí, deberás abonar la cuota con vencimiento en marzo. A partir de abril no deberás pagar más cuotas, a menos que adjudiques en el acto de marzo y continúes con la facturación del vehículo.</li></ul>",
+            "category": "eco"
+        },
+        {
+            "question": "Clientes de ECOSPORT | con pedido",
+            "answer": "<p><strong>Ingresé un pedido de vehículo en el concesionario, ¿lo van a respetar?</strong></p><p>Seguiremos entregando unidades a los clientes hasta agotar el stock.</p><br><p><strong>¿Debo seguir pagando las cuotas?</strong></p><p>Sí, deberás continuar pagando tus cuotas con normalidad hasta la finalización de tu plan.</p>",
+            "category": "eco"
+        },
+        {
+            "question": "Clientes de ECOSPORT | con vehículo",
+            "answer": "<p><strong>¿Debo seguir pagando las cuotas?</strong></p><p>Sí, deberás continuar pagando las cuotas con normalidad hasta la finalización de tu plan.</p>",
+            "category": "eco"
+        }
+        ,
+        {
+            "question": "Clientes de ECOSPORT | Rescindidos y Renunciados",
+            "answer": "<p><strong>¿Recibiré el total de los fondos que me corresponde?</strong> Sí, el cálculo del reembolso se hará de acuerdo con lo establecido en el contrato de adhesión.</p><br><p><strong>¿Cuándo recibiré los fondos?</strong></p><p>A partir del mes de junio comenzaremos el proceso de devolución de fondos a clientes rescindidos y renunciados. Al momento de liquidarse tu grupo, en caso de corresponder, te informaremos los pasos a seguir para cobrar tus fondos.</p><br><p><strong>¿Cuál será el precio sobre el que calcularán el reembolso? ¿A qué momento?</strong></p><p>El cálculo se efectuará de acuerdo con lo estipulado en el contrato de adhesión y tomando como base el valor móvil a la fecha de liquidación de tu grupo, con la actualización establecida en el Art. 25 de la Resolución General N° 8/2015 de la IGJ.</p>",
+            "category": "eco"
+        },
+        {
+            "question":"Clientes de Ka | Ahorristas y Adjudicatarios con pedidos pendientes",
+            "answer": "<ul><li><strong>¿Me van a pagar, recibiré los fondos?</strong><br>Iniciamos la devolución de los fondos correspondientes a planes Ka. Como informamos en su momento, las devoluciones están siendo realizadas según los valores de lista vigentes a ese momento. Si tenés un plan afectado por esta acción y aún no recibiste una notificación de Plan Ovalo para comenzar tu trámite, no te preocupes. A los efectos de organizar el proceso, se estableció un orden de contacto. En el transcurso de los próximos días recibirás la información que esperás acerca de tu fecha de cobro y los pasos requeridos en el proceso. Las comunicaciones se realizan vía mail a través de una casilla de correo con dominio @ford.com o bien @enviolegal.com. Es importante que estés atento ante eventuales intentos de fraude y tengas en cuenta que desde Plan Ovalo no te pediremos ningún pago o aporte de dinero para la gestión de este reintegro.</li><br><li><strong>¿Cómo calcularán el reembolso, a qué valor?</strong><br>El cálculo se efectuará según las condiciones establecidas en el contrato y tomando como referencia el valor móvil (el precio de lista sugerido a público) a la fecha de cálculo.</li><br><li><strong>¿Cuánto voy a cobrar?</strong> <br>Una vez notificado el inicio del trámite, podrás consultar el detalle de la liquidación, incluyendo el monto total a cobrar y todos los conceptos que integran dicho importe.</li><br><li><strong>No quiero el reembolso de fondos, ¿Qué vehículo me pueden ofrecer y con qué condiciones por esta nueva situación?</strong><br>En estos casos te pedimos que te contactes con el concesionario donde te suscribiste a tu plan original. Allí podrán asesorarte acerca de las oportunidades para continuar con Plan Ovalo.</li><br><li><strong>¿Debo seguir pagando las cuotas?</strong><br>No.</li><br><li><strong>¿Cómo van a hacerme la devolución de los fondos?</strong><br>Se inició el proceso de devolución de fondos. Las mismas se realizan mediante transferencia bancaria al CBU que deberás informar como parte del proceso.<br>Si fuiste notificado para comenzar el proceso de devolución, los pagos se realizan una vez que hayas completado los pasos requeridos para poder hacer la transferencia. Plan Ovalo realizará el pago el viernes subsiguiente a la finalización de los mismos. Te recordamos que esta operación se realiza directamente con la administradora Plan Ovalo, ni nuestra red de concesionarios ni otros terceros intermediarán en este proceso.</li><br><li><strong>¿Cómo es el proceso de devolución?</strong><br>Plan Ovalo inició el proceso de devolución de fondos de planes Ka ahorristas a través de transferencias bancarias al CBU informado por cada cliente según su proceso. Te recordamos que esta operación se realiza directamente con la administradora Plan Ovalo, ni nuestra red de concesionarios ni otros terceros intermediarán en el proceso de devolución de ​fondos. Los pagos se realizarán una vez que hayas completado y cumplido con los pasos requeridos para ello. Para saber más sobre el proceso, hacé click acá.</li></ul>",
+            "category": "ka"
+        },
+        {
+            "question":"Clientes de Ka | con vehículo",
+            "answer": "<ul><li><strong>¿Debo seguir pagando las cuotas?</strong>Sí, deberá continuar pagando las cuotas con normalidad hasta la finalización de su plan.</li></ul>",
+            "category": "ka"
+        },
+        {
+            "question":"Clientes de Ka | Rescindidos o Renunciados",
+            "answer": "<ul><li><strong>¿Recibiré el total de los fondos que me corresponde?</strong> <br>Sí, el cálculo del reembolso se hará de acuerdo con lo establecido en el contrato.</li><br><li><strong>¿Cuándo recibiré los fondos que me corresponden?</strong><br>Se comenzó el proceso de liquidación de fondos planes Ka renunciados y rescindidos. El criterio del cronograma es la antigüedad de los planes a liquidar, de acuerdo con la fecha de formación. Se inició con los grupos más antiguos y en forma mensual se irán liquidando los restantes siguiendo el mismo criterio, hasta finalizar con aquellos agrupados en una fecha más reciente. Para saber más sobre el proceso, hacé click acá.</li><br><li><strong>¿Cuál será el precio sobre el que calcularán el reembolso? ¿En qué momento?</strong><br>El cálculo se efectuará de acuerdo con lo estipulado en el contrato y en base al valor móvil a la fecha de la liquidación de su grupo.</li></ul>",
+            "category": "ka"
         }
     ]
 }

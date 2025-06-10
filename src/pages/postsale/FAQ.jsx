@@ -10,7 +10,8 @@ import useIsMobile from '../../hook/useIsMobile';
 
 function FAQ() {
   const selectedBanner = bannerData.banners[16];
-  const faq = faqData.faq;
+  // Filtrar solo las preguntas de categoría "general"
+  const faq = faqData.faq.filter(item => item.category === 'faq');
   const isMobile = useIsMobile();
 
   return (
@@ -27,7 +28,6 @@ function FAQ() {
           </div>
         </div>
       )}
-
 
       <div className={styles.wraperAccordion}>
       {faq.map((item, index) =>(
