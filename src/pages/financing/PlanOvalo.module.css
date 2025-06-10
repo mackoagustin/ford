@@ -2,6 +2,11 @@
     padding-left: 16px;
     padding-right: 16px;
 }
+
+.pt80 {
+    padding-top: 80px;
+}
+
 .wraper {
     background-color: var( --color-neutral-100);
     padding: 60px 16px 60px 16px;
@@ -29,12 +34,15 @@
     justify-content: flex-end;
 }
 
+.faqWrapper {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    background-color: var(--color-neutral-100);
+}
+
 
 @media (min-width: 768px) {
 
-    h2 {
-        padding-bottom: 24px;
-    }
     .legalText {
         width: auto;
     }
@@ -43,6 +51,7 @@
         padding-right: 16px;
         max-width: 1170px;
         margin: 0 auto;
+        padding-bottom: 0px !important;
     }
 
     .wraperSection {
@@ -55,7 +64,7 @@
 
     .sliderWrapper {
         max-width: 1170px;
-        margin: 24px auto 0 auto;
+        margin: 24px auto 150px auto;
         padding: 0 16px;
     }
 }
@@ -64,10 +73,7 @@
     .wraperLegal {
         justify-content:center;
     }
-    h2 {
-        padding-bottom: 24px;
-        margin-left: 0;
-    }
+ 
   .px16 {
         padding-left: 16px;
         padding-right: 16px;
@@ -89,6 +95,10 @@
         padding: 42px 32px;
         max-width: 1168px;
         margin: 0 auto;
+    }
+    .pt80 {
+        padding-top: 80px;
+        padding-bottom: 0px;
     }
 }
 

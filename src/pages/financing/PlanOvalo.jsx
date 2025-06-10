@@ -10,6 +10,8 @@ import Footer from '../../components/Footer/Footer';
 import creditPlanes from '../../data/creditPlans.json';
 import AdminPlanOvaloCardSlider from '../../components/AdminPlanOvaloCardSlider/AdminPlanOvaloCardSlider';
 import adminPlanOvalo from '../../data/adminPlanOvalo.json';
+import Accordion from '../../components/Accordion/Accordion';
+import faqData from '../../data/faq.json';
 
 function PlanOvalo() {
   const isMobile = useIsMobile();
@@ -18,6 +20,10 @@ function PlanOvalo() {
   const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
 
   const selectedAdminPlanIndices = [0, 1, 2]; 
+
+  const faqGeneral = faqData.faq.filter(item => item.category === 'general');
+  const faqEco = faqData.faq.filter(item => item.category === 'eco');
+  const faqKa = faqData.faq.filter(item => item.category === 'ka');
 
   return (
     <div>
@@ -67,6 +73,53 @@ function PlanOvalo() {
        
       </div>
 
+      {/* FAQ */}
+      <div className={styles.faqWrapper}>
+        <div className={styles.px16}>
+          <div className={`${styles.wraperSection} ${styles.pt80}`}>
+            <h2 className={`H2 ${styles.px16}`}>Información general</h2>
+            <div>
+                    {faqGeneral.map((item, index) =>(
+                <Accordion
+                key={index}
+                question={item.question}
+                answer={item.answer}
+                variant={index === 0 ? 'parent' : 'child'}
+                />
+              ))}
+            </div>
+          </div>
+          <div className={`${styles.wraperSection} ${styles.pt80}`}>
+            <h2 className={`H2 ${styles.px16}`}>Información importante clientes planes de ECOSPORT</h2>
+            <div>
+                {faqEco.map((item, index) =>(
+                    <Accordion
+                    key={index}
+                    question={item.question}
+                    answer={item.answer}
+                    variant={index === 0 ? 'parent' : 'child'}
+                    />
+                ))}
+            </div>
+          </div>
+          <div className={`${styles.wraperSection} ${styles.pt80}`}>
+            <h2 className={`H2 ${styles.px16}`}>Información importante clientes planes de KA, KA+ Y KA Freestyle</h2>
+            <div>
+                {faqKa.map((item, index) =>(
+                    <Accordion
+                    key={index}
+                    question={item.question}
+                    answer={item.answer}
+                    variant={index === 0 ? 'parent' : 'child'}
+                    />
+                ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.sliderWrapper}></div>
+      {/* Formulario de asesoramiento */}
       {isMobile ? (
           <div className={styles.wraper}>
             <h3 className="H3 text-color-dark">
@@ -94,7 +147,7 @@ function PlanOvalo() {
           </div>
         )}
       {/* Administración Plan Ovalo */}
-      <div className= {styles.px16}>
+      <div className= {styles.px16} style={{paddingTop: '80px'}}>
         <div className= {styles.wraperSection}>
           <h2 className='H2'>Administración <span className='text-color-secondary'>Plan Ovalo</span> </h2>
         </div>
