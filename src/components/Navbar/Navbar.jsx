@@ -2,12 +2,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import useIsMobile from '../../hook/useIsMobile';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
-  const isMobile = useIsMobile();
   
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -26,11 +24,9 @@ function Navbar() {
     <nav className={`${styles.navbar} ${isOpen ? styles.isOpen : ''}`}>
       <div className={styles.navbarContainer}>
         {/* Menú Hamburguesa a la izquierda */}
-        {isMobile && (
-          <div className={styles.hamburger} onClick={toggleMenu}>
-            ☰
-          </div>
-        )}
+        <div className={styles.hamburger} onClick={toggleMenu}>
+          ☰
+        </div>
         
         {/* Logo a la derecha */}
         <div className={styles.logo}>
@@ -40,8 +36,8 @@ function Navbar() {
         </div>
 
      
-        {!isMobile ? (
-         <ul className={`${styles.navLinks} ${styles.desktop}`}>
+        {/* Menú Desktop */}
+        <ul className={`${styles.navLinks} ${styles.desktop}`}>
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('vehiculos')}>
                 <div className={`${styles.iconWrapper} ${styles.iconWrapperFirst}`}>
@@ -211,11 +207,10 @@ function Navbar() {
             <li><Link to="/sucursales" onClick={closeMenu}>Sucursales</Link></li>
           </ul>
 
-        ) : (
-          // Menú Móvil
-          isOpen && (
-            <div className={styles.mobileOverlay}>
-              <ul className={`${styles.navLinks} ${styles.mobile}`}>
+        {/* Menú Móvil */}
+        {isOpen && (
+          <div className={styles.mobileOverlay}>
+            <ul className={`${styles.navLinks} ${styles.mobile}`}>
                 <div className={styles.wraperLink}>
                   <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                 </div>
@@ -401,8 +396,7 @@ function Navbar() {
                 </div>
               </ul>
             </div>
-          )
-        )}
+          )}
 
         {/* Overlay oscuro */}
         <div

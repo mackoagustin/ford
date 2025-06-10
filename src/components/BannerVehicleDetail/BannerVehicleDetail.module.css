@@ -20,14 +20,15 @@
 .content {
   position: absolute;
   left: 16px;
-  /* top: 50%;
+  top: 10%;
+  /*
   transform: translateY(-50%);   */
   bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   z-index: 3;
-  width: 80%;
+  width: 90%;
 }
 
 .textGroup {
@@ -49,7 +50,7 @@
   color: #727272;
   font-size: 24px; 
   font-weight: 400;
-  padding-bottom: 42px;
+  padding-bottom: 142px;
 }
 
 .subtitle {

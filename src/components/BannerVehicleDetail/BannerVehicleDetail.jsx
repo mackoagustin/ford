@@ -18,9 +18,6 @@ const BannerDoubleButton = ({data}) => {
                 className={styles.backgroundImage} 
                 loading="lazy"
               />
-
-              <div className={styles.overlay} />
-
               <div className={styles.content}>
                 <div className={styles.textGroup}>
                   <h1 className={`${styles.title} display4`}>
