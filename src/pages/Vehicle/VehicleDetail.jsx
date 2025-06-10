@@ -13,7 +13,6 @@ import Chip from '../../components/Chip/Chip';
 import BannerVehicleKnow from '../../components/BannerVehicleKnow/BannerVehicleKnow';
 import Footer from '../../components/Footer/Footer';
 import styles from './VehicleDetail.module.css';
-import useIsMobile from '../../hook/useIsMobile';
 
 const VehicleDetail = () => {
     const { id } = useParams();
@@ -22,7 +21,6 @@ const VehicleDetail = () => {
     const [selectedColorIndex, setSelectedColorIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-    const isMobile = useIsMobile();
     const [selectedBenefit, setSelectedBenefit] = useState(0);
 
     const openModal = (index) => {
@@ -51,129 +49,85 @@ const VehicleDetail = () => {
             </div>
 
             {/* feature */}
-            {isMobile ? (
-                <div>
-                    <div className={styles.wraperFeature}>
-                        <img 
-                            src={vehicle.detail.colors[selectedColorIndex].image} 
-                            alt={vehicle.title} 
-                            className={styles.carImage}
-                        />
-                        <p className={`${styles.colorText} subtitle-20 text-color-dark`}>
-                            {vehicle.detail.colors[selectedColorIndex].name}
-                        </p>
-                        <div className={styles.colorImages}>
-                            {vehicle.detail.colors.map((color, index) => (
-                                <img 
-                                    key={index}
-                                    src={color.imageColor} 
-                                    alt={color.name}
-                                    className={`${styles.colorImage} ${selectedColorIndex === index ? styles.selected : ''}`}
-                                    onClick={() => setSelectedColorIndex(index)}
-                                />
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className={styles.wraperSpecifications}>
-                        <div className={styles.contentSpecifications}>
-                            {vehicle.detail.specifications.map((spec, index) => (
-                                <div key={index}>
-                                    <p className={` ${styles.specificationsTitle} H4 text-color-white`}>{spec.title}</p>
-                                    {spec.feature.map((item, idx) => (
-                                        <p 
-                                            key={idx}
-                                            className='subtitle-20 text-color-dark'>
-                                            {item}
-                                        </p>
-                                    ))}
-                                </div>
-                            ))}
-                        </div>
+            <div className={styles.wraperRow}>
+                <div className={styles.wraperFeature}>
+                    <img 
+                        src={vehicle.detail.colors[selectedColorIndex].image} 
+                        alt={vehicle.title} 
+                        className={styles.carImage}
+                    />
+                    <p className={`${styles.colorText} subtitle-20 text-color-dark`}>
+                        {vehicle.detail.colors[selectedColorIndex].name}
+                    </p>
+                    <div className={styles.colorImages}>
+                        {vehicle.detail.colors.map((color, index) => (
+                            <img 
+                                key={index}
+                                src={color.imageColor} 
+                                alt={color.name}
+                                className={`${styles.colorImage} ${selectedColorIndex === index ? styles.selected : ''}`}
+                                onClick={() => setSelectedColorIndex(index)}
+                            />
+                        ))}
                     </div>
                 </div>
-            ) : (
-                <div className={styles.wraperRow}>
-                     <div className={styles.wraperFeature}>
-                        <img 
-                            src={vehicle.detail.colors[selectedColorIndex].image} 
-                            alt={vehicle.title} 
-                            className={styles.carImage}
-                        />
-                        <p className={`${styles.colorText} subtitle-20 text-color-dark`}>
-                            {vehicle.detail.colors[selectedColorIndex].name}
-                        </p>
-                        <div className={styles.colorImages}>
-                            {vehicle.detail.colors.map((color, index) => (
-                                <img 
-                                    key={index}
-                                    src={color.imageColor} 
-                                    alt={color.name}
-                                    className={`${styles.colorImage} ${selectedColorIndex === index ? styles.selected : ''}`}
-                                    onClick={() => setSelectedColorIndex(index)}
-                                />
-                            ))}
-                        </div>
-                    </div>
-                    <div className={styles.wraperSpecifications}>
-                        <div className={styles.contentSpecifications}>
-                            {vehicle.detail.specifications.map((spec, index) => (
-                                <div key={index}>
-                                    <p className={` ${styles.specificationsTitle} H4 text-color-white`}>{spec.title}</p>
-                                    {spec.feature.map((item, idx) => (
-                                        <p 
-                                            key={idx}
-                                            className='subtitle-20 text-color-dark'>
-                                            {item}
-                                        </p>
-                                    ))}
-                                </div>
-                            ))}
-                        </div>
+                <div className={styles.wraperSpecifications}>
+                    <div className={styles.contentSpecifications}>
+                        {vehicle.detail.specifications.map((spec, index) => (
+                            <div key={index}>
+                                <p className={` ${styles.specificationsTitle} H4 text-color-white`}>{spec.title}</p>
+                                {spec.feature.map((item, idx) => (
+                                    <p 
+                                        key={idx}
+                                        className='subtitle-20 text-color-dark'>
+                                        {item}
+                                    </p>
+                                ))}
+                            </div>
+                        ))}
                     </div>
                 </div>
-            )}
+            </div>
 
-
-            {/* galeria imágenes */}
-            { isMobile ? (
-                 <div className={styles.wraperImages}>
-                 <Swiper
-                     modules={[Pagination]}
-                     spaceBetween={16}
-                     slidesPerView={1.2}
-                     pagination={{ clickable: true }}
-                     className={styles.swiper}
-                 >
-                     {vehicle.detail.gallery.map((image, index) => (
-                         <SwiperSlide key={index}>
-                             <img 
-                                 src={image} 
-                                 alt={`${vehicle.title} - Imagen ${index + 1}`}
-                                 className={styles.galleryImage}
-                             />
-                         </SwiperSlide>
-                     ))}
-                 </Swiper>
-             </div>
-            ) : (
-               <div className={styles.galleryImages}>
+            {/* galeria imágenes - Mobile Swiper */}
+            <div className={styles.wraperImagesMobile}>
+                <Swiper
+                    modules={[Pagination]}
+                    spaceBetween={16}
+                    slidesPerView={1.1}
+                    pagination={{ clickable: true }}
+                    className={styles.swiper}
+                    style={{paddingBottom: '38px'}}
+                >
                     {vehicle.detail.gallery.map((image, index) => (
-                        <div 
-                            key={index}
-                            className={styles.galleryImageContainer}
-                            onClick={() => openModal(index)}
-                        >
+                        <SwiperSlide key={index}>
                             <img 
                                 src={image} 
                                 alt={`${vehicle.title} - Imagen ${index + 1}`}
                                 className={styles.galleryImage}
                             />
-                            <div className={styles.zoomIcon} />
-                        </div>
+                        </SwiperSlide>
                     ))}
-               </div>
-            )}
+                </Swiper>
+            </div>
+
+            {/* galeria imágenes - Desktop Grid */}
+            <div className={styles.galleryImagesDesktop}>
+                {vehicle.detail.gallery.map((image, index) => (
+                    <div 
+                        key={index}
+                        className={styles.galleryImageContainer}
+                        onClick={() => openModal(index)}
+                    >
+                        <img 
+                            src={image} 
+                            alt={`${vehicle.title} - Imagen ${index + 1}`}
+                            className={styles.galleryImage}
+                        />
+                        <div className={styles.zoomIcon} />
+                    </div>
+                ))}
+            </div>
            
             {/* Modal */}
             {isModalOpen && (
@@ -206,34 +160,28 @@ const VehicleDetail = () => {
                     </div>
                 </div>
             )}
-            
 
+            {/* Slider benefits - Mobile */}
+            <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainerMobile}`}>
+                <FordProSlider data={vehicle.detail.benefits} />
+            </div>
 
-            {/* Slider  benefits*/}
-            {isMobile ? (
+            {/* Slider benefits - Desktop */}
+            <div className={styles.sliderBenefitsDesktop}>
+                <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.chipContainer}`}>
+                    {vehicle.detail.benefits.map((item, index) => (
+                        <Chip
+                            key={index}
+                            label={item.title}
+                            active={index === selectedBenefit}
+                            onClick={() => setSelectedBenefit(index)}
+                        />
+                    ))}
+                </div>
                 <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
-                    <FordProSlider data={vehicle.detail.benefits} />
+                    <FordProSlider data={[vehicle.detail.benefits[selectedBenefit]]} />
                 </div>
-            ) : (
-                <>
-                <div className={styles.sliderBenefits}>
-                     <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.chipContainer}`}>
-                        {vehicle.detail.benefits.map((item, index) => (
-                            <Chip
-                                key={index}
-                                label={item.title}
-                                active={index === selectedBenefit}
-                                onClick={() => setSelectedBenefit(index)}
-                            />
-                        ))}
-                    </div>
-                    <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
-                        <FordProSlider data={[vehicle.detail.benefits[selectedBenefit]]} />
-                    </div>
-                </div>
-                   
-                </>
-            )}
+            </div>
 
             <div className={styles.BannerVehicleKnow}>
                 <BannerVehicleKnow />

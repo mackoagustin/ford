@@ -269,7 +269,86 @@
     padding: 60px 16px;
 }
 
-@media (min-width: 768px) {
+
+
+/* Mobile: Mostrar solo swiper para galería */
+.wraperImagesMobile {
+    display: block;
+    padding: 60px 16px 0px 16px;
+}
+
+.galleryImagesDesktop {
+    display: none;
+}
+
+/* Mobile: Mostrar slider simple para benefits */
+.sliderContainerMobile {
+    display: block;
+    max-width: 1164px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--color-neutral-100);
+}
+
+.sliderBenefitsDesktop {
+    display: none;
+}
+
+/* Tablet breakpoint */
+@media (min-width: 480px) and (max-width: 1200px) {
+    .wrapperText {
+        padding: 42px 24px 60px 24px;
+    }
+    .wraperFeature {
+        padding: 0 24px;
+    }
+
+    .wraperSpecifications {
+        margin: 42px 24px;
+    }
+
+    .wraperImagesMobile {
+        padding: 60px 24px 0px 24px;
+    }
+
+    .wraperImagesMobile .swiper {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .BannerVehicleKnow {
+        padding: 60px 24px;
+    }
+}
+
+@media (min-width: 1000px) {
+   /* Desktop: Ocultar swiper móvil y mostrar grid */
+   .wraperImagesMobile {
+       display: none;
+   }
+
+   .galleryImagesDesktop {
+       display: flex;
+       flex-wrap: wrap;
+       align-items: center;
+       justify-content: center;
+       gap: 8px;
+       padding: 60px 16px 0px 16px;
+       max-width: 1170px;
+       margin: 0 auto;
+   }
+
+   /* Desktop: Ocultar slider móvil y mostrar con chips */
+   .sliderContainerMobile {
+       display: none;
+   }
+
+   .sliderBenefitsDesktop {
+       display: block;
+       background-color: var(--color-neutral-100);
+       padding-top: 80px;
+   }
+
    .wrapperText {
     display: flex;
     justify-content: center;
@@ -278,7 +357,6 @@
     margin: 0 auto;
     padding-top: 42px;
    }
-
 
    .wraperTitle {
     width: 60%;
