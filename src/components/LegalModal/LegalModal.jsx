@@ -27,7 +27,7 @@ const LegalModal = ({ isOpen, onClose, title = "Legales", content = "" }) => {
                     <h3 className={`H3 text-color-dark ${styles.margin0}`}>{title}</h3>
                 </div>
                 <div className={styles.modalBody}>
-                    <p className="body-1-16 text-color-neutral-500">{content}</p>
+                    <p className="body-1-16 text-color-neutral-500" dangerouslySetInnerHTML={{ __html: content }}></p>
                 </div>
             </div>
         </div>
