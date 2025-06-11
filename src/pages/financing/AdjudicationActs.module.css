@@ -77,7 +77,7 @@
 
     .wraperSection{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 1170px;
         margin: 0 auto;
     }

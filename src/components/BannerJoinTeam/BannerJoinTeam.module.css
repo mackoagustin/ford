@@ -17,7 +17,11 @@
     transform: scale(1.2);
     z-index: 1;
   }
-
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .textGroup{
+      padding-left: 16px;
+    }
+  }
   /* Mobile - ajuste de posición de la imagen */
   @media (max-width: 767px) {
     .backgroundImage {

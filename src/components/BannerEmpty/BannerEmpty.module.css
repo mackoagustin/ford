@@ -70,6 +70,12 @@
     }
   }*/
 
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .textGroup{
+      padding-left: 16px;
+    }
+  }
+  
   
   /* Desktop */
   @media (min-width: 768px) {
