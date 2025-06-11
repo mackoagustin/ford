@@ -16,7 +16,10 @@ const LocationSlider = ({ selectedCategory }) => {
   const filteredLocations = selectedCategory === "Todos"
     ? locationData.locations
     : locationData.locations.filter(
-        (location) => location.category === selectedCategory
+        (location) => 
+          Array.isArray(location.category) 
+            ? location.category.includes(selectedCategory)
+            : location.category === selectedCategory 
       );
 
   if (isMobile) {

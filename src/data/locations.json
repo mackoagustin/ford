@@ -2,7 +2,7 @@
     "locations": [
       { 
         "location": "Showroom Agronomía",
-        "category": "Venta convencional",
+        "category": ["Venta tradicional", "Posventa", "Plan Ovalo"],
         "image": "/img/locations/agronomia.png",
         "address": "Av. Francisco Beiró 2555, Agronomía - CABA",
         "hours": {
@@ -24,7 +24,7 @@
       },
       { 
         "location": "Showroom Colegiales",
-        "category": "Venta convencional",
+        "category": ["Venta tradicional", "Plan Ovalo"],
         "image": "/img/locations/colegiales.png",
         "address": "Av. Álvarez Thomas 901, Colegiales - CABA",
         "hours": {
@@ -37,7 +37,7 @@
       },
       { 
         "location": "Showroom José Ingenieros",
-        "category": "Venta convencional",
+        "category": ["Venta tradicional", "Posventa", "Plan Ovalo"],
         "image": "/img/locations/ingenieros.png",
         "address": "Av. Lincoln 1600, José Ingenieros, Pcia. Bs. As.",
         "hours": {
@@ -57,7 +57,7 @@
       },
       { 
         "location": "Showroom Villa del Parque",
-        "category": "Venta convencional",
+        "category": ["Venta tradicional", "Ford Pro | Venta corporativa", "Plan Ovalo", "Administración", "Accesorios"],
         "image": "/img/locations/villa_del_parque.png",
         "address": "Av. San Martín 4280, Villa del Parque, CABA",
         "hours": {
@@ -70,7 +70,7 @@
       },
       { 
         "location": "Taller Palermo",
-        "category": "Venta convencional",
+        "category": ["Posventa"],
         "image": "/img/locations/palermo.png",
         "address": "Arévalo 1467, Palermo - CABA",
         "hours": {
