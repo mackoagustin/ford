@@ -46,6 +46,8 @@
     display: flex;
     width: 164px;
     justify-content: flex-end;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .sliderContainer {
@@ -87,6 +89,17 @@
         max-width: 1170px;
         margin: 24px auto 0 auto;
         padding: 0 16px;
+    }
+
+    .wraperTitle {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .chipContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        justify-content: center;
     }
 }
 

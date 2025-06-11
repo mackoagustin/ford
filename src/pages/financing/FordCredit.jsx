@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import BannerFordCredit from '../../components/BannerFordCredit/BannerFordCredit';
 import bannerData from "../../data/banners.json";
 import styles from "./FordCredit.module.css";
-import PlanOvaloSlider from '../../components/PlanOvaloSlider/PlanOvaloSlider';
+import OportunitiesSlider from '../../components/OpportunitiesSlider/OportunitiesSlider';
 import Form from '../../components/Form/Form';
 import useIsMobile from '../../hook/useIsMobile';
 import Button from '../../components/Button/Button';
@@ -24,9 +24,17 @@ function FordCredit() {
     <div>
       <BannerFordCredit data = {selectedBanner} />
 
-      <div className={`${styles["pt-60"]} ${styles["px-16"]}`}>
-        <p className="text-color-neutral-500 subtitle-20">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
-      </div>
+      {/* Title */}
+      {isMobile ? (
+         <div className={`${styles["pt-60"]} ${styles["px-16"]}`}>
+         <p className="text-color-neutral-500 subtitle-20">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
+       </div>
+      ) : (
+         <div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles.wraperTitle}`}>
+         <p className="text-color-neutral-500 subtitle-20 text-center">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
+       </div>
+      )}
+     
 
       <div className= {styles.px16}>
         <div className= {styles.wraperSection}>
@@ -35,7 +43,7 @@ function FordCredit() {
         </div>
       </div>
       <div className={styles.sliderWrapper}>
-        <PlanOvaloSlider items={items} />
+        <OportunitiesSlider items={items} />
       </div>
 
      

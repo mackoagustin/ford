@@ -1,8 +1,8 @@
 import React from "react";
-import styles from  "./PlanOvaloCard.module.css";
+import styles from  "./OportunitiesCard.module.css";
 import Button from '../Button/Button';
 
-const PlanOvaloCard = ( { item }) => {
+const OportunitiesCard = ( { item }) => {
     
   if (!item) {
     return <div>No data available</div>;
@@ -21,15 +21,8 @@ const PlanOvaloCard = ( { item }) => {
     />
     <div  className={styles.info}>
         <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
+        <p className="text-color-neutral-600 body-1-16"  >{item.text}</p>
         <p className="text-color-neutral-600 body-1-16"  >{item.subtitle}</p>
-        <ul className={styles.featuresList}>
-          {features.map((feature, index) => (
-            <li 
-            key={index} 
-            className={`text-color-neutral-600 body-1-16 ${styles.featuresListLi}`} 
-             >{feature}</li>
-          ))}
-        </ul>
     </div>
     <div className={styles.buttonWrapper}>
       <Button
@@ -62,7 +55,7 @@ const PlanOvaloCard = ( { item }) => {
   )
 }
 
-export default PlanOvaloCard
+export default OportunitiesCard
 
 
 
