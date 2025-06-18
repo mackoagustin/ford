@@ -5,7 +5,7 @@
       "title": "Bronco Sport",
       "description": "Descubrí la nueva Bronco Sport",
       "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Bronco%20Sport",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Bronco%20Sport",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
     },
@@ -14,7 +14,7 @@
       "title": "Territory",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Territory",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%Territory",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
     },
@@ -23,7 +23,8 @@
       "title": "Kuga híbrida",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Kuga%20Hibrida",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%Kuga%20Hibrida",
+
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
     },
@@ -33,7 +34,17 @@
       "title": "Nueva Everest",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Everest",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Nueva%20Everest",
+
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": ""
+    },
+    "bronco": {
+      "image": "/img/vehicles/bronco/bronco_banner.png",
+      "title": "Bronco",
+      "description": "Descubrí la Territory",
+      "ctaText": "Agendar test drive",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Bronco",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
     }
