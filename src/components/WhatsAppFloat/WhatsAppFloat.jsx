@@ -2,9 +2,9 @@ import React from 'react';
 import styles from './WhatsAppFloat.module.css';
 
 const WhatsAppFloat = ({ 
-  phoneNumber = "5491126633000", // +54 9 11 2663-3000 
-  message = "Hola, me gustaría obtener más información", // Mensaje por defecto
-  position = "bottom-right" // Posición: bottom-right, bottom-left, top-right, top-left
+  phoneNumber = "5491126633000", 
+  message = "Hola, me gustaría obtener más información", 
+  position = "bottom-right"
 }) => {
   
   const handleWhatsAppClick = () => {
