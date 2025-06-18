@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './hook/ScrollToTop';
 
 import Navbar from './components/Navbar/Navbar';
+import WhatsAppFloat from './components/WhatsAppFloat/WhatsAppFloat';
 
 
 import Home from './pages/Home';
@@ -63,6 +64,13 @@ function App() {
         <Route path="/quienes-somos/novedades" element={<News />} />
         <Route path="/sucursales" element={<Branches />} />
       </Routes>
+      
+      {/* Componente WhatsApp flotante que aparece en todas las páginas */}
+      <WhatsAppFloat 
+        phoneNumber="5491126633000"
+        message="Hola, me gustaría obtener más información sobre Ford"
+        position="bottom-right"
+      />
     </Router>
   );
 }
