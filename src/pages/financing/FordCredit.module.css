@@ -56,6 +56,10 @@
     width: 100%;
 }
 
+.back100{
+    background-color:  var(--color-neutral-100);
+}
+
 @media (min-width: 768px) {
 
     h2 {

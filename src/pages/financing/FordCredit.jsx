@@ -77,7 +77,7 @@ function FordCredit() {
 
     
       {isMobile ? (
-        <div className={`${styles["background-color-neutral-100"]}  ${styles["pt-60"]} ${styles["pb-60"]}`}>
+        <div className={`${styles.back100}  ${styles["pt-60"]} ${styles["pb-60"]}`}>
           <div className= {styles["px-16"]}>
             <h3 className='H3'>¿Por qué <span className="text-color-secondary">financiar?</span></h3>
             <p className='subtitle-16 text-color-neutral-500'>Si estás pensando en comprar un vehículo nuevo, Ford te acerca diferentes formas de financiación que se adaptan a todas las necesidades. Realizando un pago inicial como anticipo, te ofrecemos la posibilidad de financiar hasta un 60% en un plazo de hasta 60 meses, con cuotas fijas en pesos y sin gastos de otorgamiento.</p>

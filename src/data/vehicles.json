@@ -5,62 +5,384 @@
          "image": "/img/vehicles/territory.png",
          "title": "Territory",
          "text": "Llegá hasta donde imagines.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/territory",
          "category": "suv",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "Llegá hasta donde <span>imagines.</span>",
+                "text" : "La evolución del diseño, funcionalidad, tecnología inteligente y seguridad."
+            },
+            "colors": [
+                {
+                    "name": "Blanco perlado ",
+                    "image": "/img/vehicles/territory/car_colors/Blanco_perlado.png",
+                    "imageColor": "/img/vehicles/territory/colors/Blanco_perlado.png"
+                },
+                {
+                    "name": "Negro pantera",
+                    "image": "/img/vehicles/territory/car_colors/Negro_pantera.png",
+                    "imageColor": "/img/vehicles/territory/colors/Negro_pantera.png"
+
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/territory/car_colors/Gris_Mercurio.png",
+                    "imageColor": "/img/vehicles/territory/colors/Gris_mercurio.png"
+
+                },
+                {
+                    "name": "Azul metálico",
+                    "image": "/img/vehicles/territory/car_colors/Azul_metalico.png",
+                    "imageColor": "/img/vehicles/territory/colors/Azul_metalico.png"
+
+
+                },
+                {
+                    "name": "Glaseado otoño",
+                    "image": "/img/vehicles/territory/car_colors/Glaseado_otono.png",
+                    "imageColor": "/img/vehicles/territory/colors/Glaseado_otono.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor, Potencia y Torque",
+                    "feature": ["1.8L EcoBoost de 185 CV de Potencia", "320 Nm de Torque"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["4X2"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 7 velocidades"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/territory/territory_1.png",
+                "/img/vehicles/territory/territory_2.png",
+                "/img/vehicles/territory/territory_3.png",
+                "/img/vehicles/territory/territory_4.png",
+                "/img/vehicles/territory/territory_5.png",
+                "/img/vehicles/territory/territory_6.png",
+                "/img/vehicles/territory/territory_7.png",
+                "/img/vehicles/territory/territory_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Tecnologia inteligente",
+                    "image" : "/img/vehicles/territory/benefit_1.png",
+                    "text" : "La Territory se destaca por su tecnología innovadora, brindando una experiencia de manejo única."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/territory/benefit_2.png",
+                    "text" : "Sofisticada y minimalista, la Territory se destaca por la calidad de sus materiales y su amplio espacio interior."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/territory/benefit_3.png",
+                    "text" : "La Territory incorpora el asistente Ford Co-Pilot 360 para maniobras más seguras."
+                }
+            ]
+        }
       },
       {
          "id": "nueva_bronco",
          "image": "/img/vehicles/nueva_bronco.png",
          "title": "Nueva Bronco Sport",
          "text": "El ícono de la aventura.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_bronco",
          "category": "suv",
          "fordPro": false,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "El ícono de la <span>aventura.</span>",
+                "text" : "Con su característico diseño robusto y tracción 4WD de serie, esta SUV se renueva con tecnologías de vanguardia, lista para llevarte a cualquier aventura."
+            },
+            "colors": [
+                {
+                    "name": "Azul glaciar",
+                    "image": "/img/vehicles/nueva_bronco/car_colors/azul_glaciar.png",
+                    "imageColor": "/img/vehicles/nueva_bronco/colors/azul_glaciar.png"
+                },
+                {
+                    "name": "Blanco Oxford",
+                    "image": "/img/vehicles/nueva_bronco/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/nueva_bronco/colors/blanco_oxford.png"
+
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/nueva_bronco/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/nueva_bronco/colors/Gris_mercurio.png"
+
+                },
+                {
+                    "name": "Negro pantera",
+                    "image": "/img/vehicles/nueva_bronco/car_colors/negro_pantera.png",
+                    "imageColor": "/img/vehicles/nueva_bronco/colors/Negro_pantera.png"
+
+                },
+                {
+                    "name": "Verde salvaje",
+                    "image": "/img/vehicles/nueva_bronco/car_colors/verde_salvaje.png",
+                    "imageColor": "/img/vehicles/nueva_bronco/colors/verde_salvaje.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor, Potencia y Torque",
+                    "feature": ["1.5L EcoBoost 184 CV y 258 Nm", "2.0L Ecoboost 253 CV y 375 Nm"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["4WD"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 8 velocidades"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/nueva_bronco/Bronco_1.png",
+                "/img/vehicles/nueva_bronco/Bronco_2.png",
+                "/img/vehicles/nueva_bronco/Bronco_3.png",
+                "/img/vehicles/nueva_bronco/Bronco_4.png",
+                "/img/vehicles/nueva_bronco/Bronco_5.png",
+                "/img/vehicles/nueva_bronco/Bronco_6.png",
+                "/img/vehicles/nueva_bronco/Bronco_7.png",
+                "/img/vehicles/nueva_bronco/Bronco_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance off-road",
+                    "image" : "/img/vehicles/nueva_bronco/benefit_1.png",
+                    "text" : "Con la mejor combinación de potencia y torque para enfrentar cualquier desafío. Ofrece tracción 4WD de serie, sistema de gestión de terrenos con hasta 7 modos de manejo y bloqueo de diferencial trasero."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/Bronco/benefit_2.png",
+                    "text" : "Con su diseño emblemático, la Bronco Sport impresiona con un exterior robusto y un interior renovado que refleja fielmente el espíritu legendario de la aventura."
+                },
+                {
+                    "title" : "Tecnología",
+                    "image" : "/img/vehicles/Bronco/benefit_3.png",
+                    "text" : "Equipada con innovadoras tecnologías que te acompañan en cada aventura, abriendo las puertas a nuevas experiencias."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/Bronco/benefit_4.png",
+                    "text" : "Conducí con mayor seguridad gracias a Ford Co-Pilot 360. Incluye frenado automático de emergencia, control crucero adaptativo, sistema de centrado de carril y más."
+                }
+            ]
+        }
       },
       {
          "id": "kuga",
          "image": "/img/vehicles/kuga.png",
          "title": "Kuga Híbrida",
          "text": "La inteligencia encuentra el camino.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/kuga",
          "category": "suv",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "La inteligencia encuentra el <span>camino.</span>",
+                "text" : "La funcionalidad, tecnología y seguridad se unen en Kuga Híbrida"
+            },
+            "colors": [
+                {
+                    "name": "Azul vapor",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/azul_vapor.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/azul_vapor.png"
+                },
+                {
+                    "name": "Blanco Oxford",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/blanco_oxford.png"
+
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/Gris_mercurio.png"
+
+                },
+                {
+                    "name": "Negro pantera",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/negro_pantera.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/Negro_pantera.png"
+
+                },
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/plata_lunar.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor, Potencia y Torque",
+                    "feature": ["2.5L Naftero y uno eléctrico autorecargable de 203 CV ", "de potencia"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["Integral inteligente", "AWD (All Wheel Drive)"] 
+                },
+                {
+                    "title" : "Seguridad",
+                    "feature": ["Ford Co-Pilot 360"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/kuga_hibrida/Kuga_1.png",
+                "/img/vehicles/kuga_hibrida/Kuga_2.png",
+                "/img/vehicles/kuga_hibrida/Kuga_3.png",
+                "/img/vehicles/kuga_hibrida/Kuga_4.png",
+                "/img/vehicles/kuga_hibrida/Kuga_5.png",
+                "/img/vehicles/kuga_hibrida/Kuga_6.png",
+                "/img/vehicles/kuga_hibrida/Kuga_7.png",
+                "/img/vehicles/kuga_hibrida/Kuga_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Apariencias que no engañan",
+                    "image" : "/img/vehicles/nueva_bronco/benefit_1.png",
+                    "text" : "Nuevo interior con diseño minimalista y tecnologico que redefine la funcionalidad para brindarte una experiencia de conduccion mejorarada e inmerisva."
+                },
+                {
+                    "title" : "Tecnología funcional",
+                    "image" : "/img/vehicles/kuga_hibrida/benefit_2.png",
+                    "text" : "La Kuga Híbrida se destaca por su tecnología funcional de ultimo nivel, donde la innovación se combina para ofrecerte una experiencia de conduccion única y excepcional."
+                },
+                {
+                    "title" : "Prestaciones inteligentes",
+                    "image" : "/img/vehicles/kuga_hibrida/benefit_3.png",
+                    "text" : "La Kuga Híbrida mantiene la perfecta combinación de economía de combustible, bajo nivel de emisiones y elevado nivel de prestaciones, gracias a su motorización híbrida."
+                },
+                {
+                    "title" : "Sentirse protegido",
+                    "image" : "/img/vehicles/kuga_hibrida/benefit_4.png",
+                    "text" : "La Kuga Híbrida equipa el nivel más alto de asistencias a la conducción. Cuenta con el sistema Ford Co-Pilot 360 para maniobras más seguras."
+                }
+            ]
+        }
       },
       {
          "id" : "bronco",
          "image": "/img/vehicles/bronco.png",
          "title": "Bronco ",
          "text": "El ícono de la aventura.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/bronco",
          "category": "suv",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "El ícono de la <span>aventura.</span>",
+                "text" : "Con tecnología inigualable, diseño icónico y rendimiento de sobra, la Nueva Bronco brinda una experiencia que todos los amantes de la aventura pueden disfrutar."
+            },
+            "colors": [
+                {
+                    "name": "Blanco Oxford",
+                    "image": "/img/vehicles/Bronco/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/Bronco/colors/white.png"
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/Bronco/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/Bronco/colors/grey_mercury.png"
+
+                },
+                {
+                    "name": "Negro Pantera",
+                    "image": "/img/vehicles/Bronco/car_colors/negro_pantera.png",
+                    "imageColor": "/img/vehicles/Bronco/colors/black_panter.png"
+
+                },
+                {
+                    "name": "Verde salvaje",
+                    "image": "/img/vehicles/Bronco/car_colors/verde_salvaje.png",
+                    "imageColor": "/img/vehicles/Bronco/colors/green_savage.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor, Potencia y Torque",
+                    "feature": ["Ecoboost 2.7L V6 Bi-Turbo", "Potencia 334 CV", "Torque 562 Nm"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["4X2", "4X4 Automática", "4X4 Alta y 4x4 Baja"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 10 velocidades"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/Bronco/bronco_1.png",
+                "/img/vehicles/Bronco/bronco_2.png",
+                "/img/vehicles/Bronco/bronco_3.png",
+                "/img/vehicles/Bronco/bronco_4.png",
+                "/img/vehicles/Bronco/bronco_5.png",
+                "/img/vehicles/Bronco/bronco_6.png",
+                "/img/vehicles/Bronco/bronco_7.png",
+                "/img/vehicles/Bronco/bronco_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/Bronco/benefit_1.png",
+                    "text" : "La Nueva Bronco en su versión Wildtrak 4 puertas, ofrece toda la performance con su motor Ecoboost 2.7L. V6 Bi-Turbo, con una potencia de 334 CV y un torque de 562 Nm."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/Bronco/benefit_2.png",
+                    "text" : "Con su diseño icónico, la Nueva Bronco nos deslumbra con su exterior robusto y su interior con sellos de autenticidad de la leyenda aventurera. Con techos y puertas desmontables, la Nueva Bronco se lleva todas las miradas."
+                },
+                {
+                    "title" : "Tecnología",
+                    "image" : "/img/vehicles/Bronco/benefit_3.png",
+                    "text" : "Tecnología para conquistar cualquier terreno. Vas a poder vivir tu Nueva Bronco con una gran variedad de tecnologías conectadas para que mantengas el control donde termina el camino y comienza la aventura."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/Bronco/benefit_4.png",
+                    "text" : "Tecnología Ford Co-pilot 360. Asistencia para evitar colisiones con freno de emergencia automático, BLIS® con alerta de tráfico cruzado, sistema de mantenimiento de carril y otras características te ayudan a conducir con una mayor confianza."
+                }
+            ]
+        }
       },
       {  "id" : "maverick",
          "image": "/img/vehicles/maverick.png",
          "title": "Maverick ",
          "text": "Nuevas experiencias nos hacen más fuertes.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -73,7 +395,7 @@
          "image": "/img/vehicles/nueva_ranger.png",
          "title": "Nueva Ranger",
          "text": "Que venga lo imposible.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -86,7 +408,7 @@
          "image": "/img/vehicles/ranger_raptor.png",
          "title": "Ranger Raptor",
          "text": "Que venga lo imposible.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -99,7 +421,7 @@
          "image": "/img/vehicles/nueva_f150_lariat.png",
          "title": "Nueva F-150 Lariat",
          "text": "La primera Pick-Up con motorización híbrida.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -113,7 +435,7 @@
          "image": "/img/vehicles/nueva_f150_tremor.png",
          "title": "Nueva F-150 Tremor",
          "text": "Experiencia off-road en cada aventura.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -127,7 +449,7 @@
          "image": "/img/vehicles/nueva_f150_raptor.png",
          "title": "Nueva F-150 Raptor",
          "text": "La máxima expresión off-road.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -141,7 +463,7 @@
          "image": "/img/vehicles/transit_van.png",
          "title": "Transit Van",
          "text": "Más seguridad y rendimiento, menos costos operativos.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -155,7 +477,7 @@
          "image": "/img/vehicles/transit_chasis.png",
          "title": "Transit Chasis",
          "text": "Más robustez, versatilidad y durabilidad para tu negocio.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -169,7 +491,7 @@
          "image": "/img/vehicles/transit_mini_bus.png",
          "title": "Transit Minibus",
          "text": "Transmisión automática, robustez, tecnología, conectividad y menores costos de operación.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -183,7 +505,7 @@
          "image": "/img/vehicles/e_transit_van.png",
          "title": "E-Transit Van",
          "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -197,7 +519,7 @@
          "image": "/img/vehicles/nuevo_mustang_gt.png",
          "title": "Nuevo Mustang GT",
          "text": "Potencia, torque, tecnología y conectividad como nunca antes habías visto.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -211,7 +533,7 @@
          "image": "/img/vehicles/mustang_mach_e.png",
          "title": "Mustang Mach-E",
          "text": "El único eléctrico que es un Mustang.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -225,14 +547,91 @@
          "image": "/img/vehicles/nueva_everest.png",
          "title": "Nueva everest",
          "text": "Ford Everest está llegando a Argentina.",
-         "ctaPrimaryText": "Más información",
+         "ctaPrimaryText": "Agendar Test Drive", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_everest",
          "category": "suv",
          "fordPro": false,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "Alcanzá tu <span>cumbre.</span>",
+                "text" : "La combinación perfecta de confort, tecnología y performance para disfrutar decada viaje."
+            },
+            "colors": [
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/azul_vapor.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/azul_vapor.png"
+                },
+                {
+                    "name": "Blanco Oxford",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/blanco_oxford.png"
+
+                },
+                {
+                    "name": "Gris plata",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/Gris_mercurio.png"
+
+                },
+                {
+                    "name": "Negro pantera",
+                    "image": "/img/vehicles/kuga_hibrida/car_colors/negro_pantera.png",
+                    "imageColor": "/img/vehicles/kuga_hibrida/colors/Negro_pantera.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["2.3L naftero Ecoboost"]
+                },
+                {
+                    "title" : "Tracción y transmisión",
+                    "feature":["4X2, 4X4 Alta y 4x4 Baja", "AT 10 velocidades"]
+                },
+                {
+                    "title" : "Capacidad",
+                    "feature": ["7 personas"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/everest/Everest_1.png",
+                "/img/vehicles/everest/Everest_2.png",
+                "/img/vehicles/everest/Everest_3.png",
+                "/img/vehicles/everest/Everest_4.png",
+                "/img/vehicles/everest/Everest_5.png",
+                "/img/vehicles/everest/Everest_6.png",
+                "/img/vehicles/everest/Everest_7.png",
+                "/img/vehicles/everest/Everest_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/everest/benefit_1.png",
+                    "text" : "Un diseño imponente y sofisticado donde cada detalle amplifica la sensación de espacio y eleva la experiencia de todos los pasajeros."
+                },
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/everest/benefit_2.png",
+                    "text" : "La Nueva Everest ofrece un rendimiento robusto y eficiente, lista para enfrentar cualquier terreno."
+                },
+                {
+                    "title" : "Tecnología",
+                    "image" : "/img/vehicles/everest/benefit_3.png",
+                    "text" : "La nueva SUV de 7 asientos, cuenta con tecnología de última generación que potencia cada viaje con sistemas diseñados para enriquecer cada experiencia de conducción."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/everest/benefit_4.png",
+                    "text" : "Posee un completo paquete de asistencias a la conducción con el nivel más avanzado de seguridad."
+                }
+            ]
+        }
       }
     ]
 }

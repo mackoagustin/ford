@@ -17,6 +17,7 @@
 .carImage {
     height: auto;
     width: 100%;
+    border-radius: 16px;
 }
 
 .imageContainer {
@@ -378,7 +379,6 @@
     flex-direction: row;
     max-height: 605px;
     max-width: 1170px;
-    align-items: center;
     justify-content: center;
     margin: 0 auto;
     padding-top: 102px;

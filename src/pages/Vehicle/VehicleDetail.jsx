@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import vehiclesData from '../../data/vehicleTest.json';
+import vehiclesData from '../../data/vehicles.json';
 import vehicleBannersData from '../../data/vehicleBanners.json';
 import BannerVehicleDetail from '../../components/BannerVehicleDetail/BannerVehicleDetail';
 import FordProSlider from '../../components/FordProSlider/FordProSlider';

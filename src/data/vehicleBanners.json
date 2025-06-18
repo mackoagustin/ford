@@ -1,24 +1,41 @@
 {
   "vehicleBanners": {
     "nueva_bronco": {
-      "image": "/img/vehicles/Bronco/bronco_banner.png",
-      "title": "Bronco",
-      "subtitle": "El ícono de la aventura",
+      "image": "/img/vehicles/nueva_bronco/nueva_bronco_banner.png",
+      "title": "Bronco Sport",
       "description": "Descubrí la nueva Bronco Sport",
       "ctaText": "Agendar test drive",
       "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Bronco%20Sport",
       "ctaTextSecond": "Solicitar cotización",
-      "ctaLinkSecond": "https://wa.me/5491112345678?text=Hola,%20quiero%20cotizar%20la%20Nueva%20Bronco%20Sport"
+      "ctaLinkSecond": ""
     },
     "territory": {
-      "image": "/img/banners/territory_banner.png",
+      "image": "/img/vehicles/territory/territory_banner.png",
       "title": "Territory",
-      "subtitle": "Llegá hasta donde imagines",
       "description": "Descubrí la Territory",
-      "ctaText": "Conocé más",
+      "ctaText": "Agendar test drive",
       "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Territory",
       "ctaTextSecond": "Solicitar cotización",
-      "ctaLinkSecond": "https://wa.me/5491112345678?text=Hola,%20quiero%20cotizar%20la%20Territory"
+      "ctaLinkSecond": ""
+    },
+    "kuga": {
+      "image": "/img/vehicles/kuga_hibrida/kuga_banner.png",
+      "title": "Kuga híbrida",
+      "description": "Descubrí la Territory",
+      "ctaText": "Agendar test drive",
+      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Kuga%20Hibrida",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": ""
+    },
+    "nueva_everest": {
+      "image": "/img/vehicles/everest/everest_banner.png",
+
+      "title": "Nueva Everest",
+      "description": "Descubrí la Territory",
+      "ctaText": "Agendar test drive",
+      "ctaLink": "https://wa.me/5491112345678?text=Hola,%20me%20interesa%20la%20Nueva%20Everest",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": ""
     }
   }
 } 
