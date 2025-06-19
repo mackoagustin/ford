@@ -6,6 +6,7 @@ import style from "./FormPdf.module.css";
 import { provinciasArgentinas} from "../../data/province";
 import Textarea from "../Textarea/Textarea";
 import useIsMobile from "../../hook/useIsMobile";
+import useFormSubmit from "../../hooks/useFormSubmit";
 
 
 const FormPdf = () => {
@@ -21,16 +22,22 @@ const FormPdf = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
 
+  // Hook para manejar envío al backend
+  const { submitForm, loading, error: submitError, success, resetState } = useFormSubmit();
+
   // Función para validar email
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
   };
 
-  // Función para validar teléfono (solo números, 8-10 dígitos)
+  // Función para validar teléfono (más flexible, 8-12 dígitos)
   const validatePhone = (phone) => {
-    const phoneRegex = /^\d{8,10}$/;
-    return phoneRegex.test(phone.replace(/\s/g, ''));
+    // Eliminar espacios, guiones y paréntesis
+    const cleanPhone = phone.replace(/[\s\-\(\)]/g, '');
+    // Aceptar números de 8 a 12 dígitos
+    const phoneRegex = /^\+?\d{8,12}$/;
+    return phoneRegex.test(cleanPhone);
   };
 
   // Función para validar archivo
@@ -130,14 +137,36 @@ const FormPdf = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitted(true);
     
     if (validateForm()) {
       console.log("Formulario válido, enviando:", formData);
-      // Aquí puedes agregar la lógica para enviar el formulario
-      alert("Formulario enviado correctamente!");
+      
+      const result = await submitForm(formData, true); // true = con archivos
+      
+      if (result.success) {
+        // No limpiar formulario para mostrar estado "Enviada"
+        // setFormData({
+        //   name: "",
+        //   cellphone: "",
+        //   email: "",
+        //   province: "",
+        //   message: "",
+        //   pdfFile: null
+        // });
+        // setIsSubmitted(false);
+        // setErrors({});
+        
+        // Remover alert - el estado visual será manejado por el componente
+        // alert("¡Formulario enviado exitosamente! Te contactaremos pronto.");
+      } else {
+        // Mostrar errores específicos del backend si los hay
+        if (result.details && result.details.length > 0) {
+          console.log("Errores del backend:", result.details);
+        }
+      }
     } else {
       console.log("Formulario tiene errores:", errors);
     }
@@ -223,24 +252,75 @@ const FormPdf = () => {
       
       
 
+      {/* Mostrar errores del backend */}
+      {submitError && (
+        <div style={{ 
+          color: '#d32f2f',
+          padding: '12px 16px',
+          backgroundColor: '#ffebee',
+          borderLeft: '4px solid #f44336',
+          borderRadius: '6px',
+          margin: '16px 0',
+          fontSize: '14px',
+          fontWeight: '500',
+          lineHeight: '1.4',
+          boxShadow: '0 2px 4px rgba(244, 67, 54, 0.1)'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+            <span style={{ fontSize: '16px', flexShrink: 0 }}>⚠️</span>
+            <span>{submitError}</span>
+          </div>
+        </div>
+      )}
+
+      {/* Mensaje de éxito removido - solo se muestra en el botón */}
+
       <div className={style.buttonWrapper}>
-        <Button type="submit" variant="primary">
-          Enviar
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            strokeWidth={2.4}
-            stroke="currentColor"
-            fill="none"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M8.25 4.5L15.75 12 8.25 19.5"
-            />
-          </svg>
+        <Button 
+          type="submit" 
+          variant="primary" 
+          disabled={loading || success}
+          style={{
+            backgroundColor: success ? '#4caf50' : undefined,
+            borderColor: success ? '#4caf50' : undefined,
+            cursor: success ? 'default' : undefined
+          }}
+        >
+          {loading ? 'Enviando...' : success ? 'Enviada' : 'Enviar'}
+          {!loading && !success && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              strokeWidth={2.4}
+              stroke="currentColor"
+              fill="none"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 4.5L15.75 12 8.25 19.5"
+              />
+            </svg>
+          )}
+          {success && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              strokeWidth={2.4}
+              stroke="currentColor"
+              fill="none"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          )}
         </Button>
       </div>
     </form>
@@ -329,24 +409,75 @@ const FormPdf = () => {
       </div>
       
      
+      {/* Mostrar errores del backend */}
+      {submitError && (
+        <div style={{ 
+          color: '#d32f2f',
+          padding: '12px 16px',
+          backgroundColor: '#ffebee',
+          borderLeft: '4px solid #f44336',
+          borderRadius: '6px',
+          margin: '16px 0',
+          fontSize: '14px',
+          fontWeight: '500',
+          lineHeight: '1.4',
+          boxShadow: '0 2px 4px rgba(244, 67, 54, 0.1)'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+            <span style={{ fontSize: '16px', flexShrink: 0 }}>⚠️</span>
+            <span>{submitError}</span>
+          </div>
+        </div>
+      )}
+
+      {/* Mensaje de éxito removido - solo se muestra en el botón */}
+
       <div className={style.buttonWrapper}>
-        <Button type="submit" variant="primary">
-          Enviar 
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            strokeWidth={2.4}
-            stroke="currentColor"
-            fill="none"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M8.25 4.5L15.75 12 8.25 19.5"
-            />
-          </svg>
+        <Button 
+          type="submit" 
+          variant="primary" 
+          disabled={loading || success}
+          style={{
+            backgroundColor: success ? '#4caf50' : undefined,
+            borderColor: success ? '#4caf50' : undefined,
+            cursor: success ? 'default' : undefined
+          }}
+        >
+          {loading ? 'Enviando...' : success ? 'Enviada' : 'Enviar'}
+          {!loading && !success && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              strokeWidth={2.4}
+              stroke="currentColor"
+              fill="none"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8.25 4.5L15.75 12 8.25 19.5"
+              />
+            </svg>
+          )}
+          {success && (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              strokeWidth={2.4}
+              stroke="currentColor"
+              fill="none"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+          )}
         </Button>
       </div>
     </form>
