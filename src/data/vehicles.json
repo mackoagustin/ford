@@ -388,7 +388,92 @@
          "detailLink": "/vehiculos/maverick",
          "category": "pick-up",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "Nuevas experiencias nos hacen más <span>fuertes.</span>",
+                "text" : "Una pick-up innovadora que se destaca por su versatilidad, nivel de seguridad y confort."
+            },
+            "colors": [
+                {
+                    "name": "Arena",
+                    "image": "/img/vehicles/maverick/car_colors/arena.png",
+                    "imageColor": "/img/vehicles/maverick/colors/arena.png"
+                },
+                {
+                    "name": "Azul glaciar",
+                    "image": "/img/vehicles/maverick/car_colors/azul_glaciar.png",
+                    "imageColor": "/img/vehicles/maverick/colors/azul_glaciar.png"
+
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/maverick/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/maverick/colors/gris_mercurio.png"
+           
+
+                },
+                {
+                    "name": "Negro Eclipse",
+                    "image": "/img/vehicles/maverick/car_colors/negro_eclipse.png",
+                    "imageColor": "/img/vehicles/maverick/colors/negro_eclipse.png"
+
+                },
+                {
+                    "name": "Azul velocity",
+                    "image": "/img/vehicles/maverick/car_colors/azul_velocity.png",
+                    "imageColor": "/img/vehicles/maverick/colors/azul_velocity.png"
+
+                },
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/maverick/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/maverick/colors/blanco_oxford.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["EcoBoost 2.0L Nafta", "Híbrido 2.5L Nafta"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["AWD", "4WD"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 8 velocidades", "eCVT Automática"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/maverick/Maverick_1.png",
+                "/img/vehicles/maverick/Maverick_2.png",
+                "/img/vehicles/maverick/Maverick_3.png",
+                "/img/vehicles/maverick/Maverick_4.png",
+                "/img/vehicles/maverick/Maverick_5.png",
+                "/img/vehicles/maverick/Maverick_6.png",
+                "/img/vehicles/maverick/Maverick_7.png",
+                "/img/vehicles/maverick/Maverick_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Tecnología",
+                    "image" : "/img/vehicles/maverick/benefit_1.png",
+                    "text" : "Tecnología avanzada y conectividad intuitiva con pantalla de 13,2” con SYNC 4, panel digital de 8” y climatizador automático bi-zona."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/maverick/benefit_2.png",
+                    "text" : "La nueva Maverick incorpora faros renovados y detalles estéticos modernos que definen un estilo inconfundible."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/maverick/benefit_3.png",
+                    "text" : "Con el más alto nivel de tecnología aplicado a la seguridad de la mano de Ford Co-Pilot 360, un conjunto de asistencias a la conducción."
+                }
+            ]
+        }
       },
       {  "id": "nueva_ranger",
          "image": "/img/vehicles/nueva_ranger.png",
@@ -401,7 +486,91 @@
          "detailLink": "/vehiculos/nueva_ranger",
          "category": "pick-up",
          "fordPro": true,
-         "isAccesory": true
+         "isAccesory": true, "detail": {
+            "mainSection" : {
+                "title" : "Que venga lo <span>imposible.</span>",
+                "text" : "La nueva generación de Raza Fuerte, tecnología inteligente, sentirse protegido y mis Experiencias Ford."
+            },
+            "colors": [
+                {
+                    "name": "Azul belice",
+                    "image": "/img/vehicles/ranger/car_colors/azul_belice.png",
+                    "imageColor": "/img/vehicles/ranger/colors/azul_belice.png"
+                },
+                {
+                    "name": "Plata metalizado",
+                    "image": "/img/vehicles/ranger/car_colors/plata_metalizado.png",
+                    "imageColor": "/img/vehicles/ranger/colors/plata_metalizado.png"
+
+                },
+                {
+                    "name": "Naranja terra",
+                    "image": "/img/vehicles/ranger/car_colors/naranja_terra.png",
+                    "imageColor": "/img/vehicles/ranger/colors/naranja_terra.png"
+           
+
+                },
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/ranger/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/ranger/colors/blanco_oxford.png"
+
+                },
+                {
+                    "name": "Negro perlado",
+                    "image": "/img/vehicles/ranger/car_colors/negro_perlado.png",
+                    "imageColor": "/img/vehicles/ranger/colors/negro_perlado.png"
+
+                },
+                {
+                    "name": "Gris magnetic",
+                    "image": "/img/vehicles/ranger/car_colors/gris_magnetic.png",
+                    "imageColor": "/img/vehicles/ranger/colors/gris_magnetic.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["2.0L Turbo Diesel", "2.0L Bi Turbo Diesel", "3.0L V6 Turbo Diesel"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["4x2", "4x4", "4WD"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Manual de 6 velocidades", "Automática de 10 velocidades"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/ranger/Exterior_1.png",
+                "/img/vehicles/ranger/Exterior_2.png",
+                "/img/vehicles/ranger/Exterior_3.png",
+                "/img/vehicles/ranger/Exterior_4.png",
+                "/img/vehicles/ranger/Interior_5.png",
+                "/img/vehicles/ranger/Interior_6.png",
+                "/img/vehicles/ranger/Interior_7.png",
+                "/img/vehicles/ranger/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Tecnología inteligente",
+                    "image" : "/img/vehicles/ranger/benefit_1.png",
+                    "text" : "La Ranger se destaca por su tencología innovadora, incorporando una pantalla LED multitáctil de 12 con alta definición y un panel de instrumentos LED de 12,4."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/ranger/benefit_2.png",
+                    "text" : "La Ranger presenta un diseño completamente renovado, destacándose por su apariencia moderna y atractiva, tanto en el interior como en el exterior."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/ranger/benefit_3.png",
+                    "text" : "Incorpora Ford Co-Pilot 360. Un conjunto de tecnologías de asistencia al conductor que ayudan a mejorar la seguridad en la conducción. Incluye funciones como el control de velocidad crucero adapativo con Stop & Go, cámara 360°, entre otras."
+                }
+            ]
+        }
       },
       {  "id" : "ranger_raptor",
          "image": "/img/vehicles/ranger_raptor.png",

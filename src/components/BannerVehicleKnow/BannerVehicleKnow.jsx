@@ -16,8 +16,10 @@ const BannerVehicleKnow = () => {
                         <div className={styles.buttonWrapper}>
                             <Button
                                 as="a"
-                                href=""
+                                href="https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive"
                                 variant="secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Agendar Test Drive
                                 <svg
@@ -49,10 +51,12 @@ const BannerVehicleKnow = () => {
                         <div className={styles.buttonWrapper}>
                             <Button
                                 as="a"
-                                href=""
+                                href="https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive"
                                 variant="secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
-                                Consultar por WhatsApp
+                                Agendar Test Drive
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="20"

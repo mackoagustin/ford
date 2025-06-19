@@ -14,7 +14,7 @@
       "title": "Territory",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%Territory",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Territory",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
     },
@@ -23,7 +23,7 @@
       "title": "Kuga híbrida",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%Kuga%20Hibrida",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Kuga%20Hibrida",
 
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
@@ -45,6 +45,24 @@
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
       "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Bronco",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": ""
+    },
+    "maverick": {
+      "image": "/img/vehicles/maverick/maverick_banner.png",
+      "title": "Nueva Maverick",
+      "description": "Descubrí la nueva maverick",
+      "ctaText": "Agendar test drive",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Nueva%20Maverick",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": ""
+    },
+    "nueva_ranger": {
+      "image": "/img/vehicles/ranger/ranger_banner.png",
+      "title": "Ranger",
+      "description": "Descubrí la nueva maverick",
+      "ctaText": "Agendar test drive",
+      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Nueva%20Ranger",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": ""
     }
