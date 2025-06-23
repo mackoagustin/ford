@@ -583,7 +583,85 @@
          "detailLink": "/vehiculos/ranger_raptor",
          "category": "pick-up",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "La nueva generación de Ranger Raptor <span>llegó.</span>",
+                "text" : "Una Pick-Up totalmente renovada que se destaca por su robustez, equipamiento tecnológico y performance deportiva. Desarrollada por Ford Performance para alcanzar las más altas prestaciones en la conducción Off-Road."
+            },
+            "colors": [
+                {
+                    "name": "Naranja metálico",
+                    "image": "/img/vehicles/ranger_raptor/car_colors/naranja_metalico.png",
+                    "imageColor": "/img/vehicles/ranger_raptor/colors/naranja_metalico.png"
+                },
+                {
+                    "name": "Blanco ártico",
+                    "image": "/img/vehicles/ranger_raptor/car_colors/blanco_artico.png",
+                    "imageColor": "/img/vehicles/ranger_raptor/colors/blanco_artico.png"
+
+                },
+                {
+                    "name": "Gris tormenta",
+                    "image": "/img/vehicles/ranger_raptor/car_colors/gris_tormenta.png",
+                    "imageColor": "/img/vehicles/ranger_raptor/colors/gris_tormenta.png"
+
+                },
+                {
+                    "name": "Azul performance",
+                    "image": "/img/vehicles/ranger_raptor/car_colors/azul_performance.png",
+                    "imageColor": "/img/vehicles/ranger_raptor/colors/azul_performance.png"
+
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Naftero Ecoboost 3.0L V6 Bi-Turbo"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 10 velocidades"]
+                },
+                {
+                    "title" : "Performance",
+                    "feature": ["Amortiguadores FOX Racing ShoxTM", "con tecnología Live Valve"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/ranger_raptor/Exterior_1.png",
+                "/img/vehicles/ranger_raptor/Exterior_2.png",
+                "/img/vehicles/ranger_raptor/Exterior_3.png",
+                "/img/vehicles/ranger_raptor/Exterior_4.png",
+                "/img/vehicles/ranger_raptor/Interior_5.png",
+                "/img/vehicles/ranger_raptor/Interior_6.png",
+                "/img/vehicles/ranger_raptor/Interior_7.png",
+                "/img/vehicles/ranger_raptor/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Motor Naftero Ecoboost 3.0L V6 397 CV y 583 Nm",
+                    "image" : "/img/vehicles/ranger_raptor/benefit_1.png",
+                    "text" : "La Ranger Raptor cuenta con un motor naftero Ecoboost 3.0L V6 Bi-Turbo brindando 397 CV de potencia y 583 Newton metros de torque. La motorización más potente diseñada para las Pick-Ups medianas de Ford. Se encuentra disponible con caja automática secuencial inteligente de 10 velocidades."
+                },
+                {
+                    "title" : "Pantalla multitáctil de 12 con SYNC 4",
+                    "image" : "/img/vehicles/ranger_raptor/benefit_2.png",
+                    "text" : "La Ranger Raptor cuenta con una pantalla táctil de 12 con alta definición y con SYNC 4. Compatible con Apple CarPlay & Android Auto con conexión inalámbrica. Además, cuenta con un sistema de sonido premium B&O con 8 parlantes y un navegador satelital incorporado."
+                },
+                {
+                    "title" : "Amortiguadores FOX Racing SHOX",
+                    "image" : "/img/vehicles/ranger_raptor/benefit_3.png",
+                    "text" : "Cuenta con un nuevo esquema de suspensión con nuevos resortes que alojan los exlusivos amortiguadores Fox Shox Live Valve de 2.5´´ que adaptan su dureza en función de distintos parámetros, tales como la altura de la Pick-Up, la aceleración, la velocidad y ángulo de volante."
+                },
+                {
+                    "title" : "Panel de instrumentos 100% digital de 12,4",
+                    "image" : "/img/vehicles/ranger_raptor/benefit_3.png",
+                    "text" : "La Ranger Raptor cuenta con un panel de instrumentos 100% digital de 12,4. La pantalla LED cuenta con un mayor nivel de personalización e información mediante la conducción."
+                }
+            ]
+        }
       },
       {  "id": "nueva_f150_lariat",
          "image": "/img/vehicles/nueva_f150_lariat.png",
@@ -596,7 +674,69 @@
          "detailLink": "/vehiculos/nueva_f150_lariat",
          "category": "pick-up",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+        "detail": {
+            "mainSection" : {
+                "title" : "La primera Pick-Up con motorización híbrida del <span>país.</span>",
+                "text" : "La F-150 sintetiza el concepto de la Raza Fuerte: es una pick-up robusta e imponente con tecnología de vanguardia."
+            },
+            "colors": [
+                {
+                    "name": "Rojo Racing",
+                    "image": "/img/vehicles/nueva_f150_lariat/car_colors/rojo_racing.png",
+                    "imageColor": "/img/vehicles/nueva_f150_lariat/colors/rojo_racing.png"
+                },
+                {
+                    "name": "Gris Avalancha",
+                    "image": "/img/vehicles/nueva_f150_lariat/car_colors/gris_avalancha.png",
+                    "imageColor": "/img/vehicles/nueva_f150_lariat/colors/gris_avalancha.png"
+
+                },
+                {
+                    "name": "Negro Ebony",
+                    "image": "/img/vehicles/nueva_f150_lariat/car_colors/negro_ebony.png",
+                    "imageColor": "/img/vehicles/nueva_f150_lariat/colors/negro_ebony.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Power Boost 3.5L V6 Híbrido"]
+                },
+                {
+                    "title" : "Traccción",
+                    "feature": ["4WD"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/nueva_f150_lariat/Exterior_1.png",
+                "/img/vehicles/nueva_f150_lariat/Exterior_2.png",
+                "/img/vehicles/nueva_f150_lariat/Exterior_3.png",
+                "/img/vehicles/nueva_f150_lariat/Exterior_4.png",
+                "/img/vehicles/nueva_f150_lariat/Interior_5.png",
+                "/img/vehicles/nueva_f150_lariat/Interior_6.png",
+                "/img/vehicles/nueva_f150_lariat/Interior_7.png",
+                "/img/vehicles/nueva_f150_lariat/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Tecnología Inteligente",
+                    "image" : "/img/vehicles/nueva_f150_lariat/benefit_1.png",
+                    "text" : "Su tecnología de avanzada incluye pantalla táctil de 12, tablero digital y Head-Up Display, conectividad  con SYNC 4 y sistema de audio premium B&O."
+                },
+                {
+                    "title" : "Dieño",
+                    "image" : "/img/vehicles/nueva_f150_lariat/benefit_2.png",
+                    "text" : "Cuenta con carrocería de aleación de aluminio de alta resistencia y grado militar."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/nueva_f150_lariat/benefit_3.png",
+                    "text" : "La F-150 equipa el más alto nivel de tecnología aplicada a la seguridad."
+                }
+            ]
+        }
       },
       {  
          "id": "nueva_f150_temor",
@@ -610,7 +750,75 @@
          "detailLink": "/vehiculos/nueva_f150_temor",
          "category": "pick-up",
          "fordPro": false,
-      "isAccesory": false
+        "isAccesory": false,
+        "detail": {
+            "mainSection" : {
+                "title" : "Experiencia off-road en cada <span>aventura.</span>",
+                "text" : "La F-150 Tremor ofrece un equilibrio perfecto entre capacidad off-road y versatilidad, permitiéndote explorar nuevos caminos."
+            },
+            "colors": [
+                {
+                    "name": "Negro Ebony",
+                    "image": "/img/vehicles/nueva_f150_tremor/car_colors/negro_ebony.png",
+                    "imageColor": "/img/vehicles/nueva_f150_tremor/colors/negro_ebony.png"
+                },
+                {
+                    "name": "Gris Avalancha",
+                    "image": "/img/vehicles/nueva_f150_tremor/car_colors/gris_avalancha.png",
+                    "imageColor": "/img/vehicles/nueva_f150_tremor/colors/gris_avalancha.png"
+
+                },
+                {
+                    "name": "Gris plata",
+                    "image": "/img/vehicles/nueva_f150_tremor/car_colors/gris_plata.png",
+                    "imageColor": "/img/vehicles/nueva_f150_tremor/colors/gris_plata.png"
+
+                },
+                {
+                    "name": "Azul  metálico",
+                    "image": "/img/vehicles/nueva_f150_tremor/car_colors/azul_metalico.png",
+                    "imageColor": "/img/vehicles/nueva_f150_tremor/colors/azul_metalico.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["5.0L Coyote V8"]
+                },
+                {
+                    "title" : "Traccción",
+                    "feature": ["4WD"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/nueva_f150_tremor/Exterior_1.png",
+                "/img/vehicles/nueva_f150_tremor/Exterior_2.png",
+                "/img/vehicles/nueva_f150_tremor/Exterior_3.png",
+                "/img/vehicles/nueva_f150_tremor/Exterior_4.png",
+                "/img/vehicles/nueva_f150_tremor/Interior_5.png",
+                "/img/vehicles/nueva_f150_tremor/Interior_6.png",
+                "/img/vehicles/nueva_f150_tremor/Interior_7.png",
+                "/img/vehicles/nueva_f150_tremor/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Tecnología",
+                    "image" : "/img/vehicles/nueva_f150_tremor/benefit_1.png",
+                    "text" : "La F-150 Tremor cuenta con tecnología avanzada que potencia cada trayecto, ofreciendo sistemas que facilitan la conducción y elevan tu experiencia."
+                },
+                {
+                    "title" : "Dieño",
+                    "image" : "/img/vehicles/nueva_f150_tremor/benefit_2.png",
+                    "text" : "El diseño de la F-150 Tremor destaca por su estilo robusto y detalles que inspiran aventura."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/nueva_f150_tremor/benefit_3.png",
+                    "text" : "La F-150 Tremor cuenta con las características de seguridad más avanzadas, brindando una experiencia de conducción más placentera y segura."
+                }
+            ]
+        }
       },
       {
          "id": "nueva_f150_raptor",
@@ -624,7 +832,73 @@
          "detailLink": "/vehiculos/nueva_f150_raptor",
          "category": "pick-up",
          "fordPro": false,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "La máxima expresión del desempeño <span>off-road.</span>",
+                "text" : "Una pick-up única e inigualable."
+            },
+            "colors": [
+                {
+                    "name": "Negro Ebony",
+                    "image": "/img/vehicles/nueva_f150_raptor/car_colors/negro_ebony.png",
+                    "imageColor": "/img/vehicles/nueva_f150_raptor/colors/negro_ebony.png"
+                },
+                {
+                    "name": "Gris Avalancha",
+                    "image": "/img/vehicles/nueva_f150_raptor/car_colors/gris_avalancha.png",
+                    "imageColor": "/img/vehicles/nueva_f150_raptor/colors/gris_avalancha.png"
+
+                },
+                {
+                    "name": "Azul  metálico",
+                    "image": "/img/vehicles/nueva_f150_raptor/car_colors/azul_metalico.png",
+                    "imageColor": "/img/vehicles/nueva_f150_raptor/colors/azul_metalico.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["EcoBoost 3.5L V6 HO"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 10 velocidades"]
+                },
+                {
+                    "title" : "Performance",
+                    "feature": ["Amortiguadores FOX Racing Shox™ con tecnología Live Valve"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/nueva_f150_raptor/Exterior_1.png",
+                "/img/vehicles/nueva_f150_raptor/Exterior_2.png",
+                "/img/vehicles/nueva_f150_raptor/Exterior_3.png",
+                "/img/vehicles/nueva_f150_raptor/Exterior_4.png",
+                "/img/vehicles/nueva_f150_raptor/Interior_5.png",
+                "/img/vehicles/nueva_f150_raptor/Interior_6.png",
+                "/img/vehicles/nueva_f150_raptor/Interior_7.png",
+                "/img/vehicles/nueva_f150_raptor/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance Raza Fuerte",
+                    "image" : "/img/vehicles/nueva_f150_raptor/benefit_1.png",
+                    "text" : "Diseñada por el equipo de Ford Performance, la F-150 Raptor, fue pensada para hacer frente a todo tipo de desafios y desempeñarse en los contextos más extremos."
+                },
+                {
+                    "title" : "Tecnologia inteligente",
+                    "image" : "/img/vehicles/nueva_f150_raptor/benefit_2.png",
+                    "text" : "La F-150 Raptor es una pick-up deportiva, imponente, moderna y con tecnología de vanguardia."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/nueva_f150_raptor/benefit_3.png",
+                    "text" : "La F-150 Raptor cuenta con una gran cantidad de tecnología aplicada a la seguridad; con el objetivo de optimizar la conducción off-road de alto impacto, a alta velocidad y garantizar a sus usuarios la seguridad de llegar a cualquier parte."
+                }
+            ]
+        }
       },
       {
          "id": "transit_van",
@@ -638,7 +912,72 @@
          "detailLink": "/vehiculos/transit_van",
          "category": "comerciales",
          "fordPro": true,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "Nueva Transit Van </br> con <span>financiación.</span>",
+                "text" : "Diseñada para impulsar tu negocio con más tecnología, conectividad, desempeño, seguridad y comodidad."
+            },
+            "colors": [
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/transit_van/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/transit_van/colors/blanco_oxford.png"
+                },
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/transit_van/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/transit_van/colors/plata_lunar.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Diesel EcoBlue® 2.0L con 390Nm de torque"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 10 velocidades", "Manual de 6 velocidades"]
+                },
+                {
+                    "title" : "Performance",
+                    "feature": ["Potencia 165 CV"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/transit_van/Exterior_1.png",
+                "/img/vehicles/transit_van/Exterior_2.png",
+                "/img/vehicles/transit_van/Exterior_3.png",
+                "/img/vehicles/transit_van/Exterior_4.png",
+                "/img/vehicles/transit_van/Interior_5.png",
+                "/img/vehicles/transit_van/Interior_6.png",
+                "/img/vehicles/transit_van/Interior_7.png",
+                "/img/vehicles/transit_van/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/transit_van/benefit_1.png",
+                    "text" : "Con un motor diésel de 2.0 L con 165 CV y 390 Nm de par, el EcoBlue ofrece potencia y eficiencia, maximizando la rentabilidad de tu negocio."
+                },
+                {
+                    "title" : "Tecnologia",
+                    "image" : "/img/vehicles/transit_van/benefit_2.png",
+                    "text" : "Incorpora una pantalla multitáctil de 12 compatible con Android Auto y Apple CarPlay para gestionar llamadas, acceder a mapas y optimizar rutas."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/transit_van/benefit_3.png",
+                    "text" : "Equipada con tecnologías para una conducción más segura: control electrónico de estabilidad y antivuelco, control de carga adaptativo y mucho más."
+                },
+                {
+                    "title" : "Conectividad",
+                    "image" : "/img/vehicles/transit_van/benefit_4.png",
+                    "text" : "Con la Transit Van, tenés el control total de tu negocio gracias a la conectividad inteligente de FordPass™, el acompañamiento preventivo y mucho más."
+                }
+                ]
+        }
       },
       {
          "id" :  "transit_chasis",
@@ -652,7 +991,72 @@
          "detailLink": "/vehiculos/transit_chasis",
          "category": "comerciales",
          "fordPro": true,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "Más robustez, versatilidad y durabilidad para tu <span> negocio.</span>",
+                "text" : "Disfrutá de la tecnología, conectividad, desempeño, seguridad y comodidad que vos y tu negocio necesitan."
+            },
+            "colors": [
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/transit_chasis/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/transit_chasis/colors/blanco_oxford.png"
+                },
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/transit_chasis/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/transit_chasis/colors/plata_lunar.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Diesel EcoBlue® 2.0L con 390Nm de torque"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Manual de 6 velocidades"]
+                },
+                {
+                    "title" : "Performance",
+                    "feature": ["Potencia 165 CV"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/transit_chasis/Exterior_1.png",
+                "/img/vehicles/transit_chasis/Exterior_2.png",
+                "/img/vehicles/transit_chasis/Exterior_3.png",
+                "/img/vehicles/transit_chasis/Exterior_4.png",
+                "/img/vehicles/transit_chasis/Interior_5.png",
+                "/img/vehicles/transit_chasis/Interior_6.png",
+                "/img/vehicles/transit_chasis/Interior_7.png",
+                "/img/vehicles/transit_chasis/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/transit_chasis/benefit_1.png",
+                    "text" : "Con un motor diésel de 2.0 L con 165 CV y 390 Nm de par, el EcoBlue ofrece potencia y eficiencia, maximizando la rentabilidad de tu negocio."
+                },
+                {
+                    "title" : "Tecnologia",
+                    "image" : "/img/vehicles/transit_chasis/benefit_2.png",
+                    "text" : "Incorpora una pantalla multitáctil de 12 compatible con Android Auto y Apple CarPlay para gestionar llamadas, acceder a mapas y optimizar rutas."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/transit_chasis/benefit_3.png",
+                    "text" : "Equipada con tecnologías para una conducción más segura: control electrónico de estabilidad y antivuelco, control de carga adaptativo y mucho más."
+                },
+                {
+                    "title" : "Conectividad",
+                    "image" : "/img/vehicles/transit_chasis/benefit_4.png",
+                    "text" : "Con la Nueva Transit Chasis, tenés el control total de tu negocio gracias a la conectividad inteligente de FordPass™, el acompañamiento preventivo y mucho más."
+                }
+                ]
+        }
       },
       {  
          "id": "transit_minibus",
@@ -666,7 +1070,72 @@
          "detailLink": "/vehiculos/transit_minibus",
          "category": "comerciales",
          "fordPro": true,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "Nueva Transit <span> Minibus.</span>",
+                "text" : "Tecnología, conectividad, desempeño, seguridad y comodidad para vos y tu negocio."
+            },
+            "colors": [
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/transit_minibus/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/transit_minibus/colors/blanco_oxford.png"
+                },
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/transit_minibus/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/transit_minibus/colors/plata_lunar.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Diesel EcoBlue® 2.0L con 390Nm de torque"]
+                },
+                {
+                    "title" : "Transmisión",
+                    "feature": ["Automática de 10 velocidades", "Manual de 6 velocidades"]
+                },
+                {
+                    "title" : "Performance",
+                    "feature": ["Potencia 165 CV"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/transit_minibus/Exterior_1.png",
+                "/img/vehicles/transit_minibus/Exterior_2.png",
+                "/img/vehicles/transit_minibus/Exterior_3.png",
+                "/img/vehicles/transit_minibus/Exterior_4.png",
+                "/img/vehicles/transit_minibus/Interior_5.png",
+                "/img/vehicles/transit_minibus/Interior_6.png",
+                "/img/vehicles/transit_minibus/Interior_7.png",
+                "/img/vehicles/transit_minibus/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/transit_minibus/benefit_1.png",
+                    "text" : "Con un motor diésel de 2.0 L con 165 CV y 390 Nm de par, el EcoBlue ofrece potencia y eficiencia, maximizando la rentabilidad de tu negocio."
+                },
+                {
+                    "title" : "Tecnologia",
+                    "image" : "/img/vehicles/transit_minibus/benefit_2.png",
+                    "text" : "Incorpora una pantalla multitáctil de 12 compatible con Android Auto y Apple CarPlay para gestionar llamadas, acceder a mapas y optimizar rutas."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/transit_minibus/benefit_3.png",
+                    "text" : "Equipada con tecnologías para una conducción más segura: control electrónico de estabilidad y antivuelco, control de carga adaptativo y mucho más."
+                },
+                {
+                    "title" : "Conectividad",
+                    "image" : "/img/vehicles/transit_minibus/benefit_4.png",
+                    "text" : "Con la Nueva Transit Minibus, tenés el control total de tu negocio gracias a la conectividad inteligente de FordPass™, el acompañamiento preventivo y mucho más."
+                }
+                ]
+        }
       },
       {  
          "id": "e_transit_van",
@@ -680,7 +1149,72 @@
          "detailLink": "/vehiculos/e_transit_van",
          "category": "comerciales",
          "fordPro": true,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "100% <span>eléctrica.</span>",
+                "text" : "Con menores costos y mayor productividad para vos y tu negocio."
+            },
+            "colors": [
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/transit_e_van/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/transit_e_van/colors/blanco_oxford.png"
+                },
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/transit_e_van/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/transit_e_van/colors/plata_lunar.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Autonomía",
+                    "feature": ["317 Km (WLTP)"]
+                },
+                {
+                    "title" : "Carga hasta",
+                    "feature": ["850kg con PBT de 3,5 Ton"]
+                },
+                {
+                    "title" : "Volumen hasta",
+                    "feature": ["12,4 mts 3"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/transit_e_van/Exterior_1.png",
+                "/img/vehicles/transit_e_van/Exterior_2.png",
+                "/img/vehicles/transit_e_van/Exterior_3.png",
+                "/img/vehicles/transit_e_van/Exterior_4.png",
+                "/img/vehicles/transit_e_van/Interior_5.png",
+                "/img/vehicles/transit_e_van/Interior_6.png",
+                "/img/vehicles/transit_e_van/Interior_7.png",
+                "/img/vehicles/transit_e_van/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/transit_e_van/benefit_1.png",
+                    "text" : "E-Transit ofrece la mejor relación entre potencia, versatilidad y uso operativo, brindándote lo que necesitás, cuando lo necesitás."
+                },
+                {
+                    "title" : "Tecnologia",
+                    "image" : "/img/vehicles/transit_e_van/benefit_2.png",
+                    "text" : "Impulsá la productividad de tu negocio con la mejor tecnología y conectividad presente en E-Transit."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/transit_e_van/benefit_3.png",
+                    "text" : "En E-Transit, la seguridad y el confort son fundamentales para reducir los costos operativos y obtener un mejor retorno de tu inversión."
+                },
+                {
+                    "title" : "Autonomía",
+                    "image" : "/img/vehicles/transit_e_van/benefit_4.png",
+                    "text" : "Con 317 km de autonomía (WLTP) para carga común y rápida, la E-Transit es perfecta para satisfacer las exigencias de tu negocio."
+                }
+                ]
+        }
       },
       {  
          "id" : "nuevo_mustang_gt",
@@ -694,7 +1228,78 @@
          "detailLink": "/vehiculos/nuevo_mustang_gt",
          "category": "mustang",
          "fordPro": false,
-         "isAccesory": true
+         "isAccesory": true,
+         "detail": {
+            "mainSection" : {
+                "title" : "Mustang <span>GT Performance.</span>",
+                "text" : "Potencia, torque, tecnología y conectividad como nunca antes habías visto."
+            },
+            "colors": [
+                {
+                    "name": "Azul vapor",
+                    "image": "/img/vehicles/mustang_gt/car_colors/azul_vapor.png",
+                    "imageColor": "/img/vehicles/mustang_gt/colors/azul_vapor.png"
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/mustang_gt/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/mustang_gt/colors/gris_mercurio.png"
+
+                },
+                {
+                    "name": "Negro ebony",
+                    "image": "/img/vehicles/mustang_gt/car_colors/negro_ebony.png",
+                    "imageColor": "/img/vehicles/mustang_gt/colors/negro_ebony.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Coyote 5.0L V8"]
+                },
+                {
+                    "title" : "Potencia",
+                    "feature": ["492 CV"]
+                },
+                {
+                    "title" : "Torque",
+                    "feature": ["567 Nm"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/mustang_gt/Exterior_1.png",
+                "/img/vehicles/mustang_gt/Exterior_2.png",
+                "/img/vehicles/mustang_gt/Exterior_3.png",
+                "/img/vehicles/mustang_gt/Exterior_4.png",
+                "/img/vehicles/mustang_gt/Interior_5.png",
+                "/img/vehicles/mustang_gt/Interior_6.png",
+                "/img/vehicles/mustang_gt/Interior_7.png",
+                "/img/vehicles/mustang_gt/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/mustang_gt/benefit_1.png",
+                    "text" : "Potencia, torque y adrenalina para una experiencia de conducción incomparable."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/mustang_gt/benefit_2.png",
+                    "text" : "La evolución de la icónica silueta del coupé deportivo más vendido del mundo."
+                },
+                {
+                    "title" : "Tecnologia y conectividad",
+                    "image" : "/img/vehicles/mustang_gt/benefit_3.png",
+                    "text" : "El ícono del desempeño es aún más tecnológico para llevar tu experiencia de manejo a un nuevo nivel."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/mustang_gt/benefit_4.png",
+                    "text" : "El Mustang GT Performance cuenta con las características de seguridad más avanzadas, brindando una experiencia de conducción más placentera y segura con un paquete completo de tecnologías semiautónomas."
+                }
+                ]
+        }
       },
       {  
          "id": "mustang_mach_e",
@@ -708,7 +1313,84 @@
          "detailLink": "/vehiculos/mustang_mach_e",
          "category": "mustang",
          "fordPro": false,
-         "isAccesory": false
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "El único eléctrico que es un <span> Mustang.</span>",
+                "text" : "Todo el rendimiento e innovación atrapante como solo la leyenda Mustang te sabe ofrecer."
+            },
+            "colors": [
+                {
+                    "name": "Azul Eléctrico",
+                    "image": "/img/vehicles/mustang_mach_e/car_colors/azul_electrico.png",
+                    "imageColor": "/img/vehicles/mustang_mach_e/colors/azul_electrico.png"
+                },
+                {
+                    "name": "Azul vapor",
+                    "image": "/img/vehicles/mustang_mach_e/car_colors/azul_vapor.png",
+                    "imageColor": "/img/vehicles/mustang_mach_e/colors/azul_vapor.png"
+
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/mustang_mach_e/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/mustang_mach_e/colors/gris_mercurio.png"
+
+                },
+                {
+                    "name": "Blanco estrella",
+                    "image": "/img/vehicles/mustang_mach_e/car_colors/blanco_estrella.png",
+                    "imageColor": "/img/vehicles/mustang_mach_e/colors/blanco_estrella.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Motor",
+                    "feature": ["Doble motor eléctrico de 487 CV de potencia y 860 Nm de Torque"]
+                },
+                {
+                    "title" : "Performance",
+                    "feature":["0-100 km/h en 3.7 segs"]
+                },
+                {
+                    "title" : "Tracción",
+                    "feature": ["eAWD"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/mustang_mach_e/Exterior_1.png",
+                "/img/vehicles/mustang_mach_e/Exterior_2.png",
+                "/img/vehicles/mustang_mach_e/Exterior_3.png",
+                "/img/vehicles/mustang_mach_e/Exterior_4.png",
+                "/img/vehicles/mustang_mach_e/Interior_5.png",
+                "/img/vehicles/mustang_mach_e/Interior_6.png",
+                "/img/vehicles/mustang_mach_e/Interior_7.png",
+                "/img/vehicles/mustang_mach_e/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Autonomía",
+                    "image" : "/img/vehicles/mustang_mach_e/benefit_1.png",
+                    "text" : "Cargá tu Mustang Mach-E usando el cargador de serie para tu hogar o los cargadores públicos CCS2 y aprovechá al máximo su autonomía de 541 km."
+                },
+                {
+                    "title" : "Diseño",
+                    "image" : "/img/vehicles/mustang_mach_e/benefit_2.png",
+                    "text" : "El ADN Mustang con su clásico e imponente diseño, te va a sorprender en cada parte de su interior."
+                },
+                {
+                    "title" : "Tecnologia y conectividad",
+                    "image" : "/img/vehicles/mustang_mach_e/benefit_3.png",
+                    "text" : "Tecnología y conectividad intuitiva y funcional. Compatible con Apple Carplay inalámbrico y Android Auto, Sync 4A con pantalla táctil de 15.5 y carga de celular por inducción."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/mustang_mach_e/benefit_4.png",
+                    "text" : "El Mustang Mach-E ofrece lo último en seguridad con tecnologías de última generación."
+                }
+            ]
+        }
       },
       {  
          "id": "nueva_everest",
@@ -797,6 +1479,85 @@
                     "title" : "Seguridad",
                     "image" : "/img/vehicles/everest/benefit_4.png",
                     "text" : "Posee un completo paquete de asistencias a la conducción con el nivel más avanzado de seguridad."
+                }
+            ]
+        }
+      },
+      {  
+         "id": "transit_e_chasis",
+         "image": "/img/vehicles/mustang_mach_e.png",
+         "title": "Transit E-Chasis",
+         "text": "El único eléctrico que es un Mustang.",
+         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehiculos/mustang_mach_e",
+         "category": "mustang",
+         "fordPro": false,
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "100% <span>eléctrica.</span>",
+                "text" : "Con menores costos y mayor productividad para vos y tu negocio."
+            },
+            "colors": [
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/transit_e_chasis/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/transit_e_chasis/colors/plata_lunar.png"
+                },
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/transit_e_chasis/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/transit_e_chasis/colors/blanco_oxford.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Autonomía",
+                    "feature": ["317 Km (WLTP)"]
+                },
+                {
+                    "title" : "Carga hasta",
+                    "feature":["1.938kg con PBT de 4,2 Ton"]
+                },
+                {
+                    "title" : "Volumen hasta",
+                    "feature": ["23 mts 3"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/transit_e_chasis/Exterior_1.png",
+                "/img/vehicles/transit_e_chasis/Exterior_2.png",
+                "/img/vehicles/transit_e_chasis/Exterior_3.png",
+                "/img/vehicles/transit_e_chasis/Exterior_4.png",
+                "/img/vehicles/transit_e_chasis/Interior_5.png",
+                "/img/vehicles/transit_e_chasis/Interior_6.png",
+                "/img/vehicles/transit_e_chasis/Interior_7.png",
+                "/img/vehicles/transit_e_chasis/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/transit_e_chasis/benefit_1.png",
+                    "text" : "E-Transit ofrece la mejor relación entre potencia, versatilidad y uso operativo, brindándote lo que necesitás, cuando lo necesitás."
+                },
+                {
+                    "title" : "Tecnologia",
+                    "image" : "/img/vehicles/transit_e_chasis/benefit_2.png",
+                    "text" : "Impulsá la productividad de tu negocio con la mejor tecnología y conectividad presente en E-Transit."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/transit_e_chasis/benefit_3.png",
+                    "text" : "En E-Transit, la seguridad y el confort son fundamentales para reducir los costos operativos y obtener un mejor retorno de tu inversión."
+                },
+                {
+                    "title" : "Autonomía",
+                    "image" : "/img/vehicles/transit_e_chasis/benefit_4.png",
+                    "text" : "Con 317 km de autonomía (WLTP) para carga común y rápida, la E-Transit es perfecta para satisfacer las exigencias de tu negocio."
                 }
             ]
         }
