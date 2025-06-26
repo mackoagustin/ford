@@ -1,16 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from './BannerVehicleDetail.module.css';
 import Button from "../Button/Button";
 import useIsMobile from "../../hook/useIsMobile";
+import QuoterModal from "../QuoterModal/QuoterModal";
 
 const BannerDoubleButton = ({data}) => {
     const isMobile = useIsMobile();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleFirstButtonClick = (e) => {
+        if (data.ctaLink === "modal" || data.ctaLink === "quoter") {
+            e.preventDefault();
+            setIsModalOpen(true);
+        }
+    };
+
+    const handleSecondButtonClick = (e) => {
+        if (data.ctaLinkSecond === "modal" || data.ctaLinkSecond === "quoter") {
+            e.preventDefault();
+            setIsModalOpen(true);
+        }
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
 
     if (!data) {
         return <div>No data avaible</div>
     }
 
     return (
+        <>
            <div className={styles.banner}>
               <img 
                 src={data.image} 
@@ -32,6 +53,7 @@ const BannerDoubleButton = ({data}) => {
                 as="a"
                 href={data.ctaLink}
                 variant="primaryFull"
+                onClick={handleFirstButtonClick}
               >
                 {data.ctaText}
               <svg
@@ -57,6 +79,7 @@ const BannerDoubleButton = ({data}) => {
                   as="a"
                   href={data.ctaLinkSecond}
                   variant="secondaryFull"
+                  onClick={handleSecondButtonClick}
                 >
                   {data.ctaTextSecond}
                   <svg
@@ -84,6 +107,7 @@ const BannerDoubleButton = ({data}) => {
                 as="a"
                 href={data.ctaLink}
                 variant="primary"
+                onClick={handleFirstButtonClick}
               >
                 {data.ctaText}
               <svg
@@ -109,6 +133,7 @@ const BannerDoubleButton = ({data}) => {
                   as="a"
                   href={data.ctaLinkSecond}
                   variant="secondary"
+                  onClick={handleSecondButtonClick}
                 >
                   {data.ctaTextSecond}
                   <svg
@@ -136,6 +161,8 @@ const BannerDoubleButton = ({data}) => {
         </div>
       </div>
     </div>
+    <QuoterModal isOpen={isModalOpen} onClose={closeModal} />
+    </>
     )
 }
 

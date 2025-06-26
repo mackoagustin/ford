@@ -7,7 +7,7 @@
         "ctaText": "Conocer nuestros talleres",
         "ctaLink": "/sucursales",
         "ctaTextSecond": "Solicitar turno",
-        "ctaLinkSecond": "/asas"
+        "ctaLinkSecond": "modal"
       },
       {
         "image": "/img/banners/sucursales_dos_autos.png",

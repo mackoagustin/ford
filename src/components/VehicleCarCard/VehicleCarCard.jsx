@@ -24,6 +24,10 @@ const VehiclesCard = ( { item }) => {
     navigate(`/vehiculos/${item.id}`);
   };
 
+  const handleImageClick = () => {
+    navigate(`/vehiculos/${item.id}`);
+  };
+
   return (
     <div className= {styles.card}>
         <img  
@@ -31,6 +35,8 @@ const VehiclesCard = ( { item }) => {
           src={item.image} 
           alt= {item.title} 
           loading="lazy"
+          onClick={handleImageClick}
+          style={{ cursor: 'pointer' }}
         />
         <div  className={styles.info}>
             <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
