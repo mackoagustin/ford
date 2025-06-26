@@ -6,16 +6,16 @@ import dotenv from 'dotenv';
 import { sendEmailToTecnomWithFiles } from './services/emailToTecnomService.js';
 import { validateFormData } from './middleware/validation.js';
 import { handleFileUploads, processUploadedFiles, handleMulterError } from './middleware/fileUpload.js';
+import { PORT, CORS_ORIGIN } from './config.js';
 
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3001;
 
 // Middleware de seguridad
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || ['http://localhost:5173', 'https://test.autospecial.com.ar'],
+  origin: CORS_ORIGIN,
   credentials: true
 }));
 

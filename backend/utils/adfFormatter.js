@@ -1,101 +1,63 @@
 // Formateador ADF (AutoDealerFormat) para Tecnom
 export const formatToADF = (formData) => {
   const now = new Date();
-  const timestamp = now.toISOString().replace(/[:.]/g, '-').slice(0, -5); // Formato: YYYY-MM-DDTHH-MM-SS
+  const isoDate = now.toISOString();
+
+  // Separar nombre y apellido si es posible
+  const fullName = formData.nombre || formData.name || '';
+  const nameParts = fullName.trim().split(' ');
+  const firstName = nameParts[0] || '';
+  const lastName = nameParts.slice(1).join(' ') || '';
+
+  // Obtener teléfono para usar tanto en phone como cellphone
+  const phoneNumber = formData.telefono || formData.cellphone || '';
   
-  // Estructura básica ADF
-  const adfData = {
-    // Información del prospecto
-    prospect: {
-      id: `FORD_WEB_${timestamp}`,
-      requestdate: now.toISOString(),
-      vehicle: formData.vehiculo || 'No especificado',
-      status: 'New'
-    },
-    // Información del cliente
-    customer: {
-      contact: {
-        name: {
-          part: formData.nombre || '',
-          type: 'individual'
-        },
-        email: formData.email || '',
-        phone: {
-          number: formData.telefono || '',
-          type: 'phone'
-        }
-      }
-    },
-    // Información del proveedor
-    provider: {
-      name: 'Ford Argentina',
-      service: 'Web Lead',
-      url: 'https://ford.com.ar'
-    }
-  };
+  // Usar provincia como ciudad si no hay ciudad específica
+  const city = formData.localidad || formData.ciudad || formData.province || '';
   
-  // Formatear en texto plano estilo ADF
-  let adfText = '';
-  
-  adfText += '=== FORD WEB LEAD - FORMATO ADF ===\n\n';
-  
-  // Información del lead
-  adfText += '[PROSPECT]\n';
-  adfText += `ID: ${adfData.prospect.id}\n`;
-  adfText += `FECHA: ${formatDate(now)}\n`;
-  adfText += `HORA: ${formatTime(now)}\n`;
-  adfText += `VEHICULO: ${adfData.prospect.vehicle}\n`;
-  adfText += `STATUS: ${adfData.prospect.status}\n`;
-  adfText += `ORIGEN: WEB\n\n`;
-  
-  // Información del cliente
-  adfText += '[CUSTOMER]\n';
-  adfText += `NOMBRE: ${formData.nombre || 'No proporcionado'}\n`;
-  adfText += `EMAIL: ${formData.email || 'No proporcionado'}\n`;
-  adfText += `TELEFONO: ${formData.telefono || 'No proporcionado'}\n`;
-  
-  // Campos adicionales del formulario
-  if (formData.apellido) {
-    adfText += `APELLIDO: ${formData.apellido}\n`;
-  }
-  
-  if (formData.provincia) {
-    adfText += `PROVINCIA: ${formData.provincia}\n`;
-  }
-  
-  if (formData.localidad) {
-    adfText += `LOCALIDAD: ${formData.localidad}\n`;
-  }
-  
-  if (formData.concesionario) {
-    adfText += `CONCESIONARIO_PREFERIDO: ${formData.concesionario}\n`;
-  }
-  
-  if (formData.mensaje) {
-    adfText += `MENSAJE: ${formData.mensaje}\n`;
-  }
-  
-  if (formData.tipo) {
-    adfText += `TIPO_CONSULTA: ${formData.tipo}\n`;
-  }
-  
-  adfText += '\n[PROVIDER]\n';
-  adfText += `EMPRESA: ${adfData.provider.name}\n`;
-  adfText += `SERVICIO: ${adfData.provider.service}\n`;
-  adfText += `URL: ${adfData.provider.url}\n`;
-  
-  // Información técnica
-  adfText += '\n[TECHNICAL]\n';
-  adfText += `TIMESTAMP: ${now.toISOString()}\n`;
-  adfText += `USER_AGENT: ${formData.userAgent || 'No disponible'}\n`;
-  adfText += `IP: ${formData.ip || 'No disponible'}\n`;
-  
-  adfText += '\n=== FIN LEAD ===';
-  
-  return adfText;
+  // Obtener mensaje para usar en comentarios
+  const message = formData.mensaje || formData.message || '';
+
+  // Mapear campos del formulario a la estructura ADF
+  const adfXML = `<?ADF VERSION="1.0"?>
+<?XML VERSION="1.0"?>
+<adf>
+  <prospect>
+    <requestdate>${isoDate}</requestdate>
+    <vehicle>
+      <year>${formData.anio || ''}</year>
+      <make>${formData.marca || 'Ford'}</make>
+      <model>${formData.modelo || ''}</model>
+      <comments>${formData.comentarios || message}</comments>
+    </vehicle>
+    <customer>
+      <contact>
+        <name part="first" type="individual">${firstName}</name>
+        <name part="last" type="individual">${lastName}</name>
+        <email preferredcontact="1">${formData.email || ''}</email>
+        <phone type="phone">${phoneNumber}</phone>
+        <phone type="cellphone">${phoneNumber}</phone>
+        <identification>${formData.identificacion || formData.dni || ''}</identification>
+        <address type="home">
+          <city>${city}</city>
+        </address>
+      </contact>
+      <comments>${message}</comments>
+    </customer>
+    <vendor>
+      <vendorname>${formData.vendedor || formData.concesionario || ''}</vendorname>
+    </vendor>
+    <provider>
+      <name>${formData.origen || 'Ford Web'}</name>
+      <service>${formData.suborigen || formData.province || ''}</service>
+    </provider>
+  </prospect>
+</adf>`;
+
+  return adfXML;
 };
 
-// Función auxiliar para formatear fecha
+// Función auxiliar para formatear fecha (mantenida por compatibilidad)
 const formatDate = (date) => {
   const day = String(date.getDate()).padStart(2, '0');
   const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -103,7 +65,7 @@ const formatDate = (date) => {
   return `${day}/${month}/${year}`;
 };
 
-// Función auxiliar para formatear hora
+// Función auxiliar para formatear hora (mantenida por compatibilidad)
 const formatTime = (date) => {
   const hours = String(date.getHours()).padStart(2, '0');
   const minutes = String(date.getMinutes()).padStart(2, '0');

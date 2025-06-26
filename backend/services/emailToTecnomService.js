@@ -23,19 +23,24 @@ export const sendEmailToTecnom = async (formData, options = {}) => {
     await transporter.verify();
     console.log('✅ Configuración SMTP verificada');
     
-    // Formatear datos al formato ADF en texto plano
+    // Formatear datos al formato ADF XML estándar
     const adfContent = formatToADF(formData);
+    
+    // Obtener nombre para el asunto
+    const customerName = formData.nombre || formData.name || 'Sin nombre';
+    const currentDate = new Date().toLocaleDateString('es-AR');
     
     // Configuración base del email
     const mailOptions = {
       from: process.env.SMTP_USER,
       to: 'wc+autospecial_web@tecnom.cloud', // La casilla que ya tienes
-      subject: `Ford Web Lead - ${formData.nombre || 'Sin nombre'} - ${new Date().toLocaleDateString()}`,
-      text: adfContent, // Texto plano como requiere Tecnom
+      subject: `Ford Web Lead - ${customerName} - ${currentDate}`,
+      text: adfContent, // XML ADF en texto plano como requiere Tecnom
       headers: {
         'X-Priority': '1',
         'X-MSMail-Priority': 'High',
-        'Importance': 'high'
+        'Importance': 'high',
+        'Content-Type': 'text/plain; charset=UTF-8'
       }
     };
     
@@ -45,14 +50,14 @@ export const sendEmailToTecnom = async (formData, options = {}) => {
       console.log('📎 Archivos adjuntos:', options.attachments.length);
     }
     
-    console.log('📧 Enviando email ADF a Tecnom...');
+    console.log('📧 Enviando email ADF XML a Tecnom...');
     console.log('📤 Destinatario:', mailOptions.to);
-    console.log('📄 Contenido ADF:\n', adfContent);
+    console.log('📄 Contenido ADF XML:\n', adfContent);
     
     // Enviar el email
     const info = await transporter.sendMail(mailOptions);
     
-    console.log('✅ Email ADF enviado exitosamente a Tecnom');
+    console.log('✅ Email ADF XML enviado exitosamente a Tecnom');
     console.log('🆔 Message ID:', info.messageId);
     
     return {
@@ -106,7 +111,7 @@ export const testEmailConnection = async () => {
     await transporter.verify();
     return { 
       success: true, 
-      message: 'Conexión SMTP exitosa - listo para enviar a Tecnom' 
+      message: 'Conexión SMTP exitosa - listo para enviar ADF XML a Tecnom' 
     };
   } catch (error) {
     return { 
