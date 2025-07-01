@@ -36,7 +36,7 @@
 @media (min-width: 768px) {
   .card {
     width: 373px;
-    max-height: 438px;
+    max-height: 480px;
     display: flex;       
     flex-direction: column;      
     padding-bottom: 12px;
@@ -45,7 +45,8 @@
   .info {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 90px;
+    padding-bottom: 0px;
     text-align: center;
   }
   
@@ -58,7 +59,7 @@
     margin: 0 auto;
   }
   .buttonWrapper > :first-child {
-    margin-left: 19px;
+    margin: 0 auto;
   }
   
   .image {
