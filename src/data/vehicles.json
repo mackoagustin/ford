@@ -5,12 +5,12 @@
          "image": "/img/vehicles/territory.png",
          "title": "Territory",
          "text": "Llegá hasta donde imagines.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/territory",
-         "category": "suv",
+         "categories": ["suv"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
@@ -98,12 +98,12 @@
          "image": "/img/vehicles/nueva_bronco.png",
          "title": "Nueva Bronco Sport",
          "text": "El ícono de la aventura.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_bronco",
-         "category": "suv",
+         "categories": ["suv"],
          "fordPro": false,
          "isAccesory": false,
          "detail": {
@@ -194,12 +194,12 @@
          "image": "/img/vehicles/kuga.png",
          "title": "Kuga Híbrida",
          "text": "La inteligencia encuentra el camino.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/kuga",
-         "category": "suv",
+         "categories": ["suv", "electrificado"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
@@ -291,12 +291,12 @@
          "image": "/img/vehicles/bronco.png",
          "title": "Bronco ",
          "text": "El ícono de la aventura.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/bronco",
-         "category": "suv",
+         "categories": ["suv"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
@@ -379,14 +379,14 @@
       },
       {  "id" : "maverick",
          "image": "/img/vehicles/maverick.png",
-         "title": "Maverick ",
+         "title": "Nueva Maverick Lariat Hibrida ",
          "text": "Nuevas experiencias nos hacen más fuertes.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/maverick",
-         "category": "pick-up",
+         "categories": ["electrificado"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
@@ -474,17 +474,29 @@
                 }
             ]
         }
-      },
+      }, {  "id" : "maverick",
+      "image": "/img/vehicles/maverick_hibrida.png",
+      "title": "Nueva Maverick Lariat Hibrida ",
+      "text": "Nuevas experiencias nos hacen más fuertes.",
+      "ctaPrimaryText": "Más información", 
+      "ctaPrimaryLink": "",
+      "ctaSecondaryText": "Solicitar cotización",
+      "ctaSecondaryLink": "",
+      "detailLink": "/vehiculos/maverick",
+      "categories": ["pick-up"],
+      "fordPro": false,
+      "isAccesory": true
+   },
       {  "id": "nueva_ranger",
          "image": "/img/vehicles/nueva_ranger.png",
          "title": "Nueva Ranger",
          "text": "Que venga lo imposible.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_ranger",
-         "category": "pick-up",
+         "categories": ["pick-up", "fordPro"],
          "fordPro": true,
          "isAccesory": true, "detail": {
             "mainSection" : {
@@ -576,12 +588,12 @@
          "image": "/img/vehicles/ranger_raptor.png",
          "title": "Ranger Raptor",
          "text": "Que venga lo imposible.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/ranger_raptor",
-         "category": "pick-up",
+         "categories": ["pick-up"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
@@ -665,14 +677,14 @@
       },
       {  "id": "nueva_f150_lariat",
          "image": "/img/vehicles/nueva_f150_lariat.png",
-         "title": "Nueva F-150 Lariat",
+         "title": "F-150 Lariat Híbrida",
          "text": "La primera Pick-Up con motorización híbrida.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_f150_lariat",
-         "category": "pick-up",
+         "categories": ["electrificado"],
          "fordPro": false,
          "isAccesory": true,
         "detail": {
@@ -737,18 +749,30 @@
                 }
             ]
         }
-      },
+      }, {  "id": "nueva_f150_lariat",
+      "image": "/img/vehicles/nueva_f150_lariat_hibrida.png",
+      "title": "F-150 Lariat Híbrida",
+      "text": "La primera Pick-Up con motorización híbrida.",
+      "ctaPrimaryText": "Más información", 
+      "ctaPrimaryLink": "",
+      "ctaSecondaryText": "Solicitar cotización",
+      "ctaSecondaryLink": "",
+      "detailLink": "/vehiculos/nueva_f150_lariat",
+      "categories": ["pick-up", "electrificado"],
+      "fordPro": false,
+      "isAccesory": true
+    },
       {  
          "id": "nueva_f150_temor",
          "image": "/img/vehicles/nueva_f150_tremor.png",
          "title": "Nueva F-150 Tremor",
          "text": "Experiencia off-road en cada aventura.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_f150_temor",
-         "category": "pick-up",
+         "categories": ["pick-up"],
          "fordPro": false,
         "isAccesory": false,
         "detail": {
@@ -825,12 +849,12 @@
          "image": "/img/vehicles/nueva_f150_raptor.png",
          "title": "Nueva F-150 Raptor",
          "text": "La máxima expresión off-road.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_f150_raptor",
-         "category": "pick-up",
+         "categories": ["pick-up"],
          "fordPro": false,
          "isAccesory": false,
          "detail": {
@@ -905,12 +929,12 @@
          "image": "/img/vehicles/transit_van.png",
          "title": "Transit Van",
          "text": "Más seguridad y rendimiento, menos costos operativos.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/transit_van",
-         "category": "comerciales",
+         "categories": ["comerciales", "fordPro", "furgon"],
          "fordPro": true,
          "isAccesory": true,
          "detail": {
@@ -979,17 +1003,174 @@
                 ]
         }
       },
+      {  
+         "id": "e_transit_van",
+         "image": "/img/vehicles/e_transit_van.png",
+         "title": "E-Transit Van",
+         "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
+         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryLink": "",
+         "ctaSecondaryText": "Solicitar cotización",
+         "ctaSecondaryLink": "",
+         "detailLink": "/vehiculos/e_transit_van",
+         "categories": ["comerciales", "fordPro", "electrificado", "furgon"],
+         "fordPro": true,
+         "isAccesory": false,
+         "detail": {
+            "mainSection" : {
+                "title" : "100% <span>eléctrica.</span>",
+                "text" : "Con menores costos y mayor productividad para vos y tu negocio."
+            },
+            "colors": [
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/transit_e_van/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/transit_e_van/colors/blanco_oxford.png"
+                },
+                {
+                    "name": "Plata lunar",
+                    "image": "/img/vehicles/transit_e_van/car_colors/plata_lunar.png",
+                    "imageColor": "/img/vehicles/transit_e_van/colors/plata_lunar.png"
+
+                }
+            ],
+            "specifications" : [
+                {
+                    "title" : "Autonomía",
+                    "feature": ["317 Km (WLTP)"]
+                },
+                {
+                    "title" : "Carga hasta",
+                    "feature": ["850kg con PBT de 3,5 Ton"]
+                },
+                {
+                    "title" : "Volumen hasta",
+                    "feature": ["12,4 mts 3"]
+                }
+            ],
+            "gallery": [
+                "/img/vehicles/transit_e_van/Exterior_1.png",
+                "/img/vehicles/transit_e_van/Exterior_2.png",
+                "/img/vehicles/transit_e_van/Exterior_3.png",
+                "/img/vehicles/transit_e_van/Exterior_4.png",
+                "/img/vehicles/transit_e_van/Interior_5.png",
+                "/img/vehicles/transit_e_van/Interior_6.png",
+                "/img/vehicles/transit_e_van/Interior_7.png",
+                "/img/vehicles/transit_e_van/Interior_8.png"
+            ],
+            "benefits" : [
+                {
+                    "title" : "Performance",
+                    "image" : "/img/vehicles/transit_e_van/benefit_1.png",
+                    "text" : "E-Transit ofrece la mejor relación entre potencia, versatilidad y uso operativo, brindándote lo que necesitás, cuando lo necesitás."
+                },
+                {
+                    "title" : "Tecnologia",
+                    "image" : "/img/vehicles/transit_e_van/benefit_2.png",
+                    "text" : "Impulsá la productividad de tu negocio con la mejor tecnología y conectividad presente en E-Transit."
+                },
+                {
+                    "title" : "Seguridad",
+                    "image" : "/img/vehicles/transit_e_van/benefit_3.png",
+                    "text" : "En E-Transit, la seguridad y el confort son fundamentales para reducir los costos operativos y obtener un mejor retorno de tu inversión."
+                },
+                {
+                    "title" : "Autonomía",
+                    "image" : "/img/vehicles/transit_e_van/benefit_4.png",
+                    "text" : "Con 317 km de autonomía (WLTP) para carga común y rápida, la E-Transit es perfecta para satisfacer las exigencias de tu negocio."
+                }
+                ]
+        }
+      },{  
+        "id": "transit_minibus",
+        "image": "/img/vehicles/transit_mini_bus.png",
+        "title": " Nueva Transit Minibus",
+        "text": "Transmisión automática, robustez, tecnología, conectividad y menores costos de operación.",
+        "ctaPrimaryText": "Más información", 
+        "ctaPrimaryLink": "",
+        "ctaSecondaryText": "Solicitar cotización",
+        "ctaSecondaryLink": "",
+        "detailLink": "/vehiculos/transit_minibus",
+        "categories": ["comerciales", "fordPro", "furgon"],
+        "fordPro": true,
+        "isAccesory": false,
+        "detail": {
+           "mainSection" : {
+               "title" : "Nueva Transit <span> Minibus.</span>",
+               "text" : "Tecnología, conectividad, desempeño, seguridad y comodidad para vos y tu negocio."
+           },
+           "colors": [
+               {
+                   "name": "Blanco oxford",
+                   "image": "/img/vehicles/transit_minibus/car_colors/blanco_oxford.png",
+                   "imageColor": "/img/vehicles/transit_minibus/colors/blanco_oxford.png"
+               },
+               {
+                   "name": "Plata lunar",
+                   "image": "/img/vehicles/transit_minibus/car_colors/plata_lunar.png",
+                   "imageColor": "/img/vehicles/transit_minibus/colors/plata_lunar.png"
+
+               }
+           ],
+           "specifications" : [
+               {
+                   "title" : "Motor",
+                   "feature": ["Diesel EcoBlue® 2.0L con 390Nm de torque"]
+               },
+               {
+                   "title" : "Transmisión",
+                   "feature": ["Automática de 10 velocidades", "Manual de 6 velocidades"]
+               },
+               {
+                   "title" : "Performance",
+                   "feature": ["Potencia 165 CV"]
+               }
+           ],
+           "gallery": [
+               "/img/vehicles/transit_minibus/Exterior_1.png",
+               "/img/vehicles/transit_minibus/Exterior_2.png",
+               "/img/vehicles/transit_minibus/Exterior_3.png",
+               "/img/vehicles/transit_minibus/Exterior_4.png",
+               "/img/vehicles/transit_minibus/Interior_5.png",
+               "/img/vehicles/transit_minibus/Interior_6.png",
+               "/img/vehicles/transit_minibus/Interior_7.png",
+               "/img/vehicles/transit_minibus/Interior_8.png"
+           ],
+           "benefits" : [
+               {
+                   "title" : "Performance",
+                   "image" : "/img/vehicles/transit_minibus/benefit_1.png",
+                   "text" : "Con un motor diésel de 2.0 L con 165 CV y 390 Nm de par, el EcoBlue ofrece potencia y eficiencia, maximizando la rentabilidad de tu negocio."
+               },
+               {
+                   "title" : "Tecnologia",
+                   "image" : "/img/vehicles/transit_minibus/benefit_2.png",
+                   "text" : "Incorpora una pantalla multitáctil de 12 compatible con Android Auto y Apple CarPlay para gestionar llamadas, acceder a mapas y optimizar rutas."
+               },
+               {
+                   "title" : "Seguridad",
+                   "image" : "/img/vehicles/transit_minibus/benefit_3.png",
+                   "text" : "Equipada con tecnologías para una conducción más segura: control electrónico de estabilidad y antivuelco, control de carga adaptativo y mucho más."
+               },
+               {
+                   "title" : "Conectividad",
+                   "image" : "/img/vehicles/transit_minibus/benefit_4.png",
+                   "text" : "Con la Nueva Transit Minibus, tenés el control total de tu negocio gracias a la conectividad inteligente de FordPass™, el acompañamiento preventivo y mucho más."
+               }
+               ]
+       }
+     },
       {
          "id" :  "transit_chasis",
          "image": "/img/vehicles/transit_chasis.png",
          "title": "Transit Chasis",
          "text": "Más robustez, versatilidad y durabilidad para tu negocio.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/transit_chasis",
-         "category": "comerciales",
+         "categories": ["comerciales", "fordPro", "furgon"],
          "fordPro": true,
          "isAccesory": false,
          "detail": {
@@ -1059,174 +1240,16 @@
         }
       },
       {  
-         "id": "transit_minibus",
-         "image": "/img/vehicles/transit_mini_bus.png",
-         "title": "Transit Minibus",
-         "text": "Transmisión automática, robustez, tecnología, conectividad y menores costos de operación.",
-         "ctaPrimaryText": "Agendar Test Drive", 
-         "ctaPrimaryLink": "",
-         "ctaSecondaryText": "Solicitar cotización",
-         "ctaSecondaryLink": "",
-         "detailLink": "/vehiculos/transit_minibus",
-         "category": "comerciales",
-         "fordPro": true,
-         "isAccesory": false,
-         "detail": {
-            "mainSection" : {
-                "title" : "Nueva Transit <span> Minibus.</span>",
-                "text" : "Tecnología, conectividad, desempeño, seguridad y comodidad para vos y tu negocio."
-            },
-            "colors": [
-                {
-                    "name": "Blanco oxford",
-                    "image": "/img/vehicles/transit_minibus/car_colors/blanco_oxford.png",
-                    "imageColor": "/img/vehicles/transit_minibus/colors/blanco_oxford.png"
-                },
-                {
-                    "name": "Plata lunar",
-                    "image": "/img/vehicles/transit_minibus/car_colors/plata_lunar.png",
-                    "imageColor": "/img/vehicles/transit_minibus/colors/plata_lunar.png"
-
-                }
-            ],
-            "specifications" : [
-                {
-                    "title" : "Motor",
-                    "feature": ["Diesel EcoBlue® 2.0L con 390Nm de torque"]
-                },
-                {
-                    "title" : "Transmisión",
-                    "feature": ["Automática de 10 velocidades", "Manual de 6 velocidades"]
-                },
-                {
-                    "title" : "Performance",
-                    "feature": ["Potencia 165 CV"]
-                }
-            ],
-            "gallery": [
-                "/img/vehicles/transit_minibus/Exterior_1.png",
-                "/img/vehicles/transit_minibus/Exterior_2.png",
-                "/img/vehicles/transit_minibus/Exterior_3.png",
-                "/img/vehicles/transit_minibus/Exterior_4.png",
-                "/img/vehicles/transit_minibus/Interior_5.png",
-                "/img/vehicles/transit_minibus/Interior_6.png",
-                "/img/vehicles/transit_minibus/Interior_7.png",
-                "/img/vehicles/transit_minibus/Interior_8.png"
-            ],
-            "benefits" : [
-                {
-                    "title" : "Performance",
-                    "image" : "/img/vehicles/transit_minibus/benefit_1.png",
-                    "text" : "Con un motor diésel de 2.0 L con 165 CV y 390 Nm de par, el EcoBlue ofrece potencia y eficiencia, maximizando la rentabilidad de tu negocio."
-                },
-                {
-                    "title" : "Tecnologia",
-                    "image" : "/img/vehicles/transit_minibus/benefit_2.png",
-                    "text" : "Incorpora una pantalla multitáctil de 12 compatible con Android Auto y Apple CarPlay para gestionar llamadas, acceder a mapas y optimizar rutas."
-                },
-                {
-                    "title" : "Seguridad",
-                    "image" : "/img/vehicles/transit_minibus/benefit_3.png",
-                    "text" : "Equipada con tecnologías para una conducción más segura: control electrónico de estabilidad y antivuelco, control de carga adaptativo y mucho más."
-                },
-                {
-                    "title" : "Conectividad",
-                    "image" : "/img/vehicles/transit_minibus/benefit_4.png",
-                    "text" : "Con la Nueva Transit Minibus, tenés el control total de tu negocio gracias a la conectividad inteligente de FordPass™, el acompañamiento preventivo y mucho más."
-                }
-                ]
-        }
-      },
-      {  
-         "id": "e_transit_van",
-         "image": "/img/vehicles/e_transit_van.png",
-         "title": "E-Transit Van",
-         "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
-         "ctaPrimaryText": "Agendar Test Drive", 
-         "ctaPrimaryLink": "",
-         "ctaSecondaryText": "Solicitar cotización",
-         "ctaSecondaryLink": "",
-         "detailLink": "/vehiculos/e_transit_van",
-         "category": "comerciales",
-         "fordPro": true,
-         "isAccesory": false,
-         "detail": {
-            "mainSection" : {
-                "title" : "100% <span>eléctrica.</span>",
-                "text" : "Con menores costos y mayor productividad para vos y tu negocio."
-            },
-            "colors": [
-                {
-                    "name": "Blanco oxford",
-                    "image": "/img/vehicles/transit_e_van/car_colors/blanco_oxford.png",
-                    "imageColor": "/img/vehicles/transit_e_van/colors/blanco_oxford.png"
-                },
-                {
-                    "name": "Plata lunar",
-                    "image": "/img/vehicles/transit_e_van/car_colors/plata_lunar.png",
-                    "imageColor": "/img/vehicles/transit_e_van/colors/plata_lunar.png"
-
-                }
-            ],
-            "specifications" : [
-                {
-                    "title" : "Autonomía",
-                    "feature": ["317 Km (WLTP)"]
-                },
-                {
-                    "title" : "Carga hasta",
-                    "feature": ["850kg con PBT de 3,5 Ton"]
-                },
-                {
-                    "title" : "Volumen hasta",
-                    "feature": ["12,4 mts 3"]
-                }
-            ],
-            "gallery": [
-                "/img/vehicles/transit_e_van/Exterior_1.png",
-                "/img/vehicles/transit_e_van/Exterior_2.png",
-                "/img/vehicles/transit_e_van/Exterior_3.png",
-                "/img/vehicles/transit_e_van/Exterior_4.png",
-                "/img/vehicles/transit_e_van/Interior_5.png",
-                "/img/vehicles/transit_e_van/Interior_6.png",
-                "/img/vehicles/transit_e_van/Interior_7.png",
-                "/img/vehicles/transit_e_van/Interior_8.png"
-            ],
-            "benefits" : [
-                {
-                    "title" : "Performance",
-                    "image" : "/img/vehicles/transit_e_van/benefit_1.png",
-                    "text" : "E-Transit ofrece la mejor relación entre potencia, versatilidad y uso operativo, brindándote lo que necesitás, cuando lo necesitás."
-                },
-                {
-                    "title" : "Tecnologia",
-                    "image" : "/img/vehicles/transit_e_van/benefit_2.png",
-                    "text" : "Impulsá la productividad de tu negocio con la mejor tecnología y conectividad presente en E-Transit."
-                },
-                {
-                    "title" : "Seguridad",
-                    "image" : "/img/vehicles/transit_e_van/benefit_3.png",
-                    "text" : "En E-Transit, la seguridad y el confort son fundamentales para reducir los costos operativos y obtener un mejor retorno de tu inversión."
-                },
-                {
-                    "title" : "Autonomía",
-                    "image" : "/img/vehicles/transit_e_van/benefit_4.png",
-                    "text" : "Con 317 km de autonomía (WLTP) para carga común y rápida, la E-Transit es perfecta para satisfacer las exigencias de tu negocio."
-                }
-                ]
-        }
-      },
-      {  
          "id" : "nuevo_mustang_gt",
          "image": "/img/vehicles/nuevo_mustang_gt.png",
-         "title": "Nuevo Mustang GT",
+         "title": "Mustang GT Pereformance",
          "text": "Potencia, torque, tecnología y conectividad como nunca antes habías visto.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nuevo_mustang_gt",
-         "category": "mustang",
+         "categories": ["deportivo", "mustang"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
@@ -1301,108 +1324,18 @@
                 ]
         }
       },
-      {  
-         "id": "mustang_mach_e",
-         "image": "/img/vehicles/mustang_mach_e.png",
-         "title": "Mustang Mach-E",
-         "text": "El único eléctrico que es un Mustang.",
-         "ctaPrimaryText": "Agendar Test Drive", 
-         "ctaPrimaryLink": "",
-         "ctaSecondaryText": "Solicitar cotización",
-         "ctaSecondaryLink": "",
-         "detailLink": "/vehiculos/mustang_mach_e",
-         "category": "mustang",
-         "fordPro": false,
-         "isAccesory": false,
-         "detail": {
-            "mainSection" : {
-                "title" : "El único eléctrico que es un <span> Mustang.</span>",
-                "text" : "Todo el rendimiento e innovación atrapante como solo la leyenda Mustang te sabe ofrecer."
-            },
-            "colors": [
-                {
-                    "name": "Azul Eléctrico",
-                    "image": "/img/vehicles/mustang_mach_e/car_colors/azul_electrico.png",
-                    "imageColor": "/img/vehicles/mustang_mach_e/colors/azul_electrico.png"
-                },
-                {
-                    "name": "Azul vapor",
-                    "image": "/img/vehicles/mustang_mach_e/car_colors/azul_vapor.png",
-                    "imageColor": "/img/vehicles/mustang_mach_e/colors/azul_vapor.png"
-
-                },
-                {
-                    "name": "Gris mercurio",
-                    "image": "/img/vehicles/mustang_mach_e/car_colors/gris_mercurio.png",
-                    "imageColor": "/img/vehicles/mustang_mach_e/colors/gris_mercurio.png"
-
-                },
-                {
-                    "name": "Blanco estrella",
-                    "image": "/img/vehicles/mustang_mach_e/car_colors/blanco_estrella.png",
-                    "imageColor": "/img/vehicles/mustang_mach_e/colors/blanco_estrella.png"
-
-                }
-            ],
-            "specifications" : [
-                {
-                    "title" : "Motor",
-                    "feature": ["Doble motor eléctrico de 487 CV de potencia y 860 Nm de Torque"]
-                },
-                {
-                    "title" : "Performance",
-                    "feature":["0-100 km/h en 3.7 segs"]
-                },
-                {
-                    "title" : "Tracción",
-                    "feature": ["eAWD"]
-                }
-            ],
-            "gallery": [
-                "/img/vehicles/mustang_mach_e/Exterior_1.png",
-                "/img/vehicles/mustang_mach_e/Exterior_2.png",
-                "/img/vehicles/mustang_mach_e/Exterior_3.png",
-                "/img/vehicles/mustang_mach_e/Exterior_4.png",
-                "/img/vehicles/mustang_mach_e/Interior_5.png",
-                "/img/vehicles/mustang_mach_e/Interior_6.png",
-                "/img/vehicles/mustang_mach_e/Interior_7.png",
-                "/img/vehicles/mustang_mach_e/Interior_8.png"
-            ],
-            "benefits" : [
-                {
-                    "title" : "Autonomía",
-                    "image" : "/img/vehicles/mustang_mach_e/benefit_1.png",
-                    "text" : "Cargá tu Mustang Mach-E usando el cargador de serie para tu hogar o los cargadores públicos CCS2 y aprovechá al máximo su autonomía de 541 km."
-                },
-                {
-                    "title" : "Diseño",
-                    "image" : "/img/vehicles/mustang_mach_e/benefit_2.png",
-                    "text" : "El ADN Mustang con su clásico e imponente diseño, te va a sorprender en cada parte de su interior."
-                },
-                {
-                    "title" : "Tecnologia y conectividad",
-                    "image" : "/img/vehicles/mustang_mach_e/benefit_3.png",
-                    "text" : "Tecnología y conectividad intuitiva y funcional. Compatible con Apple Carplay inalámbrico y Android Auto, Sync 4A con pantalla táctil de 15.5 y carga de celular por inducción."
-                },
-                {
-                    "title" : "Seguridad",
-                    "image" : "/img/vehicles/mustang_mach_e/benefit_4.png",
-                    "text" : "El Mustang Mach-E ofrece lo último en seguridad con tecnologías de última generación."
-                }
-            ]
-        }
-      },
+     
       {  
          "id": "nueva_everest",
          "image": "/img/vehicles/nueva_everest.png",
          "title": "Nueva everest",
          "text": "Ford Everest está llegando a Argentina.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/nueva_everest",
-         "category": "suv",
+         "categories": ["suv"],
          "fordPro": false,
          "isAccesory": false,
          "detail": {
@@ -1413,25 +1346,25 @@
             "colors": [
                 {
                     "name": "Gris mercurio",
-                    "image": "/img/vehicles/kuga_hibrida/car_colors/azul_vapor.png",
-                    "imageColor": "/img/vehicles/kuga_hibrida/colors/azul_vapor.png"
+                    "image": "/img/vehicles/everest/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/everest/colors/gris_mercurio.png"
                 },
                 {
                     "name": "Blanco Oxford",
-                    "image": "/img/vehicles/kuga_hibrida/car_colors/blanco_oxford.png",
-                    "imageColor": "/img/vehicles/kuga_hibrida/colors/blanco_oxford.png"
+                    "image": "/img/vehicles/everest/car_colors/blanco_oxford.png",
+                    "imageColor": "/img/vehicles/everest/colors/blanco_oxford.png"
 
                 },
                 {
                     "name": "Gris plata",
-                    "image": "/img/vehicles/kuga_hibrida/car_colors/gris_mercurio.png",
-                    "imageColor": "/img/vehicles/kuga_hibrida/colors/Gris_mercurio.png"
+                    "image": "/img/vehicles/everest/car_colors/gris_mercurio.png",
+                    "imageColor": "/img/vehicles/everest/colors/gris_mercurio.png"
 
                 },
                 {
                     "name": "Negro pantera",
-                    "image": "/img/vehicles/kuga_hibrida/car_colors/negro_pantera.png",
-                    "imageColor": "/img/vehicles/kuga_hibrida/colors/Negro_pantera.png"
+                    "image": "/img/vehicles/everest/car_colors/negro_pantera.png",
+                    "imageColor": "/img/vehicles/everest/colors/Negro_pantera.png"
 
                 }
             ],
@@ -1485,15 +1418,15 @@
       },
       {  
          "id": "transit_e_chasis",
-         "image": "/img/vehicles/mustang_mach_e.png",
+         "image": "/img/vehicles/e_transit_chasis.png",
          "title": "Transit E-Chasis",
-         "text": "El único eléctrico que es un Mustang.",
-         "ctaPrimaryText": "Agendar Test Drive", 
+         "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
+         "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/mustang_mach_e",
-         "category": "mustang",
+         "categories": ["comerciales", "fordPro", "electrificado", "furgon"],
          "fordPro": false,
          "isAccesory": false,
          "detail": {
@@ -1561,6 +1494,96 @@
                 }
             ]
         }
-      }
+      }, {  
+        "id": "mustang_mach_e",
+        "image": "/img/vehicles/mustang_mach_e.png",
+        "title": "Mustang Mach-E",
+        "text": "El único eléctrico que es un Mustang.",
+        "ctaPrimaryText": "Más información", 
+        "ctaPrimaryLink": "",
+        "ctaSecondaryText": "Solicitar cotización",
+        "ctaSecondaryLink": "",
+        "detailLink": "/vehiculos/mustang_mach_e",
+        "categories": ["mustang", "electrificado"],
+        "fordPro": false,
+        "isAccesory": false,
+        "detail": {
+           "mainSection" : {
+               "title" : "El único eléctrico que es un <span> Mustang.</span>",
+               "text" : "Todo el rendimiento e innovación atrapante como solo la leyenda Mustang te sabe ofrecer."
+           },
+           "colors": [
+               {
+                   "name": "Azul Eléctrico",
+                   "image": "/img/vehicles/mustang_mach_e/car_colors/azul_electrico.png",
+                   "imageColor": "/img/vehicles/mustang_mach_e/colors/azul_electrico.png"
+               },
+               {
+                   "name": "Azul vapor",
+                   "image": "/img/vehicles/mustang_mach_e/car_colors/azul_vapor.png",
+                   "imageColor": "/img/vehicles/mustang_mach_e/colors/azul_vapor.png"
+
+               },
+               {
+                   "name": "Gris mercurio",
+                   "image": "/img/vehicles/mustang_mach_e/car_colors/gris_mercurio.png",
+                   "imageColor": "/img/vehicles/mustang_mach_e/colors/gris_mercurio.png"
+
+               },
+               {
+                   "name": "Blanco estrella",
+                   "image": "/img/vehicles/mustang_mach_e/car_colors/blanco_estrella.png",
+                   "imageColor": "/img/vehicles/mustang_mach_e/colors/blanco_estrella.png"
+
+               }
+           ],
+           "specifications" : [
+               {
+                   "title" : "Motor",
+                   "feature": ["Doble motor eléctrico de 487 CV de potencia y 860 Nm de Torque"]
+               },
+               {
+                   "title" : "Performance",
+                   "feature":["0-100 km/h en 3.7 segs"]
+               },
+               {
+                   "title" : "Tracción",
+                   "feature": ["eAWD"]
+               }
+           ],
+           "gallery": [
+               "/img/vehicles/mustang_mach_e/Exterior_1.png",
+               "/img/vehicles/mustang_mach_e/Exterior_2.png",
+               "/img/vehicles/mustang_mach_e/Exterior_3.png",
+               "/img/vehicles/mustang_mach_e/Exterior_4.png",
+               "/img/vehicles/mustang_mach_e/Interior_5.png",
+               "/img/vehicles/mustang_mach_e/Interior_6.png",
+               "/img/vehicles/mustang_mach_e/Interior_7.png",
+               "/img/vehicles/mustang_mach_e/Interior_8.png"
+           ],
+           "benefits" : [
+               {
+                   "title" : "Autonomía",
+                   "image" : "/img/vehicles/mustang_mach_e/benefit_1.png",
+                   "text" : "Cargá tu Mustang Mach-E usando el cargador de serie para tu hogar o los cargadores públicos CCS2 y aprovechá al máximo su autonomía de 541 km."
+               },
+               {
+                   "title" : "Diseño",
+                   "image" : "/img/vehicles/mustang_mach_e/benefit_2.png",
+                   "text" : "El ADN Mustang con su clásico e imponente diseño, te va a sorprender en cada parte de su interior."
+               },
+               {
+                   "title" : "Tecnologia y conectividad",
+                   "image" : "/img/vehicles/mustang_mach_e/benefit_3.png",
+                   "text" : "Tecnología y conectividad intuitiva y funcional. Compatible con Apple Carplay inalámbrico y Android Auto, Sync 4A con pantalla táctil de 15.5 y carga de celular por inducción."
+               },
+               {
+                   "title" : "Seguridad",
+                   "image" : "/img/vehicles/mustang_mach_e/benefit_4.png",
+                   "text" : "El Mustang Mach-E ofrece lo último en seguridad con tecnologías de última generación."
+               }
+           ]
+       }
+     }
     ]
 }

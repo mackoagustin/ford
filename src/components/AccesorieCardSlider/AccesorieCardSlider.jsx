@@ -11,9 +11,15 @@ import { Pagination } from "swiper/modules";
 const AccesoireCardSlider = ({ category }) => {
   const isMobile = useIsMobile();
 
-  const filteredVehicles = vehicleData.vehicles.filter(
-    (item) => item.category === category && item.isAccesory === true
-  );
+  const filteredVehicles = vehicleData.vehicles.filter((item) => {
+    // Verificar si pertenece a la categoría
+    const belongsToCategory = Array.isArray(item.categories) 
+      ? item.categories.includes(category)
+      : item.category === category;
+    
+    // Verificar si es accesorio
+    return belongsToCategory && item.isAccesory === true;
+  });
 
   const flexContainerClass =
     filteredVehicles.length <= 2

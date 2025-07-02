@@ -11,9 +11,12 @@ import { Pagination } from "swiper/modules";
 const VehicleCarCardSlider = ({ category }) => {
   const isMobile = useIsMobile();
 
-  const filteredVehicles = vehicleData.vehicles.filter(
-    (item) => item.category === category
-  );
+  const filteredVehicles = vehicleData.vehicles.filter((item) => {
+    if (Array.isArray(item.categories)) {
+      return item.categories.includes(category);
+    }
+    return item.category === category;
+  });
 
   const flexContainerClass =
     filteredVehicles.length <= 2

@@ -16,16 +16,26 @@ const SliderVehicle = () => {
   const swiperRef = useRef(null);
   const isMobile = useIsMobile();
 
-  // Obtener categorías únicas y agregar 'todos'
-  const categories = ['todos', ...new Set(vehiclesData.vehicles.map(vehicle => vehicle.category))];
+  // Obtener categorías únicas
+  const categories = ['todos', ...new Set(
+    vehiclesData.vehicles.flatMap(vehicle => {
+      if (Array.isArray(vehicle.categories)) {
+        return vehicle.categories;
+      }
+      return vehicle.category ? [vehicle.category] : [];
+    })
+  )];
 
   useEffect(() => {
     // Filtrar vehículos por categoría seleccionada
     const filtered = selectedCategory === 'todos'
       ? vehiclesData.vehicles
-      : vehiclesData.vehicles.filter(
-          vehicle => vehicle.category === selectedCategory
-        );
+      : vehiclesData.vehicles.filter(vehicle => {
+          if (Array.isArray(vehicle.categories)) {
+            return vehicle.categories.includes(selectedCategory);
+          }
+          return vehicle.category === selectedCategory;
+        });
     setFilteredVehicles(filtered);
     setVehicleCount(filtered.length);
     
@@ -51,7 +61,7 @@ const SliderVehicle = () => {
           {categories.map((category) => (
             <SwiperSlide key={category} style={{ width: 'auto' }}>
               <Chip
-                label={category === 'todos' ? 'Todos' : category.charAt(0).toUpperCase() + category.slice(1)}
+                label={category === 'todos' ? 'Todos' : (typeof category === 'string' ? category.charAt(0).toUpperCase() + category.slice(1) : String(category))}
                 active={selectedCategory === category}
                 onClick={() => setSelectedCategory(category)}
               />
@@ -63,7 +73,7 @@ const SliderVehicle = () => {
           {categories.map((category) => (
             <Chip
               key={category}
-              label={category === 'todos' ? 'Todos' : category.charAt(0).toUpperCase() + category.slice(1)}
+              label={category === 'todos' ? 'Todos' : (typeof category === 'string' ? category.charAt(0).toUpperCase() + category.slice(1) : String(category))}
               active={selectedCategory === category}
               onClick={() => setSelectedCategory(category)}
             />
