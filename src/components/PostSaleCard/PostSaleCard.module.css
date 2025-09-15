@@ -22,6 +22,7 @@ h4, p {
     margin-top: auto;
     display: flex;
     padding-left: 16px;
+
 }
 
 .wraperTitle {
@@ -62,28 +63,29 @@ h4, p {
     }
     .wraperTitle {
         text-align: center;
-    width: 342px;
-    padding: 16px 16px 0px 16px;
+         width: 342px;
+        padding: 24px 16px 0px 16px;
     }
     
     .wraperText {
         text-align: center;
-        width: 342px;
+        width: 344px;
         padding: 8px 16px 0px 16px;
         margin-top: 0px;
     }
 
     .buttonWrapper {
-    margin-top: auto;
-    display: flex;
-    justify-content: center;
-    padding-left: 16px;
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        padding-left: 16px;
+
     }
 
     /* Variaciones por grupo */
     .cardGroup1 {
         width: 100%;
-        height: 500px;
+        height: 524px;
         max-width: 373px ;
         overflow: hidden;
         display: flex;

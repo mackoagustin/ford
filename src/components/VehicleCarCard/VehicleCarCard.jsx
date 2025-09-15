@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from './VehicleCarCard.module.css';
 import Button from "../Button/Button";
 import { useNavigate } from "react-router-dom";
-import QuoterModal from "../QuoterModal/QuoterModal";
+// import QuoterModal from "../QuoterModal/QuoterModal";
 
 const VehiclesCard = ( { item }) => {
   const navigate = useNavigate();
@@ -53,7 +53,13 @@ const VehiclesCard = ( { item }) => {
           </Button> 
           <Button
             variant="secondary"
-            onClick={openModal}
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById('formulario-asesoramiento').scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
           >
             {item.ctaSecondaryText}
             <svg
@@ -74,7 +80,7 @@ const VehiclesCard = ( { item }) => {
             </svg>
           </Button>
         </div>
-        <QuoterModal isOpen={isModalOpen} onClose={closeModal} />
+        {/* <QuoterModal isOpen={isModalOpen} onClose={closeModal} /> */}
     </div>
  
   );

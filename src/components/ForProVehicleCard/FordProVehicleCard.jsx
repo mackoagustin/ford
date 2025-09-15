@@ -15,6 +15,7 @@ const FordProVehicleCard = ({ item }) => {
       <img className={styles.image} src={item.image} alt={item.title} />
       <div className={styles.info}>
         <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
+        <p className="body-1-16 text-color-neutral-600">{item.text}</p>
       </div>
 
       {isMobile ? (
@@ -64,9 +65,16 @@ const FordProVehicleCard = ({ item }) => {
         </Button>
         <Button
           as="a"
-          href={item.ctaSecondaryLink}
+          href="#formulario-asesoramiento"
           rel="noopener noreferrer"
-          variant="quarter"
+          variant="secondary"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('formulario-asesoramiento').scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }}
         >
           {item.ctaSecondaryText}
           <svg

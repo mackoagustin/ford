@@ -4,13 +4,13 @@
       "image": "/img/vehicles/nueva_bronco/nueva_bronco_banner.png",
       "title": "Bronco Sport",
       "description": "Descubrí la nueva Bronco Sport",
-      "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Bronco%20Sport",
+      "ctaText": "",
+      "ctaLink": "",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
-      "territory": {
-      "image": "/img/vehicles/territory/territory_banner.png",
+      "Nueva Territory": {
+      "image": "/img/vehicles/territory/nueva_territory.png",
       "title": "Territory",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",
@@ -22,20 +22,17 @@
       "image": "/img/vehicles/kuga_hibrida/kuga_banner.png",
       "title": "Kuga híbrida",
       "description": "Descubrí la Territory",
-      "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Kuga%20Hibrida",
-
+      "ctaText": "",
+      "ctaLink": "",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
      "nueva_everest": {
       "image": "/img/vehicles/everest/everest_banner.png",
-
       "title": "Nueva Everest",
       "description": "Descubrí la Territory",
-      "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Nueva%20Everest",
-
+      "ctaText": "",
+      "ctaLink": "",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
@@ -70,8 +67,8 @@
       "image": "/img/vehicles/ranger_raptor/ranger_raptor_banner.png",
       "title": "Ranger Raptor",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20Ranger%20Raptor",
+      "ctaText": "",
+      "ctaLink": "",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
@@ -88,8 +85,8 @@
       "image": "/img/vehicles/nueva_f150_tremor/tremor_banner.png",
       "title": "F-150 Tremor",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20F150%20Temor",
+      "ctaText": "",
+      "ctaLink": "",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
@@ -97,8 +94,8 @@
       "image": "/img/vehicles/nueva_f150_raptor/raptor_banner.png",
       "title": "F-150 Raptor",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Agendar test drive",
-      "ctaLink": "https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive:%20F150%20Raptor",
+      "ctaText": "",
+      "ctaLink": "",
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
@@ -115,46 +112,46 @@
       "image": "/img/vehicles/transit_chasis/transit_chasis_banner.png",
       "title": "Nueva Transit </br> Chasis",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Solicitar Cotización",
-      "ctaLink": "modal",
-      "ctaTextSecond": "",
-      "ctaLinkSecond": ""
+      "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar Cotización",
+      "ctaLinkSecond": "modal"
     },
       "transit_minibus": {
       "image": "/img/vehicles/transit_minibus/transit_minibus_banner.png",
       "title": "Nueva Transit </br> Minibus",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Solicitar Cotización",
-      "ctaLink": "modal",
-      "ctaTextSecond": "",
-      "ctaLinkSecond": ""
+      "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar Cotización",
+      "ctaLinkSecond": "modal"
       },
       "e_transit_van": {
       "image": "/img/vehicles/transit_e_van/transit_e_banner.png",
       "title": "E-Transit Van",
       "description": "Descubrí la nueva maverick",
-     "ctaText": "Solicitar cotización",
-      "ctaLink": "modal",
-      "ctaTextSecond": "",
-      "ctaLinkSecond": ""
+     "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar Cotización",
+      "ctaLinkSecond": "modal"
     },
       "nuevo_mustang_gt": {
       "image": "/img/vehicles/mustang_gt/mustang_gt_banner.png",
       "title": "Mustang GT </br> Performance",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Solicitar cotización",
-      "ctaLink": "modal",
-      "ctaTextSecond": "",
-      "ctaLinkSecond": ""
+      "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "modal"
     },
       "mustang_mach_e": {
       "image": "/img/vehicles/mustang_mach_e/mustang_mach_e_banner.png",
       "title": "Mustang</br> Mach-E",
       "description": "Descubrí la nueva maverick",
-      "ctaText": "Solicitar cotización",
-      "ctaLink": "modal",
-      "ctaTextSecond": "",
-      "ctaLinkSecond": ""
+      "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "modal"
     },
       "transit_e_chasis": {
       "image": "/img/vehicles/transit_e_chasis/transit_e_chasis_banner.png",
@@ -162,8 +159,8 @@
       "description": "Descubrí la nueva maverick",
       "ctaText": "Solicitar cotización",
       "ctaLink": "modal",
-      "ctaTextSecond": "",
-      "ctaLinkSecond": ""
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "modal"
     }
   }
 } 

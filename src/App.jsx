@@ -56,7 +56,7 @@ function App() {
         <Route path="/postventa/servicios" element={<Services />} />
         <Route path="/postventa/repuestos" element={<Parts />} />
         <Route path="/postventa/accesorios" element={<Accessories />} />
-        <Route path="/postventa/preguntas-frecuentes" element={<FAQ />} />
+        {/* <Route path="/postventa/preguntas-frecuentes" element={<FAQ />} /> */}
         <Route path="/postventa/ford-protect" element={<FordProtect />} />
         <Route path="/quienes-somos" element={<AboutUs />} />
         <Route path="/quienes-somos/conocenos" element={<KnowUs />} />

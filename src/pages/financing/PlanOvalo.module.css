@@ -37,11 +37,26 @@
 .faqWrapper {
     padding-top: 42px;
     padding-bottom: 42px;
-    background-color: var(--color-neutral-100);
 }
 
 
 @media (min-width: 768px) {
+    .wraperSectionGray {
+        background-color: var(--color-neutral-100);
+        border-radius: 16px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+    .wraperSectionGray h2 {
+        text-align: center;
+    }
+    .wraperSectionGray p {
+        text-align: center;
+    }
 
     .legalText {
         width: auto;
@@ -64,14 +79,18 @@
 
     .sliderWrapper {
         max-width: 1170px;
-        margin: 24px auto 150px auto;
+        margin: 24px auto 80px auto;
         padding: 0 16px;
     }
 }
 
 @media (min-width: 1024px) {
+
+
+  
     .wraperLegal {
         justify-content:center;
+        
     }
  
   .px16 {

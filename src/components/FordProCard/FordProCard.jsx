@@ -8,6 +8,11 @@ const FordProCard = ({ data }) => {
         return <div>No location data available</div>;
     }
 
+    // Función para detectar si el texto contiene HTML
+    const containsHTML = (text) => {
+        return /<[^>]*>/.test(text);
+    };
+
    return (
         <div className={style.wraperCard}>
             <img 
@@ -21,10 +26,16 @@ const FordProCard = ({ data }) => {
                     <h4 className="H4">{data.title}</h4>
                 </div>
                 <div className={style.wraperText}>
-                    <p
-                        className="body-1-16 text-color-neutral-600"
-                        dangerouslySetInnerHTML={{ __html: data.text }}
-                    ></p>
+                    {containsHTML(data.text) ? (
+                        <p
+                            className="body-1-16 text-color-neutral-600"
+                            dangerouslySetInnerHTML={{ __html: data.text }}
+                        />
+                    ) : (
+                        <p className="body-1-16 text-color-neutral-600">
+                            {data.text}
+                        </p>
+                    )}
                 </div>
             </div>
         </div>

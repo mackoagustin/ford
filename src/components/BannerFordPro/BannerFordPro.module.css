@@ -46,21 +46,21 @@
 
 @media (min-width: 768px) {
     .wraper {
-        height: 583px;
+        height: 400px;
         width: 100%;
     }
 
     .image {
-        height: 583px;
-        width: 100;
+        height: 400px;
+        width: 100%;
     }
 
     .content{
         position: absolute;
         /* top: 50%;
         transform: translateY(-50%);   */
-        top: 230px;
-        left: 10%;
+        top: 120px;
+        left: 9%;
         display: flex;
         flex-direction: column;
         gap: 28px;
@@ -70,13 +70,13 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1442px) {
   .content{
     position: absolute;
     /* top: 50%;
     transform: translateY(-50%);   */
-    top: 230px;
-    left: 19%;
+    top: 120px;
+    left: 20%;
     display: flex;
     flex-direction: column;
     gap: 28px;

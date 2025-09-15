@@ -1,52 +1,52 @@
 {
     "vehicles": [
       {
-         "id": "territory",
+         "id": "Nueva Territory",
          "image": "/img/vehicles/territory.png",
-         "title": "Territory",
-         "text": "Llegá hasta donde imagines.",
-         "ctaPrimaryText": "Más información", 
-         "ctaPrimaryLink": "",
+         "title": "Nueva Territory",
+         "text": "Elevá tu experiencia de manejo.",
+         "ctaPrimaryText": "Mostrar más", 
+         "ctaPrimaryLink": "/vehiculos/Nueva Territory",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehiculos/territory",
+         "detailLink": "/vehiculos/Nueva Territory",
          "categories": ["suv"],
          "fordPro": false,
          "isAccesory": true,
          "detail": {
             "mainSection" : {
-                "title" : "Llegá hasta donde <span>imagines.</span>",
+                "title" : "Elevá tu experiencia de<span>manejo.</span>",
                 "text" : "La evolución del diseño, funcionalidad, tecnología inteligente y seguridad."
             },
             "colors": [
                 {
-                    "name": "Blanco perlado ",
-                    "image": "/img/vehicles/territory/car_colors/Blanco_perlado.png",
-                    "imageColor": "/img/vehicles/territory/colors/Blanco_perlado.png"
+                    "name": "Gris Cactus",
+                    "image": "/img/vehicles/territory/car_colors/gris_cactus.png",
+                    "imageColor": "/img/vehicles/territory/colors/gris_cactus.png"
+                },
+                {
+                    "name": "Azul profundo",
+                    "image": "/img/vehicles/territory/car_colors/azul_profundo.png",
+                    "imageColor": "/img/vehicles/territory/colors/azul_profundo.png"
+
+                },
+                {
+                    "name": "Blanco oxford",
+                    "image": "/img/vehicles/territory/car_colors/blanco_ozford.png",
+                    "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
+
+                },
+                {
+                    "name": "Gris mercurio",
+                    "image": "/img/vehicles/territory/car_colors/Gris_mercurio.png",
+                    "imageColor": "/img/vehicles/territory/colors/Gris_mercurio.png"
+
+
                 },
                 {
                     "name": "Negro pantera",
                     "image": "/img/vehicles/territory/car_colors/Negro_pantera.png",
                     "imageColor": "/img/vehicles/territory/colors/Negro_pantera.png"
-
-                },
-                {
-                    "name": "Gris mercurio",
-                    "image": "/img/vehicles/territory/car_colors/Gris_Mercurio.png",
-                    "imageColor": "/img/vehicles/territory/colors/Gris_mercurio.png"
-
-                },
-                {
-                    "name": "Azul metálico",
-                    "image": "/img/vehicles/territory/car_colors/Azul_metalico.png",
-                    "imageColor": "/img/vehicles/territory/colors/Azul_metalico.png"
-
-
-                },
-                {
-                    "name": "Glaseado otoño",
-                    "image": "/img/vehicles/territory/car_colors/Glaseado_otono.png",
-                    "imageColor": "/img/vehicles/territory/colors/Glaseado_otono.png"
 
                 }
             ],
@@ -76,19 +76,19 @@
             ],
             "benefits" : [
                 {
-                    "title" : "Tecnologia inteligente",
+                    "title" : "Diseño",
                     "image" : "/img/vehicles/territory/benefit_1.png",
-                    "text" : "La Territory se destaca por su tecnología innovadora, brindando una experiencia de manejo única."
+                    "text" : "Elegante y funcional, la nueva Territory se distingue por la calidad de sus terminaciones y su generoso espacio interior."
                 },
                 {
-                    "title" : "Diseño",
+                    "title" : "Tecnologia",
                     "image" : "/img/vehicles/territory/benefit_2.png",
-                    "text" : "Sofisticada y minimalista, la Territory se destaca por la calidad de sus materiales y su amplio espacio interior."
+                    "text" : "Disfrutá una experiencia de conducción inigualable gracias a la tecnología innovadora pensada para optimizar tus viajes."
                 },
                 {
                     "title" : "Seguridad",
                     "image" : "/img/vehicles/territory/benefit_3.png",
-                    "text" : "La Territory incorpora el asistente Ford Co-Pilot 360 para maniobras más seguras."
+                    "text" : "Con Ford Co-Pilot 360, un conjunto de asistencias que facilita y protege cada maniobra al volante elevando tu seguridad."
                 }
             ]
         }
@@ -98,7 +98,7 @@
          "image": "/img/vehicles/nueva_bronco.png",
          "title": "Nueva Bronco Sport",
          "text": "El ícono de la aventura.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -112,6 +112,12 @@
                 "text" : "Con su característico diseño robusto y tracción 4WD de serie, esta SUV se renueva con tecnologías de vanguardia, lista para llevarte a cualquier aventura."
             },
             "colors": [
+                {
+                    "name": "Verde salvaje",
+                    "image": "/img/vehicles/nueva_bronco/car_colors/verde_salvaje.png",
+                    "imageColor": "/img/vehicles/nueva_bronco/colors/verde_salvaje.png"
+
+                },
                 {
                     "name": "Azul glaciar",
                     "image": "/img/vehicles/nueva_bronco/car_colors/azul_glaciar.png",
@@ -133,13 +139,8 @@
                     "image": "/img/vehicles/nueva_bronco/car_colors/negro_pantera.png",
                     "imageColor": "/img/vehicles/nueva_bronco/colors/Negro_pantera.png"
 
-                },
-                {
-                    "name": "Verde salvaje",
-                    "image": "/img/vehicles/nueva_bronco/car_colors/verde_salvaje.png",
-                    "imageColor": "/img/vehicles/nueva_bronco/colors/verde_salvaje.png"
-
                 }
+                
             ],
             "specifications" : [
                 {
@@ -194,7 +195,7 @@
          "image": "/img/vehicles/kuga.png",
          "title": "Kuga Híbrida",
          "text": "La inteligencia encuentra el camino.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -381,7 +382,7 @@
          "image": "/img/vehicles/maverick.png",
          "title": "Nueva Maverick Lariat Hibrida ",
          "text": "Nuevas experiencias nos hacen más fuertes.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -476,9 +477,9 @@
         }
       }, {  "id" : "maverick",
       "image": "/img/vehicles/maverick_hibrida.png",
-      "title": "Nueva Maverick Lariat Hibrida ",
+      "title": "Nueva Maverick ",
       "text": "Nuevas experiencias nos hacen más fuertes.",
-      "ctaPrimaryText": "Más información", 
+      "ctaPrimaryText": "Mostrar más", 
       "ctaPrimaryLink": "",
       "ctaSecondaryText": "Solicitar cotización",
       "ctaSecondaryLink": "",
@@ -490,7 +491,7 @@
       {  "id": "nueva_ranger",
          "image": "/img/vehicles/nueva_ranger.png",
          "title": "Nueva Ranger",
-         "text": "Que venga lo imposible.",
+         "text": "Nueva generación Ranger.",
          "ctaPrimaryText": "Más información", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
@@ -587,8 +588,8 @@
       {  "id" : "ranger_raptor",
          "image": "/img/vehicles/ranger_raptor.png",
          "title": "Ranger Raptor",
-         "text": "Que venga lo imposible.",
-         "ctaPrimaryText": "Más información", 
+         "text": "La generación de Ranger Raptor llegó.",
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -679,7 +680,7 @@
          "image": "/img/vehicles/nueva_f150_lariat.png",
          "title": "F-150 Lariat Híbrida",
          "text": "La primera Pick-Up con motorización híbrida.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -751,14 +752,14 @@
         }
       }, {  "id": "nueva_f150_lariat",
       "image": "/img/vehicles/nueva_f150_lariat_hibrida.png",
-      "title": "F-150 Lariat Híbrida",
+      "title": "Nueva F-150 Lariat",
       "text": "La primera Pick-Up con motorización híbrida.",
-      "ctaPrimaryText": "Más información", 
+      "ctaPrimaryText": "Mostrar más", 
       "ctaPrimaryLink": "",
       "ctaSecondaryText": "Solicitar cotización",
       "ctaSecondaryLink": "",
       "detailLink": "/vehiculos/nueva_f150_lariat",
-      "categories": ["pick-up", "electrificado"],
+      "categories": ["pick-up"],
       "fordPro": false,
       "isAccesory": true
     },
@@ -767,7 +768,7 @@
          "image": "/img/vehicles/nueva_f150_tremor.png",
          "title": "Nueva F-150 Tremor",
          "text": "Experiencia off-road en cada aventura.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -847,9 +848,9 @@
       {
          "id": "nueva_f150_raptor",
          "image": "/img/vehicles/nueva_f150_raptor.png",
-         "title": "Nueva F-150 Raptor",
+         "title": "F-150 Raptor",
          "text": "La máxima expresión off-road.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -927,9 +928,9 @@
       {
          "id": "transit_van",
          "image": "/img/vehicles/transit_van.png",
-         "title": "Transit Van",
+         "title": "Nueva Transit Van",
          "text": "Más seguridad y rendimiento, menos costos operativos.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -1008,7 +1009,7 @@
          "image": "/img/vehicles/e_transit_van.png",
          "title": "E-Transit Van",
          "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -1084,7 +1085,7 @@
       },{  
         "id": "transit_minibus",
         "image": "/img/vehicles/transit_mini_bus.png",
-        "title": " Nueva Transit Minibus",
+        "title": "Nueva Transit Van Minibus ",
         "text": "Transmisión automática, robustez, tecnología, conectividad y menores costos de operación.",
         "ctaPrimaryText": "Más información", 
         "ctaPrimaryLink": "",
@@ -1242,9 +1243,9 @@
       {  
          "id" : "nuevo_mustang_gt",
          "image": "/img/vehicles/nuevo_mustang_gt.png",
-         "title": "Mustang GT Pereformance",
+         "title": "Mustang GT ",
          "text": "Potencia, torque, tecnología y conectividad como nunca antes habías visto.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -1329,8 +1330,8 @@
          "id": "nueva_everest",
          "image": "/img/vehicles/nueva_everest.png",
          "title": "Nueva everest",
-         "text": "Ford Everest está llegando a Argentina.",
-         "ctaPrimaryText": "Más información", 
+         "text": "Alcanzá tu cumbre.",
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
@@ -1421,13 +1422,13 @@
          "image": "/img/vehicles/e_transit_chasis.png",
          "title": "Transit E-Chasis",
          "text": "100% eléctrica, con menores costos y mayor productividad para vos y tu negocio.",
-         "ctaPrimaryText": "Más información", 
+         "ctaPrimaryText": "Mostrar más", 
          "ctaPrimaryLink": "",
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
-         "detailLink": "/vehiculos/mustang_mach_e",
+         "detailLink": "/vehiculos/transit_e_chasis",
          "categories": ["comerciales", "fordPro", "electrificado", "furgon"],
-         "fordPro": false,
+         "fordPro": true,
          "isAccesory": false,
          "detail": {
             "mainSection" : {
@@ -1499,7 +1500,7 @@
         "image": "/img/vehicles/mustang_mach_e.png",
         "title": "Mustang Mach-E",
         "text": "El único eléctrico que es un Mustang.",
-        "ctaPrimaryText": "Más información", 
+        "ctaPrimaryText": "Mostrar más", 
         "ctaPrimaryLink": "",
         "ctaSecondaryText": "Solicitar cotización",
         "ctaSecondaryLink": "",

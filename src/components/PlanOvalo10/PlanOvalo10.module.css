@@ -1,0 +1,161 @@
+.sliderContainer {
+    display: flex;
+    justify-content: center;
+    padding: 60px 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    height: 410px;
+    max-width: 1170px  0px;
+    width: 100%;
+    background-color: var(--color-neutral-100);
+}
+
+.mainTitle {
+    font-size: 32px;
+    margin-top: 80px;
+    font-weight: 500;
+    color: var(--color-neutral-900);
+    text-align: center;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.chipNavigationContainer {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.chipContainer {
+    max-width: 970px;
+    display: flex;
+    gap: 8px; /* antes tenías gap: px; */
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex: 1;
+    padding: 8px 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE y Edge */
+}
+
+.chipContainer::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.chipContainer > * {
+    flex-shrink: 0; /* 👈 evita que los chips se achiquen */
+}
+
+
+.navButton {
+    background: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+    padding: 0;
+}
+
+.navButton:hover {
+    background: none;
+}
+
+.navButton:active {
+    transform: scale(0.95);
+}
+
+.navButton svg {
+    color: var(--color-neutral-600);
+    transition: color 0.2s ease;
+}
+
+.navButton:hover svg {
+    color: var(--color-secondary);
+}
+
+.content {
+    min-height: 254px;
+    text-align: left;
+    max-width: 772px;
+}
+
+.content h2 {
+    margin-bottom: 16px;
+    color: var(--color-neutral-900);
+}
+
+.content p {
+    color: var(--color-neutral-700);
+    line-height: 1.6;
+}
+
+.mobileCard {
+    background: white;
+    border-radius: 16px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mobileCard .content {
+    flex: 1;
+}
+
+.mobileCard .content h2 {
+    margin-bottom: 12px;
+    color: var(--color-neutral-900);
+}
+
+.mobileCard .content p {
+    color: var(--color-neutral-700);
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sliderContainer {
+        padding: 40px 16px;
+    }
+    
+    .card {
+        padding: 24px;
+    }
+    
+    .mainTitle {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    
+    .chipNavigationContainer {
+        margin-bottom: 24px;
+        gap: 12px;
+    }
+    
+    .navButton {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .navButton svg {
+        width: 16px;
+        height: 16px;
+    }
+}

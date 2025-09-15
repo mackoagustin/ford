@@ -1,0 +1,54 @@
+{
+    "ovalo" : [
+        {
+            "chip" : "¿Qué es Plan Ovalo?",
+            "title" : "#1 ¿QUÉ ES PLAN OVALO?",
+            "text" : "Plan Ovalo, es una herramienta financiera pensada para facilitar la compra de tu Ford 0km, que no trabaja con una tasa de interés, sino que ajusta el valor de sus cuotas y de la deuda en relación al precio actual del modelo suscripto." 
+        },
+        {
+            "chip" : "Dinámica",
+            "title" : "#2 DINÁMICA",
+            "text" : "Plan Ovalo, funciona mediante una dinámica de grupo, en la que cada adherente realiza un aporte mensual destinado a constituir un fondo común para la compra del vehículo."
+        },
+        {
+            "chip" : "Posibilidade",
+            "title" : "#3 Posibilidades",
+            "text" : "Plan Ovalo, te da la posibilidad de elegir la estructura de ahorro que mejor se ajuste a tus necesidades financieras, permitiéndote financiar hasta el 100% del vehículo y hasta en 120 cuotas."
+        },
+        {
+            "chip" : "Ingresar a Plan Ovalo",
+            "title" : "#4 INGRESAR A PLAN OVALO",
+            "text" : "Para ingresar a Plan Ovalo, no necesitás ahorros previos y podés ajustar los plazos de financiación adelantando cuotas. También tenés la posibilidad de cancelar el plan sin pagar gastos administrativos ni recargos."
+        },
+        {
+            "chip" : "Beneficio de los planes",
+            "title" : "#5 BENEFICIO DE LOS PLANES",
+            "text" : "Plan Ovalo te beneficia dependiendo el tipo de plan, ofreciéndote distintas bonificaciones que pueden incluir Bonificaciones REALES en las cuotas, incentivos para el retiro de tu vehículo y /o descuentos en la cobertura del seguro de tu unidad."
+        },
+        {
+            "chip" : "Elegir tu Ford",
+            "title" : "#6 ELEGIR TU FORD",
+            "text" : "Plan Ovalo te permite al momento de pedir tu Ford elegir el vehículo y la versión que quieras, dependiendo de la disponibilidad de unidades, sin importar cual era tu modelo plan."
+        },
+        {
+            "chip" : "Cuida tus ahorros",
+            "title" : "#7 CUIDA TUS AHORROS",
+            "text" : "Plan Ovalo preserva el valor de tus ahorros, ajustando mensualmente el dinero invertido para mantener la relación con el precio actual del vehículo suscripto."
+        },
+        {
+            "chip" : "Requisitos crediticios",
+            "title" : "#8 REQUISITOS CREDITICIOS",
+            "text" : "Plan Ovalo, realiza el análisis crediticio al momento de resultar adjudicado y previo a pedir tu Ford 0km, según el porcentaje que lleves pagado de tu plan, podemos o no requerir que nos presentes tus ingresos."
+        },
+        {
+            "chip" : "Personas jurídicas",
+            "title" : "#9 PLAN OVALO PARA PERSONAS JURÍDICAS",
+            "text" : "Plan Ovalo permite que las personas jurídicas puedan suscribirse a cualquiera de sus planes, incluso hay productos con beneficios especialmente diseñados para empresas."
+        },
+        {
+            "chip" : "Herramientas digitales",
+            "title" : "#10 HERRAMIENTAS DIGITALES",
+            "text" : "Plan Ovalo te ofrece herramientas digitales para autogestionar tu plan desde la comodidad de tu hogar: suscribirte a través de la web, recibir el cupón de pago en tu mail, pagar online tus cuotas, licitar, mirar el acto de adjudicación en vivo a través de www.planovalo.com.ar , conocer tu estado de cuenta, descargar la póliza de seguro, contactarnos por chat y hablar con FORDi!"
+        }
+    ]
+}

@@ -78,7 +78,7 @@
   /* Desktop */
   @media (min-width: 768px) {
     .banner {
-      height: 583px;
+      height: 400px;
     }
   
     .backgroundImage {
@@ -115,7 +115,7 @@
     }
 
     .content {
-      top: 60%;
+      top: 42%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
@@ -126,7 +126,7 @@
     .textGroup {
       display: flex;
       flex-direction: column;
-      gap: 16px;
+      gap: 0px;
       color: white;
       font-family: 'Ford_F-1', sans-serif;
 

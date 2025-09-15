@@ -23,6 +23,8 @@ const VehicleDetail = () => {
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const [selectedBenefit, setSelectedBenefit] = useState(0);
 
+
+
     const openModal = (index) => {
         setSelectedImageIndex(index);
         setIsModalOpen(true);

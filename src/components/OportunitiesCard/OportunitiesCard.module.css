@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
-    gap: 24px;
     border-radius: 8px;
   }
   
@@ -35,7 +34,7 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      margin-top: auto;
+      margin-top: 20px;
   }
 
   .featuresList {
@@ -60,7 +59,7 @@
   @media (min-width: 768px) {
     .card {
       width: 373px;
-      height: 532px;
+      height: 420px;
       display: flex;       
       flex-direction: column;      
       padding-bottom: 12px;
@@ -69,7 +68,7 @@
     .info {
       display: flex;
       flex-direction: column;
-      height: 200px;
+      height: 160px;
       text-align: center;
     }
     
@@ -95,7 +94,7 @@
   /* Desktop */
   @media (min-width: 1024px) {
     .card {
-      height: 480px;
+      height: 420px;
     }
 
     .featuresList li {

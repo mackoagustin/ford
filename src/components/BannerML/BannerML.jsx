@@ -20,7 +20,7 @@ const BannerML = () => {
                         href="https://listado.mercadolibre.com.ar/autospecial"
                         variant="secondary"
                     >
-                        Ir a mercadoLibre
+                        Ir a MercadoLibre
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"

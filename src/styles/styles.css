@@ -50,6 +50,13 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'FordF1';
+    src: url('../fonts/FordF1-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
 /* color */
 .text-color-secondary {
     color: var(--color-secondary);
@@ -71,6 +78,10 @@ body {
     color: var(--color-primary);
 }
 
+.text-color-tertiary {
+    color: var(--color-tertiary);
+}
+
 .text-color-white {
     color: var(--color-white);
 }
@@ -84,7 +95,7 @@ body {
     line-height: 26px;    
     letter-spacing: -2%;   
     font-family: 'FordF1', sans-serif; 
-    font-weight: 400;   
+    font-weight: 300;   
 }
 
 .body-1-14 {
@@ -135,7 +146,7 @@ body {
     font-size: 20px;
     line-height: 26px;
     font-family: 'FordF1', sans-serif; 
-    font-weight: 400;
+    font-weight: 300;
 }
 
 
@@ -146,6 +157,19 @@ body {
     line-height: 40px;
 }
 
+.boton-16-24 {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: 500;
+}
+
+.label-12-16 {
+    font-size: 12px;
+    line-height: 24px;
+    font-family: 'FordF1', sans-serif; 
+    font-weight: 400;
+}
 .text-center {
     text-align: center;
 }

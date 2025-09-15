@@ -54,7 +54,7 @@
 /* Tablet y Desktop */
 @media (min-width: 768px) {
     .wraper {
-        height: 583px;
+        height: 400px;
         width: 100%;
         max-width: 1170px;
         margin: 0 auto 100px;

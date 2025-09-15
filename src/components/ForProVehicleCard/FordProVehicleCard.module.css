@@ -2,8 +2,8 @@
 .card {
   width: 100%;
   width: 305px;
-  max-width: 305px;
-  height: 444px;
+  max-width: 405px;
+  height: 474px;
   max-width: 444px;
   overflow: hidden;
   display: flex;
@@ -13,8 +13,8 @@
 }
 
 .image {
-  height: 180px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .info {
@@ -22,6 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  height: 130px;
 }
 
 .buttonWrapper {
@@ -33,7 +34,7 @@
 @media (min-width: 768px) {
   .card {
     width: 373px;
-    max-height: 414px;
+    max-height: 510px;
     display: flex;       
     flex-direction: column;      
     padding-bottom: 12px;
@@ -43,6 +44,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    height: 100px;
   }
   
 

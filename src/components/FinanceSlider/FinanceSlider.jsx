@@ -7,12 +7,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-
-
 const FincanceSlider = ({ data }) => { 
 
     // Verificar si data tiene la propiedad credit (caso móvil) o si es un array (caso desktop)
-    const financeData = data.credit ? data.credit.map(item => item.financing) : data.map(item => item.financing);
+    const allData = data.credit ? data.credit : data;
+    
+    // Filtrar solo los elementos que tienen la propiedad financing
+    const financeData = allData
+        .filter(item => item.financing && item.financing.ways && Array.isArray(item.financing.ways))
+        .map(item => item.financing);
+    
     const isMobile = useIsMobile();
 
     if(isMobile) {
@@ -32,7 +36,6 @@ const FincanceSlider = ({ data }) => {
             </Swiper>
         )
     }
-
 
     return (
         <div className={styles.sliderContainer}>

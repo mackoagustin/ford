@@ -1,13 +1,13 @@
 .wraperAccordion {
     display: flex;
     flex-direction: column;
-    margin-top: 42px
+    margin-top: 16px
 }
 
 .wraperAccordionChild {
     display: flex;
     flex-direction: column;
-    margin-top: 32px;
+    margin-top: 16px;
     border-top: 1px solid var(--color-neutral-300);
 }
 .accordion {

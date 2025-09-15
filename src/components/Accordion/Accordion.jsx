@@ -19,7 +19,7 @@ const Accordion = (props) => {
         }>
             <div className={styles.accordion} onClick={toggleAccordion}>
                 <div className={styles.wraperQuestion}>
-                <p className='H3 text-color-secondary' dangerouslySetInnerHTML={{ __html: props.question }}></p>
+                <p className='subtitle-20 text-color-secondary' dangerouslySetInnerHTML={{ __html: props.question }}></p>
                 </div>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +40,7 @@ const Accordion = (props) => {
                 style={{ maxHeight: height }}
                 ref={contentRef} 
             >
-                <div className='subtitle-20 text-color-dark' dangerouslySetInnerHTML={{ __html: props.answer }}></div>
+                <div className='body-1-16  text-color-dark' dangerouslySetInnerHTML={{ __html: props.answer }}></div>
             </div>
         </div>
     );

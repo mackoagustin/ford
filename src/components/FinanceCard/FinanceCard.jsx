@@ -16,9 +16,7 @@ const FinanceCard = ({ data }) => {
             <div className={styles.info}>
                 <h4 className="H3">
                     {data.vehicle}
-                </h4>
-                <p className="subtitle-16 text-color-neutral-900">{data.title}</p>
-                
+                </h4>  
                 <ul>
                     {data.ways.map((item, index) => (
                         <li key={index} className={`body-1-16 text-color-neutral-600 ${styles.bullets}`}>

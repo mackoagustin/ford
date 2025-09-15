@@ -1,7 +1,14 @@
 // Formateador ADF (AutoDealerFormat) para Tecnom
 export const formatToADF = (formData) => {
   const now = new Date();
-  const isoDate = now.toISOString();
+  
+  // Formato de fecha requerido: 2021-02-10T12:46:20-08:00
+  // Convertir a zona horaria de Argentina (UTC-3)
+  const argentinaTime = new Date(now.getTime() - (3 * 60 * 60 * 1000));
+  const isoDate = argentinaTime.toISOString().replace('Z', '-03:00');
+  
+  console.log('📅 Fecha original:', now.toISOString());
+  console.log('📅 Fecha Argentina:', isoDate);
 
   // Separar nombre y apellido si es posible
   const fullName = formData.nombre || formData.name || '';
@@ -18,42 +25,89 @@ export const formatToADF = (formData) => {
   // Obtener mensaje para usar en comentarios
   const message = formData.mensaje || formData.message || '';
 
-  // Mapear campos del formulario a la estructura ADF
-  const adfXML = `<?ADF VERSION="1.0"?>
-<?XML VERSION="1.0"?>
+  console.log('👤 Datos del cliente:', {
+    nombre: fullName,
+    firstName,
+    lastName,
+    email: formData.email,
+    telefono: phoneNumber,
+    ciudad: city,
+    mensaje: message
+  });
+
+  // Mapear campos del formulario a la estructura ADF exacta requerida
+  const adfXML = `<?ADF VERSION "1.0"?>
+
+<?XML VERSION "1.0"?>
+
 <adf>
-  <prospect>
-    <requestdate>${isoDate}</requestdate>
-    <vehicle>
-      <year>${formData.anio || ''}</year>
-      <make>${formData.marca || 'Ford'}</make>
-      <model>${formData.modelo || ''}</model>
-      <comments>${formData.comentarios || message}</comments>
-    </vehicle>
-    <customer>
-      <contact>
-        <name part="first" type="individual">${firstName}</name>
-        <name part="last" type="individual">${lastName}</name>
-        <email preferredcontact="1">${formData.email || ''}</email>
-        <phone type="phone">${phoneNumber}</phone>
-        <phone type="cellphone">${phoneNumber}</phone>
-        <identification>${formData.identificacion || formData.dni || ''}</identification>
-        <address type="home">
-          <city>${city}</city>
-        </address>
-      </contact>
-      <comments>${message}</comments>
-    </customer>
-    <vendor>
-      <vendorname>${formData.vendedor || formData.concesionario || ''}</vendorname>
-    </vendor>
-    <provider>
-      <name>${formData.origen || 'Ford Web'}</name>
-      <service>${formData.suborigen || formData.province || ''}</service>
-    </provider>
-  </prospect>
+
+<prospect>
+
+<requestdate>${isoDate}</requestdate>
+
+ 
+<vehicle>
+
+<year>${formData.anio || ''}</year>
+
+<make>${formData.marca || 'Ford'}</make>
+
+<model>${formData.modelo || ''}</model>
+
+<comments>(EN EL CASO DE NO PODER SEPARAR MARCA Y MODELO PONER TODO EL NOMBRE ACA)</comments>
+
+</vehicle>
+
+ 
+<customer>
+
+<contact>
+
+<name part="first" type="individual">${firstName}</name>
+
+<name part="last" type="individual">${lastName}</name>
+
+<email preferredcontact="1">${formData.email || ''}</email>
+
+<phone type="phone">${phoneNumber}</phone>
+
+<phone type="cellphone">${phoneNumber}</phone>
+
+<identification>${formData.identificacion || formData.dni || ''}</identification> IDENTIFICADOR
+
+<address type="home"> 
+
+<city>${city}</city>   LOCALIDAD
+
+</address> 
+
+</contact>
+
+<comments>${message || 'Información sobre el plan de financiación. Gracias'}</comments>
+
+</customer>
+
+<vendor>
+
+<vendorname>${formData.vendedor || formData.concesionario || ''} (SI LO TIENE QUE RECIBIR ALGÚN VENDEDOR/SUCURSAL/SUPERVISOR/EQUIPO ESPECÍFICO, ACÁ SE PODRÍA EL EMAIL QUE TIENE REGISTRADO EN NUESTRO SISTEMA)</vendorname>
+
+</vendor>
+
+ 
+<provider>
+
+<name>${formData.origen || 'Ford Web'}</name>
+
+<service>${formData.suborigen || formData.province || ''} (ACÁ SE PONE EL SUBORIGEN O NOMBRE DE CAMPAÑA SI LO DESEAN DIFERENCIAR)</service>
+
+</provider>
+
+</prospect>
+
 </adf>`;
 
+  console.log('📄 XML ADF generado:\n', adfXML);
   return adfXML;
 };
 

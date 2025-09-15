@@ -1,7 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState, useEffect } from 'react';
 import Footer from '../components/Footer/Footer';
-import SliderVehicle from '../components/SliderVehicle/SliderVehicle';
+import SliderVehicleHome from '../components/SliderVehicle/SliderVehicleHome';
 import SearchBar from '../components/SearchBar/SearchBar';
 import styles from './Home.module.css';
 import vehiclesData from '../data/vehicles.json';
@@ -10,6 +10,8 @@ import useIsMobile from '../hook/useIsMobile';
 import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
 import Map from '../components/Map/Map';
 import Button from '../components/Button/Button';
+import BannerHomeSlider from '../components/BannerHomeSlider/BannerHomeSlider';
+
 
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -30,14 +32,15 @@ function Home() {
 
   return (
     <div className={styles['home-container']}>
+      <BannerHomeSlider />
       <div className={styles['search-section']}>
         <SearchBar isMobile={isMobile} onSearchResults={handleSearchResults} />
       </div>
       <div className={styles['slider-section']}>
-        <SliderVehicle vehicles={filteredVehicles} />
+        <SliderVehicleHome vehicles={filteredVehicles} />
       </div>
 
-      <BannerHome />
+        <BannerHome />
 
       <div className={styles.contentWrapper}>
         {isMobile ? (

@@ -8,6 +8,7 @@ import useScreenSize from '../hook/useScreenSize';
 import vehicleData from '../data/vehicles.json';
 import fordProtData from '../data/fordPro.json';
 import Chip from '../components/Chip/Chip';
+import Form from '../components/Form/Form';
 import Footer from '../components/Footer/Footer';
 
 function FordPro() {
@@ -35,7 +36,12 @@ function FordPro() {
                 ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
               </h3>
               <p className="text-color-neutral-500 subtitle-20">
-                Ford Pro es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad del cliente comercial y a mantener su negocio siempre en movimiento.
+                Ford Pro, es la división de vehículos comerciales de Ford. Es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. 
+              </p>
+              <br />
+              <br />
+              <p className="text-color-neutral-500 subtitle-20">
+              Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad de tu empresa o comercio y a mantener tu negocio siempre en movimiento.
               </p>
             </div>
 
@@ -64,7 +70,12 @@ function FordPro() {
                     ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
                   </h3>
                   <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
-                    Ford Pro es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad del cliente comercial y a mantener su negocio siempre en movimiento.
+                    Ford Pro, es la división de vehículos comerciales de Ford. Es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. 
+                  </p>
+                  <br />
+                  <br />
+                  <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
+                    Toda la innovación, tecnología y conectividad de Ford Pro ayudarán a acelerar la productividad de tu empresa o comercio y a mantener tu negocio siempre en movimiento.
                   </p>
               </div>
 
@@ -86,8 +97,16 @@ function FordPro() {
           )}
         </div>
         
-
- 
+        <div className={style.wraperForm}  id="formulario-asesoramiento">
+          <h3 className="H3 text-color-dark">
+            ¿Necesitás
+            <span className="text-color-secondary"> asesoramiento?</span>
+          </h3>
+          <p className="body-1-16 text-color-neutral-500">
+            Completá los datos y nos pondremos en contacto a la brevedad.
+          </p>
+          <Form />
+        </div>
         
 
         <div className={style.contentWrapper}>
@@ -100,7 +119,7 @@ function FordPro() {
                 <span className="text-color-secondary"> Ford Pro? </span>
               </h3>
               <p className="text-color-neutral-500 subtitle-20">
-                Ford Pro se compone de distintos pilares que dan soporte al cliente comercial, ya sea un pequeño o mediano emprendedor o un gran flotista, entregando soluciones completas que van desde la adquisición, uso diario hasta la renovación del vehículo o la flota.
+              Ford Pro se basa en distintos pilares que acompañan la experiencia del cliente comercial en cada etapa, desde la compra, el uso diario, hasta la renovación de su flota, independientemente del tamaño de la empresa, ya sea que seas un pequeño emprendedor o tengas una gran flota.
               </p>
             </div>
           ) : (
@@ -112,7 +131,7 @@ function FordPro() {
                 <span className="text-color-secondary"> Ford Pro? </span>
               </h3>
               <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
-                Ford Pro se compone de distintos pilares que dan soporte al cliente comercial, ya sea un pequeño o mediano emprendedor o un gran flotista, entregando soluciones completas que van desde la adquisición, uso diario hasta la renovación del vehículo o la flota.
+              Ford Pro se basa en distintos pilares que acompañan la experiencia del cliente comercial en cada etapa, desde la compra, el uso diario, hasta la renovación de su flota, independientemente del tamaño de la empresa, ya sea que seas un pequeño emprendedor o tengas una gran flota.
               </p>
             </div>
           )}
@@ -130,7 +149,7 @@ function FordPro() {
         </>
       ) : (
         <>
-          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.chipContainer}`}>
+          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.chipContainer} `}>
             {itemNames.map(name => (
               <Chip
                 key={name}
@@ -140,14 +159,14 @@ function FordPro() {
               />
             ))}
           </div>
-          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer}`} >
+          <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer} ` } >
             <FordProSlider data={displayedItems} />
           </div>
 
           
           <div className={`${style["pt-42"]} ${style["px-16"]} ${style.sliderContainer}`} >
           <div className= {style.wraperSection}>
-            <h2 className='H2'>Vehículos <span className='text-color-secondary'>Ford Pro™</span> </h2>
+            <h2 className='H2'>Vehículos <span className='text-color-secondary'>Ford Pro™ | Ventas Corporativas</span> </h2>
           </div>
             <FordProVehicleSlider data={fordProVehicles} />
           </div>

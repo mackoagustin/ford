@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import useIsMobile from '../../hook/useIsMobile';
 
-function Footer() {
+function Footer() { 
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const isMobile = useIsMobile();
 
@@ -63,8 +63,9 @@ function Footer() {
                 {openSubmenu === 'financiacion' && (
                   <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                     <div className={styles.submenuContainer}>
-                      <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit</Link>
-                      <Link to="/financiacion/plan-ovalo" className={styles.submenuItemLast}>Plan Ovalo</Link>
+                      <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
+                      <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
+                      <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo - Desde 70% a 100%</Link>
                     </div>
                   </div>
                 )}
@@ -259,6 +260,14 @@ function Footer() {
 
             <div className={styles.copyrightTerminosPoliticas}>
                 <p className='text-color-white body-1-14'>Copyright © 2025 Auto Special S.A. Todos los derechos reservados.</p>
+                <a 
+                    href="https://junodstudio.com/"
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className='text-color-secondary body-1-14'
+                    style={{marginTop: '-10px'}}>
+                    Juno Studio
+                  </a>
                 <div className={styles.terminosPoliticas}>
                     <a href="" className="text-color-white body-1-14">Términos legales</a>
                     <a href="" className="text-color-white body-1-14">Políticas de privacidad</a>
@@ -309,8 +318,9 @@ function Footer() {
                   {openSubmenu === 'financiacion' && (
                     <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                       <div className={styles.submenuContainer}>
-                        <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit</Link>
-                        <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo</Link>
+                        <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
+                        <Link to="" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
+                        <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo - Desde 70% a 100%</Link>
                       </div>
                     </div>
                   )}
@@ -505,11 +515,13 @@ function Footer() {
                   src="/img/logo/fiscal.png" 
                   alt="Data Fiscal" 
                   loading="lazy"
+                  style= {{height: '80px'}}
                 />
                 <img 
                   src="/img/logo/caece.png" 
                   alt="Cace" 
                   loading="lazy"
+                  style= {{height: '44px'}}
                 />
               </div>
 
@@ -525,9 +537,19 @@ function Footer() {
     </footer>
     <div className={styles.backFooter}>
       <div className={styles.footerBottom}>
-        <p className='text-color-white body-1-14' >
-          Copyright © 2025 Auto Special S.A. Todos los derechos reservados.
-        </p>
+        <div className={styles.leftSection}>
+          <p className='text-color-white body-1-14' >
+            Copyright © 2025 Auto Special S.A. Todos los derechos reservados.
+          </p>
+          <a 
+            href="https://junodstudio.com/"
+            target="_blank" 
+            rel="noopener noreferrer"
+            className='text-color-secondary body-1-14'
+          >
+            Juno Studio
+          </a>
+        </div>
         <div className={styles.legalLinks}>
           <Link to="/terminos-legales" className={styles.legalLink}>Términos legales</Link>
           <span className={styles.separator}>•</span>

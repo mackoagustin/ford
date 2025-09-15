@@ -3,8 +3,8 @@
         {
             "image": "/img/postsale/mantenimiento.png",
             "title": "Servicios de mantenimiento",
-            "text": "Contamos con 5 sucursales de las cuales 3 de ellas prestan servicio de posventa oficial para atender las necesidades de tu Ford. Disfrutá la mejor atención y mantenelo siempre en óptimas condiciones.",
-            "ctaText": "Reservar por WhatsApp",
+            "text": "Contamos con 3 sucursales de servicio de posventa para atender las necesidades de tu Ford entre Capital Federal y provincia de Buenos Aires. Disfrutá la mejor atención y servicio en Auto Special Ford.",
+            "ctaText": "Reservar turno",
             "ctaLinkWs": ""
         },
         {
@@ -31,15 +31,15 @@
         {
             "image": "/img/postsale/reparaciones.png",
             "title": "Reparaciones y diagnósticos",
-            "text": "Es el sistema inteligente que mide la salud del aceite de tu vehículo.Es un motor basado en algoritmos diseñado por un software que utiliza datos reales del motor y las condiciones de funcionamiento del vehículo, además de hábitos de conducción, para calcular con precisión cuándo necesita un cambio de aceite.",
+            "text": "En Auto Special Ford, usamos tecnología avanzada y experiencia técnica para reparaciones precisas. Nuestra misión: lograr que tu Ford esté listo en la primera visita. Porque tu tiempo y seguridad valen más.",
             "ctaText": "Consultar por WhatsApp",
             "ctaLinkWs": ""
         },
         {
             "image": "/img/postsale/pickup.png",
             "title": "Pickup y delivery",
-            "text": "Servicio Pickup&nbsp; Delivery consiste en el retiro y entrega de tu vehículo, en tu casa u oficina, cuando tengas que agendar un servicio para tu Ford. \n ¡Contá con Auto Special Ford para optimizar tu tiempo a través de Pickup y delivery!",
-            "ctaText": "Consultar por WhatsApp",
+            "text": "Es un servicio que consiste en el retiro y entrega de tu Ford, en tu casa u oficina, para la realización del servicio de mantenimiento.\nPodrás agendarlo desde la app Ford Pass.",
+            "ctaText": "Solicitar ahora",
             "ctaLinkWs": ""
         },
         {

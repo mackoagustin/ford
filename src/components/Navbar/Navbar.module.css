@@ -88,10 +88,10 @@ li {
 
 .desktop .submenu {
   position: absolute;
-  top: 2.5rem;
-  left: 0;
+  top: 4rem;
+  right: 0.5rem;
   background: #F7F6F6;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
   display: flex;
   flex-direction: column;
   z-index: 1000;

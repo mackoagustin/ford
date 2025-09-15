@@ -38,47 +38,7 @@ function Navbar() {
      
         {/* Menú Desktop */}
         <ul className={`${styles.navLinks} ${styles.desktop}`}>
-            <li className={styles.hasSubmenu}>
-              <button onClick={() => toggleSubmenu('vehiculos')}>
-                <div className={`${styles.iconWrapper} ${styles.iconWrapperFirst}`}>
-                  Vehiculos
-                  <svg
-                    className="chevron-icon"
-                    style={{
-                      transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
-                      transition: 'transform 0.3s ease-in-out'
-                    }}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2.4}
-                    stroke="currentColor"
-                    fill="none"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.75 8.25L12 15.75 4.25 8.25"
-                    />
-                  </svg>
-                </div>
-
-              </button>
-              <ul className= {`${styles.submenu} ${openSubmenu === 'vehiculos' ? styles.submenuOpen : ''}`}>
-                <li><Link to="/vehiculos" onClick={closeMenu}>0km</Link></li>
-                  <li>
-                    <a
-                      href="https://listado.mercadolibre.com.ar/autospecial"
-                      onClick={closeMenu}
-                      rel="noopener noreferrer"
-                      className={styles.submenuLink}
-                    >
-                      Usados
-                    </a>
-                  </li>
-              </ul>
-            </li>
+            <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
 
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('financiacion')}>
@@ -109,14 +69,21 @@ function Navbar() {
               <ul className={`${styles.submenu} ${openSubmenu === 'financiacion' ? styles.submenuOpen : ''}`}>
                 <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
                 <div className={styles.wraperFinance}>
-                            <img src="/img/logo/ford_credit.png" alt="" />
-                            Hasta 60%
-                          </div>
+                      <p className='boton-16-24'>Ford Credit</p>
+                      <p className='label-12-16'>Hasta 60%</p>
+                </div>
                 </Link></li>
+                <li><Link to="" onClick={closeMenu}>
+                      <div className={styles.wraperFinance}>
+                          <p className='boton-16-24'>Leasing</p>
+                          <p className='label-12-16'>Hasta 100%</p>
+                      </div>
+                </Link></li>
+
                 <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
                       <div className={styles.wraperFinance}>
-                          <img src="/img/logo/plan_ovalo.png" alt="" />
-                          Desde 70% a 100%
+                          <p className='boton-16-24'>Plan Ovalo</p>
+                          <p className='label-12-16'>Desde 70% a 100%</p>
                       </div>
                 </Link></li>
               </ul>
@@ -156,7 +123,7 @@ function Navbar() {
                 <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
                 <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
                 <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
-                <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li>
+                {/* <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li> */}
                 <li><Link to="/postventa/ford-protect" onClick={closeMenu}>Ford Protect</Link></li>
               </ul>
             </li>
@@ -214,50 +181,9 @@ function Navbar() {
                 <div className={styles.wraperLink}>
                   <li><Link to="/" onClick={closeMenu}>Home</Link></li>
                 </div>
-                <li className={`${styles.hasSubmenu} ${openSubmenu === 'vehiculos' ? styles.active : ''}`}>
-                    <button
-                      onClick={() => toggleSubmenu('vehiculos')}
-                      className={styles.wraperLink}
-                    >
-                      <div className={styles.iconWrapper}>
-                        Vehículos
-                        <svg
-                          className="chevron-icon"
-                          style={{
-                            transform: openSubmenu === 'vehiculos' ? 'rotate(180deg)' : 'rotate(0deg)',
-                            transition: 'transform 0.3s ease-in-out'
-                          }}
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2.4}
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19.75 8.25L12 15.75 4.25 8.25"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                    <ul className={`${styles.submenu} ${openSubmenu === 'vehiculos' ? styles.submenuOpen : ''}`}>
-                      <li><Link to="/vehiculos" onClick={closeMenu}>0km</Link></li>
-                      <li>
-                        <a
-                          href="https://listado.mercadolibre.com.ar/autospecial"
-                          onClick={closeMenu}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={styles.submenuLink}
-                        >
-                          Usados
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
+                <div className={styles.wraperLink}>
+                  <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
+                </div>
 
                  <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
                     <button
@@ -291,16 +217,23 @@ function Navbar() {
                     <ul className={`${styles.submenu} ${openSubmenu === 'financiacion' ? styles.submenuOpen : ''}`}>
                       <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
                           <div className={styles.wraperFinance}>
-                            <img src="/img/logo/ford_credit.png" alt="" />
-                            Hasta 60%
+                            <p className='boton-16-24'>Ford Credit</p>
+                            <p className='label-12-16'>Hasta 60%</p>
                           </div>
                           </Link></li>
-                      <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
+                          <li><Link to="" onClick={closeMenu}>
                            <div className={styles.wraperFinance}>
-                              <img src="/img/logo/plan_ovalo.png" alt="" />
-                              Desde 70% a 100%
+                           <p className='boton-16-24'>Leasing</p>
+                           <p className='label-12-16'>Hasta 100%</p>
                           </div>
                       </Link></li>
+                      <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
+                           <div className={styles.wraperFinance}>
+                           <p className='boton-16-24'>Plan Ovalo</p>
+                           <p className='label-12-16'>Desde 70% a 100%</p>
+                          </div>
+                      </Link></li>
+                      
                     </ul>
                   </li>
 
@@ -342,7 +275,7 @@ function Navbar() {
                     <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
                     <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
                     <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
-                    <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li>
+                    {/* <li><Link to="/postventa/preguntas-frecuentes" onClick={closeMenu}>Preguntas frecuentes</Link></li> */}
                     <li><Link to="/postventa/ford-protect" onClick={closeMenu}>Ford Protect</Link></li>
                   </ul>
                 </li>

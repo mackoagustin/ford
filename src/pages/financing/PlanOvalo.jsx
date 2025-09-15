@@ -3,6 +3,7 @@ import BannerFordCredit from '../../components/BannerFordCredit/BannerFordCredit
 import bannerData from "../../data/banners.json";
 import styles from "./PlanOvalo.module.css";
 import PlanOvaloSlider from '../../components/PlanOvaloSlider/PlanOvaloSlider';
+import PlanOvalo10 from '../../components/PlanOvalo10/PlanOvalo10';
 import Form from '../../components/Form/Form';
 import useIsMobile from '../../hook/useIsMobile';
 import Button from '../../components/Button/Button';
@@ -12,13 +13,15 @@ import AdminPlanOvaloCardSlider from '../../components/AdminPlanOvaloCardSlider/
 import adminPlanOvalo from '../../data/adminPlanOvalo.json';
 import Accordion from '../../components/Accordion/Accordion';
 import faqData from '../../data/faq.json';
+import ovaloData from '../../data/plan_ovalo.json';
+
 
 function PlanOvalo() {
   const isMobile = useIsMobile();
   const selectedBanner = bannerData.banners[3]
   const items = creditPlanes.creditPlans;
   const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
-
+  const ovaloItems = ovaloData.ovalo;
   const selectedAdminPlanIndices = [0, 1, 2]; 
 
   const faqGeneral = faqData.faq.filter(item => item.category === 'general');
@@ -29,12 +32,18 @@ function PlanOvalo() {
     <div>
       <BannerFordCredit data = {selectedBanner} />
 
-      <div className= {styles.px16}>
-        <div className= {styles.wraperSection}>
-           <h2 className='H2'> <span className='text-color-secondary'>Planes vigentes </span> de suscripción</h2>
-       
-        </div>
+
+      {/* Bloque 1 - Plan Ovalo 10 */}
+      <div className={styles.sliderWrapper}>
+        <PlanOvalo10 data={ovaloItems} />
       </div>
+
+
+      <div className= {styles.px16}>
+           <h2 className='H2'> <span className='text-color-secondary'>Planes vigentes </span> de suscripción</h2>
+      </div>
+
+
       <div className={styles.sliderWrapper}>
         <PlanOvaloSlider items={items} />
       </div>
@@ -70,8 +79,35 @@ function PlanOvalo() {
           </svg>
         </Button>
         </div>
-       
       </div>
+
+       {/* Formulario de asesoramiento */}
+       {isMobile ? (
+          <div className={styles.wraper}>
+            <h3 className="H3 text-color-dark">
+              ¿Necesitás
+              <br />
+              <span className="text-color-secondary">asesoramiento?</span>
+            </h3>
+            <p className="body-1-16 text-color-neutral-500">
+              Completá los datos y nos pondremos en contacto a la brevedad.
+            </p>
+            <Form />
+          </div>
+        ) : (
+          <div className={styles.wraper} style={{marginTop: '80px', borderRadius: '16px'}}>
+            <h3 className={`H3 text-color-dark ${styles.mb0} `}>
+              ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
+            </h3>
+            <p className={`body-1-16 text-color-neutral-500 ${styles.mt8}`}>
+              Completá los datos y nos pondremos en contacto a la brevedad.
+            </p>
+            <div>
+              <Form />
+            </div>
+      
+          </div>
+        )}
 
       {/* FAQ */}
       <div className={styles.faqWrapper}>
@@ -89,7 +125,7 @@ function PlanOvalo() {
               ))}
             </div>
           </div>
-          <div className={`${styles.wraperSection} ${styles.pt80}`}>
+          {/* <div className={`${styles.wraperSection} ${styles.pt80}`}>
             <h2 className={`H2 ${styles.px16}`}>Información importante clientes planes de ECOSPORT</h2>
             <div>
                 {faqEco.map((item, index) =>(
@@ -114,40 +150,13 @@ function PlanOvalo() {
                     />
                 ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <div className={styles.sliderWrapper}></div>
-      {/* Formulario de asesoramiento */}
-      {isMobile ? (
-          <div className={styles.wraper}>
-            <h3 className="H3 text-color-dark">
-              ¿Necesitás
-              <br />
-              <span className="text-color-secondary">asesoramiento?</span>
-            </h3>
-            <p className="body-1-16 text-color-neutral-500">
-              Completá los datos y nos pondremos en contacto a la brevedad.
-            </p>
-            <Form />
-          </div>
-        ) : (
-          <div className={styles.wraper}>
-            <h3 className={`H3 text-color-dark ${styles.mb0} `}>
-              ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
-            </h3>
-            <p className={`body-1-16 text-color-neutral-500 ${styles.mt8}`}>
-              Completá los datos y nos pondremos en contacto a la brevedad.
-            </p>
-            <div>
-              <Form />
-            </div>
-      
-          </div>
-        )}
+     
       {/* Administración Plan Ovalo */}
-      <div className= {styles.px16} style={{paddingTop: '80px'}}>
+      <div className= {styles.px16} style={{paddingTop: '60px'}}>
         <div className= {styles.wraperSection}>
           <h2 className='H2'>Administración <span className='text-color-secondary'>Plan Ovalo</span> </h2>
         </div>

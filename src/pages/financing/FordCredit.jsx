@@ -18,6 +18,11 @@ function FordCredit() {
   const selectedBanner = bannerData.banners[13]
   const items = financing.credit;
   const finance = financing;
+  const leasing = financing.leasing;
+  
+  // Filtrar solo los elementos que tienen financing
+  const creditWithFinancing = finance.credit.filter(item => item.financing && item.financing.vehicle);
+  
   const [selectedBenefit, setSelectedBenefit] = useState(0);
   const [isLegalModalOpen, setIsLegalModalOpen] = useState(false);
 
@@ -27,7 +32,7 @@ function FordCredit() {
       <BannerFordCredit data = {selectedBanner} />
 
       {/* Title */}
-      {isMobile ? (
+      {/* {isMobile ? (
          <div className={`${styles["pt-60"]} ${styles["px-16"]}`}>
          <p className="text-color-neutral-500 subtitle-20">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
        </div>
@@ -35,17 +40,40 @@ function FordCredit() {
          <div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles.wraperTitle}`}>
          <p className="text-color-neutral-500 subtitle-20 text-center">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
        </div>
-      )}
+      )} */}
      
 
       <div className= {styles.px16}>
         <div className= {styles.wraperSection}>
-           <h2 className='H2'> <span className='text-color-secondary'>Oportunidades </span> del mes</h2>
-       
+           <h2 className='H2 text-color-primary'> Préstamo bancario</h2>
+           {isMobile ? (
+            <p className="text-color-neutral-500 subtitle-20">Realizando un pago inicial como anticipo, te ofrecemos la posibilidad de financiar en un plazo de hasta 60 meses, con cuotas fijas en pesos, sin gastos de otorgamiento y hasta un 60% del vehículo.</p>
+           ) : (
+            <p className="text-color-neutral-500 subtitle-20">Realizando un pago inicial como anticipo, te ofrecemos la posibilidad de financiar en un plazo de <br></br> hasta 60 meses, con cuotas fijas en pesos, sin gastos de otorgamiento y hasta un 60% del vehículo.</p>
+           )}
         </div>
       </div>
+
+      {/* Slider prestamos bancarios */}
       <div className={styles.sliderWrapper}>
         <OportunitiesSlider items={items} />
+      </div>
+
+
+      <div className= {styles.px16}>
+        <div className= {styles.wraperSection}>
+           <h2 className='H2 text-color-primary'>Leasing</h2>
+           {isMobile ? (
+            <p className="text-color-neutral-500 subtitle-20">Podés financiar hasta el 100% de un nuevo vehículo mientras lo usás, sin necesidad de realizar un desembolso inicial.</p>
+           ) : (
+            <p className="text-color-neutral-500 subtitle-20">Podés financiar hasta el 100% de un nuevo vehículo mientras lo usás, sin necesidad de realizar <br></br> un desembolso inicial.</p>
+           )}
+        </div>
+      </div>
+
+      {/* Slider leasing */}
+      <div className={styles.sliderWrapper}>
+        <OportunitiesSlider items={leasing} />
       </div>
 
      
@@ -54,7 +82,7 @@ function FordCredit() {
             variant="quarter"
             onClick={() => setIsLegalModalOpen(true)}
         >
-          Ver Legales
+          Mostrar Legales
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -95,21 +123,22 @@ function FordCredit() {
             <h3 className='H3'>¿Por qué <span className="text-color-secondary">financiar?</span></h3>
             <p className='subtitle-20 text-color-neutral-500 text-center'>Si estás pensando en comprar un vehículo nuevo, Ford te acerca diferentes formas de financiación que se adaptan a todas las necesidades. Realizando un pago inicial como anticipo, te ofrecemos la posibilidad de financiar hasta un 60% en un plazo de hasta 60 meses, con cuotas fijas en pesos y sin gastos de otorgamiento.</p>
           </div>
-        <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.chipContainer}`}>
-           {finance.credit.map((item, index) => (
-               <Chip
-                   key={index}
-                   label={item.financing.vehicle}
-                   active={index === selectedBenefit}
-                   onClick={() => setSelectedBenefit(index)}
-               />
-           ))}
-            </div>
-            <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
-                <FinanceSlider data={[finance.credit[selectedBenefit]]} />
-            </div>
+          <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.chipContainer}`}>
+            {finance.credit
+              .filter(item => item.financing && item.financing.vehicle)
+              .map((item, index) => (
+                <Chip
+                  key={index}
+                  label={item.financing.vehicle}
+                  active={index === selectedBenefit}
+                  onClick={() => setSelectedBenefit(index)}
+                />
+              ))}
+          </div>
+          <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
+            <FinanceSlider data={[creditWithFinancing[selectedBenefit]]} />
+          </div>
         </div>
-
       )}
 
 
@@ -119,7 +148,7 @@ function FordCredit() {
 
 
       {isMobile ? (
-          <div className={styles.wraper}>
+          <div className={styles.wraper} id="formulario-asesoramiento">
             <h3 className="H3 text-color-dark">
               ¿Necesitás
               <br />
@@ -131,7 +160,7 @@ function FordCredit() {
             <Form />
           </div>
         ) : (
-          <div className={styles.wraper}>
+          <div className={styles.wraper} id="formulario-asesoramiento">
             <h3 className={`H3 text-color-dark ${styles.mb0} `}>
               ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
             </h3>

@@ -11,6 +11,20 @@ const OportunitiesCard = ( { item }) => {
   // Validar que features existe y es un array
   const features = Array.isArray(item.features) ? item.features : [];
 
+  const handleClick = (e) => {
+    if (item.ctaLink && item.ctaLink.startsWith('#')) {
+      e.preventDefault();
+      const targetId = item.ctaLink.substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    }
+  };
+
   return (
     <div className= {styles.card}>
     <img  
@@ -30,6 +44,7 @@ const OportunitiesCard = ( { item }) => {
         href={item.ctaLink}
         rel="noopener noreferrer"
         variant="primary"
+        onClick={handleClick}
       >
         {item.ctaText}
         <svg

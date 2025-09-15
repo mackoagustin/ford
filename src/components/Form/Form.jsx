@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import Select from "../Select/Select";
 import style from "./Form.module.css";
 import { provinciasArgentinas} from "../../data/province";
+import vehiclesData from "../../data/vehicles.json";
 import Textarea from "../Textarea/Textarea";
 import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
@@ -15,6 +16,7 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
     cellphone: "",
     email: "",
     province: "",
+    vehicle: "",
     message: ""
   });
 
@@ -59,6 +61,10 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
       
       case 'province':
         if (!value) return 'Selecciona una provincia';
+        return '';
+      
+      case 'vehicle':
+        if (!value) return 'Selecciona un vehículo';
         return '';
       
       case 'message':
@@ -136,6 +142,12 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
 
   const isMobile = useIsMobile();
 
+  // Preparar opciones de vehículos para el select
+  const vehicleOptions = vehiclesData.vehicles.map(vehicle => ({
+    value: vehicle.id,
+    label: vehicle.title
+  }));
+
  return isMobile ? (
     <form 
       onSubmit={handleSubmit} 
@@ -177,6 +189,16 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
         options={provinciasArgentinas}
         placeholder="Seleccioná tu provincia"
         error={errors.province}
+        backgroundColor={backgroundColor}
+      />
+      <Select
+        label="Vehículo"
+        name="vehicle"
+        value={formData.vehicle}
+        onChange={handleChange}
+        options={vehicleOptions}
+        placeholder="Seleccioná tu vehículo"
+        error={errors.vehicle}
         backgroundColor={backgroundColor}
       />
       <Textarea
@@ -228,7 +250,16 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
             cursor: success ? 'default' : undefined
           }}
         >
-          {loading ? 'Enviando...' : success ? 'Enviada' : 'Enviar consulta'}
+          {loading ? 'Enviando consulta' : success ? 'Enviada' : 'Enviar consulta'}
+          {loading && (
+            <img 
+              src="/icons/icon/progress_activity.png"
+              alt="Enviando consulta"
+              width="20"
+              height="20"
+              style={{ marginLeft: '8px' }}
+            />
+          )}
           {!loading && !success && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -314,6 +345,18 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
         backgroundColor={backgroundColor}
       />
       </div>
+      <div className={style.wraperInput}>
+        <Select
+          label="Vehículo"
+          name="vehicle"
+          value={formData.vehicle}
+          onChange={handleChange}
+          options={vehicleOptions}
+          placeholder="Seleccioná tu vehículo"
+          error={errors.vehicle}
+          backgroundColor={backgroundColor}
+        />
+      </div>
       <div className={style.wraperTextarea}>
           <Textarea
         label="Mensaje"
@@ -366,7 +409,17 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
             cursor: success ? 'default' : undefined
           }}
         >
-          {loading ? 'Enviando...' : success ? 'Enviada' : 'Enviar consulta'}
+          {loading ? 'Enviando consulta' : success ? 'Enviada' : 'Enviar consulta'}
+          {loading && (
+            <img 
+              src="/icons/icon/progress_activity.png"
+              alt="Enviando consulta"
+              width="20"
+              height="20"
+              style={{ marginLeft: '8px' }}
+            />
+          )}
+          
           {!loading && !success && (
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -385,21 +438,21 @@ const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
             </svg>
           )}
           {success && (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              strokeWidth={2.4}
-              stroke="currentColor"
-              fill="none"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M5 13l4 4L19 7"
-              />
+              <svg 
+                xmlns="http://www.w3.org/2000/svg" 
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                strokeWidth={2.4}
+                stroke="currentColor"
+                fill="none"
+              >
+              <path 
+                strokeLinecap="round" 
+                strokeLinejoin="round" 
+                d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
+            
           )}
         </Button>
       </div>

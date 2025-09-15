@@ -2,6 +2,11 @@ import React from "react";
 import styles from "./Select.module.css"; 
 
 const Select = ({ label, name, value, onChange, options, placeholder, error, backgroundColor = "var(--color-neutral-100)" }) => {
+  // Función para determinar si las opciones son objetos o strings
+  const isOptionObject = (option) => {
+    return typeof option === 'object' && option !== null && 'value' in option && 'label' in option;
+  };
+
   return (
     <div className={styles["select-group"]}>
       {label && (
@@ -25,11 +30,22 @@ const Select = ({ label, name, value, onChange, options, placeholder, error, bac
         <option value="" disabled>
           {placeholder}
         </option>
-        {options.map((provincia) => (
-          <option key={provincia} value={provincia}>
-            {provincia}
-          </option>
-        ))}
+        {options.map((option, index) => {
+          // Si es un objeto, usar value y label
+          if (isOptionObject(option)) {
+            return (
+              <option key={option.value || index} value={option.value}>
+                {option.label}
+              </option>
+            );
+          }
+          // Si es un string, usar el valor directamente
+          return (
+            <option key={option || index} value={option}>
+              {option}
+            </option>
+          );
+        })}
       </select>
       {/* Chevron */}
       <div className={styles["select-chevron"]}>

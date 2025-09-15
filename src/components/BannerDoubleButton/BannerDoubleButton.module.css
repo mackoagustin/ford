@@ -85,11 +85,11 @@
   /* Desktop */
   @media (min-width: 768px) {
     .banner {
-      height: 583px;
+      height: 400px;
     }
   
     .content {
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;

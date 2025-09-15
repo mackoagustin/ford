@@ -32,10 +32,10 @@ const PostSaleCard = ({data, groupIndex}) => {
             
             <div className={infoClass}>
                 <div className={style.wraperTitle}>
-                    <h4 className="H4">{data.title}</h4>
+                    <h4 className="H4 text-color-tertiary">{data.title}</h4>
                 </div>
                 <div className={style.wraperText}>
-                    <p className="body-1-16 text-color-neutral-600">{data.text}</p>
+                    <p className="body-1-16 text-color-neutral-600" style={{whiteSpace: 'pre-line'}}>{data.text}</p>
                 </div>
             </div>
             <div className={style.buttonWrapper}>

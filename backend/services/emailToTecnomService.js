@@ -24,6 +24,7 @@ export const sendEmailToTecnom = async (formData, options = {}) => {
     console.log('✅ Configuración SMTP verificada');
     
     // Formatear datos al formato ADF XML estándar
+    console.log('📝 Formateando datos a ADF XML...');
     const adfContent = formatToADF(formData);
     
     // Obtener nombre para el asunto
@@ -53,19 +54,22 @@ export const sendEmailToTecnom = async (formData, options = {}) => {
     console.log('📧 Enviando email ADF XML a Tecnom...');
     console.log('📤 Destinatario:', mailOptions.to);
     console.log('📄 Contenido ADF XML:\n', adfContent);
+    console.log('📏 Longitud del contenido ADF:', adfContent.length, 'caracteres');
     
     // Enviar el email
     const info = await transporter.sendMail(mailOptions);
     
     console.log('✅ Email ADF XML enviado exitosamente a Tecnom');
     console.log('🆔 Message ID:', info.messageId);
+    console.log('📧 Respuesta del servidor:', info.response);
     
     return {
       success: true,
       messageId: info.messageId,
       response: info.response,
       method: 'email_to_tecnom',
-      attachments: options.attachments?.length || 0
+      attachments: options.attachments?.length || 0,
+      adfContentLength: adfContent.length
     };
     
   } catch (error) {
