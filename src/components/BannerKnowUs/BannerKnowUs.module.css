@@ -25,8 +25,8 @@
   /* Mobile - ajuste de posición de la imagen */
   @media (max-width: 767px) {
     .backgroundImage {
-      object-position: 45% 30%;
-      transform: scale(1); 
+      object-position: 0% 20%;
+      transform: scale(2); 
     }
   }
 
@@ -82,7 +82,7 @@
     }
   
     .backgroundImage {
-      object-position: 60% 50%;
+      object-position: 60% 55%;
       transform: scale(1); 
     }
   

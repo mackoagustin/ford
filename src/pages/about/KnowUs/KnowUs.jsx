@@ -45,7 +45,7 @@ function KnowUs() {
           <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '60px'}}>
             <Button
               as="a"
-              href="https://www.lanacion.com.ar/"
+             href="/quienes-somos/sumate"
               rel="noopener noreferrer"
               variant="primary"
             >
@@ -94,10 +94,10 @@ function KnowUs() {
             </div>
 
 
-            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px'}}>
+            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '48px'}}>
               <Button
                 as="a"
-                href="https://www.lanacion.com.ar/"
+                href="/quienes-somos/sumate"
                 rel="noopener noreferrer"
                 variant="primary"
               >

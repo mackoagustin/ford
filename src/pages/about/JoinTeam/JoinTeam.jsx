@@ -5,6 +5,7 @@ import BannerJoinTeam from '../../../components/BannerJoinTeam/BannerJoinTeam';
 import bannerData from "../../../data/banners.json";
 import useIsMobile from '../../../hook/useIsMobile';
 import FormPdf from '../../../components/FormPdf/FormPdf';
+import Button from '../../../components/Button/Button';
 
 function JoinTeam() {
     const selectedBanner = bannerData.banners[5]
@@ -39,6 +40,34 @@ function JoinTeam() {
               <p className='text-color-neutral-500 body-1-16'>
               Esta información será de uso confidencial y estará disponible para futuras búsquedas en las áreas a las que te postules.
               </p>
+            </div>
+
+
+            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '48px'}}>
+              <Button
+                as="a"
+                href="/quienes-somos/conocenos"
+                rel="noopener noreferrer"
+                variant="primary"
+              >
+                Conocenos
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2.4}
+                  stroke="currentColor"
+                  fill="none"
+                  className={style["button-icon"]}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5L15.75 12 8.25 19.5"
+                  />
+                </svg>
+              </Button>
             </div>
 
 
@@ -77,6 +106,34 @@ function JoinTeam() {
               <p className='text-color-neutral-500 body-1-16 text-center'>
               Esta información será de uso confidencial y estará disponible para futuras búsquedas en las áreas a las que te postules.
               </p>
+            </div>
+
+
+            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '48px'}}>
+              <Button
+                as="a"
+                href="/quienes-somos/conocenos"
+                rel="noopener noreferrer"
+                variant="primary"
+              >
+                Conocenos
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2.4}
+                  stroke="currentColor"
+                  fill="none"
+                  className={style["button-icon"]}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M8.25 4.5L15.75 12 8.25 19.5"
+                  />
+                </svg>
+              </Button>
             </div>
             
             <div className={style.wraperForm}>

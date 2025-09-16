@@ -25,7 +25,7 @@
   /* Mobile - ajuste de posición de la imagen */
   @media (max-width: 767px) {
     .backgroundImage {
-      object-position: 60% 30%;
+      object-position: 29% 30%;
       transform: scale(1); 
     }
   }
@@ -35,7 +35,7 @@
     left: 16px;
     /* top: 50%;
     transform: translateY(-50%);   */
-    bottom: 60px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     gap: 40px;
