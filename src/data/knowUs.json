@@ -1,0 +1,34 @@
+{
+    "knowUs": [
+        {
+            "image" : "/img/knowUsSlider/agrononmia.png",
+            "title" : "Showroom y Taller Agronomía",
+            "linkDetail" : "Av. Francisco Beiró 2555, Agronomía - CABA",
+            "link": "https://www.lanacion.com.ar/"
+        },
+        {
+            "image" : "/img/knowUsSlider/colegiales.png",
+            "title" : "Showroom Colegiales",
+            "linkDetail" : "Av. Álvarez Thomas 901, Colegiales - CABA",
+            "link": "https://www.lanacion.com.ar/"
+        },
+        {
+            "image" : "/img/knowUsSlider/ingenieros.png",
+            "title" : "Showroom y Taller José Ingenieros",
+            "linkDetail" : "Av. Lincoln 1600, José Ingenieros, Pcia. Bs. As.",
+            "link": "https://www.lanacion.com.ar/"
+        },
+        {
+            "image" : "/img/knowUsSlider/villa.png",
+            "title" : "Showroom Villa del Parque",
+            "linkDetail" : "Av. San Martín 4280, Villa del Parque - CABA",
+            "link": "https://www.lanacion.com.ar/"
+        },
+        {
+            "image" : "/img/knowUsSlider/palermo.png",
+            "title" : "Taller Palermo",
+            "linkDetail" : "Arévalo 1467, Palermo - CABA",
+            "link": "https://www.lanacion.com.ar/"
+        }
+    ]
+}
