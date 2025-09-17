@@ -27,8 +27,11 @@ function Workshops() {
               <span className='text-color-secondary'> especializados</span>
               </h3>
               <p className="text-color-neutral-500 subtitle-20">
-              Auto Special cuenta con tres concesionarias Ford en Agronomía, 3 de Febrero y Palermo. Todas nuestras sucursales cuentan con repuestos originales Ford y talleres especializados para brindarte el mejor servicio. Además, nuestros talleres son oficiales, lo que significa que están equipados con las herramientas y técnicos especializados para brindar el mejor servicio a tu vehículo.
+                Contamos con tres sucursales de Auto Special Ford Posventa ubicadas en Capital Federal y provincia de Buenos Aires. Todas cuentan con servicio integral y repuestos originales Ford.
               </p>
+              <p className="text-color-neutral-500 subtitle-20" style={{marginTop: '32px'}}>  
+               Nuestro horario de atención es de  <span style={{fontWeight: '600'}}>Lunes a viernes de 8:00 a 13:00 hs y de 14:00 a 18:00 hs.</span> Conocé dónde queda cada una:
+            </p>
         </div>
       ) : (
         <div className={`${styles["pt-60"]} ${styles["px-16"]} `}>
@@ -39,8 +42,13 @@ function Workshops() {
             </h3>
               
             <p className="text-color-neutral-500 subtitle-20 text-center">
-            Auto Special cuenta con tres concesionarias Ford en Agronomía, 3 de Febrero y Palermo. Todas nuestras sucursales cuentan con repuestos originales Ford y talleres especializados para brindarte el mejor servicio. Además, nuestros talleres son oficiales, lo que significa que están equipados con las herramientas y técnicos especializados para brindar el mejor servicio a tu vehículo.
+              Contamos con tres sucursales de Auto Special Ford Posventa ubicadas en Capital Federal y provincia de Buenos Aires. Todas cuentan con servicio integral y repuestos originales Ford.
             </p>
+
+            <p className="text-color-neutral-500 subtitle-20 text-center">  
+              Nuestro horario de atención es de  <span style={{fontWeight: '600'}}>Lunes a viernes de 8:00 a 13:00 hs y de 14:00 a 18:00 hs.</span> Conocé dónde queda cada una:
+            </p>
+
           </div>
         </div>
       )}

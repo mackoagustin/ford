@@ -9,10 +9,19 @@ const WorkshopCard = ({ item }) => {
 
   return (
     <div className={styles.card}>
-      <img className={styles.image} src={item.image} alt="Location" />
+      <img className={styles.image} 
+          src={item.image} 
+          alt="Location" 
+          onClick={() => window.open(item.google_maps_link, '_blank')}
+          style={{ cursor: 'pointer' }}
+        />
 
       <div className={styles.info}>
-        <div className={`${styles.locationName} H4`}>{item.location}</div>
+        <div className={`${styles.locationName} H4`}>
+          {item.locationWorkshop}
+          <br />
+          {item.locationWorshopName}
+        </div>
 
         <div className={`${styles.address} body-1-16`}>
           <a
@@ -25,33 +34,44 @@ const WorkshopCard = ({ item }) => {
         </div>
 
         <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
-            {item.workshop.responsible}<br />
-            {item.workshop.email}<br />
+            {/* {item.workshop.responsible}<br />
+            {item.workshop.email}<br /> */}
 
-            {item.workshop.whatsapp && (
+            {/* {item.workshop.whatsapp && (
                 <>
                 WhatsApp: {item.workshop.whatsapp} <br />
                 </>
-            )}
-          
+            )} */}
+
+            WhatsApp: 
+            <a 
+              href={`https://wa.me/${item.workshop.whatsappNumberLink}?text=${encodeURIComponent(item.workshop.wsMessage)}`} 
+              className={styles.whatsappLink}
+            >
+              {item.workshop.whatsapp}
+            </a>
+            <br />
         </div>
         
         <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
-            Turnos: {item.workshop.turnos}<br />
-            WhatsApp: {item.workshop.whatsappTurnos} <br />
+        Tel:  
+        <a href={`tel:${item.workshop.phone}`} className={styles.phoneLink}>
+         {item.workshop.phone}
+        </a>
+        <br />
         </div>
 
 
-        <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
+        {/* <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
           {item.hours.monday_friday}<br />
           {item.hours.saturday}
         </div>
 
         <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
           Tel: {item.workshop.phone}<br />
-        </div>
+        </div> */}
 
-        <div className={`${styles.buttonWrapper} ${styles.pt16}`}>
+        {/* <div className={`${styles.buttonWrapper} ${styles.pt16}`}>
           <Button
             as="a"
             href={item.google_maps_link}
@@ -76,7 +96,7 @@ const WorkshopCard = ({ item }) => {
               />
             </svg>
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

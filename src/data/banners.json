@@ -57,6 +57,7 @@
       },
       {
         "image": "/img/banners/ford_assistance.png",
+        "imageMobile": "/img/banners/ford_assistance_mobile.png",
         "title": "Ford Assistance",
         "subtitle": "Asistencia 24 hs. Los 365 días del año.",
         "description": "",
@@ -89,9 +90,9 @@
       },
       {
         "image": "/img/banners/workshop.png",
-        "title": "Talleres  ",
-        "subtitle": "",
-        "description": "Acercate a cualquier concesionario oficial y adaptá tu Ford a tu forma de vida.",
+        "title": "Nuestros",
+        "subtitle": "talleres",
+        "description": "Conocé dónde están ubicadas nuestras sucursales de posventa.",
         "ctaText": "",
         "ctaLink": ""
       },

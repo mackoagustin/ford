@@ -29,6 +29,8 @@ const BannerFordProtect = ({ data }) => {
                 {data.title}
               </h1>
               <p className={styles.description}>{data.description}</p>
+
+              <div className={styles.wraperButton}>
               <Button
                 as="a"
                 href={data.ctaLink}
@@ -52,6 +54,8 @@ const BannerFordProtect = ({ data }) => {
                   />
                 </svg>
               </Button>
+              </div>
+            
             </div>
           </div>
         </div>

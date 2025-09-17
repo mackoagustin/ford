@@ -2,8 +2,8 @@
 .card {
     width: 100%;
     max-width: 305px;
-    max-height: 700px;
-    height: 700px;
+    max-height: 414px;
+    height: 414px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -25,14 +25,25 @@
   
   .locationName {
     color: var(--color-text);
+    width: 250px;
   }
   
   .hours, .contact {
     color: var(--color-neutral-500);
   }
-  
+  .phoneLink {
+    color: var(--color-neutral-500);
+    padding-left: 8px;
+  }
+
+  .whatsappLink {
+    color: var(--color-neutral-500);
+    padding-left: 8px;
+  }
+
   .address {
     color: var(--color-secondary);
+    padding-top: 16px
   }
   
   .contact {
@@ -64,6 +75,8 @@
   
     .locationName, .address {
       text-align: center;
+      width: 360px;
+      margin: 0 auto;
     }
   
     .info {

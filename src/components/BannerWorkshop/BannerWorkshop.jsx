@@ -25,8 +25,10 @@ const BannerWorkshop = ({ data }) => {
           <div className={styles.content}>
             <div className={styles.textGroup}>
               <h1 className={`${styles.title}`}>
-                {data.title}
+                {data.title} <br /> 
+                {data.subtitle} 
               </h1>
+            
               <p className={styles.description}>{data.description}</p>
             </div>
           </div>
@@ -45,9 +47,10 @@ const BannerWorkshop = ({ data }) => {
         <div className={styles.content}>
           <div className={styles.textGroup}>
             <h1 className={`${styles.title}`}>
-              {data.title}
+              {data.title} <br /> 
+              {data.subtitle} 
             </h1>
-            <p className={`${styles.description} H3`}>{data.description}</p>
+            <p className={`${styles.description} `}>{data.description}</p>
           </div>
         </div>
       </div>

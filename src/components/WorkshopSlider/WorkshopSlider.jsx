@@ -14,6 +14,22 @@ const WorkshopSlider = ({  }) => {
 
   // Filtrado de ubicaciones que son talleres
   const filteredLocations = locationData.locations.filter(location => location.isWorkshop === true);
+  
+
+  // Ordenar los talleres según el orden especificado
+  const ordenDeseado = [
+    "Taller Agronomía",
+    "Taller Palermo",
+    "Taller José ingenieros"
+  ];
+
+  const orderedLocations = ordenDeseado
+    .map(nombreTaller =>
+      filteredLocations.find(
+        loc => loc.locationWorshopName === nombreTaller
+      )
+    )
+    .filter(Boolean); // Elimina cualquier undefined por si falta algún taller
 
 
   if (isMobile) {
@@ -25,7 +41,7 @@ const WorkshopSlider = ({  }) => {
         pagination={{ clickable: true }}
         className={styles.swiperContainer}
       >
-        {filteredLocations.map((item, index) => (
+        {orderedLocations.map((item, index) => (
           <SwiperSlide key={index}>
             <WorkshopCard item={item} />
           </SwiperSlide>
@@ -36,7 +52,7 @@ const WorkshopSlider = ({  }) => {
 
   return (
     <div className={styles.grid}>
-      {filteredLocations.map((item, index) => (
+      {orderedLocations.map((item, index) => (
         <WorkshopCard key={index} item={item} />
       ))}
     </div>

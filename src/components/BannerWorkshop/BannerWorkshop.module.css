@@ -34,7 +34,7 @@
     left: 16px;
     /* top: 50%;
     transform: translateY(-50%);   */
-    bottom: 60px;
+    top: 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -48,6 +48,7 @@
     gap: 16px;
     color: white;
     font-family: 'Ford_F-1', sans-serif;
+    width: 250px;
   }
   
   .title {
@@ -82,24 +83,15 @@
     }
 
     .backgroundImage {
-      object-position: 60% center;
+      object-position: 60% 20%;
     }
   
     .content {
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
       max-width: 1170px;
-    }
-
-    .textGroup {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      color: white;
-      font-family: 'Ford_F-1', sans-serif;
-      width: 493px;
     }
   
     .title {
@@ -129,6 +121,7 @@
         gap: 16px;
         color: white;
         font-family: 'Ford_F-1', sans-serif;
+        width: 400px;
       }
       
 

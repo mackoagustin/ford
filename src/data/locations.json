@@ -2,6 +2,8 @@
     "locations": [
       { 
         "location": "Showroom Agronomía",
+        "locationWorkshop": "Auto Special Ford Posventa",
+        "locationWorshopName" : "Taller Agronomía",
         "category": ["Venta tradicional", "Posventa", "Plan Ovalo"],
         "image": "/img/locations/agronomia.png",
         "address": "Av. Francisco Beiró 2555, Agronomía - CABA",
@@ -16,9 +18,11 @@
         "workshop": {
           "responsible" : "Responsable de repuestos: Martín Correa",
           "email": "mcorrea@autospecial.com.ar",
-          "whatsapp": "11 3143 7885",
+          "whatsapp": "11 2663-3000",
           "turnos": "turnos@autospecial.com.ar",
           "whatsappTurnos": "11 6894 9307",
+          "whatsappNumberLink" : "1126633000",
+          "wsMessage" : "Hola, me gustaría obtener más información sobre Ford",
           "phone": "4573-8200"
         }
       },
@@ -37,6 +41,8 @@
       },
       { 
         "location": "Showroom José Ingenieros",
+        "locationWorkshop": "Auto Special Ford Posventa",
+        "locationWorshopName" : "Taller José ingenieros",
         "category": ["Venta tradicional", "Posventa", "Plan Ovalo"],
         "image": "/img/locations/ingenieros.png",
         "address": "Av. Lincoln 1600, José Ingenieros, Pcia. Bs. As.",
@@ -50,8 +56,11 @@
         "workshop": {
           "responsible" : "Responsable de repuestos: Juan Pablo Gil",
           "email": "jgil@autospecial.com.ar",
+          "whatsapp": "11 2663-3000",
           "turnos": "turnos@autospecial.com.ar",
           "whatsappTurnos": "11 3253 9054",
+          "whatsappNumberLink" : "1126633000",
+          "wsMessage" : "Hola, me gustaría obtener más información sobre Ford",
           "phone": "4570-0300"
         }
       },
@@ -70,6 +79,8 @@
       },
       { 
         "location": "Taller Palermo",
+        "locationWorkshop": "Auto Special Ford Posventa",
+        "locationWorshopName" : "Taller Palermo",
         "category": ["Posventa"],
         "image": "/img/locations/palermo.png",
         "address": "Arévalo 1467, Palermo - CABA",
@@ -84,7 +95,9 @@
         "workshop": {
           "responsible" : "Responsable de repuestos:  Elio Sánchez",
           "email": "esanchez@autospecial.com.ar",
-          "whatsapp" : "11 6158 7721",
+          "whatsapp" : "11 2663-3000",
+          "whatsappNumberLink" : "1126633000",
+          "wsMessage" : "Hola, me gustaría obtener más información sobre Ford",
           "turnos": "turnos@autospecial.com.ar",
           "whatsappTurnos": "11 3253 9054",
           "phone": "47079-1200"
