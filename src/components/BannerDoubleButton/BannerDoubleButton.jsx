@@ -21,6 +21,12 @@ const BannerDoubleButton = ({data}) => {
         if (data.ctaLinkSecond === "modal" || data.ctaLinkSecond === "quoter") {
             e.preventDefault();
             setIsModalOpen(true);
+        } else if (data.ctaLinkSecond === "whatsapp") {
+            e.preventDefault();
+            const phoneNumber = "5491126633000";
+            const message = "Hola quiero solicitar un turno";
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
         }
     };
 
@@ -59,6 +65,7 @@ const BannerDoubleButton = ({data}) => {
                 href={data.ctaLink}
                 variant="primary"
                 onClick={handleFirstButtonClick}
+                style={{ width: '100%' }}
               >
                 {data.ctaText}
               <svg
@@ -82,8 +89,9 @@ const BannerDoubleButton = ({data}) => {
                <Button
                 as="a"
                 href={data.ctaLinkSecond}
-                variant="third"
+                variant="secondary"
                 onClick={handleSecondButtonClick}
+                style={{ width: '100%' }}
               >
                 {data.ctaTextSecond}
                 <svg
@@ -134,7 +142,7 @@ const BannerDoubleButton = ({data}) => {
                <Button
                 as="a"
                 href={data.ctaLinkSecond}
-                variant="third"
+                variant="secondary"
                 onClick={handleSecondButtonClick}
               >
                 {data.ctaTextSecond}

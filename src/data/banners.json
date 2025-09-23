@@ -5,9 +5,9 @@
         "title": "Ford",
         "subtitle": "posventa",
         "ctaText": "Conocer nuestros talleres",
-        "ctaLink": "/sucursales",
+        "ctaLink": "/postventa/talleres",
         "ctaTextSecond": "Solicitar turno",
-        "ctaLinkSecond": "modal"
+        "ctaLinkSecond": "whatsapp"
       },
       {
         "image": "/img/banners/sucursales_dos_autos.png",

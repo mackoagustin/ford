@@ -1,0 +1,271 @@
+.container {
+  width: 94%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  margin: 0 auto;
+  padding-top: 42px;
+}
+
+.card {
+  align-self: stretch;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #00142E;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+.content {
+  align-self: stretch;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+}
+
+.textGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.title {
+  align-self: stretch;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'FordF1', sans-serif;
+  font-weight: 500;
+  line-height: 34px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.titleWhite {
+  color: white;
+  font-size: 26px;
+  word-wrap: break-word;
+}
+
+.titleBlue {
+  color: #066FEF;
+  font-size: 26px;
+  word-wrap: break-word;
+}
+
+.descriptionGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.description {
+  align-self: stretch;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #F7F6F6;
+  font-size: 20px;
+  font-family: 'FordF1', sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.desktopText {
+  display: none;
+}
+
+.appButtons {
+  align-self: stretch;
+  display: inline-flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+
+
+.appIcon {
+  width: 20px;
+  height: 24px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.appleIcon {
+  width: 123px;
+  height: 41px;
+  object-fit: contain;
+}
+
+.appText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.appSubtext {
+  color: white;
+  font-size: 9px;
+  font-family: 'FordF1';
+  font-weight: 100;
+  line-height: 9px;
+  word-wrap: break-word;
+}
+
+.appMainText {
+  color: white;
+  font-size: 18px;
+  font-family: 'SF Compact Display', sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+  word-wrap: break-word;
+}
+
+.googlePlayButton {
+  width: 120px;
+  height: 40px;
+  position: relative;
+  background: black;
+  overflow: hidden;
+  border-radius: 6px;
+  outline: 1px #A6A6A6 solid;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  cursor: pointer;
+}
+
+.googleIcon {
+  width: 21px;
+  height: 24px;
+  position: relative;
+  margin-right: 8px;
+}
+
+.googleColor1 {
+  width: 14.83px;
+  height: 12.54px;
+  position: absolute;
+  top: 11.46px;
+  left: 0.09px;
+  background: #EA4335;
+}
+
+.googleColor2 {
+  width: 11.42px;
+  height: 10.30px;
+  position: absolute;
+  top: 6.86px;
+  left: 9.58px;
+  background: #FBBC04;
+}
+
+.googleColor3 {
+  width: 10.14px;
+  height: 20.01px;
+  position: absolute;
+  top: 1.99px;
+  left: 0px;
+  background: #4285F4;
+}
+
+.googleColor4 {
+  width: 14.82px;
+  height: 12px;
+  position: absolute;
+  top: 0px;
+  left: 0.09px;
+  background: #34A853;
+}
+
+.googleText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3px;
+}
+
+.googleSubtext {
+  color: white;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.googleMainText {
+  width: 74px;
+  height: 15px;
+  background: white;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+
+  .container {
+    padding-top: 80px;
+    max-width: 1234px;
+    margin: 0 auto;
+  }
+  .card {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .content {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .title {
+    max-width: 860px;
+  }
+
+  .titleWhite {
+    font-size: 46px;
+    line-height: 48px;
+    font-weight: 00;
+    max-width: 860px;
+  }
+
+  .titleBlue {
+    font-size: 46px;
+    line-height: 48px;
+  }
+
+  .description {
+    color: white;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 34px;
+  }
+
+  .desktopText {
+    display: inline;
+  }
+}
