@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './LocationCard.module.css';
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
 const LocationCard = ({ location }) => {
   if (!location) {
@@ -30,12 +30,30 @@ const LocationCard = ({ location }) => {
         </div>
 
         <div className={styles.contact}>
+          <div className="body-1-16">
+            WhatsApp: 
+            {location.whatsapp ? (
+              <a 
+                href={`https://wa.me/${location.whatsapp.replace(/\D/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ 
+                  color: 'inherit', 
+                  textDecoration: 'underline',
+                  marginLeft: '4px'
+                }}
+              >
+                {location.whatsapp}
+              </a>
+            ) : (
+              <span style={{ marginLeft: '4px' }}>No disponible</span>
+            )}
+          </div>
           <div className="body-1-16">{location.phone}</div>
-          <div className="body-1-16">{location.whatsapp}</div>
-          <div className="body-1-16">{location.email}</div>
+          {/* <div className="body-1-16">{location.email}</div> */}
         </div>
 
-        <div className={styles.buttonWrapper}>
+        {/* <div className={styles.buttonWrapper}>
           <Button
             as="a"
             href={location.google_maps_link}
@@ -60,7 +78,7 @@ const LocationCard = ({ location }) => {
               />
             </svg>
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

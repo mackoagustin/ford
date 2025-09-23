@@ -113,7 +113,10 @@ const Services = () => {
           </div>
         )}
       </div>
+      <div style={{marginTop: '80px'}}>
       <Footer />
+      </div>
+    
     </div>
   );
 };

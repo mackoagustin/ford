@@ -28,6 +28,7 @@
 
 .hours, .contact {
   color: var(--color-neutral-500);
+ 
 }
 
 .address {
@@ -42,12 +43,15 @@ a {
   color: var(--color-secondary);
 }
 
-.buttonWrapper {
-
-}
 
 
 @media (min-width: 768px) {
+
+  .hours {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
   .card {
     max-width: 373px;
     max-height: 508px;
