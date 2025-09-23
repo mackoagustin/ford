@@ -13,7 +13,7 @@
         {
         "image": "/img/fordpro/financiacion.png",
         "title": "Financiación",
-        "text": "Puedes comprarlo directo de fábrica a un precio exclusivo desde 2 o 3 vehículos o más. O bien, contamos con una amplia gama de financiamiento.<ul><li>Ford Credit - Préstamo bancario</li><li>Leasing</li><li>Plan Óvalo</li></ul>"
+        "text": "Puedes comprarlo directo de fábrica a un precio exclusivo desde 2 o 3 vehículos o más. O bien, contamos con una amplia gama de financiamiento.<ul><li><a href='/financiacion/ford-credit'>Ford Credit - Préstamo bancario</a></li><li><a href='/financiacion/plan-ovalo'>Plan Óvalo</li></ul>"
         },
         {
         "image": "/img/fordpro/servicio.png",

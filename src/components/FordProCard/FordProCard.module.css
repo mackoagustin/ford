@@ -2,6 +2,10 @@ h4, p {
     margin: 0px;
 }
 
+.wraperText a {
+    color: var(--color-neutral-600);
+    text-decoration: underline;
+}
 /* Estilos para listas dentro de las tarjetas */
 .wraperText ul {
     margin: 8px 0;
