@@ -64,7 +64,7 @@ function Footer() {
                   <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                     <div className={styles.submenuContainer}>
                       <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
-                      <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
+                      {/* <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Leasing - Hasta 100%</Link> */}
                       <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo - Desde 70% a 100%</Link>
                     </div>
                   </div>
@@ -319,7 +319,7 @@ function Footer() {
                     <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                       <div className={styles.submenuContainer}>
                         <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
-                        <Link to="" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
+                        {/* <Link to="" className={styles.submenuItem}>Leasing - Hasta 100%</Link> */}
                         <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo - Desde 70% a 100%</Link>
                       </div>
                     </div>
