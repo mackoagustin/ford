@@ -7,13 +7,99 @@
     padding-top: 60px;
 }
 
+.wraper {
+    background-color: var( --color-neutral-100);
+    padding: 60px 16px 60px 16px;
+    border-radius: 16px;
+    margin-top: 80px;
+}
+
+.wraperVisa {
+    border-radius: 16px;
+    margin-top: 80px;
+    margin: 0 auto;
+}
+
+.visaBanner {
+    width: 328px;
+    height: 100%;
+    padding: 42px 24px;
+    background: #00095B;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.visaBannerDesktop {
+    max-width: 1240px;
+    height: 100%;
+    padding: 42px 16px;
+    background: #00095B;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+    margin-top: 42px;
+    margin-bottom: 42px;
+}
+
+.visaLogo {
+    width: 90px;
+    height: auto;
+}
+
+.visaTextContainer {
+    align-self: stretch;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.visaTextContainerDesktop {
+    width: 772px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .pt-60 {
     padding-top: 60px;
+}
+
+.pt-80 {
+    padding-top: 80px;
 }
 
 
 
 @media (min-width: 1024px) {
+
+    .wraper {
+        background-color: var( --color-neutral-100);
+        padding: 42px 32px;
+        max-width: 1170px;
+        margin: 0 auto;
+        border-radius: 16px;
+        margin-top: 80px;
+    }
+
+    .wraperVisa {
+        border-radius: 16px;
+        margin-top: 80px;
+        margin: 0 auto;
+    }
+
 
     h2 {
         padding-bottom: 24px;
