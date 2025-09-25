@@ -43,12 +43,15 @@
 }
 
 .search-section {
+    margin-top: -52px;
     width: 100%;
     height: 94px;
     display: flex;
     justify-content: center;
     padding: 2rem 1rem;
-    background-color: #f8f9fa;
+    background-color: none;
+    position: relative;
+    z-index: 10;
 }
 
 .slider-section {
@@ -64,13 +67,14 @@
 
 @media (min-width: 1024px) {
     .slider-section {
-        padding: 0px;
+       padding-top: 83px;
     }
 }
 
 @media (max-width: 768px) {
     .search-section {
         padding: 1rem;
+        margin-top: 0;
     }
 }
 
@@ -81,7 +85,9 @@
 }
 
 .search-section {
-    padding: 16px;
+    padding-top: 16px;
+    padding-left: 0px;
+    
 }
 
 .slider-section {

@@ -1,9 +1,25 @@
 {
     "bannerHomeSlider": [
     {
+        "image" : "/img/banners/home/territory.png",
+        "textUp" : "Nueva",
+        "textDown" : "Territory",
+        "ctaLink" : "/vehiculos/Nueva%20Territory",
+        "ctaText" : "Conocer más"
+    },
+    {
         "image" : "/img/banners/home/everest.png",
-        "ctaText" : "",
-        "ctaLink" : ""
+        "textUp" : "Nueva",
+        "textDown" : "Everest",
+        "ctaLink" : "/vehiculos/nueva_everest",
+        "ctaText" : "Conocer más"
+    },
+    {
+        "image" : "/img/banners/home/ranger.png",
+        "textUp" : "Ranger",
+        "textDown" : "",
+        "ctaLink" : "/vehiculos/nueva_ranger",
+        "ctaText" : "Conocer más"
     }
 ]
 }
