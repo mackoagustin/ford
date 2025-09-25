@@ -186,9 +186,11 @@ const VehicleDetail = () => {
                 </div>
             </div>
 
-            <div className={styles.BannerVehicleKnow}>
-                <BannerVehicleKnow />
-            </div>
+            {(vehicle.id === "Nueva Territory" || vehicle.id === "Nueva Territory") && (
+                <div className={styles.BannerVehicleKnow}>
+                    <BannerVehicleKnow />
+                </div>
+            )}
             
             <Footer />
 
