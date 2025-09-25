@@ -13,6 +13,7 @@
          "categories": ["suv"],
          "fordPro": false,
          "isAccesory": true,
+         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/territory/2025/pdf/far-nueva-territory-ficha-tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Elevá tu experiencia de<span>manejo.</span>",

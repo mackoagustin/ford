@@ -296,6 +296,11 @@
     display: none;
 }
 
+.technicalSheetButton{
+    padding-left: 24px;
+    margin-top: -42px;
+}
+
 /* Tablet breakpoint */
 @media (min-width: 480px) and (max-width: 1200px) {
     .wrapperText {
@@ -381,7 +386,7 @@
     max-width: 1170px;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 102px;
+    padding-top: 20px;
    }
 
    .colorText {
@@ -426,5 +431,11 @@
  
         padding-top: 80px;
     }
+
+    .technicalSheetButton{
+        padding-left: 16px;
+        margin-top: 0px;
+    }
+    
    
 }

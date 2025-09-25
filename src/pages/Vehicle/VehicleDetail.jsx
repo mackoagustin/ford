@@ -13,6 +13,7 @@ import Chip from '../../components/Chip/Chip';
 import BannerVehicleKnow from '../../components/BannerVehicleKnow/BannerVehicleKnow';
 import Footer from '../../components/Footer/Footer';
 import styles from './VehicleDetail.module.css';
+import Button from '../../components/Button/Button';
 
 const VehicleDetail = () => {
     const { id } = useParams();
@@ -73,22 +74,53 @@ const VehicleDetail = () => {
                         ))}
                     </div>
                 </div>
-                <div className={styles.wraperSpecifications}>
-                    <div className={styles.contentSpecifications}>
-                        {vehicle.detail.specifications.map((spec, index) => (
-                            <div key={index}>
-                                <p className={` ${styles.specificationsTitle} H4 text-color-white`}>{spec.title}</p>
-                                {spec.feature.map((item, idx) => (
-                                    <p 
-                                        key={idx}
-                                        className='subtitle-20 text-color-dark'>
-                                        {item}
-                                    </p>
-                                ))}
-                            </div>
-                        ))}
+                <div>
+                    <div className={styles.wraperSpecifications}>
+                        <div className={styles.contentSpecifications}>
+                            {vehicle.detail.specifications.map((spec, index) => (
+                                <div key={index}>
+                                    <p className={` ${styles.specificationsTitle} H4 text-color-white`}>{spec.title}</p>
+                                    {spec.feature.map((item, idx) => (
+                                        <p 
+                                            key={idx}
+                                            className='subtitle-20 text-color-dark'>
+                                            {item}
+                                        </p>
+                                    ))}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
+                    <div className={styles.technicalSheetButton}>
+                        <Button
+                            href={vehicle.technicalSheet}
+                            target="_blank"
+                            variant="secondary"
+                            style= {{marginTop: '42px'}}
+                        >
+                            Descargar ficha técnica
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                strokeWidth={2.4}
+                                stroke="currentColor"
+                                fill="none"
+                                className={styles["button-icon"]}
+                                style={{paddingLeft: '8px'}}
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                                />
+                            </svg>
+                        </Button>
+
+                        
+                    </div>
+                </div> 
             </div>
 
             {/* galeria imágenes - Mobile Swiper */}
