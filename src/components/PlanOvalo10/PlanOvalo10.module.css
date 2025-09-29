@@ -137,16 +137,23 @@
     
     .card {
         padding: 24px;
+        height: auto;
+        min-height: 400px;
+        height: 700px;
     }
     
     .mainTitle {
-        font-size: 24px;
+        font-size: 32px;
+        width: 320px;
+        margin-top: 0;
         margin-bottom: 24px;
+        text-align: center;
     }
     
     .chipNavigationContainer {
         margin-bottom: 24px;
         gap: 12px;
+        justify-content: center;
     }
     
     .navButton {
@@ -157,5 +164,22 @@
     .navButton svg {
         width: 16px;
         height: 16px;
+    }
+    
+    .content {
+        min-height: auto;
+        text-align: left;
+        height: 300px;
+    }
+    
+    .content h2 {
+        text-align: left !important;
+        margin-top: 16px;
+        font-size: 26px;
+    }
+    
+    .content p {
+        text-align: center !important;
+        margin-bottom: 40px;
     }
 }

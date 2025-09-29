@@ -68,7 +68,7 @@
             "image" : "/img/credit/maverick.png",
             "title" : "Maverick XLT",
             "text" : "Cuotas desde ",
-            "price" : "$$483.275",
+            "price" : "$483.275",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -80,8 +80,9 @@
         {
             "image" : "/img/credit/transit.png",
             "title" : "Transit",
-            "text" : "Cuotas desde $758.519 100% financiado en 84 cuotas",
-            "cuotes" : "120",
+            "text" : "Cuotas desde",
+            "price" : "$607.915",
+            "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "Cuotas fijas.",
                 "Bonificación en cuotas.",

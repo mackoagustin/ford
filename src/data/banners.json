@@ -135,6 +135,13 @@
         "description": "",
         "ctaText": "",
         "ctaLink": ""
+      },
+      {
+        "image": "/img/banners/repuestos.png",
+        "title": "Repuestos",
+        "description": "Consultá por un repuesto original para tu Ford.",
+        "ctaText": "Consultar por WhatsApp",
+        "ctaLink": " "
       }
     ]
   }

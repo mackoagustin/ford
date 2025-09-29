@@ -35,24 +35,31 @@ const PlanOvalo10 = ({ data }) => {
 
     if (isMobile) {
         return (
-            <Swiper 
-                modules={[Pagination]} 
-                spaceBetween={16} 
-                slidesPerView={1.2} 
-                loop={true} 
-                pagination={{ clickable: true }}
-            >
-                {data.map((item, index) => (
-                    <SwiperSlide key={index}>
-                        <div className={styles.mobileCard}>
-                            <div className={styles.content}>
-                                <h2 className='H2'>{item.title}</h2>
-                                <p className='body-1-16'>{item.text}</p>
-                            </div>
+            <div className={styles.sliderContainer}>
+                <div className={styles.card}>
+                    <h2 className={styles.mainTitle}>
+                        10 cosas que tenés que saber sobre <span className="text-color-secondary">Plan Ovalo</span>
+                    </h2>
+                    
+                    <div className={styles.chipNavigationContainer}>
+                        <div className={styles.chipContainer} ref={chipContainerRef}>
+                            {data.map((item, index) => (
+                                <Chip
+                                    key={index}
+                                    label={item.chip}
+                                    active={index === selectedItem}
+                                    onClick={() => setSelectedItem(index)}
+                                />
+                            ))}
                         </div>
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                    </div>
+                    
+                    <div className={styles.content}>
+                        <h2 className='H2' style={{textAlign: 'left', marginTop: '16px'}}>{data[selectedItem].title}</h2>
+                        <p className='body-1-16' style={{textAlign: 'left', marginBottom: '40px'}}>{data[selectedItem].text}</p>
+                    </div>
+                </div>
+            </div>
         );
     }
 

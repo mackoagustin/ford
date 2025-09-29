@@ -30,7 +30,7 @@ import FordProtect from './pages/postsale/FordProtect';
 import KnowUs from './pages/about/KnowUs';
 import JoinTeam from './pages/about/JoinTeam/JoinTeam';
 import News from './pages/about/News';
-
+import Test from './pages/test';
 
 // Dinámicas
 import VehicleDetail from './pages/Vehicle/VehicleDetail';
@@ -44,6 +44,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/vehiculos" element={<Vehicles />} />
         <Route path="/vehiculos/:id" element={<VehicleDetail />} />
+        <Route path="/vehiculos/test-drive" element={<Test />} />
         <Route path="/financiacion" element={<Financing />} />
         <Route path="/financiacion/ford-credit" element={<FordCredit />} />
         <Route path="/financiacion/plan-ovalo" element={<PlanOvalo />} />

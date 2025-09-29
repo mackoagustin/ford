@@ -41,7 +41,7 @@ const BannerHomeSlider = () => {
                             <div className={styles.contentOverlay}>
                                 <div className={styles.textContainer}>
                                     {banner.textUp && (
-                                        <h1 className={styles.textUp}>{banner.textUp}</h1>
+                                        <h2 className={styles.textUp}>{banner.textUp}</h2>
                                     )}
                                     {banner.textDown && (
                                         <h1 className={styles.textDown}>{banner.textDown}</h1>

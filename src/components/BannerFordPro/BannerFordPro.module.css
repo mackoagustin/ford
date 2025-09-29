@@ -7,6 +7,7 @@
         height: 486px;
         width: 100vw;
         display: block;
+        object-fit: cover;
     }
 
     .content {
@@ -53,6 +54,7 @@
     .image {
         height: 400px;
         width: 100%;
+        object-fit: cover;
     }
 
     .content{

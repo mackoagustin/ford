@@ -1,11 +1,16 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from './BannerCard.module.css'
 import Button from "../Button/Button"; 
 import useIsMobile from '../../hook/useIsMobile'
 
 const BannerCard = () => {
-
+    const navigate = useNavigate();
     const isMobile = useIsMobile();
+
+    const handleMoreInfoClick = () => {
+        navigate('/vehiculos/test-drive');
+    };
 
     return (
         <div>
@@ -17,10 +22,13 @@ const BannerCard = () => {
                             <p className={styles.text}>Experimentá los últimos modelos 0km de Ford con nuestro Test Drive.</p>
                         </div>
                         <div className={styles.buttonWrapper}>
+                            
                             <Button
                                 as="a"
-                                href=""
+                                href="https://api.whatsapp.com/send/?phone=5491126633000&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
                                 variant="secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Consultar por WhatsApp
                                 <svg
@@ -47,16 +55,25 @@ const BannerCard = () => {
                 <div className={styles.wraper}>
                     <div className={styles.info}>
                         <div className={styles.wraperTitle}>
-                            <h3 className={styles.title}>Test <span className={styles.blueText}> Drive </span></h3>
+                            <h3 className={styles.title}>Test  Drive </h3>
                         </div>
                         <div className={styles.wraperText}>
                             <p className={styles.text}>Experimentá los últimos modelos 0km de Ford con nuestro Test Drive.</p>
                         </div>
                         <div className={styles.buttonWrapper}>
                             <Button
+                                variant="primary"
+                                style={{ marginRight: '12px' }}
+                                onClick={handleMoreInfoClick}
+                            >
+                                Mas información
+                            </Button>
+                            <Button
                                 as="a"
-                                href=""
+                                href="https://api.whatsapp.com/send/?phone=5491126633000&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
                                 variant="secondary"
+                                target="_blank"
+                                rel="noopener noreferrer"
                             >
                                 Consultar por WhatsApp
                                 <svg
