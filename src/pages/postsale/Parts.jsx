@@ -29,7 +29,10 @@ function Parts() {
             <p className="body-1-16 text-color-neutral-500">
               Completá los datos y nos pondremos en contacto a la brevedad.
             </p>
-            <FormParts />
+            <FormParts 
+              origen="WEB AUTOSPECIAL" 
+              suborigen="Repuestos" 
+            />
           </div>
 
         </>
@@ -47,7 +50,10 @@ function Parts() {
             <p className="body-1-16 text-color-neutral-500">
               Completá los datos y nos pondremos en contacto a la brevedad.
             </p>
-            <FormParts />
+            <FormParts 
+              origen="WEB AUTOSPECIAL" 
+              suborigen="Repuestos" 
+            />
           </div>
         </>
        

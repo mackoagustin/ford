@@ -60,6 +60,7 @@ const FordProVehicleCard = ({ item }) => {
           href={item.detailLink}
           rel="noopener noreferrer"
           variant="primary"
+          style={{margin: '0 auto'}}
         >
           {item.ctaPrimaryText}
         </Button>

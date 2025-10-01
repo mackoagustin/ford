@@ -6,7 +6,6 @@
   width: auto;
   height: 100%;
   max-height: 270px;
-  background-image: url('../../../public/img/banners/vehicle_detail.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +70,6 @@
       padding: 32px 24px;
       margin: 0 auto;
       border-radius: 16px;
-      background-image: url('../../../public/img/banners/vehicle_detail.png');
       background-size: cover;
       background-position: center;
       box-sizing: border-box;
@@ -115,7 +113,6 @@
   flex-direction: column;
   width: 1164px;
   height: 370px;
-  background-image: url('../../../public/img/banners/vehicle_detail.png');
   background-size: cover;
   align-items:flex-start;
   background-position: center; 

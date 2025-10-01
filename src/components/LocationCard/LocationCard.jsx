@@ -49,7 +49,21 @@ const LocationCard = ({ location }) => {
               <span style={{ marginLeft: '4px' }}>No disponible</span>
             )}
           </div>
-          <div className="body-1-16">{location.phone}</div>
+          <div className="body-1-16"> tel:&nbsp;
+            {location.phone ? (
+              <a 
+                href={`tel:${location.phone.replace(/[^0-9+]/g, '')}`}
+                style={{ 
+                  color: 'inherit', 
+                  textDecoration: 'underline'
+                }}
+              >
+                {location.phone}
+              </a>
+            ) : (
+              <span>No disponible</span>
+            )}
+          </div>
           {/* <div className="body-1-16">{location.email}</div> */}
         </div>
 

@@ -96,6 +96,8 @@
     .title {
       font-size: 5.25rem;
       line-height: 86px;
+      margin-bottom: 0px;
+      margin-top: 80px;
     }
   
     .subtitle {

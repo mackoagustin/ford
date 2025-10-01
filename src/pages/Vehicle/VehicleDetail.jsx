@@ -24,6 +24,14 @@ const VehicleDetail = () => {
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const [selectedBenefit, setSelectedBenefit] = useState(0);
 
+    // Mapeo de imágenes de banner por vehículo
+    const vehicleBannerImages = {
+        "Nueva Territory": "/img/banners/vehicle_detail.png",
+        "Nueva Maverick": "/img/banners/vehicle_detail2.png",
+        "nueva_ranger": "/img/banners/vehicle_detail3.png",
+        "transit_van": "/img/banners/vehicle_detail4.png",
+    };
+
 
 
     const openModal = (index) => {
@@ -218,9 +226,9 @@ const VehicleDetail = () => {
                 </div>
             </div>
 
-            {(vehicle.id === "Nueva Territory" || vehicle.id === "Nueva Territory") && (
+            {vehicleBannerImages[vehicle.id] && (
                 <div className={styles.BannerVehicleKnow}>
-                    <BannerVehicleKnow />
+                    <BannerVehicleKnow backgroundImage={vehicleBannerImages[vehicle.id]} />
                 </div>
             )}
             

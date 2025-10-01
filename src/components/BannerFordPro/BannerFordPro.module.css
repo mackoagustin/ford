@@ -70,6 +70,10 @@
         width: 1170px;
         max-width: 600px;
     }
+    .subTitle {
+      font-size: 24px;
+      font-weight: 600;
+    }
 }
 
 @media (min-width: 1442px) {

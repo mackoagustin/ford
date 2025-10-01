@@ -70,8 +70,12 @@ const BannerFordPro = () => {
                           className={styles.imageLogo} 
                           loading="lazy"
                         />
-                        <h1 className={styles.title}>Ford Pro™</h1>
+                        {/* <h1 className={styles.title}>Ford Pro™</h1>
+                        <p className={styles.subTitle}>Tu negocio en movimiento.</p> */}
+                         <div>
+                        <p className={styles.subTitle} style={{paddingBottom: '0px'}}>Ford Pro™ | Ventas Corporativas</p>
                         <p className={styles.subTitle}>Tu negocio en movimiento.</p>
+                        </div>
 
                          <Button
                             as="a"

@@ -52,11 +52,13 @@ const BannerDoubleButton = ({data}) => {
 
               <div className={styles.content}>
                 <div className={styles.textGroup}>
-                  <h1 className={`${styles.title} display4`}>
+                  {/* <h1 className={`${styles.title} display4`}>
                     {data.title}
                     <br />
                     <span className={styles["title-blue"]}>{data.subtitle}</span>
-                  </h1>
+                  </h1> */}
+
+                  <h1 className={`${styles.title} display4`}>{data.title} {data.subtitle}</h1>
 
           {isMobile ? (
             <>

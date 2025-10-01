@@ -46,6 +46,7 @@
     font-weight: 500;
     margin: 0;
     color: white;
+    
  
 }
 
@@ -84,6 +85,7 @@
     .textUp {
         font-size: 100px;
         line-height: 86px;
+        padding-bottom: 0px;
     }
 
     .textDown {

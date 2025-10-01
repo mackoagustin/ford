@@ -3,14 +3,14 @@
       {
         "image": "/img/banners/sucursales.png",
         "title": "Ford",
-        "subtitle": "posventa",
+        "subtitle": "Posventa",
         "ctaText": "Conocer nuestros talleres",
         "ctaLink": "/postventa/talleres",
         "ctaTextSecond": "Solicitar turno",
         "ctaLinkSecond": "whatsapp"
       },
       {
-        "image": "/img/banners/sucursales_dos_autos.png",
+        "image": "/img/banners/sucursaless.png",
         "title": "Nuestras",
         "subtitle": "Sucursales",
         "ctaText": "Contactanos",
@@ -19,7 +19,7 @@
       {
         "image": "/img/banners/vehicles.jpg",
         "title": "Vehículos",
-        "subtitle": "Encontrá el ford para vos",
+        "subtitle": "Encontrá el Ford para vos",
         "ctaText": "",
         "ctaLink": ""
       },
@@ -141,7 +141,7 @@
         "title": "Repuestos",
         "description": "Consultá por un repuesto original para tu Ford.",
         "ctaText": "Consultar por WhatsApp",
-        "ctaLink": " "
+        "ctaLink": "https://api.whatsapp.com/send/?phone=5491126633000&text=Hola%2C+me+gustar%C3%ADa+consultar+por+repuestos+Ford&type=phone_number&app_absent=0"
       }
     ]
   }

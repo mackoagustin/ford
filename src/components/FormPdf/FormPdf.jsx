@@ -9,14 +9,19 @@ import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
 
 
-const FormPdf = () => {
+const FormPdf = ({ 
+  origen = "WEB AUTOSPECIAL",
+  suborigen = "Formulario PDF"
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     cellphone: "",
     email: "",
     province: "",
     message: "",
-    pdfFile: null
+    pdfFile: null,
+    origen: origen,
+    suborigen: suborigen
   });
 
   const [errors, setErrors] = useState({});

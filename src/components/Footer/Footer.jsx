@@ -75,7 +75,7 @@ function Footer() {
                   className={`${styles.menuItem} ${openSubmenu === 'postVenta' ? styles.activeMenuItem : ''}`}
                   onClick={() => toggleSubmenu('postVenta')}
                 >
-                  <span>Post Venta</span>
+                  <span>Posventa</span>
                   <button 
                     className={styles.toggleButton}
                   >
@@ -330,7 +330,7 @@ function Footer() {
                     className={`${styles.menuItem} ${openSubmenu === 'postventa' ? styles.activeMenuItem : ''}`}
                     onClick={() => toggleSubmenu('postventa')}
                   >
-                    <span>Post Venta</span>
+                    <span>Posventa</span>
                     <button 
                       className={styles.toggleButton}
                     >

@@ -144,6 +144,16 @@
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
+    
+      "mustang_dark_horse": {
+      "image": "/img/vehicles/mustang_dark_horse/mustang_dark_horse_banner.png",
+      "title": "Nuevo </br> Mustang </br> Dark Horse",
+      "description": "Descubrí la nueva maverick",
+      "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "modal"
+    },
       "mustang_mach_e": {
       "image": "/img/vehicles/mustang_mach_e/mustang_mach_e_banner.png",
       "title": "Mustang</br> Mach-E",

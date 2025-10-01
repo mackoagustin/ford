@@ -29,20 +29,32 @@
     left: 16px;
     /* top: 50%;
     transform: translateY(-50%);   */
-    bottom: 60px;
+
     display: flex;
     flex-direction: column;
     gap: 40px;
     z-index: 3;
-    width: 80%;
+    width: 100%;
   }
-  
+
+  .wraperButton{
+    width: 90%;
+  }
+
+
+/* 
+  .wraperButton .button {
+    width: 80% !important;
+    align-self: stretch !important;
+  } */
+
   .textGroup {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 250px;
     color: white;
     font-family: 'Ford_F-1', sans-serif;
+    top: 10px;
   }
   
   .title {
@@ -52,7 +64,7 @@
   }
 
   .title-blue {
-    color: var( --color-secondary);
+    color: white;
     font-size: 2.5rem; 
     font-weight: 500;
     line-height: 70px;
@@ -115,7 +127,7 @@
     }
 
     .title-blue {
-      color: var( --color-secondary);
+      color: white;
       font-size: 5.25rem; 
       font-weight: 500;
       line-height: 70px;
@@ -125,6 +137,8 @@
       font-size: 1.125rem;
     }
 
-   
+    .wraperButton{
+      width: 15%;
+    }
 }
   

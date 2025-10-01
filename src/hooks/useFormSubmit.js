@@ -24,6 +24,12 @@ const useFormSubmit = () => {
         requestData.append('telefono', formData.cellphone || '');
         requestData.append('provincia', formData.province || '');
         requestData.append('mensaje', formData.message || '');
+        requestData.append('origen', formData.origen || 'WEB AUTOSPECIAL');
+        requestData.append('suborigen', formData.suborigen || 'General');
+        
+        // Campos opcionales adicionales
+        if (formData.vehiculo) requestData.append('vehiculo', formData.vehiculo);
+        if (formData.sucursal) requestData.append('sucursal', formData.sucursal);
         
         // Agregar archivo si existe
         if (formData.pdfFile) {
@@ -37,7 +43,11 @@ const useFormSubmit = () => {
           email: formData.email || '',
           telefono: formData.cellphone || '',
           provincia: formData.province || '',
-          mensaje: formData.message || ''
+          mensaje: formData.message || '',
+          origen: formData.origen || 'WEB AUTOSPECIAL',
+          suborigen: formData.suborigen || 'General',
+          vehiculo: formData.vehiculo || '',
+          sucursal: formData.sucursal || ''
         });
       }
 

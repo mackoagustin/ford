@@ -55,7 +55,7 @@ const BannerCard = () => {
                 <div className={styles.wraper}>
                     <div className={styles.info}>
                         <div className={styles.wraperTitle}>
-                            <h3 className={styles.title}>Test  Drive </h3>
+                            <p className={styles.title}>Test  Drive </p>
                         </div>
                         <div className={styles.wraperText}>
                             <p className={styles.text}>Experimentá los últimos modelos 0km de Ford con nuestro Test Drive.</p>

@@ -79,7 +79,10 @@ function JoinTeam() {
             <p className="body-1-16 text-color-neutral-500">
             Completá los datos, adjuntá tu CV y nos pondremos en contacto a la brevedad.
             </p>
-            <FormPdf />
+            <FormPdf 
+              origen="WEB AUTOSPECIAL" 
+              suborigen="Sumate al Equipo - RR.HH." 
+            />
           </div>
   
           </>
@@ -109,7 +112,7 @@ function JoinTeam() {
             </div>
 
 
-            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '48px'}}>
+            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '0px'}}>
               <Button
                 as="a"
                 href="/quienes-somos/conocenos"
@@ -136,7 +139,7 @@ function JoinTeam() {
               </Button>
             </div>
             
-            <div className={style.wraperForm}>
+            <div className={style.wraperForm} style={{borderRadius: '16px'}}>
             <h3 className="H3 text-color-dark">
               Ponete en contacto con el 
               <span className="text-color-secondary"> departamento de RR.HH.</span>
@@ -144,7 +147,10 @@ function JoinTeam() {
             <p className="body-1-16 text-color-neutral-500">
             Completá los datos, adjuntá tu CV y nos pondremos en contacto a la brevedad.
             </p>
-            <FormPdf />
+            <FormPdf 
+              origen="WEB AUTOSPECIAL" 
+              suborigen="Sumate al Equipo - RR.HH." 
+            />
           </div>
             </>
 

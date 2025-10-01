@@ -25,14 +25,18 @@ const BannerHome = () => {
                           className={styles.imageLogo} 
                           loading="lazy"
                         />
+                        <div>
+                        <p className={styles.subTitle} style={{paddingBottom: '0px'}}>Ford Pro™ | Ventas Corporativas</p>
                         <p className={styles.subTitle}>Tu negocio en movimiento.</p>
+                        </div>
+                 
                         <div>
                         <Button
                             as="a"
                             href=""
                             variant="quarter"
                         >
-                            Saber más
+                            Conocer más
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -69,14 +73,18 @@ const BannerHome = () => {
                           className={styles.imageLogo} 
                           loading="lazy"
                         />
+                        <div>
+                        <p className={styles.subTitle} style={{paddingBottom: '-0px'}}>Ford Pro™ | Ventas Corporativas</p>
                         <p className={styles.subTitle}>Tu negocio en movimiento.</p>
+                        </div>
+                        
 
                          <Button
                             as="a"
                             href=""
                             variant="quarter"
                         >
-                            Saber más
+                            Conocer más
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"

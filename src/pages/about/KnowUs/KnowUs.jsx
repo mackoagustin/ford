@@ -27,7 +27,7 @@ function KnowUs() {
               Somos <span className='text-color-secondary'>Auto Special Ford</span> un concesionario oficial premium con un respaldo de más de <span className='text-color-secondary'>20 años de trayectoria</span>. 
             </h3>
             <p className="text-color-neutral-500 body-1-16">
-              Contamos con 5 sucursales ubicadas en Capital Federal y en Provincia de Buenos aires. Nuestro equipo está integrado por más de 100 profesionales con vocación al cliente. 
+              Contamos con 5 sucursales ubicadas en Capital Federal y en Provincia de Buenos Aires. Nuestro equipo está integrado por más de 100 profesionales con vocación al cliente. 
             </p>
           </div>
 
@@ -37,7 +37,7 @@ function KnowUs() {
 
           <div style={{padding: '32px 16px', margin: '0 auto'}}>
               <p className={`text-color-neutral-500 body-1-16 ${style.textCenter}`}>
-                Nuestra misión es darle a nuestros clientes todas las facilidades para que la compra de su auto sea lo más confortable y grata posible. Queremos superarnos día a día manteniendo nuestros altos valores de responsabilidad social, niveles de calidad, atención al cliente y el precio más conveniente para uno.
+                Nuestra misión es darle a nuestros clientes todas las facilidades para que la compra de su vehículo sea lo más confortable y grata posible. Queremos superarnos día a día manteniendo nuestros altos valores de responsabilidad social, niveles de calidad, atención al cliente y el precio más conveniente.
               </p>
             </div>
 
@@ -79,7 +79,7 @@ function KnowUs() {
                 Somos <span className='text-color-secondary'>Auto Special Ford</span> un concesionario oficial premium <br /> con un respaldo de más de <span className='text-color-secondary'>20 años de trayectoria</span>. 
               </h3>
               <p className={`text-color-neutral-500 body-1-16 ${style.textCenter}`}>
-              Contamos con 5 sucursales ubicadas en Capital Federal y en Provincia <br /> de Buenos aires. Nuestro equipo está integrado por más de 100 profesionales con vocación al cliente. 
+              Contamos con 5 sucursales ubicadas en Capital Federal y en Provincia <br /> de Buenos Aires. Nuestro equipo está integrado por más de 100 profesionales con vocación al cliente. 
               </p>
             </div>
 
@@ -89,12 +89,12 @@ function KnowUs() {
 
             <div style={{maxWidth: '972px',paddingTop: '48px', margin: '0 auto'}}>
               <p className={`text-color-neutral-500 body-1-16 ${style.textCenter}`}>
-                Nuestra misión es darle a nuestros clientes todas las facilidades para que la compra de su auto sea lo más confortable y grata posible. Queremos superarnos día a día manteniendo nuestros altos valores de responsabilidad social, niveles de calidad, atención al cliente y el precio más conveniente para uno.
+                Nuestra misión es darle a nuestros clientes todas las facilidades para que la compra de su vehículo sea lo más confortable y grata posible. Queremos superarnos día a día manteniendo nuestros altos valores de responsabilidad social, niveles de calidad, atención al cliente y el precio más conveniente.
               </p>
             </div>
 
 
-            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '48px'}}>
+            <div style= {{margin: '0 auto', textAlign: 'center', paddingTop: '48px', paddingBottom: '80px'}}>
               <Button
                 as="a"
                 href="/quienes-somos/sumate"

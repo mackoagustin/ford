@@ -73,12 +73,12 @@ function Navbar() {
                       <p className='label-12-16'>Hasta 60%</p>
                 </div>
                 </Link></li>
-                {/* <li><Link to="" onClick={closeMenu}>
+                <li><Link to="/financiacion/ford-credit#leasing" onClick={closeMenu}>
                       <div className={styles.wraperFinance}>
                           <p className='boton-16-24'>Leasing</p>
                           <p className='label-12-16'>Hasta 100%</p>
                       </div>
-                </Link></li> */}
+                </Link></li>
 
                 <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
                       <div className={styles.wraperFinance}>
@@ -94,7 +94,7 @@ function Navbar() {
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('postventa')} className={styles.wraperLink}>
                 <div className={`${styles.iconWrapper} ${styles.iconWrapperSecond}`}>
-                  Post venta
+                Posventa
                   <svg
                     className="chevron-icon"
                     style={{
@@ -221,12 +221,12 @@ function Navbar() {
                             <p className='label-12-16'>Hasta 60%</p>
                           </div>
                           </Link></li>
-                          {/* <li><Link to="" onClick={closeMenu}>
+                      <li><Link to="/financiacion/ford-credit#leasing" onClick={closeMenu}>
                            <div className={styles.wraperFinance}>
                            <p className='boton-16-24'>Leasing</p>
                            <p className='label-12-16'>Hasta 100%</p>
                           </div>
-                      </Link></li> */}
+                      </Link></li>
                       <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
                            <div className={styles.wraperFinance}>
                            <p className='boton-16-24'>Plan Ovalo</p>
@@ -246,7 +246,7 @@ function Navbar() {
                     className={styles.wraperLink}
                   >
                     <div className={styles.iconWrapper}>
-                      Post venta
+                    Posventa
                      <svg
                           className="chevron-icon"
                           style={{

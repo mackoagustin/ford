@@ -3,14 +3,14 @@ import styles from './BannerVehicleKnow.module.css'
 import Button from "../Button/Button"; 
 import useIsMobile from '../../hook/useIsMobile'
 
-const BannerVehicleKnow = () => {
+const BannerVehicleKnow = ({ backgroundImage }) => {
 
     const isMobile = useIsMobile();
 
     return (
         <div>
             {isMobile ? (
-                <div className={styles.wraper}>
+                <div className={styles.wraper} style={{ backgroundImage: `url(${backgroundImage})` }}>
                     <div className={styles.info}>
                         <h3 className={styles.title}>Veni a <br /> Conocerla</h3>
                         <div className={styles.buttonWrapper}>
@@ -43,7 +43,7 @@ const BannerVehicleKnow = () => {
                     </div>
                 </div>
             ): (
-                <div className={styles.wraper}>
+                <div className={styles.wraper} style={{ backgroundImage: `url(${backgroundImage})` }}>
                     <div className={styles.info}>
                         <div className={styles.wraperTitle}>
                             <h3 className={styles.title}>Veni a <br /> Conocerla</h3>

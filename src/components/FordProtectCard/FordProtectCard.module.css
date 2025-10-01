@@ -16,6 +16,7 @@ h4, p {
     height: 180px;
     width: auto;
     border-radius: 16px;
+    object-fit: cover;
 }
 
 .buttonWrapper {
@@ -56,7 +57,7 @@ h4, p {
     .image {
         height: auto;
         width: 600px;
-        border-radius: 16px 16px 0px 0px;
+        border-radius: 16px;
     }
     .wraperTitle {
         text-align: center;
@@ -91,7 +92,7 @@ h4, p {
     .image {
         height: 180px;
         width: 374px;
-        border-radius: 16px 16px 0px 0px;
+        border-radius: 16px;
     }
     .wraperTitle {
         text-align: center;

@@ -10,14 +10,20 @@ import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
 
 
-const Form = ({ backgroundColor = "var(--color-neutral-100)" }) => {
+const Form = ({ 
+  backgroundColor = "var(--color-neutral-100)",
+  origen = "WEB AUTOSPECIAL",
+  suborigen = "Formulario General"
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     cellphone: "",
     email: "",
     province: "",
     vehicle: "",
-    message: ""
+    message: "",
+    origen: origen,
+    suborigen: suborigen
   });
 
   const [errors, setErrors] = useState({});

@@ -9,14 +9,21 @@ import locationsData from "../../data/locations.json";
 import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
 
-const FormParts = ({ backgroundColor = "var(--color-neutral-100)" }) => {
+const FormParts = ({ 
+  backgroundColor = "var(--color-neutral-100)",
+  origen = "WEB AUTOSPECIAL",
+  suborigen = "Formulario Repuestos"
+}) => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     cellphone: "",
     province: "",
     location: "",
-    message: ""
+    message: "",
+    origen: origen,
+    suborigen: suborigen,
+    sucursal: ""
   });
 
   const [errors, setErrors] = useState({});
@@ -93,7 +100,14 @@ const FormParts = ({ backgroundColor = "var(--color-neutral-100)" }) => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const updates = { [name]: value };
+    
+    // Si cambia location, también actualizar sucursal
+    if (name === 'location') {
+      updates.sucursal = value;
+    }
+    
+    setFormData({ ...formData, ...updates });
     
     // Limpiar error del campo cuando el usuario empiece a escribir
     if (isSubmitted && errors[name]) {

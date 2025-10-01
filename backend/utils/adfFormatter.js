@@ -37,74 +37,38 @@ export const formatToADF = (formData) => {
 
   // Mapear campos del formulario a la estructura ADF exacta requerida
   const adfXML = `<?ADF VERSION "1.0"?>
-
 <?XML VERSION "1.0"?>
-
 <adf>
-
 <prospect>
-
 <requestdate>${isoDate}</requestdate>
-
- 
 <vehicle>
-
 <year>${formData.anio || ''}</year>
-
 <make>${formData.marca || 'Ford'}</make>
-
 <model>${formData.modelo || ''}</model>
-
-<comments>(EN EL CASO DE NO PODER SEPARAR MARCA Y MODELO PONER TODO EL NOMBRE ACA)</comments>
-
+<comments>${formData.vehiculo || ''}</comments>
 </vehicle>
-
- 
 <customer>
-
 <contact>
-
 <name part="first" type="individual">${firstName}</name>
-
 <name part="last" type="individual">${lastName}</name>
-
 <email preferredcontact="1">${formData.email || ''}</email>
-
 <phone type="phone">${phoneNumber}</phone>
-
 <phone type="cellphone">${phoneNumber}</phone>
-
-<identification>${formData.identificacion || formData.dni || ''}</identification> IDENTIFICADOR
-
-<address type="home"> 
-
-<city>${city}</city>   LOCALIDAD
-
-</address> 
-
+<identification>${formData.identificacion || formData.dni || ''}</identification>
+<address type="home">
+<city>${city}</city>
+</address>
 </contact>
-
-<comments>${message || 'Información sobre el plan de financiación. Gracias'}</comments>
-
+<comments>${message}</comments>
 </customer>
-
 <vendor>
-
-<vendorname>${formData.vendedor || formData.concesionario || ''} (SI LO TIENE QUE RECIBIR ALGÚN VENDEDOR/SUCURSAL/SUPERVISOR/EQUIPO ESPECÍFICO, ACÁ SE PODRÍA EL EMAIL QUE TIENE REGISTRADO EN NUESTRO SISTEMA)</vendorname>
-
+<vendorname>${formData.vendedor || formData.concesionario || formData.sucursal || ''}</vendorname>
 </vendor>
-
- 
 <provider>
-
-<name>${formData.origen || 'Ford Web'}</name>
-
-<service>${formData.suborigen || formData.province || ''} (ACÁ SE PONE EL SUBORIGEN O NOMBRE DE CAMPAÑA SI LO DESEAN DIFERENCIAR)</service>
-
+<name>${formData.origen || 'WEB AUTOSPECIAL'}</name>
+<service>${formData.suborigen || 'General'}</service>
 </provider>
-
 </prospect>
-
 </adf>`;
 
   console.log('📄 XML ADF generado:\n', adfXML);

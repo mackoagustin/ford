@@ -26,7 +26,7 @@
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
             "financing": {
-                "vehicle":"NuevaMaverick",
+                "vehicle":"Nueva Maverick",
                 "ways": [
                     "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
                     "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km.",
@@ -53,7 +53,7 @@
         {
             "title":"Nueva Territory SEL",
             "text": "Tasa 19,90% a 18 meses (4)",
-            "image": "/img/fordcredit/transit_van.png",
+            "image": "/img/fordcredit/territory.png",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
             "financing": {

@@ -36,7 +36,7 @@ function Workshops() {
       ) : (
         <div className={`${styles["pt-60"]} ${styles["px-16"]} `}>
           <div className={styles.wraperText}> 
-            <h3 className="H2 text-color-dark text-center"> Respuesto
+            <h3 className="H2 text-color-dark text-center"> Repuestos
               <span className='text-color-secondary'> originales</span> y servicios
               <span className='text-color-secondary'> especializados</span>
             </h3>
@@ -59,18 +59,25 @@ function Workshops() {
       </div>
 
 
-      <div className={styles.wraperForm}>
-            <h3 className="H3 text-color-dark">
-              ¿Necesitás
-              <br />
-              <span className="text-color-secondary">solicitar turno?</span>
-            </h3>
-            <p className="body-1-16 text-color-neutral-500">
-              Completá los datos y nos pondremos en contacto a la brevedad.
-            </p>
-            <Form />
-          </div>
-      <Footer />
+      <div className={styles.wraperForm} style={{borderRadius: '16px'}} >
+        <h3 className="H3 text-color-dark">
+          ¿Necesitás
+          <br />
+          <span className="text-color-secondary">solicitar turno?</span>
+        </h3>
+        <p className="body-1-16 text-color-neutral-500">
+          Completá los datos y nos pondremos en contacto a la brevedad.
+        </p>
+        <Form 
+          origen="WEB AUTOSPECIAL" 
+          suborigen="Talleres" 
+        />
+       </div>
+
+       <div style={{marginTop: '80px'}}>
+       <Footer />
+       </div>
+
     </>
   );
 }
