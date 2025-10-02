@@ -1,20 +1,45 @@
-version: '3.8'
-
 services:
-  react:
+  # Frontend React + Vite
+  frontend:
     image: node:18-alpine
-    container_name: ford-app-dev
+    container_name: ford-frontend-dev
     working_dir: /app
     volumes:
       - .:/app
+      - /app/node_modules
     ports:
-      - "3000:3000"  # puerto que Vite usa por defecto
-    command: npm run dev
+      - "5173:5173"  # Puerto de Vite
+    command: sh -c "npm install && npm run dev -- --host"
     environment:
       - NODE_ENV=development
+      - VITE_API_URL=http://backend:3001
     networks:
-      - react-network
+      - ford-network
+    depends_on:
+      - backend
+
+  # Backend Node.js + Express
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: ford-backend-dev
+    working_dir: /app
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+      - CORS_ORIGIN=http://localhost:5173,http://localhost:3000
+      - SMTP_USER=${SMTP_USER}
+      - SMTP_PASS=${SMTP_PASS}
+    networks:
+      - ford-network
+    restart: unless-stopped
 
 networks:
-  react-network:
+  ford-network:
     driver: bridge

@@ -35,34 +35,37 @@ export const formatToADF = (formData) => {
     mensaje: message
   });
 
-  // Mapear campos del formulario a la estructura ADF exacta requerida
+  // Mapear campos del formulario a la estructura ADF 1.0 estándar oficial
   const adfXML = `<?ADF VERSION "1.0"?>
 <?XML VERSION "1.0"?>
 <adf>
 <prospect>
 <requestdate>${isoDate}</requestdate>
-<vehicle>
+<vehicle interest="buy" status="new">
 <year>${formData.anio || ''}</year>
 <make>${formData.marca || 'Ford'}</make>
 <model>${formData.modelo || ''}</model>
-<comments>${formData.vehiculo || ''}</comments>
+<vin>${formData.vin || ''}</vin>
+<stock>${formData.stock || ''}</stock>
+<comments>${formData.vehiculo || message || ''}</comments>
 </vehicle>
 <customer>
 <contact>
 <name part="first" type="individual">${firstName}</name>
 <name part="last" type="individual">${lastName}</name>
 <email preferredcontact="1">${formData.email || ''}</email>
-<phone type="phone">${phoneNumber}</phone>
-<phone type="cellphone">${phoneNumber}</phone>
-<identification>${formData.identificacion || formData.dni || ''}</identification>
+<phone type="voice" time="nopreference">${phoneNumber}</phone>
 <address type="home">
 <city>${city}</city>
+<regioncode>${formData.provincia || formData.province || ''}</regioncode>
+<postalcode>${formData.codigoPostal || formData.postalCode || ''}</postalcode>
+<country>AR</country>
 </address>
 </contact>
 <comments>${message}</comments>
 </customer>
 <vendor>
-<vendorname>${formData.vendedor || formData.concesionario || formData.sucursal || ''}</vendorname>
+<vendorname>${formData.vendedor || formData.concesionario || formData.sucursal || 'Auto Special'}</vendorname>
 </vendor>
 <provider>
 <name>${formData.origen || 'WEB AUTOSPECIAL'}</name>
