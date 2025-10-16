@@ -83,7 +83,7 @@ function PlanOvalo() {
 
        {/* Formulario de asesoramiento */}
        {isMobile ? (
-          <div className={styles.wraper}>
+          <div className={styles.wraper} id="formulario-asesoramiento">
             <h3 className="H3 text-color-dark">
               ¿Necesitás
               <br />
@@ -98,7 +98,7 @@ function PlanOvalo() {
             />
           </div>
         ) : (
-          <div className={styles.wraper} style={{marginTop: '80px', borderRadius: '16px'}}>
+          <div className={styles.wraper} style={{marginTop: '80px', borderRadius: '16px'}} id="formulario-asesoramiento">
             <h3 className={`H3 text-color-dark ${styles.mb0} `}>
               ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
             </h3>

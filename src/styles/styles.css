@@ -26,6 +26,7 @@ body {
     src: url('../fonts/FordF1-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
+    font-display: swap; /* Muestra texto inmediatamente con fuente del sistema */
 }
 
 @font-face {
@@ -33,6 +34,7 @@ body {
     src: url('../fonts/FordF1-Semibold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -41,6 +43,7 @@ body {
     src: url('../fonts/FordF1-Medium.woff2') format('woff2');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -48,6 +51,7 @@ body {
     src: url('../fonts/FordF1-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -55,6 +59,7 @@ body {
     src: url('../fonts/FordF1-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 /* color */

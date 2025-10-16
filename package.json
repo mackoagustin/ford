@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:prod": "vite build --mode production",
+    "build:prod": "npm run optimize-images && vite build --mode production",
     "lint": "eslint .",
     "preview": "vite preview",
     "dev:full": "concurrently \"cd backend && npm run dev\" \"npm run dev\"",
-    "start:backend": "cd backend && npm start"
+    "start:backend": "cd backend && npm start",
+    "optimize-images": "node optimize-images.js"
   },
   "dependencies": {
     "classnames": "^2.5.1",
@@ -29,6 +30,9 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "vite": "^6.3.5"
+    "glyphhanger": "^5.0.0",
+    "sharp": "^0.34.4",
+    "vite": "^6.3.5",
+    "vite-plugin-compression": "^0.5.1"
   }
 }

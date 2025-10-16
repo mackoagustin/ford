@@ -47,9 +47,16 @@ const PlanOvaloCard = ( { item }) => {
       <div className={styles.buttonWrapper}>
         <Button
           as="a"
-          href={item.ctaLink}
+          href="#formulario-asesoramiento"
           rel="noopener noreferrer"
           variant="primary"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById('formulario-asesoramiento').scrollIntoView({ 
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }}
         >
           {item.ctaText}
           <svg

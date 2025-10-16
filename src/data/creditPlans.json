@@ -4,7 +4,7 @@
             "image" : "/img/credit/rangerXL_1.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$314.807",
+            "price" : "$354.875",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 Cuotas fijas (de la 2 a la 13).",
@@ -18,7 +18,7 @@
             "image" : "/img/credit/rangerXL_2.png",
             "title" : "Ranger XLS V6 4WD",
             "text" : "Cuotas desde ",
-            "price" : "$471.572",
+            "price" : "$497.904",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -32,7 +32,7 @@
             "image" : "/img/credit/rangerXL_3.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$603.238",
+            "price" : "$633.705",
             "cuotes" : "100% financiado en 84 cuotas",
             "features" : [
                 "Adjudicación asegurada cuota nº5.",
@@ -45,7 +45,7 @@
             "image" : "/img/credit/ranger_4x4.png",
             "title" : "Ranger XL 4x4 MT",
             "text" : "Cuotas desde ",
-            "price" : "$5.275.723",
+            "price" : "$5.486.751",
             "cuotes" : "100% financiado en 10 cuotas",
             "features" : [],
             "ctaLink" : "",
@@ -55,7 +55,7 @@
             "image" : "/img/credit/territory_sel.png",
             "title" : "Nueva Territory SEL",
             "text" : "Cuotas desde ",
-            "price" : "$409.258",
+            "price" : "$429.721",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "6 cuotas fijas (de la 2 a la 7).",
@@ -68,7 +68,7 @@
             "image" : "/img/credit/maverick.png",
             "title" : "Maverick XLT",
             "text" : "Cuotas desde ",
-            "price" : "$483.275",
+            "price" : "$492.941",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -79,9 +79,9 @@
         },
         {
             "image" : "/img/credit/transit.png",
-            "title" : "Transit",
+            "title" : "Nueva Transit Van Mediana TN",
             "text" : "Cuotas desde",
-            "price" : "$607.915",
+            "price" : "$638.310",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "Cuotas fijas.",
