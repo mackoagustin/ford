@@ -33,7 +33,7 @@ function FordPro() {
             <>
             <div className={`${style["pt-60"]} ${style["px-16"]}`}>
               <h3 className="H3">
-                ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
+                ¿Qué es <span className="text-color-secondary"> Ford Pro™?</span>
               </h3>
               <p className="text-color-neutral-500 subtitle-20">
                 Ford Pro, es la división de vehículos comerciales de Ford. Es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. 
@@ -67,7 +67,7 @@ function FordPro() {
             <>
             <div className={`${style["pt-60"]} ${style["px-16"]}`}>
                   <h3 className={`H3 ${style.textCenter}`}>
-                    ¿Qués es <span className="text-color-secondary"> Ford Pro™?</span>
+                    ¿Qué es <span className="text-color-secondary"> Ford Pro™?</span>
                   </h3>
                   <p className={`text-color-neutral-500 subtitle-20 ${style.textCenter}`}>
                     Ford Pro, es la división de vehículos comerciales de Ford. Es un ecosistema que incluye pilares de productos y servicios, diseñados para satisfacer las necesidades del cliente comercial. 

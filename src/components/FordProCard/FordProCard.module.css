@@ -107,9 +107,15 @@ h4, p {
         padding-bottom: 30px;
     }
     .image {
-        height: 279px;
-        width: 473px;
-        border-radius: 16px 16px 0px 0px;
+        height: 310px;
+        width: 473px !important;
+        max-width: 473px !important;
+        min-width: 473px !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        border-radius: 16px;
+        display: block !important;
+
     }
     .wraperTitle {
         text-align: left;

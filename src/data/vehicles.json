@@ -303,6 +303,7 @@
          "categories": ["suv"],
          "fordPro": false,
          "isAccesory": true,
+         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/nueva-bronco/pdf/far-nueva-bronco-ficha-tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "El ícono de la <span>aventura.</span>",
