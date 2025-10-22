@@ -121,7 +121,7 @@ const SliderVehicle = () => {
         {filteredVehicles.map((vehicle, index) => (
           <SwiperSlide key={index}>
             <a href={vehicle.detailLink} className="vehicle-slide" r>
-              <img src={vehicle.image} alt={vehicle.title} className="vehicle-image" />
+              <img src={vehicle.image} alt={vehicle.title} className="vehicle-image" loading="lazy" />
               <div className="slide-content">
                 <h3 className='H3'>{vehicle.title}</h3>
                 <p className='body-1-16 text-color-neutral-500'>{vehicle.text}</p>

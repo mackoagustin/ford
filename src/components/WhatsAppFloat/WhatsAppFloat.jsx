@@ -48,7 +48,7 @@ const WhatsAppFloat = ({
   return (
     <div className={`${styles.whatsappFloat} ${getPositionClass()}`} onClick={handleWhatsAppClick}>
       <div className={styles.whatsappFloatButton}>
-        <img   className={styles.whatsappIcon} src="/img/logo/ws.png" alt="Icono de Whatsapp" />
+        <img   className={styles.whatsappIcon} src="/img/logo/ws.png" alt="Icono de Whatsapp" loading="lazy" />
       </div>
       <span className={styles.whatsappTooltip}>¡Contáctanos por WhatsApp!</span>
     </div>

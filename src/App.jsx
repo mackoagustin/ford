@@ -1,77 +1,84 @@
 // src/App.jsx
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './hook/ScrollToTop';
 
 import Navbar from './components/Navbar/Navbar';
-import WhatsAppFloat from './components/WhatsAppFloat/WhatsAppFloat';
+import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
+// Lazy load de componentes pesados
+const WhatsAppFloat = lazy(() => import('./components/WhatsAppFloat/WhatsAppFloat'));
 
-import Home from './pages/Home';
-import Vehicles from './pages/Vehicles';
-import Financing from './pages/Financing';
-import FordPro from './pages/FordPro';
-import PostSale from './pages/PostSale';
-import AboutUs from './pages/AboutUs';
-import Branches from './pages/Branches';
+// Lazy load de páginas principales
+const Home = lazy(() => import('./pages/Home'));
+const Vehicles = lazy(() => import('./pages/Vehicles'));
+const Financing = lazy(() => import('./pages/Financing'));
+const FordPro = lazy(() => import('./pages/FordPro'));
+const PostSale = lazy(() => import('./pages/PostSale'));
+const AboutUs = lazy(() => import('./pages/AboutUs'));
+const Branches = lazy(() => import('./pages/Branches'));
 
-// Subrutas
-import FordCredit from './pages/financing/FordCredit';
-import PlanOvalo from './pages/financing/PlanOvalo';
-import AdjudicationActs from './pages/financing/AdjudicationActs';
-import ResultActs from './pages/financing/ResultActs';
-import Workshops from './pages/postsale/Workshops';
-import RequestTurn from './pages/postsale/RequestTurn';
-import Services from './pages/postsale/Services';
-import Parts from './pages/postsale/Parts';
-import Accessories from './pages/postsale/Accesories';
-import FAQ from './pages/postsale/FAQ';
-import FordProtect from './pages/postsale/FordProtect';
-import KnowUs from './pages/about/KnowUs';
-import JoinTeam from './pages/about/JoinTeam/JoinTeam';
-import News from './pages/about/News';
-import Test from './pages/test';
+// Lazy load de subrutas
+const FordCredit = lazy(() => import('./pages/financing/FordCredit'));
+const PlanOvalo = lazy(() => import('./pages/financing/PlanOvalo'));
+const AdjudicationActs = lazy(() => import('./pages/financing/AdjudicationActs'));
+const ResultActs = lazy(() => import('./pages/financing/ResultActs'));
+const Workshops = lazy(() => import('./pages/postsale/Workshops'));
+const RequestTurn = lazy(() => import('./pages/postsale/RequestTurn'));
+const Services = lazy(() => import('./pages/postsale/Services'));
+const Parts = lazy(() => import('./pages/postsale/Parts'));
+const Accessories = lazy(() => import('./pages/postsale/Accesories'));
+const FAQ = lazy(() => import('./pages/postsale/FAQ'));
+const FordProtect = lazy(() => import('./pages/postsale/FordProtect'));
+const KnowUs = lazy(() => import('./pages/about/KnowUs'));
+const JoinTeam = lazy(() => import('./pages/about/JoinTeam/JoinTeam'));
+const News = lazy(() => import('./pages/about/News'));
+const Test = lazy(() => import('./pages/test'));
 
-// Dinámicas
-import VehicleDetail from './pages/Vehicle/VehicleDetail';
+// Lazy load de páginas dinámicas
+const VehicleDetail = lazy(() => import('./pages/Vehicle/VehicleDetail'));
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/vehiculos" element={<Vehicles />} />
-        <Route path="/vehiculos/:id" element={<VehicleDetail />} />
-        <Route path="/vehiculos/test-drive" element={<Test />} />
-        <Route path="/financiacion" element={<Financing />} />
-        <Route path="/financiacion/ford-credit" element={<FordCredit />} />
-        <Route path="/financiacion/plan-ovalo" element={<PlanOvalo />} />
-        <Route path="/financiacion/plan-ovalo/actos-de-adjudicacion" element={<AdjudicationActs />} />
-        <Route path="/financiacion/plan-ovalo/resultados-actos-de-adjudicacion" element={<ResultActs />} />
-        <Route path="/ford-pro" element={<FordPro />} />
-        <Route path="/postventa" element={<PostSale />} />
-        <Route path="/postventa/talleres" element={<Workshops />} />
-        <Route path="/postventa/solicitar-turno" element={<RequestTurn />} />
-        <Route path="/postventa/servicios" element={<Services />} />
-        <Route path="/postventa/repuestos" element={<Parts />} />
-        <Route path="/postventa/accesorios" element={<Accessories />} />
-        {/* <Route path="/postventa/preguntas-frecuentes" element={<FAQ />} /> */}
-        <Route path="/postventa/ford-protect" element={<FordProtect />} />
-        <Route path="/quienes-somos" element={<AboutUs />} />
-        <Route path="/quienes-somos/conocenos" element={<KnowUs />} />
-        <Route path="/quienes-somos/sumate" element={<JoinTeam />} />
-        <Route path="/quienes-somos/novedades" element={<News />} />
-        <Route path="/sucursales" element={<Branches />} />
-      </Routes>
+      <Suspense fallback={<LoadingSpinner />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/vehiculos" element={<Vehicles />} />
+          <Route path="/vehiculos/:id" element={<VehicleDetail />} />
+          <Route path="/vehiculos/test-drive" element={<Test />} />
+          <Route path="/financiacion" element={<Financing />} />
+          <Route path="/financiacion/ford-credit" element={<FordCredit />} />
+          <Route path="/financiacion/plan-ovalo" element={<PlanOvalo />} />
+          <Route path="/financiacion/plan-ovalo/actos-de-adjudicacion" element={<AdjudicationActs />} />
+          <Route path="/financiacion/plan-ovalo/resultados-actos-de-adjudicacion" element={<ResultActs />} />
+          <Route path="/ford-pro" element={<FordPro />} />
+          <Route path="/postventa" element={<PostSale />} />
+          <Route path="/postventa/talleres" element={<Workshops />} />
+          <Route path="/postventa/solicitar-turno" element={<RequestTurn />} />
+          <Route path="/postventa/servicios" element={<Services />} />
+          <Route path="/postventa/repuestos" element={<Parts />} />
+          <Route path="/postventa/accesorios" element={<Accessories />} />
+          {/* <Route path="/postventa/preguntas-frecuentes" element={<FAQ />} /> */}
+          <Route path="/postventa/ford-protect" element={<FordProtect />} />
+          <Route path="/quienes-somos" element={<AboutUs />} />
+          <Route path="/quienes-somos/conocenos" element={<KnowUs />} />
+          <Route path="/quienes-somos/sumate" element={<JoinTeam />} />
+          <Route path="/quienes-somos/novedades" element={<News />} />
+          <Route path="/sucursales" element={<Branches />} />
+        </Routes>
+      </Suspense>
       
       {/* Componente WhatsApp flotante que aparece en todas las páginas */}
-      <WhatsAppFloat 
-        phoneNumber="5491126633000"
-        message="Hola, me gustaría obtener más información sobre Ford"
-        position="bottom-right"
-      />
+      <Suspense fallback={<div></div>}>
+        <WhatsAppFloat 
+          phoneNumber="5491126633000"
+          message="Hola, me gustaría obtener más información sobre Ford"
+          position="bottom-right"
+        />
+      </Suspense>
     </Router>
   );
 }

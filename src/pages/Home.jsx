@@ -1,6 +1,5 @@
 // src/pages/Home.jsx
-import React, { useState, useEffect } from 'react';
-import Footer from '../components/Footer/Footer';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import SliderVehicleHome from '../components/SliderVehicle/SliderVehicleHome';
 import SearchBar from '../components/SearchBar/SearchBar';
 import styles from './Home.module.css';
@@ -8,9 +7,13 @@ import vehiclesData from '../data/vehicles.json';
 import BannerHome from '../components/BannerHome/BannerHome';
 import useIsMobile from '../hook/useIsMobile';
 import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
-import Map from '../components/Map/Map';
 import Button from '../components/Button/Button';
 import BannerHomeSlider from '../components/BannerHomeSlider/BannerHomeSlider';
+import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
+
+// Lazy load de componentes pesados
+const Footer = lazy(() => import('../components/Footer/Footer'));
+const Map = lazy(() => import('../components/Map/Map'));
 
 
 function Home() {
@@ -121,9 +124,13 @@ function Home() {
         
       </div>
 
-      <Map />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Map />
+      </Suspense>
 
-      <Footer />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

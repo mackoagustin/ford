@@ -12,6 +12,7 @@ const WorkshopCard = ({ item }) => {
       <img className={styles.image} 
           src={item.image} 
           alt="Location" 
+          loading="lazy"
           onClick={() => window.open(item.google_maps_link, '_blank')}
           style={{ cursor: 'pointer' }}
         />
