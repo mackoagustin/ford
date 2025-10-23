@@ -13,7 +13,7 @@ const BannerHome = () => {
            {isMobile ? (
                 <div className={styles.wraper}>
                     <img 
-                      src="/img/banners/fordPro.png" 
+                      src="/img/banners/fordPro.jpg" 
                       alt="Ford Pro" 
                       className={styles.image} 
                       loading="lazy"
@@ -61,7 +61,7 @@ const BannerHome = () => {
            ):(
              <div className={styles.wraper}>
                     <img 
-                      src="/img/banners/fordPro.png" 
+                      src="/img/banners/fordPro.jpg" 
                       alt="Ford Pro" 
                       className={styles.image} 
                       loading="lazy"
