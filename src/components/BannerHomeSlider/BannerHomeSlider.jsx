@@ -37,6 +37,8 @@ const BannerHomeSlider = () => {
                                 src={banner.image} 
                                 className={styles.image}
                                 alt={`Banner Home Slider ${index + 1}`}
+                                loading={index === 0 ? "eager" : "lazy"}
+                                fetchPriority={index === 0 ? "high" : "auto"}
                             />
                             <div className={styles.contentOverlay}>
                                 <div className={styles.textContainer}>

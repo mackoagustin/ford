@@ -6,6 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Autospecial</title>
     
+    <!-- Preload de imágenes críticas del LCP -->
+    <link rel="preload" as="image" href="/img/banners/home/territory.png">
+    <link rel="preload" as="image" href="/img/banners/home/everest.png">
+    <link rel="preload" as="image" href="/img/banners/home/ranger.png">
+    
+    <!-- Preload de fuentes críticas -->
+    <link rel="preload" href="/src/fonts/FordF1-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/src/fonts/FordF1-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- DNS Prefetch para dominios externos -->
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//connect.facebook.net">
+    <link rel="dns-prefetch" href="//s.pinimg.com">
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBZBC9QL"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- Meta Pixel (noscript) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1468969691163431&ev=PageView&noscript=1"
+    /></noscript>
+    
+    <!-- Pinterest (noscript) -->
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://ct.pinterest.com/v3/?event=init&tid=2613548876217&pd[em]=<hashed_email_address>&noscript=1" />
+    </noscript>
+    
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Scripts de tracking movidos al final para optimizar renderizado -->
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -43,7 +78,7 @@
     !function(e){if(!window.pintrk){window.pintrk = function () {
     window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
       n=window.pintrk;n.queue=[],n.version="3.0";var
-      t=document.createElement("script");t.async=!0,t.src=e;var
+      t=document.createElement("script");t.async=!0;t.src=e;var
       r=document.getElementsByTagName("script")[0];
       r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
     pintrk('load', '2613548876217', {em: '<user_email_address>'});
@@ -57,25 +92,5 @@
     event_id: 'eventId0001'
     });
     </script>
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBZBC9QL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
-    <!-- Meta Pixel (noscript) -->
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1468969691163431&ev=PageView&noscript=1"
-    /></noscript>
-    
-    <!-- Pinterest (noscript) -->
-    <noscript>
-    <img height="1" width="1" style="display:none;" alt=""
-      src="https://ct.pinterest.com/v3/?event=init&tid=2613548876217&pd[em]=<hashed_email_address>&noscript=1" />
-    </noscript>
-    
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
