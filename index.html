@@ -14,10 +14,11 @@
     <link rel="preload" href="/src/fonts/FordF1-Regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/src/fonts/FordF1-Bold.woff2" as="font" type="font/woff2" crossorigin>
     
-    <!-- DNS Prefetch para dominios externos -->
-    <link rel="dns-prefetch" href="//www.googletagmanager.com">
-    <link rel="dns-prefetch" href="//connect.facebook.net">
-    <link rel="dns-prefetch" href="//s.pinimg.com">
+    <!-- DNS Prefetch solo para recursos críticos -->
+    <link rel="dns-prefetch" href="//www.google.com">
+    
+    <!-- Preconnect solo para recursos críticos -->
+    <link rel="preconnect" href="https://www.google.com">
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -39,57 +40,84 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     
-    <!-- Scripts de tracking movidos al final para optimizar renderizado -->
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TBZBC9QL');</script>
-    <!-- End Google Tag Manager -->
-    
-    <!-- Meta Pixel Code -->
+    <!-- Scripts de tracking optimizados - Carga condicional y diferida -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1468969691163431');
-    fbq('track', 'PageView');
-    </script>
-    <!-- End Meta Pixel Code -->
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VS5EWDQFM4"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-VS5EWDQFM4');
-    </script>
-    
-    <!-- Pinterest Tag -->
-    <script>
-    !function(e){if(!window.pintrk){window.pintrk = function () {
-    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
-      n=window.pintrk;n.queue=[],n.version="3.0";var
-      t=document.createElement("script");t.async=!0;t.src=e;var
-      r=document.getElementsByTagName("script")[0];
-      r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-    pintrk('load', '2613548876217', {em: '<user_email_address>'});
-    pintrk('page');
-    </script>
-    <!-- end Pinterest Tag -->
-    
-    <!-- Pinterest Page View Event -->
-    <script>
-    pintrk('track', 'pagevisit', {
-    event_id: 'eventId0001'
-    });
+      // Sistema de carga condicional de scripts
+      window.trackingScripts = {
+        loaded: false,
+        queue: [],
+        
+        // Cargar scripts solo cuando se necesiten
+        loadOnDemand: function() {
+          if (this.loaded) return;
+          
+          // Cargar solo después de interacción del usuario o 5 segundos
+          const loadScripts = () => {
+            if (this.loaded) return;
+            this.loaded = true;
+            
+            // Google Tag Manager
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-TBZBC9QL');
+            
+            // Meta Pixel
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '1468969691163431');
+            fbq('track', 'PageView');
+            
+            // Google Analytics
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-VS5EWDQFM4');
+            
+            // Pinterest
+            !function(e){if(!window.pintrk){window.pintrk = function () {
+            window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+              n=window.pintrk;n.queue=[],n.version="3.0";var
+              t=document.createElement("script");t.async=!0;t.src=e;var
+              r=document.getElementsByTagName("script")[0];
+              r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+            pintrk('load', '2613548876217', {em: '<user_email_address>'});
+            pintrk('page');
+            pintrk('track', 'pagevisit', {event_id: 'eventId0001'});
+          };
+          
+          // Cargar después de interacción del usuario
+          const events = ['mousedown', 'mousemove', 'keypress', 'scroll', 'touchstart', 'click'];
+          const loadOnInteraction = () => {
+            events.forEach(event => {
+              document.removeEventListener(event, loadOnInteraction, true);
+            });
+            loadScripts();
+          };
+          
+          events.forEach(event => {
+            document.addEventListener(event, loadOnInteraction, true);
+          });
+          
+          // Fallback: cargar después de 10 segundos si no hay interacción
+          setTimeout(loadScripts, 10000);
+        }
+      };
+      
+      // Inicializar carga condicional
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          window.trackingScripts.loadOnDemand();
+        });
+      } else {
+        window.trackingScripts.loadOnDemand();
+      }
     </script>
   </body>
 </html>

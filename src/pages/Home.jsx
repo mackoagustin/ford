@@ -1,5 +1,5 @@
 // src/pages/Home.jsx
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { useState, useEffect, Suspense, lazy, useCallback } from 'react';
 import SliderVehicleHome from '../components/SliderVehicle/SliderVehicleHome';
 import SearchBar from '../components/SearchBar/SearchBar';
 import styles from './Home.module.css';
@@ -10,6 +10,7 @@ import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
 import Button from '../components/Button/Button';
 import BannerHomeSlider from '../components/BannerHomeSlider/BannerHomeSlider';
 import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
+import useWebWorker from '../hooks/useWebWorker';
 
 // Lazy load de componentes pesados
 const Footer = lazy(() => import('../components/Footer/Footer'));
@@ -18,6 +19,35 @@ const Map = lazy(() => import('../components/Map/Map'));
 
 function Home() {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [processedVehicles, setProcessedVehicles] = useState([]);
+  
+  // Web Worker para procesar datos pesados
+  const { postMessage, onMessage, isLoading: workerLoading } = useWebWorker(
+    '../workers/dataProcessor.worker.js'
+  );
+
+  // Procesar vehículos usando Web Worker
+  const processVehiclesData = useCallback(() => {
+    if (vehiclesData && vehiclesData.length > 0) {
+      postMessage({ type: 'PROCESS_VEHICLES', data: vehiclesData });
+    }
+  }, [postMessage]);
+
+  // Escuchar mensajes del worker
+  useEffect(() => {
+    const cleanup = onMessage((data) => {
+      if (data.type === 'VEHICLES_PROCESSED') {
+        setProcessedVehicles(data.data);
+      }
+    });
+    
+    return cleanup;
+  }, [onMessage]);
+
+  // Procesar datos cuando el componente se monta
+  useEffect(() => {
+    processVehiclesData();
+  }, [processVehiclesData]);
   const [filteredVehicles, setFilteredVehicles] = useState(vehiclesData.vehicles);
 
   useEffect(() => {
