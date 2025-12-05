@@ -23,7 +23,7 @@ const BannerDoubleButton = ({data}) => {
             setIsModalOpen(true);
         } else if (data.ctaLinkSecond === "whatsapp") {
             e.preventDefault();
-            const phoneNumber = "5491126633000";
+            const phoneNumber = "5491135866256";
             const message = "Hola quiero solicitar un turno";
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');

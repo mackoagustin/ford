@@ -25,7 +25,7 @@ const BannerCard = () => {
                             
                             <Button
                                 as="a"
-                                href="https://api.whatsapp.com/send/?phone=5491126633000&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
+                                href="https://api.whatsapp.com/send/?phone=5491135866256&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
                                 variant="secondary"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -70,7 +70,7 @@ const BannerCard = () => {
                             </Button>
                             <Button
                                 as="a"
-                                href="https://api.whatsapp.com/send/?phone=5491126633000&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
+                                href="https://api.whatsapp.com/send/?phone=5491135866256&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
                                 variant="secondary"
                                 target="_blank"
                                 rel="noopener noreferrer"

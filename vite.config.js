@@ -24,11 +24,8 @@ export default defineConfig({
     }),
   ],
   build: {
-    // Optimizaciones de build
+    // Optimizaciones de build simplificadas
     rollupOptions: {
-      treeshake: {
-        moduleSideEffects: false
-      },
       output: {
         manualChunks: (id) => {
           // Separar vendor chunks más granularmente
@@ -42,10 +39,8 @@ export default defineConfig({
             if (id.includes('swiper')) {
               return 'vendor-swiper';
             }
-            if (id.includes('classnames')) {
-              return 'vendor-utils';
-            }
-            return 'vendor-other';
+            // Todos los demás vendors van al vendor-react para evitar problemas
+            return 'vendor-react';
           }
           
           // Separar componentes por funcionalidad
@@ -65,22 +60,15 @@ export default defineConfig({
       }
     },
     // Optimizaciones adicionales para reducir Script Evaluation
-    target: 'es2020',
+    target: 'es2015',
     minify: 'terser',
     terserOptions: {
       compress: {
         drop_console: true,
         drop_debugger: true,
-        pure_funcs: ['console.log', 'console.info', 'console.debug'],
-        passes: 2, // Múltiples pasos de optimización
-      },
-      mangle: {
-        properties: {
-          regex: /^_/
-        }
       }
     },
-    chunkSizeWarningLimit: 500,
+    chunkSizeWarningLimit: 1000,
     // Optimizaciones para reducir parsing
     sourcemap: false
   },

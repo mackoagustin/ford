@@ -39,8 +39,8 @@ const VehiclesCard = ( { item }) => {
           style={{ cursor: 'pointer' }}
         />
         <div  className={styles.info}>
-            <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
-            <p className="text-color-neutral-600 body-1-16" >{item.text}</p>
+            <h4 className={`${styles.locationName} H4`} style={{ marginTop: '0px', marginBottom: '0px' }}>{item.title}</h4>
+            <p className="text-color-neutral-600 body-1-16"  style={{ marginTop: '0px', marginBottom: '0px' }}>{item.text}</p>
         </div>
         <div className={styles.buttonWrapper}>
           <Button

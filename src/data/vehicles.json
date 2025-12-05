@@ -176,17 +176,17 @@
                 },
                 {
                     "title" : "Diseño",
-                    "image" : "/img/vehicles/Bronco/benefit_2.png",
+                    "image" : "/img/vehicles/nueva_bronco/benefit_2.png",
                     "text" : "Con su diseño emblemático, la Bronco Sport impresiona con un exterior robusto y un interior renovado que refleja fielmente el espíritu legendario de la aventura."
                 },
                 {
                     "title" : "Tecnología",
-                    "image" : "/img/vehicles/Bronco/benefit_3.png",
+                    "image" : "/img/vehicles/nueva_bronco/benefit_3.png",
                     "text" : "Equipada con innovadoras tecnologías que te acompañan en cada aventura, abriendo las puertas a nuevas experiencias."
                 },
                 {
                     "title" : "Seguridad",
-                    "image" : "/img/vehicles/Bronco/benefit_4.png",
+                    "image" : "/img/vehicles/nueva_bronco/benefit_4.png",
                     "text" : "Conducí con mayor seguridad gracias a Ford Co-Pilot 360. Incluye frenado automático de emergencia, control crucero adaptativo, sistema de centrado de carril y más."
                 }
             ]
@@ -1446,7 +1446,7 @@
                 },
                 {
                     "title" : "Tracción y transmisión",
-                    "feature":["4X2, 4X4 Alta y 4x4 Baja", "AT 10 velocidades"]
+                    "feature":["4X4"]
                 },
                 {
                     "title" : "Capacidad",

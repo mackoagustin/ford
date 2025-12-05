@@ -36,7 +36,7 @@ const VehicleCarCardSliderOrdered = ({ category }) => {
     return (
       <Swiper
         modules={[Pagination]}
-        spaceBetween={60}
+        spaceBetween={63}
         slidesPerView={1.2}
         loop={true}
         pagination={{ clickable: true }}

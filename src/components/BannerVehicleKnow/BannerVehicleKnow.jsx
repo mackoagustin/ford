@@ -16,7 +16,7 @@ const BannerVehicleKnow = ({ backgroundImage }) => {
                         <div className={styles.buttonWrapper}>
                             <Button
                                 as="a"
-                                href="https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive"
+                                href="https://wa.me/5491135866256?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive"
                                 variant="secondary"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -51,7 +51,7 @@ const BannerVehicleKnow = ({ backgroundImage }) => {
                         <div className={styles.buttonWrapper}>
                             <Button
                                 as="a"
-                                href="https://wa.me/5491126633000?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive"
+                                href="https://wa.me/5491135866256?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive"
                                 variant="secondary"
                                 target="_blank"
                                 rel="noopener noreferrer"
