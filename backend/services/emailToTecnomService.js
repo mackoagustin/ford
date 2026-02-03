@@ -31,35 +31,107 @@ export const sendEmailToTecnom = async (formData, options = {}) => {
     const customerName = formData.nombre || formData.name || 'Sin nombre';
     const currentDate = new Date().toLocaleDateString('es-AR');
     
+    // Determinar el destinatario según el tipo de formulario
+    let emailTo;
+    let emailContent = '';
+    let emailSubject = '';
+    
+    if (formData.suborigen === 'Sumate al Equipo - RR.HH.') {
+      // Emails específicos para formulario de RR.HH.
+      emailTo = 'rrhh@autospecial.com.ar, seleccion@autospecial.com.ar, mnavarro@autospecial.com.ar';
+      console.log('👥 Formulario de RR.HH. detectado - Enviando a 3 destinatarios: rrhh@autospecial.com.ar, seleccion@autospecial.com.ar, mnavarro@autospecial.com.ar');
+      
+      // Crear contenido legible en texto plano SOLO para RR.HH.
+      // Usar solo caracteres ASCII para evitar codificación quoted-printable
+      const nombre = formData.nombre || formData.name || 'No especificado';
+      const email = formData.email || 'No especificado';
+      const telefono = formData.telefono || formData.cellphone || 'No especificado';
+      const provincia = formData.provincia || formData.province || 'No especificado';
+      const mensaje = formData.mensaje || formData.message || 'Sin mensaje';
+      const tieneAdjunto = options.attachments && options.attachments.length > 0;
+      const nombresAdjuntos = tieneAdjunto 
+        ? options.attachments.map(a => a.filename || 'archivo').join(', ')
+        : 'Ninguno';
+      
+      emailContent = `
+=================================================================
+         NUEVA POSTULACION - RECURSOS HUMANOS
+=================================================================
+
+Nombre y Apellido: ${nombre}
+Email: ${email}
+Telefono: ${telefono}
+Provincia: ${provincia}
+
+Mensaje:
+${mensaje}
+
+Archivo adjunto: ${nombresAdjuntos}
+
+-----------------------------------------------------------------
+Fecha: ${currentDate}
+=================================================================
+      `.trim();
+      
+      emailSubject = `Nueva Postulacion RR.HH. - ${nombre} - ${currentDate}`;
+      
+    } else {
+      // Para TODOS los demás formularios (Formulario PDF y otros), usar XML ADF
+      // Definir el destinatario: Tecnom (gestor de emails)
+      emailTo = process.env.EMAIL_DESTINATION || 'wc+autospecial_web@tecnom.cloud';
+      emailContent = adfContent;
+      emailSubject = `Ford Web Lead - ${customerName} - ${currentDate}`;
+    }
+    
     // Configuración base del email
     const mailOptions = {
       from: process.env.SMTP_USER,
-      to: 'wc+autospecial_web@tecnom.cloud', // La casilla que ya tienes
-      subject: `Ford Web Lead - ${customerName} - ${currentDate}`,
-      text: adfContent, // XML ADF en texto plano como requiere Tecnom
-      headers: {
-        'X-Priority': '1',
-        'X-MSMail-Priority': 'High',
-        'Importance': 'high',
-        'Content-Type': 'text/plain; charset=UTF-8'
-      }
+      to: emailTo,
+      subject: emailSubject,
+      text: emailContent,
+      encoding: 'utf8'
     };
     
-    // Agregar archivos adjuntos si los hay
+    // Inicializar attachments array
+    if (!mailOptions.attachments) {
+      mailOptions.attachments = [];
+    }
+    
+    // Agregar archivos adjuntos originales primero
     if (options.attachments && options.attachments.length > 0) {
-      mailOptions.attachments = options.attachments;
+      mailOptions.attachments.push(...options.attachments);
       console.log('📎 Archivos adjuntos:', options.attachments.length);
     }
     
-    console.log('📧 Enviando email ADF XML a Tecnom...');
+    // Si es formato legible (RR.HH.), también adjuntar el XML ADF como referencia
+    if (formData.suborigen === 'Sumate al Equipo - RR.HH.') {
+      mailOptions.attachments.push({
+        filename: 'formulario-adf.xml',
+        content: adfContent,
+        contentType: 'application/xml'
+      });
+    }
+    
+    console.log('📧 Enviando email...');
     console.log('📤 Destinatario:', mailOptions.to);
-    console.log('📄 Contenido ADF XML:\n', adfContent);
-    console.log('📏 Longitud del contenido ADF:', adfContent.length, 'caracteres');
+    if (formData.suborigen === 'Sumate al Equipo - RR.HH.') {
+      console.log('📄 Formato: Texto legible para RR.HH.');
+    } else {
+      console.log('📄 Contenido ADF XML:\n', adfContent);
+      console.log('📏 Longitud del contenido ADF:', adfContent.length, 'caracteres');
+    }
     
     // Enviar el email
     const info = await transporter.sendMail(mailOptions);
     
-    console.log('✅ Email ADF XML enviado exitosamente a Tecnom');
+    // Log específico para RR.HH.
+    if (formData.suborigen === 'Sumate al Equipo - RR.HH.') {
+      console.log('✅ ✅ ✅ Email enviado exitosamente a los 3 destinatarios de RR.HH.');
+    } else {
+      console.log('✅ Email ADF XML enviado exitosamente a Tecnom');
+    }
+    
+    console.log('✅ Email enviado exitosamente');
     console.log('🆔 Message ID:', info.messageId);
     console.log('📧 Respuesta del servidor:', info.response);
     

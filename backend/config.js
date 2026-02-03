@@ -2,19 +2,19 @@
 // ================================
 // Para alternar entre DESARROLLO y PRODUCCIÓN, comenta/descomenta la línea correspondiente:
 
-// DESARROLLO LOCAL (descomenta para localhost):
-const DEVELOPMENT_CONFIG = {
-  FRONTEND_URL: 'http://localhost:5173',
-  NODE_ENV: 'development',
-  CORS_ORIGIN: ['http://localhost:5173', 'http://localhost:3000']
-};
-
-// PRODUCCIÓN (descomenta para test.autospecial.com.ar):
-// const PRODUCTION_CONFIG = {
-//   FRONTEND_URL: 'https://test.autospecial.com.ar',
-//   NODE_ENV: 'production', 
-//   CORS_ORIGIN: ['https://test.autospecial.com.ar']
+// DESARROLLO LOCAL (comentar para producción):
+// const DEVELOPMENT_CONFIG = {
+//   FRONTEND_URL: 'http://localhost:5173',
+//   NODE_ENV: 'development',
+//   CORS_ORIGIN: ['http://localhost:5173', 'http://localhost:3000']
 // };
+
+// PRODUCCIÓN (descomentar para producción):
+const PRODUCTION_CONFIG = {
+  FRONTEND_URL: 'https://autospecial.com.ar',
+  NODE_ENV: 'production', 
+  CORS_ORIGIN: ['https://autospecial.com.ar', 'https://www.autospecial.com.ar']
+};
 
 // ================================
 // NO MODIFICAR DEBAJO DE ESTA LÍNEA

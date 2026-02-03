@@ -924,6 +924,7 @@
          "categories": ["comerciales", "fordPro", "furgon"],
          "fordPro": true,
          "isAccesory": true,
+         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/transit-van/2025/pdf/far-transit-van-ficha-tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Nueva Transit Van </br> con <span>financiación.</span>",
