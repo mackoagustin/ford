@@ -45,7 +45,7 @@ function FordPro() {
               </p>
             </div>
 
-            <div className={`${style.wraperVideo} ${style["px-16"]}`}>
+            {/* <div className={`${style.wraperVideo} ${style["px-16"]}`}>
               <iframe
               src="https://www.youtube.com/embed/Gkd5tqGb2EU?si=xXaKq3u39T68RtKm&controls=0"
               title="YouTube video player"
@@ -61,7 +61,7 @@ function FordPro() {
                 minHeight: '250px'
               }}
               ></iframe>
-            </div>
+            </div> */}
             </>
           ) : (
             <>
@@ -79,7 +79,7 @@ function FordPro() {
                   </p>
               </div>
 
-              <div className={style.wraperVideo}>
+              {/* <div className={style.wraperVideo}>
               <iframe
               src="https://www.youtube.com/embed/Gkd5tqGb2EU?si=xXaKq3u39T68RtKm&controls=0"
               title="YouTube video player"
@@ -92,7 +92,7 @@ function FordPro() {
                 height: '546px'
               }}
               ></iframe>
-            </div>
+            </div> */}
               </>
           )}
         </div>
