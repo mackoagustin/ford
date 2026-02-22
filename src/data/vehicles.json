@@ -2,7 +2,7 @@
     "vehicles": [
       {
          "id": "Nueva Territory",
-         "image": "/img/vehicles/territory.png",
+         "image": "/img/vehicles/territory_hibrid.png",
          "title": "Nueva Territory",
          "text": "Elevá tu experiencia de manejo.",
          "ctaPrimaryText": "Mostrar más", 
@@ -10,13 +10,13 @@
          "ctaSecondaryText": "Solicitar cotización",
          "ctaSecondaryLink": "",
          "detailLink": "/vehiculos/Nueva Territory",
-         "categories": ["suv"],
+         "categories": ["suv", "electrificado"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/territory/2025/pdf/far-nueva-territory-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/territory/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
-                "title" : "Elevá tu experiencia de<span>manejo.</span>",
+                "title" : "Elevá tu experiencia de <span>manejo.</span>",
                 "text" : "La evolución del diseño, funcionalidad, tecnología inteligente y seguridad."
             },
             "colors": [
@@ -107,7 +107,7 @@
          "categories": ["suv"],
          "fordPro": false,
          "isAccesory": false,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/bronco-sport/2025/pdf/far-bronco-sport-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/nueva_bronco/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "El ícono de la <span>aventura.</span>",
@@ -205,7 +205,7 @@
          "categories": ["suv", "electrificado"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/kuga-hibrido/2023/pdf/far-ficha-tecnica-kuga-hev.pdf",
+         "technicalSheet": "/pdf/vehicles/kuga/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "La inteligencia encuentra el <span>camino.</span>",
@@ -303,7 +303,7 @@
          "categories": ["suv"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/nueva-bronco/pdf/far-nueva-bronco-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/bronco/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "El ícono de la <span>aventura.</span>",
@@ -394,7 +394,7 @@
          "categories": ["electrificado", "pick-up"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/maverick/2025/pdf/far-nueva-maverick-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/maverick/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Nuevas experiencias nos hacen más <span>fuertes.</span>",
@@ -492,7 +492,7 @@
          "detailLink": "/vehiculos/nueva_ranger",
          "categories": ["pick-up", "fordPro"],
          "fordPro": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/Nueva-ranger/2025/pdf/far-ficha-tecnica-nueva-ranger-enero.pdf",
+         "technicalSheet": "/pdf/vehicles/nueva_ranger/ficha_tecnica.pdf",
          "isAccesory": true, "detail": {
             "mainSection" : {
                 "title" : "Que venga lo <span>imposible.</span>",
@@ -591,7 +591,7 @@
          "categories": ["pick-up"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/raptor/2023/brochure/far-ficha-tecnica-ranger-raptor-2025.pdf",
+         "technicalSheet": "/pdf/vehicles/ranger_raptor/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "La nueva generación de Ranger Raptor <span>llegó.</span>",
@@ -683,7 +683,7 @@
          "categories": ["electrificado", "pick-up"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/f-150-lariat/2024/pdf/far-f150-lariat-hev-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/f150_lariat/ficha_tecnica.pdf",
         "detail": {
             "mainSection" : {
                 "title" : "La primera Pick-Up con motorización híbrida del <span>país.</span>",
@@ -760,7 +760,7 @@
          "categories": ["pick-up"],
          "fordPro": false,
         "isAccesory": false,
-        "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/f-150-tremor/pdf/far-f150-tremor-ficha-tecnica.pdf",
+        "technicalSheet": "/pdf/vehicles/f150_tremor/ficha_tecnica.pdf",
         "detail": {
             "mainSection" : {
                 "title" : "Experiencia off-road en cada <span>aventura.</span>",
@@ -843,7 +843,7 @@
          "categories": ["pick-up"],
          "fordPro": false,
          "isAccesory": false,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/f-150-raptor/2024/pdf/far-ficha-tecnica-f150-raptor.pdf",
+         "technicalSheet": "/pdf/vehicles/f150_raptor/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "La máxima expresión del desempeño <span>off-road.</span>",
@@ -924,7 +924,7 @@
          "categories": ["comerciales", "fordPro", "furgon"],
          "fordPro": true,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/transit-van/2025/pdf/far-transit-van-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/nueva_transit_van/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Nueva Transit Van </br> con <span>financiación.</span>",
@@ -1004,7 +1004,7 @@
          "categories": ["comerciales", "fordPro", "electrificado", "furgon"],
          "fordPro": true,
          "isAccesory": false,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/e-transit-van/pdf/far-e-transit-van-ficha-tecnica.pdff",
+         "technicalSheet": "/pdf/vehicles/nueva_e_transit_van/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "100% <span>eléctrica.</span>",
@@ -1083,7 +1083,7 @@
         "categories": ["comerciales", "fordPro", "furgon"],
         "fordPro": true,
         "isAccesory": false,
-        "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/transit-minibus/2025/pdf/far-ficha-tecnica-transit-minibus-my25.pdf",
+        "technicalSheet": "/pdf/vehicles/nueva_transit_minibus/ficha_tecnica.pdf",
         "detail": {
            "mainSection" : {
                "title" : "Nueva Transit <span> Minibus.</span>",
@@ -1163,7 +1163,7 @@
          "categories": ["comerciales", "fordPro", "furgon"],
          "fordPro": true,
          "isAccesory": false,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/transit-chasis/2025/pdf/far-ficha-tecnica-transit-chasis.pdf",
+         "technicalSheet": "/pdf/vehicles/nueva_transit_chasis/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Más robustez, versatilidad y durabilidad para tu <span> negocio.</span>",
@@ -1243,6 +1243,7 @@
          "categories": ["deportivo", "mustang"],
          "fordPro": false,
          "isAccesory": true,
+         "technicalSheet": "/pdf/vehicles/mustang_dark_horse/ficha_tecnica.pdf",
          "detail": {
             "mainSection": {
                 "title": "La leyenda se <span>reinventa.</span>",
@@ -1322,7 +1323,7 @@
          "categories": ["deportivo", "mustang"],
          "fordPro": false,
          "isAccesory": true,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/mustang/mustang-gt/2024/pdf/far-nuevo-mustang-ficha",
+         "technicalSheet": "/pdf/vehicles/mustang_gt/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Mustang <span>GT Performance.</span>",
@@ -1362,10 +1363,10 @@
                 }
             ],
             "gallery": [
-                "/img/vehicles/mustang_gt/horse_1.png",
-                "/img/vehicles/mustang_gt/horse_2.png",
-                "/img/vehicles/mustang_gt/horse_3.png",
-                "/img/vehicles/mustang_gt/horse_4.png",
+                "/img/vehicles/mustang_gt/Exterior_1.png",
+                "/img/vehicles/mustang_gt/Exterior_2.png",
+                "/img/vehicles/mustang_gt/Exterior_3.png",
+                "/img/vehicles/mustang_gt/Exterior_4.png",
                 "/img/vehicles/mustang_gt/Interior_5.png",
                 "/img/vehicles/mustang_gt/Interior_6.png",
                 "/img/vehicles/mustang_gt/Interior_7.png",
@@ -1409,7 +1410,7 @@
          "categories": ["suv"],
          "fordPro": false,
          "isAccesory": false,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/everest/pdf/far-nueva-everest-ficha-tecnica-2025.pdf",
+         "technicalSheet": "/pdf/vehicles/nueva_everest/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "Alcanzá tu <span>cumbre.</span>",
@@ -1501,7 +1502,7 @@
          "categories": ["comerciales", "fordPro", "electrificado", "furgon"],
          "fordPro": true,
          "isAccesory": false,
-         "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/e-transit-chasis/pdf/far-e-transit-chasis-ficha-tecnica.pdf",
+         "technicalSheet": "/pdf/vehicles/e_transit_van/ficha_tecnica.pdf",
          "detail": {
             "mainSection" : {
                 "title" : "100% <span>eléctrica.</span>",
@@ -1580,7 +1581,7 @@
         "categories": ["mustang", "electrificado"],
         "fordPro": false,
         "isAccesory": false,
-        "technicalSheet": "https://www.ford.com.ar/content/dam/Ford/website-assets/latam/ar/nameplate/mustang-mach-e/pdf/far-mustang-mach-e-ficha-tec-v2.pdf",
+        "technicalSheet": "/pdf/vehicles/mustang_mach_e/ficha_tecnica.pdf",
         "detail": {
            "mainSection" : {
                "title" : "El único eléctrico que es un <span> Mustang.</span>",

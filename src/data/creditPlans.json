@@ -4,7 +4,7 @@
             "image" : "/img/credit/rangerXL_1.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$377.090",
+            "price" : "$380.861",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 Cuotas fijas (de la 2 a la 13).",
@@ -18,7 +18,7 @@
             "image" : "/img/credit/rangerXL_2.png",
             "title" : "Ranger XLS V6 4WD",
             "text" : "Cuotas desde ",
-            "price" : "$529.073",
+            "price" : "$534.364",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -32,7 +32,7 @@
             "image" : "/img/credit/rangerXL_3.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$673.375",
+            "price" : "$680.109",
             "cuotes" : "100% financiado en 84 cuotas",
             "features" : [
                 "Adjudicación asegurada cuota nº5.",
@@ -45,7 +45,7 @@
             "image" : "/img/credit/ranger_4x4.png",
             "title" : "Ranger XL 4x4 MT",
             "text" : "Cuotas desde ",
-            "price" : "$5.434.806",
+            "price" : "$5.606.432",
             "cuotes" : "100% financiado en 10 cuotas",
             "features" : [],
             "ctaLink" : "",
@@ -55,7 +55,7 @@
             "image" : "/img/credit/ranger_4x4.png",
             "title" : "Ranger XL 4x4 MT",
             "text" : "Cuotas desde ",
-            "price" : "$2.798.375",
+            "price" : "$2.886.745",
             "cuotes" : "100% financiado en 20 cuotas",
             "features" : [],
             "ctaLink" : "",
@@ -68,7 +68,7 @@
             "price" : "$468.156",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
-                "6 cuotas fijas (de la 2 a la 7).",
+                "6 cuotas fijas (de la 2 a la 13).",
                 "Bonificación de $3.000.000."
             ],
             "ctaLink" : "",
@@ -78,7 +78,7 @@
             "image" : "/img/credit/maverick.png",
             "title" : "Maverick XLT",
             "text" : "Cuotas desde ",
-            "price" : "$503.034",
+            "price" : "$513.437",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -91,7 +91,7 @@
             "image" : "/img/credit/transit.png",
             "title" : "Nueva Transit Van Mediana TN",
             "text" : "Cuotas desde",
-            "price" : "$612.778",
+            "price" : "$625.544",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",

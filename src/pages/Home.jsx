@@ -43,7 +43,10 @@ function Home() {
         <SliderVehicleHome vehicles={filteredVehicles} />
       </div>
 
+      <div className={styles["px-16"]}>
         <BannerHome />
+      </div>
+       
 
       <div className={styles.contentWrapper}>
         {isMobile ? (

@@ -4,7 +4,7 @@
 
 .wrapperText h1 span {
     color: var(--color-secondary);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .wraperFeature {
@@ -435,6 +435,11 @@
     .technicalSheetButton{
         padding-left: 16px;
         margin-top: 0px;
+    }
+
+
+    .wrapperText h1 span {
+        font-weight: 500;
     }
     
    

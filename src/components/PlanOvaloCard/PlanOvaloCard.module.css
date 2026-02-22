@@ -1,8 +1,9 @@
 .card {
     width: 100%;
     width: 380px;
-    height: 560px;
+    height: 700px;
     overflow: hidden;
+    margin-bottom: 48px;
     display: flex;
     flex-direction: column;
     border-radius: 16px;
@@ -66,7 +67,7 @@
 @media (min-width: 768px) {
     .card {
       width: 373px;
-      height: 580px;
+      height: 700px;
       display: flex;       
       flex-direction: column;      
       padding-bottom: 12px;

@@ -34,7 +34,7 @@ const BannerHomeSlider = () => {
                     <SwiperSlide key={index}>
                         <div className={styles.slide}>
                             <img 
-                                src={banner.image} 
+                                src={isMobile && banner.image_mobile ? banner.image_mobile : banner.image}
                                 className={styles.image}
                                 alt={`Banner Home Slider ${index + 1}`}
                                 loading={index === 0 ? "eager" : "lazy"}

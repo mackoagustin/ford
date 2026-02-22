@@ -8,7 +8,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import vehiclesData from '../../data/vehicles.json';
 import vehicleBannersData from '../../data/vehicleBanners.json';
 import BannerVehicleDetail from '../../components/BannerVehicleDetail/BannerVehicleDetail';
-import FordProSlider from '../../components/FordProSlider/FordProSlider';
+import VehicleBenefitSlider from '../../components/VehicleBenefitSlider/VehicleBenefitSlider';
 import Chip from '../../components/Chip/Chip';
 import BannerVehicleKnow from '../../components/BannerVehicleKnow/BannerVehicleKnow';
 import Footer from '../../components/Footer/Footer';
@@ -205,7 +205,7 @@ const VehicleDetail = () => {
 
             {/* Slider benefits - Mobile */}
             <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainerMobile}`}>
-                <FordProSlider data={vehicle.detail.benefits} />
+                <VehicleBenefitSlider data={vehicle.detail.benefits} />
 
             </div>
 
@@ -222,7 +222,7 @@ const VehicleDetail = () => {
                     ))}
                 </div>
                 <div className={`${styles["pt-42"]} ${styles["px-16"]} ${styles.sliderContainer}`}>
-                    <FordProSlider data={[vehicle.detail.benefits[selectedBenefit]]} />
+                    <VehicleBenefitSlider data={[vehicle.detail.benefits[selectedBenefit]]} />
                 </div>
             </div>
 
