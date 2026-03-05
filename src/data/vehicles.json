@@ -114,12 +114,7 @@
                 "text" : "Con su característico diseño robusto y tracción 4WD de serie, esta SUV se renueva con tecnologías de vanguardia, lista para llevarte a cualquier aventura."
             },
             "colors": [
-                {
-                    "name": "Verde salvaje",
-                    "image": "/img/vehicles/nueva_bronco/car_colors/verde_salvaje.png",
-                    "imageColor": "/img/vehicles/nueva_bronco/colors/verde_salvaje.png"
-
-                },
+             
                 {
                     "name": "Azul glaciar",
                     "image": "/img/vehicles/nueva_bronco/car_colors/azul_glaciar.png",
@@ -325,12 +320,6 @@
                     "name": "Negro Pantera",
                     "image": "/img/vehicles/Bronco/car_colors/negro_pantera.png",
                     "imageColor": "/img/vehicles/Bronco/colors/black_panter.png"
-
-                },
-                {
-                    "name": "Verde salvaje",
-                    "image": "/img/vehicles/Bronco/car_colors/verde_salvaje.png",
-                    "imageColor": "/img/vehicles/Bronco/colors/green_savage.png"
 
                 }
             ],
