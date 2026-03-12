@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Button.module.css';
 
-const Button = ({ children, variant = 'primary', as = 'button', href, ...props }) => {
+const Button = ({ children, variant = 'primary', as = 'button', href, className: customClass, ...props }) => {
+  const buttonClassName = `${styles.button} ${styles[variant]} ${customClass || ''}`.trim();
   // Si hay href y es una ruta interna (empieza con /), usar Link de React Router
   if (href && href.startsWith('/') && !href.startsWith('http')) {
     return (
-      <Link to={href} className={`${styles.button} ${styles[variant]}`} {...props}>
+      <Link to={href} className={buttonClassName} {...props}>
         {children}
       </Link>
     );
@@ -15,7 +16,7 @@ const Button = ({ children, variant = 'primary', as = 'button', href, ...props }
   // Si hay href pero es externo, usar enlace normal
   if (href) {
     return (
-      <a href={href} className={`${styles.button} ${styles[variant]}`} {...props}>
+      <a href={href} className={buttonClassName} {...props}>
         {children}
       </a>
     );
@@ -24,7 +25,7 @@ const Button = ({ children, variant = 'primary', as = 'button', href, ...props }
   // Si no hay href, usar el componente especificado o button por defecto
   const Component = as;
   return (
-    <Component className={`${styles.button} ${styles[variant]}`} {...props}>
+    <Component className={buttonClassName} {...props}>
       {children}
     </Component>
   );

@@ -47,6 +47,7 @@ const PlanOvaloCard = ( { item }) => {
       <div className={styles.buttonWrapper}>
         <Button
           as="a"
+          className={item.ctaTrackingClass}
           href="#formulario-asesoramiento"
           rel="noopener noreferrer"
           variant="primary"

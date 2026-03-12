@@ -4,7 +4,7 @@
             "image" : "/img/credit/rangerXL_1.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$348.527",
+            "price" : "$380.861",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 Cuotas fijas (de la 2 a la 13).",
@@ -12,13 +12,14 @@
                 "Bonificación del primer service."
             ],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
         },
         {
             "image" : "/img/credit/rangerXL_2.png",
             "title" : "Ranger XLS V6 4WD",
             "text" : "Cuotas desde ",
-            "price" : "$489.086",
+            "price" : "$534.364",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -26,20 +27,22 @@
                 "Bonificación del primer service."
             ],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6"
         },
         {
             "image" : "/img/credit/rangerXL_3.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$622.459",
+            "price" : "$680.109",
             "cuotes" : "100% financiado en 84 cuotas",
             "features" : [
                 "Adjudicación asegurada cuota nº5.",
                 "Retirá cualquier modelo disponible de Ranger, Maverick o Transit."
             ],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-100"
         },
         {
             "image" : "/img/credit/ranger_4x4.png",
@@ -49,49 +52,53 @@
             "cuotes" : "100% financiado en 10 cuotas",
             "features" : [],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-10cuotas"
         },
         {
             "image" : "/img/credit/ranger_4x4.png",
             "title" : "Ranger XL 4x4 MT",
             "text" : "Cuotas desde ",
-            "price" : "$2.886.745",
+            "price" : "$5.606.432",
             "cuotes" : "100% financiado en 20 cuotas",
             "features" : [],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-20cuotas"
         },
         {
             "image" : "/img/credit/territory_sel.png",
             "title" : "Nueva Territory SEL",
             "text" : "Cuotas desde ",
-            "price" : "$295.676",
+            "price" : "$468.156",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "6 cuotas fijas (de la 2 a la 13).",
                 "Bonificación de $3.000.000."
             ],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-territorySEL"
         },
         {
             "image" : "/img/credit/maverick.png",
             "title" : "Maverick XLT",
             "text" : "Cuotas desde ",
-            "price" : "$474.662",
+            "price" : "$518.623",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
                 "Bonificación de $3.000.000."
             ],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-maverickXLT"
         },
         {
             "image" : "/img/credit/transit.png",
             "title" : "Nueva Transit Van Mediana TN",
             "text" : "Cuotas desde",
-            "price" : "$572.519",
+            "price" : "$625.544",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -101,7 +108,8 @@
 
             ],
             "ctaLink" : "",
-            "ctaText" : "Consultar"
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-transit-van-medianaTN"
         }
         
     ]

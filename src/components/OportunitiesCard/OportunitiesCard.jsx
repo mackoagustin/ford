@@ -35,12 +35,13 @@ const OportunitiesCard = ( { item }) => {
     />
     <div  className={styles.info}>
         <h4 className={`${styles.locationName} H4`}>{item.title}</h4>
-        <p className="text-color-neutral-600 body-1-16"  >{item.text}</p>
+        <p className="text-color-neutral-600 body-1-16"  style={{ whiteSpace: 'pre-line' }}>{item.text}</p>
         <p className="text-color-neutral-600 body-1-16"  >{item.subtitle}</p>
     </div>
     <div className={styles.buttonWrapper}>
       <Button
         as="a"
+        className={item.ctaTrackingClass}
         href={item.ctaLink}
         rel="noopener noreferrer"
         variant="primary"
