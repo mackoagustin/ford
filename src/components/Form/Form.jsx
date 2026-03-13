@@ -8,6 +8,7 @@ import vehiclesData from "../../data/vehicles.json";
 import Textarea from "../Textarea/Textarea";
 import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
+import { useNavigate } from "react-router-dom";
 
 
 const Form = ({ 
@@ -31,6 +32,7 @@ const Form = ({
 
   // Hook para manejar envío al backend
   const { submitForm, loading, error: submitError, success, resetState } = useFormSubmit();
+  const navigate = useNavigate();
 
   // Función para validar email
   const validateEmail = (email) => {
@@ -118,10 +120,11 @@ const Form = ({
     
     if (validateForm()) {
       console.log("Formulario válido, enviando:", formData);
-      
+
       const result = await submitForm(formData, false); // false = sin archivos
       
       if (result.success) {
+        navigate("/formulario-enviado");
         // No limpiar formulario para mostrar estado "Enviada"
         // setFormData({
         //   name: "",

@@ -34,6 +34,7 @@ const KnowUs = lazy(() => import('./pages/about/KnowUs'));
 const JoinTeam = lazy(() => import('./pages/about/JoinTeam/JoinTeam'));
 const News = lazy(() => import('./pages/about/News'));
 const Test = lazy(() => import('./pages/test'));
+const FormSend = lazy(() => import('./pages/FormSend'));
 
 // Lazy load de páginas dinámicas
 const VehicleDetail = lazy(() => import('./pages/Vehicle/VehicleDetail'));
@@ -79,6 +80,7 @@ function App() {
           <Route path="/quienes-somos/sumate" element={<JoinTeam />} />
           <Route path="/quienes-somos/novedades" element={<News />} />
           <Route path="/sucursales" element={<Branches />} />
+          <Route path="/formulario-enviado" element={<FormSend />} />
         </Routes>
       </Suspense>
       
