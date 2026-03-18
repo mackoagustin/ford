@@ -1,7 +1,9 @@
 import React from "react";
 import styles from './BannerFordCredit.module.css';
+import useIsMobile from '../../hook/useIsMobile';
 
 const BannerFordCredit = ( { data }) => {
+    const isMobile = useIsMobile();
 
     if (!data) {
         return <div>No data available</div>; 
@@ -10,7 +12,7 @@ const BannerFordCredit = ( { data }) => {
     return (
         <div className={styles.banner}>
           <img 
-            src={data.image} 
+            src={isMobile && data.image_mobile ? data.image_mobile : data.image}
             alt={data.title} 
             className={styles.backgroundImage} 
             loading="lazy"

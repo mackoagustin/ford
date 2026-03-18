@@ -40,7 +40,7 @@
         "ctaLink": ""
       },
       {
-        "image": "/img/banners/people.png",
+        "image": "/img/banners/people.jpg",
         "title": "Sumate al <br/> equipo",
         "subtitle": "",
         "description": "",
@@ -105,7 +105,8 @@
         "ctaLink": ""
       },
       {
-        "image": "/img/banners/oval.png",
+        "image": "/img/banners/credit_desktop.webp",
+        "image_mobile": "/img/banners/credit_mobile.webp",
         "title": "Ford Credit",
         "subtitle": "",
         "description": "El mejor financiamiento para tu Ford.",

@@ -124,6 +124,18 @@ const Form = ({
       const result = await submitForm(formData, false); // false = sin archivos
       
       if (result.success) {
+        const shouldTrackGtmEvent =
+          formData.suborigen === "Ford Credit" || formData.suborigen === "Plan Óvalo";
+
+        if (shouldTrackGtmEvent) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({
+            event: "envio_form_ok",
+            origen: formData.origen,
+            suborigen: formData.suborigen
+          });
+        }
+
         navigate("/formulario-enviado");
         // No limpiar formulario para mostrar estado "Enviada"
         // setFormData({
