@@ -10,7 +10,8 @@ const AccesorieCard = ( { item }) => {
   }
 
   const handleClick = () => {
-    navigate(`/vehiculos/${item.id}`);
+    const pathSegment = item.slug ?? item.id;
+    navigate(`/vehiculos/${pathSegment}`);
   };
 
   return (

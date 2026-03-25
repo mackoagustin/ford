@@ -20,12 +20,14 @@ const VehiclesCard = ( { item }) => {
     return <div className= {styles.Button}>No data available</div>;
   }
 
+  const pathSegment = item.slug ?? item.id;
+
   const handleClick = () => {
-    navigate(`/vehiculos/${item.id}`);
+    navigate(`/vehiculos/${pathSegment}`);
   };
 
   const handleImageClick = () => {
-    navigate(`/vehiculos/${item.id}`);
+    navigate(`/vehiculos/${pathSegment}`);
   };
 
   return (

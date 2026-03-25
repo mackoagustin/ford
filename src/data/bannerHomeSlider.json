@@ -5,7 +5,7 @@
         "image_mobile": "/img/banners/home/territory_mobile.jpg",
         "textUp" : "Nueva",
         "textDown" : "Territory",
-        "ctaLink" : "/vehiculos/Nueva%20Territory",
+        "ctaLink" : "/vehiculos/Ford-Territory",
         "ctaText" : "Conocer más"
     },
     {
@@ -13,7 +13,7 @@
         "image_mobile":"/img/banners/home/everest_mobile.jpg",
         "textUp" : "Nueva",
         "textDown" : "Everest",
-        "ctaLink" : "/vehiculos/nueva_everest",
+        "ctaLink" : "/vehiculos/Ford-Nueva-Everest",
         "ctaText" : "Conocer más"
     },
     {
@@ -21,7 +21,7 @@
         "image_mobile": "/img/banners/home/ranger_mobile.jpg",
         "textUp" : "Ranger",
         "textDown" : "",
-        "ctaLink" : "/vehiculos/nueva_ranger",
+        "ctaLink" : "/vehiculos/Ford-Nueva-Ranger",
         "ctaText" : "Conocer más"
     }
 ]

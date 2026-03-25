@@ -31,8 +31,9 @@ const SearchBar = () => {
   };
 
   const handleResultClick = (vehicle) => {
-    console.log("Navegando a:", `/vehiculos/${vehicle.id}`);
-    navigate(`/vehiculos/${vehicle.id}`);
+    const pathSegment = vehicle.slug ?? vehicle.id;
+    console.log("Navegando a:", `/vehiculos/${pathSegment}`);
+    navigate(`/vehiculos/${pathSegment}`);
     setShowResults(false);
     setSearchText('');
   };

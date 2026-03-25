@@ -16,9 +16,18 @@ import styles from './VehicleDetail.module.css';
 import Button from '../../components/Button/Button';
 
 const VehicleDetail = () => {
-    const { id } = useParams();
-    const vehicle = vehiclesData.vehicles.find(item => item.id === id);
-    const vehicleBanner = vehicleBannersData.vehicleBanners[id];
+    const { id: routeParam } = useParams();
+    const decoded = decodeURIComponent(routeParam);
+    const vehicle = vehiclesData.vehicles.find(
+      (item) =>
+        item.slug === routeParam ||
+        item.slug === decoded ||
+        item.id === routeParam ||
+        item.id === decoded
+    );
+    const vehicleBanner = vehicle
+      ? vehicleBannersData.vehicleBanners[vehicle.id]
+      : undefined;
     const [selectedColorIndex, setSelectedColorIndex] = useState(0);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);

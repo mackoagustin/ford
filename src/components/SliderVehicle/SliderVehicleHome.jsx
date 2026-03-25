@@ -133,7 +133,11 @@ const SliderVehicleHome = () => {
       >
         {filteredVehicles.map((vehicle, index) => (
           <SwiperSlide key={index}>
-            <a href={vehicle.detailLink} className="vehicle-slide" style={{textDecoration: 'none'}}>
+            <a
+              href={`/vehiculos/${encodeURIComponent(vehicle.slug ?? vehicle.id)}`}
+              className="vehicle-slide"
+              style={{ textDecoration: 'none' }}
+             >
               <img src={vehicle.image} alt={vehicle.title} className="vehicle-image" loading="lazy" />
               <div className="slide-content">
                 <h3 className='H3'>{vehicle.title}</h3>
