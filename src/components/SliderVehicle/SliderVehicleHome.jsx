@@ -23,8 +23,10 @@ const SliderVehicleHome = () => {
     { key: 'pick-ups', label: 'Pick-Ups', filterValue: 'pick-up' },
     { key: 'deportivos', label: 'Deportivos', filterValue: 'deportivo' },
     { key: 'furgon', label: 'Furgón', filterValue: 'furgon' },
+    { key: 'chasis', label: 'Chasis', filterValue: 'chasis' },
     { key: 'electrificados', label: 'Electrificados', filterValue: 'electrificado' },
     { key: 'ford-pro', label: 'Ford Pro', filterValue: 'fordPro' }
+ 
   ];
 
   useEffect(() => {
