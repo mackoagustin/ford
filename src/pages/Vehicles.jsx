@@ -40,6 +40,11 @@ const Vehicles = () => {
       </div>
 
       <div className= {styles.wraperSection}>
+        <h2 className='H2'>Chasis</h2>
+        <VehicleCarCardSliderOrdered category="chasis" />
+      </div>
+
+      <div className= {styles.wraperSection}>
         <h2 className='H2'>Electrificados</h2>
         <VehicleCarCardSliderOrdered category="electrificado" />
       </div>

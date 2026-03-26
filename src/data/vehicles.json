@@ -521,6 +521,7 @@
             ],
             "fordPro": true,
             "technicalSheet": "/pdf/vehicles/nueva_ranger/ficha_tecnica.pdf",
+            "technicalSheet2": "/pdf/vehicles/nueva_ranger/ficha_tecnica_xl.pdf",
             "isAccesory": true,
             "detail": {
                 "mainSection": {
@@ -538,11 +539,7 @@
                         "image": "/img/vehicles/ranger/car_colors/plata_metalizado.png",
                         "imageColor": "/img/vehicles/ranger/colors/plata_metalizado.png"
                     },
-                    {
-                        "name": "Naranja terra",
-                        "image": "/img/vehicles/ranger/car_colors/naranja_terra.png",
-                        "imageColor": "/img/vehicles/ranger/colors/naranja_terra.png"
-                    },
+                    
                     {
                         "name": "Blanco oxford",
                         "image": "/img/vehicles/ranger/car_colors/blanco_oxford.png",
@@ -979,7 +976,7 @@
             "categories": [
                 "comerciales",
                 "fordPro",
-                "furgon"
+                "Chasis"
             ],
             "fordPro": true,
             "isAccesory": true,
@@ -1249,7 +1246,7 @@
             "categories": [
                 "comerciales",
                 "fordPro",
-                "furgon"
+                "chasis"
             ],
             "fordPro": true,
             "isAccesory": false,
@@ -1617,7 +1614,7 @@
                 "comerciales",
                 "fordPro",
                 "electrificado",
-                "furgon"
+                "chasis"
             ],
             "fordPro": true,
             "isAccesory": false,
