@@ -1,0 +1,120 @@
+banner kuga
+
+"kuga": {
+      "image": "/img/vehicles/kuga_hibrida/kuga_banner.png",
+      "title": "Kuga híbrida",
+      "description": "Descubrí la Territory",
+      "ctaText": "",
+      "ctaLink": "",
+      "ctaTextSecond": "Solicitar cotización",
+      "ctaLinkSecond": "modal"
+    },
+
+
+vehicle kuga
+
+{
+            "id": "kuga",
+            "image": "/img/vehicles/kuga.png",
+            "title": "Kuga Híbrida",
+            "text": "La inteligencia encuentra el camino.",
+            "ctaPrimaryText": "Mostrar más",
+            "ctaPrimaryLink": "",
+            "ctaSecondaryText": "Solicitar cotización",
+            "ctaSecondaryLink": "",
+            "detailLink": "/vehiculos/Ford-Kuga",
+            "categories": [
+                "suv",
+                "electrificado"
+            ],
+            "fordPro": false,
+            "isAccesory": true,
+            "technicalSheet": "/pdf/vehicles/kuga/ficha_tecnica.pdf",
+            "detail": {
+                "mainSection": {
+                    "title": "La inteligencia encuentra el <span>camino.</span>",
+                    "text": "La funcionalidad, tecnología y seguridad se unen en Kuga Híbrida"
+                },
+                "colors": [
+                    {
+                        "name": "Azul vapor",
+                        "image": "/img/vehicles/kuga_hibrida/car_colors/azul_vapor.png",
+                        "imageColor": "/img/vehicles/kuga_hibrida/colors/azul_vapor.png"
+                    },
+                    {
+                        "name": "Blanco Oxford",
+                        "image": "/img/vehicles/kuga_hibrida/car_colors/blanco_oxford.png",
+                        "imageColor": "/img/vehicles/kuga_hibrida/colors/blanco_oxford.png"
+                    },
+                    {
+                        "name": "Gris mercurio",
+                        "image": "/img/vehicles/kuga_hibrida/car_colors/gris_mercurio.png",
+                        "imageColor": "/img/vehicles/kuga_hibrida/colors/Gris_mercurio.png"
+                    },
+                    {
+                        "name": "Negro pantera",
+                        "image": "/img/vehicles/kuga_hibrida/car_colors/negro_pantera.png",
+                        "imageColor": "/img/vehicles/kuga_hibrida/colors/Negro_pantera.png"
+                    },
+                    {
+                        "name": "Plata lunar",
+                        "image": "/img/vehicles/kuga_hibrida/car_colors/plata_lunar.png",
+                        "imageColor": "/img/vehicles/kuga_hibrida/colors/plata_lunar.png"
+                    }
+                ],
+                "specifications": [
+                    {
+                        "title": "Motor, Potencia y Torque",
+                        "feature": [
+                            "2.5L Naftero y uno eléctrico autorecargable de 203 CV ",
+                            "de potencia"
+                        ]
+                    },
+                    {
+                        "title": "Tracción",
+                        "feature": [
+                            "Integral inteligente",
+                            "AWD (All Wheel Drive)"
+                        ]
+                    },
+                    {
+                        "title": "Seguridad",
+                        "feature": [
+                            "Ford Co-Pilot 360"
+                        ]
+                    }
+                ],
+                "gallery": [
+                    "/img/vehicles/kuga_hibrida/Kuga_1.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_2.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_3.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_4.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_5.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_6.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_7.png",
+                    "/img/vehicles/kuga_hibrida/Kuga_8.png"
+                ],
+                "benefits": [
+                    {
+                        "title": "Apariencias que no engañan",
+                        "image": "/img/vehicles/nueva_bronco/benefit_1.png",
+                        "text": "Nuevo interior con diseño minimalista y tecnologico que redefine la funcionalidad para brindarte una experiencia de conduccion mejorarada e inmerisva."
+                    },
+                    {
+                        "title": "Tecnología funcional",
+                        "image": "/img/vehicles/kuga_hibrida/benefit_2.png",
+                        "text": "La Kuga Híbrida se destaca por su tecnología funcional de ultimo nivel, donde la innovación se combina para ofrecerte una experiencia de conduccion única y excepcional."
+                    },
+                    {
+                        "title": "Prestaciones inteligentes",
+                        "image": "/img/vehicles/kuga_hibrida/benefit_3.png",
+                        "text": "La Kuga Híbrida mantiene la perfecta combinación de economía de combustible, bajo nivel de emisiones y elevado nivel de prestaciones, gracias a su motorización híbrida."
+                    },
+                    {
+                        "title": "Sentirse protegido",
+                        "image": "/img/vehicles/kuga_hibrida/benefit_4.png",
+                        "text": "La Kuga Híbrida equipa el nivel más alto de asistencias a la conducción. Cuenta con el sistema Ford Co-Pilot 360 para maniobras más seguras."
+                    }
+                ]
+            }
+        },

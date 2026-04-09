@@ -128,6 +128,19 @@
     .description {
       font-size: 1.125rem;
     }
+
+    .wraperbuttons {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+  
+    }
+
+    .textGroup {
+     
+      gap: 40px;
+     
+    }
 }
 
 

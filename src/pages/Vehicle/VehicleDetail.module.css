@@ -251,6 +251,26 @@
     margin: 0 auto;
 }
 
+.chipContainer2 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    padding-bottom: 4px;
+}
+/* Evita que cada chip se encoja */
+.chipContainer2 > * {
+    flex: 0 0 auto;
+}
+
 .sliderContainer {
     max-width: 1164px;
     margin: 0 auto;
@@ -450,6 +470,16 @@
 
     .buttonSecondaryPdf {
         margin-top: 42px;
+    }
+
+    @media (min-width: 1000px) {
+        .chipContainer2 {
+            justify-content: center;
+            max-width: 1164px;
+            margin: 0 auto;
+            overflow-x: visible;
+            padding-bottom: 0;
+        }
     }
     
    

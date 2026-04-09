@@ -18,15 +18,6 @@
       "ctaTextSecond": "Solicitar cotización",
       "ctaLinkSecond": "modal"
     },
-      "kuga": {
-      "image": "/img/vehicles/kuga_hibrida/kuga_banner.png",
-      "title": "Kuga híbrida",
-      "description": "Descubrí la Territory",
-      "ctaText": "",
-      "ctaLink": "",
-      "ctaTextSecond": "Solicitar cotización",
-      "ctaLinkSecond": "modal"
-    },
      "nueva_everest": {
       "image": "/img/vehicles/everest/everest_banner.png",
       "title": "Nueva Everest",
@@ -55,7 +46,8 @@
       "ctaLinkSecond": "modal"
     },
       "nueva_ranger": {
-      "image": "/img/vehicles/ranger/ranger_banner.png",
+      "image": "/img/vehicles/ranger/ranger_banner.webp",
+      "image_mobile": "/img/vehicles/ranger/ranger_banner_mobile.webp",
       "title": "Ranger",
       "description": "Descubrí la nueva maverick",
       "ctaText": "Agendar test drive",

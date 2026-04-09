@@ -26,6 +26,8 @@ const BannerDoubleButton = ({data}) => {
         setIsModalOpen(false);
     };
 
+    const bannerImage= isMobile ? (data.image_mobile || data.image) : data.image;
+
     if (!data) {
         return <div>No data avaible</div>
     }
@@ -34,7 +36,7 @@ const BannerDoubleButton = ({data}) => {
         <>
            <div className={styles.banner}>
               <img 
-                src={data.image} 
+                src={bannerImage} 
                 alt="Banner" 
                 className={styles.backgroundImage} 
                 loading="lazy"

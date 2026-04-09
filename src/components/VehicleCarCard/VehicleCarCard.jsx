@@ -47,7 +47,7 @@ const VehiclesCard = ( { item }) => {
         <div className={styles.buttonWrapper}>
           <Button
             as="a"
-            href={item.detailLink}
+            href={`/vehiculos/${pathSegment}`}
             rel="noopener noreferrer"
             variant="primary"
           >

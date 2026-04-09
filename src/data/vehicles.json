@@ -199,111 +199,6 @@
             }
         },
         {
-            "id": "kuga",
-            "image": "/img/vehicles/kuga.png",
-            "title": "Kuga Híbrida",
-            "text": "La inteligencia encuentra el camino.",
-            "ctaPrimaryText": "Mostrar más",
-            "ctaPrimaryLink": "",
-            "ctaSecondaryText": "Solicitar cotización",
-            "ctaSecondaryLink": "",
-            "detailLink": "/vehiculos/Ford-Kuga",
-            "categories": [
-                "suv",
-                "electrificado"
-            ],
-            "fordPro": false,
-            "isAccesory": true,
-            "technicalSheet": "/pdf/vehicles/kuga/ficha_tecnica.pdf",
-            "detail": {
-                "mainSection": {
-                    "title": "La inteligencia encuentra el <span>camino.</span>",
-                    "text": "La funcionalidad, tecnología y seguridad se unen en Kuga Híbrida"
-                },
-                "colors": [
-                    {
-                        "name": "Azul vapor",
-                        "image": "/img/vehicles/kuga_hibrida/car_colors/azul_vapor.png",
-                        "imageColor": "/img/vehicles/kuga_hibrida/colors/azul_vapor.png"
-                    },
-                    {
-                        "name": "Blanco Oxford",
-                        "image": "/img/vehicles/kuga_hibrida/car_colors/blanco_oxford.png",
-                        "imageColor": "/img/vehicles/kuga_hibrida/colors/blanco_oxford.png"
-                    },
-                    {
-                        "name": "Gris mercurio",
-                        "image": "/img/vehicles/kuga_hibrida/car_colors/gris_mercurio.png",
-                        "imageColor": "/img/vehicles/kuga_hibrida/colors/Gris_mercurio.png"
-                    },
-                    {
-                        "name": "Negro pantera",
-                        "image": "/img/vehicles/kuga_hibrida/car_colors/negro_pantera.png",
-                        "imageColor": "/img/vehicles/kuga_hibrida/colors/Negro_pantera.png"
-                    },
-                    {
-                        "name": "Plata lunar",
-                        "image": "/img/vehicles/kuga_hibrida/car_colors/plata_lunar.png",
-                        "imageColor": "/img/vehicles/kuga_hibrida/colors/plata_lunar.png"
-                    }
-                ],
-                "specifications": [
-                    {
-                        "title": "Motor, Potencia y Torque",
-                        "feature": [
-                            "2.5L Naftero y uno eléctrico autorecargable de 203 CV ",
-                            "de potencia"
-                        ]
-                    },
-                    {
-                        "title": "Tracción",
-                        "feature": [
-                            "Integral inteligente",
-                            "AWD (All Wheel Drive)"
-                        ]
-                    },
-                    {
-                        "title": "Seguridad",
-                        "feature": [
-                            "Ford Co-Pilot 360"
-                        ]
-                    }
-                ],
-                "gallery": [
-                    "/img/vehicles/kuga_hibrida/Kuga_1.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_2.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_3.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_4.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_5.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_6.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_7.png",
-                    "/img/vehicles/kuga_hibrida/Kuga_8.png"
-                ],
-                "benefits": [
-                    {
-                        "title": "Apariencias que no engañan",
-                        "image": "/img/vehicles/nueva_bronco/benefit_1.png",
-                        "text": "Nuevo interior con diseño minimalista y tecnologico que redefine la funcionalidad para brindarte una experiencia de conduccion mejorarada e inmerisva."
-                    },
-                    {
-                        "title": "Tecnología funcional",
-                        "image": "/img/vehicles/kuga_hibrida/benefit_2.png",
-                        "text": "La Kuga Híbrida se destaca por su tecnología funcional de ultimo nivel, donde la innovación se combina para ofrecerte una experiencia de conduccion única y excepcional."
-                    },
-                    {
-                        "title": "Prestaciones inteligentes",
-                        "image": "/img/vehicles/kuga_hibrida/benefit_3.png",
-                        "text": "La Kuga Híbrida mantiene la perfecta combinación de economía de combustible, bajo nivel de emisiones y elevado nivel de prestaciones, gracias a su motorización híbrida."
-                    },
-                    {
-                        "title": "Sentirse protegido",
-                        "image": "/img/vehicles/kuga_hibrida/benefit_4.png",
-                        "text": "La Kuga Híbrida equipa el nivel más alto de asistencias a la conducción. Cuenta con el sistema Ford Co-Pilot 360 para maniobras más seguras."
-                    }
-                ]
-            }
-        },
-        {
             "id": "bronco",
             "image": "/img/vehicles/bronco.png",
             "title": "Bronco ",
@@ -531,23 +426,23 @@
                 "colors": [
                     {
                         "name": "Azul belice",
-                        "image": "/img/vehicles/ranger/car_colors/azul_belice.png",
+                        "image": "/img/vehicles/ranger/car_colors/azul_belice.webp",
                         "imageColor": "/img/vehicles/ranger/colors/azul_belice.png"
                     },
                     {
                         "name": "Plata metalizado",
-                        "image": "/img/vehicles/ranger/car_colors/plata_metalizado.png",
+                        "image": "/img/vehicles/ranger/car_colors/plata_metalizado.webp",
                         "imageColor": "/img/vehicles/ranger/colors/plata_metalizado.png"
                     },
                     
                     {
                         "name": "Blanco oxford",
-                        "image": "/img/vehicles/ranger/car_colors/blanco_oxford.png",
+                        "image": "/img/vehicles/ranger/car_colors/blanco_oxford.webp",
                         "imageColor": "/img/vehicles/ranger/colors/blanco_oxford.png"
                     },
                     {
                         "name": "Negro perlado",
-                        "image": "/img/vehicles/ranger/car_colors/negro_perlado.png",
+                        "image": "/img/vehicles/ranger/car_colors/negro_perlado.webp",
                         "imageColor": "/img/vehicles/ranger/colors/negro_perlado.png"
                     },
                     {
@@ -582,14 +477,14 @@
                     }
                 ],
                 "gallery": [
-                    "/img/vehicles/ranger/Exterior_1.png",
-                    "/img/vehicles/ranger/Exterior_2.png",
-                    "/img/vehicles/ranger/Exterior_3.png",
-                    "/img/vehicles/ranger/Exterior_4.png",
-                    "/img/vehicles/ranger/Interior_5.png",
-                    "/img/vehicles/ranger/Interior_6.png",
-                    "/img/vehicles/ranger/Interior_7.png",
-                    "/img/vehicles/ranger/Interior_8.png"
+                    "/img/vehicles/ranger/Exterior_1.webp",
+                    "/img/vehicles/ranger/Exterior_2.webp",
+                    "/img/vehicles/ranger/Exterior_3.webp",
+                    "/img/vehicles/ranger/Exterior_4.webp",
+                    "/img/vehicles/ranger/Interior_5.webp",
+                    "/img/vehicles/ranger/Interior_6.webp",
+                    "/img/vehicles/ranger/Interior_7.webp",
+                    "/img/vehicles/ranger/Interior_8.webp"
                 ],
                 "benefits": [
                     {
@@ -608,7 +503,44 @@
                         "text": "Incorpora Ford Co-Pilot 360. Un conjunto de tecnologías de asistencia al conductor que ayudan a mejorar la seguridad en la conducción. Incluye funciones como el control de velocidad crucero adapativo con Stop & Go, cámara 360°, entre otras."
                     }
                 ]
-            }
+            },
+            "variants": [
+                {
+                    "id": "Ranger"
+                },{
+                    "id": "XL Cabina Doble",
+                    "overrides" : {
+                        "detail": {
+                                "name": "Plata metalizado",
+                                "image": "/img/vehicles/ranger/variants/XLdoble_plata_metalizado.webp",
+                                "imageColor": "/img/vehicles/ranger/colors/plata_metalizado.png"
+                        }
+                    }
+           
+                },
+               {
+                    "id": "XL Cabina Simple",
+                    "overrides": {
+                        "detail": {
+                                "name": "Blanco oxford",
+                                "image": "/img/vehicles/ranger/variants/XLsimple_blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/ranger/colors/blanco_oxford.png"
+                        }
+                    }
+                },
+                
+           
+                {
+                    "id": "XL Cabina Simple Chasis",
+                    "overrides": {
+                        "detail": {
+                               "name": "Blanco oxford",
+                                "image": "/img/vehicles/ranger/variants/XLchasis_blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/ranger/colors/blanco_oxford.png"
+                        }
+                    }
+                }     
+            ]
         },
         {
             "id": "ranger_raptor",

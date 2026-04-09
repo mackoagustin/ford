@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -14,6 +14,32 @@ import BannerVehicleKnow from '../../components/BannerVehicleKnow/BannerVehicleK
 import Footer from '../../components/Footer/Footer';
 import styles from './VehicleDetail.module.css';
 import Button from '../../components/Button/Button';
+
+function getActiveColors(vehicle, variantIndex) {
+    const base = vehicle.detail.colors;
+    const variants = vehicle.variants;
+    if (!variants?.length) return base;
+
+    const v = variants[variantIndex];
+    if (!v) return base;
+
+    if (v.colors?.length) return v.colors;
+
+    const o = v.overrides?.detail;
+    if (o) {
+        if (Array.isArray(o)) return o;
+        const baseEntry = base.find((c) => c.name === o.name);
+        return [
+            {
+                name: o.name,
+                image: o.image,
+                imageColor: o.imageColor ?? baseEntry?.imageColor,
+            },
+        ];
+    }
+
+    return base;
+}
 
 const VehicleDetail = () => {
     const { id: routeParam } = useParams();
@@ -32,6 +58,8 @@ const VehicleDetail = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedImageIndex, setSelectedImageIndex] = useState(0);
     const [selectedBenefit, setSelectedBenefit] = useState(0);
+    const [selectedVariant, setSelectedVariant] = useState(0);
+
 
     // Mapeo de imágenes de banner por vehículo
     const vehicleBannerImages = {
@@ -52,6 +80,38 @@ const VehicleDetail = () => {
         setIsModalOpen(false);
     };
 
+
+    const activeColors = useMemo(() => {
+        if (!vehicle) return [];
+        return getActiveColors(vehicle, selectedVariant);
+    }, [vehicle, selectedVariant]);
+
+    useEffect(() => {
+        if (!vehicle) return;
+        const colors = getActiveColors(vehicle, selectedVariant);
+        const len = colors.length;
+        if (!len) {
+            setSelectedColorIndex(0);
+            return;
+        }
+        const v = vehicle.variants?.[selectedVariant];
+        const o = v?.overrides?.detail;
+        if (o && !Array.isArray(o) && o.name) {
+            const idx = colors.findIndex((c) => c.name === o.name);
+            if (idx !== -1) {
+                setSelectedColorIndex(idx);
+                return;
+            }
+        }
+        setSelectedColorIndex((i) => (i >= len ? 0 : i));
+    }, [vehicle, selectedVariant]);
+
+    useEffect(() => {
+        setSelectedVariant(0);
+    }, [vehicle?.id]);
+
+    
+
     if (!vehicle) {
         return <div>Vehículo no encontrado</div>;
     }
@@ -71,19 +131,31 @@ const VehicleDetail = () => {
             {/* feature */}
             <div className={styles.wraperRow}>
                 <div className={styles.wraperFeature}>
-                    <img 
-                        src={vehicle.detail.colors[selectedColorIndex].image} 
-                        alt={vehicle.title} 
+                    {vehicle.variants?.length > 0 && (
+                        <div className={`${styles["pt-42"]}  ${styles.chipContainer2}`}>
+                            {vehicle.variants.map((variant, index) => (
+                                <Chip
+                                    key={variant.id}
+                                    label={variant.id}
+                                    active={index === selectedVariant}
+                                    onClick={() => setSelectedVariant(index)}
+                                />
+                            ))}
+                        </div>
+                    )}
+                    <img
+                        src={activeColors[selectedColorIndex]?.image}
+                        alt={vehicle.title}
                         className={styles.carImage}
                     />
                     <p className={`${styles.colorText} subtitle-20 text-color-dark`}>
-                        {vehicle.detail.colors[selectedColorIndex].name}
+                        {activeColors[selectedColorIndex]?.name}
                     </p>
                     <div className={styles.colorImages}>
-                        {vehicle.detail.colors.map((color, index) => (
-                            <img 
+                        {activeColors.map((color, index) => (
+                            <img
                                 key={index}
-                                src={color.imageColor} 
+                                src={color.imageColor}
                                 alt={color.name}
                                 className={`${styles.colorImage} ${selectedColorIndex === index ? styles.selected : ''}`}
                                 onClick={() => setSelectedColorIndex(index)}
