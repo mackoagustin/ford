@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../../components/Footer/Footer';
 import bannerData from '../../data/banners.json';
 import styles from './Parts.module.css';
-import BannerTest from '../../components/BannerTest/BannerTest';
+import BannerAsk from '../../components/BannerAsk/BannerAsk';
 import FordPassApp from '../../components/FordPassApp/FordPassApp';
 
 import Form from '../../components/Form/Form';
@@ -13,12 +13,12 @@ function RequestTurn() {
 
   return (
     <>
-      <BannerTest data={selectedBanner} />
+      <BannerAsk data={selectedBanner} />
 
 
       <FordPassApp />
       
-      <div className={styles.wraperForm} style={{marginBottom: '80px', borderRadius: '16px'}}>
+      <div id="formulario-turno" className={styles.wraperForm} style={{marginBottom: '80px', borderRadius: '16px'}}>
             <h3 className="H3 text-color-dark" style={{marginBottom: ' 8px'}}>
               ¿Querés que te lo
               <span className="text-color-secondary"> agendemos nosotros?</span>

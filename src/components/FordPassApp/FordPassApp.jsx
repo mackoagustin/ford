@@ -9,7 +9,7 @@ const FordPassApp = () => {
           <div className={styles.textGroup}>
             <div className={styles.title}>
               <p className={styles.titleWhite}>
-                ¿Sabés que podés autoagendarte desde la  <span className={styles.titleBlue}>app FordPass? </span>
+                ¿Sabés que podés autoagendarte desde la  <span className={styles.titleBlue}>app Ford? </span>
               </p>
              
             </div>
@@ -28,11 +28,11 @@ const FordPassApp = () => {
        
           
           <div className={styles.appButtons}>
-          <a href="https://apps.apple.com/us/app/fordpass/id10954186098" target="_blank">
+          <a href="https://apps.apple.com/us/app/ford/id1095418609" target="_blank">
           <img src="/img/system/ios.png" alt="iOS App Store" className={styles.appleIcon} />
           </a>
           
-          <a href="https://play.google.com/store/apps/details?id=com.ford.fordpass&pli=1" target="_blank">
+          <a href="https://play.google.com/store/apps/details?id=com.ford.fordpass" target="_blank">
           <img src="/img/system/android.png" alt="iOS App Store" className={styles.appleIcon} />
           </a>
           

@@ -81,15 +81,19 @@
         "ctaLink": " "
       },
       {
-        "image": "/img/banners/ask.png",
+        "image": "/img/banners/ask.jpg",
+        "imageMobile": "/img/banners/ask_mobile.jpg",
         "title": "Solicitar turno",
         "subtitle": "",
-        "description": "Solicitá un turno en uno de nuestro talleres.",
-        "ctaText": "Consultar por WhatsApp",
-        "ctaLink": " "
+        "description": "A continuación podrás elegir desde dónde solicitarlo.",
+        "ctaText": "Solicitar por teléfono",
+        "ctaLink": "/postventa/talleres",
+        "ctaTextSecond": "Solicitar online",
+        "ctaLinkSecond": "#formulario-turno"
       },
       {
-        "image": "/img/banners/workshop.png",
+        "image": "/img/banners/workshop.jpg",
+        "imageMobile": "/img/banners/workshop_mobile.jpg",
         "title": "Nuestros",
         "subtitle": "talleres",
         "description": "Conocé dónde están ubicadas nuestras sucursales de posventa.",
