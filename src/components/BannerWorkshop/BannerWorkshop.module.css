@@ -47,7 +47,7 @@
     flex-direction: column;
     gap: 16px;
     color: white;
-    font-family: 'Ford_F-1', sans-serif;
+    font-family: 'FordF1', sans-serif;
     width: 250px;
   }
   
@@ -120,7 +120,7 @@
         flex-direction: column;
         gap: 16px;
         color: white;
-        font-family: 'Ford_F-1', sans-serif;
+        font-family: 'FordF1', sans-serif;
         width: 400px;
       }
       

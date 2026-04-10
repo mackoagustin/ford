@@ -81,8 +81,8 @@
         "ctaLink": " "
       },
       {
-        "image": "/img/banners/ask.jpg",
-        "imageMobile": "/img/banners/ask_mobile.jpg",
+        "image": "/img/banners/ask.webp",
+        "imageMobile": "/img/banners/ask_mobile.webp",
         "title": "Solicitar turno",
         "subtitle": "",
         "description": "A continuación podrás elegir desde dónde solicitarlo.",

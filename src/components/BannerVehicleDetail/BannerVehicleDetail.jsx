@@ -44,7 +44,7 @@ const BannerDoubleButton = ({data}) => {
               <div className={styles.content}>
                 <div className={styles.textGroup}>
                   <h1 
-                    className={`${styles.title} display4`}
+                    className={`${styles.title}`}
                     dangerouslySetInnerHTML={{ __html: data.title }}
                   />
                   <p className={styles["title-grey"]}>{data.subtitle}</p>
