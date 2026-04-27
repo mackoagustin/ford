@@ -108,6 +108,8 @@ function FordPro() {
           <Form 
             origen="WEB AUTOSPECIAL" 
             suborigen="Ford Pro" 
+            showCuit={true}
+            onlyFordProVehicles={true}
           />
         </div>
         

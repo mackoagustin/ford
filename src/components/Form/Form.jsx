@@ -14,12 +14,15 @@ import { useNavigate } from "react-router-dom";
 const Form = ({ 
   backgroundColor = "var(--color-neutral-100)",
   origen = "WEB AUTOSPECIAL",
-  suborigen = "Formulario General"
+  suborigen = "Formulario General",
+  showCuit = false,
+  onlyFordProVehicles = false
 }) => {
   const [formData, setFormData] = useState({
     name: "",
     cellphone: "",
     email: "",
+    cuit: "",
     province: "",
     vehicle: "",
     message: "",
@@ -61,6 +64,12 @@ const Form = ({
         if (!value.trim()) return 'El email es requerido';
         if (!validateEmail(value)) return 'Ingresa un email válido';
         return '';
+
+      case "cuit":
+        if (!showCuit) return "";
+        if (!value.trim()) return "El CUIT es requerido";
+        if (!/^\d{11}$/.test(value.replace(/\D/g, ""))) return "Ingresá un CUIT válido de 11 dígitos";
+        return "";
       
       case 'cellphone':
         if (!value.trim()) return 'El teléfono es requerido';
@@ -164,7 +173,11 @@ const Form = ({
   const isMobile = useIsMobile();
 
   // Preparar opciones de vehículos para el select
-  const vehicleOptions = vehiclesData.vehicles.map(vehicle => ({
+  const vehiclesForSelect = onlyFordProVehicles
+    ? vehiclesData.vehicles.filter(vehicle => vehicle.fordPro === true)
+    : vehiclesData.vehicles;
+
+  const vehicleOptions = vehiclesForSelect.map(vehicle => ({
     value: vehicle.id,
     label: vehicle.title
   }));
@@ -212,6 +225,17 @@ const Form = ({
         error={errors.province}
         backgroundColor={backgroundColor}
       />
+      {showCuit && (
+          <Input
+            label="CUIT"
+            name="cuit"
+            value={formData.cuit}
+            onChange={handleChange}
+            placeholder="Ej: 20123456789"
+            error={errors.cuit}
+            backgroundColor={backgroundColor}
+          />
+        )}
       <Select
         label="Vehículo"
         name="vehicle"
@@ -367,6 +391,17 @@ const Form = ({
       />
       </div>
       <div className={style.wraperInput}>
+        {showCuit && (
+          <Input
+            label="CUIT"
+            name="cuit"
+            value={formData.cuit}
+            onChange={handleChange}
+            placeholder="Ej: 20123456789"
+            error={errors.cuit}
+            backgroundColor={backgroundColor}
+          />
+        )}
         <Select
           label="Vehículo"
           name="vehicle"

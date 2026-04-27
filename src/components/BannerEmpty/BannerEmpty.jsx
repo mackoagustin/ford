@@ -20,7 +20,7 @@ const Banner = ({ data }) => {
 
       <div className={styles.content}>
         <div className={styles.textGroup}>
-          <h1 className={`${styles.title} display4`}>
+          <h1 className={styles.title}>
             {data.title}
             <br />
             <span className={`${styles["title-blue"]} H4`}>{data.subtitle}</span>
