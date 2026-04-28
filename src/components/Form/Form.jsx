@@ -172,15 +172,27 @@ const Form = ({
 
   const isMobile = useIsMobile();
 
-  // Preparar opciones de vehículos para el select
+  // Vehiculos incluidos en form Pro
   const vehiclesForSelect = onlyFordProVehicles
     ? vehiclesData.vehicles.filter(vehicle => vehicle.fordPro === true)
     : vehiclesData.vehicles;
 
-  const vehicleOptions = vehiclesForSelect.map(vehicle => ({
-    value: vehicle.id,
-    label: vehicle.title
-  }));
+    const filteredVehicles = vehiclesForSelect.filter(vehicle => vehicle.id !== "nueva_ranger");
+
+    const vehicleOptions = onlyFordProVehicles
+    ? [
+        { value: "ranger_xl_chasis", label: "Nueva Ranger XL Chasis" },
+        { value: "ranger_xl_doble_cabina", label: "Nueva Ranger XL Doble Cabina" },
+        { value: "ranger_xl_cabina_simple", label: "Nueva Ranger XL Cabina Simple" },
+        ...filteredVehicles.map(vehicle => ({
+          value: vehicle.id,
+          label: vehicle.title
+        }))
+      ]
+    : vehiclesForSelect.map(vehicle => ({
+        value: vehicle.id,
+        label: vehicle.title
+      }));
 
  return isMobile ? (
     <form 
