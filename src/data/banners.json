@@ -11,6 +11,7 @@
       },
       {
         "image": "/img/banners/sucursalesss.png",
+        "imageMobile": "/img/banners/sucursales_mobile.webp",
         "title": "Nuestras",
         "subtitle": "sucursales",
         "ctaText": "Contactanos",

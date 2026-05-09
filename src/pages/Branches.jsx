@@ -17,12 +17,18 @@ const Services = () => {
   const selectedBanner = bannerData.banners[1];
   const chipOptions = chipData.chips;
 
+  const resolvedBanner =
+  isMobile && selectedBanner.imageMobile
+    ? { ...selectedBanner, image: selectedBanner.imageMobile }
+    : selectedBanner;
+
+
   const [selectedChip, setSelectedChip] = useState("Todos");
 
 
   return (
     <div>
-      <Banner data={selectedBanner} />
+      <Banner data={resolvedBanner} />
       <div className={style.contentWrapper}>
         {/* Texto de introducción */}
         {isMobile ? (

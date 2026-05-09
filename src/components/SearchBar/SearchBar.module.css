@@ -115,13 +115,14 @@ a {
 }
 
 .showAllButton {
+  color: #2563eb;
   display: none;
 }
 
 .showAllText {
   color: #2563eb;
   font-family: 'FordF1', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
