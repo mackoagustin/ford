@@ -402,6 +402,7 @@
         },
         {
             "id": "nueva_ranger",
+            "slug": "Ford-Nueva-Ranger",
             "image": "/img/vehicles/nueva_ranger.png",
             "title": "Ranger",
             "text": "Nueva generación Ranger.",
@@ -1437,6 +1438,7 @@
         },
         {
             "id": "nueva_everest",
+            "slug": "Ford-Nueva-Everest",
             "image": "/img/vehicles/nueva_everest.png",
             "title": "Nueva everest",
             "text": "Alcanzá tu cumbre.",

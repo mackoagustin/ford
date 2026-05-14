@@ -2,14 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './SearchBar.module.css';
 import vehiclesData from '../../data/vehicles.json';
-import useIsMobile from '../../hook/useIsMobile';
 
 const SearchBar = () => {
   const [searchText, setSearchText] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [filteredVehicles, setFilteredVehicles] = useState([]);
   const navigate = useNavigate();
-  const isMobile = useIsMobile();
 
   const handleSearchChange = (e) => {
     const value = e.target.value;
@@ -54,7 +52,7 @@ const SearchBar = () => {
           <img src="/icons/icon/search.png" alt="" className={styles.searchIcon} />
           <input
             type="text"
-            className={`${styles.searchInput} body-1-14`}
+            className={styles.searchInput}
             placeholder="Buscá un vehículo"
             value={searchText}
             onChange={handleSearchChange}

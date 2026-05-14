@@ -19,9 +19,9 @@ const BannerHomeSlider = () => {
                 spaceBetween={0}
                 slidesPerView={1}
                 navigation={!isMobile}
-                pagination={{ 
+                pagination={{
                     clickable: true,
-                    dynamicBullets: true
+                    dynamicBullets: !isMobile,
                 }}
                 autoplay={{
                     delay: 5000000,

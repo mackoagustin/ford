@@ -153,16 +153,47 @@
     left: 60px; 
 }
 
-/* Estilos para la paginación */
-:global(.swiper-pagination-bullet) {
-    background-color: rgba(255, 255, 255, 0.5);
-    opacity: 1;
-}
-
-:global(.swiper-pagination-bullet-active) {
-    background-color: white;
-}
-
-:global(.swiper-pagination) {
+/* Paginación solo de este banner (pisa styles.css: bullets inactivos transparentes) */
+.swiper :global(.swiper-pagination) {
     bottom: 20px;
+    left: 0;
+    width: 100%;
+    transform: none;
+}
+
+.swiper :global(.swiper-pagination-bullet) {
+    background: rgba(255, 255, 255, 0.55) !important;
+    border: 1px solid rgba(255, 255, 255, 0.65);
+    opacity: 1 !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    vertical-align: middle;
+}
+
+.swiper :global(.swiper-pagination-bullet-active) {
+    background: #ffffff !important;
+    border-color: #ffffff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.swiper :global(.swiper-pagination-bullets-dynamic .swiper-pagination-bullet) {
+    transform: scale(0.55);
+}
+
+.swiper :global(.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active),
+.swiper :global(.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-main) {
+    transform: scale(1);
+}
+
+.swiper :global(.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-prev),
+.swiper :global(.swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next) {
+    transform: scale(0.75);
+}
+
+@media (max-width: 767px) {
+    .swiper :global(.swiper-pagination-bullet-active),
+    .swiper :global(.swiper-pagination-bullet-active-main) {
+        background: var(--color-secondary) !important;
+        border-color: var(--color-secondary);
+        box-shadow: 0 1px 4px rgba(6, 111, 239, 0.4);
+    }
 }
