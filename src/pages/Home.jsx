@@ -1,11 +1,10 @@
 // src/pages/Home.jsx
-import React, { useState, useEffect, Suspense, lazy } from 'react';
+import React, { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import SliderVehicleHome from '../components/SliderVehicle/SliderVehicleHome';
 import SearchBar from '../components/SearchBar/SearchBar';
 import styles from './Home.module.css';
 import vehiclesData from '../data/vehicles.json';
 import BannerHome from '../components/BannerHome/BannerHome';
-import useIsMobile from '../hook/useIsMobile';
 import PostSaleSlider from '../components/PostSaleSlider/PostSaleSlider';
 import Button from '../components/Button/Button';
 import BannerHomeSlider from '../components/BannerHomeSlider/BannerHomeSlider';
@@ -15,8 +14,8 @@ import LoadingSpinner from '../components/LoadingSpinner/LoadingSpinner';
 const Footer = lazy(() => import('../components/Footer/Footer'));
 const Map = lazy(() => import('../components/Map/Map'));
 
-
 function Home() {
+  const searchSectionRef = useRef(null);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [filteredVehicles, setFilteredVehicles] = useState(vehiclesData.vehicles);
 
@@ -33,11 +32,19 @@ function Home() {
     setFilteredVehicles(results);
   };
 
+  const scrollSearchSectionIntoView = () => {
+    searchSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <div className={styles['home-container']}>
       <BannerHomeSlider />
-      <div className={styles['search-section']}>
-        <SearchBar isMobile={isMobile} onSearchResults={handleSearchResults} />
+      <div ref={searchSectionRef} className={styles['search-section']}>
+        <SearchBar
+          isMobile={isMobile}
+          onSearchResults={handleSearchResults}
+          onSearchSectionActivate={scrollSearchSectionIntoView}
+        />
       </div>
       <div className={styles['slider-section']}>
         <SliderVehicleHome vehicles={filteredVehicles} />

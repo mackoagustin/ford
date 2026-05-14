@@ -119,7 +119,7 @@ function Navbar() {
               </button>
               <ul className={`${styles.submenu} ${openSubmenu === 'postventa' ? styles.submenuOpen : ''}`}>
                 <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
-                <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>Solicitar turno</Link></li>
+                <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>App Ford (Solicitar turno)</Link></li>
                 <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
                 <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
                 <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>
@@ -271,7 +271,7 @@ function Navbar() {
                   </button>
                   <ul className={`${styles.submenu} ${openSubmenu === 'postventa' ? styles.submenuOpen : ''}`}>
                     <li><Link to="/postventa/talleres" onClick={closeMenu}>Talleres</Link></li>
-                    <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>Solicitar turno</Link></li>
+                    <li><Link to="/postventa/solicitar-turno" onClick={closeMenu}>App Ford (Solicitar turno)</Link></li>
                     <li><Link to="/postventa/servicios" onClick={closeMenu}>Servicios</Link></li>
                     <li><Link to="/postventa/repuestos" onClick={closeMenu}>Repuestos</Link></li>
                     <li><Link to="/postventa/accesorios" onClick={closeMenu}>Accesorios</Link></li>

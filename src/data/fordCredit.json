@@ -2,7 +2,7 @@
     "credit": [
         {
             "title":"Ranger",
-            "text": "Tasa 0% en 24 meses - Financiación UVA (1)",
+            "text": "Financia hasta $30.000.000 con Tasa 0% en 18 meses.",
             "image": "/img/fordcredit/nueva_ranger.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
@@ -22,13 +22,29 @@
         },
         {
             "title":"Ranger",
-            "text": "Tasa 0% en 18 meses (2)",
+            "text": "Financia hasta el 80% de tu unidad con Tasa 0% en 12 meses.",
             "image": "/img/fordcredit/nueva_ranger2.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
-            "ctaTrackingClass": "consultar-ranger-18meses",
+            "ctaTrackingClass": "consultar-ranger-18meses"
+            
+        },
+        {
+            "title":"Ranger XL",
+            "text": "\"Financiá y Ahorrá\" (Mismo precio que contado) Hasta $18.000.000 con Tasa 0% en 12 meses.",
+            "image": "/img/fordcredit/nueva_ranger3.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-ranger-XL"
+        },{
+            "title":"Nueva Maverick Lariat Híbrida",
+            "text": "Tasa 0% en 18 meses.",
+            "image": "/img/fordcredit/maverick.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-maverick",
             "financing": {
-                "vehicle":"Ranger",
+                "vehicle":"Nueva Maverick",
                 "ways": [
                     "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
                     "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km.",
@@ -38,28 +54,12 @@
             }
         },
         {
-            "title":"Ranger XL",
-            "text": "Financiá hasta $18.000.000. \nTasa 0% en 12 meses (3)",
-            "image": "/img/fordcredit/nueva_ranger3.webp",
+            "title":"Nueva Territory SEL",
+            "text": "Financiación hasta $15.000.000 Tasa 0% en 18 meses.",
+            "image": "/img/fordcredit/territory.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
-            "ctaTrackingClass": "consultar-ranger-XL",
-            "financing": {
-                "vehicle":"Ranger XL",
-                "ways": [
-                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
-                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km.",
-                    "Tasa fija. Cuota mensual a tasa fija."
-                ],
-                "image": "/img/vehicles/fordCredit/maverick.png"
-            }
-        },{
-            "title":"Nueva Maverick Lariat Híbrida",
-            "text": "Tasa 0% en 18 meses (3)",
-            "image": "/img/fordcredit/maverick.webp",
-            "ctaLink": "#formulario-asesoramiento",
-            "ctaText": "Consultar",
-            "ctaTrackingClass": "consultar-maverick",
+            "ctaTrackingClass": "consultar-territory",
             "financing": {
                 "vehicle":"Nueva Territory",
                 "ways": [
@@ -69,35 +69,36 @@
                 ],
                 "image": "/img/vehicles/fordCredit/territory.png"
             }
-        },
-        {
-            "title":"Nueva Territory SEL",
-            "text": "Financiá hasta $15.000.000. \nTasa 0% en 18 meses (4)",
-            "image": "/img/fordcredit/territory.webp",
-            "ctaLink": "#formulario-asesoramiento",
-            "ctaText": "Consultar",
-            "ctaTrackingClass": "consultar-territory",
-            "financing": {
-                "vehicle":"Nueva Transit Minibus y Chasis",
-                "ways": [
-                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
-                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km.",
-                    "Tasa fija. Cuota mensual a tasa fija."
-                ],
-                "image": "/img/vehicles/fordCredit/transit_van.png"
-            }
         },{
             "title":"Nueva Everest",
-            "text": "Financiá hasta $30.000.000. \nTasa 0% en 18 meses (5)",
+            "text": "Financiación hasta $30.000.000 con Tasa 0% en 18 meses.",
             "image": "/img/fordcredit/nueva_everest.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
-            "ctaTrackingClass": "consultar-everest"
+            "ctaTrackingClass": "consultar-everest",
+            "financing": {
+                "vehicle":"Nueva Everest",
+                "ways": [
+                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
+                    "Tasa fija. Cuota mensual a tasa fija."
+                ],
+                "image": "/img/fordcredit/nueva_everest2.jpg"
+
+            }
    
         },
         {
+            "title":"Nueva Transit Minibus",
+            "text": "Financiá hasta el 60% de tu Transit con Tasa 9.90% en 12 meses - Con Seguro Liberado.",
+            "image": "/img/fordcredit/transit_van.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-transit-minibus"
+            
+        },
+        {
             "title":"Nueva Transit Van",
-            "text": "Tasa 0% en 24 meses - Financiación UVA (7)",
+            "text": "Financiá hasta el 60% de tu Transit con Tasa 9.90% en 12 meses – Con Seguro Liberado.",
             "image": "/img/fordcredit/transit_van4.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
@@ -106,7 +107,7 @@
         },
         {
             "title":"Nueva Transit Chasis",
-            "text": "Tasa 0% en 24 meses - Financiación UVA (7)",
+            "text": "Financiá hasta el 60% de tu Transit con Tasa 9.90% en 12 meses – Con Seguro Liberado.",
             "image": "/img/fordcredit/transit_chasis3.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
@@ -115,25 +116,57 @@
         },
         {
             "title":"Nueva Transit Minibus",
-            "text": "Tasa 0% en 24 meses - Financiación UVA (7)",
+            "text": "Tasa 0% en 24 meses. Financiación UVA.",
             "image": "/img/fordcredit/transit_van.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
             "ctaTrackingClass": "consultar-transit-minibus"
             
+        },
+        {
+            "title":"Nueva Transit Van",
+            "text": "Tasa 0% en 24 meses.Financiación UVA.",
+            "image": "/img/fordcredit/transit_van4.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-transit-van"
+   
+        },
+        {
+            "title":"Nueva Transit Chasis",
+            "text": "Tasa 0% en 24 meses. Financiación UVA.",
+            "image": "/img/fordcredit/transit_chasis3.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-transit-chasis"
+            
         }
-       
     ],
 
     "leasing": [
         {
             "title":"Ranger - Renová tu flota",
-            "text": "Financiá hasta el 100% a 36 meses (6)",
+            "text": "Renová tu flota mediante leasing Renová tu flota mediante leasing Financia el 100% en 36 meses.",
             "image": "/img/fordcredit/ranger_leasing.jpg",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
             "ctaTrackingClass": "consultar-leasing-ranger"
-            
+        },
+        {
+            "title": "Ranger XL",
+            "text": "Renová tu flota Venta directa de Fábrica. Tasa 0% en 18 meses.",
+            "image": "/img/fordcredit/nueva_ranger3.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-leasing-ranger-XL"
+        },
+        {
+            "title":"Ranger",
+            "text": "Renová tu Flota mediante Leasing Venta directa de Fábrica. Financiá el 100% en 36 meses",
+            "image": "/img/fordcredit/nueva_ranger3.webp",
+            "ctaLink": "#formulario-asesoramiento",
+            "ctaText": "Consultar",
+            "ctaTrackingClass": "consultar-leasing-ranger"
         }
     ]
 }

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './SearchBar.module.css';
 import vehiclesData from '../../data/vehicles.json';
 
-const SearchBar = () => {
+const SearchBar = ({ onSearchSectionActivate }) => {
   const [searchText, setSearchText] = useState('');
   const [showResults, setShowResults] = useState(false);
   const [filteredVehicles, setFilteredVehicles] = useState([]);
@@ -56,7 +56,10 @@ const SearchBar = () => {
             placeholder="Buscá un vehículo"
             value={searchText}
             onChange={handleSearchChange}
-            onFocus={() => setShowResults(searchText.length > 0)}
+            onFocus={() => {
+              onSearchSectionActivate?.();
+              setShowResults(searchText.length > 0);
+            }}
           />
         </div>
       </div>
