@@ -4,12 +4,13 @@ import bannerData from '../../data/banners.json';
 import styles from './Parts.module.css';
 import BannerKnowUS from '../../components/BannerKnowUS/BannerKnowUS';
 import FordPassApp from '../../components/FordPassApp/FordPassApp';
+import { Link } from 'react-router-dom';
 
 import Form from '../../components/Form/Form';
 
 const WHATSAPP_TURNOS =
   'https://wa.me/5491168949307?text=' +
-  encodeURIComponent('Hola, quiero solicitar un turno de service.');
+  encodeURIComponent('Hola, quiero solicitar un turno para taller.');
 
 function RequestTurn() {
   const selectedBanner = bannerData.banners[10];
@@ -53,7 +54,7 @@ function RequestTurn() {
           <span className={styles.turnChannelLabel}>WhatsApp</span>
         </a>
 
-        <a href="tel:+541145738200" className={`${styles.turnChannelCard} ${styles.turnChannelCardFixed}`}>
+        <Link to="/postventa/talleres" className={`${styles.turnChannelCard} ${styles.turnChannelCardFixed}`}>
           <img
             src="/icons/icon/phone2.svg"
             alt=""
@@ -63,7 +64,7 @@ function RequestTurn() {
             decoding="async"
           />
           <span className={styles.turnChannelLabel}>Teléfono</span>
-        </a>
+        </Link>
 
         <a href="#formulario-turno" className={`${styles.turnChannelCard} ${styles.turnChannelCardFixed}`}>
           <img
