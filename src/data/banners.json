@@ -34,7 +34,7 @@
       },
       {
         "image": "/img/banners/banner_know_us.png",
-        "title": "Somos <br />Auto Special",
+        "title": "Somos <br/>Auto Special",
         "subtitle": "",
         "description": "Trabajamos constantemente para brindar un servicio de excelencia.",
         "ctaText": "",
@@ -82,15 +82,15 @@
         "ctaLink": " "
       },
       {
-        "image": "/img/banners/ask.webp",
-        "imageMobile": "/img/banners/ask_mobile.webp",
-        "title": "Solicitar turno",
+        "image": "/img/banners/ask_1.jpg",
+        "imageMobile": "/img/banners/ask_mobile_2.jpg",
+        "title": "App Ford <br/> (Solicitar turno)",
         "subtitle": "",
-        "description": "A continuación podrás elegir desde dónde solicitarlo.",
-        "ctaText": "Solicitar por teléfono",
-        "ctaLink": "/postventa/talleres",
-        "ctaTextSecond": "Solicitar online",
-        "ctaLinkSecond": "#formulario-turno"
+        "description": "",
+        "ctaText": "",
+        "ctaLink": "",
+        "ctaTextSecond": "",
+        "ctaLinkSecond": ""
       },
       {
         "image": "/img/banners/workshop.jpg",

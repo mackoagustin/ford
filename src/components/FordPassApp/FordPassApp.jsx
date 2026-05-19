@@ -3,7 +3,7 @@ import styles from "./FordPassApp.module.css";
 
 const FordPassApp = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="ford-pass-app">
       <div className={styles.card}>
         <div className={styles.content}>
           <div className={styles.textGroup}>

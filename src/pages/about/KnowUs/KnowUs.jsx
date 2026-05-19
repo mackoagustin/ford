@@ -1,7 +1,7 @@
 import React from 'react';
 import { styles as style } from './index'
 import Footer from '../../../components/Footer/Footer';
-import BannerKnowUS from '../../../components/BannerKnowUs/BannerKnowUs';
+import BannerKnowUS from '../../../components/BannerKnowUS/BannerKnowUS';
 import KnowUsSlider from '../../../components/KnowUsSlider/KnowUsSlider';
 import bannerData from "../../../data/banners.json";
 import useIsMobile from '../../../hook/useIsMobile';

@@ -1,16 +1,24 @@
 // src/components/Banner/Banner.jsx
 import React from "react";
 import styles from "./BannerKnowUs.module.css"; 
+import useIsMobile from "../../hook/useIsMobile";
+
+
 
 const BannerKnowUS = ({ data }) => {
+
+  const isMobile = useIsMobile();
+
   if (!data) {
     return <div>No data available</div>; 
   }
 
+  const bannerImage = isMobile ? (data.imageMobile || data.image) : data.image;
+
   return (
     <div className={styles.banner}>
       <img 
-        src={data.image} 
+        src={bannerImage} 
         alt={data.title} 
         className={styles.backgroundImage} 
         loading="lazy"

@@ -65,15 +65,15 @@ li {
 }
 
 .iconWrapperFirst{
-  width: 130px !important;
+  padding-left: 4px !important;
 }
 
 .iconWrapperSecond{
-  width: 115px !important;
+  padding-left: 4px !important;
 }
 
 .iconWrapperThird{
-  width: 150px !important;
+  padding-left: 4px !important;
 }
 
 .desktop {
