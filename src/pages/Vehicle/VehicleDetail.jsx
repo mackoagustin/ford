@@ -63,8 +63,8 @@ const VehicleDetail = () => {
 
     // Mapeo de imágenes de banner por vehículo
     const vehicleBannerImages = {
-        "Nueva Territory": "/img/banners/vehicle_detail.png",
-        "Nueva Maverick": "/img/banners/vehicle_detail2.png",
+        "Nueva Territory": "/img/banners/banner_territory.webp",
+        "maverick": "/img/banners/vehicle_detail2.png",
         "nueva_ranger": "/img/banners/vehicle_detail3.png",
         "transit_van": "/img/banners/vehicle_detail4.png",
     };
@@ -338,7 +338,11 @@ const VehicleDetail = () => {
 
             {vehicleBannerImages[vehicle.id] && (
                 <div className={styles.BannerVehicleKnow}>
-                    <BannerVehicleKnow backgroundImage={vehicleBannerImages[vehicle.id]} />
+                    <BannerVehicleKnow 
+                        backgroundImage={vehicleBannerImages[vehicle.id]} 
+                       whatsappText={vehicle.title}
+                        vehicleTitle={vehicle.title}
+                    />
                 </div>
             )}
             

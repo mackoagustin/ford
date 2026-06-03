@@ -50,6 +50,7 @@
 .wraperForm {
     background-color: var( --color-neutral-100);
     padding: 60px 16px 60px 16px;
+    scroll-margin-top: 80px;
 }
 
 .container {
