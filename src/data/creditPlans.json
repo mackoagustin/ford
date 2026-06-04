@@ -16,6 +16,19 @@
             "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
         },
         {
+            "image" : "/img/credit/ranger_xl_4x2_2.webp",
+            "title" : "Ranger XL 4x2",
+            "text" : "Cuotas desde ",
+            "price" : "$544.087",
+            "cuotes" : "80% financiado en 84 cuotas",
+            "features" : [
+                "Adjudicación asegurada cuota nº 3."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
+        },
+        {
             "image" : "/img/credit/rangerXL_2.png",
             "title" : "Ranger XLS V6 4WD",
             "text" : "Cuotas desde ",
