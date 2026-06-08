@@ -1,7 +1,7 @@
 {
     "bannerHomeSlider": [
     {
-        "image" : "/img/banners/home/territory.jpg",
+        "image" : "/img/banners/home/territory.webp",
         "image_mobile": "/img/banners/home/territory_mobile.jpg",
         "textUp" : "Nueva",
         "textDown" : "Territory",
@@ -9,7 +9,7 @@
         "ctaText" : "Conocer más"
     },
     {
-        "image" : "/img/banners/home/everest.jpg",
+        "image" : "/img/banners/home/everest.webp",
         "image_mobile":"/img/banners/home/everest_mobile.jpg",
         "textUp" : "Nueva",
         "textDown" : "Everest",
@@ -17,7 +17,7 @@
         "ctaText" : "Conocer más"
     },
     {
-        "image" : "/img/banners/home/ranger.jpg",
+        "image" : "/img/banners/home/ranger.webp",
         "image_mobile": "/img/banners/home/ranger_mobile.jpg",
         "textUp" : "Ranger",
         "textDown" : "",
