@@ -1,6 +1,20 @@
 {
     "creditPlans" : [
         {
+            "image" : "/img/credit/territory_sel.png",
+            "title" : "Nueva Territory SEL",
+            "text" : "Cuotas desde ",
+            "price" : "$334.297",
+            "cuotes" : "70% financiado en 84 cuotas",
+            "features" : [
+                "6 cuotas fijas (de la 2 a la 13).",
+                "Bonificación de $3.000.000."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-territorySEL"
+        },
+        {
             "image" : "/img/credit/rangerXL_1.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
@@ -10,19 +24,6 @@
                 "12 Cuotas fijas (de la 2 a la 13).",
                 "Bonificación de $5.000.000.",
                 "Bonificación del primer service."
-            ],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
-        },
-        {
-            "image" : "/img/credit/ranger_xl_4x2_2.webp",
-            "title" : "Ranger XL 4x2",
-            "text" : "Cuotas desde ",
-            "price" : "$544.087",
-            "cuotes" : "80% financiado en 84 cuotas",
-            "features" : [
-                "Adjudicación asegurada cuota nº 3."
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar",
@@ -44,56 +45,6 @@
             "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6"
         },
         {
-            "image" : "/img/credit/rangerXL_3.png",
-            "title" : "Ranger XL 4x2",
-            "text" : "Cuotas desde ",
-            "price" : "$680.109",
-            "cuotes" : "100% financiado en 84 cuotas",
-            "features" : [
-                "Adjudicación asegurada cuota nº5.",
-                "Retirá cualquier modelo disponible de Ranger, Maverick o Transit."
-            ],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-100"
-        },
-        {
-            "image" : "/img/credit/ranger_4x4.png",
-            "title" : "Ranger XL 4x4 MT",
-            "text" : "Cuotas desde ",
-            "price" : "$5.606.432",
-            "cuotes" : "100% financiado en 10 cuotas",
-            "features" : [],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-10cuotas"
-        },
-        {
-            "image" : "/img/credit/ranger_4x4.png",
-            "title" : "Ranger XL 4x4 MT",
-            "text" : "Cuotas desde ",
-            "price" : "$2.886.745",
-            "cuotes" : "100% financiado en 20 cuotas",
-            "features" : [],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-20cuotas"
-        },
-        {
-            "image" : "/img/credit/territory_sel.png",
-            "title" : "Nueva Territory SEL",
-            "text" : "Cuotas desde ",
-            "price" : "$334.297",
-            "cuotes" : "70% financiado en 84 cuotas",
-            "features" : [
-                "6 cuotas fijas (de la 2 a la 13).",
-                "Bonificación de $3.000.000."
-            ],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-territorySEL"
-        },
-        {
             "image" : "/img/credit/maverick.png",
             "title" : "Maverick XLT",
             "text" : "Cuotas desde ",
@@ -107,6 +58,21 @@
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-maverickXLT"
         },
+        {
+            "image" : "/img/credit/ranger_xl_4x2_2.webp",
+            "title" : "Ranger XL 4x2",
+            "text" : "Cuotas desde ",
+            "price" : "$544.087",
+            "cuotes" : "80% financiado en 84 cuotas",
+            "features" : [
+                "Adjudicación asegurada cuota nº 3."
+            ],
+            "ctaLink" : "",
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
+        },
+
+       
         {
             "image" : "/img/credit/transit.png",
             "title" : "Nueva Transit Van Mediana TN",
@@ -123,7 +89,31 @@
             "ctaLink" : "",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-transit-van-medianaTN"
+        },
+        {
+            "image" : "/img/credit/ranger_4x4.png",
+            "title" : "Ranger XL 4x4 MT",
+            "text" : "Cuotas desde ",
+            "price" : "$2.886.745",
+            "cuotes" : "100% financiado en 20 cuotas",
+            "features" : [],
+            "ctaLink" : "",
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-20cuotas"
+        },
+
+        {
+            "image" : "/img/credit/ranger_4x4.png",
+            "title" : "Ranger XL 4x4 MT",
+            "text" : "Cuotas desde ",
+            "price" : "$5.606.432",
+            "cuotes" : "100% financiado en 10 cuotas",
+            "features" : [],
+            "ctaLink" : "",
+            "ctaText" : "Consultar",
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-10cuotas"
         }
+       
         
     ]
 }
