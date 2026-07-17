@@ -38,8 +38,8 @@ export const sendEmailToTecnom = async (formData, options = {}) => {
     
     if (formData.suborigen === 'Sumate al Equipo - RR.HH.') {
       // Emails específicos para formulario de RR.HH.
-      emailTo = 'rrhh@autospecial.com.ar, seleccion@autospecial.com.ar, mnavarro@autospecial.com.ar';
-      console.log('👥 Formulario de RR.HH. detectado - Enviando a 3 destinatarios: rrhh@autospecial.com.ar, seleccion@autospecial.com.ar, mnavarro@autospecial.com.ar');
+      emailTo = 'rrhh@autospecial.com.ar, seleccion@autospecial.com.ar';
+      console.log('👥 Formulario de RR.HH. detectado - Enviando a 2 destinatarios: rrhh@autospecial.com.ar, seleccion@autospecial.com.ar');
       
       // Crear contenido legible en texto plano SOLO para RR.HH.
       // Usar solo caracteres ASCII para evitar codificación quoted-printable

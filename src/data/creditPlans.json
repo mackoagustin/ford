@@ -18,7 +18,7 @@
             "image" : "/img/credit/rangerXL_1.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$350.392",
+            "price" : "$250.621",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 Cuotas fijas (de la 2 a la 13).",
@@ -33,7 +33,7 @@
             "image" : "/img/credit/rangerXL_2.png",
             "title" : "Ranger XLS V6 4WD",
             "text" : "Cuotas desde ",
-            "price" : "$479.324",
+            "price" : "$351.048",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -44,25 +44,12 @@
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6"
         },
-        {
-            "image" : "/img/credit/maverick.png",
-            "title" : "Maverick XLT",
-            "text" : "Cuotas desde ",
-            "price" : "$528.995",
-            "cuotes" : "70% financiado en 84 cuotas",
-            "features" : [
-                "12 cuotas fijas (de la 2 a la 13).",
-                "Bonificación de $3.000.000."
-            ],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-maverickXLT"
-        },
+       
         {
             "image" : "/img/credit/ranger_xl_4x2_2.webp",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$500.560",
+            "price" : "$625.701",
             "cuotes" : "80% financiado en 84 cuotas",
             "features" : [
                 "Adjudicación asegurada cuota nº 3."
@@ -77,7 +64,7 @@
             "image" : "/img/credit/transit.png",
             "title" : "Nueva Transit Van Mediana TN",
             "text" : "Cuotas desde",
-            "price" : "$619.161",
+            "price" : "$631.927",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
