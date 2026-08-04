@@ -239,7 +239,7 @@ const Form = ({
       />
       {showCuit && (
           <Input
-            label="CUIT"
+            label="CUIT / CUIL"
             name="cuit"
             value={formData.cuit}
             onChange={handleChange}
@@ -405,7 +405,7 @@ const Form = ({
       <div className={style.wraperInput}>
         {showCuit && (
           <Input
-            label="CUIT"
+            label="CUIT / CUIL "
             name="cuit"
             value={formData.cuit}
             onChange={handleChange}

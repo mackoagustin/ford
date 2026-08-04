@@ -33,7 +33,7 @@ function Accesories() {
      
        {/* Formulario */}
        {isMobile ? (
-          <div className={styles.wraper }>
+          <div className={styles.wraper} style={{marginBottom: '80px'}}>
             <h3 className="H3 text-color-dark">
               ¿Necesitás
               <br />
@@ -48,7 +48,7 @@ function Accesories() {
             />
           </div>
         ) : (
-          <div className={styles.wraper}>
+          <div className={styles.wraper} style={{marginBottom: '80px'}}>
             <h3 className={`H3 text-color-dark ${styles.mb0} `}>
               ¿Necesitás <span className="text-color-secondary">asesoramiento?</span>
             </h3>
@@ -68,7 +68,7 @@ function Accesories() {
 
 
        {/* Banner VISA */}
-       <div className={styles.wraperVisa}>
+       {/* <div className={styles.wraperVisa}>
          {isMobile ? (
         <div className={styles.visaBanner}>
           <img 
@@ -99,7 +99,7 @@ function Accesories() {
           </div>
         </div>
        )}
-       </div>
+       </div> */}
        
        <Footer />
     </>
