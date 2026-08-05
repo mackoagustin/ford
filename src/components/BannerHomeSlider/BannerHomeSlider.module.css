@@ -24,7 +24,7 @@
 .contentOverlay {
     position: absolute;
     left: 16px;
-    top: 60px;
+    top: 32px;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -35,6 +35,7 @@
 .textContainer {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     gap: 16px;
     color: white;
     font-family: 'FordF1', sans-serif;
@@ -80,18 +81,27 @@
     }
 
     .textContainer {
-        width: 493px;
+        width: 747px;
+        margin: 0 ;
     }
 
     .textUp {
-        font-size: 100px;
-        line-height: 86px;
+        font-size: 54px;
+        line-height: 64px;
         padding-bottom: 0px;
+        font-weight: 800;
     }
 
     .textDown {
-        font-size: 100px;
-        line-height: 86px;
+        font-size: 54px;
+        line-height: 64px;
+        font-weight: 800; 
+    }
+
+    .textDown2{
+        font-size: 26px;
+        line-height: 40px;
+        font-weight: 100;
     }
 
     .wraperButton {
@@ -103,28 +113,67 @@
 @media (max-width: 767px) {
     .contentOverlay {
         width: 100%;
+        height: calc(100% - 60px);
         left: 0;
+        top: 32px;
+        justify-content: space-between;
         padding: 0 16px;
+        box-sizing: border-box;
     }
-    
+
+    /* Por defecto: centrado (Everest, Ranger) — padding simétrico mantiene el centro */
+    .textContainer {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Territory: texto y botón a 16px del margen izquierdo */
+    .contentOverlay.alignLeft .textContainer {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .contentOverlay.alignLeft .wraperButton {
+        justify-content: flex-start;
+        width: 100%;
+        margin-left: 0;
+    }
+
     .textUp {
-        font-size: 46px;
+        font-size: 34px;
         line-height: 36px;
+        font-weight: 800;
     }
-    
+
     .textDown {
         font-size: 46px;
         line-height: 36px;
+        font-weight: 500;
     }
-    
-    .wraperButton {
-        padding-top: 240px;
-        width: 90%;
 
+    .textDown2 {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 100;
     }
-    
+
+    .wraperButton {
+        padding-top: 0;
+        margin-top: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
     .wraperButton :global(.button) {
-        width: 10%;
+        width: 100%;
         max-width: 328px;
     }
 }

@@ -40,13 +40,16 @@ const BannerHomeSlider = () => {
                                 loading={index === 0 ? "eager" : "lazy"}
                                 fetchPriority={index === 0 ? "high" : "auto"}
                             />
-                            <div className={styles.contentOverlay}>
+                            <div className={`${styles.contentOverlay} ${banner.align === 'left' ? styles.alignLeft : ''}`}>
                                 <div className={styles.textContainer}>
                                     {banner.textUp && (
                                         <h2 className={styles.textUp}>{banner.textUp}</h2>
                                     )}
                                     {banner.textDown && (
                                         <h1 className={styles.textDown}>{banner.textDown}</h1>
+                                    )}
+                                    {banner.textDown2 && (
+                                        <p className={styles.textDown2}>{banner.textDown2}</p>
                                     )}
                                 </div>
                                 {banner.ctaLink && banner.ctaText && (

@@ -1,26 +1,30 @@
 {
     "bannerHomeSlider": [
     {
-        "image" : "/img/banners/home/territory.webp",
-        "image_mobile": "/img/banners/home/territory_mobile.jpg",
-        "textUp" : "Nueva",
-        "textDown" : "Territory",
+        "image" : "/img/banners/home/territory_desktop.webp",
+        "image_mobile": "/img/banners/home/territory_mobile.jpeg",
+        "textUp" : "LLEGÓ LA NUEVA FORD TERRITORY PLATINUM",
+        "textDown" : "",
+        "textDown2" : "Más tecnología. Más diseño. Más sofisticación.",
         "ctaLink" : "/vehiculos/Ford-Territory",
-        "ctaText" : "Conocer más"
+        "ctaText" : "Cotizá la tuya",
+        "align": "left"
     },
     {
-        "image" : "/img/banners/home/everest.webp",
-        "image_mobile":"/img/banners/home/everest_mobile.jpg",
-        "textUp" : "Nueva",
-        "textDown" : "Everest",
+        "image" : "/img/banners/home/everest_desktop.webp",
+        "image_mobile":"/img/banners/home/everest_mobile.jpeg",
+        "textUp" : "Nueva Everest",
+        "textDown" : "",
+        "textDown2" : "",
         "ctaLink" : "/vehiculos/Ford-Nueva-Everest",
         "ctaText" : "Conocer más"
     },
     {
-        "image" : "/img/banners/home/ranger.webp",
-        "image_mobile": "/img/banners/home/ranger_mobile.jpg",
+        "image" : "/img/banners/home/ranger_desktop.webp",
+        "image_mobile": "/img/banners/home/ranger_mobile.webp",
         "textUp" : "Ranger",
-        "textDown" : "",
+        "textDown" : "",    
+        "textDown2" : "",
         "ctaLink" : "/vehiculos/Ford-Nueva-Ranger",
         "ctaText" : "Conocer más"
     }
