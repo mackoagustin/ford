@@ -108,19 +108,30 @@
                     "overrides": {
                         "detail": [
                             {
-                                "name": "Blanco oxford",
-                                "image": "/img/vehicles/territory/car_colors/SEL_Blanco_oxford.webp",
-                                "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
-                            },
-                            {
                                 "name": "Azul profundo",
                                 "image": "/img/vehicles/territory/car_colors/SEL_Azul_profundo.webp",
                                 "imageColor": "/img/vehicles/territory/colors/azul_profundo.png"
                             },
                             {
+                                "name": "Blanco oxford",
+                                "image": "/img/vehicles/territory/car_colors/SEL_Blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
+                            },
+                          
+                            {
                                 "name": "Gris Cactus",
                                 "image": "/img/vehicles/territory/car_colors/SEL_Gris_cactus.webp",
                                 "imageColor": "/img/vehicles/territory/colors/gris_cactus.png"
+                            },
+                            {
+                                "name": "Gris mercurio",
+                                "image": "/img/vehicles/territory/car_colors/SEL_Gris_mercurio.webp",
+                                "imageColor": "/img/vehicles/territory/colors/Gris_mercurio.png"
+                            },
+                            {
+                                "name": "Negro pantera",
+                                "image": "/img/vehicles/territory/car_colors/SEL_Negro_pantera.webp",
+                                "imageColor": "/img/vehicles/territory/colors/Negro_pantera.png"
                             }
                         ]
                     }
