@@ -3,7 +3,7 @@
         {
             "id": "Nueva Territory",
             "slug": "Ford-Territory",
-            "image": "/img/vehicles/territory_hibrid.png",
+            "image": "/img/vehicles/territory_hibrid2.png",
             "title": "Nueva Territory",
             "text": "Elevá tu experiencia de manejo.",
             "ctaPrimaryText": "Mostrar más",
@@ -21,7 +21,7 @@
             "detail": {
                 "mainSection": {
                     "title": "Elevá tu experiencia de <span>manejo.</span>",
-                    "text": "La evolución del diseño, funcionalidad, tecnología inteligente y seguridad."
+                    "text": "Un diseño exterior que impacta y un interior que te envuelve en confort, con materiales premium y un espacio que redefine su categoría."
                 },
                 "colors": [
                     {
@@ -55,7 +55,8 @@
                         "title": "Motor, Potencia y Torque",
                         "feature": [
                             "1.8L EcoBoost de 185 CV de Potencia",
-                            "320 Nm de Torque"
+                            "320 Nm de Torque",
+                            "1.5L GTDI Híbrido (Ciclo Miller)"
                         ]
                     },
                     {
@@ -67,25 +68,26 @@
                     {
                         "title": "Transmisión",
                         "feature": [
-                            "Automática de 7 velocidades"
+                            "Automática de 7 velocidades",
+                            "Automática 2DHT"
                         ]
                     }
                 ],
                 "gallery": [
-                    "/img/vehicles/territory/territory_1.png",
-                    "/img/vehicles/territory/territory_2.png",
-                    "/img/vehicles/territory/territory_3.png",
-                    "/img/vehicles/territory/territory_4.png",
-                    "/img/vehicles/territory/territory_5.png",
-                    "/img/vehicles/territory/territory_6.png",
-                    "/img/vehicles/territory/territory_7.png",
-                    "/img/vehicles/territory/territory_8.png"
+                    "/img/vehicles/territory/Exterior_1.webp",
+                    "/img/vehicles/territory/Exterior_2.webp",
+                    "/img/vehicles/territory/Exterior_3.webp",
+                    "/img/vehicles/territory/Exterior_4.webp",
+                    "/img/vehicles/territory/Interior_5.webp",
+                    "/img/vehicles/territory/Interior_6.webp",
+                    "/img/vehicles/territory/Interior_7.webp",
+                    "/img/vehicles/territory/Interior_8.webp"
                 ],
                 "benefits": [
                     {
-                        "title": "Diseño",
+                        "title": "Motorización",
                         "image": "/img/vehicles/territory/benefit_1.png",
-                        "text": "Elegante y funcional, la nueva Territory se distingue por la calidad de sus terminaciones y su generoso espacio interior."
+                        "text": "Elegí entre la potencia EcoBoost o la eficiencia híbrida. Encontrá el motor perfecto que se adapta a tu ritmo de conducción y a tus necesidades."
                     },
                     {
                         "title": "Tecnologia",
@@ -98,7 +100,113 @@
                         "text": "Con Ford Co-Pilot 360, un conjunto de asistencias que facilita y protege cada maniobra al volante elevando tu seguridad."
                     }
                 ]
-            }
+            },
+            "variants":[
+              
+                {
+                    "id": "SEL",
+                    "overrides": {
+                        "detail": [
+                            {
+                                "name": "Blanco oxford",
+                                "image": "/img/vehicles/territory/car_colors/SEL_Blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
+                            },
+                            {
+                                "name": "Azul profundo",
+                                "image": "/img/vehicles/territory/car_colors/SEL_Azul_profundo.webp",
+                                "imageColor": "/img/vehicles/territory/colors/azul_profundo.png"
+                            },
+                            {
+                                "name": "Gris Cactus",
+                                "image": "/img/vehicles/territory/car_colors/SEL_Gris_cactus.webp",
+                                "imageColor": "/img/vehicles/territory/colors/gris_cactus.png"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Trend Híbrida",
+                    "overrides": {
+                        "detail": [
+                            {
+                                "name": "Negro pantera",
+                                "image": "/img/vehicles/territory/car_colors/Hibrida_Negro_pantera.webp",
+                                "imageColor": "/img/vehicles/territory/colors/Negro_pantera.png"
+                            },
+                            {
+                                "name": "Gris mercurio",
+                                "image": "/img/vehicles/territory/car_colors/Hibrida_Gris_mercurio.webp",
+                                "imageColor": "/img/vehicles/territory/colors/Gris_mercurio.png"
+                            },
+                            {
+                                "name": "Gris Cactus",
+                                "image": "/img/vehicles/territory/car_colors/Hibrida_Gris_cactus.webp",
+                                "imageColor": "/img/vehicles/territory/colors/gris_cactus.png"
+                            },
+                            {
+                                "name": "Blanco oxford",
+                                "image": "/img/vehicles/territory/car_colors/Hibrida_Blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
+                            },
+                            {
+                                "name": "Azul profundo",
+                                "image": "/img/vehicles/territory/car_colors/Hibrida_Azul_profundo.webp",
+                                "imageColor": "/img/vehicles/territory/colors/azul_profundo.png"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id": "Titanium",
+                    "overrides": {
+                        "detail": [
+                            {
+                                "name":"Azul profundo",
+                                "image": "/img/vehicles/territory/car_colors/Titanium_Azul_profundo.webp",
+                                "imageColor": "/img/vehicles/territory/colors/azul_profundo.png"
+                            },
+                            {
+                                "name":"Blanco Oxford",
+                                "image": "/img/vehicles/territory/car_colors/Titanium_Blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
+                            },
+                            {
+                                "name":"Gris Cactus",
+                                "image": "/img/vehicles/territory/car_colors/Titanium_Gris_cactus.webp",
+                                "imageColor": "/img/vehicles/territory/colors/gris_cactus.png"
+                            },
+                            {
+                                "name":"Gris mercurio",
+                                "image": "/img/vehicles/territory/car_colors/Titanium_Gris_mercurio.webp",
+                                "imageColor": "/img/vehicles/territory/colors/Gris_mercurio.png"
+                            },
+                            {
+                                "name":"Negro pantera",
+                                "image": "/img/vehicles/territory/car_colors/Titanium_Negro_pantera.webp",
+                                "imageColor": "/img/vehicles/territory/colors/Negro_pantera.png"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "id":"Platinum",
+                    "overrides": {
+                        "detail": [
+                            {
+                                "name":"Azul  metálico",
+                                "image": "/img/vehicles/territory/car_colors/Platinum_Azul_oceanico.webp",
+                                "imageColor": "/img/vehicles/territory/colors/azul_oceanico.png"
+                            },
+                            {
+                                "name":"Blanco Oxford",
+                                "image": "/img/vehicles/territory/car_colors/Platinum_Blanco_oxford.webp",
+                                "imageColor": "/img/vehicles/territory/colors/blanco_ozford.png"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
             "id": "nueva_bronco",

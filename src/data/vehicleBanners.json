@@ -10,7 +10,8 @@
       "ctaLinkSecond": "modal"
     },
       "Nueva Territory": {
-      "image": "/img/vehicles/territory/nueva_territory.png",
+      "image": "/img/vehicles/territory/territory_banner.webp",
+      "image_mobile": "/img/vehicles/territory/territory_banner_mobile.webp",
       "title": "Territory",
       "description": "Descubrí la Territory",
       "ctaText": "Agendar test drive",

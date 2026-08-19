@@ -8,6 +8,7 @@ import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
 // Lazy load de componentes pesados
 // const WhatsAppFloat = lazy(() => import('./components/WhatsAppFloat/WhatsAppFloat'));
+const PopUpNoWs = lazy(() => import('./components/PopUpNoWs/PopUpNoWs'));
 
 // Lazy load de páginas principales
 const Home = lazy(() => import('./pages/Home'));
@@ -92,6 +93,9 @@ function App() {
           position="bottom-right"
         />
       </Suspense> */}
+      <Suspense fallback={null}>
+        <PopUpNoWs />
+      </Suspense>
     </Router>
   );
 }

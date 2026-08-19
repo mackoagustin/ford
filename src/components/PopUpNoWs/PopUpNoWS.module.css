@@ -1,0 +1,125 @@
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 1;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+
+.popup {
+    background-color: var(--color-dark);
+    width: 100%;
+    border-radius: 16px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    animation: modalSlideIn 0.3s ease-out;
+    pointer-events: auto;
+}
+
+.closeButton {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    color: var(--color-neutral-200);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeButton:hover {
+    opacity: 0.7;
+}
+
+.title {
+    margin: 0;
+}
+
+.email {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.email:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 769px) {
+    .overlay {
+        padding: 32px;
+    }
+
+    .popup {
+        max-width: 591px;
+        padding: 32px;
+    }
+
+    .closeButton {
+        top: 8px;
+        right: 8px;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .body {
+        margin: 20px 0 0;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        padding: 16px;
+    }
+
+    .popup {
+        max-width: 328px;
+        padding: 16px;
+    }
+
+    .closeButton {
+        top: 16px;
+        right: 16px;
+    }
+
+    .title {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        padding-right: 24px;
+    }
+
+    .body {
+        margin: 20px 0 0;
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+}

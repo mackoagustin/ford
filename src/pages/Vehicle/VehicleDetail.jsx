@@ -15,6 +15,23 @@ import Footer from '../../components/Footer/Footer';
 import styles from './VehicleDetail.module.css';
 import Button from '../../components/Button/Button';
 
+function normalizeColor(color, baseColors = []) {
+    if (!color) return null;
+    const baseEntry = baseColors.find((c) => c.name === color.name);
+    return {
+        name: color.name,
+        image: color.image,
+        imageColor: color.imageColor ?? baseEntry?.imageColor,
+    };
+}
+
+function getOverrideColors(variant) {
+    if (!variant) return null;
+    if (variant.colors?.length) return variant.colors;
+    if (variant.overrides?.colors?.length) return variant.overrides.colors;
+    return variant.overrides?.detail ?? null;
+}
+
 function getActiveColors(vehicle, variantIndex) {
     const base = vehicle.detail.colors;
     const variants = vehicle.variants;
@@ -23,19 +40,11 @@ function getActiveColors(vehicle, variantIndex) {
     const v = variants[variantIndex];
     if (!v) return base;
 
-    if (v.colors?.length) return v.colors;
-
-    const o = v.overrides?.detail;
+    const o = getOverrideColors(v);
     if (o) {
-        if (Array.isArray(o)) return o;
-        const baseEntry = base.find((c) => c.name === o.name);
-        return [
-            {
-                name: o.name,
-                image: o.image,
-                imageColor: o.imageColor ?? baseEntry?.imageColor,
-            },
-        ];
+        if (Array.isArray(o)) return o.map((color) => normalizeColor(color, base)).filter(Boolean);
+        const normalized = normalizeColor(o, base);
+        return normalized ? [normalized] : base;
     }
 
     return base;
@@ -95,7 +104,7 @@ const VehicleDetail = () => {
             return;
         }
         const v = vehicle.variants?.[selectedVariant];
-        const o = v?.overrides?.detail;
+        const o = getOverrideColors(v);
         if (o && !Array.isArray(o) && o.name) {
             const idx = colors.findIndex((c) => c.name === o.name);
             if (idx !== -1) {
