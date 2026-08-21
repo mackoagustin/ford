@@ -1,33 +1,17 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+import whatsappMessages from '../../data/whatsappMessages.json';
 import styles from './WhatsAppFloat.module.css';
 
 const WhatsAppFloat = ({ 
   phoneNumber = "5491135866256", 
-  message = "Hola, me gustaría obtener más información", 
   position = "bottom-right"
 }) => {
+  const { pathname } = useLocation();
   
   const handleWhatsAppClick = () => {
-    // Detectar si es móvil o desktop
-    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-    
-    // Formatear el número (remover espacios, guiones, etc.)
-    const formattedNumber = phoneNumber.replace(/[^\d]/g, '');
-    
-    // Codificar el mensaje para URL
-    const encodedMessage = encodeURIComponent(message);
-    
-    let whatsappUrl;
-    
-    if (isMobile) {
-      // En móvil usar el protocolo nativo de WhatsApp
-      whatsappUrl = `whatsapp://send?phone=${formattedNumber}&text=${encodedMessage}`;
-    } else {
-      // En desktop usar WhatsApp Web
-      whatsappUrl = `https://wa.me/${formattedNumber}?text=${encodedMessage}`;
-    }
-    
-    // Abrir WhatsApp
+    const page = whatsappMessages.pages.find((item) => item.path === pathname);
+    const whatsappUrl = page?.url || whatsappMessages.default.url;
     window.open(whatsappUrl, '_blank');
   };
 

@@ -1,0 +1,119 @@
+{
+    "default": {
+        "url": "https://wa.me/541135866256?text=Hola%2C%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Ford"
+    },
+    "pages": [
+        {
+            "path": "/",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Auto+Special+Ford.%0Ahttps%3A%2F%2Fautospecial.com.ar%2F%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dhome"
+        },
+        {
+            "path": "/ford-pro",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Pro.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fford-pro%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dford-pro"
+        },
+        {
+            "path": "/sucursales",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+intersa+recibir+informaci%C3%B3n+sobre+las+sucursales+de+Auto+Special+Ford.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fsucursales%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dsucursales"
+        },
+        {
+            "path": "/postventa/talleres",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+informaci%C3%B3n+sobre+talleres.+%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fpostventa%2Ftalleres%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dposventa-talleres"
+        },
+        {
+            "path": "/postventa/solicitar-turno",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+solicitar+un+turno+de+posventa.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fpostventa%2Fsolicitar-turno%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dposventa-turnos"
+        },
+        {
+            "path": "/postventa/servicios",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+informaci%C3%B3n+sobre+servicios+de+posventa.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fpostventa%2Fservicios%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dposventa-servicios"
+        },
+        {
+            "path": "/postventa/repuestos",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+informaci%C3%B3n+sobre+repuestos.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fpostventa%2Frepuestos%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3Dposventa-repuestos"
+        },
+        {
+            "path": "/postventa/accesorios",
+            "url": "https://autospecial.com.ar/postventa/accesorios?utm_source=website&utm_medium=whatsapp&utm_campaign=posventa-accesorios"
+        },
+        {
+            "path": "/postventa/ford-protect",
+            "url": "https://autospecial.com.ar/postventa/ford-protect?utm_source=website&utm_medium=whatsapp&utm_campaign=posventa-ford-protect"
+        },
+        {
+            "path": "/financiacion/ford-credit",
+            "url": "https://autospecial.com.ar/financiacion/ford-credit?utm_source=website&utm_medium=whatsapp&utm_campaign=0km-financiacion"
+        },
+        {
+            "path": "/financiacion/plan-ovalo",
+            "url": "https://autospecial.com.ar/financiacion/plan-ovalo?utm_source=website&utm_medium=whatsapp&utm_campaign=plan-ovalo"
+        },
+        {
+            "path": "/vehiculos/Ford-Territory",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Territory.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2FFord-Territory%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-territory"
+        },
+        {
+            "path": "/vehiculos/nueva_bronco",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+m%C3%A1s+informaci%C3%B3n+sobre+Bronco+Sport.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fnueva_bronco%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-bronco-sport"
+        },
+        {
+            "path": "/vehiculos/bronco",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Bronco+0km.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fbronco%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-bronco"
+        },
+        {
+            "path": "/vehiculos/Ford-Nueva-Everest",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Everest.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2FFord-Nueva-Everest%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-everest"
+        },
+        {
+            "path": "/vehiculos/maverick",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Maverick.+%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fmaverick%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-maverick"
+        },
+        {
+            "path": "/vehiculos/Ford-Nueva-Ranger",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Ranger.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2FFord-Nueva-Ranger%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-ranger"
+        },
+        {
+            "path": "/vehiculos/ranger_raptor",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Ranger+Raptor.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Franger_raptor%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-ranger-raptor"
+        },
+        {
+            "path": "/vehiculos/nueva_f150_lariat",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+informaci%C3%B3n+sobre+Ford+F-150+Lariat.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fnueva_f150_lariat%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-f150-lariat"
+        },
+        {
+            "path": "/vehiculos/nueva_f150_temor",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+informaci%C3%B3n+sobre+Ford+F-150+Tremor.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fnueva_f150_temor%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-f150-tremor"
+        },
+        {
+            "path": "/vehiculos/nueva_f150_raptor",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+informaci%C3%B3n+sobre+Ford+F-150+Raptor.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fnueva_f150_raptor%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-f150-raptor"
+        },
+        {
+            "path": "/vehiculos/mustang_dark_horse",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Mustang+Dark+Horse.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fmustang_dark_horse%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-mustang-dark-horse"
+        },
+        {
+            "path": "/vehiculos/nuevo_mustang_gt",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Quiero+m%C3%A1s+informaci%C3%B3n+sobre+Mustang+Gt%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fnuevo_mustang_gt%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-mustang-gt"
+        },
+        {
+            "path": "/vehiculos/transit_van",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+informaci%C3%B3n+sobre+Ford+Transit+Van.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Ftransit_van%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-transit-van"
+        },
+        {
+            "path": "/vehiculos/e_transit_van",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+m%C3%A1s+informaci%C3%B3n+sobre+E-Transit+Van.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Fe_transit_van%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-e-transit-van"
+        },
+        {
+            "path": "/vehiculos/transit_minibus",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Transit+Minibus.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Ftransit_minibus%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-transit-minibus"
+        },
+        {
+            "path": "/vehiculos/transit_chasis",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Transit+Chasis.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Ftransit_chasis%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-transit-chasis"
+        },
+        {
+            "path": "/vehiculos/transit_e_chasis",
+            "url": "https://wa.me/541135866256?text=%C2%A1Hola%21+Me+interesa+recibir+m%C3%A1s+informaci%C3%B3n+sobre+Ford+Transit+E-Chasis.%0Ahttps%3A%2F%2Fautospecial.com.ar%2Fvehiculos%2Ftransit_e_chasis%3Futm_source%3Dwebsite%26utm_medium%3Dwhatsapp%26utm_campaign%3D0km-e-transit-chasis"
+        }
+    ]
+}

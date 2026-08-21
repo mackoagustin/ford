@@ -7,7 +7,7 @@ import Navbar from './components/Navbar/Navbar';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
 // Lazy load de componentes pesados
-// const WhatsAppFloat = lazy(() => import('./components/WhatsAppFloat/WhatsAppFloat'));
+const WhatsAppFloat = lazy(() => import('./components/WhatsAppFloat/WhatsAppFloat'));
 const PopUpNoWs = lazy(() => import('./components/PopUpNoWs/PopUpNoWs'));
 
 // Lazy load de páginas principales
@@ -86,16 +86,18 @@ function App() {
       </Suspense>
       
       {/* Componente WhatsApp flotante que aparece en todas las páginas */}
-      {/* <Suspense fallback={<div></div>}>
+      <Suspense fallback={<div></div>}>
         <WhatsAppFloat 
           phoneNumber="5491135866256"
           message="Hola, me gustaría obtener más información sobre Ford"
           position="bottom-right"
         />
-      </Suspense> */}
-      <Suspense fallback={null}>
-        <PopUpNoWs />
       </Suspense>
+
+      {/* whatsapp fuera de servicio */}
+      {/* <Suspense fallback={null}>
+        <PopUpNoWs />
+      </Suspense> */}
     </Router>
   );
 }
