@@ -32,19 +32,14 @@ const LocationCard = ({ location }) => {
         <div className={styles.contact}>
           <div className="body-1-16">
             WhatsApp: 
-            {location.whatsapp ? (
-              <a 
-                href={`https://wa.me/${location.whatsapp.replace(/\D/g, '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ 
-                  color: 'inherit', 
-                  textDecoration: 'underline',
-                  marginLeft: '4px'
-                }}
-              >
+            {location.  whatsapp ? (
+              <p style={{ 
+                color: 'inherit', 
+              
+                marginLeft: '4px'
+              }}>
                 {location.whatsapp}
-              </a>
+              </p>
             ) : (
               <span style={{ marginLeft: '4px' }}>No disponible</span>
             )}
