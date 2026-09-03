@@ -19,15 +19,28 @@ const LocationCard = ({ location }) => {
             href={location.google_maps_link}
             target="_blank"
             rel="noopener noreferrer"
+            style={{ textDecoration: 'underline' }}
           >
             {location.address}
           </a>
         </div>
 
-        <div className={`${styles.hours} body-1-16`}>
-          {location.hours.monday_friday}<br />
-          {location.hours.saturday}
+        {location.hours ? (
+           <div className={`${styles.hours} body-1-16`}>
+           <p style={{ fontWeight: '900' }}>Ventas</p>
+           {location.hours.monday_friday}<br />
+           {location.hours.saturday}
+         </div>
+        ) : null}
+       
+
+        {location.postventa ? (
+          <div className={`${styles.postventa} body-1-16`}>
+          <p style={{ fontWeight: '900' }}>Postventa</p>
+          {location.postventa.day}
         </div>
+        ) : null}
+        
 
         <div className={styles.contact}>
           <div className="body-1-16">

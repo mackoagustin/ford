@@ -9,8 +9,11 @@
         "address": "Av. Francisco Beiró 2555, Agronomía - CABA",
         "hours": {
           "monday_friday": "Lunes a viernes: 9:00 a 19hs",
-          "saturday": "Sábado 10:00 a 18:00hs"
+          "saturday": "Sábados y feriados 10:00 a 18:00hs"
         },
+        "postventa": {
+          "day": "Lunes a Viernes 8:00 a 13:00hs y 14:00 a 18:00hs"
+         },
         "phone": "4573-8200",
         "whatsapp": "11 2762-3413",
         "google_maps_link": "https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+2555,+C1419HXE+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.592339,-58.4921415,17z/data=!4m6!3m5!1s0x95bcb63ec7c3c641:0x2916641ba93b9211!8m2!3d-34.5925775!4d-58.4907682!16s%2Fg%2F11flt1rzj0?entry=tts&g_ep=EgoyMDI0MDcxNi4wKgBIAVAD",
@@ -59,6 +62,9 @@
         "hours": {
           "monday_friday": "Lunes a viernes: 8 a 13:00hs y de 14:00 a 18hs."
         },
+        "postventa": {
+          "day": "Lunes a Viernes 8:00 a 13:00hs y 14:00 a 18:00hs"
+         },
         "phone": "5670-0300",
         "whatsapp": "11 2762-3413",
         "email": "Turnos: turnos@autospecial.com.ar" ,
@@ -105,9 +111,10 @@
         "category": ["Posventa"],
         "image": "/img/locations/palermo.png",
         "address": "Arévalo 1467, Palermo - CABA",
-        "hours": {
-          "monday_friday": "Lunes a viernes: 8:00 a 13:00hs. y de 14:00 a 18:00hs."
-        },
+        
+        "postventa": {
+          "day": "Lunes a Viernes 8:00 a 13:00hs y 14:00 a 18:00hs"
+         },
         "phone": "7079-1200",
         "whatsapp": "11 2762-3413",
         "email": "Turnos: turnos@autospecial.com.ar" ,
