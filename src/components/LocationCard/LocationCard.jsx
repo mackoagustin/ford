@@ -36,7 +36,7 @@ const LocationCard = ({ location }) => {
 
         {location.postventa ? (
           <div className={`${styles.postventa} body-1-16`}>
-          <p style={{ fontWeight: '900' }}>Postventa</p>
+          <p style={{ fontWeight: '900' }}>Posventa</p>
           {location.postventa.day}
         </div>
         ) : null}

@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./PlanOvaloCard.module.css";
 import Button from "../Button/Button";
 import useIsMobile from "../../hook/useIsMobile";
 
-const PlanOvaloCard = ({ item }) => {
+const PlanOvaloCard = ({ item, onConsult }) => {
   const isMobile = useIsMobile();
   
   if (!item) { return <div>No data available</div>; }
 
   const features = Array.isArray(item.features) ? item.features : [];
+
+  const [selectedVehicle, setSelectedVehicle] = useState("");
+  const [vehicleTick, setVehicleTick] = useState(0);
+
+  const handleConsult = (vehicleId) => {
+    setSelectedVehicle(vehicleId);
+    setVehicleTick((n) => n + 1);
+  };
+
+
 
   const heightClass =
     typeof index === "number"
@@ -83,6 +93,7 @@ const PlanOvaloCard = ({ item }) => {
              variant="primary"
              onClick={(e) => {
                e.preventDefault();
+               onConsult?.(item.vehicleId);
                document
                  .getElementById("formulario-asesoramiento")
                  .scrollIntoView({
@@ -174,6 +185,7 @@ const PlanOvaloCard = ({ item }) => {
              variant="primary"
              onClick={(e) => {
                e.preventDefault();
+               onConsult?.(item.vehicleId);
                document
                  .getElementById("formulario-asesoramiento")
                  .scrollIntoView({

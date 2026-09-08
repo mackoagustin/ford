@@ -12,7 +12,8 @@
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-territorySEL"
+            "ctaTrackingClass": "Consultar-ovalo-territorySEL",
+            "vehicleId": "Nueva Territory"
         },
         {
             "image" : "/img/credit/rangerXL_1.png",
@@ -27,7 +28,8 @@
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80",
+            "vehicleId": "nueva_ranger"
         },
         {
             "image" : "/img/credit/rangerXL_2.png",
@@ -42,7 +44,8 @@
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6"
+            "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6",
+            "vehicleId": "nueva_ranger"
         },
        
         {
@@ -56,7 +59,8 @@
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80"
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80",
+            "vehicleId": "nueva_ranger"
         },
 
        
@@ -75,7 +79,8 @@
             ],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-transit-van-medianaTN"
+            "ctaTrackingClass": "Consultar-ovalo-transit-van-medianaTN",
+            "vehicleId": "transit_van"
         },
         {
             "image" : "/img/credit/ranger_4x4.png",
@@ -86,7 +91,8 @@
             "features" : [],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-20cuotas"
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-20cuotas",
+            "vehicleId": "nueva_ranger"
         },
 
         {
@@ -98,7 +104,8 @@
             "features" : [],
             "ctaLink" : "",
             "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-10cuotas"
+            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-10cuotas",
+            "vehicleId": "nueva_ranger"
         }
        
         

@@ -7,7 +7,7 @@ import "swiper/css";
 import "swiper/css/pagination"; 
 import { Pagination } from "swiper/modules";
 
-const PlanOvaloSlider = ( { items }) => {
+const PlanOvaloSlider = ( { items, onConsult }) => {
   const isMobile = useIsMobile();
 
   if (isMobile) {
@@ -22,7 +22,7 @@ const PlanOvaloSlider = ( { items }) => {
       >
         {items.map((item, index) => (
           <SwiperSlide key={`${item.title}-${index}`}>
-            <PlanOvaloCard item={item} />
+            <PlanOvaloCard item={item} onConsult={onConsult} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -32,7 +32,7 @@ const PlanOvaloSlider = ( { items }) => {
   return (
     <div className={styles.flex}>
       {items.map((item, index) => (
-        <PlanOvaloCard key={`${item.title}-${index}`} item={item} />
+        <PlanOvaloCard key={`${item.title}-${index}`} item={item} onConsult={onConsult} />
       ))}
     </div>
   );

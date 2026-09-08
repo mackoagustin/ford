@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Input from "../input/Input";
 import Button from "../Button/Button";
 import Select from "../Select/Select";
@@ -16,7 +16,9 @@ const Form = ({
   origen = "WEB AUTOSPECIAL",
   suborigen = "Formulario General",
   showCuit = false,
-  onlyFordProVehicles = false
+  onlyFordProVehicles = false,
+  defaultVehicle = "",
+  vehicleTick = 0
 }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,7 +26,7 @@ const Form = ({
     email: "",
     cuit: "",
     province: "",
-    vehicle: "",
+    vehicle: defaultVehicle || "",
     message: "",
     origen: origen,
     suborigen: suborigen
@@ -32,10 +34,14 @@ const Form = ({
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  // Hook para manejar envío al backend
-  const { submitForm, loading, error: submitError, success, resetState } = useFormSubmit();
+  const { submitForm, loading, error: submitError, success, resetState } = useFormSubmit();  // Hook para manejar envío al backend
+  
   const navigate = useNavigate();
+  useEffect(() => {
+    if (!defaultVehicle) return;
+    setFormData((prev) => ({ ...prev, vehicle: defaultVehicle }));
+  }, [defaultVehicle, vehicleTick]);
+
 
   // Función para validar email
   const validateEmail = (email) => {
@@ -200,6 +206,16 @@ const Form = ({
       className={style["form-wraper"]}
       style={{ backgroundColor }}
     >
+       <Select
+        label="Vehículo"
+        name="vehicle"
+        value={formData.vehicle}
+        onChange={handleChange}
+        options={vehicleOptions}
+        placeholder="Seleccioná tu vehículo"
+        error={errors.vehicle}
+        backgroundColor={backgroundColor}
+      />
       <Input
         label="Nombre y apellido"
         name="name"
@@ -248,16 +264,7 @@ const Form = ({
             backgroundColor={backgroundColor}
           />
         )}
-      <Select
-        label="Vehículo"
-        name="vehicle"
-        value={formData.vehicle}
-        onChange={handleChange}
-        options={vehicleOptions}
-        placeholder="Seleccioná tu vehículo"
-        error={errors.vehicle}
-        backgroundColor={backgroundColor}
-      />
+     
       <Textarea
         label="Mensaje"
         name="message"
@@ -359,8 +366,18 @@ const Form = ({
       onSubmit={handleSubmit} 
       className={style["form-wraper"]}
       style={{ backgroundColor }}
-    >
+    > <Select
+          label="Vehículo"
+          name="vehicle"
+          value={formData.vehicle}
+          onChange={handleChange}
+          options={vehicleOptions}
+          placeholder="Seleccioná tu vehículo"
+          error={errors.vehicle}
+          backgroundColor={backgroundColor}
+        />
       <div className={style.wraperInput}> 
+        
         <Input
         label="Nombre y apellido"
         name="name"
@@ -402,7 +419,7 @@ const Form = ({
         backgroundColor={backgroundColor}
       />
       </div>
-      <div className={style.wraperInput}>
+     
         {showCuit && (
           <Input
             label="CUIT / CUIL "
@@ -414,17 +431,7 @@ const Form = ({
             backgroundColor={backgroundColor}
           />
         )}
-        <Select
-          label="Vehículo"
-          name="vehicle"
-          value={formData.vehicle}
-          onChange={handleChange}
-          options={vehicleOptions}
-          placeholder="Seleccioná tu vehículo"
-          error={errors.vehicle}
-          backgroundColor={backgroundColor}
-        />
-      </div>
+       
       <div className={style.wraperTextarea}>
           <Textarea
         label="Mensaje"

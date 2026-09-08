@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BannerFordCredit from '../../components/BannerFordCredit/BannerFordCredit';
 import bannerData from "../../data/banners.json";
 import styles from "./PlanOvalo.module.css";
@@ -28,6 +28,13 @@ function PlanOvalo() {
   const faqEco = faqData.faq.filter(item => item.category === 'eco');
   const faqKa = faqData.faq.filter(item => item.category === 'ka');
 
+  const [selectedVehicle, setSelectedVehicle] = useState("");
+  const [vehicleTick, setVehicleTick] = useState(0);
+  const handleConsult = (vehicleId) => {
+    setSelectedVehicle(vehicleId);
+    setVehicleTick((n) => n + 1);
+  };
+
   return (
     <div>
       <BannerFordCredit data = {selectedBanner} />
@@ -45,7 +52,7 @@ function PlanOvalo() {
 
 
       <div className={styles.sliderWrapper}>
-        <PlanOvaloSlider items={items} />
+        <PlanOvaloSlider items={items} onConsult={handleConsult} />
       </div>
 
       <div className= {`${styles.px16} ${styles.wraperLegal}`}>
@@ -95,6 +102,9 @@ function PlanOvalo() {
             <Form 
               origen="WEB AUTOSPECIAL" 
               suborigen="Plan Óvalo" 
+              defaultVehicle={selectedVehicle}
+              vehicleTick={vehicleTick}
+
             />
           </div>
         ) : (
@@ -109,6 +119,7 @@ function PlanOvalo() {
               <Form 
                 origen="WEB AUTOSPECIAL" 
                 suborigen="Plan Óvalo" 
+                defaultVehicle={selectedVehicle}
               />
             </div>
       

@@ -62,9 +62,9 @@ function App() {
           <Route path="/vehiculos" element={<Vehicles />} />
           <Route path="/vehiculos/:id" element={<VehicleDetail />} />
           <Route path="/vehiculos/test-drive" element={<Test />} />
+          <Route path="/plan-ovalo" element={<PlanOvalo />} />
           <Route path="/financiacion" element={<Financing />} />
           <Route path="/financiacion/ford-credit" element={<FordCredit />} />
-          <Route path="/financiacion/plan-ovalo" element={<PlanOvalo />} />
           <Route path="/financiacion/plan-ovalo/actos-de-adjudicacion" element={<AdjudicationActs />} />
           <Route path="/financiacion/plan-ovalo/resultados-actos-de-adjudicacion" element={<ResultActs />} />
           <Route path="/ford-pro" element={<FordPro />} />

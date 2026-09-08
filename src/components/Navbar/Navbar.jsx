@@ -39,6 +39,7 @@ function Navbar() {
         {/* Menú Desktop */}
         <ul className={`${styles.navLinks} ${styles.desktop}`}>
             <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
+            <li><Link to="/plan-ovalo" onClick={closeMenu}>Plan Ovalo</Link></li>
 
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('financiacion')}>
@@ -80,12 +81,6 @@ function Navbar() {
                       </div>
                 </Link></li>
 
-                <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
-                      <div className={styles.wraperFinance}>
-                          <p className='boton-16-24'>Plan Ovalo</p>
-                          <p className='label-12-16'>Desde 70% a 100%</p>
-                      </div>
-                </Link></li>
               </ul>
             </li>
 
@@ -184,7 +179,9 @@ function Navbar() {
                 <div className={styles.wraperLink}>
                   <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
                 </div>
-
+                <div className={styles.wraperLink}>
+                  <li><Link to="/plan-ovalo" onClick={closeMenu}>Plan Ovalo</Link></li>
+                </div>
                  <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
                     <button
                       onClick={() => toggleSubmenu('financiacion')}
@@ -227,13 +224,7 @@ function Navbar() {
                            <p className='label-12-16'>Hasta 100%</p>
                           </div>
                       </Link></li>
-                      <li><Link to="/financiacion/plan-ovalo" onClick={closeMenu}>
-                           <div className={styles.wraperFinance}>
-                           <p className='boton-16-24'>Plan Ovalo</p>
-                           <p className='label-12-16'>Desde 70% a 100%</p>
-                          </div>
-                      </Link></li>
-                      
+                                       
                     </ul>
                   </li>
 
