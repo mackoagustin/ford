@@ -19,7 +19,7 @@
             "image" : "/img/credit/rangerXL_1.png",
             "title" : "Ranger XL 4x2",
             "text" : "Cuotas desde ",
-            "price" : "$250.621",
+            "price" : "$264.989",
             "cuotes" : "80% financiado en 120 cuotas",
             "features" : [
                 "12 Cuotas fijas (de la 2 a la 13).",
@@ -47,28 +47,14 @@
             "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6",
             "vehicleId": "nueva_ranger"
         },
-       
-        {
-            "image" : "/img/credit/ranger_xl_4x2_2.webp",
-            "title" : "Ranger XL 4x2",
-            "text" : "Cuotas desde ",
-            "price" : "$625.701",
-            "cuotes" : "80% financiado en 84 cuotas",
-            "features" : [
-                "Adjudicación asegurada cuota nº 3."
-            ],
-            "ctaLink" : "",
-            "ctaText" : "Consultar",
-            "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80",
-            "vehicleId": "nueva_ranger"
-        },
+
 
        
         {
             "image" : "/img/credit/transit.png",
             "title" : "Nueva Transit Van Mediana TN",
             "text" : "Cuotas desde",
-            "price" : "$631.927",
+            "price" : "$638.310",
             "cuotes" : "70% financiado en 84 cuotas",
             "features" : [
                 "12 cuotas fijas (de la 2 a la 13).",
@@ -86,7 +72,7 @@
             "image" : "/img/credit/ranger_4x4.png",
             "title" : "Ranger XL 4x4 MT",
             "text" : "Cuotas desde ",
-            "price" : "$2.621.635",
+            "price" : "$2.710.005",
             "cuotes" : "100% financiado en 20 cuotas",
             "features" : [],
             "ctaLink" : "",
@@ -99,7 +85,7 @@
             "image" : "/img/credit/ranger_4x4.png",
             "title" : "Ranger XL 4x4 MT",
             "text" : "Cuotas desde ",
-            "price" : "$5.091.556",
+            "price" : "$5.262.181",
             "cuotes" : "100% financiado en 10 cuotas",
             "features" : [],
             "ctaLink" : "",
