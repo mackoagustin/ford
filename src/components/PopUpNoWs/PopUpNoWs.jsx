@@ -25,7 +25,7 @@ const PopUpNoWs = () => {
     const handleClosePopup = () => {
         setShowPopup(false);
         
-        const hours = 24; 
+        const hours = 1; 
         const now = new Date().getTime();
         const expiryTime = now + hours * 60 * 60 * 1000; 
         const data = {
@@ -73,19 +73,30 @@ const PopUpNoWs = () => {
                     <span className="text-color-secondary"> no disponible</span>
                 </h4>
                 <p className={`text-color-white ${styles.body}`}>
-                    Nuestro canal de WhatsApp se encuentra temporalmente fuera de servicio.
-                    <br />
-                    Podés comunicarte con nosotros a{' '}
+                En este momento nuestro canal de WhatsApp no se encuentra disponible.
+
+                </p>
+                <p className={`text-color-white ${styles.body}`}>
+                     Para realizar tu consulta, podés escribirnos a{' '}
                     <a
                         href="mailto:info@autospecial.com.ar"
                         className={`text-color-secondary ${styles.email}`}
                     >
                         info@autospecial.com.ar
                     </a>
+                    {' '}o comunicarte con nuestra sucursal de Agronomía al {' '} 
+                    <a
+                        href="tel:1145738200"
+                        className={`text-color-secondary ${styles.phone}`}
+                    >
+                      11 4573-8200
+                    </a>
                     .
                     <br />
                     <br />
-                    Gracias por tu comprensión.
+                    Disculpá las molestias.
+                    <br />
+                    Equipo Auto Special Ford
                 </p>
             </div>
         </div>,

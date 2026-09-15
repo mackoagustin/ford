@@ -86,18 +86,18 @@ function App() {
       </Suspense>
       
       {/* Componente WhatsApp flotante que aparece en todas las páginas */}
-      <Suspense fallback={<div></div>}>
+      {/* <Suspense fallback={<div></div>}>
         <WhatsAppFloat 
           phoneNumber="5491135866256"
           message="Hola, me gustaría obtener más información sobre Ford"
           position="bottom-right"
         />
-      </Suspense>
+      </Suspense> */}
 
       {/* whatsapp fuera de servicio */}
-      {/* <Suspense fallback={null}>
+      <Suspense fallback={null}>
         <PopUpNoWs />
-      </Suspense> */}
+      </Suspense>
     </Router>
   );
 }
