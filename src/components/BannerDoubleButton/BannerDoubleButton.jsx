@@ -141,7 +141,7 @@ const BannerDoubleButton = ({data}) => {
               </svg>
               </Button>
 
-               <Button
+               {/* <Button
                 as="a"
                 href={data.ctaLinkSecond}
                 variant="secondary"
@@ -164,7 +164,7 @@ const BannerDoubleButton = ({data}) => {
                       d="M8.25 4.5L15.75 12 8.25 19.5"
                   />
               </svg>
-              </Button>
+              </Button> */}
             </div>
           )}
 

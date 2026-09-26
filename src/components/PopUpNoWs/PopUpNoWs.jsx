@@ -79,10 +79,10 @@ const PopUpNoWs = () => {
                 <p className={`text-color-white ${styles.body}`}>
                      Para realizar tu consulta, podés escribirnos a{' '}
                     <a
-                        href="mailto:info@autospecial.com.ar"
+                        href="mailto:consulta@autospecial.com.ar"
                         className={`text-color-secondary ${styles.email}`}
                     >
-                        info@autospecial.com.ar
+                        consulta@autospecial.com.ar
                     </a>
                     {' '}o comunicarte con nuestra sucursal de Agronomía al {' '} 
                     <a

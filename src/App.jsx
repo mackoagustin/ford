@@ -95,10 +95,13 @@ function App() {
       </Suspense> */}
 
       {/* whatsapp fuera de servicio */}
-      <Suspense fallback={null}>
+      {/* <Suspense fallback={null}>
         <PopUpNoWs />
-      </Suspense>
+      </Suspense> */}
+
     </Router>
+    
+
   );
 }
 

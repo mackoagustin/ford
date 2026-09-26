@@ -22,7 +22,7 @@ const BannerCard = () => {
                             <p className={styles.text}>Experimentá los últimos modelos 0km de Ford con nuestro Test Drive.</p>
                         </div>
                         <div className={styles.buttonWrapper}>
-                            
+{/*                             
                             <Button
                                 as="a"
                                 href="https://api.whatsapp.com/send/?phone=5491135866256&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
@@ -47,7 +47,7 @@ const BannerCard = () => {
                                         d="M8.25 4.5L15.75 12 8.25 19.5"
                                     />
                                 </svg>
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@ const BannerCard = () => {
                             >
                                 Mas información
                             </Button>
-                            <Button
+                            {/* <Button
                                 as="a"
                                 href="https://api.whatsapp.com/send/?phone=5491135866256&text=Hola%2C+me+gustar%C3%ADa+obtener+m%C3%A1s+informaci%C3%B3n+sobre+testdrive+de&type=phone_number&app_absent=0"
                                 variant="secondary"
@@ -92,7 +92,7 @@ const BannerCard = () => {
                                         d="M8.25 4.5L15.75 12 8.25 19.5"
                                     />
                                 </svg>
-                            </Button>
+                            </Button> */}
                         </div>
                     </div>
                 </div>
