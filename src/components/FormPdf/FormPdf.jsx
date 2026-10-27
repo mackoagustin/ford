@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Input from "../input/Input";
 import Button from "../Button/Button";
-import Select from "../Select/Select";
 import style from "./FormPdf.module.css";
-import { provinciasArgentinas} from "../../data/province";
 import Textarea from "../Textarea/Textarea";
 import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
@@ -17,7 +15,6 @@ const FormPdf = ({
     name: "",
     cellphone: "",
     email: "",
-    province: "",
     message: "",
     pdfFile: null,
     origen: origen,
@@ -80,15 +77,6 @@ const FormPdf = ({
       case 'cellphone':
         if (!value.trim()) return 'El teléfono es requerido';
         if (!validatePhone(value)) return 'Ingresa número válido';
-        return '';
-      
-      case 'province':
-        if (!value) return 'Selecciona una provincia';
-        return '';
-      
-      case 'message':
-        if (!value.trim()) return 'El mensaje es requerido';
-        if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres';
         return '';
       
       case 'pdfFile':
@@ -205,15 +193,6 @@ const FormPdf = ({
         placeholder="Nro. de teléfono (sin el 15)"
         error={errors.cellphone}
       />
-      <Select
-        label="Provincia"
-        name="province"
-        value={formData.province}
-        onChange={handleChange}
-        options={provinciasArgentinas}
-        placeholder="Seleccioná tu provincia"
-        error={errors.province}
-      />
 
       {/* Campo de carga de PDF con diseño personalizado */}
       <div className={`${style.fileWrapper} ${errors.pdfFile ? style.error : formData.pdfFile && !errors.pdfFile ? style.success : ''}`}>
@@ -247,7 +226,7 @@ const FormPdf = ({
       </div>
 
       <Textarea
-        label="Mensaje"
+        label="Mensaje (opcional)"
         name="message"
         value={formData.message}
         onChange={handleChange}
@@ -359,15 +338,6 @@ const FormPdf = ({
         placeholder="Nro. de teléfono (sin el 15)"
         error={errors.cellphone}
       />
-      <Select
-        label="Provincia"
-        name="province"
-        value={formData.province}
-        onChange={handleChange}
-        options={provinciasArgentinas}
-        placeholder="Seleccioná tu provincia"
-        error={errors.province}
-      />
       </div>
 
        {/* Campo de carga de PDF con diseño personalizado */}
@@ -404,7 +374,7 @@ const FormPdf = ({
       
       <div className={style.wraperTextarea}>
           <Textarea
-        label="Mensaje"
+        label="Mensaje (opcional)"
         name="message"
         value={formData.message}
         onChange={handleChange}

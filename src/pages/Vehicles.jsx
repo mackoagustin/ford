@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import VehicleCarCardSliderOrdered from '../components/VehicleCarCardSlider/VehicleCarCardSliderOrdered';
 import styles from './Vehicles.module.css'
 //import useIsMobile from '../hook/useIsMobile';
@@ -13,6 +13,13 @@ const Vehicles = () => {
   //const isMobile =  useIsMobile();
   const selectedBAnner = bannerData.banners[2]
 
+  const [selectedVehicle, setSelectedVehicle] = useState("");
+  const [vehicleTick, setVehicleTick] = useState(0);
+  const handleQuote = (vehicleId) => {
+    setSelectedVehicle(vehicleId);
+    setVehicleTick((n) => n + 1);
+  };
+
   return (
     <div>
       <BannerEmpty data={selectedBAnner} />
@@ -21,37 +28,37 @@ const Vehicles = () => {
 
       <div className={styles.wraperSection}>
         <h2 className='H2'>SUV's</h2>
-        <VehicleCarCardSliderOrdered category="suv" />
+        <VehicleCarCardSliderOrdered category="suv" onQuote={handleQuote} />
       </div>
     
       <div className= {styles.wraperSection}>
         <h2 className='H2'>Pick-Ups</h2>
-        <VehicleCarCardSliderOrdered category="pick-up" />
+        <VehicleCarCardSliderOrdered category="pick-up" onQuote={handleQuote} />
       </div>
 
       <div className={styles.wraperSection}>
         <h2 className='H2'>Deportivos</h2>
-        <VehicleCarCardSliderOrdered category="deportivo" />
+        <VehicleCarCardSliderOrdered category="deportivo" onQuote={handleQuote} />
       </div>
 
       <div className= {styles.wraperSection}>
         <h2 className='H2'>Furgón</h2>
-        <VehicleCarCardSliderOrdered category="furgon" />
+        <VehicleCarCardSliderOrdered category="furgon" onQuote={handleQuote} />
       </div>
 
       <div className= {styles.wraperSection}>
         <h2 className='H2'>Chasis</h2>
-        <VehicleCarCardSliderOrdered category="chasis" />
+        <VehicleCarCardSliderOrdered category="chasis" onQuote={handleQuote} />
       </div>
 
       <div className= {styles.wraperSection}>
         <h2 className='H2'>Electrificados</h2>
-        <VehicleCarCardSliderOrdered category="electrificado" />
+        <VehicleCarCardSliderOrdered category="electrificado" onQuote={handleQuote} />
       </div>
 
       <div className= {styles.wraperSection}>
         <h2 className='H2'>Ford Pro | Ventas Corporativas</h2>
-        <VehicleCarCardSliderOrdered category="fordPro" />
+        <VehicleCarCardSliderOrdered category="fordPro" onQuote={handleQuote} />
       </div>
 
     </div>
@@ -67,6 +74,8 @@ const Vehicles = () => {
         <Form 
           origen="WEB AUTOSPECIAL" 
           suborigen="Vehículos - Asesoramiento" 
+          defaultVehicle={selectedVehicle}
+          vehicleTick={vehicleTick}
         />
       </div>
         

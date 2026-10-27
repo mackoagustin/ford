@@ -30,6 +30,7 @@ function Footer() {
               <div className={styles.menuSection}>
                 <Link to="/" className={styles.menuItem}>Home</Link>
                 <Link to="/vehiculos" className={styles.menuItem}>Vehículos</Link>
+                <Link to="/plan-ovalo" className={styles.menuItem}>Plan Ovalo</Link>
                 <div 
                   className={`${styles.menuItem} ${openSubmenu === 'financiacion' ? styles.activeMenuItem : ''}`}
                   onClick={() => toggleSubmenu('financiacion')}
@@ -64,8 +65,7 @@ function Footer() {
                   <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                     <div className={styles.submenuContainer}>
                       <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
-                      {/* <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Leasing - Hasta 100%</Link> */}
-                      <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo - Desde 70% a 100%</Link>
+                      <Link to="/financiacion/ford-credit#leasing" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
                     </div>
                   </div>
                 )}
@@ -105,11 +105,10 @@ function Footer() {
                   <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                     <div className={styles.submenuContainer}>
                       <Link to="/postventa/talleres" className={styles.submenuItem}>Talleres</Link>
-                      <Link to="/postventa/solicitar-turno" className={styles.submenuItem}>Solicitar Turno</Link>
+                      <Link to="/postventa/solicitar-turno" className={styles.submenuItem}>App Ford (Solicitar turno)</Link>
                       <Link to="/postventa/servicios" className={styles.submenuItem}>Servicios</Link>
                       <Link to="/postventa/repuestos" className={styles.submenuItem}>Repuestos</Link>
                       <Link to="/postventa/accesorios" className={styles.submenuItem}>Accesorios</Link>
-                      <Link to="/postventa/preguntas-frecuentes" className={styles.submenuItem}>Preguntas frecuentes</Link>
                       <Link to="/postventa/ford-protect" className={styles.submenuItemLast}>Ford Protect</Link>
                     </div>
                   </div>
@@ -285,6 +284,7 @@ function Footer() {
               <div className={styles.menuColumn}>
                   <Link to="/" className={styles.menuItem}>Home</Link>
                   <Link to="/vehiculos" className={styles.menuItem}>Vehículos</Link>
+                  <Link to="/plan-ovalo" className={styles.menuItem}>Plan Ovalo</Link>
                   <div 
                     className={`${styles.menuItem} ${openSubmenu === 'financiacion' ? styles.activeMenuItem : ''}`}
                     onClick={() => toggleSubmenu('financiacion')}
@@ -319,8 +319,7 @@ function Footer() {
                     <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                       <div className={styles.submenuContainer}>
                         <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
-                        {/* <Link to="" className={styles.submenuItem}>Leasing - Hasta 100%</Link> */}
-                        <Link to="/financiacion/plan-ovalo" className={styles.submenuItem}>Plan Ovalo - Desde 70% a 100%</Link>
+                        <Link to="/financiacion/ford-credit#leasing" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
                       </div>
                     </div>
                   )}
@@ -360,11 +359,10 @@ function Footer() {
                     <div className={`${styles.submenu} ${styles.submenuOpen}`}>
                       <div className={styles.submenuContainer}>
                       <Link to="/postventa/talleres" className={styles.submenuItem}>Talleres</Link>
-                      <Link to="/postventa/solicitar-turno" className={styles.submenuItem}>Solicitar Turno</Link>
+                      <Link to="/postventa/solicitar-turno" className={styles.submenuItem}>App Ford (Solicitar turno)</Link>
                       <Link to="/postventa/servicios" className={styles.submenuItem}>Servicios</Link>
                       <Link to="/postventa/repuestos" className={styles.submenuItem}>Repuestos</Link>
                       <Link to="/postventa/accesorios" className={styles.submenuItem}>Accesorios</Link>
-                      <Link to="/postventa/preguntas-frecuentes" className={styles.submenuItem}>Preguntas frecuentes</Link>
                       <Link to="/postventa/ford-protect" className={styles.submenuItem}>Ford Protect</Link>
                       </div>
                     </div>
@@ -374,7 +372,7 @@ function Footer() {
                     className={`${styles.menuItem} ${openSubmenu === 'quienesSomos' ? styles.activeMenuItem : ''}`}
                     onClick={() => toggleSubmenu('quienesSomos')}
                   >
-                    <span>Quienes Somos</span>
+                    <span>Quiénes somos</span>
                     <button 
                       className={styles.toggleButton}
                     >

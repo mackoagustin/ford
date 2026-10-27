@@ -13,8 +13,8 @@ const BannerVehicleKnow = ({ backgroundImage, whatsappText }) => {
             {isMobile ? (
                 <div className={styles.wraper} style={{ backgroundImage: `url(${backgroundImage})` }}>
                     <div className={styles.info}>
-                        <h3 className={styles.title}>Veni a <br /> Conocerla</h3>
-                        <div className={styles.buttonWrapper}>
+                        <h3 className={styles.title}>Veni a <br /> conocerla</h3>
+                        {/* <div className={styles.buttonWrapper}>
                             <Button
                                 as="a"
                                 href={`https://wa.me/5491135866256?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive%20para%20${whatsappText}`}
@@ -40,16 +40,16 @@ const BannerVehicleKnow = ({ backgroundImage, whatsappText }) => {
                                     />
                                 </svg>
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             ): (
                 <div className={styles.wraper} style={{ backgroundImage: `url(${backgroundImage})` }}>
                     <div className={styles.info}>
                         <div className={styles.wraperTitle}>
-                            <h3 className={styles.title}>Veni a <br /> Conocerla</h3>
+                            <h3 className={styles.title}>Vení a <br /> conocerla</h3>
                         </div>
-                        <div className={styles.buttonWrapper}>
+                        {/* <div className={styles.buttonWrapper}>
                             <Button
                                 as="a"
                                 href={`https://wa.me/5491135866256?text=Hola,%20me%20interesa%20agendar%20un%20test%20drive%20para%20${whatsappText}`}
@@ -75,7 +75,7 @@ const BannerVehicleKnow = ({ backgroundImage, whatsappText }) => {
                                     />
                                 </svg>
                             </Button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             )}

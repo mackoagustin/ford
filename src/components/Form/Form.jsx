@@ -3,7 +3,6 @@ import Input from "../input/Input";
 import Button from "../Button/Button";
 import Select from "../Select/Select";
 import style from "./Form.module.css";
-import { provinciasArgentinas} from "../../data/province";
 import vehiclesData from "../../data/vehicles.json";
 import Textarea from "../Textarea/Textarea";
 import useIsMobile from "../../hook/useIsMobile";
@@ -25,7 +24,6 @@ const Form = ({
     cellphone: "",
     email: "",
     cuit: "",
-    province: "",
     vehicle: defaultVehicle || "",
     message: "",
     origen: origen,
@@ -82,17 +80,8 @@ const Form = ({
         if (!validatePhone(value)) return 'Ingresa número válido';
         return '';
       
-      case 'province':
-        if (!value) return 'Selecciona una provincia';
-        return '';
-      
       case 'vehicle':
         if (!value) return 'Selecciona un vehículo';
-        return '';
-      
-      case 'message':
-        if (!value.trim()) return 'El mensaje es requerido';
-        if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres';
         return '';
       
       default:
@@ -243,16 +232,6 @@ const Form = ({
         error={errors.cellphone}
         backgroundColor={backgroundColor}
       />
-      <Select
-        label="Provincia"
-        name="province"
-        value={formData.province}
-        onChange={handleChange}
-        options={provinciasArgentinas}
-        placeholder="Seleccioná tu provincia"
-        error={errors.province}
-        backgroundColor={backgroundColor}
-      />
       {showCuit && (
           <Input
             label="CUIT / CUIL"
@@ -266,7 +245,7 @@ const Form = ({
         )}
      
       <Textarea
-        label="Mensaje"
+        label="Mensaje (opcional)"
         name="message"
         value={formData.message}
         onChange={handleChange}
@@ -408,16 +387,6 @@ const Form = ({
         error={errors.cellphone}
         backgroundColor={backgroundColor}
       />
-      <Select
-        label="Provincia"
-        name="province"
-        value={formData.province}
-        onChange={handleChange}
-        options={provinciasArgentinas}
-        placeholder="Seleccioná tu provincia"
-        error={errors.province}
-        backgroundColor={backgroundColor}
-      />
       </div>
      
         {showCuit && (
@@ -434,7 +403,7 @@ const Form = ({
        
       <div className={style.wraperTextarea}>
           <Textarea
-        label="Mensaje"
+        label="Mensaje (opcional)"
         name="message"
         value={formData.message}
         onChange={handleChange}

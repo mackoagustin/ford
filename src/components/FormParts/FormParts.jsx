@@ -4,7 +4,6 @@ import Button from "../Button/Button";
 import Select from "../Select/Select";
 import Textarea from "../Textarea/Textarea";
 import style from "./FormParts.module.css";
-import { provinciasArgentinas } from "../../data/province";
 import locationsData from "../../data/locations.json";
 import useIsMobile from "../../hook/useIsMobile";
 import useFormSubmit from "../../hooks/useFormSubmit";
@@ -18,7 +17,6 @@ const FormParts = ({
     name: "",
     email: "",
     cellphone: "",
-    province: "",
     location: "",
     message: "",
     origen: origen,
@@ -65,17 +63,8 @@ const FormParts = ({
         if (!validatePhone(value)) return 'Ingresa número válido';
         return '';
       
-      case 'province':
-        if (!value) return 'Selecciona una provincia';
-        return '';
-      
       case 'location':
         if (!value) return 'Selecciona una sucursal';
-        return '';
-      
-      case 'message':
-        if (!value.trim()) return 'El mensaje es requerido';
-        if (value.trim().length < 10) return 'El mensaje debe tener al menos 10 caracteres';
         return '';
       
       default:
@@ -183,16 +172,6 @@ const FormParts = ({
         backgroundColor={backgroundColor}
       />
       <Select
-        label="Provincia"
-        name="province"
-        value={formData.province}
-        onChange={handleChange}
-        options={provinciasArgentinas}
-        placeholder="Seleccioná tu provincia"
-        error={errors.province}
-        backgroundColor={backgroundColor}
-      />
-      <Select
         label="Sucursal"
         name="location"
         value={formData.location}
@@ -203,7 +182,7 @@ const FormParts = ({
         backgroundColor={backgroundColor}
       />
       <Textarea
-        label="Mensaje"
+        label="Mensaje (opcional)"
         name="message"
         value={formData.message}
         onChange={handleChange}
@@ -336,19 +315,6 @@ const FormParts = ({
           backgroundColor={backgroundColor}
         />
         <Select
-          label="Provincia"
-          name="province"
-          value={formData.province}
-          onChange={handleChange}
-          options={provinciasArgentinas}
-          placeholder="Seleccioná tu provincia"
-          error={errors.province}
-          backgroundColor={backgroundColor}
-        />
-      </div>
-
-      <div className={style.wraperInput}>
-        <Select
           label="Sucursal"
           name="location"
           value={formData.location}
@@ -362,7 +328,7 @@ const FormParts = ({
       
       <div className={style.wraperTextarea}>
         <Textarea
-          label="Mensaje"
+          label="Mensaje (opcional)"
           name="message"
           value={formData.message}
           onChange={handleChange}

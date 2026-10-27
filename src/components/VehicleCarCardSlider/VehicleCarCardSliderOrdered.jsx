@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/pagination"; 
 import { Pagination } from "swiper/modules";
 
-const VehicleCarCardSliderOrdered = ({ category }) => {
+const VehicleCarCardSliderOrdered = ({ category, onQuote }) => {
   const isMobile = useIsMobile();
 
   const filteredVehicles = vehicleData.vehicles.filter((item) => {
@@ -44,7 +44,7 @@ const VehicleCarCardSliderOrdered = ({ category }) => {
       >
         {orderedVehicles.map((item) => (
           <SwiperSlide key={item.id}>
-            <VehicleCardCard item={item} />
+            <VehicleCardCard item={item} onQuote={onQuote} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -54,7 +54,7 @@ const VehicleCarCardSliderOrdered = ({ category }) => {
   return (
     <div className={`${styles.flex} ${flexContainerClass}`}>
       {orderedVehicles.map((item) => (
-        <VehicleCardCard key={item.id} item={item} />
+        <VehicleCardCard key={item.id} item={item} onQuote={onQuote} />
       ))}
     </div>
   );

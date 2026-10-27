@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import { useNavigate } from "react-router-dom";
 // import QuoterModal from "../QuoterModal/QuoterModal";
 
-const VehiclesCard = ( { item }) => {
+const VehiclesCard = ( { item, onQuote }) => {
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -57,6 +57,7 @@ const VehiclesCard = ( { item }) => {
             variant="secondary"
             onClick={(e) => {
               e.preventDefault();
+              onQuote?.(item.id);
               document.getElementById('formulario-asesoramiento').scrollIntoView({ 
                 behavior: 'smooth',
                 block: 'start'

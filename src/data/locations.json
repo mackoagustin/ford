@@ -14,8 +14,8 @@
         "postventa": {
           "day": "Lunes a Viernes 8:00 a 13:00hs y 14:00 a 18:00hs"
          },
-        "phone": "4573-8200",
-        "whatsapp": "11 2762-3413",
+        "phone": "11 6158-7721",
+        "whatsapp": "11 6894-9307",
         "google_maps_link": "https://www.google.com/maps/place/Av.+Francisco+Beir%C3%B3+2555,+C1419HXE+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.592339,-58.4921415,17z/data=!4m6!3m5!1s0x95bcb63ec7c3c641:0x2916641ba93b9211!8m2!3d-34.5925775!4d-58.4907682!16s%2Fg%2F11flt1rzj0?entry=tts&g_ep=EgoyMDI0MDcxNi4wKgBIAVAD",
         "isWorkshop": true,
         "workshop": {
@@ -24,7 +24,7 @@
           "whatsapp": "11 2762-3413",
           "turnos": "turnos@autospecial.com.ar",
           "whatsappTurnos": "11 6894 9307",
-          "whatsappNumberLink" : "1127623413",
+          "whatsappNumberLink" : "1168949307",
           "wsMessage" : "Hola! Quisiera hablar con el área de Posventa",
           "phone": "4573-8200"
         }
@@ -66,20 +66,20 @@
         "postventa": {
           "day": "Lunes a Viernes 8:00 a 13:00hs y 14:00 a 18:00hs"
          },
-        "phone": "5670-0300",
-        "whatsapp": "11 2762-3413",
+        "phone": "11 6894-9307",
+        "whatsapp": "11 6158-7721",
         "email": "Turnos: turnos@autospecial.com.ar" ,
         "google_maps_link": "https://maps.app.goo.gl/W4Jz6qUjZAj3Xcai9",
         "isWorkshop": true,
         "workshop": {
           "responsible" : "Responsable de repuestos: Juan Pablo Gil",
           "email": "jgil@autospecial.com.ar",
-          "whatsapp": "11 2762-3413",
+          "whatsapp": "11 6158-7721",
           "turnos": "turnos@autospecial.com.ar",
-          "whatsappTurnos": "11 3253 9054",
-          "whatsappNumberLink" : "1127623413",
+          "whatsappTurnos": "11 6158-7721",
+          "whatsappNumberLink" : "1161587721",
           "wsMessage" : "Hola! Quisiera hablar con el área de Posventa",
-          "phone": "5670-0300"
+          "phone": "11 6894-9307"
         }
       },
       { 
@@ -116,18 +116,18 @@
         "postventa": {
           "day": "Lunes a Viernes 8:00 a 13:00hs y 14:00 a 18:00hs"
          },
-        "phone": "7079-1200",
-        "whatsapp": "11 2762-3413",
+        "phone": "11 6894-9307",
+        "whatsapp": "11 6158-7721",
         "email": "Turnos: turnos@autospecial.com.ar" ,
         "google_maps_link": "https://www.google.com/maps/place/Ar%C3%A9valo+1467,+C1414CQC+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5827563,-58.4449522,16.69z/data=!4m6!3m5!1s0x95bcb5ed0699646f:0xca0b63084328a35c!8m2!3d-34.5830343!4d-58.4426744!16s%2Fg%2F11h07rzp0h?entry=tts&g_ep=EgoyMDI0MDcxNi4wKgBIAVAD",
         "isWorkshop": true,
         "workshop": {
           "responsible" : "Responsable de repuestos: Juan Pablo Gil",
           "email": "jgil@autospecial.com.ar",
-          "whatsapp": "11 2762-3413",
+          "whatsapp": "11 6158-7721",
           "turnos": "turnos@autospecial.com.ar",
           "whatsappTurnos": "11 3253 9054",
-          "whatsappNumberLink" : "1127623413",
+          "whatsappNumberLink" : "1161587721",
           "wsMessage" : "Hola! Quisiera hablar con el área de Posventa",
           "phone": "5670-0300"
         }
