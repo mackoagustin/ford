@@ -61,6 +61,26 @@ const LocationCard = ({ location }) => {
               <span style={{ marginLeft: '4px' }}>No disponible</span>
             )}
           </div>
+          {location.whatsapp2 ? (
+          <div className="body-1-16">
+            WhatsApp: 
+            {location.workshop ? (
+              <a 
+              href={`https://wa.me/${location.workshop.whatsappNumberLink2}?text=${encodeURIComponent(location.workshop.wsMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              style={{ 
+                color: 'inherit', 
+                textDecoration: 'underline',
+                marginLeft: '4px'
+              }}>
+                {location.whatsapp2}
+              </a>
+            ) : (
+                <span style={{ marginLeft: '4px' }}>No disponible</span>
+              )}
+            </div>
+          ) : null}
           <div className="body-1-16"> tel:&nbsp;
             {location.phone ? (
               <a 
