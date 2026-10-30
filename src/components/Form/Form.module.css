@@ -89,6 +89,11 @@
     gap: 16px;
   }
 
+  .wraperInput > * {
+    flex: 1;
+    min-width: 0;
+  }
+
   .wraperTextarea {
     margin-top: 0px;
   }

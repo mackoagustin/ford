@@ -3,7 +3,7 @@ import styles from "./PlanOvaloCard.module.css";
 import Button from "../Button/Button";
 import useIsMobile from "../../hook/useIsMobile";
 
-const PlanOvaloCard = ({ item, onConsult }) => {
+const PlanOvaloCard = ({ item, onConsult, hideConsult = false }) => {
   const isMobile = useIsMobile();
   
   if (!item) { return <div>No data available</div>; }
@@ -85,12 +85,34 @@ const PlanOvaloCard = ({ item, onConsult }) => {
            </ul>
          </div>
          <div className={styles.buttonWrapper}>
+           {item.ctaLink && (
+             <Button href={item.ctaLink} variant="primary">
+               Más información
+               <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="20"
+                 height="20"
+                 viewBox="0 0 24 24"
+                 strokeWidth={2.4}
+                 stroke="currentColor"
+                 fill="none"
+                 className={styles["button-icon"]}
+               >
+                 <path
+                   strokeLinecap="round"
+                   strokeLinejoin="round"
+                   d="M8.25 4.5L15.75 12 8.25 19.5"
+                 />
+               </svg>
+             </Button>
+           )}
+           {!hideConsult && (
            <Button
              as="a"
              className={item.ctaTrackingClass}
              href="#formulario-asesoramiento"
              rel="noopener noreferrer"
-             variant="primary"
+             variant="secondary"
              onClick={(e) => {
                e.preventDefault();
                onConsult?.(item.vehicleId);
@@ -120,6 +142,7 @@ const PlanOvaloCard = ({ item, onConsult }) => {
                />
              </svg>
            </Button>
+           )}
          </div>
        </div>
      </div>
@@ -177,12 +200,34 @@ const PlanOvaloCard = ({ item, onConsult }) => {
            </ul>
          </div>
          <div className={styles.buttonWrapper}>
+           {item.ctaLink && (
+             <Button href={item.ctaLink} variant="primary">
+               Más información
+               <svg
+                 xmlns="http://www.w3.org/2000/svg"
+                 width="20"
+                 height="20"
+                 viewBox="0 0 24 24"
+                 strokeWidth={2.4}
+                 stroke="currentColor"
+                 fill="none"
+                 className={styles["button-icon"]}
+               >
+                 <path
+                   strokeLinecap="round"
+                   strokeLinejoin="round"
+                   d="M8.25 4.5L15.75 12 8.25 19.5"
+                 />
+               </svg>
+             </Button>
+           )}
+           {!hideConsult && (
            <Button
              as="a"
              className={item.ctaTrackingClass}
              href="#formulario-asesoramiento"
              rel="noopener noreferrer"
-             variant="primary"
+             variant="secondary"
              onClick={(e) => {
                e.preventDefault();
                onConsult?.(item.vehicleId);
@@ -212,6 +257,7 @@ const PlanOvaloCard = ({ item, onConsult }) => {
                />
              </svg>
            </Button>
+           )}
          </div>
        </div>
      </div>

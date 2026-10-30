@@ -62,7 +62,7 @@ function PlanOvalo() {
         <div className={styles.legalButton}>
         <Button
             as="a"
-            href="https://www.autospecial.com.ar/legalesplanes"
+            href="https://www.planovalo.ar.ford.com/ovalo/Informacion/PoliticaPrivacidad"
             target="_blank"
             rel="noopener noreferrer"
             variant="quarter"

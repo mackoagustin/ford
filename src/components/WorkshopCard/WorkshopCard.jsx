@@ -35,24 +35,25 @@ const WorkshopCard = ({ item }) => {
         </div>
 
         <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
-            {/* {item.workshop.responsible}<br />
-            {item.workshop.email}<br /> */}
-
-            {/* {item.workshop.whatsapp && (
-                <>
-                WhatsApp: {item.workshop.whatsapp} <br />
-                </>
-            )} */}
 
             WhatsApp: 
             <a 
-              href={`https://wa.me/${item.workshop.whatsappNumberLink}?text=${encodeURIComponent(item.workshop.wsMessage)}`} 
+              href={`https://wa.me/${item.workshop.whatsappNumberLink2}?text=${encodeURIComponent(item.workshop.wsMessage)}`} 
               className={styles.whatsappLink}
             >
-              {item.workshop.whatsapp}
+              {item.whatsapp2}
             </a>
-            <br />
         </div>
+        <div className={`${styles.hours} body-1-16 `}>
+
+          WhatsApp: 
+          <a 
+            href={`https://wa.me/${item.workshop.whatsappNumberLink}?text=${encodeURIComponent(item.workshop.wsMessage)}`} 
+            className={styles.whatsappLink}
+          >
+            {item.whatsapp}
+          </a>
+          </div>
         
         <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
         Tel:  
@@ -63,41 +64,7 @@ const WorkshopCard = ({ item }) => {
         </div>
 
 
-        {/* <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
-          {item.hours.monday_friday}<br />
-          {item.hours.saturday}
-        </div>
-
-        <div className={`${styles.hours} body-1-16 ${styles.pt16}`}>
-          Tel: {item.workshop.phone}<br />
-        </div> */}
-
-        {/* <div className={`${styles.buttonWrapper} ${styles.pt16}`}>
-          <Button
-            as="a"
-            href={item.google_maps_link}
-            rel="noopener noreferrer"
-            variant="secondary"
-          >
-            Abrir en maps
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              strokeWidth={2.4}
-              stroke="currentColor"
-              fill="none"
-              className={styles["button-icon"]}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5L15.75 12 8.25 19.5"
-              />
-            </svg>
-          </Button>
-        </div> */}
+        
       </div>
     </div>
   );

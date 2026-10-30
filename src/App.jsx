@@ -22,6 +22,7 @@ const Branches = lazy(() => import('./pages/Branches'));
 // Lazy load de subrutas
 const FordCredit = lazy(() => import('./pages/financing/FordCredit'));
 const PlanOvalo = lazy(() => import('./pages/financing/PlanOvalo'));
+const PlanOvaloVehicleDetail = lazy(() => import('./pages/financing/PlanOvaloVehicleDetail'));
 const AdjudicationActs = lazy(() => import('./pages/financing/AdjudicationActs'));
 const ResultActs = lazy(() => import('./pages/financing/ResultActs'));
 const Workshops = lazy(() => import('./pages/postsale/Workshops'));
@@ -63,6 +64,7 @@ function App() {
           <Route path="/vehiculos/:id" element={<VehicleDetail />} />
           <Route path="/vehiculos/test-drive" element={<Test />} />
           <Route path="/plan-ovalo" element={<PlanOvalo />} />
+          <Route path="/plan-ovalo/:slug" element={<PlanOvaloVehicleDetail />} />
           <Route path="/financiacion" element={<Financing />} />
           <Route path="/financiacion/ford-credit" element={<FordCredit />} />
           <Route path="/financiacion/plan-ovalo/actos-de-adjudicacion" element={<AdjudicationActs />} />

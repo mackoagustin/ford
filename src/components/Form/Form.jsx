@@ -17,7 +17,9 @@ const Form = ({
   showCuit = false,
   onlyFordProVehicles = false,
   defaultVehicle = "",
-  vehicleTick = 0
+  vehicleTick = 0,
+  customVehicleOptions = null,
+  contactFirst = false
 }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -174,7 +176,9 @@ const Form = ({
 
     const filteredVehicles = vehiclesForSelect.filter(vehicle => vehicle.id !== "nueva_ranger");
 
-    const vehicleOptions = onlyFordProVehicles
+    const vehicleOptions = customVehicleOptions
+    ? customVehicleOptions
+    : onlyFordProVehicles
     ? [
         { value: "ranger_xl_chasis", label: "Nueva Ranger XL Chasis" },
         { value: "ranger_xl_doble_cabina", label: "Nueva Ranger XL Doble Cabina" },
@@ -189,49 +193,76 @@ const Form = ({
         label: vehicle.title
       }));
 
+  const vehicleField = (
+    <Select
+      label="Vehículo"
+      name="vehicle"
+      value={formData.vehicle}
+      onChange={handleChange}
+      options={vehicleOptions}
+      placeholder="Seleccioná tu vehículo"
+      error={errors.vehicle}
+      backgroundColor={backgroundColor}
+    />
+  );
+
+  const nameField = (
+    <Input
+      label="Nombre y apellido"
+      name="name"
+      value={formData.name}
+      onChange={handleChange}
+      placeholder="Ingresá nombre y apellido"
+      error={errors.name}
+      backgroundColor={backgroundColor}
+    />
+  );
+
+  const emailField = (
+    <Input
+      label="Email"
+      name="email"
+      value={formData.email}
+      onChange={handleChange}
+      placeholder="nombre@mail.com"
+      error={errors.email}
+      backgroundColor={backgroundColor}
+    />
+  );
+
+  const phoneField = (
+    <Input
+      label="Teléfono/celular"
+      name="cellphone"
+      value={formData.cellphone}
+      onChange={handleChange}
+      placeholder="Nro. de teléfono (sin el 15)"
+      error={errors.cellphone}
+      backgroundColor={backgroundColor}
+    />
+  );
+
  return isMobile ? (
     <form 
       onSubmit={handleSubmit} 
       className={style["form-wraper"]}
       style={{ backgroundColor }}
     >
-       <Select
-        label="Vehículo"
-        name="vehicle"
-        value={formData.vehicle}
-        onChange={handleChange}
-        options={vehicleOptions}
-        placeholder="Seleccioná tu vehículo"
-        error={errors.vehicle}
-        backgroundColor={backgroundColor}
-      />
-      <Input
-        label="Nombre y apellido"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        placeholder="Ingresá nombre y apellido"
-        error={errors.name}
-        backgroundColor={backgroundColor}
-      />
-        <Input
-          label="Email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="nombre@mail.com"
-          error={errors.email}
-          backgroundColor={backgroundColor}
-        />
-      <Input
-        label="Teléfono/celular"
-        name="cellphone"
-        value={formData.cellphone}
-        onChange={handleChange}
-        placeholder="Nro. de teléfono (sin el 15)"
-        error={errors.cellphone}
-        backgroundColor={backgroundColor}
-      />
+      {contactFirst ? (
+        <>
+          {nameField}
+          {emailField}
+          {phoneField}
+          {vehicleField}
+        </>
+      ) : (
+        <>
+          {vehicleField}
+          {nameField}
+          {emailField}
+          {phoneField}
+        </>
+      )}
       {showCuit && (
           <Input
             label="CUIT / CUIL"
@@ -345,49 +376,30 @@ const Form = ({
       onSubmit={handleSubmit} 
       className={style["form-wraper"]}
       style={{ backgroundColor }}
-    > <Select
-          label="Vehículo"
-          name="vehicle"
-          value={formData.vehicle}
-          onChange={handleChange}
-          options={vehicleOptions}
-          placeholder="Seleccioná tu vehículo"
-          error={errors.vehicle}
-          backgroundColor={backgroundColor}
-        />
-      <div className={style.wraperInput}> 
-        
-        <Input
-        label="Nombre y apellido"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        placeholder="Ingresá nombre y apellido"
-        error={errors.name}
-        backgroundColor={backgroundColor}
-      />
-        <Input
-          label="Email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="nombre@mail.com"
-          error={errors.email}
-          backgroundColor={backgroundColor}
-        />
-      </div>
-
-      <div className={style.wraperInput}>
-        <Input
-        label="Teléfono/celular"
-        name="cellphone"
-        value={formData.cellphone}
-        onChange={handleChange}
-        placeholder="Nro. de teléfono (sin el 15)"
-        error={errors.cellphone}
-        backgroundColor={backgroundColor}
-      />
-      </div>
+    >
+      {contactFirst ? (
+        <>
+          <div className={style.wraperInput}>
+            {nameField}
+            {emailField}
+          </div>
+          <div className={style.wraperInput}>
+            {phoneField}
+            {vehicleField}
+          </div>
+        </>
+      ) : (
+        <>
+          {vehicleField}
+          <div className={style.wraperInput}>
+            {nameField}
+            {emailField}
+          </div>
+          <div className={style.wraperInput}>
+            {phoneField}
+          </div>
+        </>
+      )}
      
         {showCuit && (
           <Input

@@ -1,7 +1,7 @@
 .card {
     width: 100%;
-    width: 380px;
-    height: 700px;
+    box-sizing: border-box;
+    min-height: 700px;
     overflow: hidden;
     margin-bottom: 48px;
     display: flex;
@@ -18,7 +18,7 @@
 }
 
 .image {
-    width: 305px;
+    width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 16px;
@@ -41,8 +41,14 @@
     padding: 0 24px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
     margin-top: auto;
+}
+
+.buttonWrapper > a,
+.buttonWrapper > button {
+    align-self: center;
 }
 
 .featuresList {
@@ -67,7 +73,7 @@
 @media (min-width: 768px) {
     .card {
       width: 373px;
-      height: 700px;
+      min-height: 700px;
       display: flex;       
       flex-direction: column;      
       padding-bottom: 12px;
@@ -103,15 +109,15 @@
 
      /* Primeros 3 (índices 0, 1, 2) */
      .card:nth-child(-n+3) {
-      height: 600px !important;
+      min-height: 600px !important;
     }
     /* Segundos 3 (índices 3, 4, 5) */
     .card:nth-child(n+4):nth-child(-n+6) {
-      height: 700px !important;
+      min-height: 700px !important;
     }
     /* Terceros 3 (índices 6, 7, 8) */
     .card:nth-child(n+7):nth-child(-n+9) {
-      height: 580px !important;
+      min-height: 580px !important;
     }
     
     

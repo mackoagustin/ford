@@ -10,9 +10,13 @@ function ScrollToTop() {
       window.history.scrollRestoration = 'manual';
     }
 
-    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
-    document.documentElement.scrollTop = 0;
+    const html = document.documentElement;
+    const previousBehavior = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    html.scrollTop = 0;
     document.body.scrollTop = 0;
+    html.style.scrollBehavior = previousBehavior;
   }, [location.pathname, location.key]); 
 
   return null; 

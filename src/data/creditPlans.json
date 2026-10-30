@@ -10,7 +10,7 @@
                 "6 cuotas fijas (de la 2 a la 13).",
                 "Bonificación de $3.000.000."
             ],
-            "ctaLink" : "",
+            "ctaLink" : "/plan-ovalo/territory",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-territorySEL",
             "vehicleId": "Nueva Territory"
@@ -26,7 +26,7 @@
                 "Bonificación de $5.000.000.",
                 "Bonificación del primer service."
             ],
-            "ctaLink" : "",
+            "ctaLink" : "/plan-ovalo/ranger",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-rangerXL4x2-80",
             "vehicleId": "nueva_ranger"
@@ -42,7 +42,7 @@
                 "Bonificación de $5.000.000.",
                 "Bonificación del primer service."
             ],
-            "ctaLink" : "",
+            "ctaLink" : "/plan-ovalo/ranger",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-rangerXLS-V6",
             "vehicleId": "nueva_ranger"
@@ -63,7 +63,7 @@
                 "3 primeros servicios de mantenimiento bonificados."
 
             ],
-            "ctaLink" : "",
+            "ctaLink" : "/plan-ovalo/transit",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-transit-van-medianaTN",
             "vehicleId": "transit_van"
@@ -78,7 +78,8 @@
             "ctaLink" : "",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-20cuotas",
-            "vehicleId": "nueva_ranger"
+            "vehicleId": "nueva_ranger",
+            "planEmpresas": true
         },
 
         {
@@ -91,7 +92,8 @@
             "ctaLink" : "",
             "ctaText" : "Consultar",
             "ctaTrackingClass": "Consultar-ovalo-rangerXL4x4-10cuotas",
-            "vehicleId": "nueva_ranger"
+            "vehicleId": "nueva_ranger",
+            "planEmpresas": true
         }
        
         

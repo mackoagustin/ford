@@ -1,0 +1,467 @@
+{
+  "vehicles": [
+    {
+      "slug": "ranger",
+      "vehicleId": "nueva_ranger",
+      "formVehicles": [
+        { "value": "Ranger XL 4x2", "label": "Ranger XL 4x2" },
+        { "value": "Ranger XLS V6 4WD", "label": "Ranger XLS V6 4WD" }
+      ],
+      "banner": {
+        "chip": "¡Últimas unidades!",
+        "title": "Tu Ranger con descuento del",
+        "discount": "30%",
+        "discountText": "en las primeras",
+        "discountHighlight": "12 cuotas",
+        "ctaText": "Consultar",
+        "imageDesktop": "/img/plan-ovalo/ranger/banner_desktop.webp",
+        "imageMobile": "/img/plan-ovalo/ranger/banner_mobile.webp"
+      },
+      "benefits": [
+        {
+          "title": "12 cuotas Fijas",
+          "note": "(I)",
+          "text": "de la cuota 2 a la 13"
+        },
+        {
+          "title": "Bonificación 30% sobre alícuota",
+          "note": "(II)",
+          "text": "de la cuota 1 a la 13"
+        },
+        {
+          "title": "Bonificación 100%",
+          "note": "(III)",
+          "text": "en 1 alícuota post retiro del vehículo"
+        },
+        {
+          "title": "1° service gratis",
+          "note": "(IV)",
+          "text": "retirando la unidad dentro del primer año"
+        }
+      ],
+      "plan": {
+        "title": "Plan",
+        "highlight": "80/20",
+        "conceptLabel": "Conceptos de cuota",
+        "rangeLabel": "Cuota 1 a 120",
+        "items": [
+          {
+            "title": "Alícuota",
+            "description": "Incluye bonificación del 30% sobre alícuota de la cuota 1 a la 13",
+            "value": "$304.315"
+          },
+          {
+            "title": "Cargos por administración sin impuestos nacionales",
+            "description": "10% Sobre alícuota",
+            "value": "$43.474"
+          },
+          {
+            "title": "IVA",
+            "description": "Impuesto al valor agregado sobre cargos por administración",
+            "value": "$9.129"
+          },
+          {
+            "title": "Derecho de admisión sin impuestos nacionales",
+            "description": "Saldo prorrateado de cuota 2 a 61 (3%)",
+            "value": "$32.605"
+          },
+          {
+            "title": "IVA",
+            "description": "Impuesto al valor agregado sobre derecho de admisión",
+            "value": "$6.847"
+          },
+          {
+            "title": "Seguro de vida",
+            "description": "**A partir de cuota 2",
+            "value": "$59.844"
+          }
+        ],
+        "total": {
+          "title": "Valor de cuota*",
+          "value": "$456.215",
+          "description": "Valor de cuota sin impuestos nacionales",
+          "secondaryValue": "$570.659"
+        },
+        "ctaText": "Consultar"
+      },
+      "versions": [
+        {
+          "name": "Ranger",
+          "highlight": "XL 4x2",
+          "image": "/img/plan-ovalo/ranger/ranger_xl_4x2.webp",
+          "vehicleValue": {
+            "label": "Valor Móvil del vehículo***",
+            "value": "$48.924.190"
+          },
+          "vehicleValueNoTax": {
+            "label": "Valor Móvil sin impuestos nacionales",
+            "value": "$44.275.285"
+          },
+          "items": [
+            { "label": "Monto a abonar en cuotas (80%)", "value": "$39.139.352" },
+            { "label": "Alícuota complementaria (20%)", "value": "$9.784.838" },
+            { "label": "Cuota Fijas de N°2 a N°13", "value": "$342.275" },
+            { "label": "Bonificación de 1 alícuota post\nretiro del vehículo", "value": "$326.161" }
+          ],
+          "firstInstallment": {
+            "label": "Cuota 1",
+            "value": "$267.778"
+          },
+          "ctaText": "Consultar"
+        },
+        {
+          "name": "Ranger",
+          "highlight": "XLS V6 4WD",
+          "image": "/img/plan-ovalo/ranger/ranger_xls_v6_4wd.webp",
+          "vehicleValue": {
+            "label": "Valor Móvil del vehículo***",
+            "value": "$65.210.460"
+          },
+          "vehicleValueNoTax": {
+            "label": "Valor Móvil sin impuestos nacionales",
+            "value": "$59.013.991"
+          },
+          "items": [
+            { "label": "Monto a abonar en cuotas (80%)", "value": "$52.168.368" },
+            { "label": "Alícuota complementaria (20%)", "value": "$13.042.092" },
+            { "label": "Cuota Fijas de N°2 a N°13", "value": "$456.215" },
+            { "label": "Bonificación de 1 alícuota post\nretiro del vehículo", "value": "$434.736" }
+          ],
+          "firstInstallment": {
+            "label": "Cuota 1",
+            "value": "$356.919"
+          },
+          "ctaText": "Consultar"
+        }
+      ],
+      "gallery": [
+        "/img/vehicles/ranger/Exterior_1.webp",
+        "/img/vehicles/ranger/Exterior_2.webp",
+        "/img/vehicles/ranger/Exterior_3.webp",
+        "/img/vehicles/ranger/Exterior_4.webp",
+        "/img/vehicles/ranger/Interior_5.webp",
+        "/img/vehicles/ranger/Interior_6.webp",
+        "/img/vehicles/ranger/Interior_7.webp",
+        "/img/vehicles/ranger/Interior_8.webp"
+      ],
+      "features": [
+        {
+          "title": "Tecnología inteligente",
+          "image": "/img/vehicles/ranger/benefit_1.png",
+          "text": "La Ranger se destaca por su tencología innovadora, incorporando una pantalla LED multitáctil de 12 con alta definición y un panel de instrumentos LED de 12,4."
+        },
+        {
+          "title": "Diseño",
+          "image": "/img/vehicles/ranger/benefit_2.png",
+          "text": "La Ranger presenta un diseño completamente renovado, destacándose por su apariencia moderna y atractiva, tanto en el interior como en el exterior."
+        },
+        {
+          "title": "Seguridad",
+          "image": "/img/vehicles/ranger/benefit_3.png",
+          "text": "Incorpora Ford Co-Pilot 360. Un conjunto de tecnologías de asistencia al conductor que ayudan a mejorar la seguridad en la conducción. Incluye funciones como el control de velocidad crucero adapativo con Stop & Go, cámara 360°, entre otras."
+        }
+      ],
+      "otherPlansTitle": "Conocé más planes vigentes",
+      "otherPlansHighlight": "de suscripción",
+      "disclaimers": [
+        "Aclaraciones:",
+        "*El valor de cuota es de referencia, calculado según el Valor Móvil vigente al 02/10/2026. No incluye impuesto al sello, el cual se abona de la cuota 2 a 16 (en caso de corresponder).",
+        "**Valor de referencia cuota 2.",
+        "***Valores de referencia, tomando como base de cálculo el valor móvil vigente al: 02/10/2026"
+      ],
+      "legalLink": "https://www.autospecial.com.ar/legalesplanes"
+    },
+    {
+      "slug": "territory",
+      "vehicleId": "Nueva Territory",
+      "formVehicles": [
+        { "value": "Nueva Territory SEL", "label": "Nueva Territory SEL" }
+      ],
+      "banner": {
+        "variant": "quota",
+        "chip": "",
+        "title": "Tu Territory con\nbonificación del",
+        "discount": "30%",
+        "discountNote": "Sobre alícuota",
+        "discountText": "12",
+        "discountHighlight": "cuotas fijas",
+        "ctaText": "Consultar",
+        "imageDesktop": "/img/plan-ovalo/ranger/territory_desktop.webp",
+        "imageMobile": "/img/plan-ovalo/ranger/territory_mobile.webp"
+      },
+      "benefits": [
+        {
+          "title": "12 cuotas Fijas",
+          "note": "(I)",
+          "text": "de la cuota 2 a la 13"
+        },
+        {
+          "title": "Bonificación 30% sobre alícuota",
+          "note": "(II)",
+          "text": "de la cuota 1 a la 13"
+        }
+      ],
+      "plan": {
+        "title": "Plan",
+        "highlight": "70/30",
+        "conceptLabel": "Conceptos de cuota",
+        "rangeLabel": "Cuota 1 a 84",
+        "items": [
+          {
+            "title": "Alícuota",
+            "description": "Incluye bonificación del 30% sobre alícuota de la cuota 1 a la 13",
+            "value": "$285.028"
+          },
+          {
+            "title": "Cargos por administración sin impuestos nacionales",
+            "description": "10% Sobre alícuota",
+            "value": "$40.718"
+          },
+          {
+            "title": "IVA",
+            "description": "Impuesto al valor agregado sobre cargos por administración",
+            "value": "$8.551"
+          },
+          {
+            "title": "Derecho de admisión sin impuestos nacionales",
+            "description": "Saldo prorrateado de cuota 2 a 61 (3%)",
+            "value": "$24.431"
+          },
+          {
+            "title": "IVA",
+            "description": "Impuesto al valor agregado sobre derecho de admisión",
+            "value": "$5.131"
+          },
+          {
+            "title": "Seguro de vida",
+            "description": "**A partir de cuota 2",
+            "value": "$44.530"
+          }
+        ],
+        "total": {
+          "title": "Valor de cuota*",
+          "value": "$408.389",
+          "description": "Valor de cuota sin impuestos nacionales",
+          "secondaryValue": "$394.707"
+        },
+        "ctaText": "Consultar"
+      },
+      "versions": [
+        {
+          "name": "Territory",
+          "highlight": "SEL",
+          "formValue": "Nueva Territory SEL",
+          "image": "/img/plan-ovalo/ranger/territory_sel.webp",
+          "vehicleValue": {
+            "label": "Valor Móvil del vehículo***",
+            "value": "$48.861.930"
+          },
+          "vehicleValueNoTax": {
+            "label": "Valor Móvil sin impuestos nacionales",
+            "value": "$40.381.760"
+          },
+          "items": [
+            { "label": "Monto a abonar en cuotas (70%)", "value": "$34.203.351" },
+            { "label": "Alícuota complementaria (30%)", "value": "$14.658.579" },
+            { "label": "Cuota Fijas de N°2 a N°13", "value": "$408.389" }
+          ],
+          "firstInstallment": {
+            "label": "Cuota 1",
+            "value": "$334.297"
+          },
+          "ctaText": "Consultar"
+        }
+      ],
+      "gallery": [
+        "/img/vehicles/territory/Exterior_1.webp",
+        "/img/vehicles/territory/Exterior_2.webp",
+        "/img/vehicles/territory/Exterior_3.webp",
+        "/img/vehicles/territory/Exterior_4.webp",
+        "/img/vehicles/territory/Interior_5.webp",
+        "/img/vehicles/territory/Interior_6.webp",
+        "/img/vehicles/territory/Interior_7.webp",
+        "/img/vehicles/territory/Interior_8.webp"
+      ],
+      "features": [
+        {
+          "title": "Motorización",
+          "image": "/img/vehicles/territory/benefit_1.webp",
+          "text": "Elegí entre la potencia EcoBoost o la eficiencia híbrida. Encontrá el motor perfecto que se adapta a tu ritmo de conducción y a tus necesidades."
+        },
+        {
+          "title": "Tecnología",
+          "image": "/img/vehicles/territory/benefit_2.webp",
+          "text": "Disfrutá una experiencia de conducción inigualable gracias a la tecnología innovadora pensada para optimizar tus viajes."
+        },
+        {
+          "title": "Seguridad",
+          "image": "/img/vehicles/territory/benefit_3.webp",
+          "text": "Con Ford Co-Pilot 360, un conjunto de asistencias que facilita y protege cada maniobra al volante elevando tu seguridad."
+        }
+      ],
+      "otherPlansTitle": "Conocé más planes vigentes",
+      "otherPlansHighlight": "de suscripción",
+      "disclaimers": [
+        "Aclaraciones:",
+        "*El valor de cuota es de referencia, calculado según el Valor Móvil vigente al 02/10/2026. No incluye impuesto al sello, el cual se abona de la cuota 2 a 16 (en caso de corresponder).",
+        "**Valor de referencia cuota 2.",
+        "***Valores de referencia, tomando como base de cálculo el valor móvil vigente al: 02/10/2026"
+      ],
+      "legalLink": "https://www.autospecial.com.ar/legalesplanes"
+    },
+    {
+      "slug": "transit",
+      "vehicleId": "transit_van",
+      "formVehicles": [
+        { "value": "Nueva Transit Van Mediana TN", "label": "Nueva Transit Van Mediana TN" }
+      ],
+      "banner": {
+        "variant": "installments",
+        "chip": "",
+        "title": "Tu Transit en",
+        "installments": "12",
+        "installmentsLabel": "Cuotas fijas",
+        "asideText": "Adjudicación en",
+        "asideHighlight": "Cuota 3",
+        "ctaText": "Consultar",
+        "imageDesktop": "/img/plan-ovalo/ranger/transit_hero.webp",
+        "imageMobile": "/img/plan-ovalo/ranger/transit_hero_mobile.webp"
+      },
+      "benefits": [
+        {
+          "title": "12 cuotas Fijas",
+          "note": "(I)",
+          "text": "de la cuota 2 a la 13"
+        },
+        {
+          "title": "Adjudicación asegurada Cuota N°3",
+          "note": "(II)",
+          "text": ""
+        },
+        {
+          "title": "Bonificación 100%",
+          "note": "(III)",
+          "text": "en las 2 alícuotas post retiro del vehículo"
+        },
+        {
+          "title": "3 primeros services gratis",
+          "note": "(IV)",
+          "text": "con posibilidad de realizarlo en cualquier concesionario oficial del país"
+        }
+      ],
+      "plan": {
+        "title": "Plan",
+        "highlight": "70/30",
+        "conceptLabel": "Conceptos de cuota",
+        "rangeLabel": "Cuota 1 a 84",
+        "items": [
+          {
+            "title": "Alícuota",
+            "description": "Valor móvil a financiar dividido el plazo del plan",
+            "value": "$580.800"
+          },
+          {
+            "title": "Cargos por administración sin impuestos nacionales",
+            "description": "10% Sobre alícuota",
+            "value": "$58.080"
+          },
+          {
+            "title": "IVA",
+            "description": "Impuesto al valor agregado sobre cargos por administración",
+            "value": "$12.197"
+          },
+          {
+            "title": "Derecho de admisión sin impuestos nacionales",
+            "description": "Saldo prorrateado de cuota 2 a 61 (3%)",
+            "value": "$34.848"
+          },
+          {
+            "title": "IVA",
+            "description": "Impuesto al valor agregado sobre derecho de admisión",
+            "value": "$7.318"
+          },
+          {
+            "title": "Seguro de vida",
+            "description": "**A partir de cuota 2",
+            "value": "$63.517"
+          }
+        ],
+        "total": {
+          "title": "Valor de cuota*",
+          "value": "$756.760",
+          "description": "Valor de cuota sin impuestos nacionales",
+          "secondaryValue": "$737.245"
+        },
+        "ctaText": "Consultar"
+      },
+      "versions": [
+        {
+          "name": "Transit",
+          "highlight": "Van Mediana",
+          "formValue": "Nueva Transit Van Mediana TN",
+          "image": "/img/plan-ovalo/ranger/transit.webp",
+          "vehicleValue": {
+            "label": "Valor Móvil del vehículo***",
+            "value": "$69.696.000"
+          },
+          "vehicleValueNoTax": {
+            "label": "Valor Móvil sin impuestos nacionales",
+            "value": "$63.073.303"
+          },
+          "items": [
+            { "label": "Monto a abonar en cuotas (70%)", "value": "$48.787.200" },
+            { "label": "Alícuota complementaria (30%)", "value": "$20.908.800" },
+            { "label": "Cuota Fijas de N°2 a N°13", "value": "$756.760" },
+            { "label": "Bonificación de 2 alícuotas post\nretiro del vehículo", "value": "$1.161.600" }
+          ],
+          "firstInstallment": {
+            "label": "Cuota 1",
+            "value": "$651.077"
+          },
+          "ctaText": "Consultar"
+        }
+      ],
+      "gallery": [
+        "/img/vehicles/transit_van/Exterior_1.png",
+        "/img/vehicles/transit_van/Exterior_2.png",
+        "/img/vehicles/transit_van/Exterior_3.png",
+        "/img/vehicles/transit_van/Exterior_4.png",
+        "/img/vehicles/transit_van/Interior_5.png",
+        "/img/vehicles/transit_van/Interior_6.png",
+        "/img/vehicles/transit_van/Interior_7.png",
+        "/img/vehicles/transit_van/Interior_8.png"
+      ],
+      "features": [
+        {
+          "title": "Performance",
+          "image": "/img/vehicles/transit_van/benefit_1.png",
+          "text": "Con un motor diésel de 2.0 L con 165 CV y 390 Nm de par, el EcoBlue ofrece potencia y eficiencia, maximizando la rentabilidad de tu negocio."
+        },
+        {
+          "title": "Tecnología",
+          "image": "/img/vehicles/transit_van/benefit_2.png",
+          "text": "Incorpora una pantalla multitáctil de 12 compatible con Android Auto y Apple CarPlay para gestionar llamadas, acceder a mapas y optimizar rutas."
+        },
+        {
+          "title": "Seguridad",
+          "image": "/img/vehicles/transit_van/benefit_3.png",
+          "text": "Equipada con tecnologías para una conducción más segura: control electrónico de estabilidad y antivuelco, control de carga adaptativo y mucho más."
+        },
+        {
+          "title": "Conectividad",
+          "image": "/img/vehicles/transit_van/benefit_4.png",
+          "text": "Con la Transit Van, tenés el control total de tu negocio gracias a la conectividad inteligente de FordPass™, el acompañamiento preventivo y mucho más."
+        }
+      ],
+      "otherPlansTitle": "Conocé más planes vigentes",
+      "otherPlansHighlight": "de suscripción",
+      "disclaimers": [
+        "Aclaraciones:",
+        "*El valor de cuota es de referencia, calculado según el Valor Móvil vigente al 02/10/2026. No incluye impuesto al sello, el cual se abona de la cuota 2 a 16 (en caso de corresponder).",
+        "**Valor de referencia cuota 2.",
+        "***Valores de referencia, tomando como base de cálculo el valor móvil vigente al: 02/10/2026"
+      ],
+      "legalLink": "https://www.autospecial.com.ar/legalesplanes"
+    }
+  ]
+}

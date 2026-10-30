@@ -1,0 +1,998 @@
+.container {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.container p {
+    margin: 0;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.bannerMedia {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+/* .bannerMedia::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(15, 15, 15, 0.9) 44.052%, rgba(15, 15, 15, 0) 68.255%);
+} */
+
+.bannerImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bannerContent {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 16px 24px 16px;
+    box-sizing: border-box;
+}
+
+.bannerChip {
+    background-color: var(--color-emphasis);
+    color: var(--color-white);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 30px;
+}
+
+.bannerTitle {
+    width: 277px;
+    color: var(--color-neutral-200);
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.8px;
+    font-weight: 500;
+    margin: 8px 0 0 0;
+}
+
+.bannerDiscount {
+    width: 277px;
+    height: 73px;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.bannerDiscountValue {
+    color: var(--color-white);
+    font-size: 84px;
+    line-height: 66px;
+    letter-spacing: -1.4616px;
+    font-weight: 500;
+}
+
+.bannerDivider {
+    flex-shrink: 0;
+    height: 52px;
+    border-left: 1px solid var(--color-secondary);
+}
+
+.bannerDiscountText {
+    width: 84px;
+    color: var(--color-neutral-200);
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.bannerDiscountText strong {
+    font-size: 15px;
+    line-height: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.bannerButton {
+    margin-top: auto;
+    align-self: stretch;
+}
+
+.bannerQuota .bannerTitle {
+    width: 300px;
+    color: var(--color-neutral-300);
+    font-size: 39px;
+    line-height: 42px;
+    letter-spacing: -0.78px;
+    white-space: pre-line;
+}
+
+.bannerQuota .bannerImage {
+    object-position: center center;
+}
+
+.bannerQuota .bannerDiscount {
+    width: 300px;
+    align-items: flex-end;
+}
+
+.bannerQuotaAside {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bannerDiscountNote {
+    color: var(--color-neutral-300);
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.bannerQuotaAsideRow {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.bannerQuota .bannerDivider {
+    height: 59px;
+}
+
+.bannerQuota .bannerDiscountText {
+    width: auto;
+    color: var(--color-white);
+    font-size: 34px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.bannerQuota .bannerDiscountText strong {
+    display: block;
+    margin-top: 2px;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.bannerInstallmentsRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.bannerInstallmentsMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.bannerInstallments .bannerTitle {
+    width: auto;
+    margin: 0;
+    color: var(--color-neutral-300);
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.bannerInstallmentsCount {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.bannerInstallmentsNumber {
+    color: var(--color-white);
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 700;
+}
+
+.bannerInstallmentsLabel {
+    width: min-content;
+    padding-top: 12px;
+    color: var(--color-neutral-300);
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bannerInstallments .bannerDivider {
+    height: 110px;
+    border-left-width: 2px;
+}
+
+.bannerInstallmentsAside {
+    margin: 0;
+    color: var(--color-neutral-300);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.bannerInstallmentsAside strong {
+    display: block;
+    color: var(--color-white);
+    font-size: 30px;
+    line-height: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Beneficios */
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    padding-top: 24px;
+}
+
+.benefitCard {
+    background-color: var(--color-secondary);
+    border-radius: 24px;
+    padding: 16px 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.benefitTitle {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+}
+
+.benefitTitle sup {
+    font-size: 12.9px;
+    line-height: 0;
+}
+
+.benefitText {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.benefitsPair .benefitCard {
+    min-height: 135px;
+}
+
+/* Plan */
+.sectionTitle {
+    color: var(--color-dark);
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+    margin: 32px 0 0 0;
+}
+
+.planTable {
+    background-color: var(--color-neutral-100);
+    border-radius: 16px;
+    padding: 24px 16px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.planHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--color-primary);
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.planHeader p:first-child {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.planHeader p:last-child {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.planRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.planRowTitle {
+    color: var(--color-primary);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    font-weight: 500;
+}
+
+.planRow .planRowTitle {
+    max-width: 215px;
+}
+
+.planRowDescription {
+    color: var(--color-neutral-600);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.planRowValue {
+    color: var(--color-primary);
+    font-size: 20px;
+    line-height: 28px;
+    white-space: nowrap;
+}
+
+.planTotal {
+    padding-top: 16px;
+    border-top: 1px solid var(--color-neutral-300);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.planTotalRow,
+.planTotalSecondary {
+    display: flex;
+    flex-direction: column;
+}
+
+.planButton {
+    display: flex;
+    padding-top: 16px;
+}
+
+/* Versiones */
+.version {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+}
+
+.version + .version {
+    margin-top: 32px;
+}
+
+.versionInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.versionInfo .sectionTitle {
+    align-self: flex-start;
+    margin: 0;
+}
+
+.versionImageBox {
+    position: relative;
+    width: 328px;
+    max-width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.versionImage {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.versionPricing {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.priceCard {
+    background-color: var(--color-secondary);
+    border-radius: 16px;
+    padding: 40px 16px;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.priceCard p {
+    margin: 0;
+}
+
+.priceTop {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.priceRowMain,
+.priceRowNoTax,
+.priceRow,
+.priceRowTotal {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceRowMain {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.priceRowNoTax {
+    color: var(--color-dark);
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.32px;
+    font-weight: 500;
+}
+
+.priceItems {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--color-neutral-300);
+}
+
+.priceRow p:first-child {
+    color: var(--color-neutral-200);
+    font-size: 16px;
+    line-height: 22px;
+    white-space: pre-line;
+}
+
+.priceRow p:last-child {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.priceRowTotal {
+    padding-top: 16px;
+    border-top: 1px solid var(--color-neutral-300);
+}
+
+.priceRowTotal p:first-child {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.priceRowTotal p:last-child {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+/* Galería */
+.galleryMobile {
+    padding: 32px 0 32px 16px;
+}
+
+.gallerySwiper {
+    --swiper-pagination-bottom: 0px;
+}
+
+.gallerySwiper :global(.swiper-wrapper) {
+    padding-bottom: 24px;
+}
+
+.gallerySlide {
+    width: 305px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.gallerySlide:global(.swiper-slide-active) {
+    opacity: 1;
+}
+
+.galleryDesktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 1168px;
+    margin: 80px auto 0 auto;
+    padding: 0 16px 80px 16px;
+}
+
+.galleryImage {
+    width: 305px;
+    height: 305px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+/* Características */
+.features {
+    background-color: var(--color-neutral-100);
+    padding: 42px 16px;
+}
+
+.featureChips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    max-width: 1164px;
+    margin: 0 auto;
+}
+
+.featureContent {
+    max-width: 1164px;
+    margin: 0 auto;
+    padding-top: 42px;
+}
+
+/* Otros planes */
+.otherPlansTitle {
+    padding-top: 60px;
+    margin: 0;
+}
+
+/* Información general y aclaraciones */
+.faqSection {
+    background-color: var(--color-neutral-100);
+    margin-top: 32px;
+}
+
+.disclaimers {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+}
+
+.disclaimerText {
+    color: var(--color-neutral-600);
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.legalLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0 60px 0;
+    color: var(--color-secondary);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.legalLink:hover {
+    color: var(--color-primary);
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    /* Banner */
+    .banner {
+        height: 400px;
+    }
+
+    .bannerMedia {
+        top: 0;
+        width: 100%;
+        height: 400px;
+    }
+
+    .bannerMedia::after {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8) 30.358%, rgba(0, 0, 0, 0) 58.072%);
+    }
+
+    .bannerContent {
+        max-width: 1206px;
+        margin: 0 auto;
+        padding: 33px 16px 32px 16px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .bannerChip {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 2.951px 11.805px;
+        border-radius: 44.27px;
+    }
+
+    .bannerTitle {
+        width: 404px;
+        font-size: 58px;
+        line-height: 60px;
+        letter-spacing: -1.16px;
+        margin-top: 12px;
+    }
+
+    .bannerDiscount {
+        width: 404px;
+        height: 107.725px;
+        gap: 11.805px;
+    }
+
+    .bannerDiscountValue {
+        font-size: 124px;
+        line-height: 97px;
+        letter-spacing: -2.48px;
+    }
+
+    .bannerDivider {
+        height: 76.735px;
+        border-left-width: 1.476px;
+    }
+
+    .bannerDiscountText {
+        width: 124px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .bannerDiscountText strong {
+        font-size: 22px;
+    }
+
+    .bannerButton {
+        margin-top: 16px;
+        align-self: flex-start;
+    }
+
+    .bannerQuota .bannerContent {
+        justify-content: flex-start;
+        padding-top: 53px;
+    }
+
+    .bannerQuota .bannerTitle {
+        width: 440px;
+        margin-top: 0;
+        color: var(--color-neutral-200);
+        font-size: 58px;
+        line-height: 60px;
+        letter-spacing: -1.16px;
+    }
+
+    .bannerQuota .bannerImage {
+        object-position: center center;
+    }
+
+    .bannerQuota .bannerDiscount {
+        width: auto;
+        height: 108px;
+        margin-top: 22px;
+    }
+
+    .bannerDiscountNote {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .bannerQuota .bannerDivider {
+        height: 96px;
+    }
+
+    .bannerQuota .bannerDiscountText {
+        font-size: 54px;
+    }
+
+    .bannerQuota .bannerDiscountText strong {
+        font-size: 24px;
+    }
+
+    .bannerInstallments .bannerMedia::after {
+        background: linear-gradient(91deg, rgba(0, 0, 0, 0.7) 43%, rgba(0, 0, 0, 0) 69%);
+    }
+
+    .bannerInstallments .bannerContent {
+        justify-content: flex-start;
+        padding-top: 68px;
+    }
+
+    .bannerInstallmentsRow {
+        align-items: flex-start;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    .bannerInstallments .bannerDivider {
+        margin: 6px 26px 0 13px;
+    }
+
+    .bannerInstallmentsAside {
+        align-self: center;
+    }
+
+    .bannerInstallments .bannerTitle {
+        font-size: 52px;
+        line-height: 58px;
+    }
+
+    .bannerInstallmentsCount {
+        gap: 14px;
+    }
+
+    .bannerInstallmentsNumber {
+        font-size: 108px;
+        line-height: 130px;
+    }
+
+    .bannerInstallmentsLabel {
+        padding-top: 22px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    .bannerInstallments .bannerDivider {
+        height: 192px;
+    }
+
+    .bannerInstallmentsAside {
+        font-size: 30px;
+        line-height: 37.5px;
+    }
+
+    .bannerInstallmentsAside strong {
+        font-size: 54px;
+        line-height: 57px;
+    }
+
+    .bannerInstallments .bannerButton {
+        margin-top: 21px;
+    }
+
+    /* Beneficios */
+    .benefits {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .benefitsPair {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .benefitCard {
+        min-height: 107px;
+        padding: 16px;
+    }
+
+    .benefitTitle {
+        max-width: 215px;
+        margin: 0 auto;
+    }
+
+    .benefitsPair .benefitCard {
+        min-height: 107px;
+    }
+
+    .benefitsPair .benefitTitle {
+        max-width: 280px;
+    }
+    /* Plan */
+    .sectionTitle {
+        font-size: 58px;
+        line-height: 70px;
+        letter-spacing: -1.0092px;
+        margin-top: 80px;
+    }
+
+    .planTable {
+        padding: 40px 24px;
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .planHeader {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .planHeader p:first-child,
+    .planHeader p:last-child {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 500;
+    }
+
+    .planRow {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        column-gap: 24px;
+    }
+
+    .planRow > div {
+        display: contents;
+    }
+
+    .planRow .planRowTitle {
+        grid-column: 1;
+        grid-row: 1;
+        max-width: none;
+    }
+
+    .planRow .planRowDescription {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .planRow .planRowValue {
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+
+    .planRowTitle,
+    .planRowValue {
+        font-size: 26px;
+        line-height: 34px;
+        letter-spacing: 0;
+        font-weight: 500;
+    }
+
+    .planRowDescription {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .planTotal {
+        margin-top: 16px;
+        gap: 0;
+    }
+
+    .planTotalRow,
+    .planTotalSecondary {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .planButton {
+        justify-content: center;
+        padding-top: 24px;
+    }
+
+    /* Versiones */
+    .version {
+        display: grid;
+        grid-template-columns: 573px 573px;
+        justify-content: space-between;
+        gap: 16px 24px;
+        padding: 0;
+    }
+
+    .version + .version {
+        margin-top: 80px;
+    }
+
+    .versionInfo {
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .versionImageBox {
+        width: 573px;
+        height: 334px;
+        border-radius: 16px;
+    }
+
+    .versionPricing {
+        gap: 16px;
+    }
+
+    .priceCard {
+        padding: 40px 24px;
+        gap: 32px;
+    }
+
+    .priceRowMain,
+    .priceRowNoTax,
+    .priceRow,
+    .priceRowTotal {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .priceRowMain {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 500;
+    }
+
+    .priceRowNoTax {
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0;
+        font-weight: 400;
+    }
+
+    .priceItems {
+        gap: 8px;
+    }
+
+    .priceRow p:first-child,
+    .priceRow p:last-child {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .priceRowMain p:last-child,
+    .priceRowNoTax p:last-child,
+    .priceRow p:last-child,
+    .priceRowTotal p:last-child {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .priceRowMain p:first-child,
+    .priceRowNoTax p:first-child {
+        white-space: nowrap;
+    }
+
+    .priceRowTotal {
+        align-items: center;
+    }
+
+    .priceRowTotal p:first-child,
+    .priceRowTotal p:last-child {
+        font-size: 26px;
+        line-height: 34px;
+        font-weight: 500;
+    }
+
+    /* Galería */
+    .galleryImage {
+        width: 286px;
+        height: 275px;
+    }
+
+    /* Características */
+    .features {
+        padding: 80px 16px;
+    }
+
+    /* Otros planes */
+    .otherPlansTitle {
+        padding-top: 80px;
+    }
+
+    /* Información general y aclaraciones */
+    .faqSection {
+        margin-top: 0;
+    }
+
+    .disclaimers {
+        max-width: 573px;
+    }
+
+    .legalLink {
+        margin-bottom: 80px;
+    }
+}
