@@ -139,7 +139,7 @@
         padding: 24px;
         height: auto;
         min-height: 400px;
-        height: 700px;
+        height: 500px;
     }
     
     .mainTitle {
@@ -173,7 +173,7 @@
     }
     
     .content h2 {
-        text-align: left !important;
+        text-align: center !important;
         margin-top: 16px;
         font-size: 26px;
     }

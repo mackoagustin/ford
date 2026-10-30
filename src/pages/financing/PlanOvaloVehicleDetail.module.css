@@ -126,13 +126,18 @@
 
 .bannerQuota .bannerDiscount {
     width: 300px;
-    align-items: flex-end;
+    align-items: flex-start;
+}
+
+.bannerQuota .bannerDiscountValue {
+    align-self: flex-end;
 }
 
 .bannerQuotaAside {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    margin: 4px 0 0 -5px;
 }
 
 .bannerDiscountNote {
@@ -151,6 +156,7 @@
 
 .bannerQuota .bannerDivider {
     height: 59px;
+    margin-left: 17px;
 }
 
 .bannerQuota .bannerDiscountText {
@@ -316,6 +322,58 @@
 .planHeader p:last-child {
     font-size: 20px;
     line-height: 28px;
+}
+
+.planToggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0;
+    border: 0;
+    background: none;
+    font: inherit;
+    text-align: left;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.planToggleOpen {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.planToggleText {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.planToggleLabel {
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+}
+
+.planToggleRange {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.planToggleIcon {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--color-secondary);
+    transition: transform 0.2s ease;
+}
+
+.planToggleOpen .planToggleIcon {
+    transform: rotate(180deg);
+}
+
+.planBody {
+    display: contents;
 }
 
 .planRow {
@@ -697,8 +755,13 @@
         line-height: 22px;
     }
 
+    .bannerQuotaAside {
+        margin: -11px 0 0 11px;
+    }
+
     .bannerQuota .bannerDivider {
         height: 96px;
+        margin-left: 20px;
     }
 
     .bannerQuota .bannerDiscountText {

@@ -55,7 +55,7 @@ const PlanOvalo10 = ({ data }) => {
                     </div>
                     
                     <div className={styles.content}>
-                        <h2 className='H2' style={{textAlign: 'left', marginTop: '16px'}}>{data[selectedItem].title}</h2>
+                        <h2 className='H2' style={{textAlign: 'center', marginTop: '16px'}}>{data[selectedItem].title}</h2>
                         <p className='body-1-16' style={{textAlign: 'left', marginBottom: '40px'}}>{data[selectedItem].text}</p>
                     </div>
                 </div>

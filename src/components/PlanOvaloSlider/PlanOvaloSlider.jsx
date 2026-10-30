@@ -14,8 +14,8 @@ const PlanOvaloSlider = ( { items, onConsult, hideConsult = false }) => {
     return (
       <Swiper
         modules={[Pagination]}
-        spaceBetween={70}
-        slidesPerView={1.3}
+        spaceBetween={16}
+        slidesPerView={1.2}
         loop={true}
         pagination={{ clickable: true }}
         className={styles.wraperSwiper}

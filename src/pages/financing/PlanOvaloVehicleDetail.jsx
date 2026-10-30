@@ -34,6 +34,20 @@ const ChevronIcon = () => (
   </svg>
 );
 
+const ChevronDownIcon = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className={className}
+    aria-hidden="true"
+  >
+    <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z" />
+  </svg>
+);
+
 function PlanOvaloVehicleDetail() {
   const { slug } = useParams();
   const isMobile = useIsMobile();
@@ -45,6 +59,7 @@ function PlanOvaloVehicleDetail() {
   const [selectedVehicle, setSelectedVehicle] = useState("");
   const [vehicleTick, setVehicleTick] = useState(0);
   const [selectedFeature, setSelectedFeature] = useState(0);
+  const [planOpen, setPlanOpen] = useState(false);
 
   const handleConsult = (vehicleId) => {
     setSelectedVehicle(vehicleId);
@@ -179,29 +194,49 @@ function PlanOvaloVehicleDetail() {
           {plan.title} <span className="text-color-secondary">{plan.highlight}</span>
         </h2>
         <div className={detailStyles.planTable}>
-          <div className={detailStyles.planHeader}>
-            <p>{plan.conceptLabel}</p>
-            <p>{plan.rangeLabel}</p>
-          </div>
-          {plan.items.map((item, index) => (
-            <div key={index} className={detailStyles.planRow}>
-              <div>
-                <p className={detailStyles.planRowTitle}>{item.title}</p>
-                <p className={detailStyles.planRowDescription}>{item.description}</p>
+          {isMobile ? (
+            <button
+              type="button"
+              className={`${detailStyles.planToggle} ${planOpen ? detailStyles.planToggleOpen : ''}`}
+              aria-expanded={planOpen}
+              aria-controls="plan-conceptos"
+              onClick={() => setPlanOpen((open) => !open)}
+            >
+              <span className={detailStyles.planToggleText}>
+                <span className={detailStyles.planToggleLabel}>{plan.conceptLabel}</span>
+                <span className={detailStyles.planToggleRange}>{plan.rangeLabel}</span>
+              </span>
+              <ChevronDownIcon className={detailStyles.planToggleIcon} />
+            </button>
+          ) : (
+            <div className={detailStyles.planHeader}>
+              <p>{plan.conceptLabel}</p>
+              <p>{plan.rangeLabel}</p>
+            </div>
+          )}
+          {(!isMobile || planOpen) && (
+            <div id="plan-conceptos" className={detailStyles.planBody}>
+              {plan.items.map((item, index) => (
+                <div key={index} className={detailStyles.planRow}>
+                  <div>
+                    <p className={detailStyles.planRowTitle}>{item.title}</p>
+                    <p className={detailStyles.planRowDescription}>{item.description}</p>
+                  </div>
+                  <p className={detailStyles.planRowValue}>{item.value}</p>
+                </div>
+              ))}
+              <div className={detailStyles.planTotal}>
+                <div className={detailStyles.planTotalRow}>
+                  <p className={detailStyles.planRowTitle}>{plan.total.title}</p>
+                  <p className={detailStyles.planRowValue}>{plan.total.value}</p>
+                </div>
+                <div className={detailStyles.planTotalSecondary}>
+                  <p className={detailStyles.planRowDescription}>{plan.total.description}</p>
+                  <p className={detailStyles.planRowDescription}>{plan.total.secondaryValue}</p>
+                </div>
               </div>
-              <p className={detailStyles.planRowValue}>{item.value}</p>
             </div>
-          ))}
-          <div className={detailStyles.planTotal}>
-            <div className={detailStyles.planTotalRow}>
-              <p className={detailStyles.planRowTitle}>{plan.total.title}</p>
-              <p className={detailStyles.planRowValue}>{plan.total.value}</p>
-            </div>
-            <div className={detailStyles.planTotalSecondary}>
-              <p className={detailStyles.planRowDescription}>{plan.total.description}</p>
-              <p className={detailStyles.planRowDescription}>{plan.total.secondaryValue}</p>
-            </div>
-          </div>
+          )}
         </div>
         <div className={detailStyles.planButton}>
           <Button
