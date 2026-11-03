@@ -39,7 +39,39 @@ function Navbar() {
         {/* Menú Desktop */}
         <ul className={`${styles.navLinks} ${styles.desktop}`}>
             <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
-            <li><Link to="/plan-ovalo" onClick={closeMenu}>Plan Ovalo</Link></li>
+            <li className={styles.hasSubmenu}>
+              <button onClick={() => toggleSubmenu('planOvalo')} className={styles.wraperLink}>
+                <div className={styles.iconWrapper}>
+                  Plan Ovalo
+                  <svg
+                    className="chevron-icon"
+                    style={{
+                      transform: openSubmenu === 'planOvalo' ? 'rotate(180deg)' : 'rotate(0deg)',
+                      transition: 'transform 0.3s ease-in-out'
+                    }}
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2.4}
+                    stroke="currentColor"
+                    fill="none"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19.75 8.25L12 15.75 4.25 8.25"
+                    />
+                  </svg>
+                </div>
+              </button>
+              <ul className={`${styles.submenu} ${openSubmenu === 'planOvalo' ? styles.submenuOpen : ''}`}>
+                <li><Link to="/plan-ovalo/territory" onClick={closeMenu}>Plan Territory</Link></li>
+                <li><Link to="/plan-ovalo/ranger" onClick={closeMenu}>Plan Ranger</Link></li>
+                <li><Link to="/plan-ovalo/transit" onClick={closeMenu}>Plan Transit</Link></li>
+                <li><Link to="/plan-ovalo" onClick={closeMenu}>Ver Todos</Link></li>
+              </ul>
+            </li>
 
             <li className={styles.hasSubmenu}>
               <button onClick={() => toggleSubmenu('financiacion')}>
@@ -179,9 +211,42 @@ function Navbar() {
                 <div className={styles.wraperLink}>
                   <li><Link to="/vehiculos" onClick={closeMenu}>Vehículos</Link></li>
                 </div>
-                <div className={styles.wraperLink}>
-                  <li><Link to="/plan-ovalo" onClick={closeMenu}>Plan Ovalo</Link></li>
-                </div>
+                <li className={`${styles.hasSubmenu} ${openSubmenu === 'planOvalo' ? styles.active : ''}`}>
+                  <button
+                    onClick={() => toggleSubmenu('planOvalo')}
+                    className={styles.wraperLink}
+                  >
+                    <div className={styles.iconWrapper}>
+                      Plan Ovalo
+                      <svg
+                        className="chevron-icon"
+                        style={{
+                          transform: openSubmenu === 'planOvalo' ? 'rotate(180deg)' : 'rotate(0deg)',
+                          transition: 'transform 0.3s ease-in-out'
+                        }}
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        strokeWidth={2.4}
+                        stroke="currentColor"
+                        fill="none"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M19.75 8.25L12 15.75 4.25 8.25"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                  <ul className={`${styles.submenu} ${openSubmenu === 'planOvalo' ? styles.submenuOpen : ''}`}>
+                    <li><Link to="/plan-ovalo/territory" onClick={closeMenu}>Plan Territory</Link></li>
+                    <li><Link to="/plan-ovalo/ranger" onClick={closeMenu}>Plan Ranger</Link></li>
+                    <li><Link to="/plan-ovalo/transit" onClick={closeMenu}>Plan Transit</Link></li>
+                    <li><Link to="/plan-ovalo" onClick={closeMenu}>Ver Todos</Link></li>
+                  </ul>
+                </li>
                  <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
                     <button
                       onClick={() => toggleSubmenu('financiacion')}

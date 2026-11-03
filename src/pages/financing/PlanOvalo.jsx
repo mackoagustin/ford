@@ -18,7 +18,7 @@ import ovaloData from '../../data/plan_ovalo.json';
 
 function PlanOvalo() {
   const isMobile = useIsMobile();
-  const selectedBanner = bannerData.banners[3]
+  const selectedBanner = bannerData.banners[4]
   const items = creditPlanes.creditPlans;
   const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
   const ovaloItems = ovaloData.ovalo;

@@ -3,6 +3,51 @@ import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import useIsMobile from '../../hook/useIsMobile';
 
+function PlanOvaloFooterItem({ isOpen, onToggle }) {
+  return (
+    <>
+      <div
+        className={`${styles.menuItem} ${isOpen ? styles.activeMenuItem : ''}`}
+        onClick={onToggle}
+      >
+        <span>Plan Ovalo</span>
+        <button className={styles.toggleButton} type="button">
+          <svg
+            className="chevron-icon"
+            style={{
+              transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+              transition: 'transform 0.3s ease-in-out'
+            }}
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            strokeWidth={2.4}
+            stroke="var(--color-white)"
+            fill="none"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M19.75 8.25L12 15.75 4.25 8.25"
+            />
+          </svg>
+        </button>
+      </div>
+      {isOpen && (
+        <div className={`${styles.submenu} ${styles.submenuOpen}`}>
+          <div className={styles.submenuContainer}>
+            <Link to="/plan-ovalo/territory" className={styles.submenuItem}>Plan Territory</Link>
+            <Link to="/plan-ovalo/ranger" className={styles.submenuItem}>Plan Ranger</Link>
+            <Link to="/plan-ovalo/transit" className={styles.submenuItem}>Plan Transit</Link>
+            <Link to="/plan-ovalo" className={styles.submenuItem}>Ver Todos</Link>
+          </div>
+        </div>
+      )}
+    </>
+  );
+}
+
 function Footer() { 
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const isMobile = useIsMobile();
@@ -30,7 +75,10 @@ function Footer() {
               <div className={styles.menuSection}>
                 <Link to="/" className={styles.menuItem}>Home</Link>
                 <Link to="/vehiculos" className={styles.menuItem}>Vehículos</Link>
-                <Link to="/plan-ovalo" className={styles.menuItem}>Plan Ovalo</Link>
+                <PlanOvaloFooterItem
+                  isOpen={openSubmenu === 'planOvalo'}
+                  onToggle={() => toggleSubmenu('planOvalo')}
+                />
                 <div 
                   className={`${styles.menuItem} ${openSubmenu === 'financiacion' ? styles.activeMenuItem : ''}`}
                   onClick={() => toggleSubmenu('financiacion')}
@@ -284,7 +332,10 @@ function Footer() {
               <div className={styles.menuColumn}>
                   <Link to="/" className={styles.menuItem}>Home</Link>
                   <Link to="/vehiculos" className={styles.menuItem}>Vehículos</Link>
-                  <Link to="/plan-ovalo" className={styles.menuItem}>Plan Ovalo</Link>
+                  <PlanOvaloFooterItem
+                    isOpen={openSubmenu === 'planOvalo'}
+                    onToggle={() => toggleSubmenu('planOvalo')}
+                  />
                   <div 
                     className={`${styles.menuItem} ${openSubmenu === 'financiacion' ? styles.activeMenuItem : ''}`}
                     onClick={() => toggleSubmenu('financiacion')}

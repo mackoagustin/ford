@@ -1,6 +1,10 @@
 {
     "bannerHomeSlider": [
     {
+        "image" : "/img/banners/cyber_monday_desktop.jpeg",
+        "image_mobile": "/img/banners/cyber_monday_mobile.webp"
+    },
+    {
         "image" : "/img/banners/home/territory_desktop.webp",
         "image_mobile": "/img/banners/home/territory_mobile.jpeg",
         "textUp" : "LLEGÓ LA NUEVA FORD TERRITORY PLATINUM",

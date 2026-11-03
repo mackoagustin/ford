@@ -21,6 +21,17 @@
     object-fit: cover;
 }
 
+.imageContain {
+    object-fit: contain;
+    background: linear-gradient(to bottom, #1266a5, #0f6486);
+}
+
+@media (min-width: 768px) {
+    .imageContain {
+        background: linear-gradient(to bottom, #032f5c, #05244e);
+    }
+}
+
 .contentOverlay {
     position: absolute;
     left: 16px;

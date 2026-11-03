@@ -33,6 +33,15 @@
         "ctaLink": ""
       },
       {
+        "image": "/img/banners/cyber_monday_desktop.jpeg",
+        "image_mobile": "/img/banners/cyber_monday_mobile.webp",
+        "title": "",
+        "subtitle": "",
+        "description": "",
+        "ctaText": "",
+        "ctaLink": ""
+      },
+      {
         "image": "/img/banners/banner_know_us.png",
         "title": "Somos <br/>Auto Special",
         "subtitle": "",

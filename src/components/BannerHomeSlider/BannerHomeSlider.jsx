@@ -35,7 +35,7 @@ const BannerHomeSlider = () => {
                         <div className={styles.slide}>
                             <img 
                                 src={isMobile && banner.image_mobile ? banner.image_mobile : banner.image}
-                                className={styles.image}
+                                className={`${styles.image} ${banner.fit === 'contain' ? styles.imageContain : ''}`}
                                 alt={`Banner Home Slider ${index + 1}`}
                                 loading={index === 0 ? "eager" : "lazy"}
                                 fetchPriority={index === 0 ? "high" : "auto"}
