@@ -10,7 +10,7 @@ import Button from "../../../components/Button/Button";
 
 function KnowUs() {
 
-  const selectedBanner = bannerData.banners[4]
+  const selectedBanner = bannerData.banners[5]
   const isMobile = useIsMobile();
 
   return (

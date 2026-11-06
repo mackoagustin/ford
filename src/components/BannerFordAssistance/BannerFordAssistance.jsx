@@ -6,7 +6,7 @@ import useIsMobile from '../../hook/useIsMobile'
 
 const BannerFordAssistance = () => {
 
-    const data = dataAssistance.banners[7]
+    const data = dataAssistance.banners[8]
 
     const isMobile = useIsMobile();
 

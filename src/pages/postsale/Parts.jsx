@@ -9,7 +9,7 @@ import FormParts from '../../components/FormParts/FormParts';
 
 function Parts() {
 
-  const selectedBanner = bannerData.banners[17];
+  const selectedBanner = bannerData.banners[18];
   const isMobile = useIsMobile();
 
   return (

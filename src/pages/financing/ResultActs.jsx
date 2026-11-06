@@ -10,7 +10,7 @@ import adminPlanOvalo from '../../data/adminPlanOvalo.json';
 
 const ResultActs = () => {
 
-    const selectedBanner = bannerData.banners[15];
+    const selectedBanner = bannerData.banners[16];
     const isMobile = useIsMobile();
     const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
     const selectedAdminPlanIndices = [2,0]; 

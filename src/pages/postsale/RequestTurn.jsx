@@ -22,7 +22,7 @@ function handleSectionClick(e, id) {
 }
 
 function RequestTurn() {
-  const selectedBanner = bannerData.banners[10];
+  const selectedBanner = bannerData.banners[11];
   const { hash } = useLocation();
 
   useEffect(() => {

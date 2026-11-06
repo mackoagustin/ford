@@ -1,0 +1,121 @@
+{
+    "siteUrl": "https://autospecial.com.ar",
+    "siteName": "Auto Special Ford",
+    "default": {
+        "title": "Auto Special Ford",
+        "description": "Concesionario oficial Ford: vehículos 0km, Plan Óvalo, financiación, Ford Pro y posventa en Auto Special Ford.",
+        "image": "/img/logo/auto_special_col.png"
+    },
+    "planOvalo": {
+        "territory": {
+            "title": "Ford Territory en Plan Óvalo – Cuota desde {{precio}} | Auto Special Ford",
+            "description": "Sumate a Plan Óvalo y comprá tu Ford Territory 0km: 30% de bonificación sobre alícuota, 12 cuotas fijas y cuota 1 desde {{precio}}. Consultá en Auto Special Ford.",
+            "priceSource": "firstInstallment",
+            "breadcrumbName": "Territory",
+            "products": [
+                {
+                    "version": "SEL",
+                    "name": "Ford Territory SEL 0km",
+                    "description": "Ford Territory SEL 0km bajo Plan Óvalo: plan 70/30, 12 cuotas fijas y bonificación del 30% sobre alícuota de la cuota 1 a la 13."
+                }
+            ],
+            "faq": [
+                {
+                    "question": "¿Qué es Plan Ovalo?",
+                    "answer": "Plan Ovalo es una herramienta financiera pensada para facilitar la compra de tu Ford 0km. No trabaja con tasa de interés: ajusta el valor de las cuotas y de la deuda en relación al precio actual del modelo suscripto."
+                },
+                {
+                    "question": "¿Cuándo son los actos de sorteo y licitación?",
+                    "answer": "Los primeros días de cada mes se publica en el diario Clarín el llamado al acto de sorteo y licitación, con lugar, fecha y horario. El acto se transmite en vivo desde las 9.30 hs del día establecido."
+                },
+                {
+                    "question": "¿Cómo abono mis cuotas?",
+                    "answer": "Por débito automático (tarjeta de crédito, cuenta corriente o caja de ahorro), pago online con tarjeta o DEBIN, o con el cupón de pago en Pago Fácil, Rapipago, Provincia Net, Banco Galicia, Santander Río o Banco Nación."
+                },
+                {
+                    "question": "¿Se puede ceder el plan?",
+                    "answer": "Sí. Si todavía no retiraste el vehículo, podés completar el formulario de cesión en un Concesionario Oficial Ford o enviar una Carta Documento firmada por comprador y vendedor a Plan Ovalo."
+                },
+                {
+                    "question": "¿Plan Ovalo pide requisitos crediticios?",
+                    "answer": "Depende del porcentaje del plan ya pagado al momento de pedir el vehículo: con más del 50% pagado alcanza con un veraz; con menos, puede pedirse además un codeudor y comprobante de ingresos."
+                }
+            ]
+        },
+        "ranger": {
+            "title": "Ford Ranger en Plan Óvalo – Cuotas desde {{precio}} | Auto Special Ford",
+            "description": "Ford Ranger XL 4x2 y XLS V6 4WD en Plan Óvalo: 30% de bonificación, 1 cuota bonificada al retirar el vehículo y 1er service gratis. Cuotas desde {{precio}}. Consultá ahora.",
+            "priceSource": "creditPlans",
+            "breadcrumbName": "Ranger",
+            "products": [
+                {
+                    "version": "XL 4x2",
+                    "name": "Ford Ranger XL 4x2 0km",
+                    "description": "Ford Ranger XL 4x2 0km bajo Plan Óvalo: plan 80/20, 12 cuotas fijas, bonificación del 30% sobre alícuota y 1 alícuota bonificada al retirar el vehículo."
+                },
+                {
+                    "version": "XLS V6 4WD",
+                    "name": "Ford Ranger XLS V6 4WD 0km",
+                    "description": "Ford Ranger XLS V6 4WD 0km bajo Plan Óvalo: plan 80/20, 12 cuotas fijas, bonificación del 30% sobre alícuota y 1 alícuota bonificada al retirar el vehículo."
+                }
+            ],
+            "faq": [
+                {
+                    "question": "¿Qué es Plan Ovalo?",
+                    "answer": "Plan Ovalo es una herramienta financiera pensada para facilitar la compra de tu Ford 0km. No trabaja con tasa de interés: ajusta el valor de las cuotas y de la deuda en relación al precio actual del modelo suscripto."
+                },
+                {
+                    "question": "¿Cuántos vehículos se adjudican en cada grupo?",
+                    "answer": "Depende de los fondos recaudados en cada grupo. El primer vehículo siempre se adjudica por sorteo y el resto por licitación."
+                },
+                {
+                    "question": "¿Cómo abono mis cuotas?",
+                    "answer": "Por débito automático (tarjeta de crédito, cuenta corriente o caja de ahorro), pago online con tarjeta o DEBIN, o con el cupón de pago en Pago Fácil, Rapipago, Provincia Net, Banco Galicia, Santander Río o Banco Nación."
+                },
+                {
+                    "question": "¿Se puede ceder el plan?",
+                    "answer": "Sí. Si todavía no retiraste el vehículo, podés completar el formulario de cesión en un Concesionario Oficial Ford o enviar una Carta Documento firmada por comprador y vendedor a Plan Ovalo."
+                },
+                {
+                    "question": "¿Hay garantía de que se cumpla la entrega del vehículo?",
+                    "answer": "Sí. Ford Argentina S.C.A. garantiza en forma solidaria con la Administradora el cumplimiento de las entregas y la restitución de haberes, según la Resolución General 8/2015 de la IGJ."
+                }
+            ]
+        },
+        "transit": {
+            "title": "Ford Transit en Plan Óvalo – 12 cuotas fijas | Auto Special Ford",
+            "description": "Ford Transit en Plan Óvalo: 12 cuotas fijas desde {{precio}}, adjudicación asegurada en cuota 3 y bonificación del 100% en 2 alícuotas. Consultá en Auto Special Ford.",
+            "priceSource": "firstInstallment",
+            "breadcrumbName": "Transit",
+            "products": [
+                {
+                    "version": "Van Mediana",
+                    "name": "Ford Transit Van Mediana 0km",
+                    "description": "Ford Transit Van Mediana 0km bajo Plan Óvalo: plan 70/30, 12 cuotas fijas, adjudicación asegurada en cuota 3 y bonificación del 100% en las 2 alícuotas posteriores al retiro del vehículo."
+                }
+            ],
+            "faq": [
+                {
+                    "question": "¿Qué es Plan Ovalo?",
+                    "answer": "Plan Ovalo es una herramienta financiera pensada para facilitar la compra de tu Ford 0km. No trabaja con tasa de interés: ajusta el valor de las cuotas y de la deuda en relación al precio actual del modelo suscripto."
+                },
+                {
+                    "question": "¿Dónde puedo conocer los resultados del acto de sorteo y licitación?",
+                    "answer": "Se publican mensualmente el día del acto de adjudicación en la web de Plan Ovalo, y además se notifica por e-mail o SMS a quienes resulten favorecidos."
+                },
+                {
+                    "question": "¿Cómo abono mis cuotas?",
+                    "answer": "Por débito automático (tarjeta de crédito, cuenta corriente o caja de ahorro), pago online con tarjeta o DEBIN, o con el cupón de pago en Pago Fácil, Rapipago, Provincia Net, Banco Galicia, Santander Río o Banco Nación."
+                },
+                {
+                    "question": "¿Cómo obtengo mi cupón de pago?",
+                    "answer": "Se envía todos los meses por correo electrónico a la dirección registrada, y también podés verlo iniciando sesión con tu usuario y contraseña en la web de Plan Ovalo."
+                },
+                {
+                    "question": "¿Se puede ceder el plan?",
+                    "answer": "Sí. Si todavía no retiraste el vehículo, podés completar el formulario de cesión en un Concesionario Oficial Ford o enviar una Carta Documento firmada por comprador y vendedor a Plan Ovalo."
+                }
+            ]
+        }
+    }
+}

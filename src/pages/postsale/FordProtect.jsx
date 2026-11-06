@@ -14,7 +14,7 @@ import Form from '../../components/Form/Form';
 
 
 function FordProtect() {
-  const selectedBanner = bannerData.banners[6];
+  const selectedBanner = bannerData.banners[7];
   const accordion = accordionData.accordion;
   const isMobile = useIsMobile();
   return (

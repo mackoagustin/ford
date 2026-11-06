@@ -15,7 +15,7 @@ import LegalModal from '../../components/LegalModal/LegalModal';
 
 function FordCredit() {
   const isMobile = useIsMobile();
-  const selectedBanner = bannerData.banners[13]
+  const selectedBanner = bannerData.banners[14]
   const items = financing.credit;
   const finance = financing;
   const leasing = financing.leasing;
@@ -62,7 +62,7 @@ function FordCredit() {
 
       <div className= {styles.px16}>
         <div className= {styles.wraperSection}>
-           <h2 className='H2 text-color-primary' id='leasing'>Ford Pro - Leasing</h2>
+           <h2 className='H2 text-color-primary' id='leasing' style={{ scrollMarginTop: '24px' }}>Ford Pro - Leasing</h2>
            {isMobile ? (
             <p className="text-color-neutral-500 subtitle-20">Podés financiar hasta el 100% de un nuevo vehículo mientras lo usás, sin necesidad de realizar un desembolso inicial.</p>
            ) : (

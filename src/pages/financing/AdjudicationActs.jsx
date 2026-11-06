@@ -12,7 +12,7 @@ import Form from '../../components/Form/Form';
 import Button from '../../components/Button/Button';
 
 function AdjudicationActs() {
-    const selectedBanner = bannerData.banners[14];
+    const selectedBanner = bannerData.banners[15];
     const isMobile = useIsMobile();
     const dib = dibData.dib;
     const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;

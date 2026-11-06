@@ -8,7 +8,7 @@ import FormPdf from '../../../components/FormPdf/FormPdf';
 import Button from '../../../components/Button/Button';
 
 function JoinTeam() {
-    const selectedBanner = bannerData.banners[5]
+    const selectedBanner = bannerData.banners[6]
     const isMobile = useIsMobile();
   
     return (

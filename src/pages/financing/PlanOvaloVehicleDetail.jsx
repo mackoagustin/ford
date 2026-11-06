@@ -19,6 +19,9 @@ import ovaloData from '../../data/plan_ovalo.json';
 import faqData from '../../data/faq.json';
 import creditPlanes from '../../data/creditPlans.json';
 import planOvaloVehicles from '../../data/planOvaloVehicleDetail.json';
+import seoData from '../../data/seo.json';
+import Seo from '../../components/Seo/Seo';
+import { buildPlanOvaloJsonLd, fillTemplate, getPlanOvaloPrice } from '../../utils/seo';
 
 const ChevronIcon = () => (
   <svg
@@ -100,8 +103,21 @@ function PlanOvaloVehicleDetail() {
 
   const { banner, plan } = vehicle;
 
+  const seo = seoData.planOvalo[vehicle.slug];
+  const seoValues = seo
+    ? { precio: getPlanOvaloPrice(vehicle, seo.priceSource, creditPlanes.creditPlans) }
+    : null;
+
   return (
     <div>
+      {seo ? (
+        <Seo
+          title={fillTemplate(seo.title, seoValues)}
+          description={fillTemplate(seo.description, seoValues)}
+          image={banner.imageDesktop}
+          jsonLd={buildPlanOvaloJsonLd(vehicle, seo)}
+        />
+      ) : null}
       {/* Banner */}
       <div
         className={`${detailStyles.banner} ${banner.variant === 'quota' ? detailStyles.bannerQuota : ''} ${banner.variant === 'installments' ? detailStyles.bannerInstallments : ''}`}

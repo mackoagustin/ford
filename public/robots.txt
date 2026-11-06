@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /formulario-enviado
+
+Sitemap: https://autospecial.com.ar/sitemap.xml

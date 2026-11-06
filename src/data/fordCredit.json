@@ -36,22 +36,6 @@
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
             "ctaTrackingClass": "consultar-ranger-XL"
-        },{
-            "title":"Nueva Maverick Lariat Híbrida",
-            "text": "Tasa 0% en 18 meses.",
-            "image": "/img/fordcredit/maverick.webp",
-            "ctaLink": "#formulario-asesoramiento",
-            "ctaText": "Consultar",
-            "ctaTrackingClass": "consultar-maverick",
-            "financing": {
-                "vehicle":"Nueva Maverick",
-                "ways": [
-                    "Leasing. Podés financiar hasta el 100% de un nuevo vehículo mientras lo usas, sin necesidad de realizar un desembolso inicial.",
-                    "Plan Ovalo. Plan de Ahorro mediante el cual, un grupo cerrado de personas realiza un aporte mensual, destinado a la adquisición de su vehículo Ford 0Km.",
-                    "Tasa fija. Cuota mensual a tasa fija."
-                ],
-                "image": "/img/vehicles/fordCredit/maverick.png"
-            }
         },
         {
             "title":"Nueva Territory SEL",
@@ -158,7 +142,7 @@
         {
             "title":"Ranger - Renová tu flota mediante leasing:",
             "text": "Financiá el 100% en 36 meses.",
-            "image": "/img/fordcredit/ranger_leasing.jpg",
+            "image":"/img/fordcredit/nueva_ranger3.webp",
             "ctaLink": "#formulario-asesoramiento",
             "ctaText": "Consultar",
             "ctaTrackingClass": "consultar-leasing-ranger"

@@ -9,7 +9,7 @@ import Form from '../components/Form/Form';
 
 function Test() {
 
-  const selectedBanner = bannerData.banners[8];
+  const selectedBanner = bannerData.banners[9];
   const isMobile = useIsMobile();
 
   return (

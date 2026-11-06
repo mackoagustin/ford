@@ -9,7 +9,7 @@ import useIsMobile from '../../hook/useIsMobile';
 import Form from '../../components/Form/Form';
 
 function Accesories() {
-  const selectedBanner = bannerData.banners[12];
+  const selectedBanner = bannerData.banners[13];
   const isMobile = useIsMobile();
   return (
     <>

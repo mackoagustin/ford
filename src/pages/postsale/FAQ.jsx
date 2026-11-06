@@ -10,7 +10,7 @@ import useIsMobile from '../../hook/useIsMobile';
 import Button from '../../components/Button/Button';
 
 function FAQ() {
-  const selectedBanner = bannerData.banners[16];
+  const selectedBanner = bannerData.banners[17];
   // Filtrar solo las preguntas de categoría "general"
   const faq = faqData.faq.filter(item => item.category === 'faq');
   const isMobile = useIsMobile();

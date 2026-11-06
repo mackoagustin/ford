@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import ScrollToTop from './hook/ScrollToTop';
 
 import Navbar from './components/Navbar/Navbar';
+import Seo from './components/Seo/Seo';
 import LoadingSpinner from './components/LoadingSpinner/LoadingSpinner';
 
 // Lazy load de componentes pesados
@@ -56,6 +57,7 @@ function App() {
   return (
     <Router>
       <ScrollToTop />
+      <Seo />
       <Navbar />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>

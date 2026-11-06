@@ -12,7 +12,7 @@ import Form from '../../components/Form/Form';
 
 function Workshops() {
 
-  const selectedBanner = bannerData.banners[11];
+  const selectedBanner = bannerData.banners[12];
   const isMobile = useIsMobile();
   const items = locationData.locations[0]
 
