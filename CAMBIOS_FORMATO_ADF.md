@@ -70,7 +70,7 @@ Se configuraron suborigenes específicos para cada página del sitio:
 | Talleres | `/postventa/talleres` | "Talleres" |
 | Accesorios | `/postventa/accesorios` | "Accesorios" |
 | Ford Protect | `/postventa/ford-protect` | "Ford Protect" |
-| Ford Credit | `/financiacion/ford-credit` | "Ford Credit" |
+| Ford Credit | `/financiacion` | "Ford Credit" |
 | Plan Óvalo | `/financiacion/plan-ovalo` | "Plan Óvalo" |
 | Actos Adjudicación | `/financiacion/plan-ovalo/actos-de-adjudicacion` | "Plan Óvalo - Actos Adjudicación" |
 | Resultados Actos | `/financiacion/plan-ovalo/resultados-actos-de-adjudicacion` | "Plan Óvalo - Resultados Actos" |

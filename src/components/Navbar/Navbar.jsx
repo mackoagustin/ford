@@ -73,48 +73,7 @@ function Navbar() {
               </ul>
             </li>
 
-            <li className={styles.hasSubmenu}>
-              <button onClick={() => toggleSubmenu('financiacion')}>
-                <div className={`${styles.iconWrapper} ${styles.iconWrapperFirst}`}>
-                  Financiación
-                  <svg
-                    className="chevron-icon"
-                    style={{
-                      transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
-                      transition: 'transform 0.3s ease-in-out'
-                    }}
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2.4}
-                    stroke="currentColor"
-                    fill="none"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19.75 8.25L12 15.75 4.25 8.25"
-                    />
-                  </svg>
-                </div>
-              </button>
-              <ul className={`${styles.submenu} ${openSubmenu === 'financiacion' ? styles.submenuOpen : ''}`}>
-                <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
-                <div className={styles.wraperFinance}>
-                      <p className='boton-16-24'>Ford Credit</p>
-                      <p className='label-12-16'>Hasta 60%</p>
-                </div>
-                </Link></li>
-                <li><Link to="/financiacion/ford-credit#leasing" onClick={closeMenu}>
-                      <div className={styles.wraperFinance}>
-                          <p className='boton-16-24'>Leasing</p>
-                          <p className='label-12-16'>Hasta 100%</p>
-                      </div>
-                </Link></li>
-
-              </ul>
-            </li>
+            <li><Link to="/financiacion" onClick={closeMenu}>Financiación</Link></li>
 
             <li><Link to="/ford-pro" onClick={closeMenu}>Ford Pro</Link></li>
 
@@ -247,53 +206,10 @@ function Navbar() {
                     <li><Link to="/plan-ovalo" onClick={closeMenu}>Ver Todos</Link></li>
                   </ul>
                 </li>
-                 <li className={`${styles.hasSubmenu} ${openSubmenu === 'financiacion' ? styles.active : ''}`}>
-                    <button
-                      onClick={() => toggleSubmenu('financiacion')}
-                      className={styles.wraperLink}
-                    >
-                      <div className={styles.iconWrapper}>
-                        Financiación
-                        <svg
-                          className="chevron-icon"
-                          style={{
-                            transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
-                            transition: 'transform 0.3s ease-in-out'
-                          }}
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="20"
-                          height="20"
-                          viewBox="0 0 24 24"
-                          strokeWidth={2.4}
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            d="M19.75 8.25L12 15.75 4.25 8.25"
-                          />
-                        </svg>
-                      </div>
-                    </button>
-                    <ul className={`${styles.submenu} ${openSubmenu === 'financiacion' ? styles.submenuOpen : ''}`}>
-                      <li><Link to="/financiacion/ford-credit" onClick={closeMenu}>
-                          <div className={styles.wraperFinance}>
-                            <p className='boton-16-24'>Ford Credit</p>
-                            <p className='label-12-16'>Hasta 60%</p>
-                          </div>
-                          </Link></li>
-                      <li><Link to="/financiacion/ford-credit#leasing" onClick={closeMenu}>
-                           <div className={styles.wraperFinance}>
-                           <p className='boton-16-24'>Leasing</p>
-                           <p className='label-12-16'>Hasta 100%</p>
-                          </div>
-                      </Link></li>
-                                       
-                    </ul>
-                  </li>
-
-                  <div className={styles.wraperLink}>
+                <div className={styles.wraperLink}>
+                  <li><Link to="/financiacion" onClick={closeMenu}>Financiación</Link></li>
+                </div>
+                <div className={styles.wraperLink}>
                   <li><Link to="/ford-pro" onClick={closeMenu}>Ford Pro</Link></li>
                 </div>
                 <li className={`${styles.hasSubmenu} ${openSubmenu === 'postventa' ? styles.active : ''}`}>

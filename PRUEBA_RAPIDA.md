@@ -24,7 +24,7 @@ Navega a cualquiera de estas páginas:
 
 1. **Test Drive:** http://localhost:5173/vehiculos/test-drive
 2. **Repuestos:** http://localhost:5173/postventa/repuestos  
-3. **Ford Credit:** http://localhost:5173/financiacion/ford-credit
+3. **Ford Credit:** http://localhost:5173/financiacion
 4. **Plan Óvalo:** http://localhost:5173/financiacion/plan-ovalo
 
 ---

@@ -33,15 +33,6 @@
         "ctaLink": ""
       },
       {
-        "image": "/img/banners/cyber_monday_desktop.jpeg",
-        "image_mobile": "/img/banners/cyber_monday_mobile.webp",
-        "title": "",
-        "subtitle": "",
-        "description": "",
-        "ctaText": "",
-        "ctaLink": ""
-      },
-      {
         "image": "/img/banners/banner_know_us.png",
         "title": "Somos <br/>Auto Special",
         "subtitle": "",
@@ -121,11 +112,13 @@
       {
         "image": "/img/banners/credit_desktop.webp",
         "image_mobile": "/img/banners/credit_mobile.webp",
-        "title": "Financia tu Ford",
+        "title": "Financiá tu Ford",
         "subtitle": "",
         "description": "Encontrá todas las opciones de financiación",
-        "ctaText": "",
-        "ctaLink": ""
+        "ctaText": "Mostrar préstamo bancario",
+        "ctaLink": "#prestamo-bancario",
+        "ctaTextSecond": "Mostrar Leasing",
+        "ctaLinkSecond": "#leasing"
       },
       {
         "image": "/img/banners/act.png",

@@ -27,8 +27,8 @@
 }
 
 .whatsappFloatButton {
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
   background-color: #4DCB5B;
   border-radius: 50%;
   display: flex;
@@ -138,8 +138,8 @@
   }
 
   .whatsappFloatButton {
-    width: 55px;
-    height: 55px;
+    width: 64px;
+    height: 64px;
   }
 
   .whatsappIcon {
@@ -155,7 +155,7 @@
 @media (max-width: 480px) {
   .bottomRight,
   .bottomLeft {
-    bottom: 60px;
+    bottom: 20px;
   }
   
   .bottomRight {
@@ -167,8 +167,8 @@
   }
 
   .whatsappFloatButton {
-    width: 50px;
-    height: 50px;
+    width: 64px;
+    height: 64px;
   }
 
   .whatsappIcon {

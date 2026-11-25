@@ -18,7 +18,7 @@ import ovaloData from '../../data/plan_ovalo.json';
 
 function PlanOvalo() {
   const isMobile = useIsMobile();
-  const selectedBanner = bannerData.banners[4]
+  const selectedBanner = bannerData.banners[3]
   const items = creditPlanes.creditPlans;
   const adminPlanOvaloItems = adminPlanOvalo.adminPlanOvalo;
   const ovaloItems = ovaloData.ovalo;
@@ -104,7 +104,9 @@ function PlanOvalo() {
               suborigen="Plan Óvalo" 
               defaultVehicle={selectedVehicle}
               vehicleTick={vehicleTick}
-
+              showMessage={false}
+              layout="dosColumnas"
+              submitText="Enviar"
             />
           </div>
         ) : (
@@ -120,6 +122,9 @@ function PlanOvalo() {
                 origen="WEB AUTOSPECIAL" 
                 suborigen="Plan Óvalo" 
                 defaultVehicle={selectedVehicle}
+                showMessage={false}
+                layout="dosColumnas"
+                submitText="Enviar"
               />
             </div>
       

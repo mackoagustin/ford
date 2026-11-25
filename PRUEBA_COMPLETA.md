@@ -66,7 +66,7 @@ Espera a ver estos mensajes:
 | **Repuestos** | http://localhost:5173/postventa/repuestos | "Repuestos" |
 | **Solicitar Turno** | http://localhost:5173/postventa/solicitar-turno | "Solicitar Turno" |
 | **Talleres** | http://localhost:5173/postventa/talleres | "Talleres" |
-| **Ford Credit** | http://localhost:5173/financiacion/ford-credit | "Ford Credit" |
+| **Ford Credit** | http://localhost:5173/financiacion | "Ford Credit" |
 | **Plan Óvalo** | http://localhost:5173/financiacion/plan-ovalo | "Plan Óvalo" |
 | **Sumate al Equipo** | http://localhost:5173/quienes-somos/sumate | "Sumate al Equipo - RR.HH." |
 

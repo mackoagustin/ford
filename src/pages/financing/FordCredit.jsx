@@ -30,22 +30,10 @@ function FordCredit() {
   return (
     <div>
       <BannerFordCredit data = {selectedBanner} />
-
-      {/* Title */}
-      {/* {isMobile ? (
-         <div className={`${styles["pt-60"]} ${styles["px-16"]}`}>
-         <p className="text-color-neutral-500 subtitle-20">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
-       </div>
-      ) : (
-         <div className={`${styles["pt-60"]} ${styles["px-16"]} ${styles.wraperTitle}`}>
-         <p className="text-color-neutral-500 subtitle-20 text-center">Descubrí las oportunidades del mes y conocé las formas de financiamiento más convenientes para vos.</p>
-       </div>
-      )} */}
      
-
       <div className= {styles.px16}>
-        <div className= {styles.wraperSection}>
-           <h2 className='H2 text-color-primary'> Préstamo bancario</h2>
+        <div>
+           <h2 className='H2 text-color-primary' id='prestamo-bancario' style={{ scrollMarginTop: '24px' }}>Préstamo bancario</h2>
            {isMobile ? (
             <p className="text-color-neutral-500 subtitle-20">Realizando un pago inicial como anticipo, te ofrecemos la posibilidad de financiar en un plazo de hasta 60 meses, con cuotas fijas en pesos, sin gastos de otorgamiento y hasta un 60% del vehículo.</p>
            ) : (

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './BannerFordCredit.module.css';
 import useIsMobile from '../../hook/useIsMobile';
+import Button from '../Button/Button';
 
 const BannerFordCredit = ( { data }) => {
     const isMobile = useIsMobile();
@@ -27,6 +28,20 @@ const BannerFordCredit = ( { data }) => {
                     <span className={styles.description}>{data.description}</span>
                 </h1>
             </div>
+            {(data.ctaText || data.ctaTextSecond) && (
+              <div className={styles.buttons}>
+                {data.ctaText && (
+                  <Button as="a" href={data.ctaLink} variant="secondary">
+                    {data.ctaText}
+                  </Button>
+                )}
+                {data.ctaTextSecond && (
+                  <Button as="a" href={data.ctaLinkSecond} variant="secondary">
+                    {data.ctaTextSecond}
+                  </Button>
+                )}
+              </div>
+            )}
           </div>
         </div>
       );

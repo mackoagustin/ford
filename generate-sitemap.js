@@ -17,7 +17,6 @@ const STATIC_ROUTES = [
   '/vehiculos/test-drive',
   '/plan-ovalo',
   '/financiacion',
-  '/financiacion/ford-credit',
   '/financiacion/plan-ovalo/actos-de-adjudicacion',
   '/financiacion/plan-ovalo/resultados-actos-de-adjudicacion',
   '/ford-pro',

@@ -79,44 +79,7 @@ function Footer() {
                   isOpen={openSubmenu === 'planOvalo'}
                   onToggle={() => toggleSubmenu('planOvalo')}
                 />
-                <div 
-                  className={`${styles.menuItem} ${openSubmenu === 'financiacion' ? styles.activeMenuItem : ''}`}
-                  onClick={() => toggleSubmenu('financiacion')}
-                >
-                  <span>Financiación</span>
-                  <button 
-                    className={styles.toggleButton}
-                  >
-                    <svg
-                      className="chevron-icon"
-                      style={{
-                        transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.3s ease-in-out'
-                      }}
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2.4}
-                      stroke="var(--color-white)"
-                      fill="none"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M19.75 8.25L12 15.75 4.25 8.25"
-                      />
-                    </svg>
-                  </button>
-                </div>
-                {openSubmenu === 'financiacion' && (
-                  <div className={`${styles.submenu} ${styles.submenuOpen}`}>
-                    <div className={styles.submenuContainer}>
-                      <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
-                      <Link to="/financiacion/ford-credit#leasing" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
-                    </div>
-                  </div>
-                )}
+                <Link to="/financiacion" className={styles.menuItem}>Financiación</Link>
                 <Link to="/ford-pro" className={styles.menuItem}>Ford Pro</Link>
                 
                 <div 
@@ -336,44 +299,7 @@ function Footer() {
                     isOpen={openSubmenu === 'planOvalo'}
                     onToggle={() => toggleSubmenu('planOvalo')}
                   />
-                  <div 
-                    className={`${styles.menuItem} ${openSubmenu === 'financiacion' ? styles.activeMenuItem : ''}`}
-                    onClick={() => toggleSubmenu('financiacion')}
-                  >
-                    <span>Financiación</span>
-                    <button 
-                      className={styles.toggleButton}
-                    >
-                      <svg
-                        className="chevron-icon"
-                        style={{
-                          transform: openSubmenu === 'financiacion' ? 'rotate(180deg)' : 'rotate(0deg)',
-                          transition: 'transform 0.3s ease-in-out'
-                        }}
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 24 24"
-                        strokeWidth={2.4}
-                        stroke="var(--color-white)"
-                        fill="none"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M19.75 8.25L12 15.75 4.25 8.25"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  {openSubmenu === 'financiacion' && (
-                    <div className={`${styles.submenu} ${styles.submenuOpen}`}>
-                      <div className={styles.submenuContainer}>
-                        <Link to="/financiacion/ford-credit" className={styles.submenuItem}>Ford Credit - Hasta 60%</Link>
-                        <Link to="/financiacion/ford-credit#leasing" className={styles.submenuItem}>Leasing - Hasta 100%</Link>
-                      </div>
-                    </div>
-                  )}
+                  <Link to="/financiacion" className={styles.menuItem}>Financiación</Link>
                   <Link to="/ford-pro" className={styles.menuItem}>Ford Pro</Link>
 
                   <div 

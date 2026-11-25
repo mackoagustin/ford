@@ -405,7 +405,9 @@ function PlanOvaloVehicleDetail() {
               defaultVehicle={selectedVehicle}
               vehicleTick={vehicleTick}
               customVehicleOptions={formVehicleOptions}
-              contactFirst
+              showMessage={false}
+              layout="dosColumnas"
+              submitText="Enviar"
             />
           </div>
         ) : (
@@ -423,7 +425,9 @@ function PlanOvaloVehicleDetail() {
                 defaultVehicle={selectedVehicle}
                 vehicleTick={vehicleTick}
                 customVehicleOptions={formVehicleOptions}
-                contactFirst
+                showMessage={false}
+                layout="dosColumnas"
+                submitText="Enviar"
               />
             </div>
 

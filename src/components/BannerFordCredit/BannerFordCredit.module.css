@@ -18,7 +18,8 @@
     z-index: 1;
   }
   @media (min-width: 768px) and (max-width: 1200px) {
-    .textGroup{
+    .textGroup,
+    .buttons {
       padding-left: 16px;
     }
   }
@@ -38,7 +39,7 @@
     bottom: 60px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     z-index: 3;
     width: 80%;
   }
@@ -55,6 +56,7 @@
     font-size: 2.5rem; 
     font-weight: 500;
     line-height: 10px;
+    margin: 0;
   }
 
   .title-blue {
@@ -73,6 +75,12 @@
     font-size: 1rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
   }
 
   /* Desktop */
@@ -119,7 +127,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       width: 100%;
-      bottom: -120px;
+      bottom: auto;
       max-width: 1170px;
     }
 

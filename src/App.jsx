@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { Suspense, lazy, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import ScrollToTop from './hook/ScrollToTop';
 
 import Navbar from './components/Navbar/Navbar';
@@ -14,7 +14,6 @@ const PopUpNoWs = lazy(() => import('./components/PopUpNoWs/PopUpNoWs'));
 // Lazy load de páginas principales
 const Home = lazy(() => import('./pages/Home'));
 const Vehicles = lazy(() => import('./pages/Vehicles'));
-const Financing = lazy(() => import('./pages/Financing'));
 const FordPro = lazy(() => import('./pages/FordPro'));
 const PostSale = lazy(() => import('./pages/PostSale'));
 const AboutUs = lazy(() => import('./pages/AboutUs'));
@@ -42,13 +41,19 @@ const FormSend = lazy(() => import('./pages/FormSend'));
 // Lazy load de páginas dinámicas
 const VehicleDetail = lazy(() => import('./pages/Vehicle/VehicleDetail'));
 
+// Conserva #leasing y los parámetros de campaña (utm, gclid) de los links viejos
+function RedirectToFinanciacion() {
+  const { search, hash } = useLocation();
+  return <Navigate to={`/financiacion${search}${hash}`} replace />;
+}
+
 function App() {
   // Preload de rutas críticas después de la carga inicial
   useEffect(() => {
     // Preload de rutas más visitadas después de 2 segundos
     const timer = setTimeout(() => {
       import('./pages/Vehicles');
-      import('./pages/Financing');
+      import('./pages/financing/FordCredit');
     }, 2000);
     
     return () => clearTimeout(timer);
@@ -67,8 +72,8 @@ function App() {
           <Route path="/vehiculos/test-drive" element={<Test />} />
           <Route path="/plan-ovalo" element={<PlanOvalo />} />
           <Route path="/plan-ovalo/:slug" element={<PlanOvaloVehicleDetail />} />
-          <Route path="/financiacion" element={<Financing />} />
-          <Route path="/financiacion/ford-credit" element={<FordCredit />} />
+          <Route path="/financiacion" element={<FordCredit />} />
+          <Route path="/financiacion/ford-credit" element={<RedirectToFinanciacion />} />
           <Route path="/financiacion/plan-ovalo/actos-de-adjudicacion" element={<AdjudicationActs />} />
           <Route path="/financiacion/plan-ovalo/resultados-actos-de-adjudicacion" element={<ResultActs />} />
           <Route path="/ford-pro" element={<FordPro />} />
@@ -90,13 +95,13 @@ function App() {
       </Suspense>
       
       {/* Componente WhatsApp flotante que aparece en todas las páginas */}
-      {/* <Suspense fallback={<div></div>}>
+      <Suspense fallback={<div></div>}>
         <WhatsAppFloat 
           phoneNumber="5491135866256"
           message="Hola, me gustaría obtener más información sobre Ford"
-          position="bottom-right"
+          position="bottom-left"
         />
-      </Suspense> */}
+      </Suspense>
 
       {/* whatsapp fuera de servicio */}
       {/* <Suspense fallback={null}>

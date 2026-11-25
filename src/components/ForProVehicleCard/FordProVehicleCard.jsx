@@ -10,6 +10,16 @@ const FordProVehicleCard = ({ item }) => {
     return <div className={styles.Button}>No data available</div>;
   }
 
+  const detailHref = `/vehiculos/${encodeURIComponent(item.slug ?? item.id)}`;
+
+  const scrollToForm = (e) => {
+    e.preventDefault();
+    document.getElementById('formulario-asesoramiento').scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  };
+
   return (
     <div className={styles.card}>
       <img className={styles.image} src={item.image} alt={item.title} loading="lazy" />
@@ -22,7 +32,7 @@ const FordProVehicleCard = ({ item }) => {
         <div className={styles.buttonWrapper}>
         <Button
           as="a"
-          href={item.detailLink}
+          href={detailHref}
           rel="noopener noreferrer"
           variant="primary"
         >
@@ -30,9 +40,10 @@ const FordProVehicleCard = ({ item }) => {
         </Button>
         <Button
           as="a"
-          href={item.ctaSecondaryLink}
+          href="#formulario-asesoramiento"
           rel="noopener noreferrer"
           variant="secondary"
+          onClick={scrollToForm}
         >
           {item.ctaSecondaryText}
           <svg
@@ -57,7 +68,7 @@ const FordProVehicleCard = ({ item }) => {
         <div className={styles.buttonWrapper}>
         <Button
           as="a"
-          href={item.detailLink}
+          href={detailHref}
           rel="noopener noreferrer"
           variant="primary"
           style={{margin: '0 auto'}}
@@ -69,13 +80,7 @@ const FordProVehicleCard = ({ item }) => {
           href="#formulario-asesoramiento"
           rel="noopener noreferrer"
           variant="secondary"
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById('formulario-asesoramiento').scrollIntoView({ 
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }}
+          onClick={scrollToForm}
         >
           {item.ctaSecondaryText}
           <svg

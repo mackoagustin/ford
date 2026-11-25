@@ -15,11 +15,14 @@ const Form = ({
   origen = "WEB AUTOSPECIAL",
   suborigen = "Formulario General",
   showCuit = false,
+  showMessage = true,
   onlyFordProVehicles = false,
   defaultVehicle = "",
   vehicleTick = 0,
   customVehicleOptions = null,
-  contactFirst = false
+  contactFirst = false,
+  layout = "default",
+  submitText = "Enviar consulta"
 }) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -242,6 +245,51 @@ const Form = ({
     />
   );
 
+  const renderDesktopFields = () => {
+    if (layout === "dosColumnas") {
+      return (
+        <>
+          <div className={style.wraperInput}>
+            {vehicleField}
+            {nameField}
+          </div>
+          <div className={style.wraperInput}>
+            {emailField}
+            {phoneField}
+          </div>
+        </>
+      );
+    }
+
+    if (contactFirst) {
+      return (
+        <>
+          <div className={style.wraperInput}>
+            {nameField}
+            {emailField}
+          </div>
+          <div className={style.wraperInput}>
+            {phoneField}
+            {vehicleField}
+          </div>
+        </>
+      );
+    }
+
+    return (
+      <>
+        {vehicleField}
+        <div className={style.wraperInput}>
+          {nameField}
+          {emailField}
+        </div>
+        <div className={style.wraperInput}>
+          {phoneField}
+        </div>
+      </>
+    );
+  };
+
  return isMobile ? (
     <form 
       onSubmit={handleSubmit} 
@@ -275,22 +323,17 @@ const Form = ({
           />
         )}
      
-      <Textarea
-        label="Mensaje (opcional)"
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-        placeholder="Escribí tu mensaje"
-        error={errors.message}
-        backgroundColor={backgroundColor}
-      />
-      <div className={style.checkboxWrapper}>
-        <label className={style.customCheckbox}>
-          <input type="checkbox" name="subscribe" />
-          <span className={style.checkmark}></span>
-          Acepto recibir información y novedades en mi email.
-        </label>
-      </div>
+     {showMessage && (
+        <Textarea
+          label="Mensaje (opcional)"
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Escribí tu mensaje"
+          error={errors.message}
+          backgroundColor={backgroundColor}
+        />
+      )}
 
       {/* Mostrar errores del backend */}
       {submitError && (
@@ -324,7 +367,7 @@ const Form = ({
             cursor: success ? 'default' : undefined
           }}
         >
-          {loading ? 'Enviando consulta' : success ? 'Enviada' : 'Enviar consulta'}
+          {loading ? 'Enviando consulta' : success ? 'Enviada' : submitText}
           {loading && (
             <img 
               src="/icons/icon/progress_activity.png"
@@ -377,29 +420,7 @@ const Form = ({
       className={style["form-wraper"]}
       style={{ backgroundColor }}
     >
-      {contactFirst ? (
-        <>
-          <div className={style.wraperInput}>
-            {nameField}
-            {emailField}
-          </div>
-          <div className={style.wraperInput}>
-            {phoneField}
-            {vehicleField}
-          </div>
-        </>
-      ) : (
-        <>
-          {vehicleField}
-          <div className={style.wraperInput}>
-            {nameField}
-            {emailField}
-          </div>
-          <div className={style.wraperInput}>
-            {phoneField}
-          </div>
-        </>
-      )}
+      {renderDesktopFields()}
      
         {showCuit && (
           <Input
@@ -413,25 +434,20 @@ const Form = ({
           />
         )}
        
-      <div className={style.wraperTextarea}>
-          <Textarea
-        label="Mensaje (opcional)"
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-        placeholder="Escribí tu mensaje"
-        error={errors.message}
-        backgroundColor={backgroundColor}
-      />
-      </div>
-      
-      <div className={style.checkboxWrapper}>
-        <label className={style.customCheckbox}>
-          <input type="checkbox" name="subscribe" />
-          <span className={style.checkmark}></span>
-          Acepto recibir información y novedades en mi email.
-        </label>
-      </div>
+       {showMessage && (
+          <div className={style.wraperTextarea}>
+            <Textarea
+              label="Mensaje (opcional)"
+              name="message"
+              value={formData.message}
+              onChange={handleChange}
+              placeholder="Escribí tu mensaje"
+              error={errors.message}
+              backgroundColor={backgroundColor}
+            />
+          </div>
+        )}
+    
 
       {/* Mostrar errores del backend */}
       {submitError && (
@@ -465,7 +481,7 @@ const Form = ({
             cursor: success ? 'default' : undefined
           }}
         >
-          {loading ? 'Enviando consulta' : success ? 'Enviada' : 'Enviar consulta'}
+          {loading ? 'Enviando consulta' : success ? 'Enviada' : submitText}
           {loading && (
             <img 
               src="/icons/icon/progress_activity.png"
