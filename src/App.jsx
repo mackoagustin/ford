@@ -37,6 +37,7 @@ const JoinTeam = lazy(() => import('./pages/about/JoinTeam/JoinTeam'));
 const News = lazy(() => import('./pages/about/News'));
 const Test = lazy(() => import('./pages/test'));
 const FormSend = lazy(() => import('./pages/FormSend'));
+const TermsAndConditions = lazy(() => import('./pages/TermsAndConditions'));
 
 // Lazy load de páginas dinámicas
 const VehicleDetail = lazy(() => import('./pages/Vehicle/VehicleDetail'));
@@ -91,6 +92,10 @@ function App() {
           <Route path="/quienes-somos/novedades" element={<News />} />
           <Route path="/sucursales" element={<Branches />} />
           <Route path="/formulario-enviado" element={<FormSend />} />
+          <Route path="/terminos-y-condiciones" element={<TermsAndConditions />} />
+          {/* Rutas anteriores del footer: se mantienen como alias de la página unificada */}
+          <Route path="/terminos-legales" element={<TermsAndConditions />} />
+          <Route path="/politicas-privacidad" element={<TermsAndConditions />} />
         </Routes>
       </Suspense>
       

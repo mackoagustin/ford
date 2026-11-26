@@ -32,6 +32,7 @@ const STATIC_ROUTES = [
   '/quienes-somos/sumate',
   '/quienes-somos/novedades',
   '/sucursales',
+  '/terminos-y-condiciones',
 ];
 
 const readJson = async (path) => JSON.parse(await readFile(path, 'utf8'));

@@ -279,8 +279,9 @@ function Footer() {
                     Juno Studio
                   </a>
                 <div className={styles.terminosPoliticas}>
-                    <a href="" className="text-color-white body-1-14">Términos legales</a>
-                    <a href="" className="text-color-white body-1-14">Políticas de privacidad</a>
+                    <Link to="/terminos-y-condiciones" className="text-color-white body-1-14">
+                      Términos y condiciones de uso y política de privacidad
+                    </Link>
                 </div>
             </div>
 
@@ -526,9 +527,9 @@ function Footer() {
           </a>
         </div>
         <div className={styles.legalLinks}>
-          <Link to="/terminos-legales" className={styles.legalLink}>Términos legales</Link>
-          <span className={styles.separator}>•</span>
-          <Link to="/politicas-privacidad" className={styles.legalLink}>Políticas de privacidad</Link>
+          <Link to="/terminos-y-condiciones" className={styles.legalLink}>
+            Términos y condiciones de uso y política de privacidad
+          </Link>
         </div>
       </div>
     </div>

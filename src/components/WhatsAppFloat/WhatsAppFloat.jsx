@@ -4,7 +4,7 @@ import whatsappMessages from '../../data/whatsappMessages.json';
 import styles from './WhatsAppFloat.module.css';
 
 const WhatsAppFloat = ({ 
-  phoneNumber = "5491135866256", 
+  phoneNumber = "5491181244442", 
   position = "bottom-right"
 }) => {
   const { pathname } = useLocation();
